@@ -118,6 +118,26 @@ def add_alignment_units(xml, salign_xml, align_ord, page_break=100):
             au_elem.append(ch_elem)
         text_elem.append(au_elem)
 
+def add_tuids(xml, salign_xml, align_ord):
+    sid2tuid = {}
+    for i, node in enumerate(salign_xml.findall(f".//link"), 1):
+        sides = node.attrib["xtargets"].split(";")
+        if sides[align_ord] == "":
+            print(f"Skiping tuid=tu-{i}", file=sys.stderr)
+            continue
+        tu_sids = sides[align_ord].split(" ")
+        for sid in tu_sids:
+            sid2tuid[sid] = f"tu-{i}"
+
+    s_elems = xml.findall(f".//s", ns)
+    for s_elem in s_elems:
+        sid = s_elem.attrib["id"]
+        if not sid:
+            print(f"Sentence ID = {sid} not defined.", file=sys.stderr)
+        s_elem.attrib["tuid"] = sid2tuid[sid]
+
+
+
 def shrink_paragraphs(xml):
     text_elem = xml.getroot().find('text', ns)
     for p_elem in text_elem.findall('p', ns):
@@ -144,9 +164,9 @@ add_tei_header(xml)
 remove_text_attrs(xml)
 process_tokens(xml)
 if salign_xml:
-    shrink_paragraphs(xml)
-    add_alignment_units(xml, salign_xml, args.align_ord, page_break=100)
-else:
-    add_pagebreaks(xml, "p", 100)
+    #shrink_paragraphs(xml)
+    #add_alignment_units(xml, salign_xml, args.align_ord, page_break=100)
+    add_tuids(xml, salign_xml, args.align_ord)
+add_pagebreaks(xml, "p", 100)
 
 xml.write(sys.stdout, encoding="unicode")
