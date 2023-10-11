@@ -65,6 +65,35 @@ teitok/makeex/srclang.txt :
 	sed 's/^.*id="cs:\([^:]*\):0".*srclang="\([^"]*\)".*$$/\1 \2/g' \
 	> $@
 
+#------------------------------------------- 2023-10-11 PILOT RUN --------------------------------------------
+
+# - lookups performed only on the following 5 books:
+# 		1) kundera-smich (srclang=cs)
+# 		2) Topol-Kloktat (srclang=cs)
+# 		3) ackroyd-londyn (srclang=en)
+# 		4) grisham-posledni_vule (srclang=en)
+# 		5) ishiguro-malir_sveta (srclang=en)
+# 		6) Kafka-Promena (srclang=en)
+# - the number of sampled results from orginally Czech and English books must be the same
+# 		- Czech effectively limits the number of sampled examples, e.g. "patrně" appears 94 times in srclang=en books, whereas only once in srclang=cs books
+# - all annotators (BS, JS, LP) are about to process exactly the same examples
+
+teitok/annotator_samples/2023-10-11.pilot-run/done : teitok/makeex/markers_all.fixed.xml teitok/makeex/query_groups.txt teitok/makeex/srclang.txt
+	cat $(word 1,$^) | \
+		python scripts/sample_annot_batch.py \
+			--grouped-queries $(word 2,$^) \
+			--srclang-index $(word 3,$^) \
+			--srclangs en cs \
+			--equal-across-srclangs \
+			--output-dir $(dir $@) \
+			--annotators BS \
+			--max-query-size 75
+	cp $(dir $@)/markers_BS-cs.xml $(dir $@)/markers_JS-cs.xml
+	cp $(dir $@)/markers_BS-en.xml $(dir $@)/markers_JS-en.xml
+	cp $(dir $@)/markers_BS-cs.xml $(dir $@)/markers_LP-cs.xml
+	cp $(dir $@)/markers_BS-en.xml $(dir $@)/markers_LP-en.xml
+	touch $@
+
 ############################################## SAMPLE ########################################################
 
 sample :
