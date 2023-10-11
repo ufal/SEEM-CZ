@@ -2,6 +2,8 @@ SHELL=/bin/bash
 
 .SECONDARY:
 
+############################################# PREPROCESSING FOR TEITOK ###############################################
+
 convert-% : teitok/ic16core_csen/%-en.xml teitok/ic16core_csen/%-cs.xml
 	@echo "$* converted."
 teitok/ic16core_csen/%-en.xml : data/ic16core_csen/%.en-00.tag.xml data/ic16core_csen/%.cs-00.en-00.alignment.xml
@@ -37,15 +39,31 @@ walign/ic16core_csen/%.align.txt : walign/ic16core_csen/%.for_align.txt
 		--extraction 'softmax' --batch_size 32 --num_workers 1
 	ln -s $*.align.pcedt-chp5000_sup-all-train.txt $@
 
-postwalign-% : walign/ic16core_csen/%-align_encs.xml
+postwalign-% : walign/ic16core_csen/align_%.align_en-cs.xml
 	@echo "Word alignment XML $* ready."
-walign/ic16core_csen/%-align_encs.xml : walign/ic16core_csen/%.for_align_ids.txt walign/ic16core_csen/%.align.txt
+walign/ic16core_csen/align_%.align_en-cs.xml : walign/ic16core_csen/%.for_align_ids.txt walign/ic16core_csen/%.align.txt
 	python scripts/compile_walign_xml.py \
 			$(word 1,$^) \
 			$(word 2,$^) \
 		| xmllint --format - \
 			> $@
 
+############################################# OCCURENCE SAMPLING ###############################################
+
+teitok/makeex/markers_all.fixed.xml : teitok/makeex/markers_all.xml
+	cat $< | \
+	sed 's/\/>\(.\)/\/>\n\1/g' | \
+	perl -MHTML::Entities -ne 'binmode STDOUT, ":utf8"; $$_ = decode_entities($$_); print($$_)' | \
+	sed 's/<link src="\([^"]*\)" tgt="[^"]*"\/>/\1/g' | \
+	sed 's/<link source="\([^"]*\)" target="[^"]*"\/>/\1/g' | \
+	grep -v 'cql="q-[13]"' \
+	> $@
+
+teitok/makeex/srclang.txt :
+	cat data/ic16core_csen/*.cs-00.tag.xml | \
+	grep '^<text ' | \
+	sed 's/^.*id="cs:\([^:]*\):0".*srclang="\([^"]*\)".*$$/\1 \2/g' \
+	> $@
 
 ############################################## SAMPLE ########################################################
 
