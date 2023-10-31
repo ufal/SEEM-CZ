@@ -39,9 +39,9 @@ walign/ic16core_csen/%.align.txt : walign/ic16core_csen/%.for_align.txt
 		--extraction 'softmax' --batch_size 32 --num_workers 1
 	ln -s $*.align.pcedt-chp5000_sup-all-train.txt $@
 
-postwalign-% : walign/ic16core_csen/align_%.align_en-cs.xml
+postwalign-% : walign/ic16core_csen/%_en-cs.xml
 	@echo "Word alignment XML $* ready."
-walign/ic16core_csen/align_%.align_en-cs.xml : walign/ic16core_csen/%.for_align_ids.txt walign/ic16core_csen/%.align.txt
+walign/ic16core_csen/%_en-cs.xml : walign/ic16core_csen/%.for_align_ids.txt walign/ic16core_csen/%.align.txt
 	python scripts/compile_walign_xml.py \
 			$(word 1,$^) \
 			$(word 2,$^) \
@@ -50,7 +50,7 @@ walign/ic16core_csen/align_%.align_en-cs.xml : walign/ic16core_csen/%.for_align_
 
 ############################################# OCCURENCE SAMPLING ###############################################
 
-teitok/makeex/markers_all.fixed.xml : teitok/makeex/markers_all.xml
+teitok/makeex/markers_all.xml : teitok/makeex/markers_all.corrupt.xml
 	cat $< | \
 	sed 's/\/>\(.\)/\/>\n\1/g' | \
 	perl -MHTML::Entities -ne 'binmode STDOUT, ":utf8"; $$_ = decode_entities($$_); print($$_)' | \
@@ -78,7 +78,7 @@ teitok/makeex/srclang.txt :
 # 		- Czech effectively limits the number of sampled examples, e.g. "patrně" appears 94 times in srclang=en books, whereas only once in srclang=cs books
 # - all annotators (BS, JS, LP) are about to process exactly the same examples
 
-teitok/annotator_samples/2023-10-11.pilot-run/done : teitok/makeex/markers_all.fixed.xml teitok/makeex/query_groups.txt teitok/makeex/srclang.txt
+teitok/annotator_samples/2023-10-11.pilot-run/done : teitok/makeex/markers_all.xml teitok/makeex/query_groups.txt teitok/makeex/srclang.txt
 	cat $(word 1,$^) | \
 		python scripts/sample_annot_batch.py \
 			--grouped-queries $(word 2,$^) \
@@ -93,6 +93,7 @@ teitok/annotator_samples/2023-10-11.pilot-run/done : teitok/makeex/markers_all.f
 	cp $(dir $@)/markers_BS-cs.xml $(dir $@)/markers_LP-cs.xml
 	cp $(dir $@)/markers_BS-en.xml $(dir $@)/markers_LP-en.xml
 	touch $@
+
 
 ############################################## SAMPLE ########################################################
 
