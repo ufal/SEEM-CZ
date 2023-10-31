@@ -5,6 +5,7 @@ import re
 import argparse
 from collections import defaultdict
 import random
+import logging
 
 class QueryGroup:
     def __init__(self, path):
@@ -61,8 +62,12 @@ parser.add_argument("--srclangs", nargs='+', default=["unk"], help="Source langu
 parser.add_argument("--equal-across-srclangs", action="store_true", help="Number of samples for each srclang will be the same")
 args = parser.parse_args()
 
+logging.basicConfig(level=logging.INFO)
+
 query_group = QueryGroup(args.grouped_queries)
-srclang_index = SrclangIndex(args.srclang_index) 
+srclang_index = SrclangIndex(args.srclang_index)
+
+#logging.debug(srclang_index)
 
 items_per_srclang_rest = {l:defaultdict(list) for l in args.srclangs}
 
