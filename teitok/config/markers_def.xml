@@ -16,10 +16,18 @@
     <interp key="use" display="Užití" type="select" default="certain">
         <option value="certain" display="jistotní"/>
         <option value="evidence" display="evidenciální"/>
+        <option value="confirm" display="dotvrzovací"/>
         <option value="answer" display="odpověďové"/>
         <option value="other" display="jiné"/>
         <option value="content" display="plnovýznamové"/>
     </interp>
+    
+    <interp key="certainty" display="Míra jistoty" disabledif="use=evidence|use=answer|use=other|use=content" type="select" default="medium">
+        <option value="hesitate" display="pochybnost"/>
+        <option value="medium" display="střední"/>
+        <option value="full" display="plná"/>
+    </interp>
+    <interp key="certaintynote" display="Poznámka (míra jistoty)" disabledif="use=evidence|use=answer|use=other|use=content"/>
     
     <interp key="commfuntype" display="Typ komunikační funkce" disabledif="use=other|use=content" type="select" default="decl">
         <option value="decl" display="sdělovací"/>
@@ -29,8 +37,8 @@
         <option value="agree" display="(ne)souhlasná"/>
         <option value="expr" display="expresivní"/>
     </interp>
-    <interp key="commfunsubtype" display="Konkrétní komunikační funkce" disabledif="use=other|use=content"/>
-    <interp key="commfunnote" display="Poznámka (komunikační funkce)" disabledif="use=other|use=content"/>
+    <interp key="commfunsubtype" display="Konkrétní komunikační funkce" disabledif="use=content"/>
+    <interp key="commfunnote" display="Poznámka (komunikační funkce)" disabledif="use=content"/>
     
     <interp key="scope" display="Dosah" disabledif="use=answer|use=other|use=content" type="select" default="sent">
         <option value="sent" display="věta"/>
@@ -42,11 +50,14 @@
     <interp key="predlemma" display="Predikát (lemma)" type="lookup" ref="pred" fld="lemma"/>
     <interp key="predtag" display="Predikát (tag)" type="lookup" ref="pred" fld="tag"/>
     <interp key="predverbtag" display="Predikát (verbtag)" type="lookup" ref="pred" fld="verbtag"/>
+
+    <interp key="member" display="Člen" nolist="1" type="idrefs" file="src" color="9745c0" disabledif="scope=sent|scope=ellipsis"/>
     
     <interp key="tfpos" display="Pozice v AČ" disabledif="use=answer|use=other|use=content" type="select" default="neutral">
         <option value="neutral" display="neutrální"/>
         <option value="emphasis" display="zdůrazněná"/>
         <option value="ownfocus" display="vlastní réma"/>
+        <option value="marked" display="příznakové"/>
     </interp>
     
     <interp key="sentpos" display="Místo ve větě" disabledif="use=answer|use=other|use=content" type="select" default="other">
@@ -66,7 +77,7 @@
         <option value="unclear" display="nejasná atribuce"/>
     </interp>
     
-    <interp key="clue" display="Indicie" disabledif="use=answer|use=other|use=content"/>
+    <interp key="clue" display="Modifikace" nolist="1" type="idrefs" file="src" color="ab2222" disabledif="use=answer|use=other|use=content"/>
     
     <interp key="evidence" display="Evidence" nolist="1" type="idrefs" file="src" color="#3399ff" disabledif="use=answer|use=other|use=content"/>
     <!-- <interp key="evidencetype" display="Typ evidence" type="multi" multisep="," disabledif="use=answer|use=other|use=content"> -->
@@ -77,11 +88,6 @@
         <option value="hearsay" display="hearsay"/>
         <option value="inference" display="inference"/>
     </interp>
-    
-    <interp key="certainty" display="Míra jistoty" disabledif="use=evidence|use=answer|use=other|use=content" type="select" default="medium">
-        <option value="full" display="plná"/>
-        <option value="medium" display="střední"/>
-        <option value="hesitate" display="pochybnost"/>
-    </interp>
-    <interp key="certaintynote" display="Poznámka (míra jistoty)" disabledif="use=evidence|use=answer|use=other|use=content"/>
+
+    <interp key="comment" display="Komentář"/>
 </interpGrp>
