@@ -51,7 +51,7 @@
     <interp key="predtag" display="Predikát (tag)" type="lookup" ref="pred" fld="tag"/>
     <interp key="predverbtag" display="Predikát (verbtag)" type="lookup" ref="pred" fld="verbtag"/>
 
-    <interp key="member" display="Člen" nolist="1" type="idrefs" file="src" color="9745c0" disabledif="scope=sent|scope=ellipsis"/>
+    <interp key="member" display="Člen" nolist="1" type="idrefs" file="src" color="#9745c0" disabledif="scope=sent|scope=ellipsis"/>
     
     <interp key="tfpos" display="Pozice v AČ" disabledif="use=answer|use=other|use=content" type="select" default="neutral">
         <option value="neutral" display="neutrální"/>
@@ -77,9 +77,9 @@
         <option value="unclear" display="nejasná atribuce"/>
     </interp>
     
-    <interp key="clue" display="Modifikace" nolist="1" type="idrefs" file="src" color="ab2222" disabledif="use=answer|use=other|use=content"/>
+    <interp key="modif" display="Modifikace" nolist="1" type="idrefs" file="src" color="#ab2222" disabledif="use=answer|use=other|use=content"/>
     
-    <interp key="evidence" display="Evidence" nolist="1" type="idrefs" file="src" color="#3399ff" disabledif="use=answer|use=other|use=content"/>
+    <interp key="evidence" display="Evidence" type="idrefs" file="src" color="#3399ff" disabledif="use=answer|use=other|use=content"/>
     <!-- <interp key="evidencetype" display="Typ evidence" type="multi" multisep="," disabledif="use=answer|use=other|use=content"> -->
     <interp key="evidencetype" display="Typ evidence" type="multi" disabledif="use=answer|use=other|use=content">
         <!-- <option value="unexpressed" display="nevyjádřená" default="1"/> -->
