@@ -65,7 +65,7 @@ teitok/makeex/srclang.txt :
 	sed 's/^.*id="cs:\([^:]*\):0".*srclang="\([^"]*\)".*$$/\1 \2/g' \
 	> $@
 
-#------------------------------------------- 2023-10-11 PILOT RUN --------------------------------------------
+#------------------------------------------- 2023-11-27 PILOT RUN --------------------------------------------
 
 # - lookups performed only on the following 5 books:
 # 		1) kundera-smich (srclang=cs)
@@ -73,12 +73,11 @@ teitok/makeex/srclang.txt :
 # 		3) ackroyd-londyn (srclang=en)
 # 		4) grisham-posledni_vule (srclang=en)
 # 		5) ishiguro-malir_sveta (srclang=en)
-# 		6) Kafka-Promena (srclang=en)
 # - the number of sampled results from orginally Czech and English books must be the same
 # 		- Czech effectively limits the number of sampled examples, e.g. "patrně" appears 94 times in srclang=en books, whereas only once in srclang=cs books
 # - all annotators (BS, JS, LP) are about to process exactly the same examples
 
-teitok/annotator_samples/2023-10-11.pilot-run/done : teitok/makeex/markers_all.xml teitok/makeex/query_groups.txt teitok/makeex/srclang.txt
+teitok/annotator_samples/2023-11-27.pilot-run/done : teitok/makeex/markers_all.xml teitok/makeex/query_groups.txt teitok/makeex/srclang.txt
 	cat $(word 1,$^) | \
 		python scripts/sample_annot_batch.py \
 			--grouped-queries $(word 2,$^) \
@@ -92,6 +91,12 @@ teitok/annotator_samples/2023-10-11.pilot-run/done : teitok/makeex/markers_all.x
 	cp $(dir $@)/markers_BS-en.xml $(dir $@)/markers_JS-en.xml
 	cp $(dir $@)/markers_BS-cs.xml $(dir $@)/markers_LP-cs.xml
 	cp $(dir $@)/markers_BS-en.xml $(dir $@)/markers_LP-en.xml
+	sed -i 's/\(<examples>\)\(.\)/\1\n\2/g' $(dir $@)/markers_BS-cs.xml; sed -i '2r teitok/annotator_ids/BS.xml' $(dir $@)/markers_BS-cs.xml
+	sed -i 's/\(<examples>\)\(.\)/\1\n\2/g' $(dir $@)/markers_BS-en.xml; sed -i '2r teitok/annotator_ids/BS.xml' $(dir $@)/markers_BS-en.xml
+	sed -i 's/\(<examples>\)\(.\)/\1\n\2/g' $(dir $@)/markers_JS-cs.xml; sed -i '2r teitok/annotator_ids/JS.xml' $(dir $@)/markers_JS-cs.xml
+	sed -i 's/\(<examples>\)\(.\)/\1\n\2/g' $(dir $@)/markers_JS-en.xml; sed -i '2r teitok/annotator_ids/JS.xml' $(dir $@)/markers_JS-en.xml
+	sed -i 's/\(<examples>\)\(.\)/\1\n\2/g' $(dir $@)/markers_LP-cs.xml; sed -i '2r teitok/annotator_ids/LP.xml' $(dir $@)/markers_LP-cs.xml
+	sed -i 's/\(<examples>\)\(.\)/\1\n\2/g' $(dir $@)/markers_LP-en.xml; sed -i '2r teitok/annotator_ids/LP.xml' $(dir $@)/markers_LP-en.xml
 	touch $@
 
 
