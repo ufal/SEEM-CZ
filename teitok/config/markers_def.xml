@@ -13,6 +13,11 @@
 <!--    <interp key="en" display="Výraz v angličtině (ID)" type="idrefs" nolist="1" file="tgt"/> -->
 
     <!-- attributes to be filled by manual annotation -->
+    <interp key="dictexample" display="Příklad do slovníku" type="select" default="0">
+        <option value="0" display="ne"/>
+        <option value="1" display="ano"/>
+    </interp>
+
     <interp key="use" display="Užití" type="select" default="certain">
         <option value="certain" display="jistotní"/>
         <option value="evidence" display="evidenciální"/>
