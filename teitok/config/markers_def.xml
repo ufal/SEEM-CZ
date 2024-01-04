@@ -29,7 +29,7 @@
     </interp>
     <interp key="certaintynote" display="Poznámka (míra jistoty)" disabledif="use=evidence|use=answer|use=other|use=content"/>
     
-    <interp key="commfuntype" display="Typ komunikační funkce" disabledif="use=other|use=content" type="select" default="decl">
+    <interp key="commfuntype" display="Typ komunikační funkce" disabledif="use=content" type="select" default="decl">
         <option value="decl" display="sdělovací"/>
         <option value="direct" display="direktivní"/>
         <option value="interr" display="tázací"/>
