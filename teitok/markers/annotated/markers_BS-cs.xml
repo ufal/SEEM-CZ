@@ -1,126 +1,126 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <examples>
 <user id="BS" email="stepankova@ufal.mff.cuni.cz" name="Barbora Štěpánková"/>
-<item id="ex-168" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1301:1:w20" cs="cs:Topol-Kloktat_dehet:0:1294:1:w11" cst="zřejmě" />
-<item id="ex-224" cql="q-2" xml="kundera-smich" en="en:kundera-smich:0:648:5:w28" cs="cs:kundera-smich:0:571:5:w19" cst="zřejmě" />
-<item id="ex-225" cql="q-2" xml="kundera-smich" en="" cs="cs:kundera-smich:0:1202:5:w6" cst="zřejmě" />
-<item id="ex-221" cql="q-2" xml="kundera-smich" en="en:kundera-smich:0:414:1:w3" cs="cs:kundera-smich:0:360:1:w3" cst="zřejmě" />
-<item id="ex-167" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1253:7:w7" cs="cs:Topol-Kloktat_dehet:0:1246:1:w48" cst="zřejmě" />
-<item id="ex-170" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1338:7:w11" cs="cs:Topol-Kloktat_dehet:0:1334:7:w7" cst="zřejmě" />
-<item id="ex-223" cql="q-2" xml="kundera-smich" en="en:kundera-smich:0:596:11:w1" cs="cs:kundera-smich:0:523:10:w1" cst="Zřejmě" />
-<item id="ex-226" cql="q-2" xml="kundera-smich" en="en:kundera-smich:0:1368:2:w15" cs="cs:kundera-smich:0:1247:2:w13" cst="zřejmě" />
-<item id="ex-169" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1319:2:w10" cs="cs:Topol-Kloktat_dehet:0:1315:2:w6" cst="zřejmě" />
-<item id="ex-166" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1249:1:w29" cs="cs:Topol-Kloktat_dehet:0:1242:1:w20" cst="zřejmě" />
-<item id="ex-165" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1163:3:w4" cs="cs:Topol-Kloktat_dehet:0:1155:3:w3" cst="zřejmě" />
-<item id="ex-222" cql="q-2" xml="kundera-smich" en="en:kundera-smich:0:455:2:w2" cs="cs:kundera-smich:0:398:2:w1" cst="Zřejmě" />
-<item id="ex-488" cql="q-4" xml="kundera-smich" en="" cs="cs:kundera-smich:0:931:2:w1" cst="Pravděpodobně" />
-<item id="ex-487" cql="q-4" xml="kundera-smich" en="en:kundera-smich:0:842:2:w16" cs="cs:kundera-smich:0:752:2:w12" cst="pravděpodobně" />
-<item id="ex-489" cql="q-4" xml="kundera-smich" en="en:kundera-smich:0:1395:2:w10" cs="cs:kundera-smich:0:1272:2:w10" cst="pravděpodobně" />
-<item id="ex-490" cql="q-4" xml="kundera-smich" en="en:kundera-smich:0:1414:3:w6" cs="cs:kundera-smich:0:1290:3:w8" cst="pravděpodobně" />
-<item id="ex-528" cql="q-5" xml="kundera-smich" en="en:kundera-smich:0:1373:5:w13  en:kundera-smich:0:1373:5:w14" cs="cs:kundera-smich:0:1252:5:w13" cst="nepochybně" />
-<item id="ex-529" cql="q-5" xml="kundera-smich" en="en:kundera-smich:0:1462:3:w26" cs="cs:kundera-smich:0:1335:3:w25" cst="nepochybně" />
-<item id="ex-526" cql="q-5" xml="kundera-smich" en="en:kundera-smich:0:244:1:w9" cs="cs:kundera-smich:0:215:1:w10" cst="nepochybně" />
-<item id="ex-527" cql="q-5" xml="kundera-smich" en="en:kundera-smich:0:1345:1:w16" cs="cs:kundera-smich:0:1222:1:w11" cst="nepochybně" />
-<item id="ex-615" cql="q-6" xml="kundera-smich" en="en:kundera-smich:0:1521:2:w15" cs="cs:kundera-smich:0:1388:2:w13" cst="patrně" />
-<item id="ex-692" cql="q-7" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:288:2:w2" cst="jistě" />
-<item id="ex-731" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:596:8:w24" cs="cs:kundera-smich:0:523:7:w28" cst="jistě" />
-<item id="ex-693" cql="q-7" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:827:1:w4" cs="cs:Topol-Kloktat_dehet:0:801:1:w2" cst="jistě" />
-<item id="ex-735" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:853:4:w3" cs="cs:kundera-smich:0:761:4:w3" cst="jistě" />
-<item id="ex-696" cql="q-7" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1751:5:w3  en:Topol-Kloktat_dehet:0:1751:5:w4" cs="cs:Topol-Kloktat_dehet:0:1750:4:w3" cst="jistě" />
-<item id="ex-727" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:289:2:w2" cs="cs:kundera-smich:0:252:2:w5" cst="jistě" />
-<item id="ex-726" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:268:1:w28" cs="cs:kundera-smich:0:233:1:w29" cst="jistě" />
-<item id="ex-736" cql="q-7" xml="kundera-smich" en="" cs="cs:kundera-smich:0:1017:6:w2" cst="jistě" />
-<item id="ex-780" cql="q-8" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1152:6:w1" cst="Jistě" />
-<item id="ex-778" cql="q-8" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:443:1:w4" cs="cs:Topol-Kloktat_dehet:0:429:1:w1" cst="Jistě" />
-<item id="ex-730" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:562:2:w14" cs="cs:kundera-smich:0:493:3:w13" cst="jistě" />
-<item id="ex-694" cql="q-7" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1088:1:w11" cs="cs:Topol-Kloktat_dehet:0:1069:1:w10" cst="jistě" />
-<item id="ex-695" cql="q-7" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1270:1:w24" cs="cs:Topol-Kloktat_dehet:0:1262:1:w8" cst="jistě" />
-<item id="ex-734" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:844:1:w20" cs="cs:kundera-smich:0:754:1:w25" cst="jistě" />
-<item id="ex-737" cql="q-7" xml="kundera-smich" en="" cs="cs:kundera-smich:0:1215:3:w10" cst="jistě" />
-<item id="ex-728" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:290:3:w1" cs="cs:kundera-smich:0:253:2:w9" cst="jistě" />
-<item id="ex-779" cql="q-8" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:492:11:w3" cs="cs:Topol-Kloktat_dehet:0:480:11:w1" cst="Jistě" />
-<item id="ex-777" cql="q-8" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:422:2:w68" cs="cs:Topol-Kloktat_dehet:0:408:3:w1" cst="Jistě" />
-<item id="ex-739" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:1386:2:w9" cs="cs:kundera-smich:0:1265:2:w9" cst="jistě" />
-<item id="ex-738" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:1342:2:w32" cs="cs:kundera-smich:0:1220:3:w29" cst="jistě" />
-<item id="ex-792" cql="q-8" xml="kundera-smich" en="en:kundera-smich:0:898:4:w1" cs="cs:kundera-smich:0:807:4:w1" cst="Jistě" />
-<item id="ex-729" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:385:1:w2" cs="cs:kundera-smich:0:334:1:w2" cst="jistě" />
-<item id="ex-732" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:645:9:w1" cs="cs:kundera-smich:0:568:8:w3" cst="jistě" />
-<item id="ex-733" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:688:3:w12" cs="cs:kundera-smich:0:606:3:w14" cst="jistě" />
-<item id="ex-844" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1550:6:w24" cst="asi" />
-<item id="ex-864" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1822:4:w20" cs="cs:Topol-Kloktat_dehet:0:1818:2:w28" cst="asi" />
-<item id="ex-827" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:934:2:w10" cst="asi" />
-<item id="ex-824" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:886:6:w2" cs="cs:Topol-Kloktat_dehet:0:860:6:w3" cst="asi" />
-<item id="ex-853" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1655:2:w3" cs="cs:Topol-Kloktat_dehet:0:1643:1:w10" cst="asi" />
-<item id="ex-847" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1597:1:w30" cs="cs:Topol-Kloktat_dehet:0:1588:1:w18" cst="asi" />
-<item id="ex-830" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1218:1:w2" cs="cs:Topol-Kloktat_dehet:0:1211:1:w1" cst="Asi" />
-<item id="ex-821" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:726:8:w3" cs="cs:Topol-Kloktat_dehet:0:708:9:w1" cst="Asi" />
-<item id="ex-861" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1762:3:w1" cst="Asi" />
-<item id="ex-834" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1293:3:w16" cs="cs:Topol-Kloktat_dehet:0:1286:3:w12" cst="asi" />
-<item id="ex-842" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1464:2:w22" cs="cs:Topol-Kloktat_dehet:0:1457:7:w67" cst="asi" />
-<item id="ex-829" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1203:6:w12" cs="cs:Topol-Kloktat_dehet:0:1196:2:w8" cst="asi" />
-<item id="ex-858" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1739:2:w3" cs="cs:Topol-Kloktat_dehet:0:1737:2:w2" cst="asi" />
-<item id="ex-950" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:146:2:w4" cs="cs:kundera-smich:0:128:2:w2" cst="asi" />
-<item id="ex-806" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:127:1:w11" cs="cs:Topol-Kloktat_dehet:0:125:1:w7" cst="asi" />
-<item id="ex-818" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:512:1:w5" cst="asi" />
-<item id="ex-843" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1528:7:w5  en:Topol-Kloktat_dehet:0:1528:7:w3" cs="cs:Topol-Kloktat_dehet:0:1519:7:w1" cst="Asi" />
-<item id="ex-804" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:60:4:w6" cst="asi" />
-<item id="ex-968" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:1050:2:w4" cst="asi" />
-<item id="ex-817" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:379:2:w17" cs="cs:Topol-Kloktat_dehet:0:365:2:w14" cst="asi" />
-<item id="ex-970" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1242:1:w1" cs="cs:kundera-smich:0:1132:1:w6" cst="asi" />
-<item id="ex-840" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1399:2:w40" cs="cs:Topol-Kloktat_dehet:0:1394:1:w46" cst="asi" />
-<item id="ex-959" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:514:2:w2" cs="cs:kundera-smich:0:452:2:w2" cst="Asi" />
-<item id="ex-823" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:733:1:w35" cs="cs:Topol-Kloktat_dehet:0:710:1:w23" cst="asi" />
-<item id="ex-813" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:288:11:w12" cst="asi" />
-<item id="ex-972" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1492:2:w3" cs="cs:kundera-smich:0:1363:2:w4" cst="asi" />
-<item id="ex-956" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:306:2:w5" cs="cs:kundera-smich:0:268:2:w3" cst="asi" />
-<item id="ex-963" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1014:5:w2" cs="cs:kundera-smich:0:924:5:w6" cst="asi" />
-<item id="ex-973" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1512:1:w1" cs="cs:kundera-smich:0:1380:1:w5" cst="asi" />
-<item id="ex-857" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1694:1:w60" cst="asi" />
-<item id="ex-820" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:576:1:w16" cst="asi" />
-<item id="ex-955" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:247:5:w9" cst="asi" />
-<item id="ex-837" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1346:8:w4" cs="cs:Topol-Kloktat_dehet:0:1342:4:w3" cst="asi" />
-<item id="ex-961" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:691:1:w7" cst="asi" />
-<item id="ex-805" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:88:6:w17" cs="cs:Topol-Kloktat_dehet:0:87:5:w13" cst="asi" />
-<item id="ex-948" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:86:3:w2" cs="cs:kundera-smich:0:75:3:w6" cst="asi" />
-<item id="ex-808" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:244:4:w25" cst="asi" />
-<item id="ex-832" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1246:1:w52" cst="asi" />
-<item id="ex-859" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1742:6:w2" cst="asi" />
-<item id="ex-835" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1312:5:w5" cst="asi" />
-<item id="ex-849" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1609:2:w6" cs="cs:Topol-Kloktat_dehet:0:1599:2:w3" cst="asi" />
-<item id="ex-816" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:373:1:w25" cs="cs:Topol-Kloktat_dehet:0:359:9:w23" cst="asi" />
-<item id="ex-967" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1135:1:w21" cs="cs:kundera-smich:0:1035:1:w15" cst="asi" />
-<item id="ex-962" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:828:1:w7" cst="asi" />
-<item id="ex-851" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1618:1:w5" cst="asi" />
-<item id="ex-947" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:54:1:w4" cs="cs:kundera-smich:0:48:1:w9" cst="asi" />
-<item id="ex-811" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:278:1:w25" cst="asi" />
-<item id="ex-822" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:732:8:w14" cs="cs:Topol-Kloktat_dehet:0:709:8:w8" cst="asi" />
-<item id="ex-862" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1792:4:w8" cs="cs:Topol-Kloktat_dehet:0:1788:1:w33" cst="asi" />
-<item id="ex-966" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1129:1:w12" cs="cs:kundera-smich:0:1030:1:w31" cst="asi" />
-<item id="ex-855" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1670:3:w11" cs="cs:Topol-Kloktat_dehet:0:1658:1:w39" cst="asi" />
-<item id="ex-807" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:184:2:w4" cs="cs:Topol-Kloktat_dehet:0:179:1:w10" cst="asi" />
-<item id="ex-946" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:25:1:w6" cs="cs:kundera-smich:0:21:1:w1" cst="Asi" />
-<item id="ex-952" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:184:1:w14" cs="cs:kundera-smich:0:162:1:w20" cst="asi" />
-<item id="ex-828" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:987:5:w9" cst="asi" />
-<item id="ex-819" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:537:2:w4" cst="asi" />
-<item id="ex-965" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1114:4:w15" cs="cs:kundera-smich:0:1016:4:w13" cst="asi" />
-<item id="ex-954" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:177:4:w38" cst="asi" />
-<item id="ex-839" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1391:5:w5" cs="cs:Topol-Kloktat_dehet:0:1386:6:w6" cst="asi" />
-<item id="ex-856" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1672:8:w3" cs="cs:Topol-Kloktat_dehet:0:1660:3:w18" cst="asi" />
-<item id="ex-810" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:276:8:w8" cst="asi" />
-<item id="ex-958" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:431:7:w2" cst="asi" />
-<item id="ex-831" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1252:3:w22" cs="cs:Topol-Kloktat_dehet:0:1245:3:w2" cst="asi" />
-<item id="ex-815" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:354:4:w34" cst="asi" />
-<item id="ex-971" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1347:1:w22" cs="cs:kundera-smich:0:1225:1:w15" cst="asi" />
-<item id="ex-836" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1338:10:w15" cs="cs:Topol-Kloktat_dehet:0:1334:11:w13" cst="asi" />
-<item id="ex-852" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1653:1:w5" cs="cs:Topol-Kloktat_dehet:0:1641:1:w4" cst="asi" />
-<item id="ex-969" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:1071:3:w23" cst="asi" />
-<item id="ex-838" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1382:2:w1" cst="Asi" />
-<item id="ex-964" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1029:1:w5" cs="cs:kundera-smich:0:939:1:w3" cst="asi" />
-<item id="ex-953" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:200:1:w3" cs="cs:kundera-smich:0:176:1:w3" cst="asi" />
-<item id="ex-949" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:86:3:w19" cs="cs:kundera-smich:0:75:3:w19" cst="asi" />
-<item id="ex-812" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:288:8:w5" cst="asi" />
-<item id="ex-951" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:156:3:w13" cst="asi" />
-<item id="ex-860" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1754:1:w25" cst="asi" />
-<item id="ex-1096" cql="q-10" xml="kundera-smich" en="" cs="cs:kundera-smich:0:162:1:w10" cst="vskutku" />
-<item id="ex-1098" cql="q-11" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1541:2:w19" cs="cs:Topol-Kloktat_dehet:0:1532:1:w17" cst="podle" />
+<item id="ex-168" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1301:1:w20" cs="cs:Topol-Kloktat_dehet:0:1294:1:w11" cst="zřejmě" use="certain" commfuntype="decl" scope="sent" tfpos="neutral" sentpos="other" modalpersp="clear" certainty="medium" predlemma="líbit se" predtag="VpFS----R-NAI-- P7--4----------" predverbtag="VDA3SR ------" commfunsubtype="odhad" commfunnote="vyvození ze situace" pred="cs:Topol-Kloktat_dehet:0:1294:1:w15 cs:Topol-Kloktat_dehet:0:1294:1:w10" neg="1" evidence="cs:Topol-Kloktat_dehet:0:1294:1:w6" evidencetype="sensory" certaintynote="pravděpodobně"/>
+<item id="ex-224" cql="q-2" xml="kundera-smich" en="en:kundera-smich:0:648:5:w28" cs="cs:kundera-smich:0:571:5:w19" cst="zřejmě" use="certain" commfuntype="decl" commfunsubtype="vyvození" commfunnote="realita ve vztahu k původnímu předpokladu" scope="sent" pred="cs:kundera-smich:0:571:5:w18 cs:kundera-smich:0:571:5:w20" tfpos="neutral" sentpos="other" modalpersp="clear" clue="než předpokládala" certainty="medium" certaintynote="pravděpodobně" predlemma="být slabý" predtag="VpIP----R-AAI-- AAIP1----2A----" predverbtag="VDA3PR ------" evidence="cs:kundera-smich:0:571:5:w14 cs:kundera-smich:0:571:5:w15" evidencetype="inference"/>
+<item id="ex-225" cql="q-2" xml="kundera-smich" en="" cs="cs:kundera-smich:0:1202:5:w6" cst="zřejmě" use="evidence" commfuntype="decl" commfunsubtype="odhad" commfunnote="s následujícím zdůvodněním" scope="sent" pred="cs:kundera-smich:0:1202:5:w10 cs:kundera-smich:0:1202:5:w7" tfpos="neutral" sentpos="pseudofirst" modalpersp="clear" evidence="cs:kundera-smich:0:1202:5:w16 cs:kundera-smich:0:1202:5:w17 cs:kundera-smich:0:1202:5:w14 cs:kundera-smich:0:1202:5:w15 cs:kundera-smich:0:1202:5:w13" evidencetype="inference" predlemma="zdřímnout se" predtag="VpFS----R-AAP-1 P7--3----------" predverbtag="VDA3SR ------"/>
+<item id="ex-221" cql="q-2" xml="kundera-smich" en="en:kundera-smich:0:414:1:w3" cs="cs:kundera-smich:0:360:1:w3" cst="zřejmě" use="certain" commfuntype="decl" commfunsubtype="předpoklad" scope="sent" pred="cs:kundera-smich:0:360:1:w1" tfpos="neutral" sentpos="other" modalpersp="clear" certainty="medium" predlemma="být" predtag="VB-S---3P-AAI--" predverbtag="VDA3SP" certaintynote="asi"/>
+<item id="ex-167" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1253:7:w7" cs="cs:Topol-Kloktat_dehet:0:1246:1:w48" cst="zřejmě"/>
+<item id="ex-170" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1338:7:w11" cs="cs:Topol-Kloktat_dehet:0:1334:7:w7" cst="zřejmě"/>
+<item id="ex-223" cql="q-2" xml="kundera-smich" en="en:kundera-smich:0:596:11:w1" cs="cs:kundera-smich:0:523:10:w1" cst="Zřejmě"/>
+<item id="ex-226" cql="q-2" xml="kundera-smich" en="en:kundera-smich:0:1368:2:w15" cs="cs:kundera-smich:0:1247:2:w13" cst="zřejmě"/>
+<item id="ex-169" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1319:2:w10" cs="cs:Topol-Kloktat_dehet:0:1315:2:w6" cst="zřejmě"/>
+<item id="ex-166" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1249:1:w29" cs="cs:Topol-Kloktat_dehet:0:1242:1:w20" cst="zřejmě"/>
+<item id="ex-165" cql="q-2" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1163:3:w4" cs="cs:Topol-Kloktat_dehet:0:1155:3:w3" cst="zřejmě"/>
+<item id="ex-222" cql="q-2" xml="kundera-smich" en="en:kundera-smich:0:455:2:w2" cs="cs:kundera-smich:0:398:2:w1" cst="Zřejmě"/>
+<item id="ex-488" cql="q-4" xml="kundera-smich" en="" cs="cs:kundera-smich:0:931:2:w1" cst="Pravděpodobně"/>
+<item id="ex-487" cql="q-4" xml="kundera-smich" en="en:kundera-smich:0:842:2:w16" cs="cs:kundera-smich:0:752:2:w12" cst="pravděpodobně"/>
+<item id="ex-489" cql="q-4" xml="kundera-smich" en="en:kundera-smich:0:1395:2:w10" cs="cs:kundera-smich:0:1272:2:w10" cst="pravděpodobně"/>
+<item id="ex-490" cql="q-4" xml="kundera-smich" en="en:kundera-smich:0:1414:3:w6" cs="cs:kundera-smich:0:1290:3:w8" cst="pravděpodobně"/>
+<item id="ex-528" cql="q-5" xml="kundera-smich" en="en:kundera-smich:0:1373:5:w13  en:kundera-smich:0:1373:5:w14" cs="cs:kundera-smich:0:1252:5:w13" cst="nepochybně"/>
+<item id="ex-529" cql="q-5" xml="kundera-smich" en="en:kundera-smich:0:1462:3:w26" cs="cs:kundera-smich:0:1335:3:w25" cst="nepochybně"/>
+<item id="ex-526" cql="q-5" xml="kundera-smich" en="en:kundera-smich:0:244:1:w9" cs="cs:kundera-smich:0:215:1:w10" cst="nepochybně"/>
+<item id="ex-527" cql="q-5" xml="kundera-smich" en="en:kundera-smich:0:1345:1:w16" cs="cs:kundera-smich:0:1222:1:w11" cst="nepochybně"/>
+<item id="ex-615" cql="q-6" xml="kundera-smich" en="en:kundera-smich:0:1521:2:w15" cs="cs:kundera-smich:0:1388:2:w13" cst="patrně"/>
+<item id="ex-692" cql="q-7" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:288:2:w2" cst="jistě"/>
+<item id="ex-731" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:596:8:w24" cs="cs:kundera-smich:0:523:7:w28" cst="jistě"/>
+<item id="ex-693" cql="q-7" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:827:1:w4" cs="cs:Topol-Kloktat_dehet:0:801:1:w2" cst="jistě"/>
+<item id="ex-735" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:853:4:w3" cs="cs:kundera-smich:0:761:4:w3" cst="jistě"/>
+<item id="ex-696" cql="q-7" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1751:5:w3  en:Topol-Kloktat_dehet:0:1751:5:w4" cs="cs:Topol-Kloktat_dehet:0:1750:4:w3" cst="jistě"/>
+<item id="ex-727" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:289:2:w2" cs="cs:kundera-smich:0:252:2:w5" cst="jistě"/>
+<item id="ex-726" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:268:1:w28" cs="cs:kundera-smich:0:233:1:w29" cst="jistě"/>
+<item id="ex-736" cql="q-7" xml="kundera-smich" en="" cs="cs:kundera-smich:0:1017:6:w2" cst="jistě" use="certain" commfuntype="decl" scope="sent" tfpos="neutral" sentpos="other" modalpersp="clear" certainty="medium" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-780" cql="q-8" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1152:6:w1" cst="Jistě"/>
+<item id="ex-778" cql="q-8" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:443:1:w4" cs="cs:Topol-Kloktat_dehet:0:429:1:w1" cst="Jistě"/>
+<item id="ex-730" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:562:2:w14" cs="cs:kundera-smich:0:493:3:w13" cst="jistě"/>
+<item id="ex-694" cql="q-7" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1088:1:w11" cs="cs:Topol-Kloktat_dehet:0:1069:1:w10" cst="jistě"/>
+<item id="ex-695" cql="q-7" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1270:1:w24" cs="cs:Topol-Kloktat_dehet:0:1262:1:w8" cst="jistě"/>
+<item id="ex-734" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:844:1:w20" cs="cs:kundera-smich:0:754:1:w25" cst="jistě"/>
+<item id="ex-737" cql="q-7" xml="kundera-smich" en="" cs="cs:kundera-smich:0:1215:3:w10" cst="jistě"/>
+<item id="ex-728" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:290:3:w1" cs="cs:kundera-smich:0:253:2:w9" cst="jistě"/>
+<item id="ex-779" cql="q-8" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:492:11:w3" cs="cs:Topol-Kloktat_dehet:0:480:11:w1" cst="Jistě"/>
+<item id="ex-777" cql="q-8" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:422:2:w68" cs="cs:Topol-Kloktat_dehet:0:408:3:w1" cst="Jistě"/>
+<item id="ex-739" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:1386:2:w9" cs="cs:kundera-smich:0:1265:2:w9" cst="jistě"/>
+<item id="ex-738" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:1342:2:w32" cs="cs:kundera-smich:0:1220:3:w29" cst="jistě"/>
+<item id="ex-792" cql="q-8" xml="kundera-smich" en="en:kundera-smich:0:898:4:w1" cs="cs:kundera-smich:0:807:4:w1" cst="Jistě"/>
+<item id="ex-729" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:385:1:w2" cs="cs:kundera-smich:0:334:1:w2" cst="jistě"/>
+<item id="ex-732" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:645:9:w1" cs="cs:kundera-smich:0:568:8:w3" cst="jistě"/>
+<item id="ex-733" cql="q-7" xml="kundera-smich" en="en:kundera-smich:0:688:3:w12" cs="cs:kundera-smich:0:606:3:w14" cst="jistě"/>
+<item id="ex-844" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1550:6:w24" cst="asi"/>
+<item id="ex-864" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1822:4:w20" cs="cs:Topol-Kloktat_dehet:0:1818:2:w28" cst="asi" use="certain" commfuntype="decl" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1818:2:w32" tfpos="neutral" sentpos="other" modalpersp="clear" evidencetype="inference" certainty="medium" predlemma="ztratit" predtag="VpMS----R-AAP--" predverbtag="VDA3SR" commfunsubtype="zdůvodnění" commfunnote="vysvětlení pro sebe" clue="&quot;snad&quot; v koordinovaném spojení" certaintynote="odhad na základě nastalé situace, hledání důvodu"/>
+<item id="ex-827" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:934:2:w10" cst="asi" use="certain" commfuntype="decl" commfunsubtype="vysvětlení" commfunnote="popis situace" scope="sent" pred="cs:Topol-Kloktat_dehet:0:934:2:w11" tfpos="neutral" sentpos="other" modalpersp="clear" clue="gradace v následující větě: Musel jsem se pomást" evidence="cs:Topol-Kloktat_dehet:0:934:2:w15" evidencetype="inference" certainty="medium" certaintynote="nejspíš" predlemma="pomátnout" predtag="VpIS----R-AAP-6" predverbtag="VDA3SR"/>
+<item id="ex-824" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:886:6:w2" cs="cs:Topol-Kloktat_dehet:0:860:6:w3" cst="asi" use="certain" commfuntype="decl" commfunsubtype="vysvětlení" scope="sent" pred="cs:Topol-Kloktat_dehet:0:860:6:w1" tfpos="neutral" sentpos="other" modalpersp="clear" evidence="Je mi špatně." evidencetype="sensory,inference" certainty="medium" certaintynote="pravděpodobně" predlemma="být" predtag="VB-S---3P-AAI--" predverbtag="VDA3SP"/>
+<item id="ex-853" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1655:2:w3" cs="cs:Topol-Kloktat_dehet:0:1643:1:w10" cst="asi" use="certain" commfuntype="decl" commfunsubtype="odhad" commfunnote="vysvětlení" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1643:1:w11" tfpos="neutral" sentpos="other" modalpersp="clear" evidence="cs:Topol-Kloktat_dehet:0:1643:1:w4 cs:Topol-Kloktat_dehet:0:1643:1:w5 cs:Topol-Kloktat_dehet:0:1643:1:w7" evidencetype="sensory" certainty="medium" certaintynote="pravděpodobně" predlemma="běžet" predtag="VpMP----R-AAI--" predverbtag="VDA3PR"/>
+<item id="ex-847" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1597:1:w30" cs="cs:Topol-Kloktat_dehet:0:1588:1:w18" cst="asi" use="certain" commfuntype="decl" commfunsubtype="vysvětlení" commfunnote="zexplicitnění o několik vět výše změněného: Povídám , že jsem si všiml , že vesnice jsou opuštěný a vůbec divný ." scope="sent" pred="cs:Topol-Kloktat_dehet:0:1588:1:w15 cs:Topol-Kloktat_dehet:0:1588:1:w19" tfpos="neutral" sentpos="other" modalpersp="clear" evidence="Většina obyvatelstva je již evakuována , povídá Peter , já nevim , co to je , ale zní to blbě (výše v textu)" evidencetype="hearsay,inference" certainty="medium" certaintynote="vyšší pravděpodobnost, nejspíš, poznámka: vztahuju i k ženský utekly a zbytek byl evakuovanej..." predlemma="být pobitý" predtag="VpMP----R-AAI-- AAMS1----1A----" predverbtag="VDA3PR --p---"/>
+<item id="ex-830" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1218:1:w2" cs="cs:Topol-Kloktat_dehet:0:1211:1:w1" cst="Asi" use="certain" commfuntype="decl" commfunsubtype="předpoklad" commfunnote="vysvětlení" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1211:1:w5 cs:Topol-Kloktat_dehet:0:1211:1:w2" tfpos="neutral" sentpos="first" modalpersp="clear" clue="protože" evidence="cs:Topol-Kloktat_dehet:0:1211:1:w10 cs:Topol-Kloktat_dehet:0:1211:1:w11" evidencetype="sensory,inference" certainty="medium" certaintynote="pravděpodobnost odhadovaná ze změny" predlemma="usnout být" predtag="VpMS----R-AAP-- VB-S---1P-AAI--" predverbtag="VDA1SR A-----"/>
+<item id="ex-821" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:726:8:w3" cs="cs:Topol-Kloktat_dehet:0:708:9:w1" cst="Asi" use="other" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-861" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1762:3:w1" cst="Asi" use="certain" commfuntype="decl" commfunsubtype="vysvětleni" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1762:3:w3" tfpos="neutral" sentpos="first" modalpersp="clear" evidence="Pak práskaly další salvy. (dříve v textu)" evidencetype="sensory" certainty="medium" certaintynote="pravděpodobně" predlemma="pálit" predtag="VpMP----R-AAI--" predverbtag="VDA3PR"/>
+<item id="ex-834" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1293:3:w16" cs="cs:Topol-Kloktat_dehet:0:1286:3:w12" cst="asi" use="certain" commfuntype="decl" commfunsubtype="úvaha" commfunnote="co se očekává, plán do budoucna" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1286:3:w17 cs:Topol-Kloktat_dehet:0:1286:3:w13 cs:Topol-Kloktat_dehet:0:1286:3:w14" tfpos="neutral" sentpos="other" modalpersp="clear" clue="měl" certainty="medium" certaintynote="nejspíš, napadlo mě" predlemma="najít mít zdrhnout" predtag="Vf--------A-P-- VpMS----R-AAI-- Vf--------A-P--" predverbtag="VFA--- VCA1SP VFA---"/>
+<item id="ex-842" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1464:2:w22" cs="cs:Topol-Kloktat_dehet:0:1457:7:w67" cst="asi" use="certain" commfuntype="decl" commfunsubtype="vysvětlení" commfunnote="&quot;jediné možné vysvětlení&quot; nepravděpodobné situace, dotvrzení vlastního názoru (kombinace s museli); protože" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1457:7:w65 cs:Topol-Kloktat_dehet:0:1457:7:w68" tfpos="neutral" sentpos="other" modalpersp="clear" clue="museli, či co" evidence="cs:Topol-Kloktat_dehet:0:1457:7:w80" evidencetype="inference" certainty="medium" certaintynote="kombinace s museli - &quot;jinak si to nedovedu vysvětlit&quot;, střet s očekávanou realitou - subjektivní vysoká" predlemma="muset dovézt" predtag="VpMP----R-AAI-- Vf--------A-P--" predverbtag="VDA3PR VFA---"/>
+<item id="ex-829" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1203:6:w12" cs="cs:Topol-Kloktat_dehet:0:1196:2:w8" cst="asi" use="certain" commfuntype="decl" scope="sent" tfpos="neutral" sentpos="first" modalpersp="clear" certainty="medium" predlemma="dávat pozor" predtag="VpMS----R-AAI-- NNIS4-----A----" predverbtag="VDA3SR ------" commfunsubtype="tipování" commfunnote="odhadování pozorované činnosti, vysvětlení" pred="cs:Topol-Kloktat_dehet:0:1196:2:w9 cs:Topol-Kloktat_dehet:0:1196:2:w10" evidence="cs:Topol-Kloktat_dehet:0:1196:2:w3 cs:Topol-Kloktat_dehet:0:1196:2:w1" evidencetype="sensory" certaintynote="pravděpodobně, připojovací funkce - pocitově malé &quot;tj.&quot;"/>
+<item id="ex-858" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1739:2:w3" cs="cs:Topol-Kloktat_dehet:0:1737:2:w2" cst="asi" use="certain" commfuntype="decl" commfunsubtype="předpoklad" scope="ellipsis" tfpos="neutral" sentpos="other" modalpersp="clear" certainty="medium" certaintynote="pravděpodobně" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-950" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:146:2:w4" cs="cs:kundera-smich:0:128:2:w2" cst="asi" use="certain" commfuntype="decl" commfunsubtype="předpoklad" commfunnote="odhad do budoucna" scope="sent" pred="cs:kundera-smich:0:128:2:w4 cs:kundera-smich:0:128:2:w3 cs:kundera-smich:0:128:2:w5" tfpos="neutral" sentpos="pseudofirst" neg="1" modalpersp="clear" evidence="předchozí kontext" evidencetype="inference" certainty="medium" predlemma="moci být odstranit" predtag="Vf--------A-I-- VB-S---3F-NAI-- Vf--------A-P--" predverbtag="VDA3SF A----- VFA---"/>
+<item id="ex-806" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:127:1:w11" cs="cs:Topol-Kloktat_dehet:0:125:1:w7" cst="asi" use="certain" commfuntype="decl" commfunsubtype="zdůvodnění" commfunnote="snaha o vysvětlení záměru, pokusu" scope="sent" pred="cs:Topol-Kloktat_dehet:0:125:1:w8 cs:Topol-Kloktat_dehet:0:125:1:w10" tfpos="neutral" sentpos="other" modalpersp="clear" evidence="cs:Topol-Kloktat_dehet:0:125:1:w3 cs:Topol-Kloktat_dehet:0:125:1:w4 cs:Topol-Kloktat_dehet:0:125:1:w2" evidencetype="sensory,inference" certainty="medium" certaintynote="pozn. vysvětlující vsuvka" predlemma="aby|být slyšet" predtag="J,-------------|Vc----------I-- VpMS----R-AAI--" predverbtag="------|A----- VCA3SP"/>
+<item id="ex-818" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:512:1:w5" cst="asi" use="certain" commfuntype="decl" commfunsubtype="odůvodnění" commfunnote="protože" scope="sent" pred="cs:Topol-Kloktat_dehet:0:512:1:w4 cs:Topol-Kloktat_dehet:0:512:1:w1" tfpos="emphasis" sentpos="other" modalpersp="clear" evidence="cs:Topol-Kloktat_dehet:0:512:1:w11" evidencetype="sensory,inference" certainty="medium" certaintynote="nejspíš, hodně ke zřejmě; pozn. přidávám do predikátu &quot;já&quot;" predlemma="koukat já" predtag="VpMS----R-AAI-- PP-S1--1-------" predverbtag="VDA1SR ------"/>
+<item id="ex-843" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1528:7:w5  en:Topol-Kloktat_dehet:0:1528:7:w3" cs="cs:Topol-Kloktat_dehet:0:1519:7:w1" cst="Asi" use="certain" commfuntype="decl" commfunsubtype="předpoklad" commfunnote="vysvětlení zahlédnutého" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1519:7:w3" tfpos="neutral" sentpos="first" modalpersp="clear" evidence="nezahlíd (v předchozím)" evidencetype="sensory" certainty="medium" certaintynote="pravděpodobně" predlemma="vyplácat" predtag="VpMP----R-AAP--" predverbtag="VDA3PR"/>
+<item id="ex-804" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:60:4:w6" cst="asi" use="other" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-968" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:1050:2:w4" cst="asi" use="other" commfuntype="decl" scope="sent" pred="cs:kundera-smich:0:1050:2:w7" tfpos="neutral" sentpos="other" modalpersp="clear" certainty="medium" predlemma="hrát" predtag="VpNS----R-AAI--" predverbtag="VDA3SR"/>
+<item id="ex-817" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:379:2:w17" cs="cs:Topol-Kloktat_dehet:0:365:2:w14" cst="asi" use="certain" commfuntype="decl" scope="member" tfpos="neutral" sentpos="first" modalpersp="clear" certainty="medium" predlemma="" predtag="" predverbtag="" commfunsubtype="vysvětlení" evidence="cs:Topol-Kloktat_dehet:0:365:2:w11 cs:Topol-Kloktat_dehet:0:365:2:w12" evidencetype="sensory,inference" certaintynote="nejspíš"/>
+<item id="ex-970" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1242:1:w1" cs="cs:kundera-smich:0:1132:1:w6" cst="asi" use="other" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-840" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1399:2:w40" cs="cs:Topol-Kloktat_dehet:0:1394:1:w46" cst="asi" use="certain" commfuntype="decl" commfunsubtype="vysvětlení" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1394:1:w49" tfpos="neutral" sentpos="other" modalpersp="clear" clue="teda" certainty="medium" certaintynote="pravděpodobně, tedy jako modifikátor pro vysvětlení" predlemma="vyčuhovat" predtag="VpFP----R-AAI--" predverbtag="VDA3PR"/>
+<item id="ex-959" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:514:2:w2" cs="cs:kundera-smich:0:452:2:w2" cst="Asi" use="certain" commfuntype="decl" commfunsubtype="úvaha" commfunnote="rozhodnutí, předsevztetí, nápad" scope="sent" pred="cs:kundera-smich:0:452:2:w3 cs:kundera-smich:0:452:2:w7 cs:kundera-smich:0:452:2:w4 cs:kundera-smich:0:452:2:w9" tfpos="emphasis" sentpos="first" modalpersp="clear" clue="zamyšleně" certainty="medium" predlemma="být mít se přečíst" predtag="Vc-S---1----I-- VpFS----R-AAI-- P7--3---------- Vf--------A-P--" predverbtag="A----- VCA1SP ------ VFA---"/>
+<item id="ex-823" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:733:1:w35" cs="cs:Topol-Kloktat_dehet:0:710:1:w23" cst="asi" use="certain" commfuntype="decl" commfunsubtype="vysvětlení" scope="sent" pred="cs:Topol-Kloktat_dehet:0:710:1:w22 cs:Topol-Kloktat_dehet:0:710:1:w24" tfpos="neutral" sentpos="other" modalpersp="clear" clue="protože" evidence="cs:Topol-Kloktat_dehet:0:710:1:w15 cs:Topol-Kloktat_dehet:0:710:1:w16 cs:Topol-Kloktat_dehet:0:710:1:w10" evidencetype="sensory" certainty="medium" certaintynote="skoro až plná jistota vzhledem k evidenci" predlemma="být hrozný" predtag="VB-S---3P-AAI-- AAFS1----1A----" predverbtag="VDA3SP ------"/>
+<item id="ex-813" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:288:11:w12" cst="asi" use="certain" commfuntype="decl" commfunsubtype="domněnka" commfunnote="tvrzení - předpoklad něčího pocitu" scope="member" tfpos="neutral" sentpos="other" modalpersp="clear" clue="máš pravdu, opakování zástupné &quot;jo&quot;" certainty="medium" certaintynote="vysoká pravděpodobnost, gradace opakováním; v dalším kontextu další gradace &quot;určitě jo&quot;" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-972" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1492:2:w3" cs="cs:kundera-smich:0:1363:2:w4" cst="asi" use="other" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-956" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:306:2:w5" cs="cs:kundera-smich:0:268:2:w3" cst="asi" use="other" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-963" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1014:5:w2" cs="cs:kundera-smich:0:924:5:w6" cst="asi" use="certain" commfuntype="decl" commfunsubtype="předpoklad" scope="sent" pred="cs:kundera-smich:0:924:5:w1 cs:kundera-smich:0:924:5:w2" tfpos="neutral" sentpos="other" modalpersp="unclear" certainty="medium" certaintynote="nejspíš; trochu nejasná atribuce - není jasné, komu to přijde &quot;asi zbytečné&quot;" predlemma="bránit se" predtag="VpFS----R-AAI-- P7--4----------" predverbtag="VDA3SR ------"/>
+<item id="ex-973" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1512:1:w1" cs="cs:kundera-smich:0:1380:1:w5" cst="asi" use="other" commfuntype="decl" scope="sent" pred="cs:kundera-smich:0:1380:1:w4" tfpos="neutral" sentpos="other" modalpersp="clear" certainty="medium" predlemma="být" predtag="VpNS----R-AAI--" predverbtag="VDA3SR"/>
+<item id="ex-857" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1694:1:w60" cst="asi" use="certain" commfuntype="decl" scope="member" tfpos="neutral" sentpos="other" modalpersp="clear" certainty="medium" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-820" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:576:1:w16" cst="asi" use="other" commfuntype="decl" scope="sent" tfpos="neutral" sentpos="other" modalpersp="clear" certainty="medium" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-955" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:247:5:w9" cst="asi" use="certain" commfuntype="decl" commfunsubtype="předpoklad" scope="sent" pred="cs:kundera-smich:0:247:5:w10 cs:kundera-smich:0:247:5:w7" tfpos="neutral" sentpos="other" modalpersp="clear" evidence=" Slyšela dva ženské hlasy a nové otvírání dveří. Pak smích a pouštění vody. " evidencetype="sensory" certainty="medium" predlemma="chystat se" predtag="VB-P---3P-AAI-- P7--4----------" predverbtag="VDA3PP ------"/>
+<item id="ex-837" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1346:8:w4" cs="cs:Topol-Kloktat_dehet:0:1342:4:w3" cst="asi" use="certain" commfuntype="decl" commfunsubtype="odhad" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1342:4:w4" tfpos="neutral" sentpos="other" modalpersp="clear" certainty="medium" predlemma="ponechat" predtag="VpMS----R-AAP--" predverbtag="VDA3SR"/>
+<item id="ex-961" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:691:1:w7" cst="asi" use="other" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-805" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:88:6:w17" cs="cs:Topol-Kloktat_dehet:0:87:5:w13" cst="asi" use="certain" commfuntype="decl" commfunsubtype="vysvětlení" scope="sent" pred="cs:Topol-Kloktat_dehet:0:87:5:w14" tfpos="neutral" sentpos="other" modalpersp="clear" evidence="cs:Topol-Kloktat_dehet:0:87:5:w3" evidencetype="sensory" certainty="medium" predlemma="dlít" predtag="VpFP----R-AAI--" predverbtag="VDA3PR"/>
+<item id="ex-948" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:86:3:w2" cs="cs:kundera-smich:0:75:3:w6" cst="asi" use="other" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-808" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:244:4:w25" cst="asi" use="certain" commfuntype="decl" commfunsubtype="vysvětlení" commfunnote="odhad příčiny" scope="sent" pred="cs:Topol-Kloktat_dehet:0:244:4:w27 cs:Topol-Kloktat_dehet:0:244:4:w32" tfpos="neutral" sentpos="pseudofirst" modalpersp="clear" evidence="cs:Topol-Kloktat_dehet:0:244:4:w22 cs:Topol-Kloktat_dehet:0:244:4:w13 cs:Topol-Kloktat_dehet:0:244:4:w14" evidencetype="sensory" certainty="medium" certaintynote="pravděpodobnost podle podobné zkušenosti a evidence; negace až u druhého prediktátu" predlemma="strčit umět" predtag="VpMP----R-AAP-- VB-P---3P-NAI-6" predverbtag="VDA3PR VDA3PP"/>
+<item id="ex-832" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1246:1:w52" cst="asi" use="certain" commfuntype="decl" commfunsubtype="dotvrzení" scope="ellipsis" tfpos="neutral" sentpos="other" modalpersp="clear" clue="zřejmě" evidence="cs:Topol-Kloktat_dehet:0:1246:1:w40 cs:Topol-Kloktat_dehet:0:1246:1:w43" certainty="medium" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-859" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1742:6:w2" cst="asi" use="certain" commfuntype="decl" commfunsubtype="odhad" commfunnote="popis vývoje myšlenek, rozhodnutí, jeho přehodnocování" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1742:6:w3" tfpos="neutral" sentpos="other" modalpersp="clear" evidence="jestli je pan Cimbura putovník , stejně ho zabít nemůžem" evidencetype="inference" certainty="medium" certaintynote="pravděpodobně; měli bychom, nemůžeme, to asi nejde..." predlemma="jít" predtag="VB-S---3P-NAI--" predverbtag="VDA3SP"/>
+<item id="ex-835" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1312:5:w5" cst="asi" use="certain" commfuntype="decl" commfunsubtype="vysvětlení" commfunnote="introspekce, úvaha" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1312:5:w6 cs:Topol-Kloktat_dehet:0:1312:5:w7 cs:Topol-Kloktat_dehet:0:1312:5:w4" tfpos="neutral" sentpos="other" neg="1" modalpersp="clear" evidence="Nedokázal jsem se k jejich veselému klubku přidat" evidencetype="inference" certainty="medium" certaintynote="(nevím, jestli evidence...)" predlemma="přestat myslet být" predtag="VpMS----R-NAP-- Vf--------A-I-- VB-S---1P-AAI--" predverbtag="VDA1SR VFA--- A-----"/>
+<item id="ex-849" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1609:2:w6" cs="cs:Topol-Kloktat_dehet:0:1599:2:w3" cst="asi" use="other" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-816" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:373:1:w25" cs="cs:Topol-Kloktat_dehet:0:359:9:w23" cst="asi" use="certain" commfuntype="decl" commfunsubtype="vysvětlení" scope="sent" pred="cs:Topol-Kloktat_dehet:0:359:9:w27" tfpos="neutral" sentpos="first" modalpersp="clear" evidence="cs:Topol-Kloktat_dehet:0:359:9:w19 cs:Topol-Kloktat_dehet:0:359:9:w20 cs:Topol-Kloktat_dehet:0:359:9:w21" certainty="medium" certaintynote="vsuvka" predlemma="poskakovat" predtag="VpMS----R-AAI--" predverbtag="VDA3SR"/>
+<item id="ex-967" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1135:1:w21" cs="cs:kundera-smich:0:1035:1:w15" cst="asi" use="other" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-962" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:828:1:w7" cst="asi" use="certain" commfuntype="decl" commfunsubtype="předpoklad" commfunnote="předpokládaný vývoj vs. realita - &quot;ale&quot;" scope="sent" pred="cs:kundera-smich:0:828:1:w6 cs:kundera-smich:0:828:1:w8" tfpos="neutral" sentpos="other" neg="1" modalpersp="clear" certainty="medium" certaintynote="pravděpodobně" predlemma="být pokračovat" predtag="Vc----------I-- VpMS----R-NAI--" predverbtag="A----- VCA3SP"/>
+<item id="ex-851" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1618:1:w5" cst="asi" use="certain" commfuntype="decl" commfunsubtype="odhad" commfunnote="popis situace" scope="sent" pred="cs:Topol-Kloktat_dehet:0:1618:1:w6" tfpos="neutral" sentpos="other" modalpersp="clear" certainty="medium" certaintynote="pravděpodobně" predlemma="pokácet" predtag="VpMS----R-AAP--" predverbtag="VDA3SR"/>
+<item id="ex-947" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:54:1:w4" cs="cs:kundera-smich:0:48:1:w9" cst="asi" use="certain" commfuntype="decl" commfunsubtype="úvaha" commfunnote="litování, uvědomění si chyby" scope="sent" pred="cs:kundera-smich:0:48:1:w8 cs:kundera-smich:0:48:1:w12" tfpos="neutral" sentpos="other" modalpersp="clear" clue="měl, přece jen, napadlo ho" evidence="aby ho mohl dále sledovat (+ několik vět před)" evidencetype="inference" certainty="medium" predlemma="mít odvést" predtag="VpMS----R-AAI-- Vf--------A-P--" predverbtag="VDA3SR VFA---"/>
+<item id="ex-811" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:278:1:w25" cst="asi"/>
+<item id="ex-822" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:732:8:w14" cs="cs:Topol-Kloktat_dehet:0:709:8:w8" cst="asi"/>
+<item id="ex-862" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1792:4:w8" cs="cs:Topol-Kloktat_dehet:0:1788:1:w33" cst="asi"/>
+<item id="ex-966" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1129:1:w12" cs="cs:kundera-smich:0:1030:1:w31" cst="asi"/>
+<item id="ex-855" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1670:3:w11" cs="cs:Topol-Kloktat_dehet:0:1658:1:w39" cst="asi"/>
+<item id="ex-807" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:184:2:w4" cs="cs:Topol-Kloktat_dehet:0:179:1:w10" cst="asi"/>
+<item id="ex-946" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:25:1:w6" cs="cs:kundera-smich:0:21:1:w1" cst="Asi"/>
+<item id="ex-952" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:184:1:w14" cs="cs:kundera-smich:0:162:1:w20" cst="asi"/>
+<item id="ex-828" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:987:5:w9" cst="asi"/>
+<item id="ex-819" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:537:2:w4" cst="asi"/>
+<item id="ex-965" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1114:4:w15" cs="cs:kundera-smich:0:1016:4:w13" cst="asi"/>
+<item id="ex-954" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:177:4:w38" cst="asi"/>
+<item id="ex-839" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1391:5:w5" cs="cs:Topol-Kloktat_dehet:0:1386:6:w6" cst="asi"/>
+<item id="ex-856" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1672:8:w3" cs="cs:Topol-Kloktat_dehet:0:1660:3:w18" cst="asi"/>
+<item id="ex-810" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:276:8:w8" cst="asi"/>
+<item id="ex-958" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:431:7:w2" cst="asi"/>
+<item id="ex-831" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1252:3:w22" cs="cs:Topol-Kloktat_dehet:0:1245:3:w2" cst="asi"/>
+<item id="ex-815" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:354:4:w34" cst="asi"/>
+<item id="ex-971" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1347:1:w22" cs="cs:kundera-smich:0:1225:1:w15" cst="asi"/>
+<item id="ex-836" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1338:10:w15" cs="cs:Topol-Kloktat_dehet:0:1334:11:w13" cst="asi"/>
+<item id="ex-852" cql="q-9" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1653:1:w5" cs="cs:Topol-Kloktat_dehet:0:1641:1:w4" cst="asi"/>
+<item id="ex-969" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:1071:3:w23" cst="asi"/>
+<item id="ex-838" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1382:2:w1" cst="Asi"/>
+<item id="ex-964" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:1029:1:w5" cs="cs:kundera-smich:0:939:1:w3" cst="asi"/>
+<item id="ex-953" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:200:1:w3" cs="cs:kundera-smich:0:176:1:w3" cst="asi"/>
+<item id="ex-949" cql="q-9" xml="kundera-smich" en="en:kundera-smich:0:86:3:w19" cs="cs:kundera-smich:0:75:3:w19" cst="asi"/>
+<item id="ex-812" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:288:8:w5" cst="asi"/>
+<item id="ex-951" cql="q-9" xml="kundera-smich" en="" cs="cs:kundera-smich:0:156:3:w13" cst="asi"/>
+<item id="ex-860" cql="q-9" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1754:1:w25" cst="asi"/>
+<item id="ex-1096" cql="q-10" xml="kundera-smich" en="" cs="cs:kundera-smich:0:162:1:w10" cst="vskutku" use="certain" commfuntype="decl" commfunsubtype="zvážení pravdivosti" commfunnote="v podmínkovém spojení, uvedení domněnky, pochybnosti" scope="sent" pred="cs:kundera-smich:0:162:1:w7" tfpos="neutral" sentpos="other" modalpersp="clear" clue="vztah k &quot;asi&quot; v následující části, je-li" certainty="full" certaintynote="oslabenost podmínkovou modalitou" predlemma="být" predtag="VB-S---3P-AAI--" predverbtag="VDA3SP"/>
+<item id="ex-1098" cql="q-11" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1541:2:w19" cs="cs:Topol-Kloktat_dehet:0:1532:1:w17" cst="podle" use="other" predlemma="" predtag="" predverbtag=""/>
 </examples>
