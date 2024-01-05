@@ -4,11 +4,11 @@ SHELL=/bin/bash
 
 ############################################# PREPROCESSING FOR TEITOK ###############################################
 
-convert-% : teitok/ic16core_csen/%-en.xml teitok/ic16core_csen/%-cs.xml
+convert-% : teitok/01.csen_data/%-en.xml teitok/01.csen_data/%-cs.xml
 	@echo "$* converted."
-teitok/ic16core_csen/%-en.xml : data/ic16core_csen/%.en-00.tag.xml data/ic16core_csen/%.cs-00.en-00.alignment.xml
+teitok/01.csen_data/%-en.xml : data/ic16core_csen/%.en-00.tag.xml data/ic16core_csen/%.cs-00.en-00.alignment.xml
 	cat $(word 1,$^) | python scripts/ic2teitok.py --salign-file $(word 2,$^) --align-ord 0 | sed 's/ xmlns="[^"]*"//g' > $@
-teitok/ic16core_csen/%-cs.xml : data/ic16core_csen/%.cs-00.tag.xml data/ic16core_csen/%.cs-00.en-00.alignment.xml
+teitok/01.csen_data/%-cs.xml : data/ic16core_csen/%.cs-00.tag.xml data/ic16core_csen/%.cs-00.en-00.alignment.xml
 	cat $(word 1,$^) | python scripts/ic2teitok.py --salign-file $(word 2,$^) --align-ord 1 | sed 's/ xmlns="[^"]*"//g' > $@
 
 
