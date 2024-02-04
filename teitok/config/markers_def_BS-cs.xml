@@ -94,5 +94,7 @@
         <option value="inference" display="inference"/>
     </interp>
 
+    <interp key="cssent" display="Česká věta"/>
+
     <interp key="comment" display="Komentář"/>
 </interpGrp>
