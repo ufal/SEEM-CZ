@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interpGrp id="markers" display="Epistemic and Evidential Markers" type="alignann">
+	<files>
+		<item key="src" type="Source" extention="cs" name="Czech"/>
+		<item key="tgt" type="Target" extention="en" name="English"/>
+	</files>
+    
+    <!-- attributes already automatically filled in by action=makeex -->
+    <interp key="cql" display="CQL dotaz" type="noedit"/>
+    <interp key="xml" display="ID dokumentu" type="noedit"/>
+    <interp key="cs" display="Výraz v češtině (ID)" type="idrefs" nolist="1" file="src"/>
+    <interp key="cst" display="Výraz v češtině (formy)" type="lookup" ref="cs" fld="form"/>
+    <interp key="en" display="Výraz v angličtině (ID)" type="idrefs" nolist="1" file="tgt"/>
+
+    <!-- attributes to be filled by manual annotation -->
+    <interp key="dictexample" display="Příklad do slovníku" type="select" default="0">
+        <option value="0" display="ne"/>
+        <option value="1" display="ano"/>
+    </interp>
+
+    <interp key="use" display="Užití" type="select" default="certain">
+        <option value="certain" display="jistotní"/>
+        <option value="evidence" display="evidenciální"/>
+        <option value="confirm" display="dotvrzovací"/>
+        <option value="answer" display="odpověďové"/>
+        <option value="other" display="jiné"/>
+        <option value="content" display="plnovýznamové"/>
+    </interp>
+    
+    <interp key="certainty" display="Míra jistoty" disabledif="use=evidence|use=answer|use=other|use=content" type="select" default="medium">
+        <option value="hesitate" display="pochybnost"/>
+        <option value="medium" display="střední"/>
+        <option value="full" display="plná"/>
+    </interp>
+    <interp key="certaintynote" display="Poznámka (míra jistoty)" disabledif="use=evidence|use=answer|use=other|use=content"/>
+    
+    <interp key="commfuntype" display="Typ komunikační funkce" disabledif="use=content" type="select" default="decl">
+        <option value="decl" display="sdělovací"/>
+        <option value="direct" display="direktivní"/>
+        <option value="interr" display="tázací"/>
+        <option value="comit" display="zavazující"/>
+        <option value="agree" display="(ne)souhlasná"/>
+        <option value="expr" display="expresivní"/>
+    </interp>
+    <interp key="commfunsubtype" display="Konkrétní komunikační funkce" disabledif="use=content"/>
+    <interp key="commfunnote" display="Poznámka (komunikační funkce)" disabledif="use=content"/>
+    
+    <interp key="scope" display="Dosah" disabledif="use=answer|use=other|use=content" type="select" default="sent">
+        <option value="sent" display="věta"/>
+        <option value="member" display="člen"/>
+        <option value="ellipsis" display="elipsa"/>
+    </interp>
+    
+    <interp key="pred" display="Predikát" nolist="1" type="idrefs" file="src" color="#ffaaff" disabledif="scope=member|scope=ellipsis"/>
+    <interp key="predlemma" display="Predikát (lemma)" type="lookup" ref="pred" fld="lemma"/>
+    <interp key="predtag" display="Predikát (tag)" type="lookup" ref="pred" fld="tag"/>
+    <interp key="predverbtag" display="Predikát (verbtag)" type="lookup" ref="pred" fld="verbtag"/>
+
+    <interp key="member" display="Člen" nolist="1" type="idrefs" file="src" color="#9745c0" disabledif="scope=sent|scope=ellipsis"/>
+    
+    <interp key="tfpos" display="Pozice v AČ" disabledif="use=answer|use=other|use=content" type="select" default="neutral">
+        <option value="neutral" display="neutrální"/>
+        <option value="emphasis" display="zdůrazněná"/>
+        <option value="ownfocus" display="vlastní réma"/>
+        <option value="marked" display="příznakové"/>
+    </interp>
+    
+    <interp key="sentpos" display="Místo ve větě" disabledif="use=answer|use=other|use=content" type="select" default="other">
+        <option value="first" display="první"/>
+        <option value="pseudofirst" display="pseudoprvní"/>
+        <option value="last" display="poslední"/>
+        <option value="other" display="jinde"/>
+    </interp>
+    
+    <interp key="neg" display="Přítomnost negace" disabledif="use=answer|use=other|use=content" type="select" default="0">
+        <option value="1" display="ano"/>
+        <option value="0" display="ne"/>
+    </interp>
+   
+    <interp key="modalpersp" display="Perspektiva modality" disabledif="use=answer|use=other|use=content" type="select" default="clear">
+        <option value="clear" display="jasná atribuce"/>
+        <option value="unclear" display="nejasná atribuce"/>
+    </interp>
+    
+    <interp key="modif" display="Modifikace" nolist="1" type="idrefs" file="src" color="#ab2222" disabledif="use=answer|use=other|use=content"/>
+    
+    <interp key="evidence" display="Evidence" type="idrefs" file="src" color="#3399ff" disabledif="use=answer|use=other|use=content"/>
+    <!-- <interp key="evidencetype" display="Typ evidence" type="multi" multisep="," disabledif="use=answer|use=other|use=content"> -->
+    <interp key="evidencetype" display="Typ evidence" type="multi" disabledif="use=answer|use=other|use=content">
+        <!-- <option value="unexpressed" display="nevyjádřená" default="1"/> -->
+        <!-- no choice => "unexpressed" -->
+        <option value="sensory" display="smyslová"/>
+        <option value="hearsay" display="hearsay"/>
+        <option value="inference" display="inference"/>
+    </interp>
+
+    <interp key="cssent" display="Česká věta"/>
+
+    <interp key="comment" display="Komentář"/>
+</interpGrp>
