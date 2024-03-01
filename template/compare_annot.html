@@ -18,6 +18,33 @@
 .change .b2 {opacity: 0;}
 .change .b3 {transform: translate(0, -9px) rotate(45deg);}
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th:first-child, td:first-child {width: 15%;}
+{% for annot_name in annot_names %}
+th:nth-child(2), td:nth-child(2) {width: {{(85/loop.length)|round|int}}%;}
+{% endfor %}
+
+/* Ensure header cells stretch to fill available space */
+th {
+    text-align: left;
+    position: sticky;
+    top: 0;
+    background-color: white; /* Background color to hide the original header */
+    z-index: 1;
+}
+
+
+.base-attr {column-span: all;}
+.all-empty {display: none;}
+.all-same {display: none;}
 </style>
 </head>
 <body>
@@ -25,9 +52,15 @@
   <div id="main-menu">
    Show<br/>
    <div>
-    {% for attr in attrs_to_display %}
-    <input id="show-attr-{{attr[0]}}" type="checkbox" checked onclick="$('.attr-{{attr[0]}}').toggle(this.checked);"><label for="show-attr-{{attr[0]}}">{{attr[1]}}</label><br/>
-    {% endfor %}
+    <div>
+     {% for attr in annot_attrs %}
+     <input id="show-attr-{{attr[0]}}" type="checkbox" checked onclick="$('.attr-{{attr[0]}}').toggle(this.checked);"><label for="show-attr-{{attr[0]}}">{{attr[1]}}</label><br/>
+     {% endfor %}
+    </div>
+    <div>
+     <input id="show-all-empty" type="checkbox" onclick="$('.all-empty').toggle(this.checked);"><label for="show-all-empty">All empty</label><br/>
+     <input id="show-all-same" type="checkbox" onclick="$('.all-same').toggle(this.checked);"><label for="show-all-same">All same</label><br/>
+    </div>
     
     <!--
     <input id="show-etype" type="checkbox"  onclick="$('.etype').toggle(this.checked);"><label for="show-etype">etype</label><br/>
@@ -42,7 +75,6 @@
     <input id="show-pars" type="checkbox" checked onclick="$('.par').toggle(this.checked);"><label for="show-pars">paragraphs</label><br/>
     <input id="show-docs" type="checkbox" checked onclick="$('h1').toggle(this.checked);"><label for="show-docs">document names</label><br/>
     -->
-
    </div>
    <fieldset onclick="$('.m').toggleClass('htype',$('#htype')[0].checked)">
     <legend>bg color:</legend>
@@ -51,16 +83,20 @@
    </fieldset>
   </div>
   <button id="menubtn" title="Visualization options" onclick="menuclick(this)"><div class="b1"></div><div class="b2"></div><div class="b3"></div></button>
-  
+
   <div id="main">
-   {% for example in results %}
-   <h1>Example {{ example["id"][0] }}</h1>
    <table>
-   {% for attr in attrs_to_display %}<tr class="attr-{{attr[0]}}"><td>{{attr[1]}}</td>
-   {% for attr_annot in example[attr[0]] %}<td>{{attr_annot}}</td>{% endfor %}
-   {% endfor %}
+    <thead><tr><th>Attribute name</th>{% for annot_name in annot_names %}<th>{{annot_name}}</th>{% endfor %}</tr></thead>
+    <tbody>
+     {% for example in results %}
+     <tr><td><h1>Example {{ example.base_attrs.id }}</h1></td></tr>
+     {% for attr in annot_attrs %}<tr class="attr-{{attr[0]}} {{'all-empty' if example.annot_attrs[attr[0]].all_empty}} {{'all-same' if example.annot_attrs[attr[0]].all_same}}"><td>{{attr[1]}}</td>
+     {% for annot_value in example.annot_attrs[attr[0]].annots %}<td>{{annot_value}}</td>
+     {% endfor %}
+     {% endfor %}
+     {% endfor %}
+    </tbody>
    </table>
-   {% endfor %}
   </div>
 
   <script>

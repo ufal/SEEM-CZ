@@ -1,5 +1,6 @@
 import argparse
 import logging
+import os
 import xml.etree.ElementTree as xmlparser
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -16,52 +17,73 @@ template_env = Environment(
     loader=FileSystemLoader('.'),
     autoescape=select_autoescape(['html', 'xml'])
 )
+        
+ANNOT_ATTRS = [
+    ("dictexample", "Příklad do slovníku"),
+    ("use", "Užití"),
+    ("certainty", "Míra jistoty"),
+    ("certaintynote", "Poznámka (míra jistoty)"),
+    ("commfuntype", "Typ komunikační funkce"),
+    ("commfunsubtype", "Konkrétní komunikační funkce"),
+    ("commfunnote", "Poznámka (komunikační funkce)"),
+    ("scope", "Dosah"),
+    ("pred", "Predikát"),
+    ("predlemma", "Predikát (lemma)"),
+    ("predtag", "Predikát (tag)"),
+    ("predverbtag", "Predikát (verbtag)"),
+    ("member", "Člen"),
+    ("tfpos", "Pozice v AČ"),
+    ("sentpos", "Místo ve větě"),
+    ("neg", "Přítomnost negace"),
+    ("modalpersp", "Perspektiva modality"),
+    ("modif", "Modifikace"),
+    ("evidence", "Evidence"),
+    ("evidencetype", "Typ evidence"),
+    ("comment", "Komentář"),
+]
+
+BASE_ATTRS = [
+    ("id", "ID"),
+    ("cql", "CQL dotaz"),
+    ("xml", "ID dokumentu"),
+    ("cs", "Výraz v češtině (ID)"),
+    ("cst", "Výraz v češtině (formy)"),
+    ("en", "Výraz v angličtině (ID)"),
+]
 
 # Initialize template data
-def init_template_data():
+def init_template_data(annot_names):
     data = {
         'title': "Comparison of SEEM-CZ parallel annotations",
-        'attrs_to_display': [
-            #("cql", "CQL dotaz"),
-            #("xml", "ID dokumentu"),
-            #("cs", "Výraz v češtině (ID)"),
-            #("cst", "Výraz v češtině (formy)"),
-            #("en", "Výraz v angličtině (ID)"),
-            ("dictexample", "Příklad do slovníku"),
-            ("use", "Užití"),
-            ("certainty", "Míra jistoty"),
-            ("certaintynote", "Poznámka (míra jistoty)"),
-            ("commfuntype", "Typ komunikační funkce"),
-            ("commfunsubtype", "Konkrétní komunikační funkce"),
-            ("commfunnote", "Poznámka (komunikační funkce)"),
-            ("scope", "Dosah"),
-            ("pred", "Predikát"),
-            ("predlemma", "Predikát (lemma)"),
-            ("predtag", "Predikát (tag)"),
-            ("predverbtag", "Predikát (verbtag)"),
-            ("member", "Člen"),
-            ("tfpos", "Pozice v AČ"),
-            ("sentpos", "Místo ve větě"),
-            ("neg", "Přítomnost negace"),
-            ("modalpersp", "Perspektiva modality"),
-            ("modif", "Modifikace"),
-            ("evidence", "Evidence"),
-            ("evidencetype", "Typ evidence"),
-            ("comment", "Komentář"),
-        ]
+        'annot_names': annot_names,
+        'annot_attrs': ANNOT_ATTRS,
+        'base_attrs': BASE_ATTRS,
     }
     return data
 
+def extract_base_attrs(elem):
+    return {attr_name: elem.attrib.get(attr_name, "") for attr_name, _ in BASE_ATTRS}
 
-def extract_attribs(elem_tuple):
+def extract_annot_attrs(elem_tuple):
+    return {
+        attr_name: {
+            "annots": (values := [elem.attrib.get(attr_name, "") for elem in elem_tuple]),
+            "all_same": all([v == values[0] for v in values]),
+            "all_empty": all([v == "" for v in values]),
+        }
+        for attr_name, _ in ANNOT_ATTRS
+    }
+
+def extract_attrs(elem_tuple):
     if len(elem_tags := list(set([elem.tag for elem in elem_tuple]))) > 1:
         logging.error(f"Parallel elements are not the same: {' '.join(elem_tags)}")
         exit()
     if elem_tags[0] != "item":
         return
-    all_attr_names = set(k for elem in elem_tuple for k in elem.attrib)
-    attr_table = {attr_name: [elem.attrib.get(attr_name, "") for elem in elem_tuple] for attr_name in all_attr_names}
-    return attr_table
+    return {
+        "base_attrs": extract_base_attrs(elem_tuple[0]),
+        "annot_attrs": extract_annot_attrs(elem_tuple),
+    }
 
 def render_template(template_name, **context):
     # Load the template
@@ -85,13 +107,14 @@ def main():
 
     xml_list = [xmlparser.iterparse(filepath) for filepath in args.input_files]
     
-    all_results = [attrs for elem_bundle in zip(*xml_list) if (attrs := extract_attribs([elem for _, elem in elem_bundle]))]
+    all_results = [attrs for elem_bundle in zip(*xml_list) if (attrs := extract_attrs([elem for _, elem in elem_bundle]))]
 
     #logging.debug(f"{all_results = }")
 
     # Define the data to pass to the template
-    data = init_template_data()
+    data = init_template_data(annot_names=[os.path.basename(file) for file in args.input_files])
     data["results"] = all_results
+    #logging.debug(f"{data = }")
     
     # Render the template
     rendered_html = render_template('template/compare_annot.html', **data)
