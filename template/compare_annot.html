@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
-    <title>{{ title }}</title>
+<meta charset="utf-8"/>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<title>{{ title }}</title>
+<style>
+#wrap {display: flex; align-items: flex-start;}
+#main {width: 100%; padding: 5px; background: white; z-index:100;}
+
+/* menu controls */
+#main-menu {position:fixed; z-index:150; top: 4px; right:4px; display:none;
+            padding: 5px 55px 5px 5px; background-color:gray; border-radius: 5px;}
+#main-menu div {display: inline-block;}
+#menubtn {position: fixed; right: 8px; top: 8px; z-index: 200;}
+#menubtn div {width: 30px; height: 4px; background-color: black; margin: 5px 0; transition: 0.4s;}
+.change .b1 {transform: translate(0, 9px) rotate(-45deg);}
+.change .b2 {opacity: 0;}
+.change .b3 {transform: translate(0, -9px) rotate(45deg);}
+
+</style>
 </head>
 <body>
-    {% for example in results %}
-    <h1>Example {{ example["id"][0] }}</h1>
-    <table>
-    {% for attr in attrs_to_display %}<tr><td>{{attr[1]}}</td>
-    {% for attr_annot in example[attr[0]] %}<td>{{attr_annot}}</td>{% endfor %}
+ <div id="wrap">
+  <div id="main-menu">
+   Show<br/>
+   <div>
+    {% for attr in attrs_to_display %}
+    <input id="show-attr-{{attr[0]}}" type="checkbox" checked onclick="$('.attr-{{attr[0]}}').toggle(this.checked);"><label for="show-attr-{{attr[0]}}">{{attr[1]}}</label><br/>
     {% endfor %}
-    </table>
-    {% endfor %}
+    
+    <!--
+    <input id="show-etype" type="checkbox"  onclick="$('.etype').toggle(this.checked);"><label for="show-etype">etype</label><br/>
+    <input id="show-sent_id" type="checkbox" onclick="$('.sent_id').toggle(this.checked);"><label for="show-sent_id">sent_id</label><br/>
+    <input id="show-trees" type="checkbox" checked onclick="$('.showtree').toggle(this.checked);"><label for="show-trees">trees</label><br/>
+    <input id="show-color" type="checkbox" checked onclick="$('.m').toggleClass('nocolor',!this.checked);"><label for="show-color">colors</label><br/>
+    <input id="show-boxes" type="checkbox" checked onclick="$('.m').toggleClass('nobox',!this.checked);"><label for="show-boxes">boxes</label></div><div>
+    <input id="show-norm" type="checkbox" checked onclick="$('.norm').toggle(this.checked);"><label for="show-norm">non-mentions</label><br/>
+    <input id="show-heads" type="checkbox" checked onclick="$('.head').toggleClass('nobold',!this.checked);"><label for="show-heads">heads in bold</label><br/>
+    <input id="show-empty" type="checkbox" checked onclick="$('.empty').toggle(this.checked);"><label for="show-empty">empty words</label><br/>
+    <input id="show-breaks" type="checkbox" checked onclick="$('.sentence').toggleClass('display-inline',!this.checked);"><label for="show-breaks">sentence per line</label><br/>
+    <input id="show-pars" type="checkbox" checked onclick="$('.par').toggle(this.checked);"><label for="show-pars">paragraphs</label><br/>
+    <input id="show-docs" type="checkbox" checked onclick="$('h1').toggle(this.checked);"><label for="show-docs">document names</label><br/>
+    -->
+
+   </div>
+   <fieldset onclick="$('.m').toggleClass('htype',$('#htype')[0].checked)">
+    <legend>bg color:</legend>
+    <label><input type="radio" name="bgcolor" id="etype" checked>entity type</label>
+    <label><input type="radio" name="bgcolor" id="htype">head upos</label>
+   </fieldset>
+  </div>
+  <button id="menubtn" title="Visualization options" onclick="menuclick(this)"><div class="b1"></div><div class="b2"></div><div class="b3"></div></button>
+  
+  <div id="main">
+   {% for example in results %}
+   <h1>Example {{ example["id"][0] }}</h1>
+   <table>
+   {% for attr in attrs_to_display %}<tr class="attr-{{attr[0]}}"><td>{{attr[1]}}</td>
+   {% for attr_annot in example[attr[0]] %}<td>{{attr_annot}}</td>{% endfor %}
+   {% endfor %}
+   </table>
+   {% endfor %}
+  </div>
+
+  <script>
+   function menuclick(x) {
+     x.classList.toggle("change");
+     $("#main-menu").toggle();
+   }
+  </script>
+ </div>
 </body>
 </html>

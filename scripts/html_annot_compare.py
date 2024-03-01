@@ -60,7 +60,7 @@ def extract_attribs(elem_tuple):
     if elem_tags[0] != "item":
         return
     all_attr_names = set(k for elem in elem_tuple for k in elem.attrib)
-    attr_table = {attr_name: [elem.attrib.get(attr_name) for elem in elem_tuple] for attr_name in all_attr_names}
+    attr_table = {attr_name: [elem.attrib.get(attr_name, "") for elem in elem_tuple] for attr_name in all_attr_names}
     return attr_table
 
 def render_template(template_name, **context):
