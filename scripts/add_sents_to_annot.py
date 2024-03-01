@@ -4,6 +4,9 @@ import os
 import sys
 import xml.etree.ElementTree as xmlparser
 
+from bookdoc import BookDoc
+from markerdoc import MarkerDoc
+
 def extract_booklist(annotxml):
     return list(set([itemelem.attrib["xml"] for itemelem in annotxml.findall(".//item")]))
 
@@ -27,16 +30,15 @@ args = parser.parse_args()
 
 logging.basicConfig(level=logging.INFO)
 
-annotxml = xmlparser.parse(sys.stdin)
-booklist = extract_booklist(annotxml)
+input_doc = MarkerDoc(sys.stdin)
 
-for bookid in booklist:
+for bookid in input_doc.booklist:
     logging.info(f"Processing book: {bookid}")
     bookfile = os.path.join(args.book_dir, bookid + "-cs.xml")
-    sent_index = load_sent_index(bookfile)
-    for itemelem in annotxml.findall(f".//item[@xml=\"{bookid}\"]"):
+    book = BookDoc(bookfile)
+    for itemelem in input_doc.annots_by_bookid(bookid):
         sentid = extract_sentid(itemelem.attrib["cs"])
         logging.debug(f"Storing sentence {sentid} into the annotation item {itemelem.attrib['id']}")
-        itemelem.attrib["cssent"] = sent_index[sentid]
+        itemelem.attrib["cssent"] = book.sent_index[sentid]
 
-annotxml.write(sys.stdout, encoding="unicode")
+input_doc.xml.write(sys.stdout, encoding="unicode")
