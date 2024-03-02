@@ -5,6 +5,8 @@ import xml.etree.ElementTree as xmlparser
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+from markerdoc import MarkerDoc
+
 # setup logging
 logging.basicConfig(
     level=logging.DEBUG,
@@ -64,25 +66,25 @@ def init_template_data(annot_names):
 def extract_base_attrs(elem):
     return {attr_name: elem.attrib.get(attr_name, "") for attr_name, _ in BASE_ATTRS}
 
-def extract_annot_attrs(elem_tuple):
+def extract_annot_attrs(elem_bundle):
     return {
         attr_name: {
-            "annots": (values := [elem.attrib.get(attr_name, "") for elem in elem_tuple]),
+            "annots": (values := [elem.attrib.get(attr_name, "") for elem in elem_bundle]),
             "all_same": all([v == values[0] for v in values]),
             "all_empty": all([v == "" for v in values]),
         }
         for attr_name, _ in ANNOT_ATTRS
     }
 
-def extract_attrs(elem_tuple):
+def extract_attrs(elem_bundle):
     if len(elem_tags := list(set([elem.tag for elem in elem_tuple]))) > 1:
         logging.error(f"Parallel elements are not the same: {' '.join(elem_tags)}")
         exit()
     if elem_tags[0] != "item":
         return
     return {
-        "base_attrs": extract_base_attrs(elem_tuple[0]),
-        "annot_attrs": extract_annot_attrs(elem_tuple),
+        "base_attrs": extract_base_attrs(elem_bundle[0]),
+        "annot_attrs": extract_annot_attrs(elem_bundle),
     }
 
 def render_template(template_name, **context):
@@ -105,7 +107,7 @@ def main():
         logging.error("More than one input files must be specified.")
         exit()
 
-    xml_list = [xmlparser.iterparse(filepath) for filepath in args.input_files]
+    xml_list = [MarkerDoc(filepath) for filepath in args.input_files]
     
     all_results = [attrs for elem_bundle in zip(*xml_list) if (attrs := extract_attrs([elem for _, elem in elem_bundle]))]
 
