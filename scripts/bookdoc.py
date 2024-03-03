@@ -9,27 +9,31 @@ class BookDoc:
         self.lang = lang
         filepath = os.path.join(bookdir, f"{bookid}-{lang}.xml")
         self.xml = xmlparser.parse(filepath)
-        self._sent_index = None
-        self._tok_index = None
+        self._tok_seq, self._tok_index, self._sent_index = self._build_index()
 
-    def _load_sent_tok_index(self):
+    def _build_index(self):
         sent_index = {}
         tok_index = {}
+        tok_seq = []
+        tok_idx = 0
         for sentelem in self.xml.findall('.//s'):
-            sid = sentelem.attrib["id"]
-            senttoks = []
+            sent_start_idx = tok_idx
             for tokelem in sentelem.findall('.//tok'):
                 #logging.debug(f"{tokelem = }")
-                senttoks.append(tokelem.text)
-                tok_index[tokelem.attrib["id"]] = tokelem.text
-            sent_index[sid] = " ".join(senttoks)
-        return sent_index, tok_index
+                tok_index[tokelem.attrib["id"]] = tok_idx
+                tok_seq.append(tokelem.text)
+                tok_idx += 1
+            sent_end_idx = tok_idx
+            sid = sentelem.attrib["id"]
+            sent_index[sid] = (sent_start_idx, sent_end_idx)
+        return tok_seq, tok_index, sent_index
 
-    @property
-    def sent_index(self):
-        if not self._sent_index:
-            self._sent_index, self._tok_index = self._load_sent_tok_index()
-        return self._sent_index
+    def get_sentence(self, sentid):
+        sent_range = self._sent_index.get(sentid)
+        if not sent_range:
+            return None
+        sent_toks = self._tok_seq[sent_range[0]:sent_range[1]]
+        return " ".join(sent_toks)
 
     @property
     def tok_index(self):

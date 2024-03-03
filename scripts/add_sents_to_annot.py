@@ -38,7 +38,7 @@ def main():
         for itemelem in input_doc.annots_by_bookid(bookid):
             sentid = extract_sentid(itemelem.attrib["cs"])
             logging.debug(f"Storing sentence {sentid} into the annotation item {itemelem.attrib['id']}")
-            itemelem.attrib["cssent"] = book.sent_index[sentid]
+            itemelem.attrib["cssent"] = book.get_sentence(sentid)
 
     input_doc.xml.write(sys.stdout, encoding="unicode")
 
