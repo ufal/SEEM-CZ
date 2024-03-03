@@ -1,3 +1,4 @@
+from collections import defaultdict
 import logging
 import os
 import xml.etree.ElementTree as xmlparser
@@ -9,24 +10,28 @@ class BookDoc:
         self.lang = lang
         filepath = os.path.join(bookdir, f"{bookid}-{lang}.xml")
         self.xml = xmlparser.parse(filepath)
-        self._tok_seq, self._tok_index, self._sent_index = self._build_index()
+        self._build_index()
 
     def _build_index(self):
-        sent_index = {}
-        tok_index = {}
-        tok_seq = []
+        self._sent_index = {}
+        self._tok_index = {}
+        self._tok_seq = []
+        self._sentid_to_tuid = {}
+        self._tuid_to_sentids = defaultdict(list)
         tok_idx = 0
         for sentelem in self.xml.findall('.//s'):
             sent_start_idx = tok_idx
             for tokelem in sentelem.findall('.//tok'):
                 #logging.debug(f"{tokelem = }")
-                tok_index[tokelem.attrib["id"]] = tok_idx
-                tok_seq.append(tokelem.text)
+                self._tok_index[tokelem.attrib["id"]] = tok_idx
+                self._tok_seq.append(tokelem.text)
                 tok_idx += 1
             sent_end_idx = tok_idx
             sid = sentelem.attrib["id"]
-            sent_index[sid] = (sent_start_idx, sent_end_idx)
-        return tok_seq, tok_index, sent_index
+            self._sent_index[sid] = (sent_start_idx, sent_end_idx)
+            tuid = sentelem.attrib["tuid"]
+            self._sentid_to_tuid[sid] = tuid
+            self._tuid_to_sentids[tuid].append(sid)
 
     def get_token(self, tokid):
         tokidx = self._tok_index.get(tokid)
@@ -41,10 +46,17 @@ class BookDoc:
         sent_toks = self._tok_seq[sent_range[0]:sent_range[1]]
         return " ".join(sent_toks)
 
-    def get_sentences_by_tokids(self, tokids):
-        logging.debug(f"{tokids = }")
+    def get_sentences_by_tokids(self, tokids, with_tuids=False):
         sentids = list(set([":".join(tokid.split(":")[:-1]) for tokid in tokids]))
-        return [self.get_sentence(sentid) for sentid in sorted(sentids)]
+        sents = [self.get_sentence(sentid) for sentid in sorted(sentids)]
+        tuids = None
+        if with_tuids:
+            tuids = [self._sentid_to_tuid.get(sentid) for sentid in sorted(sentids)]
+        return sents, tuids
+
+    def get_sentences_by_tuids(self, tuids):
+        sentids = sorted(list(set([sentid for tuid in tuids for sentid in self._tuid_to_sentids[tuid]])))
+        return [self.get_sentence(sentid) for sentid in sentids]
 
     @property
     def tok_index(self):
