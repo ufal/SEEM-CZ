@@ -28,12 +28,23 @@ class BookDoc:
             sent_index[sid] = (sent_start_idx, sent_end_idx)
         return tok_seq, tok_index, sent_index
 
+    def get_token(self, tokid):
+        tokidx = self._tok_index.get(tokid)
+        if not tokidx:
+            return None
+        return self._tok_seq[tokidx]
+
     def get_sentence(self, sentid):
         sent_range = self._sent_index.get(sentid)
         if not sent_range:
             return None
         sent_toks = self._tok_seq[sent_range[0]:sent_range[1]]
         return " ".join(sent_toks)
+
+    def get_sentences_by_tokids(self, tokids):
+        logging.debug(f"{tokids = }")
+        sentids = list(set([":".join(tokid.split(":")[:-1]) for tokid in tokids]))
+        return [self.get_sentence(sentid) for sentid in sorted(sentids)]
 
     @property
     def tok_index(self):

@@ -22,6 +22,8 @@ template_env = Environment(
 )
         
 ANNOT_ATTRS = [
+    ("cs", "Výraz v češtině (ID)"),
+    ("en", "Výraz v angličtině (ID)"),
     ("dictexample", "Příklad do slovníku"),
     ("use", "Užití"),
     ("certainty", "Míra jistoty"),
@@ -49,9 +51,8 @@ BASE_ATTRS = [
     ("id", "ID"),
     ("cql", "CQL dotaz"),
     ("xml", "ID dokumentu"),
-    ("cs", "Výraz v češtině (ID)"),
     ("cst", "Výraz v češtině (formy)"),
-    ("en", "Výraz v angličtině (ID)"),
+    ("cssent", "Český text"),
 ]
 
 INDEX_ATTRS = {
@@ -69,13 +70,13 @@ def init_template_data(annot_names):
     }
     return data
 
-def deref_index_attrs_by_book(annotdoc, book, attrs):
-    for annot_elem in annotdoc.annots_by_bookid(book.id):
-        for attr_name in attrs:
+def deref_attrs_by_book(annot_elem_bundle, book, attrs):
+    for attr_name in attrs:
+        for i, annot_elem in enumerate(annot_elem_bundle):
             tok_deref_str = annot_elem.attrib.get(attr_name, "")
-            tok_idxs = tok_deref_str.strip().split(" ")
-            if tok_idxs and tok_idxs[0] in book.tok_index:
-                tok_deref_str = " ".join([book.tok_index.get(tok_idx, tok_idx) for tok_idx in tok_idxs])
+            tok_ids = tok_deref_str.strip().split(" ")
+            if tok_ids and tok_ids[0] in book.tok_index:
+                tok_deref_str = " ".join([(token if (token := book.get_token(tokid)) else tokid) for tokid in tok_ids])
             elif tok_deref_str:
                 tok_deref_str = f'"{tok_deref_str}"'
             annot_elem.attrib[attr_name + ".deref"] = tok_deref_str
@@ -83,11 +84,15 @@ def deref_index_attrs_by_book(annotdoc, book, attrs):
 def deref_index_attrs_all(doclist, bookdir):
     all_bookids = set(bookid for doc in doclist for bookid in doc.booklist)
     for bookid in all_bookids:
-        for lang, attrs in INDEX_ATTRS.items():
-            book = BookDoc(bookid, lang, bookdir)
-            for i, doc in enumerate(doclist):
-                logging.debug(f"Dereferencing index attributes to the {lang} version of {bookid} for the document no. {i+1}")
-                deref_index_attrs_by_book(doc, book, attrs)
+        book_annots = [annotdoc.annots_by_bookid(bookid) for annotdoc in doclist]
+        csbook = BookDoc(bookid, "cs", bookdir)
+        enbook = BookDoc(bookid, "en", bookdir)
+        for annot_elem_bundle in zip(*book_annots):
+            #logging.debug(f"Dereferencing index attributes to the {lang} version of {bookid}")
+            deref_attrs_by_book(annot_elem_bundle, csbook, INDEX_ATTRS["cs"])
+            cssents = csbook.get_sentences_by_tokids(annot_elem_bundle[0].attrib["cs"].split(" "))
+            annot_elem_bundle[0].attrib["cssent"] = " ".join(cssents)
+            deref_attrs_by_book(annot_elem_bundle, enbook, INDEX_ATTRS["en"])
 
 def extract_base_attrs(elem):
     return {attr_name: elem.attrib.get(attr_name, "") for attr_name, _ in BASE_ATTRS}
