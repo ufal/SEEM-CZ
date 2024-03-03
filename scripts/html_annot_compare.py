@@ -5,6 +5,7 @@ import xml.etree.ElementTree as xmlparser
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+from bookdoc import BookDoc
 from markerdoc import MarkerDoc
 
 # setup logging
@@ -53,6 +54,11 @@ BASE_ATTRS = [
     ("en", "Výraz v angličtině (ID)"),
 ]
 
+INDEX_ATTRS = {
+    "cs": ["cs", "pred", "member", "modif", "evidence"],
+    "en": ["en"],
+}
+
 # Initialize template data
 def init_template_data(annot_names):
     data = {
@@ -63,13 +69,33 @@ def init_template_data(annot_names):
     }
     return data
 
+def deref_index_attrs_by_book(annotdoc, book, attrs):
+    for annot_elem in annotdoc.annots_by_bookid(book.id):
+        for attr_name in attrs:
+            tok_deref_str = annot_elem.attrib.get(attr_name, "")
+            tok_idxs = tok_deref_str.strip().split(" ")
+            if tok_idxs and tok_idxs[0] in book.tok_index:
+                tok_deref_str = " ".join([book.tok_index.get(tok_idx, tok_idx) for tok_idx in tok_idxs])
+            elif tok_deref_str:
+                tok_deref_str = f'"{tok_deref_str}"'
+            annot_elem.attrib[attr_name + ".deref"] = tok_deref_str
+
+def deref_index_attrs_all(doclist, bookdir):
+    all_bookids = set(bookid for doc in doclist for bookid in doc.booklist)
+    for bookid in all_bookids:
+        for lang, attrs in INDEX_ATTRS.items():
+            book = BookDoc(bookid, lang, bookdir)
+            for i, doc in enumerate(doclist):
+                logging.debug(f"Dereferencing index attributes to the {lang} version of {bookid} for the document no. {i+1}")
+                deref_index_attrs_by_book(doc, book, attrs)
+
 def extract_base_attrs(elem):
     return {attr_name: elem.attrib.get(attr_name, "") for attr_name, _ in BASE_ATTRS}
 
 def extract_annot_attrs(elem_bundle):
     return {
         attr_name: {
-            "annots": (values := [elem.attrib.get(attr_name, "") for elem in elem_bundle]),
+            "annots": (values := [elem.attrib.get(deref_attr_name if (deref_attr_name := attr_name + ".deref") in elem.attrib else attr_name, "") for elem in elem_bundle]),
             "all_same": all([v == values[0] for v in values]),
             "all_empty": all([v == "" for v in values]),
         }
@@ -77,11 +103,9 @@ def extract_annot_attrs(elem_bundle):
     }
 
 def extract_attrs(elem_bundle):
-    if len(elem_tags := list(set([elem.tag for elem in elem_tuple]))) > 1:
-        logging.error(f"Parallel elements are not the same: {' '.join(elem_tags)}")
+    if len(elem_ids := list(set([elem.attrib["id"] for elem in elem_bundle]))) > 1:
+        logging.error(f"Parallel annotations do not refer to the same example: {' '.join(elem_ids)}")
         exit()
-    if elem_tags[0] != "item":
-        return
     return {
         "base_attrs": extract_base_attrs(elem_bundle[0]),
         "annot_attrs": extract_annot_attrs(elem_bundle),
@@ -107,9 +131,11 @@ def main():
         logging.error("More than one input files must be specified.")
         exit()
 
-    xml_list = [MarkerDoc(filepath) for filepath in args.input_files]
+    doc_list = [MarkerDoc(filepath) for filepath in args.input_files]
+
+    deref_index_attrs_all(doc_list, args.book_dir)
     
-    all_results = [attrs for elem_bundle in zip(*xml_list) if (attrs := extract_attrs([elem for _, elem in elem_bundle]))]
+    all_results = [extract_attrs(annot_bundle) for annot_bundle in zip(*doc_list)]
 
     #logging.debug(f"{all_results = }")
 

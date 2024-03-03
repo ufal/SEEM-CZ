@@ -5,7 +5,7 @@ import xml.etree.ElementTree as xmlparser
 class BookDoc:
     
     def __init__(self, bookid, lang="cs", bookdir=""):
-        self.bookid = bookid
+        self.id = bookid
         self.lang = lang
         filepath = os.path.join(bookdir, f"{bookid}-{lang}.xml")
         self.xml = xmlparser.parse(filepath)
@@ -31,6 +31,7 @@ class BookDoc:
             self._sent_index, self._tok_index = self._load_sent_tok_index()
         return self._sent_index
 
+    @property
     def tok_index(self):
         if not self._tok_index:
             self._sent_index, self._tok_index = self._load_sent_tok_index()
