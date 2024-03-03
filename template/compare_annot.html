@@ -54,12 +54,12 @@ th {
    <div>
     <div>
      {% for attr in annot_attrs %}
-     <input id="show-attr-{{attr[0]}}" type="checkbox" checked onclick="$('.attr-{{attr[0]}}').toggle(this.checked);"><label for="show-attr-{{attr[0]}}">{{attr[1]}}</label><br/>
+     <input id="show-attr-{{attr[0]}}" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-{{attr[0]}}">{{attr[1]}}</label><br/>
      {% endfor %}
     </div>
     <div>
-     <input id="show-all-empty" type="checkbox" onclick="$('.all-empty').toggle(this.checked);"><label for="show-all-empty">All empty</label><br/>
-     <input id="show-all-same" type="checkbox" onclick="$('.all-same').toggle(this.checked);"><label for="show-all-same">All same</label><br/>
+     <input id="show-all-empty" type="checkbox" onclick="menuitemclick(this);"><label for="show-all-empty">All empty</label><br/>
+     <input id="show-all-same" type="checkbox" onclick="menuitemclick(this);"><label for="show-all-same">All same</label><br/>
     </div>
     
     <!--
@@ -89,7 +89,7 @@ th {
     <thead><tr><th>Attribute name</th>{% for annot_name in annot_names %}<th>{{annot_name}}</th>{% endfor %}</tr></thead>
     <tbody>
      {% for example in results %}
-     <tr><td><h1>Example {{ example.base_attrs.id }}</h1></td></tr>
+     <tr><td><h1 id="{{ example.base_attrs.id }}">Example {{ example.base_attrs.id }}</h1></td></tr>
      {% for attr in annot_attrs %}<tr class="attr-{{attr[0]}} {{'all-empty' if example.annot_attrs[attr[0]].all_empty}} {{'all-same' if example.annot_attrs[attr[0]].all_same}}"><td>{{attr[1]}}</td>
      {% for annot_value in example.annot_attrs[attr[0]].annots %}<td>{{annot_value}}</td>
      {% endfor %}
@@ -100,9 +100,37 @@ th {
   </div>
 
   <script>
+
+   function menuitemclick(x) {
+    let itemClass = x.id.match(/show-(.*)/)[1];
+    let topElem = findElementAtTop();
+    $("."+itemClass).toggle(this.checked);
+    // Scroll to topElement
+    $('html, body').animate({
+     scrollTop: $(topElem).offset().top
+     }, 500);
+   }
+
    function menuclick(x) {
-     x.classList.toggle("change");
-     $("#main-menu").toggle();
+    x.classList.toggle("change");
+    $("#main-menu").toggle();
+   }
+
+   function findElementAtTop() {
+    let elements = $('#main h1');
+    let topElement = null;
+    let minDistance = Number.MAX_VALUE;
+
+    elements.each(function() {
+     let rect = this.getBoundingClientRect();
+     let distanceToTop = Math.abs(rect.top);
+     if (distanceToTop < minDistance) {
+      minDistance = distanceToTop;
+      topElement = this;
+     }
+    });
+
+    return topElement;
    }
   </script>
  </div>
