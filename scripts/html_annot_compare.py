@@ -6,7 +6,7 @@ import xml.etree.ElementTree as xmlparser
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from bookdoc import BookDoc
-from markerdoc import MarkerDoc
+from markerdoc import MarkerDoc, MarkerDocDef
 
 # setup logging
 logging.basicConfig(
@@ -119,6 +119,13 @@ def extract_attrs(elem_bundle):
         "annot_attrs": extract_annot_attrs(elem_bundle),
     }
 
+def configure_template(args):
+    display_f = lambda k, v=None: v if v else k
+    if args.annot_def:
+        annot_def_doc = MarkerDocDef(args.annot_def)
+        display_f = annot_def_doc.get_display_string
+    template_env.globals['display_str'] = display_f
+
 def render_template(template_name, **context):
     # Load the template
     template = template_env.get_template(template_name)
@@ -129,6 +136,7 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="compare input annotation of markers and output the comparison in HTML")
     parser.add_argument("input_files", nargs="+", help="input files to be compared")
     parser.add_argument("--book-dir", type=str, help="directory with books in the teitok format")
+    parser.add_argument("--annot-def", type=str, help="path to the annotation definition file")
     args = parser.parse_args()
     return args
 
@@ -142,7 +150,7 @@ def main():
     doc_list = [MarkerDoc(filepath) for filepath in args.input_files]
 
     deref_index_attrs_all(doc_list, args.book_dir)
-    
+
     all_results = [extract_attrs(annot_bundle) for annot_bundle in zip(*doc_list)]
 
     #logging.debug(f"{all_results = }")
@@ -151,6 +159,8 @@ def main():
     data = init_template_data(annot_names=[os.path.basename(file) for file in args.input_files])
     data["results"] = all_results
     #logging.debug(f"{data = }")
+
+    configure_template(args)
     
     # Render the template
     rendered_html = render_template('template/compare_annot.html', **data)

@@ -94,11 +94,11 @@ th {
     <thead><tr><th></th>{% for annot_name in annot_names %}<th>{{annot_name}}</th>{% endfor %}</tr></thead>
     <tbody>
      {% for example in results %}
-     <tr><td colspan="{{annot_names|length + 1}}"><h1 id="{{ example.base_attrs.id }}">Example {{ example.base_attrs.id }}</h1></td></tr>
+     <tr><td colspan="{{annot_names|length + 1}}"><h1 id="{{ example.base_attrs.id }}">Example {{ example.base_attrs.id }}: <i>{{ example.base_attrs.cst }}</i></h1></td></tr>
      <tr><td colspan="{{annot_names|length + 1}}"><span class="cssent">{{ example.base_attrs.cssent }}</span></td></tr>
      <tr><td colspan="{{annot_names|length + 1}}"><span class="ensent">{{ example.base_attrs.ensent }}</span></td></tr>
-     {% for attr in annot_attrs %}<tr class="attr-{{attr[0]}} {{'all-empty' if example.annot_attrs[attr[0]].all_empty}} {{'all-same' if example.annot_attrs[attr[0]].all_same}}"><td class="attr-name">{{attr[1]}}</td>
-     {% for annot_value in example.annot_attrs[attr[0]].annots %}<td>{{annot_value}}</td>
+     {% for attr in annot_attrs %}<tr class="attr-{{attr[0]}} {{'all-empty' if example.annot_attrs[attr[0]].all_empty}} {{'all-same' if example.annot_attrs[attr[0]].all_same}}"><td class="attr-name">{{display_str(attr[0])}}</td>
+     {% for annot_value in example.annot_attrs[attr[0]].annots %}<td>{{display_str(attr[0], annot_value)}}</td>
      {% endfor %}
      {% endfor %}
      {% endfor %}
