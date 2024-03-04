@@ -79,11 +79,13 @@ th {
     <input id="show-docs" type="checkbox" checked onclick="$('h1').toggle(this.checked);"><label for="show-docs">document names</label><br/>
     -->
    </div>
+   <!--
    <fieldset onclick="$('.m').toggleClass('htype',$('#htype')[0].checked)">
     <legend>bg color:</legend>
     <label><input type="radio" name="bgcolor" id="etype" checked>entity type</label>
     <label><input type="radio" name="bgcolor" id="htype">head upos</label>
    </fieldset>
+   -->
   </div>
   <button id="menubtn" title="Visualization options" onclick="menuclick(this)"><div class="b1"></div><div class="b2"></div><div class="b3"></div></button>
 
@@ -112,8 +114,8 @@ th {
     $("."+itemClass).toggle(this.checked);
     // Scroll to topElement
     $('html, body').animate({
-     scrollTop: $(topElem).offset().top
-     }, 500);
+     scrollTop: $(topElem).offset().top - 50
+     }, 0);
    }
 
    function menuclick(x) {

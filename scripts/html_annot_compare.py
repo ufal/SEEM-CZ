@@ -104,8 +104,8 @@ def extract_annot_attrs(elem_bundle):
     return {
         attr_name: {
             "annots": (values := [elem.attrib.get(deref_attr_name if (deref_attr_name := attr_name + ".deref") in elem.attrib else attr_name, "") for elem in elem_bundle]),
-            "all_same": all([v == values[0] for v in values]),
-            "all_empty": all([v == "" for v in values]),
+            "all_same": all([v and v == values[0] for v in values]),
+            "all_empty": all([not v for v in values]),
         }
         for attr_name, _ in ANNOT_ATTRS
     }
