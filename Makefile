@@ -100,6 +100,20 @@ teitok/annotator_samples/2023-11-27.pilot-run/done : teitok/makeex/markers_all.x
 	touch $@
 
 
+######################################## POSTPROCESS ANNOTATIONS #############################################
+
+teitok/postprocessed/01.sorted_idrefs/%.xml : teitok/markers/annotated/%.xml
+	mkdir -p $(dir $@)
+	python scripts/sort_idrefs.py teitok/config/markers_def_BS-cs.xml < $< > $@
+
+############################################## HTML COMPARE ##################################################
+
+compare_annot/markers-%.html : teitok/postprocessed/01.sorted_idrefs/markers_BS-%.xml teitok/postprocessed/01.sorted_idrefs/markers_JS-%.xml teitok/postprocessed/01.sorted_idrefs/markers_LP-%.xml
+	python scripts/html_annot_compare.py \
+		--book-dir teitok/01.csen_data \
+		--annot-def teitok/config/markers_def_BS-cs.xml \
+		$^ > $@
+
 ############################################## SAMPLE ########################################################
 
 sample :
