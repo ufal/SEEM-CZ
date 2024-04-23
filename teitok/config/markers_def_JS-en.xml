@@ -27,16 +27,18 @@
         <option value="content" display="plnovýznamové"/>
     </interp>
     
-    <interp key="certainty" display="Míra jistoty" disabledif="use=evidence|use=answer|use=other|use=content" type="select" default="medium">
+    <interp key="certainty" display="Míra jistoty" disabledif="use=answer|use=other|use=content" type="select" default="medium">
+        <option value="no" display="---"/>
         <option value="hesitate" display="pochybnost"/>
         <option value="medium" display="střední"/>
+        <option value="highmedium" display="vyšší střední"/>
         <option value="full" display="plná"/>
     </interp>
-    <interp key="certaintynote" display="Poznámka (míra jistoty)" disabledif="use=evidence|use=answer|use=other|use=content"/>
+    <interp key="certaintynote" display="Poznámka (míra jistoty)" disabledif="use=answer|use=other|use=content"/>
     
     <interp key="commfuntype" display="Typ komunikační funkce" disabledif="use=content" type="select" default="decl">
         <option value="decl" display="sdělovací"/>
-        <option value="direct" display="direktivní"/>
+        <option value="direct" display="direktivní/kontaktová"/>
         <option value="interr" display="tázací"/>
         <option value="comit" display="zavazující"/>
         <option value="agree" display="(ne)souhlasná"/>
@@ -73,6 +75,11 @@
     </interp>
     
     <interp key="neg" display="Přítomnost negace" disabledif="use=answer|use=other|use=content" type="select" default="0">
+        <option value="1" display="ano"/>
+        <option value="0" display="ne"/>
+    </interp>
+    
+    <interp key="contrast" display="Kontrast/srovnání" disabledif="use=answer|use=other|use=content" type="select" default="0">
         <option value="1" display="ano"/>
         <option value="0" display="ne"/>
     </interp>
