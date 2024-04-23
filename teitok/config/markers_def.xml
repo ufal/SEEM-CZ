@@ -2,7 +2,7 @@
 <interpGrp id="markers" display="Epistemic and Evidential Markers" type="alignann">
 	<files>
 		<item key="src" type="Source" extention="cs" name="Czech"/>
-<!--		<item key="tgt" type="Target" extention="en" name="English"/> -->
+		<item key="tgt" type="Target" extention="en" name="English"/>
 	</files>
     
     <!-- attributes already automatically filled in by action=makeex -->
@@ -10,7 +10,7 @@
     <interp key="xml" display="ID dokumentu" type="noedit"/>
     <interp key="cs" display="Výraz v češtině (ID)" type="idrefs" nolist="1" file="src"/>
     <interp key="cst" display="Výraz v češtině (formy)" type="lookup" ref="cs" fld="form"/>
-<!--    <interp key="en" display="Výraz v angličtině (ID)" type="idrefs" nolist="1" file="tgt"/> -->
+    <interp key="en" display="Výraz v angličtině (ID)" type="idrefs" nolist="1" file="tgt"/>
 
     <!-- attributes to be filled by manual annotation -->
     <interp key="dictexample" display="Příklad do slovníku" type="select" default="0">
@@ -27,16 +27,18 @@
         <option value="content" display="plnovýznamové"/>
     </interp>
     
-    <interp key="certainty" display="Míra jistoty" disabledif="use=evidence|use=answer|use=other|use=content" type="select" default="medium">
+    <interp key="certainty" display="Míra jistoty" disabledif="use=answer|use=other|use=content" type="select" default="medium">
+        <option value="no" display="---"/>
         <option value="hesitate" display="pochybnost"/>
         <option value="medium" display="střední"/>
+        <option value="highmedium" display="vyšší střední"/>
         <option value="full" display="plná"/>
     </interp>
-    <interp key="certaintynote" display="Poznámka (míra jistoty)" disabledif="use=evidence|use=answer|use=other|use=content"/>
+    <interp key="certaintynote" display="Poznámka (míra jistoty)" disabledif="use=answer|use=other|use=content"/>
     
     <interp key="commfuntype" display="Typ komunikační funkce" disabledif="use=content" type="select" default="decl">
         <option value="decl" display="sdělovací"/>
-        <option value="direct" display="direktivní"/>
+        <option value="direct" display="direktivní/kontaktová"/>
         <option value="interr" display="tázací"/>
         <option value="comit" display="zavazující"/>
         <option value="agree" display="(ne)souhlasná"/>
@@ -72,7 +74,12 @@
         <option value="other" display="jinde"/>
     </interp>
     
-    <interp key="neg" display="Přítomnost negace" disabledif="use=answer|use=other|use=content" type="select" default="0">
+    <interp key="neg" display="Přítomnost negace" disabledif="use=answer|use=content" type="select" default="0">
+        <option value="1" display="ano"/>
+        <option value="0" display="ne"/>
+    </interp>
+
+    <interp key="contrast" display="Kontrast/srovnání" disabledif="use=answer|use=other|use=content" type="select" default="0">
         <option value="1" display="ano"/>
         <option value="0" display="ne"/>
     </interp>
@@ -91,8 +98,11 @@
         <!-- no choice => "unexpressed" -->
         <option value="sensory" display="smyslová"/>
         <option value="hearsay" display="hearsay"/>
+        <option value="reasoning" display="reasoning"/>
         <option value="inference" display="inference"/>
     </interp>
+
+    <interp key="cssent" display="Česká věta"/>
 
     <interp key="comment" display="Komentář"/>
 </interpGrp>
