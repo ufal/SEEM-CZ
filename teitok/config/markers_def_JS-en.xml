@@ -74,11 +74,11 @@
         <option value="other" display="jinde"/>
     </interp>
     
-    <interp key="neg" display="Přítomnost negace" disabledif="use=answer|use=other|use=content" type="select" default="0">
+    <interp key="neg" display="Přítomnost negace" disabledif="use=answer|use=content" type="select" default="0">
         <option value="1" display="ano"/>
         <option value="0" display="ne"/>
     </interp>
-    
+
     <interp key="contrast" display="Kontrast/srovnání" disabledif="use=answer|use=other|use=content" type="select" default="0">
         <option value="1" display="ano"/>
         <option value="0" display="ne"/>
@@ -98,6 +98,7 @@
         <!-- no choice => "unexpressed" -->
         <option value="sensory" display="smyslová"/>
         <option value="hearsay" display="hearsay"/>
+        <option value="reasoning" display="reasoning"/>
         <option value="inference" display="inference"/>
     </interp>
 
