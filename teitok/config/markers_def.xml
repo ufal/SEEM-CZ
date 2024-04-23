@@ -2,7 +2,7 @@
 <interpGrp id="markers" display="Epistemic and Evidential Markers" type="alignann">
 	<files>
 		<item key="src" type="Source" extention="cs" name="Czech"/>
-		<item key="tgt" type="Target" extention="en" name="English"/>
+<!--		<item key="tgt" type="Target" extention="en" name="English"/> -->
 	</files>
     
     <!-- attributes already automatically filled in by action=makeex -->
@@ -10,7 +10,7 @@
     <interp key="xml" display="ID dokumentu" type="noedit"/>
     <interp key="cs" display="Výraz v češtině (ID)" type="idrefs" nolist="1" file="src"/>
     <interp key="cst" display="Výraz v češtině (formy)" type="lookup" ref="cs" fld="form"/>
-    <interp key="en" display="Výraz v angličtině (ID)" type="idrefs" nolist="1" file="tgt"/>
+<!--    <interp key="en" display="Výraz v angličtině (ID)" type="idrefs" nolist="1" file="tgt"/> -->
 
     <!-- attributes to be filled by manual annotation -->
     <interp key="dictexample" display="Příklad do slovníku" type="select" default="0">
