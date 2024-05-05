@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<queries>
+  <item id="q-1" cql="@[lemma = &quot;dokonce&quot;] :: match.text_lang = &quot;cs-CZ&quot; within text"/>
+<item id="q-2" cql="@[lemma=&quot;z&#x159;ejm&#x11B;&quot;]"/><item id="q-3" cql="@[lemma=&quot;dokonce&quot;]"/><item id="q-4" cql="@[lemma=&quot;pravd&#x11B;podobn&#x11B;&quot;]"/><item id="q-5" cql="@[lemma=&quot;nepochybn&#x11B;&quot;]"/><item id="q-6" cql="@[lemma=&quot;patrn&#x11B;&quot;]"/><item id="q-7" cql="@[form=&quot;jist&#x11B;&quot;]"/><item id="q-8" cql="@[form=&quot;Jist&#x11B;&quot;]"/><item id="q-9" cql="@[lemma=&quot;asi&quot;]"/><item id="q-10" cql="@[lemma=&quot;vskutku&quot;]"/><item id="q-11" cql="@[form=&quot;[Pp]odle&quot;][form=&quot;v&#x161;eho&quot;]"/><item id="q-12" cql="@[form=&quot;[Pp]odle&quot;]@[form=&quot;v&#x161;eho&quot;]"/><item id="q-13" cql="@[lemma=&quot;pr&#xFD;&quot;]"/></queries>
+
