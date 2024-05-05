@@ -4,6 +4,8 @@ SHELL=/bin/bash
 
 ############################################# PREPROCESSING FOR TEITOK ###############################################
 
+convert_all:
+	ls data/ic16core_csen/*.cs-00.tag.xml | cut -f3 -d'/' | cut -f1 -d'.' | while read name; do make convert-$$name; done
 convert-% : teitok/01.csen_data/%-en.xml teitok/01.csen_data/%-cs.xml
 	@echo "$* converted."
 teitok/01.csen_data/%-en.xml : data/ic16core_csen/%.en-00.tag.xml data/ic16core_csen/%.cs-00.en-00.alignment.xml
@@ -12,6 +14,8 @@ teitok/01.csen_data/%-cs.xml : data/ic16core_csen/%.cs-00.tag.xml data/ic16core_
 	cat $(word 1,$^) | python scripts/ic2teitok.py --salign-file $(word 2,$^) --align-ord 1 | sed 's/ xmlns="[^"]*"//g' > $@
 
 
+prewalign_all:
+	ls data/ic16core_csen/*.cs-00.tag.xml | cut -f3 -d'/' | cut -f1 -d'.' | while read name; do make prewalign-$$name; done
 prewalign-% : teitok/02.walign/%.for_align.txt
 	@echo "Files for word alignment of $* ready."
 teitok/02.walign/%.for_align.txt : data/ic16core_csen/%.en-00.tag.xml data/ic16core_csen/%.cs-00.tag.xml data/ic16core_csen/%.cs-00.en-00.alignment.xml
@@ -29,6 +33,9 @@ teitok/02.walign/%.for_align.txt : data/ic16core_csen/%.en-00.tag.xml data/ic16c
 		--output-ids teitok/02.walign/$*.for_align_ids.txt \
 		> $@
 
+# walign should be run on a machine with GPUs
+walign_all:
+	ls data/ic16core_csen/*.cs-00.tag.xml | cut -f3 -d'/' | cut -f1 -d'.' | while read name; do make walign-$$name; done
 walign-% : teitok/02.walign/%.align.txt
 	@echo "Word alignment for $* ready."
 teitok/02.walign/%.align.txt : teitok/02.walign/%.for_align.txt
@@ -39,14 +46,23 @@ teitok/02.walign/%.align.txt : teitok/02.walign/%.for_align.txt
 		--extraction 'softmax' --batch_size 32 --num_workers 1
 	ln -s $*.align.pcedt-chp5000_sup-all-train.txt $@
 
+postwalign_all:
+	ls data/ic16core_csen/*.cs-00.tag.xml | cut -f3 -d'/' | cut -f1 -d'.' | while read name; do make postwalign-$$name; done
 postwalign-% : teitok/02.walign/%_en-cs.xml
 	@echo "Word alignment XML $* ready."
 teitok/02.walign/%_en-cs.xml : teitok/02.walign/%.for_align_ids.txt teitok/02.walign/%.align.txt
-	python scripts/compile_teitok/02.walign_xml.py \
+	python scripts/compile_walign_xml.py \
 			$(word 1,$^) \
 			$(word 2,$^) \
 		| xmllint --format - \
 			> $@
+
+####################################### UPLOAD OF TEITOK INPUT DATA ############################################
+# 1. Login to the Seem-CZ TEITOK: https://quest.ms.mff.cuni.cz/teitok-dev/teitok/eemc/index.php
+# 2. Navigate to: Admin -> Upload/Manage files -> TEI XML Files
+# 3. Upload Czech and English documents from: teitok/01.csen_data/*-{cs,en}.xml
+# 4. Navigate to: Admin -> Upload/Manage files -> Align files
+# 5. Upload word alignments from: teitok/02.walign/*_en-cs.xml
 
 ############################################# OCCURENCE SAMPLING ###############################################
 
