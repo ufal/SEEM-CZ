@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as xmlparser
+from xml.sax.saxutils import escape
 import sys
 import re
 import argparse
@@ -60,7 +61,8 @@ def add_tei_header(xml):
     }
     attrs["langname"] = lang_names.get(attrs["lang"], "Other")
     root = xml.getroot()
-    tei_header_elem = xmlparser.fromstring(tei_header_xml.format(**attrs))
+    #print(attrs, file=sys.stderr)
+    tei_header_elem = xmlparser.fromstring(tei_header_xml.format(**{k:escape(v) for k,v in attrs.items()}))
     root.insert(0, tei_header_elem)
 
 def remove_text_attrs(xml):
