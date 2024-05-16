@@ -54,7 +54,7 @@ class OutputDoc:
 
 parser = argparse.ArgumentParser(description="A script to sample occurences and split them among the annotators")
 parser.add_argument("--output-dir", type=str, default='.', help="Directory to generate outputs")
-parser.add_argument("--annotators", nargs='+', default=["BS", "JS", "LP"], help="Names of annotators")
+parser.add_argument("--annotators", nargs='+', default=["BS", "JS", "LP"], help="Names of annotators. If the annotator's name consists of multiple comma-delimited names, the same samples will be distributed to these annotators.")
 parser.add_argument("--max-query-size", type=int, default=25, help="Maximum number of sampled occurences per query")
 parser.add_argument("--grouped-queries", type=str, help="Path to a file with group of queries per line to be treated as a single query")
 parser.add_argument("--srclang-index", type=str, help="Path to a file with srclang for each book id")
@@ -91,7 +91,7 @@ if args.equal_across_srclangs:
 random.seed(1986)
 
 annotators = args.annotators
-output_docs = {annotator:{srclang:OutputDoc() for srclang in args.srclangs} for annotator in annotators}
+output_docs = defaultdict(lambda: {srclang:OutputDoc() for srclang in args.srclangs})
 
 for srclang in args.srclangs:
     for qid in sorted(items_per_srclang_rest[srclang], key=lambda x: int(x.split("-")[-1])):
@@ -104,10 +104,12 @@ for srclang in args.srclangs:
             print(f"{srclang}/{qid}/{annotator}: {annot_sample}")
             if qid == "q-1":
                 xmlparser.dump(all_occurs[annot_sample[0]])
-            output_docs[annotator][srclang].append_sample([all_occurs[i] for i in annot_sample])
+            shared_annotators = annotator.split(",")
+            for shared_annotator in shared_annotators:
+                output_docs[shared_annotator][srclang].append_sample([all_occurs[i] for i in annot_sample])
 
 os.makedirs(args.output_dir, exist_ok=True)
-for annotator in annotators:
+for annotator in output_docs:
     for srclang in args.srclangs:
         output_path = os.path.join(args.output_dir, f"markers_{annotator}-{srclang}.xml")
         output_docs[annotator][srclang].write(output_path)
