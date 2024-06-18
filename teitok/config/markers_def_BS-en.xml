@@ -11,6 +11,7 @@
     <interp key="cs" display="Výraz v češtině (ID)" type="idrefs" nolist="1" file="src"/>
     <interp key="cst" display="Výraz v češtině (formy)" type="lookup" ref="cs" fld="form"/>
     <interp key="en" display="Výraz v angličtině (ID)" type="idrefs" nolist="1" file="tgt"/>
+    <interp key="ent" display="Výraz v angličtině (formy)" type="lookup" ref="en" fld="form"/>
 
     <!-- attributes to be filled by manual annotation -->
     <interp key="dictexample" display="Příklad do slovníku" type="select" default="0">
