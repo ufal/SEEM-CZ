@@ -120,7 +120,7 @@ teitok/annotator_samples/2023-11-27.pilot-run/done : teitok/makeex/markers_all.x
 
 teitok/postprocessed/01.sorted_idrefs/%.xml : teitok/markers/annotated/%.xml
 	mkdir -p $(dir $@)
-	python scripts/sort_idrefs.py teitok/config/markers_def_BS-cs.xml < $< > $@
+	python scripts/sort_idrefs.py teitok/config/markers_def_BS-cs-new.xml < $< > $@
 
 ############################################## HTML COMPARE ##################################################
 

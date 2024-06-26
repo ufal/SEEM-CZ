@@ -101,15 +101,22 @@ def extract_base_attrs(elem):
     return {attr_name: elem.attrib.get(attr_name, "") for attr_name, _ in BASE_ATTRS}
 
 def extract_annot_attrs(elem_bundle):
-    return {
-        attr_name: {
-            "annots": (values := 
-                [elem.attrib.get(deref_attr_name if (deref_attr_name := attr_name + ".deref") in elem.attrib else attr_name, "") for elem in elem_bundle]),
-            "all_same": all([v and v == values[0] for v in values]),
-            "all_empty": all([not v for v in values]),
+    annot_attrs = {}
+    for attr_name, _ in ANNOT_ATTRS:
+        annot_values = [
+            elem.attrib.get(
+                deref_attr_name if (deref_attr_name := attr_name + ".deref") in elem.attrib else attr_name,
+                "")
+            if elem is not None else None for elem in elem_bundle
+        ]
+        annot_values_defined = [v for v in annot_values if v is not None]
+        attr_value_dict = {
+            "annots": ["" if v is None else v for v in annot_values],
+            "all_same": all([v and v == annot_values_defined[0] for v in annot_values_defined]),
+            "all_empty": all([not v for v in annot_values_defined]),
         }
-        for attr_name, _ in ANNOT_ATTRS
-    }
+        annot_attrs[attr_name] = attr_value_dict
+    return annot_attrs
 
 def extract_attrs(elem_bundle):
     non_empty_annots = [e for e in elem_bundle if e is not None]

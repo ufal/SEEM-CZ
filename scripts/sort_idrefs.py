@@ -32,7 +32,7 @@ def main():
     input_doc = MarkerDoc(sys.stdin)
     annot_def_doc = MarkerDocDef(args.annot_def)
 
-    for annot_elem in input_doc.annot_elems:
+    for annot_elem in input_doc:
         for idref_attr in annot_def_doc.attr_names(type="idrefs"):
             annot_value_items = annot_elem.attrib.get(idref_attr, "").split(" ")
             if not annot_value_items:

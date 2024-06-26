@@ -16,7 +16,7 @@ class MarkerDoc:
         return {e.attrib["id"]:e for e in self.xml.findall(".//item")}
 
     def _extract_booklist(self):
-        return list(set([itemelem.attrib["xml"] for itemelem in self.annot_elems]))
+        return list(set([itemelem.attrib["xml"] for itemelem in self]))
 
     @property
     def booklist(self):
@@ -24,7 +24,7 @@ class MarkerDoc:
             self._booklist = self._extract_booklist()
         return self._booklist
 
-    @propery
+    @property
     def ids(self):
         return self.annot_elems.keys()
 
