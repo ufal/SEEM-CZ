@@ -71,31 +71,31 @@ def init_template_data(annot_names):
     }
     return data
 
-def deref_attrs_by_book(annot_elem_bundle, book, attrs):
+def deref_attrs_by_book(annot_elem, book, attrs):
     for attr_name in attrs:
-        for i, annot_elem in enumerate(annot_elem_bundle):
-            tok_deref_str = annot_elem.attrib.get(attr_name, "")
-            tok_ids = tok_deref_str.strip().split(" ")
-            if tok_ids and tok_ids[0] in book.tok_index:
-                tok_deref_str = " ".join([(token if (token := book.get_token(tokid)) else tokid) for tokid in tok_ids])
-            elif tok_deref_str:
-                tok_deref_str = f'"{tok_deref_str}"'
-            annot_elem.attrib[attr_name + ".deref"] = tok_deref_str
+        tok_deref_str = annot_elem.attrib.get(attr_name, "")
+        tok_ids = tok_deref_str.strip().split(" ")
+        if tok_ids and tok_ids[0] in book.tok_index:
+            tok_deref_str = " ".join([(token if (token := book.get_token(tokid)) else tokid) for tokid in tok_ids])
+        elif tok_deref_str:
+            tok_deref_str = f'"{tok_deref_str}"'
+        annot_elem.attrib[attr_name + ".deref"] = tok_deref_str
 
 def deref_index_attrs_all(doclist, bookdir):
     all_bookids = set(bookid for doc in doclist for bookid in doc.booklist)
     for bookid in all_bookids:
-        book_annots = [annotdoc.annots_by_bookid(bookid) for annotdoc in doclist]
         csbook = BookDoc(bookid, "cs", bookdir)
         enbook = BookDoc(bookid, "en", bookdir)
-        for annot_elem_bundle in zip(*book_annots):
-            #logging.debug(f"Dereferencing index attributes to the {lang} version of {bookid}")
-            deref_attrs_by_book(annot_elem_bundle, csbook, INDEX_ATTRS["cs"])
-            cssents, cstuids = csbook.get_sentences_by_tokids(annot_elem_bundle[0].attrib["cs"].split(" "), with_tuids=True)
-            annot_elem_bundle[0].attrib["cssent"] = " ".join(cssents)
-            deref_attrs_by_book(annot_elem_bundle, enbook, INDEX_ATTRS["en"])
-            ensents = enbook.get_sentences_by_tuids(cstuids)
-            annot_elem_bundle[0].attrib["ensent"] = " ".join(ensents) 
+        for annotdoc in doclist:
+            book_annots = annotdoc.annots_by_bookid(bookid)
+            for annot_elem in book_annots:
+                #logging.debug(f"Dereferencing index attributes to the {lang} version of {bookid}")
+                deref_attrs_by_book(annot_elem, csbook, INDEX_ATTRS["cs"])
+                cssents, cstuids = csbook.get_sentences_by_tokids(annot_elem.attrib["cs"].split(" "), with_tuids=True)
+                annot_elem.attrib["cssent"] = " ".join(cssents)
+                deref_attrs_by_book(annot_elem, enbook, INDEX_ATTRS["en"])
+                ensents = enbook.get_sentences_by_tuids(cstuids)
+                annot_elem.attrib["ensent"] = " ".join(ensents) 
 
 def extract_base_attrs(elem):
     return {attr_name: elem.attrib.get(attr_name, "") for attr_name, _ in BASE_ATTRS}
@@ -103,7 +103,8 @@ def extract_base_attrs(elem):
 def extract_annot_attrs(elem_bundle):
     return {
         attr_name: {
-            "annots": (values := [elem.attrib.get(deref_attr_name if (deref_attr_name := attr_name + ".deref") in elem.attrib else attr_name, "") for elem in elem_bundle]),
+            "annots": (values := 
+                [elem.attrib.get(deref_attr_name if (deref_attr_name := attr_name + ".deref") in elem.attrib else attr_name, "") for elem in elem_bundle]),
             "all_same": all([v and v == values[0] for v in values]),
             "all_empty": all([not v for v in values]),
         }
@@ -111,13 +112,18 @@ def extract_annot_attrs(elem_bundle):
     }
 
 def extract_attrs(elem_bundle):
-    if len(elem_ids := list(set([elem.attrib["id"] for elem in elem_bundle]))) > 1:
-        logging.error(f"Parallel annotations do not refer to the same example: {' '.join(elem_ids)}")
-        exit()
+    non_empty_annots = [e for e in elem_bundle if e is not None]
+    assert len(non_empty_annots) > 0
+    assert len(list(set([elem.attrib["id"] for elem in non_empty_annots]))) == 1
     return {
-        "base_attrs": extract_base_attrs(elem_bundle[0]),
+        "base_attrs": extract_base_attrs(non_empty_annots[0]),
         "annot_attrs": extract_annot_attrs(elem_bundle),
     }
+
+def iter_annot_bundles(doc_list):
+    all_ids = set([docid for doc in doc_list for docid in doc.ids])
+    for docid in all_ids:
+        yield [doc.annot_by_id(docid) for doc in doc_list]
 
 def configure_template(args):
     display_f = lambda k, v=None: v if v else k
@@ -151,7 +157,7 @@ def main():
 
     deref_index_attrs_all(doc_list, args.book_dir)
 
-    all_results = [extract_attrs(annot_bundle) for annot_bundle in zip(*doc_list)]
+    all_results = [extract_attrs(annot_bundle) for annot_bundle in iter_annot_bundles(doc_list)]
 
     #logging.debug(f"{all_results = }")
 

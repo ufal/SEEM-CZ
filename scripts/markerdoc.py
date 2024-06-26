@@ -10,10 +10,10 @@ class MarkerDoc:
         self._booklist = None
 
     def __iter__(self):
-        return iter(self.annot_elems)
+        return iter(self.annot_elems.values())
 
     def _annots(self):
-        return self.xml.findall(".//item")
+        return {e.attrib["id"]:e for e in self.xml.findall(".//item")}
 
     def _extract_booklist(self):
         return list(set([itemelem.attrib["xml"] for itemelem in self.annot_elems]))
@@ -24,8 +24,15 @@ class MarkerDoc:
             self._booklist = self._extract_booklist()
         return self._booklist
 
+    @propery
+    def ids(self):
+        return self.annot_elems.keys()
+
     def annots_by_bookid(self, bookid):
-        return [itemelem for itemelem in self.annot_elems if itemelem.attrib["xml"] == bookid]
+        return [itemelem for itemelem in self.annot_elems.values() if itemelem.attrib["xml"] == bookid]
+
+    def annot_by_id(self, annot_id):
+        return self.annot_elems.get(annot_id)
 
 
 class MarkerDocDef:
