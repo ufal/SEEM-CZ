@@ -60,6 +60,8 @@
 
     <interp key="member" display="Člen" nolist="1" type="idrefs" file="src" color="#9745c0" disabledif="scope=sent|scope=ellipsis"/>
     
+    <interp key="subst" display="Substituce" nolist="1" type="idrefs" file="src" color="#9745c0" disabledif="scope=sent|scope=member"/>
+    
     <interp key="tfpos" display="Pozice v AČ" disabledif="use=answer|use=other|use=content" type="select" default="neutral">
         <option value="neutral" display="neutrální"/>
         <option value="emphasis" display="zdůrazněná"/>
