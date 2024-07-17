@@ -7,6 +7,8 @@ from collections import defaultdict
 import random
 import logging
 
+from markerdoc import MarkerDoc
+
 class QueryGroup:
     def __init__(self, path):
         self.query_map = {}
@@ -55,11 +57,14 @@ class OutputDoc:
 parser = argparse.ArgumentParser(description="A script to sample occurences and split them among the annotators")
 parser.add_argument("--output-dir", type=str, default='.', help="Directory to generate outputs")
 parser.add_argument("--annotators", nargs='+', default=["BS", "JS", "LP"], help="Names of annotators. If the annotator's name consists of multiple comma-delimited names, the same samples will be distributed to these annotators.")
+parser.add_argument("--queries", nargs='*', help="List of query IDs to make a sample from")
 parser.add_argument("--max-query-size", type=int, default=25, help="Maximum number of sampled occurences per query")
 parser.add_argument("--grouped-queries", type=str, help="Path to a file with group of queries per line to be treated as a single query")
 parser.add_argument("--srclang-index", type=str, help="Path to a file with srclang for each book id")
 parser.add_argument("--srclangs", nargs='+', default=["unk"], help="Source languages to include; a separate file for each source language is made")
 parser.add_argument("--equal-across-srclangs", action="store_true", help="Number of samples for each srclang will be the same")
+parser.add_argument("--output-suffix", type=str, default="", help="The suffix to the output files")
+parser.add_argument("--skip-annotated", nargs='*', default=[], help="List of already annotated files. All annotated occurences will be skipped.")
 args = parser.parse_args()
 
 logging.basicConfig(level=logging.INFO)
@@ -71,10 +76,21 @@ srclang_index = SrclangIndex(args.srclang_index)
 
 items_per_srclang_rest = {l:defaultdict(list) for l in args.srclangs}
 
+# debug prints of all collected examples
+already_annotated = set()
+for path in args.skip_annotated:
+    cs_ids = [cs_id for item in MarkerDoc(path) for cs_id in item.attrib["cs"].split(" ")]
+    already_annotated.update(cs_ids)
+#logging.debug(already_annotated)
+
 all_qids = set()
 
 xml = xmlparser.parse(sys.stdin)
 for occur_elem in xml.findall('.//item'):
+    cs_id = occur_elem.attrib["cs"]
+    # skip if the occurence has already been annotated
+    if cs_id in already_annotated:
+        continue
     bookid = occur_elem.attrib["xml"]
     srclang = srclang_index[bookid]
     if srclang not in args.srclangs:
@@ -83,6 +99,10 @@ for occur_elem in xml.findall('.//item'):
     qid = query_group[qid]
     all_qids.add(qid)
     items_per_srclang_rest[srclang][f"{qid}"].append(occur_elem)
+
+for srclang in items_per_srclang_rest:
+    for qid in items_per_srclang_rest[srclang]:
+        logging.debug(f"{qid} {srclang} {len(items_per_srclang_rest[srclang][qid])}")
 
 max_for_qid = None
 if args.equal_across_srclangs:
@@ -94,7 +114,10 @@ annotators = args.annotators
 output_docs = defaultdict(lambda: {srclang:OutputDoc() for srclang in args.srclangs})
 
 for srclang in args.srclangs:
-    for qid in sorted(items_per_srclang_rest[srclang], key=lambda x: int(x.split("-")[-1])):
+    query_list = args.queries
+    if not query_list:
+        query_list = list(items_per_srclang_rest[srclang].keys())
+    for qid in sorted(query_list, key=lambda x: int(x.split("-")[-1])):
         all_occurs = items_per_srclang_rest[srclang][qid]
         sample_size = min(max_for_qid[qid] if max_for_qid else len(all_occurs), args.max_query_size*len(args.annotators))
         sample = random.sample(range(len(all_occurs)), sample_size)
@@ -111,5 +134,5 @@ for srclang in args.srclangs:
 os.makedirs(args.output_dir, exist_ok=True)
 for annotator in output_docs:
     for srclang in args.srclangs:
-        output_path = os.path.join(args.output_dir, f"markers_{annotator}-{srclang}.xml")
+        output_path = os.path.join(args.output_dir, f"markers_{annotator}-{srclang}{'-' + args.output_suffix if args.output_suffix else ''}.xml")
         output_docs[annotator][srclang].write(output_path)
