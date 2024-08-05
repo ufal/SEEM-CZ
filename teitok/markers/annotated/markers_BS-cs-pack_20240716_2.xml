@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<examples><item id="ex-26132" cql="q-22" xml="sindelka-chyba" en="" cs="cs:sindelka-chyba:0:1049:1:w3" cst="každopádně" use="answer" commfuntype="agree" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-26139" cql="q-22" xml="Skvorecky-PribehIng_2" en="" cs="cs:Skvorecky-PribehIng_2:0:972:4:w1" cst="Každopádně" use="confirm" certainty="full" certaintynote="gradace " commfuntype="decl" commfunsubtype="dotvrzení" commfunnote="gradace" scope="ellipsis" subst="cs:Skvorecky-PribehIng_2:0:972:4:w2" tfpos="neutral" sentpos="first" neg="1" contrast="1" modalpersp="clear" comment="přechod elipsa - člen, gradace přes větu" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-26201" cql="q-22" xml="tuckova-vyhnani_Gerty" en="" cs="cs:tuckova-vyhnani_Gerty:0:2063:18:w1" cst="Každopádně"/>
+<item id="ex-25755" cql="q-22" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:412:1:w3" cst="každopádně"/>
+<item id="ex-26117" cql="q-22" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:708:3:w1" cst="Každopádně"/>
+<item id="ex-26209" cql="q-22" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:151:1:w1" cst="Každopádně"/>
+<item id="ex-26129" cql="q-22" xml="sindelka-chyba" en="" cs="cs:sindelka-chyba:0:135:2:w15" cst="každopádně"/>
+<item id="ex-25753" cql="q-22" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:193:1:w14" cst="každopádně"/>
+<item id="ex-26115" cql="q-22" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:204:9:w60" cst="každopádně"/>
+<item id="ex-25757" cql="q-22" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:676:8:w42" cst="každopádně"/>
+<item id="ex-26189" cql="q-22" xml="topol-andel" en="" cs="cs:topol-andel:0:500:5:w1" cst="Každopádně"/>
+<item id="ex-26191" cql="q-22" xml="Topol-Chladnou_zemi" en="" cs="cs:Topol-Chladnou_zemi:0:277:1:w31" cst="každopádně"/>
+<item id="ex-26192" cql="q-22" xml="Topol-Chladnou_zemi" en="" cs="cs:Topol-Chladnou_zemi:0:359:3:w4" cst="každopádně"/>
+<item id="ex-25982" cql="q-22" xml="Paral-Milenci_a_vrazi" en="" cs="cs:Paral-Milenci_a_vrazi:0:165:37:w20" cst="každopádně"/>
+<item id="ex-25754" cql="q-22" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:384:2:w23" cst="každopádně"/>
+<item id="ex-26211" cql="q-22" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:198:24:w15" cst="každopádně"/>
+<item id="ex-26195" cql="q-22" xml="Topol-Sestra" en="" cs="cs:Topol-Sestra:0:3272:11:w6" cst="každopádně"/>
+<item id="ex-25758" cql="q-22" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:676:11:w91" cst="každopádně"/>
+<item id="ex-25985" cql="q-22" xml="Pekarkova-Dej_mi_ty_pr" en="" cs="cs:Pekarkova-Dej_mi_ty_pr:0:1726:1:w1" cst="Každopádně"/>
+<item id="ex-26131" cql="q-22" xml="sindelka-chyba" en="" cs="cs:sindelka-chyba:0:247:7:w1" cst="Každopádně"/>
+<item id="ex-25739" cql="q-22" xml="hajicek-selsky_baroko" en="" cs="cs:hajicek-selsky_baroko:0:1585:1:w2" cst="Každopádně"/>
+<item id="ex-26140" cql="q-22" xml="Skvorecky-PribehIng_2" en="" cs="cs:Skvorecky-PribehIng_2:0:2289:2:w5" cst="každopádně"/>
+<item id="ex-26136" cql="q-22" xml="skvorecky-hrichy_pater" en="" cs="cs:skvorecky-hrichy_pater:0:1131:1:w92" cst="každopádně"/>
+<item id="ex-26135" cql="q-22" xml="skvorecky-hrichy_pater" en="" cs="cs:skvorecky-hrichy_pater:0:837:2:w4" cst="každopádně"/>
+<item id="ex-26218" cql="q-22" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:882:1:w18" cst="každopádně"/>
+<item id="ex-26214" cql="q-22" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:1388:1:w4" cst="každopádně"/>
+<item id="ex-26194" cql="q-22" xml="Topol-Chladnou_zemi" en="" cs="cs:Topol-Chladnou_zemi:0:1371:2:w1" cst="Každopádně"/>
+<item id="ex-25794" cql="q-22" xml="kohout-snezim" en="" cs="cs:kohout-snezim:0:259:2:w4" cst="každopádně"/>
+<item id="ex-25741" cql="q-22" xml="hakl-o_rodicich_a_dete" en="" cs="cs:hakl-o_rodicich_a_dete:0:492:2:w1" cst="každopádně"/>
+<item id="ex-26118" cql="q-22" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:747:4:w1" cst="Každopádně"/>
+<item id="ex-26137" cql="q-22" xml="skvorecky-hrichy_pater" en="" cs="cs:skvorecky-hrichy_pater:0:1190:24:w49" cst="každopádně"/>
+<item id="ex-26190" cql="q-22" xml="topol-andel" en="" cs="cs:topol-andel:0:553:1:w3" cst="každopádně"/>
+<item id="ex-25792" cql="q-22" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:1696:1:w11" cst="každopádně"/>
+<item id="ex-26119" cql="q-22" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:1232:3:w1" cst="Každopádně"/>
+<item id="ex-26208" cql="q-22" xml="viewegh-baj_letaPodPsa" en="" cs="cs:viewegh-baj_letaPodPsa:0:424:2:w2" cst="Každopádně"/>
+<item id="ex-25789" cql="q-22" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:523:4:w14" cst="každopádně"/>
+<item id="ex-26216" cql="q-22" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:1571:1:w2" cst="Každopádně"/>
+<item id="ex-26120" cql="q-22" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:1422:7:w1" cst="Každopádně"/>
+<item id="ex-26193" cql="q-22" xml="Topol-Chladnou_zemi" en="" cs="cs:Topol-Chladnou_zemi:0:725:2:w77" cst="každopádně"/>
+<item id="ex-25979" cql="q-22" xml="Ourednik-Europeana" en="" cs="cs:Ourednik-Europeana:0:19:2:w5" cst="každopádně"/>
+<item id="ex-26200" cql="q-22" xml="tuckova-vyhnani_Gerty" en="" cs="cs:tuckova-vyhnani_Gerty:0:1645:44:w11" cst="každopádně"/>
+<item id="ex-25795" cql="q-22" xml="kohout-snezim" en="" cs="cs:kohout-snezim:0:754:4:w5" cst="každopádně"/>
+<item id="ex-25791" cql="q-22" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:1609:3:w4" cst="každopádně"/>
+<item id="ex-26207" cql="q-22" xml="Urban-Sedmikosteli" en="" cs="cs:Urban-Sedmikosteli:0:872:2:w21" cst="každopádně"/>
+<item id="ex-26116" cql="q-22" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:257:4:w9" cst="každopádně"/>
+<item id="ex-26202" cql="q-22" xml="tuckova-vyhnani_Gerty" en="" cs="cs:tuckova-vyhnani_Gerty:0:2244:12:w15" cst="každopádně"/>
+<item id="ex-26130" cql="q-22" xml="sindelka-chyba" en="" cs="cs:sindelka-chyba:0:161:1:w1" cst="Každopádně"/>
+<item id="ex-25740" cql="q-22" xml="hakl-o_rodicich_a_dete" en="" cs="cs:hakl-o_rodicich_a_dete:0:147:2:w1" cst="Každopádně"/>
+<item id="ex-25800" cql="q-22" xml="Kundera-Smesne_lasky" en="" cs="cs:Kundera-Smesne_lasky:0:328:1:w2" cst="Každopádně"/>
+<item id="ex-26215" cql="q-22" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:1506:2:w1" cst="Každopádně"/>
+</examples>
