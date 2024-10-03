@@ -1,52 +1,52 @@
-<?xml version='1.0' encoding='utf-8'?>
-<examples><item id="ex-26521" cql="q-16" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:1554:7:w29" cst="bezpochyby" />
-<item id="ex-26053" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:501:2:w20" cst="bezpochyby" />
-<item id="ex-26490" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:601:1:w19" cst="bezpochyby" />
-<item id="ex-26518" cql="q-16" xml="viewegh-baj_letaPodPsa" en="" cs="cs:viewegh-baj_letaPodPsa:0:1247:1:w8" cst="bezpochyby" />
-<item id="ex-26037" cql="q-16" xml="klima-leto" en="" cs="cs:klima-leto:0:307:4:w2" cst="bezpochyby" />
-<item id="ex-26324" cql="q-16" xml="platzova-anarchista" en="" cs="cs:platzova-anarchista:0:805:2:w1" cst="Bezpochyby" />
-<item id="ex-26522" cql="q-16" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:1879:9:w16" cst="bezpochyby" />
-<item id="ex-26408" cql="q-16" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:890:4:w5" cst="bezpochyby" />
-<item id="ex-25274" cql="q-16" xml="Ajvaz-Zlaty_vek" en="" cs="cs:Ajvaz-Zlaty_vek:0:444:2:w11" cst="bezpochyby" />
-<item id="ex-26265" cql="q-16" xml="panek-dejiny_ceskych" en="" cs="cs:panek-dejiny_ceskych:0:1427:4:w1" cst="Bezpochyby" />
-<item id="ex-26039" cql="q-16" xml="klima-leto" en="" cs="cs:klima-leto:0:1257:4:w4" cst="bezpochyby" />
-<item id="ex-26492" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1096:1:w22" cst="bezpochyby" />
-<item id="ex-26494" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1481:4:w1" cst="Bezpochyby" />
-<item id="ex-26495" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1609:10:w13" cst="bezpochyby" />
-<item id="ex-26057" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:1478:9:w1" cst="Bezpochyby" />
-<item id="ex-25935" cql="q-16" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:253:2:w35" cst="bezpochyby" />
-<item id="ex-26520" cql="q-16" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:685:3:w7" cst="bezpochyby" />
-<item id="ex-26040" cql="q-16" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:734:1:w4" cst="bezpochyby" />
-<item id="ex-26218" cql="q-16" xml="Mornstajnova-Hana" en="" cs="cs:Mornstajnova-Hana:0:1336:2:w18" cst="bezpochyby" />
-<item id="ex-26422" cql="q-16" xml="Skvorecky-PribehIng_1" en="" cs="cs:Skvorecky-PribehIng_1:0:1612:1:w7" cst="bezpochyby" />
-<item id="ex-25270" cql="q-16" xml="ajvaz-prazdne_ulice" en="" cs="cs:ajvaz-prazdne_ulice:0:164:9:w6" cst="bezpochyby" />
-<item id="ex-26491" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1089:2:w35" cst="bezpochyby" />
-<item id="ex-26436" cql="q-16" xml="Strouhal-Zivot_Egyptan" en="" cs="cs:Strouhal-Zivot_Egyptan:0:1393:11:w21" cst="bezpochyby" />
-<item id="ex-26435" cql="q-16" xml="Strouhal-Zivot_Egyptan" en="" cs="cs:Strouhal-Zivot_Egyptan:0:1210:2:w1" cst="Bezpochyby" />
-<item id="ex-26423" cql="q-16" xml="Skvorecky-PribehIng_1" en="" cs="cs:Skvorecky-PribehIng_1:0:2879:2:w14" cst="bezpochyby" />
-<item id="ex-26523" cql="q-16" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:11:2:w33" cst="bezpochyby" />
-<item id="ex-26500" cql="q-16" xml="Urban-Sedmikosteli" en="" cs="cs:Urban-Sedmikosteli:0:281:8:w24" cst="bezpochyby" />
-<item id="ex-26052" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:448:1:w15" cst="bezpochyby" />
-<item id="ex-25272" cql="q-16" xml="ajvaz-prazdne_ulice" en="" cs="cs:ajvaz-prazdne_ulice:0:1369:2:w3" cst="bezpochyby" />
-<item id="ex-26405" cql="q-16" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:516:1:w4" cst="bezpochyby" />
-<item id="ex-26056" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:1478:5:w7" cst="bezpochyby" />
-<item id="ex-26038" cql="q-16" xml="klima-leto" en="" cs="cs:klima-leto:0:1239:2:w19" cst="bezpochyby" />
-<item id="ex-25271" cql="q-16" xml="ajvaz-prazdne_ulice" en="" cs="cs:ajvaz-prazdne_ulice:0:264:4:w15" cst="bezpochyby" />
-<item id="ex-26055" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:1358:2:w5" cst="bezpochyby" />
-<item id="ex-26524" cql="q-16" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:123:2:w85" cst="bezpochyby" />
-<item id="ex-26041" cql="q-16" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:1332:2:w36" cst="bezpochyby" />
-<item id="ex-26498" cql="q-16" xml="Urban-Sedmikosteli" en="" cs="cs:Urban-Sedmikosteli:0:56:5:w1" cst="Bezpochyby" />
-<item id="ex-26519" cql="q-16" xml="viewegh-baj_letaPodPsa" en="" cs="cs:viewegh-baj_letaPodPsa:0:1889:1:w29" cst="bezpochyby" />
-<item id="ex-26493" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1362:4:w13" cst="bezpochyby" />
-<item id="ex-26528" cql="q-16" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:1876:4:w16" cst="bezpochyby" />
-<item id="ex-26497" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1783:1:w15" cst="bezpochyby" />
-<item id="ex-26527" cql="q-16" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:1647:1:w27" cst="bezpochyby" />
-<item id="ex-26043" cql="q-16" xml="kohout-snezim" en="" cs="cs:kohout-snezim:0:1615:3:w2" cst="bezpochyby" />
-<item id="ex-26487" cql="q-16" xml="tuckova-vyhnani_Gerty" en="" cs="cs:tuckova-vyhnani_Gerty:0:198:7:w1" cst="Bezpochyby" />
-<item id="ex-26128" cql="q-16" xml="Levy-Umeni_prekladu" en="" cs="cs:Levy-Umeni_prekladu:0:15:225:w2" cst="bezpochyby" />
-<item id="ex-26501" cql="q-16" xml="Urban-Sedmikosteli" en="" cs="cs:Urban-Sedmikosteli:0:763:9:w1" cst="Bezpochyby" />
-<item id="ex-26421" cql="q-16" xml="Skvorecky-Mirakl" en="" cs="cs:Skvorecky-Mirakl:0:1173:2:w26" cst="bezpochyby" />
-<item id="ex-26526" cql="q-16" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:750:2:w33" cst="bezpochyby" />
-<item id="ex-26054" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:575:5:w25" cst="bezpochyby" />
-<item id="ex-26051" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:258:2:w7" cst="bezpochyby" />
+<?xml version="1.0" encoding="utf-8"?>
+<examples><item id="ex-26521" cql="q-16" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:1554:7:w29" cst="bezpochyby" use="certain" certainty="full" commfuntype="interr" scope="member" pred="" tfpos="neutral" sentpos="other" modalpersp="clear" predlemma="" predtag="" predverbtag="" modif="" member="cs:Viewegh-Vybijena:0:1554:7:w30" contrast="1" comment="koordinace"/>
+<item id="ex-26053" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:501:2:w20" cst="bezpochyby" use="certain" certainty="full" commfuntype="interr" scope="member" member="cs:Kundera-Nesmrtelnost:0:501:2:w21 cs:Kundera-Nesmrtelnost:0:501:2:w22 cs:Kundera-Nesmrtelnost:0:501:2:w23" tfpos="neutral" sentpos="other" contrast="1" modalpersp="clear" comment="v asi řečnické otázce" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-26490" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:601:1:w19" cst="bezpochyby" use="certain" certainty="medium" commfuntype="decl" scope="sent" tfpos="neutral" sentpos="other" modalpersp="clear" predlemma="" predtag="" predverbtag=""/>
+<item id="ex-26518" cql="q-16" xml="viewegh-baj_letaPodPsa" en="" cs="cs:viewegh-baj_letaPodPsa:0:1247:1:w8" cst="bezpochyby"/>
+<item id="ex-26037" cql="q-16" xml="klima-leto" en="" cs="cs:klima-leto:0:307:4:w2" cst="bezpochyby"/>
+<item id="ex-26324" cql="q-16" xml="platzova-anarchista" en="" cs="cs:platzova-anarchista:0:805:2:w1" cst="Bezpochyby"/>
+<item id="ex-26522" cql="q-16" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:1879:9:w16" cst="bezpochyby"/>
+<item id="ex-26408" cql="q-16" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:890:4:w5" cst="bezpochyby"/>
+<item id="ex-25274" cql="q-16" xml="Ajvaz-Zlaty_vek" en="" cs="cs:Ajvaz-Zlaty_vek:0:444:2:w11" cst="bezpochyby"/>
+<item id="ex-26265" cql="q-16" xml="panek-dejiny_ceskych" en="" cs="cs:panek-dejiny_ceskych:0:1427:4:w1" cst="Bezpochyby"/>
+<item id="ex-26039" cql="q-16" xml="klima-leto" en="" cs="cs:klima-leto:0:1257:4:w4" cst="bezpochyby"/>
+<item id="ex-26492" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1096:1:w22" cst="bezpochyby"/>
+<item id="ex-26494" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1481:4:w1" cst="Bezpochyby"/>
+<item id="ex-26495" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1609:10:w13" cst="bezpochyby"/>
+<item id="ex-26057" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:1478:9:w1" cst="Bezpochyby"/>
+<item id="ex-25935" cql="q-16" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:253:2:w35" cst="bezpochyby"/>
+<item id="ex-26520" cql="q-16" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:685:3:w7" cst="bezpochyby"/>
+<item id="ex-26040" cql="q-16" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:734:1:w4" cst="bezpochyby"/>
+<item id="ex-26218" cql="q-16" xml="Mornstajnova-Hana" en="" cs="cs:Mornstajnova-Hana:0:1336:2:w18" cst="bezpochyby"/>
+<item id="ex-26422" cql="q-16" xml="Skvorecky-PribehIng_1" en="" cs="cs:Skvorecky-PribehIng_1:0:1612:1:w7" cst="bezpochyby"/>
+<item id="ex-25270" cql="q-16" xml="ajvaz-prazdne_ulice" en="" cs="cs:ajvaz-prazdne_ulice:0:164:9:w6" cst="bezpochyby"/>
+<item id="ex-26491" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1089:2:w35" cst="bezpochyby"/>
+<item id="ex-26436" cql="q-16" xml="Strouhal-Zivot_Egyptan" en="" cs="cs:Strouhal-Zivot_Egyptan:0:1393:11:w21" cst="bezpochyby"/>
+<item id="ex-26435" cql="q-16" xml="Strouhal-Zivot_Egyptan" en="" cs="cs:Strouhal-Zivot_Egyptan:0:1210:2:w1" cst="Bezpochyby"/>
+<item id="ex-26423" cql="q-16" xml="Skvorecky-PribehIng_1" en="" cs="cs:Skvorecky-PribehIng_1:0:2879:2:w14" cst="bezpochyby"/>
+<item id="ex-26523" cql="q-16" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:11:2:w33" cst="bezpochyby"/>
+<item id="ex-26500" cql="q-16" xml="Urban-Sedmikosteli" en="" cs="cs:Urban-Sedmikosteli:0:281:8:w24" cst="bezpochyby"/>
+<item id="ex-26052" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:448:1:w15" cst="bezpochyby"/>
+<item id="ex-25272" cql="q-16" xml="ajvaz-prazdne_ulice" en="" cs="cs:ajvaz-prazdne_ulice:0:1369:2:w3" cst="bezpochyby"/>
+<item id="ex-26405" cql="q-16" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:516:1:w4" cst="bezpochyby"/>
+<item id="ex-26056" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:1478:5:w7" cst="bezpochyby"/>
+<item id="ex-26038" cql="q-16" xml="klima-leto" en="" cs="cs:klima-leto:0:1239:2:w19" cst="bezpochyby"/>
+<item id="ex-25271" cql="q-16" xml="ajvaz-prazdne_ulice" en="" cs="cs:ajvaz-prazdne_ulice:0:264:4:w15" cst="bezpochyby"/>
+<item id="ex-26055" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:1358:2:w5" cst="bezpochyby"/>
+<item id="ex-26524" cql="q-16" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:123:2:w85" cst="bezpochyby"/>
+<item id="ex-26041" cql="q-16" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:1332:2:w36" cst="bezpochyby"/>
+<item id="ex-26498" cql="q-16" xml="Urban-Sedmikosteli" en="" cs="cs:Urban-Sedmikosteli:0:56:5:w1" cst="Bezpochyby"/>
+<item id="ex-26519" cql="q-16" xml="viewegh-baj_letaPodPsa" en="" cs="cs:viewegh-baj_letaPodPsa:0:1889:1:w29" cst="bezpochyby"/>
+<item id="ex-26493" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1362:4:w13" cst="bezpochyby"/>
+<item id="ex-26528" cql="q-16" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:1876:4:w16" cst="bezpochyby"/>
+<item id="ex-26497" cql="q-16" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1783:1:w15" cst="bezpochyby"/>
+<item id="ex-26527" cql="q-16" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:1647:1:w27" cst="bezpochyby"/>
+<item id="ex-26043" cql="q-16" xml="kohout-snezim" en="" cs="cs:kohout-snezim:0:1615:3:w2" cst="bezpochyby"/>
+<item id="ex-26487" cql="q-16" xml="tuckova-vyhnani_Gerty" en="" cs="cs:tuckova-vyhnani_Gerty:0:198:7:w1" cst="Bezpochyby"/>
+<item id="ex-26128" cql="q-16" xml="Levy-Umeni_prekladu" en="" cs="cs:Levy-Umeni_prekladu:0:15:225:w2" cst="bezpochyby"/>
+<item id="ex-26501" cql="q-16" xml="Urban-Sedmikosteli" en="" cs="cs:Urban-Sedmikosteli:0:763:9:w1" cst="Bezpochyby"/>
+<item id="ex-26421" cql="q-16" xml="Skvorecky-Mirakl" en="" cs="cs:Skvorecky-Mirakl:0:1173:2:w26" cst="bezpochyby"/>
+<item id="ex-26526" cql="q-16" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:750:2:w33" cst="bezpochyby"/>
+<item id="ex-26054" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:575:5:w25" cst="bezpochyby"/>
+<item id="ex-26051" cql="q-16" xml="Kundera-Nesmrtelnost" en="" cs="cs:Kundera-Nesmrtelnost:0:258:2:w7" cst="bezpochyby"/>
 </examples>
