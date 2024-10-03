@@ -11,6 +11,7 @@
     <interp key="cs" display="Výraz v češtině (ID)" type="idrefs" nolist="1" file="src"/>
     <interp key="cst" display="Výraz v češtině (formy)" type="lookup" ref="cs" fld="form"/>
     <interp key="en" display="Výraz v angličtině (ID)" type="idrefs" nolist="1" file="tgt"/>
+    <interp key="ent" display="Výraz v angličtině (formy)" type="lookup" ref="en" fld="form"/>
 
     <!-- attributes to be filled by manual annotation -->
     <interp key="dictexample" display="Příklad do slovníku" type="select" default="0">
@@ -59,6 +60,8 @@
     <interp key="predverbtag" display="Predikát (verbtag)" type="lookup" ref="pred" fld="verbtag"/>
 
     <interp key="member" display="Člen" nolist="1" type="idrefs" file="src" color="#9745c0" disabledif="scope=sent|scope=ellipsis"/>
+    
+    <interp key="subst" display="Substituce" nolist="1" type="idrefs" file="src" color="#9745c0" disabledif="scope=sent|scope=member"/>
     
     <interp key="tfpos" display="Pozice v AČ" disabledif="use=answer|use=other|use=content" type="select" default="neutral">
         <option value="neutral" display="neutrální"/>
