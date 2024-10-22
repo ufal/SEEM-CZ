@@ -13,4 +13,9 @@
     <interp key="en" display="Výraz v angličtině (ID)" type="idrefs" nolist="1" file="tgt"/>
     <interp key="ent" display="Výraz v angličtině (formy)" type="lookup" ref="en" fld="form"/>
 
+    <interp key="alignchecked" display="Zarovnání skontrolováno" type="select" default="1">
+        <option value="0" display="ne"/>
+        <option value="1" display="ano"/>
+    </interp>
+
 </interpGrp>
