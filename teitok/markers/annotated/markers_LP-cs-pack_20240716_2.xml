@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+  <user id="LP" email="polakova@ufal.mff.cuni.cz" name="Lucie Pol&#xE1;kov&#xE1;"/>
   <item id="ex-28008" cql="q-17" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:1018:1:w7" cs="cs:Vopenka-Paty_rozmer:0:1039:1:w7" cst="doopravdy" use="content" pred="cs:Vopenka-Paty_rozmer:0:1039:1:w8" predlemma="znamenat" predtag="VB-S---3P-AAI--" predverbtag="VDA3SP" ent="really"/>
   <item id="ex-26586" cql="q-17" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:2346:1:w6" cs="cs:Kohout-Hvezdna_hodina:0:2390:1:w7" cst="doopravdy" use="content" pred="cs:Kohout-Hvezdna_hodina:0:2390:1:w6" comment="v r&#xE9;matu" predlemma="znamenat" predtag="VB-S---3P-AAI--" predverbtag="VDA3SP" ent="really"/>
   <item id="ex-27837" cql="q-17" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:1988:1:w14" cs="cs:styblova-skalpel_pros:0:2018:2:w8" cst="doopravdy" use="content" predlemma="" predtag="" predverbtag="" dictexample="1" ent="really"/>

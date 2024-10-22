@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+  <user id="LP" email="polakova@ufal.mff.cuni.cz" name="Lucie Poláková"/>
   <item id="ex-25642" cql="q-16" xml="farrell-nepokoje" en="" cs="cs:farrell-nepokoje:0:548:1:w13" cst="bezpochyby"/>
   <item id="ex-26366" cql="q-16" xml="rowlingova-hpot_pohar" en="" cs="cs:rowlingova-hpot_pohar:0:125:1:w32" cst="bezpochyby"/>
   <item id="ex-25426" cql="q-16" xml="barnes-zadny_duvod" en="" cs="cs:barnes-zadny_duvod:0:74:9:w13" cst="bezpochyby"/>

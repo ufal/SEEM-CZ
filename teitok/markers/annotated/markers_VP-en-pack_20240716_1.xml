@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+  <user id="VP" email="vladimir.petkevic@ff.cuni.cz" name="Vladimír Petkevič"/>
   <item id="ex-25614" cql="q-15" xml="grisham-klient" en="" cs="cs:grisham-klient:0:4491:3:w5" cst="bezpečně" use="content" predlemma="" predtag="" predverbtag="" pred=""/>
   <item id="ex-26077" cql="q-15" xml="smith-o_krase" en="" cs="cs:smith-o_krase:0:50:3:w17" cst="bezpečně" use="certain" certainty="full" commfuntype="decl" commfunsubtype="domněnka s vysokou jistotou" scope="sent" pred="cs:smith-o_krase:0:50:3:w18" tfpos="neutral" sentpos="pseudofirst" modalpersp="unclear" evidencetype="inference" predlemma="vědět" predtag="VpMS----R-AAI--" predverbtag="VDA3SR"/>
   <item id="ex-25399" cql="q-15" xml="brown-sifra" en="" cs="cs:brown-sifra:0:4278:7:w16" cst="bezpečně" use="content" predlemma="" predtag="" predverbtag=""/>

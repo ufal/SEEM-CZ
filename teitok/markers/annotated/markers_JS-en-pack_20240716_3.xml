@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+  <user id="JS" email="jana.sindlerova@ff.cuni.cz" name="Jana Šindlerová"/>
   <item id="ex-28016" cql="q-20" xml="Kerouac-Na_ceste" en="" cs="cs:Kerouac-Na_ceste:0:164:2:w2" cst="Jasně"/>
   <item id="ex-26334" cql="q-20" xml="clinton-ziva_historie" en="" cs="cs:clinton-ziva_historie:0:398:2:w13" cst="jasně"/>
   <item id="ex-29834" cql="q-20" xml="rowlingova-hpot_tajemn" en="" cs="cs:rowlingova-hpot_tajemn:0:1145:2:w13" cst="jasně"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+  <user id="JS" email="jana.sindlerova@ff.cuni.cz" name="Jana Šindlerová"/>
   <item id="ex-28185" cql="q-14" xml="fowles-sberatel" en="" cs="cs:fowles-sberatel:0:1320:2:w18" cst="určitě"/>
   <item id="ex-32340" cql="q-14" xml="Pratchett-Lehke_fantas" en="" cs="cs:Pratchett-Lehke_fantas:0:1778:5:w6" cst="určitě"/>
   <item id="ex-33967" cql="q-14" xml="Tolkien-Pan_prstenu_1" en="" cs="cs:Tolkien-Pan_prstenu_1:0:1718:1:w4" cst="určitě"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+  <user id="BS" email="stepankova@ufal.mff.cuni.cz" name="Barbora Štěpánková"/>
   <item id="ex-29008" cql="q-19" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:472:2:w16" cst="fakt" use="content" predlemma="" predtag="" predverbtag=""/>
   <item id="ex-26847" cql="q-19" xml="Havel-Audience" en="" cs="cs:Havel-Audience:0:624:1:w1" cst="Fakt" use="confirm" certainty="full" commfuntype="interr" commfunsubtype="žádost o dotvrzení" scope="ellipsis" subst="cs:Havel-Audience:0:624:1:w2" tfpos="neutral" sentpos="other" neg="1" modalpersp="clear" predlemma="" predtag="" predverbtag=""/>
   <item id="ex-29532" cql="q-19" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:525:2:w1" cst="Fakt"/>

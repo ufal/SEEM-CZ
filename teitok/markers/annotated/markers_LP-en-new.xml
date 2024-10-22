@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+  <user id="LP" email="polakova@ufal.mff.cuni.cz" name="Lucie Pol&#xE1;kov&#xE1;"/>
   <item id="ex-3684" cql="q-8" xml="Steinbeck-Hrozny_hnevu" en="" cs="cs:Steinbeck-Hrozny_hnevu:0:983:1:w2" cst="Jist&#x11B;" cssent="&quot; Jist&#x11B; , &quot; souhlasil Tom ." use="answer" commfuntype="agree" commfunsubtype="afirmace" predlemma="" predtag="" predverbtag=""/>
   <item id="ex-2068" cql="q-7" xml="Brett-Pravitem_snadno" en="" cs="cs:Brett-Pravitem_snadno:0:574:1:w3" cst="jist&#x11B;" cssent="&quot; No jist&#x11B; , j&#xE1; v&#xED;m , &#x17E;e se zlob&#xED;&#x161; , vid ? &quot; usm&#xED;vala se ." use="other" commfuntype="expr" commfunsubtype="jakoby afirmace, s p&#x159;ipu&#x161;t&#x11B;n&#xED;m n&#xE1;zoru druh&#xE9;ho" commfunnote="na hranici s kontaktovou fc&#xED; a direktivou" predlemma="" predtag="" predverbtag="" dictexample="1"/>
   <item id="ex-1822" cql="q-7" xml="Barnes-Arthur_a_George" en="" cs="cs:Barnes-Arthur_a_George:0:2809:2:w3" cst="jist&#x11B;" cssent="&#x10C;etl jste jist&#x11B; m&#x16F;j rozbor ,  &quot; p&#x159;ipomn&#x11B;l ." use="other" commfuntype="direct" commfunsubtype="direktivn&#xED; p&#x159;edpoklad" pred="cs:Barnes-Arthur_a_George:0:2809:2:w1 cs:Barnes-Arthur_a_George:0:2809:2:w2" predlemma="&#x10D;&#xED;st b&#xFD;t" predtag="VpMS----R-AAI-- VB-P---2P-AAI--" predverbtag="VDA2vR A-----"/>

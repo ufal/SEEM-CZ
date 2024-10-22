@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+  <user id="LP" email="polakova@ufal.mff.cuni.cz" name="Lucie Poláková"/>
   <item id="ex-25713" cql="q-22" xml="Grisham-Kral_advokatu" en="" cs="cs:Grisham-Kral_advokatu:0:391:3:w2" cst="Každopádně"/>
   <item id="ex-25380" cql="q-22" xml="barnes-zadny_duvod" en="" cs="cs:barnes-zadny_duvod:0:526:11:w1" cst="Každopádně"/>
   <item id="ex-26029" cql="q-22" xml="rooney-normalni_lidi" en="" cs="cs:rooney-normalni_lidi:0:1546:8:w1" cst="Každopádně"/>

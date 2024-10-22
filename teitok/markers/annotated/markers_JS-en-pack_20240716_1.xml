@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+  <user id="JS" email="jana.sindlerova@ff.cuni.cz" name="Jana Šindlerová"/>
   <item id="ex-26617" cql="q-19" xml="galbraith-hedvabnik" en="" cs="cs:galbraith-hedvabnik:0:5477:1:w5" cst="fakt" use="other" certainty="medium" commfuntype="decl" scope="sent" tfpos="neutral" sentpos="other" modalpersp="clear" comment="na pomezí epistemičnosti a zdůraznění (opravdu, skutečně), spíš zdůraznění (pořádně)" predlemma="" predtag="" predverbtag="" commfunsubtype="zdůraznění"/>
   <item id="ex-28748" cql="q-19" xml="rooney-normalni_lidi" en="" cs="cs:rooney-normalni_lidi:0:1345:3:w2" cst="fakt" use="confirm" certainty="full" commfuntype="decl" commfunsubtype="potvrzení" scope="member" member="cs:rooney-normalni_lidi:0:1345:3:w3" tfpos="marked" sentpos="other" modalpersp="clear" comment="jako " predlemma="" predtag="" predverbtag=""/>
   <item id="ex-29770" cql="q-19" xml="zimbardo-lucifer_efekt" en="" cs="cs:zimbardo-lucifer_efekt:0:2623:5:w35" cst="faktů" use="content" predlemma="" predtag="" predverbtag=""/>

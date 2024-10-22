@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+  <user id="BS" email="stepankova@ufal.mff.cuni.cz" name="Barbora Štěpánková"/>
   <item id="ex-36474" cql="q-23" xml="Irving-Rok_vdovou" en="" cs="cs:Irving-Rok_vdovou:0:2892:2:w1" cst="Možná"/>
   <item id="ex-29456" cql="q-23" xml="Burns-Mlikar" en="" cs="cs:Burns-Mlikar:0:98:6:w53" cst="možná"/>
   <item id="ex-44217" cql="q-23" xml="rowlingova-hpot_relik" en="" cs="cs:rowlingova-hpot_relik:0:3950:4:w1" cst="Možná"/>

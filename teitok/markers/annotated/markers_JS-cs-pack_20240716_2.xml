@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+  <user id="JS" email="jana.sindlerova@ff.cuni.cz" name="Jana &#x160;indlerov&#xE1;"/>
   <item id="ex-26187" cql="q-15" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:1043:1:w10" cs="cs:viewegh-baj_letaPodPsa:0:1088:2:w4" cst="bezpe&#x10D;n&#x11B;" use="content" predlemma="" predtag="" predverbtag="" ent="competent"/>
   <item id="ex-25781" cql="q-15" xml="kohout-snezim" en="en:kohout-snezim:0:470:1:w12" cs="cs:kohout-snezim:0:441:1:w8" cst="bezpe&#x10D;n&#x11B;" use="content" predlemma="" predtag="" predverbtag="" ent="safe"/>
   <item id="ex-26068" cql="q-15" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:1425:2:w8" cs="cs:Skvorecky-Mirakl:0:1645:2:w8" cst="bezpe&#x10D;n&#x11B;" dictexample="1" use="certain" certainty="full" commfuntype="decl" commfunsubtype="domn&#x11B;nka" scope="sent" pred="cs:Skvorecky-Mirakl:0:1645:2:w7 cs:Skvorecky-Mirakl:0:1645:2:w9" tfpos="neutral" sentpos="other" modalpersp="clear" predlemma="b&#xFD;t zjistit" predtag="VB-S---3P-AAI-- VsNS------APP--" predverbtag="A----- VDP3SP" ent="positively"/>

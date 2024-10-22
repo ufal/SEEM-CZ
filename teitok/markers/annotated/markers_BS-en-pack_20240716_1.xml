@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+  <user id="BS" email="stepankova@ufal.mff.cuni.cz" name="Barbora Štěpánková"/>
   <item id="ex-26570" cql="q-17" xml="kilham-mezi_medvedy" en="" cs="cs:kilham-mezi_medvedy:0:378:1:w18" cst="doopravdy"/>
   <item id="ex-25758" cql="q-17" xml="Crichton-Koule" en="" cs="cs:Crichton-Koule:0:1:1092:w3" cst="doopravdy"/>
   <item id="ex-27526" cql="q-17" xml="rowling-princ" en="" cs="cs:rowling-princ:0:4457:3:w12" cst="doopravdy"/>
