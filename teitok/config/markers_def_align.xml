@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interpGrp id="markers" display="Epistemic and Evidential Markers" type="alignann">
+	<files>
+		<item key="src" type="Source" extention="cs" name="Czech"/>
+		<item key="tgt" type="Target" extention="en" name="English"/>
+	</files>
+    
+    <!-- attributes already automatically filled in by action=makeex -->
+    <interp key="cql" display="CQL dotaz" type="noedit"/>
+    <interp key="xml" display="ID dokumentu" type="noedit"/>
+    <interp key="cs" display="Výraz v češtině (ID)" type="idrefs" nolist="1" file="src"/>
+    <interp key="cst" display="Výraz v češtině (formy)" type="lookup" ref="cs" fld="form"/>
+    <interp key="en" display="Výraz v angličtině (ID)" type="idrefs" nolist="1" file="tgt"/>
+    <interp key="ent" display="Výraz v angličtině (formy)" type="lookup" ref="en" fld="form"/>
+
+</interpGrp>
