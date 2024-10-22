@@ -1,54 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <examples>
-  <user id="JS" email="jana.sindlerova@ff.cuni.cz" name="Jana Šindlerová"/>
-  <item id="ex-28016" cql="q-20" xml="Kerouac-Na_ceste" en="" cs="cs:Kerouac-Na_ceste:0:164:2:w2" cst="Jasně"/>
-  <item id="ex-26334" cql="q-20" xml="clinton-ziva_historie" en="" cs="cs:clinton-ziva_historie:0:398:2:w13" cst="jasně"/>
-  <item id="ex-29834" cql="q-20" xml="rowlingova-hpot_tajemn" en="" cs="cs:rowlingova-hpot_tajemn:0:1145:2:w13" cst="jasně"/>
-  <item id="ex-30379" cql="q-20" xml="Styron-Sofiina_volba" en="" cs="cs:Styron-Sofiina_volba:0:1526:4:w1" cst="Jasně"/>
-  <item id="ex-26081" cql="q-20" xml="brown-sifra" en="" cs="cs:brown-sifra:0:3747:1:w7" cst="jasně"/>
-  <item id="ex-29501" cql="q-20" xml="pynchon-vykrik" en="" cs="cs:pynchon-vykrik:0:2124:1:w2" cst="Jasně"/>
-  <item id="ex-26757" cql="q-20" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:141:2:w6" cst="jasně"/>
-  <item id="ex-28694" cql="q-20" xml="McEwan-Pokani" en="" cs="cs:McEwan-Pokani:0:890:21:w5" cst="jasně"/>
-  <item id="ex-26236" cql="q-20" xml="Christie-VrazdaVOrient" en="" cs="cs:Christie-VrazdaVOrient:0:117:2:w4" cst="jasně"/>
-  <item id="ex-26105" cql="q-20" xml="Brown-zdravim_temnoto" en="" cs="cs:Brown-zdravim_temnoto:0:2966:1:w3" cst="jasně"/>
-  <item id="ex-26896" cql="q-20" xml="Francis-Drahy_cas" en="" cs="cs:Francis-Drahy_cas:0:612:6:w14" cst="jasně"/>
-  <item id="ex-29415" cql="q-20" xml="Pratchett-Zlodej_casu" en="" cs="cs:Pratchett-Zlodej_casu:0:3903:1:w2" cst="Jasně"/>
-  <item id="ex-30772" cql="q-20" xml="wilde-stastny_princ" en="" cs="cs:wilde-stastny_princ:0:307:1:w3" cst="jasně"/>
-  <item id="ex-25290" cql="q-20" xml="adams-prevazne_neskodn" en="" cs="cs:adams-prevazne_neskodn:0:1048:5:w17" cst="jasně"/>
-  <item id="ex-30921" cql="q-20" xml="zimbardo-lucifer_efekt" en="" cs="cs:zimbardo-lucifer_efekt:0:3168:11:w7" cst="jasně"/>
-  <item id="ex-29837" cql="q-20" xml="rowlingova-hpot_tajemn" en="" cs="cs:rowlingova-hpot_tajemn:0:1358:4:w28" cst="jasně"/>
-  <item id="ex-29351" cql="q-20" xml="Pratchett-Lehke_fantas" en="" cs="cs:Pratchett-Lehke_fantas:0:450:1:w2" cst="Jasně"/>
-  <item id="ex-27796" cql="q-20" xml="Irving-Svet_podleGarpa" en="" cs="cs:Irving-Svet_podleGarpa:0:4706:5:w4" cst="jasně"/>
-  <item id="ex-25658" cql="q-20" xml="Austenova-Emma" en="" cs="cs:Austenova-Emma:0:1018:1:w62" cst="jasně"/>
-  <item id="ex-29913" cql="q-20" xml="rowling-princ" en="" cs="cs:rowling-princ:0:2047:1:w3" cst="jasně"/>
-  <item id="ex-27832" cql="q-20" xml="ishiguro-malir_sveta" en="" cs="cs:ishiguro-malir_sveta:0:755:8:w36" cst="jasně"/>
-  <item id="ex-25668" cql="q-20" xml="Austenova-Emma" en="" cs="cs:Austenova-Emma:0:2185:3:w2" cst="jasně"/>
-  <item id="ex-27487" cql="q-20" xml="Hemingway-SbohemArmado" en="" cs="cs:Hemingway-SbohemArmado:0:2373:2:w4" cst="jasně"/>
-  <item id="ex-28925" cql="q-20" xml="obama-zeme_zaslibena" en="" cs="cs:obama-zeme_zaslibena:0:250:1:w2" cst="Jasně"/>
-  <item id="ex-26266" cql="q-20" xml="Clancy-Spinava_hra" en="" cs="cs:Clancy-Spinava_hra:0:1280:1:w2" cst="Jasně"/>
-  <item id="ex-26948" cql="q-20" xml="franzen-rozhreseni" en="" cs="cs:franzen-rozhreseni:0:4240:1:w12" cst="jasně"/>
-  <item id="ex-30786" cql="q-20" xml="Wintersonova-Pomerance" en="" cs="cs:Wintersonova-Pomerance:0:935:1:w3" cst="jasně"/>
-  <item id="ex-29564" cql="q-20" xml="robilant-milenci_benat" en="" cs="cs:robilant-milenci_benat:0:19:2:w18" cst="jasně"/>
-  <item id="ex-30564" cql="q-20" xml="Twain-Dobr_TSawyer" en="" cs="cs:Twain-Dobr_TSawyer:0:1547:2:w8" cst="jasně"/>
-  <item id="ex-26066" cql="q-20" xml="brown-sifra" en="" cs="cs:brown-sifra:0:1732:3:w17" cst="jasně"/>
-  <item id="ex-25556" cql="q-20" xml="angellova-dvoji_zivot" en="" cs="cs:angellova-dvoji_zivot:0:307:1:w1" cst="Jasně"/>
-  <item id="ex-29805" cql="q-20" xml="rowlingova-hpot_relik" en="" cs="cs:rowlingova-hpot_relik:0:4452:3:w12" cst="jasně"/>
-  <item id="ex-25737" cql="q-20" xml="banville-more" en="" cs="cs:banville-more:0:145:1:w5" cst="jasně"/>
-  <item id="ex-25484" cql="q-20" xml="almond-skellig" en="" cs="cs:almond-skellig:0:1238:1:w2" cst="Jasně"/>
-  <item id="ex-29512" cql="q-20" xml="pynchon-vykrik" en="" cs="cs:pynchon-vykrik:0:2559:1:w2" cst="Jasně"/>
-  <item id="ex-28238" cql="q-20" xml="kosinski-nabarvene_pta" en="" cs="cs:kosinski-nabarvene_pta:0:869:5:w5" cst="jasně"/>
-  <item id="ex-27435" cql="q-20" xml="Hemingway-Komu_zvoni_h" en="" cs="cs:Hemingway-Komu_zvoni_h:0:16:1:w33" cst="jasně"/>
-  <item id="ex-25589" cql="q-20" xml="asimov-druha_nadace" en="" cs="cs:asimov-druha_nadace:0:1677:2:w10" cst="jasně"/>
-  <item id="ex-26331" cql="q-20" xml="clinton-ziva_historie" en="" cs="cs:clinton-ziva_historie:0:231:3:w16" cst="jasně"/>
-  <item id="ex-28505" cql="q-20" xml="lowry-hledani_modre" en="" cs="cs:lowry-hledani_modre:0:1071:9:w15" cst="jasně"/>
-  <item id="ex-26686" cql="q-20" xml="evans-pomezi" en="" cs="cs:evans-pomezi:0:3170:1:w2" cst="Jasně"/>
-  <item id="ex-30010" cql="q-20" xml="searle-mysl_mozek_veda" en="" cs="cs:searle-mysl_mozek_veda:0:11:4:w7" cst="jasně"/>
-  <item id="ex-28003" cql="q-20" xml="kahneman-mysleni" en="" cs="cs:kahneman-mysleni:0:1996:5:w22" cst="jasně"/>
-  <item id="ex-26693" cql="q-20" xml="farrell-nepokoje" en="" cs="cs:farrell-nepokoje:0:1058:2:w6" cst="jasně"/>
-  <item id="ex-27769" cql="q-20" xml="Irving-Rok_vdovou" en="" cs="cs:Irving-Rok_vdovou:0:2031:4:w3" cst="jasně"/>
-  <item id="ex-29263" cql="q-20" xml="Popper-hledani" en="" cs="cs:Popper-hledani:0:535:1:w21" cst="jasně"/>
-  <item id="ex-27841" cql="q-20" xml="ishiguro-neopoustej_me" en="" cs="cs:ishiguro-neopoustej_me:0:262:1:w5" cst="jasně"/>
-  <item id="ex-26599" cql="q-20" xml="Doyle-Pribehy_Sherlock" en="" cs="cs:Doyle-Pribehy_Sherlock:0:2272:1:w9" cst="jasně"/>
-  <item id="ex-29334" cql="q-20" xml="Pratchett-Dobra_znamen" en="" cs="cs:Pratchett-Dobra_znamen:0:2734:1:w15" cst="jasně"/>
-  <item id="ex-26975" cql="q-20" xml="Fromm-Mit_nebo_byt" en="" cs="cs:Fromm-Mit_nebo_byt:0:312:3:w44" cst="jasně"/>
+  <user id="JS" email="jana.sindlerova@ff.cuni.cz" name="Jana &#x160;indlerov&#xE1;"/>
+  <item id="ex-28016" cql="q-20" xml="Kerouac-Na_ceste" en="" cs="cs:Kerouac-Na_ceste:0:164:2:w2" cst="Jasn&#x11B;" cssent="&quot; Jasn&#x11B; , tedy &#x2026; ehm &#x2026; ov&#x161;em , p&#x159;ijel jsi - ty d&#x11B;vko , tak ses kone&#x10D;n&#x11B; rozhoupal ."/>
+  <item id="ex-26334" cql="q-20" xml="clinton-ziva_historie" en="" cs="cs:clinton-ziva_historie:0:398:2:w13" cst="jasn&#x11B;" cssent="Tak jsem ho p&#x159;im&#x11B;la , aby stanovil datum , do n&#x11B;j&#x17E; se jasn&#x11B; vyslov&#xED; ."/>
+  <item id="ex-29834" cql="q-20" xml="rowlingova-hpot_tajemn" en="" cs="cs:rowlingova-hpot_tajemn:0:1145:2:w13" cst="jasn&#x11B;" cssent="Ud&#x11B;l&#xE1;m z v&#xE1;s odstra&#x161;uj&#xED;c&#xED; p&#x159;&#xED;klad &#x2026; kde m&#xE1;m ten formul&#xE1;&#x159; &#x2026; no jasn&#x11B; &#x2026; &quot;"/>
+  <item id="ex-30379" cql="q-20" xml="Styron-Sofiina_volba" en="" cs="cs:Styron-Sofiina_volba:0:1526:4:w1" cst="Jasn&#x11B;" cssent="Jasn&#x11B; , nade v&#x161;i pochybnost s&#xE1;m Nathan ."/>
+  <item id="ex-26081" cql="q-20" xml="brown-sifra" en="" cs="cs:brown-sifra:0:3747:1:w7" cst="jasn&#x11B;" cssent="Aringarosova zlost byla z jeho hlasu jasn&#x11B; patrn&#xE1; ."/>
+  <item id="ex-29501" cql="q-20" xml="pynchon-vykrik" en="" cs="cs:pynchon-vykrik:0:2124:1:w2" cst="Jasn&#x11B;" cssent="&#x201E; Jasn&#x11B; &#x17E;e jo , to on n&#xE1;s p&#x159;ece svedl dohromady ."/>
+  <item id="ex-26757" cql="q-20" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:141:2:w6" cst="jasn&#x11B;" cssent="Te&#x10F; u&#x17E; sly&#x161;el &#x10D;un&#xED;ka docela jasn&#x11B; ."/>
+  <item id="ex-28694" cql="q-20" xml="McEwan-Pokani" en="" cs="cs:McEwan-Pokani:0:890:21:w5" cst="jasn&#x11B;" cssent="To z toho dost jasn&#x11B; vypl&#xFD;valo ."/>
+  <item id="ex-26236" cql="q-20" xml="Christie-VrazdaVOrient" en="" cs="cs:Christie-VrazdaVOrient:0:117:2:w4" cst="jasn&#x11B;" cssent="Tiskac&#xED; p&#xED;smena mu jasn&#x11B; vyvstala p&#x159;ed o&#x10D;ima ."/>
+  <item id="ex-26105" cql="q-20" xml="Brown-zdravim_temnoto" en="" cs="cs:Brown-zdravim_temnoto:0:2966:1:w3" cst="jasn&#x11B;" cssent="&#x201E; No jasn&#x11B; ."/>
+  <item id="ex-26896" cql="q-20" xml="Francis-Drahy_cas" en="" cs="cs:Francis-Drahy_cas:0:612:6:w14" cst="jasn&#x11B;" cssent="D&#x159;&#xED;ve nebo pozd&#x11B;ji musela ot&#xE1;zka odpov&#x11B;dnosti p&#x159;ij&#xED;t na &#x159;adu a musela se tak&#xE9; jasn&#x11B; vy&#x159;e&#x161;it ."/>
+  <item id="ex-29415" cql="q-20" xml="Pratchett-Zlodej_casu" en="" cs="cs:Pratchett-Zlodej_casu:0:3903:1:w2" cst="Jasn&#x11B;" cssent="&quot; Jasn&#x11B; ."/>
+  <item id="ex-30772" cql="q-20" xml="wilde-stastny_princ" en="" cs="cs:wilde-stastny_princ:0:307:1:w3" cst="jasn&#x11B;" cssent="&#x201E; Je jasn&#x11B; vid&#x11B;t , &#x17E;e se maj&#xED; r&#xE1;di , &#x201C; podotklo mal&#xE9; p&#xE1;&#x17E;e , &#x201E; tak jasn&#x11B; , jako je jasn&#xFD; ten k&#x159;i&#x161;&#x165;&#xE1;l ! &#x201C; a kr&#xE1;l mu zdvojn&#xE1;sobil plat podruh&#xE9; ."/>
+  <item id="ex-25290" cql="q-20" xml="adams-prevazne_neskodn" en="" cs="cs:adams-prevazne_neskodn:0:1048:5:w17" cst="jasn&#x11B;" cssent="A kdo je to podivn&#xE9; d&#x11B;v&#x10D;e , kter&#xE9; post&#xE1;v&#xE1; venku , vztekle kope do kam&#xED;nk&#x16F; a jasn&#x11B; d&#xE1;v&#xE1; najevo , &#x17E;e tady nechce b&#xFD;t ?"/>
+  <item id="ex-30921" cql="q-20" xml="zimbardo-lucifer_efekt" en="" cs="cs:zimbardo-lucifer_efekt:0:3168:11:w7" cst="jasn&#x11B;" cssent="Lingvista George Lakoff ve sv&#xFD;ch spisech jasn&#x11B; ukazuje , jak z&#xE1;sadn&#xED; je b&#xFD;t si v&#x11B;dom moci zar&#xE1;mov&#xE1;n&#xED; a b&#xFD;t bd&#x11B;l&#xFD; , abychom mohli vyv&#xE1;&#x17E;it jej&#xED; z&#xE1;ke&#x159;n&#xFD; vliv na na&#x161;e emoce , my&#x161;lenky a volby ."/>
+  <item id="ex-29837" cql="q-20" xml="rowlingova-hpot_tajemn" en="" cs="cs:rowlingova-hpot_tajemn:0:1358:4:w28" cst="jasn&#x11B;" cssent="Harry ho vid&#x11B;l , jak drhne n&#xE1;pis na st&#x11B;n&#x11B; Univerz&#xE1;ln&#xED;m &#x10D;isti&#x10D;em kouzeln&#xFD;ch ne&#x10D;istot pan&#xED; Skowerov&#xE9; , nebylo to v&#x161;ak nic platn&#xE9; - p&#xED;smena na kameni z&#xE1;&#x159;ila stejn&#x11B; jasn&#x11B; jako p&#x159;edt&#xED;m ."/>
+  <item id="ex-29351" cql="q-20" xml="Pratchett-Lehke_fantas" en="" cs="cs:Pratchett-Lehke_fantas:0:450:1:w2" cst="Jasn&#x11B;" cssent="&quot; Jasn&#x11B; , &quot; za&#x10D;al nejmlad&#x161;&#xED; z nich , &quot; ale kdo to na n&#xE1;s po&#x159;&#xE1;d mluv&#xED; ?"/>
+  <item id="ex-27796" cql="q-20" xml="Irving-Svet_podleGarpa" en="" cs="cs:Irving-Svet_podleGarpa:0:4706:5:w4" cst="jasn&#x11B;" cssent="Jenom si velmi jasn&#x11B; uv&#x11B;domoval tu v&#x16F;ni , kr&#xE1;tce trvaj&#xED;c&#xED; pohled a o&#x17E;ivlou pam&#x11B;&#x165; ."/>
+  <item id="ex-25658" cql="q-20" xml="Austenova-Emma" en="" cs="cs:Austenova-Emma:0:1018:1:w62" cst="jasn&#x11B;" cssent="Dobrosrde&#x10D;n&#xE1; pan&#xED; Westonov&#xE1; , sama milovnice hudby , jevila obzvl&#xE1;&#x161;tn&#xED; z&#xE1;jem , a Emma se musela v duchu usm&#xE1;t nad vytrvalost&#xED; , s jakou se podrobn&#x11B; vypt&#xE1;vala a prob&#xED;rala t&#xF3;n n&#xE1;stroje , &#xFA;hoz , ped&#xE1;l , a z&#x159;ejm&#x11B; ji ani v duchu nenapadlo , jak vroucn&#x11B; by si kr&#xE1;sn&#xE1; hrdinka p&#x159;&#xE1;la o tom u&#x17E; nemluvit , a&#x10D; j&#xED; to bylo mo&#x17E;no jasn&#x11B; vy&#x10D;&#xED;st z tv&#xE1;&#x159;e ."/>
+  <item id="ex-29913" cql="q-20" xml="rowling-princ" en="" cs="cs:rowling-princ:0:2047:1:w3" cst="jasn&#x11B;" cssent="&#x201E; No jasn&#x11B; , &quot; opakoval Hagrid ."/>
+  <item id="ex-27832" cql="q-20" xml="ishiguro-malir_sveta" en="" cs="cs:ishiguro-malir_sveta:0:755:8:w36" cst="jasn&#x11B;" cssent="Snad si nap&#x159;&#xED;klad vzpomenete , &#x17E;e jsem sice nakonec uposlechl va&#x161;ich pokyn&#x16F; , pokud &#x161;lo o plak&#xE1;ty z obdob&#xED; &#x10D;&#xED;nsk&#xE9; krize , ale vy&#x10D;&#xED;tal jsem si to tak , &#x17E;e jsem v&#xE1;m posl&#xE9;ze sv&#x16F;j n&#xE1;zor jasn&#x11B; &#x159;ekl . &quot;"/>
+  <item id="ex-25668" cql="q-20" xml="Austenova-Emma" en="" cs="cs:Austenova-Emma:0:2185:3:w2" cst="jasn&#x11B;" cssent="Emma jasn&#x11B; pochopila , &#x17E;e by j&#xED; cht&#x11B;la projevit dobrou v&#x16F;li , nakolik to jen v mez&#xED;ch zdvo&#x159;ilosti je mo&#x17E;n&#xE9; , i kdy&#x17E; to &#x10D;asto mohla vyj&#xE1;d&#x159;it pouze pohledem ."/>
+  <item id="ex-27487" cql="q-20" xml="Hemingway-SbohemArmado" en="" cs="cs:Hemingway-SbohemArmado:0:2373:2:w4" cst="jasn&#x11B;" cssent="Dolil si sklenici jasn&#x11B; rudou barberou ."/>
+  <item id="ex-28925" cql="q-20" xml="obama-zeme_zaslibena" en="" cs="cs:obama-zeme_zaslibena:0:250:1:w2" cst="Jasn&#x11B;" cssent="&#x201E; Jasn&#x11B; . &#x201C;"/>
+  <item id="ex-26266" cql="q-20" xml="Clancy-Spinava_hra" en="" cs="cs:Clancy-Spinava_hra:0:1280:1:w2" cst="Jasn&#x11B;" cssent="&quot; Jasn&#x11B; , &quot; p&#x159;ik&#xFD;vl Joe ."/>
+  <item id="ex-26948" cql="q-20" xml="franzen-rozhreseni" en="" cs="cs:franzen-rozhreseni:0:4240:1:w12" cst="jasn&#x11B;" cssent="&#x17D;&#xE1;dn&#xFD; &#x10D;lov&#x11B;k nem&#xE1; r&#xE1;d , kdy&#x17E; mus&#xED; vlastn&#xED; zbab&#x11B;lost nahl&#xE9;dnout tak jasn&#x11B; jako te&#x10F; Chip ."/>
+  <item id="ex-30786" cql="q-20" xml="Wintersonova-Pomerance" en="" cs="cs:Wintersonova-Pomerance:0:935:1:w3" cst="jasn&#x11B;" cssent="&#x201E; No jasn&#x11B; , &#x201C; souhlasila Betty , &#x201E; koukn&#x11B;te , co je tu sklenic . &#x201C;"/>
+  <item id="ex-29564" cql="q-20" xml="robilant-milenci_benat" en="" cs="cs:robilant-milenci_benat:0:19:2:w18" cst="jasn&#x11B;" cssent="Un&#xE1;&#x161;eni pouze prudkou silou sv&#xFD;ch cit&#x16F; pokra&#x10D;ovali ve sv&#xE9;m vztahu navzdory spole&#x10D;ensk&#xFD;m konvenc&#xED;m , je&#x17E; se zcela jasn&#x11B; stav&#x11B;ly proti nim ."/>
+  <item id="ex-30564" cql="q-20" xml="Twain-Dobr_TSawyer" en="" cs="cs:Twain-Dobr_TSawyer:0:1547:2:w8" cst="jasn&#x11B;" cssent="Ob&#x10D;as svitla nad&#x11B;je , n&#x11B;kdy sv&#xED;tila tak jasn&#x11B; , &#x17E;e Tom tajn&#x11B; vyt&#xE1;hl &#x161;erpu s p&#x159;&#xED;slu&#x161;enstv&#xED;m a to&#x10D;il se v n&#xED; na zkou&#x161;ku p&#x159;ed zrcadlem ."/>
+  <item id="ex-26066" cql="q-20" xml="brown-sifra" en="" cs="cs:brown-sifra:0:1732:3:w17" cst="jasn&#x11B;" cssent="Ka&#x17E;d&#xFD; u&#x17E; nejsp&#xED;&#x161; n&#x11B;kdy vid&#x11B;l n&#x11B;jakou malbu , zobrazuj&#xED;c&#xED; ryt&#xED;&#x159;e templ&#xE1;&#x159;sk&#xE9;ho &#x159;&#xE1;du v b&#xED;l&#xFD;ch pl&#xE1;&#x161;t&#xED;ch ozna&#x10D;en&#xFD;ch jasn&#x11B; &#x10D;erven&#xFD;mi rovnoramenn&#xFD;mi k&#x159;&#xED;&#x17E;i ."/>
+  <item id="ex-25556" cql="q-20" xml="angellova-dvoji_zivot" en="" cs="cs:angellova-dvoji_zivot:0:307:1:w1" cst="Jasn&#x11B;" cssent="Jasn&#x11B; , u&#x161;kl&#xED;bla jsem se v duchu ."/>
+  <item id="ex-29805" cql="q-20" xml="rowlingova-hpot_relik" en="" cs="cs:rowlingova-hpot_relik:0:4452:3:w12" cst="jasn&#x11B;" cssent="Byl tak vyz&#xE1;bl&#xFD; , &#x17E;e pod za&#x17E;loutlou plet&#xED; obli&#x10D;eje se mu jasn&#x11B; r&#xFD;sovaly vystupuj&#xED;c&#xED; kosti ."/>
+  <item id="ex-25737" cql="q-20" xml="banville-more" en="" cs="cs:banville-more:0:145:1:w5" cst="jasn&#x11B;" cssent="Spojen&#xED; mezi nimi bylo jasn&#x11B; patrn&#xE9; ."/>
+  <item id="ex-25484" cql="q-20" xml="almond-skellig" en="" cs="cs:almond-skellig:0:1238:1:w2" cst="Jasn&#x11B;" cssent="&#x201E; Jasn&#x11B; &#x17E;e ne , &#x201C; &#x159;ekl jsem ."/>
+  <item id="ex-29512" cql="q-20" xml="pynchon-vykrik" en="" cs="cs:pynchon-vykrik:0:2559:1:w2" cst="Jasn&#x11B;" cssent="&#x201E; Jasn&#x11B; ."/>
+  <item id="ex-28238" cql="q-20" xml="kosinski-nabarvene_pta" en="" cs="cs:kosinski-nabarvene_pta:0:869:5:w5" cst="jasn&#x11B;" cssent="Vid&#x11B;l jsem je tak jasn&#x11B; a ost&#x159;e , &#x17E;e jsem skoro mohl po&#x10D;&#xED;tat st&#xE9;bla sl&#xE1;my na do&#x161;kov&#xFD;ch st&#x159;ech&#xE1;ch ."/>
+  <item id="ex-27435" cql="q-20" xml="Hemingway-Komu_zvoni_h" en="" cs="cs:Hemingway-Komu_zvoni_h:0:16:1:w33" cst="jasn&#x11B;" cssent="Mlad&#xFD; mu&#x17E; , kter&#xFD; zkoumal krajinu , si vyt&#xE1;hl z kapsy vybledl&#xE9; vojensk&#xE9; flanelov&#xE9; ko&#x161;ile poln&#xED; kuk&#xE1;tko , ot&#x159;el kapesn&#xED;kem &#x10D;o&#x10D;ky a tak dlouho to&#x10D;il optikou , a&#x17E; mu n&#xE1;hle p&#x159;ed o&#x10D;ima jasn&#x11B; vystoupila prkna na pile a a&#x17E; uvid&#x11B;l d&#x159;ev&#x11B;nou lavi&#x10D;ku u dve&#x159;&#xED; ;"/>
+  <item id="ex-25589" cql="q-20" xml="asimov-druha_nadace" en="" cs="cs:asimov-druha_nadace:0:1677:2:w10" cst="jasn&#x11B;" cssent="&quot; Myslel jsem , &#x17E;e jsme se rozhodli dostate&#x10D;n&#x11B; jasn&#x11B; , &#x17E;e kolem t&#xE9; v&#x11B;ci nebudeme nic podnikat ."/>
+  <item id="ex-26331" cql="q-20" xml="clinton-ziva_historie" en="" cs="cs:clinton-ziva_historie:0:231:3:w16" cst="jasn&#x11B;" cssent="Byla vynikaj&#xED;c&#xED; politick&#xE1; organiz&#xE1;torka , m&#x11B;la zmapovan&#xFD; cel&#xFD; st&#xE1;t a nezast&#xED;rala fakt , kter&#xFD; u&#x17E; jasn&#x11B; do&#x161;el i n&#xE1;m &#x2013; kampa&#x148; je odsouzena k z&#xE1;hub&#x11B; ."/>
+  <item id="ex-28505" cql="q-20" xml="lowry-hledani_modre" en="" cs="cs:lowry-hledani_modre:0:1071:9:w15" cst="jasn&#x11B;" cssent="V&#x161;echny byly samoz&#x159;ejm&#x11B; mali&#x10D;k&#xE9; , tvo&#x159;en&#xE9; drobou&#x10D;k&#xFD;mi stehy a kombinac&#xED; steh&#x16F; , ale Kira jasn&#x11B; vid&#x11B;la vzorec , v n&#x11B;m&#x17E; po ka&#x17E;d&#xE9;m r&#x16F;stu n&#xE1;sledovala krut&#x11B;j&#x161;&#xED; zk&#xE1;za a n&#xE1;sledn&#xE1; obnova byla &#x10D;&#xED;m d&#xE1;l obt&#xED;&#x17E;n&#x11B;j&#x161;&#xED; ."/>
+  <item id="ex-26686" cql="q-20" xml="evans-pomezi" en="" cs="cs:evans-pomezi:0:3170:1:w2" cst="Jasn&#x11B;" cssent="&#x201E; Jasn&#x11B; . &#x201C;"/>
+  <item id="ex-30010" cql="q-20" xml="searle-mysl_mozek_veda" en="" cs="cs:searle-mysl_mozek_veda:0:11:4:w7" cst="jasn&#x11B;" cssent="Mysl , mozek a v&#x11B;da je jasn&#x11B; definov&#xE1;n pouze v&#xFD;raz druh&#xFD; ."/>
+  <item id="ex-28003" cql="q-20" xml="kahneman-mysleni" en="" cs="cs:kahneman-mysleni:0:1996:5:w22" cst="jasn&#x11B;" cssent="Str&#xE1;vil p&#x159;inejmen&#x161;&#xED;m stejn&#x11B; tolik &#x10D;asu jako pacient A na v&#x161;ech &#xFA;rovn&#xED;ch bolesti a &#x201E; oblast pod k&#x159;ivkou &#x201C; je u n&#x11B;j jasn&#x11B; v&#x11B;t&#x161;&#xED; ne&#x17E; u pacienta A ."/>
+  <item id="ex-26693" cql="q-20" xml="farrell-nepokoje" en="" cs="cs:farrell-nepokoje:0:1058:2:w6" cst="jasn&#x11B;" cssent="Kv&#x11B;tiny a bonboni&#xE9;ra a&#x17E; p&#x159;&#xED;li&#x161; jasn&#x11B; prozrazovaly majorovy z&#xE1;m&#x11B;ry ."/>
+  <item id="ex-27769" cql="q-20" xml="Irving-Rok_vdovou" en="" cs="cs:Irving-Rok_vdovou:0:2031:4:w3" cst="jasn&#x11B;" cssent="Ale kdy&#x17E; jasn&#x11B; vyhr&#xE1;la R&#xFA;t , Ted to bu&#x10F; nep&#x159;iznal , nebo se urazil ."/>
+  <item id="ex-29263" cql="q-20" xml="Popper-hledani" en="" cs="cs:Popper-hledani:0:535:1:w21" cst="jasn&#x11B;" cssent="Lze prohl&#xE1;sit , &#x17E;e toto v&#x161;e je z&#x159;ejm&#xE9; : v&#x11B;t&#x161;ina z n&#xE1;s v&#xED; , jak je obt&#xED;&#x17E;n&#xE9; formulovat na&#x161;e probl&#xE9;my jasn&#x11B; a &#x17E;e se n&#xE1;m to &#x10D;asto nepoda&#x159;&#xED; ."/>
+  <item id="ex-27841" cql="q-20" xml="ishiguro-neopoustej_me" en="" cs="cs:ishiguro-neopoustej_me:0:262:1:w5" cst="jasn&#x11B;" cssent="Vid&#xED;m ho te&#x10F; tak jasn&#x11B; , jako bych ho m&#x11B;la p&#x159;ed sebou ."/>
+  <item id="ex-26599" cql="q-20" xml="Doyle-Pribehy_Sherlock" en="" cs="cs:Doyle-Pribehy_Sherlock:0:2272:1:w9" cst="jasn&#x11B;" cssent="&quot; V tomto p&#x159;&#xED;pad&#x11B; mluv&#xED; bohu&#x17E;el fakta tak jasn&#x11B; , &#x17E;e si tu velk&#xE9; ostruhy nez&#xED;sk&#xE1;te , &quot; &#x159;ekl jsem ."/>
+  <item id="ex-29334" cql="q-20" xml="Pratchett-Dobra_znamen" en="" cs="cs:Pratchett-Dobra_znamen:0:2734:1:w15" cst="jasn&#x11B;" cssent="&quot; Mo&#x17E;n&#xE1; ano , &quot; p&#x159;ik&#xFD;vl Crowley a doufal , &#x17E;e jeho t&#xF3;n dostate&#x10D;n&#x11B; jasn&#x11B; nazna&#x10D;uje , &#x17E;e blufovat by ho ani ve snu nenapadlo ."/>
+  <item id="ex-26975" cql="q-20" xml="Fromm-Mit_nebo_byt" en="" cs="cs:Fromm-Mit_nebo_byt:0:312:3:w44" cst="jasn&#x11B;" cssent="&quot; &#x158;&#xED;k&#xE1;me , &#x17E;e n&#x11B;co kon&#xE1;me ( agere ) , jestli&#x17E;e se v n&#xE1;s nebo mimo n&#xE1;s d&#x11B;je n&#x11B;co , &#x10D;eho jsme adekv&#xE1;tn&#xED; p&#x159;&#xED;&#x10D;inou , tzn &#x2026; - jestli&#x17E;e z na&#x161;&#xED; p&#x159;irozenosti vypl&#xFD;v&#xE1; v n&#xE1;s nebo mimo n&#xE1;s to , co je mo&#x17E;n&#xE9; jasn&#x11B; a z&#x159;eteln&#x11B; poznat jen jej&#xED;m prost&#x159;ednictv&#xED;m ."/>
 </examples>

@@ -1,54 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <examples>
-  <user id="JS" email="jana.sindlerova@ff.cuni.cz" name="Jana Šindlerová"/>
-  <item id="ex-28185" cql="q-14" xml="fowles-sberatel" en="" cs="cs:fowles-sberatel:0:1320:2:w18" cst="určitě"/>
-  <item id="ex-32340" cql="q-14" xml="Pratchett-Lehke_fantas" en="" cs="cs:Pratchett-Lehke_fantas:0:1778:5:w6" cst="určitě"/>
-  <item id="ex-33967" cql="q-14" xml="Tolkien-Pan_prstenu_1" en="" cs="cs:Tolkien-Pan_prstenu_1:0:1718:1:w4" cst="určitě"/>
-  <item id="ex-26433" cql="q-14" xml="Boyd-Neklid" en="" cs="cs:Boyd-Neklid:0:953:1:w2" cst="Určitě"/>
-  <item id="ex-29857" cql="q-14" xml="Irving-Rok_vdovou" en="" cs="cs:Irving-Rok_vdovou:0:4517:2:w1" cst="Určitě"/>
-  <item id="ex-30480" cql="q-14" xml="krentz-zajatci_snu" en="" cs="cs:krentz-zajatci_snu:0:1546:4:w1" cst="Určitě"/>
-  <item id="ex-26054" cql="q-14" xml="banville-more" en="" cs="cs:banville-more:0:230:9:w1" cst="Určitě"/>
-  <item id="ex-29524" cql="q-14" xml="Irving-H_New_Hampshire" en="" cs="cs:Irving-H_New_Hampshire:0:117:1:w4" cst="určitě"/>
-  <item id="ex-26888" cql="q-14" xml="chandler-opona" en="" cs="cs:chandler-opona:0:121:2:w2" cst="Určitě"/>
-  <item id="ex-32633" cql="q-14" xml="rooney-normalni_lidi" en="" cs="cs:rooney-normalni_lidi:0:1731:1:w1" cst="Určitě"/>
-  <item id="ex-32830" cql="q-14" xml="rowlingova-hpot_pohar" en="" cs="cs:rowlingova-hpot_pohar:0:3355:4:w6" cst="určitě"/>
-  <item id="ex-32995" cql="q-14" xml="rowlingova-hpot_tajemn" en="" cs="cs:rowlingova-hpot_tajemn:0:2421:3:w5" cst="určitě"/>
-  <item id="ex-28860" cql="q-14" xml="grisham-klient" en="" cs="cs:grisham-klient:0:2295:1:w2" cst="Určitě"/>
-  <item id="ex-26155" cql="q-14" xml="barnes-zadny_duvod" en="" cs="cs:barnes-zadny_duvod:0:24:1:w23" cst="určitě"/>
-  <item id="ex-26078" cql="q-14" xml="Barnes-Arthur_a_George" en="" cs="cs:Barnes-Arthur_a_George:0:1222:2:w67" cst="určitě"/>
-  <item id="ex-33510" cql="q-14" xml="Steelova-Dar" en="" cs="cs:Steelova-Dar:0:628:3:w1" cst="Určitě"/>
-  <item id="ex-27015" cql="q-14" xml="clarke-setkani_ramou" en="" cs="cs:clarke-setkani_ramou:0:407:2:w1" cst="Určitě"/>
-  <item id="ex-29374" cql="q-14" xml="Hemingway-OstrovyUpr_p" en="" cs="cs:Hemingway-OstrovyUpr_p:0:2964:3:w3" cst="určitě"/>
-  <item id="ex-31136" cql="q-14" xml="ludlum-bourneuv_mytus" en="" cs="cs:ludlum-bourneuv_mytus:0:1490:3:w1" cst="Určitě"/>
-  <item id="ex-25290" cql="q-14" xml="adams-daleka_cesta" en="" cs="cs:adams-daleka_cesta:0:1241:2:w8" cst="určitě"/>
-  <item id="ex-32431" cql="q-14" xml="Puzo-Kmotr" en="" cs="cs:Puzo-Kmotr:0:1251:4:w11" cst="určitě"/>
-  <item id="ex-34248" cql="q-14" xml="updike-kralik_se_vraci" en="" cs="cs:updike-kralik_se_vraci:0:3473:7:w9" cst="určitě"/>
-  <item id="ex-31567" cql="q-14" xml="moriarty-sedmilharky" en="" cs="cs:moriarty-sedmilharky:0:1829:5:w5" cst="určitě"/>
-  <item id="ex-31458" cql="q-14" xml="McEwan-Pokani" en="" cs="cs:McEwan-Pokani:0:121:4:w2" cst="určitě"/>
-  <item id="ex-31334" cql="q-14" xml="mantel-wolf_hall" en="" cs="cs:mantel-wolf_hall:0:3503:2:w2" cst="Určitě"/>
-  <item id="ex-33948" cql="q-14" xml="Tolkien-Pan_prstenu_1" en="" cs="cs:Tolkien-Pan_prstenu_1:0:509:7:w19" cst="určitě"/>
-  <item id="ex-29860" cql="q-14" xml="Irving-Rok_vdovou" en="" cs="cs:Irving-Rok_vdovou:0:4593:2:w1" cst="Určitě"/>
-  <item id="ex-34021" cql="q-14" xml="Toole-Spolceni_hlupcu" en="" cs="cs:Toole-Spolceni_hlupcu:0:421:1:w20" cst="určitě"/>
-  <item id="ex-32872" cql="q-14" xml="rowlingova-hpot_pohar" en="" cs="cs:rowlingova-hpot_pohar:0:5668:5:w3" cst="určitě"/>
-  <item id="ex-29310" cql="q-14" xml="Hemingway-Fiesta" en="" cs="cs:Hemingway-Fiesta:0:2523:2:w2" cst="určitě"/>
-  <item id="ex-27960" cql="q-14" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:2253:2:w4" cst="určitě"/>
-  <item id="ex-25596" cql="q-14" xml="Allen-Bez_peri" en="" cs="cs:Allen-Bez_peri:0:416:4:w7" cst="určitě"/>
-  <item id="ex-29936" cql="q-14" xml="Irving-Svet_podleGarpa" en="" cs="cs:Irving-Svet_podleGarpa:0:4365:4:w1" cst="určitě"/>
-  <item id="ex-32449" cql="q-14" xml="Puzo-Kmotr" en="" cs="cs:Puzo-Kmotr:0:2127:14:w1" cst="Určitě"/>
-  <item id="ex-27996" cql="q-14" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:4548:3:w4" cst="určitě"/>
-  <item id="ex-25684" cql="q-14" xml="almond-skellig" en="" cs="cs:almond-skellig:0:65:3:w4" cst="určitě"/>
-  <item id="ex-32257" cql="q-14" xml="Popper-hledani" en="" cs="cs:Popper-hledani:0:716:1:w28" cst="určitě"/>
-  <item id="ex-27550" cql="q-14" xml="Doyle-Pribehy_Sherlock" en="" cs="cs:Doyle-Pribehy_Sherlock:0:3946:2:w4" cst="určitě"/>
-  <item id="ex-28969" cql="q-14" xml="Grisham-Partner" en="" cs="cs:Grisham-Partner:0:2066:1:w5" cst="určitě"/>
-  <item id="ex-32673" cql="q-14" xml="rowlingova-hpot_fenix" en="" cs="cs:rowlingova-hpot_fenix:0:76:3:w3" cst="určitě"/>
-  <item id="ex-32539" cql="q-14" xml="riggs-sirotcinec" en="" cs="cs:riggs-sirotcinec:0:11:1:w2" cst="Určitě"/>
-  <item id="ex-26185" cql="q-14" xml="bates-poupata_v_maji" en="" cs="cs:bates-poupata_v_maji:0:798:3:w1" cst="Určitě"/>
-  <item id="ex-32396" cql="q-14" xml="Puzo-Kmotr" en="" cs="cs:Puzo-Kmotr:0:248:7:w28" cst="určitě"/>
-  <item id="ex-27058" cql="q-14" xml="clarke-strange_norrell" en="" cs="cs:clarke-strange_norrell:0:2969:2:w2" cst="Určitě"/>
-  <item id="ex-31150" cql="q-14" xml="ludlum-bourneuv_mytus" en="" cs="cs:ludlum-bourneuv_mytus:0:2811:1:w11" cst="určitě"/>
-  <item id="ex-29587" cql="q-14" xml="Irving-H_New_Hampshire" en="" cs="cs:Irving-H_New_Hampshire:0:3494:2:w1" cst="Určitě"/>
-  <item id="ex-30980" cql="q-14" xml="lodge-hostujici_prof" en="" cs="cs:lodge-hostujici_prof:0:469:8:w6" cst="určitě"/>
-  <item id="ex-26039" cql="q-14" xml="Banks-Most" en="" cs="cs:Banks-Most:0:1936:3:w1" cst="Určitě"/>
-  <item id="ex-25450" cql="q-14" xml="adichie-amerikana" en="" cs="cs:adichie-amerikana:0:4:22:w43" cst="určitě"/>
-  <item id="ex-34225" cql="q-14" xml="updike-kralik_se_vraci" en="" cs="cs:updike-kralik_se_vraci:0:1716:7:w5" cst="určitě"/>
+  <user id="JS" email="jana.sindlerova@ff.cuni.cz" name="Jana &#x160;indlerov&#xE1;"/>
+  <item id="ex-28185" cql="q-14" xml="fowles-sberatel" en="" cs="cs:fowles-sberatel:0:1320:2:w18" cst="ur&#x10D;it&#x11B;" cssent="U ob&#x11B;da jsem mu &#x159;ekla , &#x17E;e v&#xED;m , &#x17E;e se za to , co d&#x11B;l&#xE1; , ur&#x10D;it&#x11B; styd&#xED; , a &#x17E;e se je&#x161;t&#x11B; m&#x16F;&#x17E;e polep&#x161;it ."/>
+  <item id="ex-32340" cql="q-14" xml="Pratchett-Lehke_fantas" en="" cs="cs:Pratchett-Lehke_fantas:0:1778:5:w6" cst="ur&#x10D;it&#x11B;" cssent="Kdyby sko&#x10D;il ze sk&#xE1;ly , ur&#x10D;it&#x11B; by ho v p&#xE1;du zbrzdil mrak , kter&#xFD; by n&#xE1;hodou let&#x11B;l kolem ."/>
+  <item id="ex-33967" cql="q-14" xml="Tolkien-Pan_prstenu_1" en="" cs="cs:Tolkien-Pan_prstenu_1:0:1718:1:w4" cst="ur&#x10D;it&#x11B;" cssent="&quot; Ano , ur&#x10D;it&#x11B; se mus&#xED;me te&#x10F; hned rozhodnout , co ud&#x11B;l&#xE1;me , &quot; odv&#x11B;til Chodec , vzhl&#xE9;dl a zva&#x17E;oval &#x10D;as a po&#x10D;as&#xED; ."/>
+  <item id="ex-26433" cql="q-14" xml="Boyd-Neklid" en="" cs="cs:Boyd-Neklid:0:953:1:w2" cst="Ur&#x10D;it&#x11B;" cssent="&quot; Ur&#x10D;it&#x11B; jen jedno , &quot; p&#x159;ivinula se k n&#x11B;mu ."/>
+  <item id="ex-29857" cql="q-14" xml="Irving-Rok_vdovou" en="" cs="cs:Irving-Rok_vdovou:0:4517:2:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; si zase vzpomenu . &quot;"/>
+  <item id="ex-30480" cql="q-14" xml="krentz-zajatci_snu" en="" cs="cs:krentz-zajatci_snu:0:1546:4:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; se ti poda&#x159;&#xED; v&#xFD;hodn&#x11B; ho prodat . &quot;"/>
+  <item id="ex-26054" cql="q-14" xml="banville-more" en="" cs="cs:banville-more:0:230:9:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; n&#x11B;kter&#xFD; z t&#x11B;chhle o n&#x11B;co v&#x11B;t&#x161;&#xED;ch druh&#x16F; ."/>
+  <item id="ex-29524" cql="q-14" xml="Irving-H_New_Hampshire" en="" cs="cs:Irving-H_New_Hampshire:0:117:1:w4" cst="ur&#x10D;it&#x11B;" cssent="Tahle ponur&#xE1; informace ur&#x10D;it&#x11B; zap&#x16F;sobila na m&#xE9;ho otce , dychtiv&#xE9;ho vstoupit na Harvard - a do sv&#x11B;ta - , a je&#x161;t&#x11B; si neuv&#x11B;domoval , &#x17E;e v&#xE1;lka by mohla jeho pl&#xE1;ny na chv&#xED;li pozdr&#x17E;et ."/>
+  <item id="ex-26888" cql="q-14" xml="chandler-opona" en="" cs="cs:chandler-opona:0:121:2:w2" cst="Ur&#x10D;it&#x11B;" cssent="&#x201E; Ur&#x10D;it&#x11B; jste se ale neh&#xE1;dali . &#x201C;"/>
+  <item id="ex-32633" cql="q-14" xml="rooney-normalni_lidi" en="" cs="cs:rooney-normalni_lidi:0:1731:1:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; , hodn&#x11B; mi pom&#xE1;h&#xE1; ."/>
+  <item id="ex-32830" cql="q-14" xml="rowlingova-hpot_pohar" en="" cs="cs:rowlingova-hpot_pohar:0:3355:4:w6" cst="ur&#x10D;it&#x11B;" cssent="Ale co , v&#x161;ak ty ur&#x10D;it&#x11B; n&#x11B;kde najde&#x161; n&#x11B;jakou , kter&#xE1; s tebou p&#x16F;jde . &quot;"/>
+  <item id="ex-32995" cql="q-14" xml="rowlingova-hpot_tajemn" en="" cs="cs:rowlingova-hpot_tajemn:0:2421:3:w5" cst="ur&#x10D;it&#x11B;" cssent="T&#x11B;m by se to ur&#x10D;it&#x11B; nel&#xED;bilo . &quot;"/>
+  <item id="ex-28860" cql="q-14" xml="grisham-klient" en="" cs="cs:grisham-klient:0:2295:1:w2" cst="Ur&#x10D;it&#x11B;" cssent="&#x201E; Ur&#x10D;it&#x11B; ."/>
+  <item id="ex-26155" cql="q-14" xml="barnes-zadny_duvod" en="" cs="cs:barnes-zadny_duvod:0:24:1:w23" cst="ur&#x10D;it&#x11B;" cssent="Po jej&#xED; kremaci jsem si disk s Mozartem vzal od &#x201E; varhan&#xED;ka &#x201C; zase zp&#xE1;tky a mimod&#x11B;k m&#x11B; napadlo , &#x17E;e dneska ur&#x10D;it&#x11B; dostal plnou g&#xE1;&#x17E;i jen za to , &#x17E;e pustil jedinou skladbu a c&#xE9;de&#x10D;ko zase z p&#x159;&#xED;stroje vyndal ."/>
+  <item id="ex-26078" cql="q-14" xml="Barnes-Arthur_a_George" en="" cs="cs:Barnes-Arthur_a_George:0:1222:2:w67" cst="ur&#x10D;it&#x11B;" cssent="George naslouchal , jak otec p&#x159;esn&#x11B; , ale s dlouh&#xFD;mi odmlkami popisuje , jak se v noci na fa&#x159;e sp&#xED; , jak v&#x17E;dycky zamyk&#xE1; dve&#x159;e lo&#x17E;nice , jak zt&#x11B;&#x17E;ka se tam ot&#xE1;&#x10D;&#xED; kl&#xED;&#x10D;em a jak p&#x159;i tom kl&#xED;&#x10D; v&#x17E;dycky v z&#xE1;mku zask&#x159;&#xED;pe , jak on s&#xE1;m m&#xE1; velmi lehk&#xE9; span&#xED; , v posledn&#xED; dob&#x11B; o to leh&#x10D;&#xED; , &#x17E;e ho tr&#xE1;p&#xED; &#xFA;st&#x159;el , jak by se ur&#x10D;it&#x11B; probudil , kdyby se t&#xED;m kl&#xED;&#x10D;em oto&#x10D;ilo , a jak od p&#x11B;ti od r&#xE1;na u&#x17E; stejn&#x11B; nespal ."/>
+  <item id="ex-33510" cql="q-14" xml="Steelova-Dar" en="" cs="cs:Steelova-Dar:0:628:3:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; to tam taky d&#x11B;laj&#xED; ."/>
+  <item id="ex-27015" cql="q-14" xml="clarke-setkani_ramou" en="" cs="cs:clarke-setkani_ramou:0:407:2:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; promrzl na teplotu bl&#xED;zkou absolutn&#xED; nule - na n&#x11B;jak&#xFD;ch dv&#x11B; st&#x11B; sedmdes&#xE1;t stup&#x148;&#x16F; - zat&#xED;mco prol&#xE9;tal mezihv&#x11B;zdn&#xFD;m prostorem ."/>
+  <item id="ex-29374" cql="q-14" xml="Hemingway-OstrovyUpr_p" en="" cs="cs:Hemingway-OstrovyUpr_p:0:2964:3:w3" cst="ur&#x10D;it&#x11B;" cssent="Pro m&#x11B; ur&#x10D;it&#x11B; ne . &quot;"/>
+  <item id="ex-31136" cql="q-14" xml="ludlum-bourneuv_mytus" en="" cs="cs:ludlum-bourneuv_mytus:0:1490:3:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; to druh&#xE9; , napadlo Davida , kdy&#x17E; opatrn&#x11B; pohnul hlavou a vid&#x11B;l , jak Liang p&#x159;eb&#xED;h&#xE1; p&#x159;&#xED;jezdovou cestu sm&#x11B;rem k p&#x159;elidn&#x11B;n&#xE9;mu chodn&#xED;ku Nov&#xE9;ho sv&#x11B;tov&#xE9;ho n&#xE1;kupn&#xED;ho centra ."/>
+  <item id="ex-25290" cql="q-14" xml="adams-daleka_cesta" en="" cs="cs:adams-daleka_cesta:0:1241:2:w8" cst="ur&#x10D;it&#x11B;" cssent="Neb&#xFD;t Zvonkov&#xFD;ch vtip&#x16F; a v&#x11B;&#x10D;n&#xE9;ho pov&#xED;d&#xE1;n&#xED; , ur&#x10D;it&#x11B; bychom byli p&#x159;estali b&#x11B;hat . &#x201C;"/>
+  <item id="ex-32431" cql="q-14" xml="Puzo-Kmotr" en="" cs="cs:Puzo-Kmotr:0:1251:4:w11" cst="ur&#x10D;it&#x11B;" cssent="Jakmile mu vysv&#x11B;tl&#xED;m , jak to s v&#xE1;mi vypad&#xE1; , ur&#x10D;it&#x11B; se slituje nad va&#x161;&#xED;m smutn&#xFD;m osudem ."/>
+  <item id="ex-34248" cql="q-14" xml="updike-kralik_se_vraci" en="" cs="cs:updike-kralik_se_vraci:0:3473:7:w9" cst="ur&#x10D;it&#x11B;" cssent="&#x201E; Kdybys tady byla z&#x16F;stala , byla by ur&#x10D;it&#x11B; je&#x161;t&#x11B; na&#x17E;ivu , n&#x11B;kde jinde . &#x201C;"/>
+  <item id="ex-31567" cql="q-14" xml="moriarty-sedmilharky" en="" cs="cs:moriarty-sedmilharky:0:1829:5:w5" cst="ur&#x10D;it&#x11B;" cssent="Dneska je na internetu ur&#x10D;it&#x11B; n&#x11B;jak&#xE1; slu&#x17E;ba na vra&#x17E;d&#x11B;n&#xED; parchant&#x16F; . &#x201C;"/>
+  <item id="ex-31458" cql="q-14" xml="McEwan-Pokani" en="" cs="cs:McEwan-Pokani:0:121:4:w2" cst="ur&#x10D;it&#x11B;" cssent="Bernini ur&#x10D;it&#x11B; cht&#x11B;l , aby voda melodicky pr&#xFD;&#x161;tila z &#x161;irok&#xE9; mu&#x161;le s nerovn&#xFD;m okrajem do n&#xE1;dr&#x17E;e pod n&#xED; ."/>
+  <item id="ex-31334" cql="q-14" xml="mantel-wolf_hall" en="" cs="cs:mantel-wolf_hall:0:3503:2:w2" cst="Ur&#x10D;it&#x11B;" cssent="&#x201E; Ur&#x10D;it&#x11B; se chce&#x161; jmenovat Christophe ?"/>
+  <item id="ex-33948" cql="q-14" xml="Tolkien-Pan_prstenu_1" en="" cs="cs:Tolkien-Pan_prstenu_1:0:509:7:w19" cst="ur&#x10D;it&#x11B;" cssent="Obr&#xE1;til se a tu se zarazil , proto&#x17E;e zaslechl hlasy hned za rohem v Pytlov&#xE9; ulici , jeden ur&#x10D;it&#x11B; pat&#x159;il star&#xE9;mu Kmotrovi ;"/>
+  <item id="ex-29860" cql="q-14" xml="Irving-Rok_vdovou" en="" cs="cs:Irving-Rok_vdovou:0:4593:2:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; byly zabalen&#xE9; v jedn&#xE9; z kartonov&#xFD;ch krabic ."/>
+  <item id="ex-34021" cql="q-14" xml="Toole-Spolceni_hlupcu" en="" cs="cs:Toole-Spolceni_hlupcu:0:421:1:w20" cst="ur&#x10D;it&#x11B;" cssent="Obch&#x16F;zk&#xE1;&#x159; Mancuso inhaloval trouchniv&#xFD; pach dub&#x16F; a hlavou mu t&#xE1;hla romantick&#xE1; my&#x161;lenka , &#x17E;e St . Charles Avenue je ur&#x10D;it&#x11B; nejkouzeln&#x11B;j&#x161;&#xED; m&#xED;sto na sv&#x11B;t&#x11B; ."/>
+  <item id="ex-32872" cql="q-14" xml="rowlingova-hpot_pohar" en="" cs="cs:rowlingova-hpot_pohar:0:5668:5:w3" cst="ur&#x10D;it&#x11B;" cssent="Brumb&#xE1;l by ur&#x10D;it&#x11B; pojal krajn&#xED; podez&#x159;en&#xED; , kdybyste to zvl&#xE1;dl p&#x159;&#xED;li&#x161; snadno ."/>
+  <item id="ex-29310" cql="q-14" xml="Hemingway-Fiesta" en="" cs="cs:Hemingway-Fiesta:0:2523:2:w2" cst="ur&#x10D;it&#x11B;" cssent="Ale ur&#x10D;it&#x11B; ! &quot;"/>
+  <item id="ex-27960" cql="q-14" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:2253:2:w4" cst="ur&#x10D;it&#x11B;" cssent="Naho&#x159;e u&#x17E; ohe&#x148; ur&#x10D;it&#x11B; rozpoutal prav&#xE9; peklo ."/>
+  <item id="ex-25596" cql="q-14" xml="Allen-Bez_peri" en="" cs="cs:Allen-Bez_peri:0:416:4:w7" cst="ur&#x10D;it&#x11B;" cssent="Jestli n&#x11B;jakou co nevid&#x11B;t nesezenu , ur&#x10D;it&#x11B; provedu n&#x11B;jakou zbrklost . &quot;"/>
+  <item id="ex-29936" cql="q-14" xml="Irving-Svet_podleGarpa" en="" cs="cs:Irving-Svet_podleGarpa:0:4365:4:w1" cst="ur&#x10D;it&#x11B;" cssent="ur&#x10D;it&#x11B; se to vyplat&#xED; , soudil John Wolf , v tom smyslu , &#x17E;e nadaci to p&#x159;inese nev&#xED;dan&#xE9; sumy na donac&#xED;ch ."/>
+  <item id="ex-32449" cql="q-14" xml="Puzo-Kmotr" en="" cs="cs:Puzo-Kmotr:0:2127:14:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; v&#x11B;d&#xED; , co se d&#x11B;je s Ninem , ale p&#x159;esto mu klidn&#x11B; d&#xE1;vaj&#xED; d&#xE1;l v&#x161;emo&#x17E;n&#xE9; l&#xE9;ky , jen aby se udr&#x17E;el na nohou ."/>
+  <item id="ex-27996" cql="q-14" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:4548:3:w4" cst="ur&#x10D;it&#x11B;" cssent="Tady ho n&#x11B;kdo ur&#x10D;it&#x11B; okr&#xE1;d&#xE1; ."/>
+  <item id="ex-25684" cql="q-14" xml="almond-skellig" en="" cs="cs:almond-skellig:0:65:3:w4" cst="ur&#x10D;it&#x11B;" cssent="V&#x161;echno se mi ur&#x10D;it&#x11B; jen zd&#xE1;lo ."/>
+  <item id="ex-32257" cql="q-14" xml="Popper-hledani" en="" cs="cs:Popper-hledani:0:716:1:w28" cst="ur&#x10D;it&#x11B;" cssent="Za prv&#xE9; , p&#x159;esto&#x17E;e bod 2 ) , tj . Darwinova evolu&#x10D;n&#xED; teorie , nem&#xE1; dostate&#x10D;nou schopnost vysv&#x11B;tlit pozemsk&#xFD; v&#xFD;voj mnoha rozmanit&#xFD;ch forem &#x17E;ivota , m&#x16F;&#x17E;e jej ur&#x10D;it&#x11B; p&#x159;edpokl&#xE1;dat , a tud&#xED;&#x17E; na n&#x11B;j upozornit ."/>
+  <item id="ex-27550" cql="q-14" xml="Doyle-Pribehy_Sherlock" en="" cs="cs:Doyle-Pribehy_Sherlock:0:3946:2:w4" cst="ur&#x10D;it&#x11B;" cssent="&quot; Ten chlap ur&#x10D;it&#x11B; uhodl , k &#x10D;emu se sle&#x10D;na Hunterov&#xE1; chyst&#xE1; , a svoji ob&#x11B;&#x165; unesl . &quot;"/>
+  <item id="ex-28969" cql="q-14" xml="Grisham-Partner" en="" cs="cs:Grisham-Partner:0:2066:1:w5" cst="ur&#x10D;it&#x11B;" cssent="&quot; Ne , ale ur&#x10D;it&#x11B; sis ned&#x11B;lal starosti s kamar&#xE1;dy . &quot;"/>
+  <item id="ex-32673" cql="q-14" xml="rowlingova-hpot_fenix" en="" cs="cs:rowlingova-hpot_fenix:0:76:3:w3" cst="ur&#x10D;it&#x11B;" cssent="Byla by ur&#x10D;it&#x11B; obrovsk&#xE1; legrace sledovat Dudleyho dilema , dr&#xE1;&#x17E;dit ho a d&#xED;vat se , jak se nedok&#xE1;&#x17E;e zmoci k odpov&#x11B;di &#x2026;"/>
+  <item id="ex-32539" cql="q-14" xml="riggs-sirotcinec" en="" cs="cs:riggs-sirotcinec:0:11:1:w2" cst="Ur&#x10D;it&#x11B;" cssent="&#x201E; Ur&#x10D;it&#x11B; m&#x11B; m&#xE1;&#x161; za po&#x159;&#xE1;dn&#xE9;ho hlup&#xE1;ka , d&#x11B;do . &#x201C;"/>
+  <item id="ex-26185" cql="q-14" xml="bates-poupata_v_maji" en="" cs="cs:bates-poupata_v_maji:0:798:3:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; cht&#x11B;l j&#xED;t dom&#x16F; a sn&#xED;st tam housku se sal&#xE1;mem a vyp&#xED;t k tomu sklenici ml&#xED;ka ."/>
+  <item id="ex-32396" cql="q-14" xml="Puzo-Kmotr" en="" cs="cs:Puzo-Kmotr:0:248:7:w28" cst="ur&#x10D;it&#x11B;" cssent="Jen&#x17E;e te&#x10F; ji Clemenza sv&#xFD;m s&#xED;pav&#xFD;m , hrdeln&#xED;m hlasem p&#x159;esv&#x11B;d&#x10D;oval , &#x17E;e &#x201E; starej p&#xE1;n &#x201C; pova&#x17E;uje Mika za nejlep&#x161;&#xED;ho ze syn&#x16F; , za toho , kter&#xFD; ur&#x10D;it&#x11B; zd&#x11B;d&#xED; veden&#xED; rodinn&#xE9;ho podniku ."/>
+  <item id="ex-27058" cql="q-14" xml="clarke-strange_norrell" en="" cs="cs:clarke-strange_norrell:0:2969:2:w2" cst="Ur&#x10D;it&#x11B;" cssent="&#x201E; Ur&#x10D;it&#x11B; ale &#x2026; ? &#x201C;"/>
+  <item id="ex-31150" cql="q-14" xml="ludlum-bourneuv_mytus" en="" cs="cs:ludlum-bourneuv_mytus:0:2811:1:w11" cst="ur&#x10D;it&#x11B;" cssent="&#x201E; Jestli je okruh ob&#x11B;t&#xED; takhle omezen&#xFD; , tak m&#xE1;&#x161; ur&#x10D;it&#x11B; pravdu ."/>
+  <item id="ex-29587" cql="q-14" xml="Irving-H_New_Hampshire" en="" cs="cs:Irving-H_New_Hampshire:0:3494:2:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; to n&#x11B;jak v&#x11B;d&#x11B;la ."/>
+  <item id="ex-30980" cql="q-14" xml="lodge-hostujici_prof" en="" cs="cs:lodge-hostujici_prof:0:469:8:w6" cst="ur&#x10D;it&#x11B;" cssent="Jestli bydl&#xED;te v Plotinu , ur&#x10D;it&#x11B; takov&#xFD; v&#xFD;hled m&#xE1;te ."/>
+  <item id="ex-26039" cql="q-14" xml="Banks-Most" en="" cs="cs:Banks-Most:0:1936:3:w1" cst="Ur&#x10D;it&#x11B;" cssent="Ur&#x10D;it&#x11B; se v&#xE1;m pak ulev&#xED; ."/>
+  <item id="ex-25450" cql="q-14" xml="adichie-amerikana" en="" cs="cs:adichie-amerikana:0:4:22:w43" cst="ur&#x10D;it&#x11B;" cssent="Jeho vlasy p&#x159;ipom&#xED;naly star&#xE9; spleten&#xE9; provazy a kon&#x10D;ily blon&#x10F;at&#xFD;mi chom&#xE1;&#x10D;i a na sob&#x11B; m&#x11B;l potrhanou ko&#x161;ili , zjevn&#x11B; no&#x161;enou s velkou zbo&#x17E;nost&#xED; , co&#x17E; ji p&#x159;esv&#x11B;d&#x10D;ilo , &#x17E;e je to zaryt&#xFD; soci&#xE1;ln&#xED; aktivista a &#x17E;e by j&#xED; na blog tu a tam ur&#x10D;it&#x11B; dok&#xE1;zal p&#x159;isp&#x11B;t dobr&#xFD;m textem ."/>
+  <item id="ex-34225" cql="q-14" xml="updike-kralik_se_vraci" en="" cs="cs:updike-kralik_se_vraci:0:1716:7:w5" cst="ur&#x10D;it&#x11B;" cssent="je &#x161;ediv&#x11B;j&#x161;&#xED; , ale ur&#x10D;it&#x11B; nevypad&#xE1; star&#x161;&#xED; - sp&#xED;&#x161; mlad&#x161;&#xED; , v pase &#x161;t&#xED;hlej&#x161;&#xED; , v sebev&#x11B;dom&#x11B; lep&#x161;&#xED; kondici , tvrd&#x161;&#xED; , otu&#x17E;ilej&#x161;&#xED; , op&#xE1;len&#xFD; ;"/>
 </examples>
