@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="IS" email="iur.sav.gal@icloud.com" name="Iurii Savelev-Galiaminskii"/>
   <item id="ex-49936" cql="q-25" xml="grisham-advokat_chudy" en="" cs="cs:grisham-advokat_chudy:0:3583:1:w5" cst="nepochybn&#x11B;"/>
   <item id="ex-50963" cql="q-25" xml="Toole-Spolceni_hlupcu" en="en:Toole-Spolceni_hlupcu:0:3663:4:w1 en:Toole-Spolceni_hlupcu:0:3663:4:w2" cs="cs:Toole-Spolceni_hlupcu:0:3760:4:w1" cst="Nepochybn&#x11B;"/>
   <item id="ex-49555" cql="q-25" xml="Christie-KapsaPlnaZita" en="en:Christie-KapsaPlnaZita:0:1401:6:w18" cs="cs:Christie-KapsaPlnaZita:0:1364:6:w14" cst="nepochybn&#x11B;"/>

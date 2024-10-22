@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="NJ" email="naty.jalovcova@seznam.cz" name="Nat&#xE1;lie Jalovcov&#xE1;"/>
   <item id="ex-49937" cql="q-33" xml="frost-sez_sedmi" en="en:frost-sez_sedmi:0:1898:5:w11" cs="cs:frost-sez_sedmi:0:1898:5:w13" cst="p&#x159;irozen&#x11B;"/>
   <item id="ex-49518" cql="q-33" xml="Barnes-FlaubertuvPapus" en="en:Barnes-FlaubertuvPapus:0:630:3:w2" cs="cs:Barnes-FlaubertuvPapus:0:699:4:w3" cst="p&#x159;irozen&#x11B;"/>
   <item id="ex-50546" cql="q-33" xml="munro-utek" en="" cs="cs:munro-utek:0:1323:7:w13" cst="p&#x159;irozen&#x11B;"/>

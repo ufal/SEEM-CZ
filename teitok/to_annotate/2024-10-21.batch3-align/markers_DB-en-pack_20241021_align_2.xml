@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="DB" email="david.burda@natur.cuni.cz" name="David Burda"/>
   <item id="ex-49833" cql="q-26" xml="galbraith-smrtici_bila" en="en:galbraith-smrtici_bila:0:4753:2:w3" cs="cs:galbraith-smrtici_bila:0:4744:2:w1" cst="O&#x10D;ividn&#x11B;"/>
   <item id="ex-50674" cql="q-26" xml="smith-sberatel" en="en:smith-sberatel:0:1250:3:w10" cs="cs:smith-sberatel:0:1182:3:w4" cst="o&#x10D;ividn&#x11B;"/>
   <item id="ex-49489" cql="q-26" xml="Clancy-Spinava_hra" en="en:Clancy-Spinava_hra:0:2068:4:w1" cs="cs:Clancy-Spinava_hra:0:2086:4:w2" cst="o&#x10D;ividn&#x11B;"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
   <item id="ex-50804" cql="q-33" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:1133:3:w4" cs="cs:skvorecky-hrichy_pater:0:1131:2:w5" cst="p&#x159;irozen&#x11B;"/>
   <item id="ex-50270" cql="q-33" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:809:6:w1" cs="cs:Kohout-Hvezdna_hodina:0:829:4:w4" cst="p&#x159;irozen&#x11B;"/>
   <item id="ex-50884" cql="q-33" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:2070:1:w1" cs="cs:Skvorecky-PribehIng_2:0:1719:5:w3" cst="p&#x159;irozen&#x11B;"/>

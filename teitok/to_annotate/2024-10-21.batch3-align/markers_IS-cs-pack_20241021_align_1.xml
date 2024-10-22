@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="IS" email="iur.sav.gal@icloud.com" name="Iurii Savelev-Galiaminskii"/>
   <item id="ex-56921" cql="q-28" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:1606:13:w10" cs="cs:panek-dejiny_ceskych:0:1380:13:w10" cst="ov&#x161;em"/>
   <item id="ex-53762" cql="q-28" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:180:45:w2" cs="cs:Havel-Dalkovy_vyslech:0:164:44:w3" cst="ov&#x161;em"/>
   <item id="ex-59872" cql="q-28" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:2136:4:w1 en:styblova-skalpel_pros:0:2136:4:w2" cs="cs:styblova-skalpel_pros:0:2162:5:w1" cst="Ov&#x161;em"/>

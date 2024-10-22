@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
   <item id="ex-49895" cql="q-30" xml="forsyth-vyjednavac" en="" cs="cs:forsyth-vyjednavac:0:451:3:w24" cst="pochopiteln&#x11B;"/>
   <item id="ex-50897" cql="q-30" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:2237:1:w1 en:Puzo-Kmotr:0:2237:1:w6" cs="cs:Puzo-Kmotr:0:2170:1:w5" cst="pochopiteln&#x11B;"/>
   <item id="ex-49486" cql="q-30" xml="bellow-dobrodruzstvi" en="" cs="cs:bellow-dobrodruzstvi:0:219:5:w8" cst="pochopiteln&#x11B;"/>

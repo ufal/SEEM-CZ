@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="DB" email="david.burda@natur.cuni.cz" name="David Burda"/>
   <item id="ex-51195" cql="q-29" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:685:2:w9" cs="cs:Vopenka-Paty_rozmer:0:692:2:w6" cst="patrn&#x11B;"/>
   <item id="ex-50251" cql="q-29" xml="Hasek-OsudyDobrehoVvSV" en="" cs="cs:Hasek-OsudyDobrehoVvSV:0:4823:12:w26" cst="patrn&#x11B;"/>
   <item id="ex-50958" cql="q-29" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:2657:4:w10" cs="cs:Skvorecky-Mirakl:0:3057:5:w14" cst="patrn&#x11B;"/>

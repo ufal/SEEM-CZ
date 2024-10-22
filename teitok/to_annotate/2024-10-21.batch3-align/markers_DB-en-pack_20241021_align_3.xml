@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="DB" email="david.burda@natur.cuni.cz" name="David Burda"/>
   <item id="ex-58689" cql="q-35" xml="Styron-Sofiina_volba" en="en:Styron-Sofiina_volba:0:533:6:w10 en:Styron-Sofiina_volba:0:533:6:w9" cs="cs:Styron-Sofiina_volba:0:546:6:w12" cst="samoz&#x159;ejm&#x11B;"/>
   <item id="ex-52040" cql="q-35" xml="Fitzgerald-VelkyGatsby" en="en:Fitzgerald-VelkyGatsby:0:1466:2:w1 en:Fitzgerald-VelkyGatsby:0:1466:2:w2" cs="cs:Fitzgerald-VelkyGatsby:0:1571:2:w1" cst="Samoz&#x159;ejm&#x11B;"/>
   <item id="ex-55918" cql="q-35" xml="moriarty-sedmilharky" en="" cs="cs:moriarty-sedmilharky:0:3280:2:w10" cst="samoz&#x159;ejm&#x11B;"/>

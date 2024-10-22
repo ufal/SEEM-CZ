@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
   <item id="ex-50025" cql="q-29" xml="Fromm-Mit_nebo_byt" en="en:Fromm-Mit_nebo_byt:0:691:2:w1" cs="cs:Fromm-Mit_nebo_byt:0:675:2:w4" cst="patrn&#x11B;"/>
   <item id="ex-49519" cql="q-29" xml="bellow-dobrodruzstvi" en="en:bellow-dobrodruzstvi:0:387:4:w1" cs="cs:bellow-dobrodruzstvi:0:385:4:w6" cst="patrn&#x11B;"/>
   <item id="ex-50709" cql="q-29" xml="munro-utek" en="en:munro-utek:0:2251:4:w2" cs="cs:munro-utek:0:2234:4:w1" cst="Patrn&#x11B;"/>

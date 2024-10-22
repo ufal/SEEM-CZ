@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="KK" email="kyckova2@seznam.cz" name="Karol&#xED;na K&#xFD;&#x10D;kov&#xE1;"/>
   <item id="ex-55342" cql="q-27" xml="Heller-Hlava_XXII" en="en:Heller-Hlava_XXII:0:3666:1:w6" cs="cs:Heller-Hlava_XXII:0:4084:1:w5" cst="opravdu"/>
   <item id="ex-63735" cql="q-27" xml="Updike-Kraliku_utikej" en="en:Updike-Kraliku_utikej:0:1660:1:w10" cs="cs:Updike-Kraliku_utikej:0:1667:1:w5" cst="opravdu"/>
   <item id="ex-51204" cql="q-27" xml="Burns-Mlikar" en="en:Burns-Mlikar:0:306:30:w41" cs="cs:Burns-Mlikar:0:288:30:w48" cst="opravdu"/>
