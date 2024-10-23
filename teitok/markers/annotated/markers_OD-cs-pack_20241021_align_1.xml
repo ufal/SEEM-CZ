@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <examples>
 <user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
-  <item id="ex-51090" cql="q-25" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:513:17:w3" cs="cs:Zmeskal-Milostny_dopis:0:499:14:w3" cst="nepochybn&#x11B;"/>
+  <item id="ex-51090" cql="q-25" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:513:17:w3" cs="cs:Zmeskal-Milostny_dopis:0:499:14:w3" cst="nepochybn&#x11B;" alignchecked="1" ent="undoubtedly"/>
   <item id="ex-50222" cql="q-25" xml="klima-leto" en="en:klima-leto:0:526:3:w6" cs="cs:klima-leto:0:635:3:w6" cst="nepochybn&#x11B;"/>
   <item id="ex-50927" cql="q-25" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:286:1:w8" cs="cs:Strouhal-Zivot_Egyptan:0:299:1:w5" cst="nepochybn&#x11B;"/>
   <item id="ex-51029" cql="q-25" xml="Vopenka-Moje_cesta" en="en:Vopenka-Moje_cesta:0:1304:10:w13 en:Vopenka-Moje_cesta:0:1304:10:w7" cs="cs:Vopenka-Moje_cesta:0:1292:9:w6" cst="nepochybn&#x11B;"/>
