@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<examples>
+<user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
+  <item id="ex-50025" cql="q-29" xml="Fromm-Mit_nebo_byt" en="en:Fromm-Mit_nebo_byt:0:691:2:w1" cs="cs:Fromm-Mit_nebo_byt:0:675:2:w4" cst="patrn&#x11B;"/>
+  <item id="ex-49519" cql="q-29" xml="bellow-dobrodruzstvi" en="en:bellow-dobrodruzstvi:0:387:4:w1" cs="cs:bellow-dobrodruzstvi:0:385:4:w6" cst="patrn&#x11B;"/>
+  <item id="ex-50709" cql="q-29" xml="munro-utek" en="en:munro-utek:0:2251:4:w2" cs="cs:munro-utek:0:2234:4:w1" cst="Patrn&#x11B;"/>
+  <item id="ex-51059" cql="q-29" xml="Tolkien-Hobit" en="en:Tolkien-Hobit:0:784:6:w14" cs="cs:Tolkien-Hobit:0:738:6:w20" cst="patrn&#x11B;"/>
+  <item id="ex-49469" cql="q-29" xml="banks-pisen_kamene" en="en:banks-pisen_kamene:0:958:2:w5" cs="cs:banks-pisen_kamene:0:955:2:w3" cst="patrn&#x11B;"/>
+  <item id="ex-50620" cql="q-29" xml="mantel-wolf_hall" en="en:mantel-wolf_hall:0:2048:3:w3" cs="cs:mantel-wolf_hall:0:2045:3:w3" cst="patrn&#x11B;"/>
+  <item id="ex-49743" cql="q-29" xml="Clarke-2001_Vesmir_od" en="en:Clarke-2001_Vesmir_od:0:1210:2:w29" cs="cs:Clarke-2001_Vesmir_od:0:1210:3:w28" cst="patrn&#x11B;"/>
+  <item id="ex-50268" cql="q-29" xml="hawking-historie_casu" en="" cs="cs:hawking-historie_casu:0:297:2:w8" cst="patrn&#x11B;"/>
+  <item id="ex-49494" cql="q-29" xml="Barnes-FlaubertuvPapus" en="en:Barnes-FlaubertuvPapus:0:686:11:w6" cs="cs:Barnes-FlaubertuvPapus:0:756:4:w5" cst="patrn&#x11B;"/>
+  <item id="ex-49475" cql="q-29" xml="Barnes-FlaubertuvPapus" en="en:Barnes-FlaubertuvPapus:0:250:3:w2" cs="cs:Barnes-FlaubertuvPapus:0:276:3:w1" cst="Patrn&#x11B;"/>
+  <item id="ex-49775" cql="q-29" xml="Crichton-Koule" en="" cs="cs:Crichton-Koule:0:267:1:w17" cst="patrn&#x11B;"/>
+  <item id="ex-50564" cql="q-29" xml="Lovelock-Gaia" en="en:Lovelock-Gaia:0:217:2:w5" cs="cs:Lovelock-Gaia:0:210:2:w5" cst="patrn&#x11B;"/>
+  <item id="ex-51183" cql="q-29" xml="Vonnegut-Jatka_c_5" en="en:Vonnegut-Jatka_c_5:0:557:4:w12" cs="cs:Vonnegut-Jatka_c_5:0:538:4:w4" cst="patrn&#x11B;"/>
+  <item id="ex-49270" cql="q-29" xml="adams-daleka_cesta" en="en:adams-daleka_cesta:0:3855:3:w33" cs="cs:adams-daleka_cesta:0:3891:3:w32" cst="patrn&#x11B;"/>
+  <item id="ex-51259" cql="q-29" xml="Wintersonova-Pomerance" en="en:Wintersonova-Pomerance:0:469:2:w3" cs="cs:Wintersonova-Pomerance:0:450:2:w4" cst="patrn&#x11B;"/>
+  <item id="ex-51228" cql="q-29" xml="Wells-Valka_svetu" en="" cs="cs:Wells-Valka_svetu:0:26:1:w6" cst="patrn&#x11B;"/>
+  <item id="ex-50710" cql="q-29" xml="munro-utek" en="en:munro-utek:0:2280:9:w11" cs="cs:munro-utek:0:2264:8:w9" cst="patrn&#x11B;"/>
+  <item id="ex-50548" cql="q-29" xml="lodge-hostujici_prof" en="en:lodge-hostujici_prof:0:37:2:w23" cs="cs:lodge-hostujici_prof:0:40:2:w20" cst="patrn&#x11B;"/>
+  <item id="ex-49973" cql="q-29" xml="fowles-franc_milenka" en="en:fowles-franc_milenka:0:1711:1:w4" cs="cs:fowles-franc_milenka:0:1719:1:w6" cst="patrn&#x11B;"/>
+  <item id="ex-49392" cql="q-29" xml="Austenova-Emma" en="en:Austenova-Emma:0:602:7:w8" cs="cs:Austenova-Emma:0:575:8:w12" cst="patrn&#x11B;"/>
+  <item id="ex-50731" cql="q-29" xml="Ondaatje-Anglicky_Paci" en="en:Ondaatje-Anglicky_Paci:0:1520:1:w4" cs="cs:Ondaatje-Anglicky_Paci:0:1650:1:w4" cst="patrn&#x11B;"/>
+  <item id="ex-49982" cql="q-29" xml="fowles-franc_milenka" en="en:fowles-franc_milenka:0:3370:1:w5" cs="cs:fowles-franc_milenka:0:3377:1:w1" cst="Patrn&#x11B;"/>
+  <item id="ex-49395" cql="q-29" xml="Austenova-Emma" en="en:Austenova-Emma:0:734:1:w5" cs="cs:Austenova-Emma:0:701:1:w4" cst="patrn&#x11B;"/>
+  <item id="ex-49882" cql="q-29" xml="doyle-rudy_kruh" en="en:doyle-rudy_kruh:0:243:12:w2 en:doyle-rudy_kruh:0:243:12:w4" cs="cs:doyle-rudy_kruh:0:243:12:w2" cst="patrn&#x11B;"/>
+  <item id="ex-50341" cql="q-29" xml="Irving-H_New_Hampshire" en="en:Irving-H_New_Hampshire:0:2371:2:w2" cs="cs:Irving-H_New_Hampshire:0:2377:2:w2" cst="patrn&#x11B;"/>
+  <item id="ex-49502" cql="q-29" xml="barnes-vedomi_konce" en="en:barnes-vedomi_konce:0:160:5:w6" cs="cs:barnes-vedomi_konce:0:199:1:w6" cst="patrn&#x11B;"/>
+  <item id="ex-49786" cql="q-29" xml="dawkins-bozi_blud" en="en:dawkins-bozi_blud:0:342:4:w3" cs="cs:dawkins-bozi_blud:0:358:4:w3" cst="patrn&#x11B;"/>
+  <item id="ex-51187" cql="q-29" xml="Vonnegut-Kolibka" en="en:Vonnegut-Kolibka:0:874:2:w25" cs="cs:Vonnegut-Kolibka:0:828:2:w23" cst="patrn&#x11B;"/>
+  <item id="ex-50635" cql="q-29" xml="marshall-v_zajeti" en="" cs="cs:marshall-v_zajeti:0:185:6:w6" cst="patrn&#x11B;"/>
+  <item id="ex-51088" cql="q-29" xml="trevor-lucy_gault" en="" cs="cs:trevor-lucy_gault:0:596:3:w6" cst="patrn&#x11B;"/>
+  <item id="ex-49465" cql="q-29" xml="banks-pisen_kamene" en="en:banks-pisen_kamene:0:93:1:w3" cs="cs:banks-pisen_kamene:0:92:1:w3" cst="patrn&#x11B;"/>
+  <item id="ex-49358" cql="q-29" xml="Allen-Bez_peri" en="en:Allen-Bez_peri:0:434:1:w9" cs="cs:Allen-Bez_peri:0:428:1:w10" cst="patrn&#x11B;"/>
+  <item id="ex-50702" cql="q-29" xml="munro-utek" en="en:munro-utek:0:1383:2:w4" cs="cs:munro-utek:0:1371:2:w2" cst="patrn&#x11B;"/>
+  <item id="ex-49408" cql="q-29" xml="Austenova-Emma" en="" cs="cs:Austenova-Emma:0:1141:4:w7" cst="patrn&#x11B;"/>
+  <item id="ex-49305" cql="q-29" xml="adams-zivot_vesmir" en="en:adams-zivot_vesmir:0:2016:5:w12" cs="cs:adams-zivot_vesmir:0:2010:4:w14" cst="patrn&#x11B;"/>
+  <item id="ex-50622" cql="q-29" xml="mantel-wolf_hall" en="en:mantel-wolf_hall:0:3054:4:w6" cs="cs:mantel-wolf_hall:0:3047:4:w9" cst="patrn&#x11B;"/>
+  <item id="ex-50136" cql="q-29" xml="Greene-vesmir" en="en:Greene-vesmir:0:762:2:w11" cs="cs:Greene-vesmir:0:777:2:w11" cst="patrn&#x11B;"/>
+  <item id="ex-49869" cql="q-29" xml="Doyle-Pribehy_Sherlock" en="" cs="cs:Doyle-Pribehy_Sherlock:0:1975:2:w4" cst="patrn&#x11B;"/>
+  <item id="ex-49367" cql="q-29" xml="Allen-Vyridit_si_ucty" en="en:Allen-Vyridit_si_ucty:0:634:3:w9" cs="cs:Allen-Vyridit_si_ucty:0:636:8:w13" cst="patrn&#x11B;"/>
+  <item id="ex-49518" cql="q-29" xml="bellow-dobrodruzstvi" en="en:bellow-dobrodruzstvi:0:337:9:w2" cs="cs:bellow-dobrodruzstvi:0:336:8:w2" cst="patrn&#x11B;"/>
+  <item id="ex-50175" cql="q-29" xml="Grisham-Kral_advokatu" en="" cs="cs:Grisham-Kral_advokatu:0:355:2:w12" cst="patrn&#x11B;"/>
+  <item id="ex-49728" cql="q-29" xml="chevalier-divka_s_perl" en="en:chevalier-divka_s_perl:0:1455:4:w4" cs="cs:chevalier-divka_s_perl:0:1417:4:w1" cst="Patrn&#x11B;"/>
+  <item id="ex-50838" cql="q-29" xml="robilant-milenci_benat" en="en:robilant-milenci_benat:0:1650:5:w3" cs="cs:robilant-milenci_benat:0:774:6:w6" cst="patrn&#x11B;"/>
+  <item id="ex-50022" cql="q-29" xml="Fromm-Mit_nebo_byt" en="en:Fromm-Mit_nebo_byt:0:429:1:w1" cs="cs:Fromm-Mit_nebo_byt:0:410:1:w1" cst="Patrn&#x11B;"/>
+  <item id="ex-49729" cql="q-29" xml="chevalier-divka_s_perl" en="en:chevalier-divka_s_perl:0:1541:2:w5" cs="cs:chevalier-divka_s_perl:0:1497:2:w6" cst="patrn&#x11B;"/>
+  <item id="ex-49966" cql="q-29" xml="fowles-franc_milenka" en="en:fowles-franc_milenka:0:1017:7:w3" cs="cs:fowles-franc_milenka:0:1026:5:w4" cst="patrn&#x11B;"/>
+  <item id="ex-50384" cql="q-29" xml="Jerome-TriM_ve_cl" en="en:Jerome-TriM_ve_cl:0:1336:1:w3" cs="cs:Jerome-TriM_ve_cl:0:1324:1:w5" cst="patrn&#x11B;"/>
+  <item id="ex-49984" cql="q-29" xml="fowles-franc_milenka" en="en:fowles-franc_milenka:0:3467:14:w2" cs="cs:fowles-franc_milenka:0:3474:15:w1" cst="Patrn&#x11B;"/>
+  <item id="ex-49652" cql="q-29" xml="Capote-Snidane_Tiffany" en="en:Capote-Snidane_Tiffany:0:654:3:w3" cs="cs:Capote-Snidane_Tiffany:0:485:3:w6" cst="patrn&#x11B;"/>
+  <item id="ex-50509" cql="q-29" xml="Lessingova-Puklina" en="en:Lessingova-Puklina:0:761:4:w8" cs="cs:Lessingova-Puklina:0:753:4:w6" cst="patrn&#x11B;"/>
+</examples>

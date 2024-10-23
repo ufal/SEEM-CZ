@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<examples>
+<user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
+  <item id="ex-55039" cql="q-24" xml="Vopenka-Moje_cesta" en="en:Vopenka-Moje_cesta:0:1448:5:w9" cs="cs:Vopenka-Moje_cesta:0:1437:5:w13" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-52390" cql="q-24" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:506:3:w57" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54864" cql="q-24" xml="Topol-Sestra" en="en:Topol-Sestra:0:601:2:w34" cs="cs:Topol-Sestra:0:637:1:w29" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-55006" cql="q-24" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:1777:1:w10" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-51746" cql="q-24" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:14:3:w18" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-53592" cql="q-24" xml="Pekarkova-Dej_mi_ty_pr" en="en:Pekarkova-Dej_mi_ty_pr:0:189:8:w11" cs="cs:Pekarkova-Dej_mi_ty_pr:0:186:5:w5" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-55049" cql="q-24" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:51:3:w5" cs="cs:Vopenka-Paty_rozmer:0:50:3:w1" cst="Nejsp&#xED;&#x161;"/>
+  <item id="ex-54420" cql="q-24" xml="skvorecky-hrichy_pater" en="" cs="cs:skvorecky-hrichy_pater:0:853:2:w5" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-51537" cql="q-24" xml="hakl-o_rodicich_a_dete" en="en:hakl-o_rodicich_a_dete:0:275:3:w3" cs="cs:hakl-o_rodicich_a_dete:0:277:3:w2" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-52533" cql="q-24" xml="Levy-Umeni_prekladu" en="" cs="cs:Levy-Umeni_prekladu:0:25:327:w8" cst="nejsp&#xED;&#x161;e"/>
+  <item id="ex-52209" cql="q-24" xml="Jedlicka-Kde_zivot_nas" en="en:Jedlicka-Kde_zivot_nas:0:343:2:w2 en:Jedlicka-Kde_zivot_nas:0:343:2:w3" cs="cs:Jedlicka-Kde_zivot_nas:0:354:1:w12" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-55044" cql="q-24" xml="Vopenka-Muj_bratr" en="en:Vopenka-Muj_bratr:0:534:9:w3" cs="cs:Vopenka-Muj_bratr:0:502:7:w3" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-55046" cql="q-24" xml="Vopenka-Muj_bratr" en="en:Vopenka-Muj_bratr:0:600:2:w2" cs="cs:Vopenka-Muj_bratr:0:562:2:w1" cst="Nejsp&#xED;&#x161;"/>
+  <item id="ex-54882" cql="q-24" xml="Topol-Sestra" en="" cs="cs:Topol-Sestra:0:3478:2:w86" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54942" cql="q-24" xml="Urban-Lord_Mord" en="en:Urban-Lord_Mord:0:386:6:w13" cs="cs:Urban-Lord_Mord:0:395:5:w4" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54952" cql="q-24" xml="Urban-Lord_Mord" en="en:Urban-Lord_Mord:0:1777:1:w4" cs="cs:Urban-Lord_Mord:0:1762:1:w3" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-52418" cql="q-24" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:3773:4:w19" cs="cs:Kohout-Hvezdna_hodina:0:3847:4:w14" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-55041" cql="q-24" xml="Vopenka-Muj_bratr" en="en:Vopenka-Muj_bratr:0:23:9:w10" cs="cs:Vopenka-Muj_bratr:0:19:9:w8" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-51543" cql="q-24" xml="hakl-o_rodicich_a_dete" en="en:hakl-o_rodicich_a_dete:0:839:1:w2" cs="cs:hakl-o_rodicich_a_dete:0:845:1:w2" cst="Nejsp&#xED;&#x161;"/>
+  <item id="ex-51538" cql="q-24" xml="hakl-o_rodicich_a_dete" en="en:hakl-o_rodicich_a_dete:0:275:4:w27" cs="cs:hakl-o_rodicich_a_dete:0:277:4:w19" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54978" cql="q-24" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:316:4:w13" cs="cs:Vaculik-Cesky_snar:0:237:3:w18" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-52336" cql="q-24" xml="klima-laska_a_smeti" en="en:klima-laska_a_smeti:0:174:2:w18 en:klima-laska_a_smeti:0:174:2:w19" cs="cs:klima-laska_a_smeti:0:170:3:w15" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-52528" cql="q-24" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:34:13:w14 en:Levy-Umeni_prekladu:0:34:13:w15" cs="cs:Levy-Umeni_prekladu:0:20:9:w12" cst="nejsp&#xED;&#x161;e"/>
+  <item id="ex-54688" cql="q-24" xml="Strouhal-Zivot_Egyptan" en="" cs="cs:Strouhal-Zivot_Egyptan:0:1377:7:w21" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-49418" cql="q-24" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:192:4:w20" cs="cs:ajvaz-prazdne_ulice:0:185:3:w21" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54870" cql="q-24" xml="Topol-Sestra" en="" cs="cs:Topol-Sestra:0:1493:3:w5" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-55020" cql="q-24" xml="Vopenka-Moje_cesta" en="en:Vopenka-Moje_cesta:0:693:5:w21" cs="cs:Vopenka-Moje_cesta:0:679:3:w29" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54840" cql="q-24" xml="Topol-Chladnou_zemi" en="en:Topol-Chladnou_zemi:0:890:6:w10 en:Topol-Chladnou_zemi:0:890:6:w11" cs="cs:Topol-Chladnou_zemi:0:927:6:w1" cst="Nejsp&#xED;&#x161;"/>
+  <item id="ex-54833" cql="q-24" xml="Topol-Chladnou_zemi" en="en:Topol-Chladnou_zemi:0:198:3:w2 en:Topol-Chladnou_zemi:0:198:3:w5" cs="cs:Topol-Chladnou_zemi:0:219:1:w21" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54825" cql="q-24" xml="topol-andel" en="en:topol-andel:0:387:2:w3" cs="cs:topol-andel:0:394:2:w1" cst="Nejsp&#xED;&#x161;"/>
+  <item id="ex-55005" cql="q-24" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:1561:3:w7" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-53593" cql="q-24" xml="Pekarkova-Dej_mi_ty_pr" en="en:Pekarkova-Dej_mi_ty_pr:0:774:5:w16" cs="cs:Pekarkova-Dej_mi_ty_pr:0:748:5:w11" cst="nejsp&#xED;&#x161;e"/>
+  <item id="ex-55059" cql="q-24" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:873:10:w8" cs="cs:Vopenka-Paty_rozmer:0:891:10:w8" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-55014" cql="q-24" xml="Vopenka-Moje_cesta" en="en:Vopenka-Moje_cesta:0:292:9:w3" cs="cs:Vopenka-Moje_cesta:0:281:12:w2" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54944" cql="q-24" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:534:2:w2" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-52467" cql="q-24" xml="Kundera-Nesnesit_lehko" en="en:Kundera-Nesnesit_lehko:0:382:3:w1" cs="cs:Kundera-Nesnesit_lehko:0:386:4:w1" cst="Nejsp&#xED;&#x161;"/>
+  <item id="ex-52377" cql="q-24" xml="klima-leto" en="en:klima-leto:0:1675:6:w12" cs="cs:klima-leto:0:1835:8:w5" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-49650" cql="q-24" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:111:8:w26 en:bajaja-na_krasne_modre:0:111:8:w27" cs="cs:bajaja-na_krasne_modre:0:113:8:w16" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-53597" cql="q-24" xml="Pekarkova-Dej_mi_ty_pr" en="en:Pekarkova-Dej_mi_ty_pr:0:950:1:w20" cs="cs:Pekarkova-Dej_mi_ty_pr:0:922:1:w16" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54871" cql="q-24" xml="Topol-Sestra" en="" cs="cs:Topol-Sestra:0:1495:4:w92" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-52380" cql="q-24" xml="klima-leto" en="en:klima-leto:0:1831:1:w15" cs="cs:klima-leto:0:2022:1:w12" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-49651" cql="q-24" xml="Balaban-Kudy_sel_andel" en="en:Balaban-Kudy_sel_andel:0:206:8:w32" cs="cs:Balaban-Kudy_sel_andel:0:206:7:w22" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54859" cql="q-24" xml="Topol-Sestra" en="" cs="cs:Topol-Sestra:0:312:2:w46" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-52363" cql="q-24" xml="klima-leto" en="en:klima-leto:0:77:1:w26" cs="cs:klima-leto:0:105:1:w23" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-55058" cql="q-24" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:853:7:w19" cs="cs:Vopenka-Paty_rozmer:0:867:7:w15" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-55043" cql="q-24" xml="Vopenka-Muj_bratr" en="en:Vopenka-Muj_bratr:0:257:1:w5 en:Vopenka-Muj_bratr:0:257:1:w6" cs="cs:Vopenka-Muj_bratr:0:238:1:w5" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-52425" cql="q-24" xml="kohout-snezim" en="en:kohout-snezim:0:711:3:w41" cs="cs:kohout-snezim:0:665:2:w32" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54885" cql="q-24" xml="Topol-Sestra" en="" cs="cs:Topol-Sestra:0:3615:5:w49" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-54877" cql="q-24" xml="Topol-Sestra" en="en:Topol-Sestra:0:2676:2:w23 en:Topol-Sestra:0:2676:2:w24" cs="cs:Topol-Sestra:0:2797:2:w15" cst="nejsp&#xED;&#x161;"/>
+  <item id="ex-51553" cql="q-24" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:99:3:w4" cs="cs:Havel-Dalkovy_vyslech:0:93:3:w4" cst="nejsp&#xED;&#x161;"/>
+</examples>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<examples>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
+  <item id="ex-51241" cql="q-31" xml="kohout-snezim" en="en:kohout-snezim:0:2661:2:w28" cs="cs:kohout-snezim:0:2576:2:w22" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52434" cql="q-31" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:667:4:w39" cs="cs:Strouhal-Zivot_Egyptan:0:687:4:w31" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49311" cql="q-31" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:1042:1:w2" cs="cs:ajvaz-prazdne_ulice:0:953:2:w15" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51651" cql="q-31" xml="Mornstajnova-Hana" en="" cs="cs:Mornstajnova-Hana:0:1192:3:w18" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51802" cql="q-31" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:1665:7:w17" cs="cs:panek-dejiny_ceskych:0:1439:6:w21" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49305" cql="q-31" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:644:3:w18" cs="cs:ajvaz-prazdne_ulice:0:618:3:w8" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51326" cql="q-31" xml="kundera-zert" en="en:kundera-zert:0:592:5:w32" cs="cs:kundera-zert:0:610:5:w27" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49322" cql="q-31" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:408:2:w12" cs="cs:Ajvaz-Zlaty_vek:0:391:2:w24" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52501" cql="q-31" xml="Topol-Sestra" en="" cs="cs:Topol-Sestra:0:3160:8:w6" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52529" cql="q-31" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:1684:10:w14" cs="cs:Vaculik-Cesky_snar:0:1319:10:w12" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52553" cql="q-31" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:264:18:w4" cs="cs:Vopenka-Paty_rozmer:0:264:19:w5" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51306" cql="q-31" xml="Kundera-Nesnesit_lehko" en="en:Kundera-Nesnesit_lehko:0:1747:4:w51" cs="cs:Kundera-Nesnesit_lehko:0:1745:4:w45" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49308" cql="q-31" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:780:3:w10" cs="cs:ajvaz-prazdne_ulice:0:755:3:w9" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52686" cql="q-31" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:1483:10:w2" cs="cs:Zmeskal-Milostny_dopis:0:1406:11:w1" cst="Pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49879" cql="q-31" xml="Capek-TovarnaNaAbsolut" en="en:Capek-TovarnaNaAbsolut:0:1027:6:w17 en:Capek-TovarnaNaAbsolut:0:1027:6:w38" cs="cs:Capek-TovarnaNaAbsolut:0:969:3:w12" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51324" cql="q-31" xml="kundera-zert" en="en:kundera-zert:0:25:2:w26" cs="cs:kundera-zert:0:23:2:w26" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52374" cql="q-31" xml="sindelka-chyba" en="en:sindelka-chyba:0:42:1:w13" cs="cs:sindelka-chyba:0:40:1:w16" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49287" cql="q-31" xml="Ajvaz-Druhe_mesto" en="en:Ajvaz-Druhe_mesto:0:114:5:w31" cs="cs:Ajvaz-Druhe_mesto:0:115:5:w4" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52437" cql="q-31" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:916:1:w13" cs="cs:Strouhal-Zivot_Egyptan:0:937:1:w8" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52399" cql="q-31" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:361:6:w6" cs="cs:skvorecky-hrichy_pater:0:360:7:w6" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52383" cql="q-31" xml="sindelka-chyba" en="en:sindelka-chyba:0:1080:26:w15" cs="cs:sindelka-chyba:0:1079:26:w18" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52379" cql="q-31" xml="sindelka-chyba" en="en:sindelka-chyba:0:252:4:w25" cs="cs:sindelka-chyba:0:251:4:w18" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51652" cql="q-31" xml="Mornstajnova-Hana" en="en:Mornstajnova-Hana:0:1544:2:w13" cs="cs:Mornstajnova-Hana:0:1471:2:w11" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52541" cql="q-31" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:19:7:w39" cs="cs:viewegh-baj_letaPodPsa:0:17:10:w38" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51322" cql="q-31" xml="Kundera-Valcik_na_rozl" en="en:Kundera-Valcik_na_rozl:0:1247:1:w12" cs="cs:Kundera-Valcik_na_rozl:0:1264:1:w16" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51235" cql="q-31" xml="klima-laska_a_smeti" en="en:klima-laska_a_smeti:0:944:7:w6" cs="cs:klima-laska_a_smeti:0:905:7:w3" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49295" cql="q-31" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:123:5:w8" cs="cs:ajvaz-prazdne_ulice:0:118:3:w55" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51790" cql="q-31" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:16:7:w5" cs="cs:panek-dejiny_ceskych:0:11:6:w4" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52438" cql="q-31" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:931:3:w23" cs="cs:Strouhal-Zivot_Egyptan:0:952:4:w18" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51236" cql="q-31" xml="klima-leto" en="en:klima-leto:0:672:2:w1" cs="cs:klima-leto:0:813:2:w1" cst="Pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49296" cql="q-31" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:133:4:w17" cs="cs:ajvaz-prazdne_ulice:0:128:4:w11" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52432" cql="q-31" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:614:2:w4" cs="cs:Strouhal-Zivot_Egyptan:0:633:2:w1" cst="Pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-50690" cql="q-31" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:178:18:w22" cs="cs:Havel-Dalkovy_vyslech:0:162:18:w4" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51310" cql="q-31" xml="Kundera-Smesne_lasky" en="en:Kundera-Smesne_lasky:0:963:4:w6" cs="cs:Kundera-Smesne_lasky:0:971:3:w15" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52499" cql="q-31" xml="Topol-Sestra" en="en:Topol-Sestra:0:1291:13:w6" cs="cs:Topol-Sestra:0:1359:13:w3" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49309" cql="q-31" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:817:6:w37" cs="cs:ajvaz-prazdne_ulice:0:787:5:w33" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52436" cql="q-31" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:793:3:w10" cs="cs:Strouhal-Zivot_Egyptan:0:812:3:w8" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49881" cql="q-31" xml="Capek-Valka_s_mloky" en="en:Capek-Valka_s_mloky:0:878:4:w1" cs="cs:Capek-Valka_s_mloky:0:881:4:w1" cst="Pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52375" cql="q-31" xml="sindelka-chyba" en="en:sindelka-chyba:0:48:4:w15" cs="cs:sindelka-chyba:0:46:4:w14" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51328" cql="q-31" xml="kundera-zert" en="en:kundera-zert:0:605:2:w34" cs="cs:kundera-zert:0:623:2:w17" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52341" cql="q-31" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:483:1:w14" cs="cs:sedlacek-ekonomie:0:496:1:w16" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49304" cql="q-31" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:640:1:w5" cs="cs:ajvaz-prazdne_ulice:0:614:1:w4" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49292" cql="q-31" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:26:10:w44" cs="cs:ajvaz-prazdne_ulice:0:26:10:w5" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52688" cql="q-31" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:1651:12:w21" cs="cs:Zmeskal-Milostny_dopis:0:1576:12:w19" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-49297" cql="q-31" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:206:4:w20" cs="cs:ajvaz-prazdne_ulice:0:199:3:w25" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52690" cql="q-31" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:1788:2:w45" cs="cs:Zmeskal-Milostny_dopis:0:1708:1:w56" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52685" cql="q-31" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:989:4:w49" cs="cs:Zmeskal-Milostny_dopis:0:946:4:w52" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-52404" cql="q-31" xml="Skvorecky-PribehIng_1" en="en:Skvorecky-PribehIng_1:0:587:3:w29" cs="cs:Skvorecky-PribehIng_1:0:408:3:w28" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-51297" cql="q-31" xml="Kundera-Nesmrtelnost" en="en:Kundera-Nesmrtelnost:0:218:2:w2" cs="cs:Kundera-Nesmrtelnost:0:221:2:w4" cst="pravd&#x11B;podobn&#x11B;"/>
+  <item id="ex-50688" cql="q-31" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:162:15:w9" cs="cs:Havel-Dalkovy_vyslech:0:148:12:w7" cst="pravd&#x11B;podobn&#x11B;"/>
+</examples>

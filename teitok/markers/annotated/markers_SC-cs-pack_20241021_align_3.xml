@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<examples>
+<user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
+  <item id="ex-51953" cql="q-34" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:674:1:w42" cs="cs:Kohout-Hvezdna_hodina:0:689:1:w41" cst="rozhodn&#x11B;"/>
+  <item id="ex-53982" cql="q-34" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:791:6:w27" cs="cs:viewegh-baj_letaPodPsa:0:830:7:w22" cst="rozhodn&#x11B;"/>
+  <item id="ex-51355" cql="q-34" xml="Hasek-OsudyDobrehoVvSV" en="en:Hasek-OsudyDobrehoVvSV:0:310:2:w4" cs="cs:Hasek-OsudyDobrehoVvSV:0:217:1:w16" cst="rozhodn&#x11B;"/>
+  <item id="ex-52858" cql="q-34" xml="Paral-Milenci_a_vrazi" en="" cs="cs:Paral-Milenci_a_vrazi:0:9:6:w5" cst="rozhodn&#x11B;"/>
+  <item id="ex-53441" cql="q-34" xml="sindelka-chyba" en="en:sindelka-chyba:0:759:1:w1" cs="cs:sindelka-chyba:0:757:1:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-50995" cql="q-34" xml="Fuks-SpalovacMrtvol" en="en:Fuks-SpalovacMrtvol:0:452:7:w3" cs="cs:Fuks-SpalovacMrtvol:0:470:3:w51" cst="rozhodn&#x11B;"/>
+  <item id="ex-52805" cql="q-34" xml="otcenasek-romeo_julie" en="en:otcenasek-romeo_julie:0:77:6:w7 en:otcenasek-romeo_julie:0:77:6:w8" cs="cs:otcenasek-romeo_julie:0:77:6:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-51378" cql="q-34" xml="Hasek-OsudyDobrehoVvSV" en="" cs="cs:Hasek-OsudyDobrehoVvSV:0:3907:1:w11" cst="rozhodn&#x11B;"/>
+  <item id="ex-54000" cql="q-34" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:747:1:w14" cs="cs:Viewegh-VychovaDivekCR:0:699:5:w9" cst="rozhodn&#x11B;"/>
+  <item id="ex-54026" cql="q-34" xml="Vopenka-Muj_bratr" en="en:Vopenka-Muj_bratr:0:951:4:w2" cs="cs:Vopenka-Muj_bratr:0:896:3:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-54036" cql="q-34" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:969:6:w2" cs="cs:Vopenka-Paty_rozmer:0:990:7:w3" cst="rozhodn&#x11B;"/>
+  <item id="ex-51981" cql="q-34" xml="kohout-snezim" en="" cs="cs:kohout-snezim:0:1654:5:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-51342" cql="q-34" xml="hakl-o_rodicich_a_dete" en="en:hakl-o_rodicich_a_dete:0:359:1:w5" cs="cs:hakl-o_rodicich_a_dete:0:361:1:w4" cst="rozhodn&#x11B;"/>
+  <item id="ex-50996" cql="q-34" xml="Fuks-SpalovacMrtvol" en="en:Fuks-SpalovacMrtvol:0:547:1:w4" cs="cs:Fuks-SpalovacMrtvol:0:561:1:w6" cst="rozhodn&#x11B;"/>
+  <item id="ex-51386" cql="q-34" xml="Hasek-OsudyDobrehoVvSV" en="" cs="cs:Hasek-OsudyDobrehoVvSV:0:4558:7:w14" cst="rozhodn&#x11B;"/>
+  <item id="ex-52529" cql="q-34" xml="Mornstajnova-Hana" en="en:Mornstajnova-Hana:0:781:1:w20" cs="cs:Mornstajnova-Hana:0:750:1:w17" cst="rozhodn&#x11B;"/>
+  <item id="ex-53480" cql="q-34" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:1369:1:w13" cs="cs:Skvorecky-Mirakl:0:1575:1:w8" cst="rozhodn&#x11B;"/>
+  <item id="ex-49680" cql="q-34" xml="Balaban-Kudy_sel_andel" en="en:Balaban-Kudy_sel_andel:0:295:2:w1" cs="cs:Balaban-Kudy_sel_andel:0:296:2:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-53988" cql="q-34" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:2099:9:w30" cs="cs:viewegh-baj_letaPodPsa:0:2163:9:w31" cst="rozhodn&#x11B;"/>
+  <item id="ex-53937" cql="q-34" xml="Urban-Lord_Mord" en="en:Urban-Lord_Mord:0:248:2:w3" cs="cs:Urban-Lord_Mord:0:257:2:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-53912" cql="q-34" xml="tuckova-vyhnani_Gerty" en="" cs="cs:tuckova-vyhnani_Gerty:0:295:3:w18" cst="rozhodn&#x11B;"/>
+  <item id="ex-53687" cql="q-34" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:668:1:w8" cs="cs:styblova-skalpel_pros:0:652:1:w8" cst="rozhodn&#x11B;"/>
+  <item id="ex-52859" cql="q-34" xml="Paral-Milenci_a_vrazi" en="en:Paral-Milenci_a_vrazi:0:172:5:w14" cs="cs:Paral-Milenci_a_vrazi:0:16:15:w12" cst="rozhodn&#x11B;"/>
+  <item id="ex-54028" cql="q-34" xml="Vopenka-Muj_bratr" en="en:Vopenka-Muj_bratr:0:1151:2:w2" cs="cs:Vopenka-Muj_bratr:0:1078:2:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-52525" cql="q-34" xml="Mornstajnova-Hana" en="en:Mornstajnova-Hana:0:361:4:w17" cs="cs:Mornstajnova-Hana:0:349:3:w11" cst="rozhodn&#x11B;"/>
+  <item id="ex-51836" cql="q-34" xml="Jirotka-Saturnin" en="en:Jirotka-Saturnin:0:533:11:w15 en:Jirotka-Saturnin:0:533:11:w17" cs="cs:Jirotka-Saturnin:0:643:12:w15" cst="rozhodn&#x11B;"/>
+  <item id="ex-50142" cql="q-34" xml="Capek-TovarnaNaAbsolut" en="en:Capek-TovarnaNaAbsolut:0:633:1:w16" cs="cs:Capek-TovarnaNaAbsolut:0:591:1:w13" cst="rozhodn&#x11B;"/>
+  <item id="ex-52863" cql="q-34" xml="Paral-Milenci_a_vrazi" en="en:Paral-Milenci_a_vrazi:0:965:4:w17" cs="cs:Paral-Milenci_a_vrazi:0:78:80:w13" cst="rozhodn&#x11B;"/>
+  <item id="ex-53989" cql="q-34" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:2180:1:w18 en:viewegh-baj_letaPodPsa:0:2180:1:w22" cs="cs:viewegh-baj_letaPodPsa:0:2244:1:w16" cst="rozhodn&#x11B;"/>
+  <item id="ex-51943" cql="q-34" xml="klima-laska_a_smeti" en="en:klima-laska_a_smeti:0:283:5:w1" cs="cs:klima-laska_a_smeti:0:267:4:w20" cst="rozhodn&#x11B;"/>
+  <item id="ex-50143" cql="q-34" xml="Capek-TovarnaNaAbsolut" en="en:Capek-TovarnaNaAbsolut:0:851:5:w5" cs="cs:Capek-TovarnaNaAbsolut:0:795:4:w5" cst="rozhodn&#x11B;"/>
+  <item id="ex-53977" cql="q-34" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:299:10:w11" cs="cs:viewegh-baj_letaPodPsa:0:314:10:w26" cst="rozhodn&#x11B;"/>
+  <item id="ex-51413" cql="q-34" xml="havel-largo_desolato" en="en:havel-largo_desolato:0:182:2:w21 en:havel-largo_desolato:0:182:2:w22 en:havel-largo_desolato:0:182:2:w27" cs="cs:havel-largo_desolato:0:181:3:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-51988" cql="q-34" xml="kohout-snezim" en="en:kohout-snezim:0:2474:1:w4" cs="cs:kohout-snezim:0:2392:1:w3" cst="rozhodn&#x11B;"/>
+  <item id="ex-54003" cql="q-34" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:1173:1:w46" cst="rozhodn&#x11B;"/>
+  <item id="ex-53995" cql="q-34" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:1049:7:w2" cs="cs:Viewegh-Vybijena:0:1056:7:w3" cst="rozhodn&#x11B;"/>
+  <item id="ex-51344" cql="q-34" xml="hakl-o_rodicich_a_dete" en="" cs="cs:hakl-o_rodicich_a_dete:0:505:2:w8" cst="rozhodn&#x11B;"/>
+  <item id="ex-53986" cql="q-34" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:1970:3:w4" cs="cs:viewegh-baj_letaPodPsa:0:2035:2:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-51389" cql="q-34" xml="Hasek-OsudyDobrehoVvSV" en="" cs="cs:Hasek-OsudyDobrehoVvSV:0:4762:1:w30" cst="rozhodn&#x11B;"/>
+  <item id="ex-53481" cql="q-34" xml="Skvorecky-Mirakl" en="" cs="cs:Skvorecky-Mirakl:0:2140:1:w5" cst="rozhodn&#x11B;"/>
+  <item id="ex-52808" cql="q-34" xml="otcenasek-romeo_julie" en="en:otcenasek-romeo_julie:0:280:1:w16" cs="cs:otcenasek-romeo_julie:0:283:1:w6" cst="rozhodn&#x11B;"/>
+  <item id="ex-53471" cql="q-34" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:1006:1:w4" cs="cs:skvorecky-hrichy_pater:0:1005:1:w12" cst="rozhodn&#x11B;"/>
+  <item id="ex-50994" cql="q-34" xml="Fuks-SpalovacMrtvol" en="" cs="cs:Fuks-SpalovacMrtvol:0:364:4:w5" cst="rozhodn&#x11B;"/>
+  <item id="ex-50136" cql="q-34" xml="Capek-TovarnaNaAbsolut" en="" cs="cs:Capek-TovarnaNaAbsolut:0:11:14:w7" cst="rozhodn&#x11B;"/>
+  <item id="ex-52857" cql="q-34" xml="panek-dejiny_ceskych" en="" cs="cs:panek-dejiny_ceskych:0:1447:7:w4" cst="rozhodn&#x11B;"/>
+  <item id="ex-50146" cql="q-34" xml="Capek-Valka_s_mloky" en="" cs="cs:Capek-Valka_s_mloky:0:1051:1:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-49689" cql="q-34" xml="Balaban-Mozna_ze_odcha" en="" cs="cs:Balaban-Mozna_ze_odcha:0:810:3:w9" cst="rozhodn&#x11B;"/>
+  <item id="ex-53946" cql="q-34" xml="Urban-Sedmikosteli" en="en:Urban-Sedmikosteli:0:823:4:w20" cs="cs:Urban-Sedmikosteli:0:801:14:w13" cst="rozhodn&#x11B;"/>
+  <item id="ex-51962" cql="q-34" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:1573:3:w5" cst="rozhodn&#x11B;"/>
+  <item id="ex-54001" cql="q-34" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:946:1:w5" cs="cs:Viewegh-VychovaDivekCR:0:884:1:w2" cst="Rozhodn&#x11B;"/>
+</examples>

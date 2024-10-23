@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<examples>
+<user id="KK" email="kyckova2@seznam.cz" name="Karol&#xED;na K&#xFD;&#x10D;kov&#xE1;"/>
+  <item id="ex-55528" cql="q-32" xml="Vaculik-Cesky_snar" en="" cs="cs:Vaculik-Cesky_snar:0:265:14:w22" cst="pr&#xFD;"/>
+  <item id="ex-51925" cql="q-32" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:24:3:w3" cst="pr&#xFD;"/>
+  <item id="ex-54569" cql="q-32" xml="Skvorecky-PribehIng_1" en="" cs="cs:Skvorecky-PribehIng_1:0:3093:5:w5" cst="prej"/>
+  <item id="ex-55371" cql="q-32" xml="tuckova-vyhnani_Gerty" en="" cs="cs:tuckova-vyhnani_Gerty:0:2318:5:w5" cst="prej"/>
+  <item id="ex-50405" cql="q-32" xml="cermak-zaklady_metod" en="" cs="cs:cermak-zaklady_metod:0:384:2:w37" cst="pr&#xFD;"/>
+  <item id="ex-53038" cql="q-32" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:320:12:w1" cs="cs:Lustig-ModlitbaProKHor:0:349:9:w6" cst="pr&#xFD;"/>
+  <item id="ex-55567" cql="q-32" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:739:9:w5" cs="cs:Vaculik-Cesky_snar:0:574:8:w3" cst="pr&#xFD;"/>
+  <item id="ex-53878" cql="q-32" xml="Paral-Milenci_a_vrazi" en="" cs="cs:Paral-Milenci_a_vrazi:0:253:67:w73" cst="pr&#xFD;"/>
+  <item id="ex-50281" cql="q-32" xml="Capek-Valka_s_mloky" en="en:Capek-Valka_s_mloky:0:374:3:w7" cs="cs:Capek-Valka_s_mloky:0:372:3:w7" cst="pr&#xFD;"/>
+  <item id="ex-52630" cql="q-32" xml="kundera-zert" en="en:kundera-zert:0:419:3:w2" cs="cs:kundera-zert:0:422:5:w1" cst="Pr&#xFD;"/>
+  <item id="ex-51228" cql="q-32" xml="Fuks-MysiNatalieMoosha" en="" cs="cs:Fuks-MysiNatalieMoosha:0:91:1:w17" cst="pr&#xFD;"/>
+  <item id="ex-55546" cql="q-32" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:502:15:w2" cs="cs:Vaculik-Cesky_snar:0:394:14:w3" cst="pr&#xFD;"/>
+  <item id="ex-55556" cql="q-32" xml="Vaculik-Cesky_snar" en="" cs="cs:Vaculik-Cesky_snar:0:454:8:w2" cst="pr&#xFD;"/>
+  <item id="ex-54642" cql="q-32" xml="Skvorecky-PribehIng_2" en="" cs="cs:Skvorecky-PribehIng_2:0:2930:7:w1" cst="Prej"/>
+  <item id="ex-55117" cql="q-32" xml="topol-andel" en="en:topol-andel:0:156:3:w1" cs="cs:topol-andel:0:163:3:w1" cst="Prej"/>
+  <item id="ex-55159" cql="q-32" xml="Topol-Kloktat_dehet" en="" cs="cs:Topol-Kloktat_dehet:0:1497:1:w11" cst="prej"/>
+  <item id="ex-52493" cql="q-32" xml="kohout-snezim" en="" cs="cs:kohout-snezim:0:959:2:w3" cst="pr&#xFD;"/>
+  <item id="ex-55537" cql="q-32" xml="Vaculik-Cesky_snar" en="" cs="cs:Vaculik-Cesky_snar:0:342:1:w39" cst="pr&#xFD;"/>
+  <item id="ex-50306" cql="q-32" xml="Capek-Valka_s_mloky" en="" cs="cs:Capek-Valka_s_mloky:0:1176:8:w23" cst="pr&#xFD;"/>
+  <item id="ex-50287" cql="q-32" xml="Capek-Valka_s_mloky" en="" cs="cs:Capek-Valka_s_mloky:0:408:45:w1" cst="pr&#xFD;"/>
+  <item id="ex-55264" cql="q-32" xml="tuckova-vyhnani_Gerty" en="en:tuckova-vyhnani_Gerty:0:146:12:w8" cs="cs:tuckova-vyhnani_Gerty:0:145:11:w7" cst="pr&#xFD;"/>
+  <item id="ex-51554" cql="q-32" xml="hajicek-selsky_baroko" en="" cs="cs:hajicek-selsky_baroko:0:888:7:w2" cst="prej"/>
+  <item id="ex-52612" cql="q-32" xml="kundera-zert" en="" cs="cs:kundera-zert:0:248:9:w44" cst="prej"/>
+  <item id="ex-54006" cql="q-32" xml="platzova-anarchista" en="" cs="cs:platzova-anarchista:0:813:2:w1" cst="Pr&#xFD;"/>
+  <item id="ex-49348" cql="q-32" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:46:8:w1" cs="cs:ajvaz-prazdne_ulice:0:47:8:w3" cst="pr&#xFD;"/>
+  <item id="ex-54592" cql="q-32" xml="Skvorecky-PribehIng_2" en="" cs="cs:Skvorecky-PribehIng_2:0:416:3:w3" cst="prej"/>
+  <item id="ex-55450" cql="q-32" xml="Urban-Lord_Mord" en="" cs="cs:Urban-Lord_Mord:0:1073:4:w13" cst="pr&#xFD;"/>
+  <item id="ex-54471" cql="q-32" xml="Skvorecky-Mirakl" en="" cs="cs:Skvorecky-Mirakl:0:915:5:w2" cst="prej"/>
+  <item id="ex-54443" cql="q-32" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:1125:50:w62" cs="cs:skvorecky-hrichy_pater:0:1124:59:w4" cst="prej"/>
+  <item id="ex-54364" cql="q-32" xml="sindelka-chyba" en="" cs="cs:sindelka-chyba:0:1059:4:w22" cst="pr&#xFD;"/>
+  <item id="ex-55366" cql="q-32" xml="tuckova-vyhnani_Gerty" en="" cs="cs:tuckova-vyhnani_Gerty:0:2227:71:w3" cst="prej"/>
+  <item id="ex-53403" cql="q-32" xml="Mornstajnova-Hana" en="" cs="cs:Mornstajnova-Hana:0:135:3:w19" cst="pr&#xFD;"/>
+  <item id="ex-55608" cql="q-32" xml="Vaculik-Cesky_snar" en="" cs="cs:Vaculik-Cesky_snar:0:1045:2:w2" cst="pr&#xFD;"/>
+  <item id="ex-55427" cql="q-32" xml="Urban-Lord_Mord" en="en:Urban-Lord_Mord:0:285:6:w1" cs="cs:Urban-Lord_Mord:0:294:6:w1" cst="Pr&#xFD;"/>
+  <item id="ex-55128" cql="q-32" xml="Topol-Chladnou_zemi" en="en:Topol-Chladnou_zemi:0:48:2:w104" cs="cs:Topol-Chladnou_zemi:0:50:1:w80" cst="pr&#xFD;"/>
+  <item id="ex-52596" cql="q-32" xml="kundera-zert" en="" cs="cs:kundera-zert:0:107:1:w3" cst="pr&#xFD;"/>
+  <item id="ex-51874" cql="q-32" xml="Hulova-Pamet_babicce" en="" cs="cs:Hulova-Pamet_babicce:0:483:4:w1" cst="Prej"/>
+  <item id="ex-49670" cql="q-32" xml="bajaja-na_krasne_modre" en="" cs="cs:bajaja-na_krasne_modre:0:1254:13:w3" cst="pr&#xFD;"/>
+  <item id="ex-53422" cql="q-32" xml="Mornstajnova-Hana" en="" cs="cs:Mornstajnova-Hana:0:1243:1:w15" cst="pr&#xFD;"/>
+  <item id="ex-54596" cql="q-32" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:529:2:w6" cs="cs:Skvorecky-PribehIng_2:0:419:2:w2" cst="Prej"/>
+  <item id="ex-51883" cql="q-32" xml="Hulova-Pamet_babicce" en="" cs="cs:Hulova-Pamet_babicce:0:554:2:w9" cst="prej"/>
+  <item id="ex-49673" cql="q-32" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:1243:19:w11" cs="cs:bajaja-na_krasne_modre:0:1265:20:w2" cst="pr&#xFD;"/>
+  <item id="ex-54548" cql="q-32" xml="Skvorecky-PribehIng_1" en="en:Skvorecky-PribehIng_1:0:972:7:w3" cs="cs:Skvorecky-PribehIng_1:0:737:5:w4" cst="pr&#xFD;"/>
+  <item id="ex-51663" cql="q-32" xml="Hasek-OsudyDobrehoVvSV" en="" cs="cs:Hasek-OsudyDobrehoVvSV:0:3211:2:w3" cst="prej"/>
+  <item id="ex-55604" cql="q-32" xml="Vaculik-Cesky_snar" en="" cs="cs:Vaculik-Cesky_snar:0:1020:2:w8" cst="pr&#xFD;"/>
+  <item id="ex-55542" cql="q-32" xml="Vaculik-Cesky_snar" en="" cs="cs:Vaculik-Cesky_snar:0:354:18:w4" cst="pr&#xFD;"/>
+  <item id="ex-52531" cql="q-32" xml="Kundera-Smesne_lasky" en="" cs="cs:Kundera-Smesne_lasky:0:183:2:w2" cst="pr&#xFD;"/>
+  <item id="ex-54652" cql="q-32" xml="Skvorecky-PribehIng_2" en="" cs="cs:Skvorecky-PribehIng_2:0:3577:3:w32" cst="prej"/>
+  <item id="ex-54619" cql="q-32" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:2144:32:w2" cs="cs:Skvorecky-PribehIng_2:0:1779:26:w1" cst="Prej"/>
+  <item id="ex-50314" cql="q-32" xml="Capek-Valka_s_mloky" en="" cs="cs:Capek-Valka_s_mloky:0:1250:5:w10" cst="pr&#xFD;"/>
+</examples>

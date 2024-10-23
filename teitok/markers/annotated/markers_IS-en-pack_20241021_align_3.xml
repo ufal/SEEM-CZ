@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<examples>
+<user id="IS" email="iur.sav.gal@icloud.com" name="Iurii Savelev-Galiaminskii"/>
+  <item id="ex-53749" cql="q-34" xml="Styron-Sofiina_volba" en="en:Styron-Sofiina_volba:0:915:5:w1" cs="cs:Styron-Sofiina_volba:0:932:5:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-50513" cql="q-34" xml="Dickens-PrihodyO_Twist" en="en:Dickens-PrihodyO_Twist:0:1095:1:w2" cs="cs:Dickens-PrihodyO_Twist:0:1099:1:w2" cst="Rozhodn&#x11B;"/>
+  <item id="ex-52451" cql="q-34" xml="melville-bartleby" en="" cs="cs:melville-bartleby:0:126:4:w13" cst="rozhodn&#x11B;"/>
+  <item id="ex-53515" cql="q-34" xml="Smithova-Hotel_svet" en="" cs="cs:Smithova-Hotel_svet:0:445:2:w16" cst="rozhodn&#x11B;"/>
+  <item id="ex-49725" cql="q-34" xml="Barnes-Arthur_a_George" en="en:Barnes-Arthur_a_George:0:874:1:w5 en:Barnes-Arthur_a_George:0:874:1:w6" cs="cs:Barnes-Arthur_a_George:0:885:1:w2" cst="Rozhodn&#x11B;"/>
+  <item id="ex-51268" cql="q-34" xml="Grisham-Kral_advokatu" en="" cs="cs:Grisham-Kral_advokatu:0:2375:4:w15" cst="rozhodn&#x11B;"/>
+  <item id="ex-53827" cql="q-34" xml="Tolkien-Pan_prstenu_1" en="" cs="cs:Tolkien-Pan_prstenu_1:0:1355:5:w5" cst="rozhodn&#x11B;"/>
+  <item id="ex-51617" cql="q-34" xml="Irving-Svet_podleGarpa" en="" cs="cs:Irving-Svet_podleGarpa:0:1110:16:w4" cst="rozhodn&#x11B;"/>
+  <item id="ex-49614" cql="q-34" xml="Austenova-Emma" en="" cs="cs:Austenova-Emma:0:1485:1:w7" cst="rozhodn&#x11B;"/>
+  <item id="ex-51060" cql="q-34" xml="Gaiman-Nikdykde" en="en:Gaiman-Nikdykde:0:2913:1:w14" cs="cs:Gaiman-Nikdykde:0:2792:1:w9" cst="rozhodn&#x11B;"/>
+  <item id="ex-49964" cql="q-34" xml="Brett-Pravitem_snadno" en="en:Brett-Pravitem_snadno:0:798:1:w12" cs="cs:Brett-Pravitem_snadno:0:794:1:w12" cst="rozhodn&#x11B;"/>
+  <item id="ex-53784" cql="q-34" xml="Styron-Sofiina_volba" en="en:Styron-Sofiina_volba:0:1451:5:w37" cs="cs:Styron-Sofiina_volba:0:1469:5:w26" cst="rozhodn&#x11B;"/>
+  <item id="ex-53804" cql="q-34" xml="Tolkien-Hobit" en="en:Tolkien-Hobit:0:432:7:w1" cs="cs:Tolkien-Hobit:0:396:6:w1" cst="rozhodn&#x11B;"/>
+  <item id="ex-52745" cql="q-34" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:2688:2:w12" cs="cs:obama-zeme_zaslibena:0:2688:2:w13" cst="rozhodn&#x11B;"/>
+  <item id="ex-52960" cql="q-34" xml="Popper-Otevrena_spol_1" en="en:Popper-Otevrena_spol_1:0:252:4:w17" cs="cs:Popper-Otevrena_spol_1:0:274:4:w18" cst="rozhodn&#x11B;"/>
+  <item id="ex-53056" cql="q-34" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:2117:24:w1" cs="cs:Puzo-Kmotr:0:2050:24:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-50740" cql="q-34" xml="Fitzgerald-VelkyGatsby" en="en:Fitzgerald-VelkyGatsby:0:1347:1:w8" cs="cs:Fitzgerald-VelkyGatsby:0:1444:1:w8" cst="rozhodn&#x11B;"/>
+  <item id="ex-53766" cql="q-34" xml="Styron-Sofiina_volba" en="en:Styron-Sofiina_volba:0:1147:5:w4" cs="cs:Styron-Sofiina_volba:0:1166:5:w4" cst="rozhodn&#x11B;"/>
+  <item id="ex-49665" cql="q-34" xml="austen-pycha" en="en:austen-pycha:0:1740:2:w3" cs="cs:austen-pycha:0:1711:4:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-49626" cql="q-34" xml="Austenova-Emma" en="en:Austenova-Emma:0:1783:1:w3" cs="cs:Austenova-Emma:0:1736:1:w2" cst="Rozhodn&#x11B;"/>
+  <item id="ex-53261" cql="q-34" xml="rowlingova-hpot_tajemn" en="en:rowlingova-hpot_tajemn:0:713:16:w7" cs="cs:rowlingova-hpot_tajemn:0:770:2:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-50027" cql="q-34" xml="brown-sifra" en="" cs="cs:brown-sifra:0:1926:1:w15" cst="rozhodn&#x11B;"/>
+  <item id="ex-50968" cql="q-34" xml="frost-sez_sedmi" en="en:frost-sez_sedmi:0:2521:3:w8" cs="cs:frost-sez_sedmi:0:2521:3:w6" cst="rozhodn&#x11B;"/>
+  <item id="ex-51745" cql="q-34" xml="Jackson-Petka" en="en:Jackson-Petka:0:129:2:w1" cs="cs:Jackson-Petka:0:125:1:w33" cst="rozhodn&#x11B;"/>
+  <item id="ex-49276" cql="q-34" xml="adams-daleka_cesta" en="" cs="cs:adams-daleka_cesta:0:1021:1:w15" cst="rozhodn&#x11B;"/>
+  <item id="ex-52496" cql="q-34" xml="moriarty-sedmilharky" en="en:moriarty-sedmilharky:0:1704:2:w3" cs="cs:moriarty-sedmilharky:0:1724:2:w4" cst="rozhodn&#x11B;"/>
+  <item id="ex-53588" cql="q-34" xml="Steelova-Palomino" en="en:Steelova-Palomino:0:293:2:w21 en:Steelova-Palomino:0:293:2:w22" cs="cs:Steelova-Palomino:0:447:2:w13" cst="rozhodn&#x11B;"/>
+  <item id="ex-52111" cql="q-34" xml="Le_Carre-Single__singl" en="" cs="cs:Le_Carre-Single__singl:0:635:9:w12" cst="rozhodn&#x11B;"/>
+  <item id="ex-51921" cql="q-34" xml="kilham-mezi_medvedy" en="en:kilham-mezi_medvedy:0:376:5:w27" cs="cs:kilham-mezi_medvedy:0:375:5:w24" cst="rozhodn&#x11B;"/>
+  <item id="ex-51819" cql="q-34" xml="james-plany_touhy" en="en:james-plany_touhy:0:2446:2:w3" cs="cs:james-plany_touhy:0:2450:2:w3" cst="rozhodn&#x11B;"/>
+  <item id="ex-53505" cql="q-34" xml="smith-o_krase" en="en:smith-o_krase:0:1952:1:w7" cs="cs:smith-o_krase:0:1951:1:w7" cst="rozhodn&#x11B;"/>
+  <item id="ex-51270" cql="q-34" xml="Grisham-Partner" en="en:Grisham-Partner:0:5:1:w9" cs="cs:Grisham-Partner:0:5:1:w8" cst="rozhodn&#x11B;"/>
+  <item id="ex-53929" cql="q-34" xml="updike-kralik_se_vraci" en="en:updike-kralik_se_vraci:0:826:4:w5" cs="cs:updike-kralik_se_vraci:0:828:4:w4" cst="rozhodn&#x11B;"/>
+  <item id="ex-53542" cql="q-34" xml="smith-sberatel" en="" cs="cs:smith-sberatel:0:1820:5:w4" cst="rozhodn&#x11B;"/>
+  <item id="ex-52981" cql="q-34" xml="Pratchett-Dobra_znamen" en="en:Pratchett-Dobra_znamen:0:2830:1:w19" cs="cs:Pratchett-Dobra_znamen:0:2799:1:w19" cst="rozhodn&#x11B;"/>
+  <item id="ex-50936" cql="q-34" xml="franzen-rozhreseni" en="" cs="cs:franzen-rozhreseni:0:2544:5:w25" cst="rozhodn&#x11B;"/>
+  <item id="ex-50411" cql="q-34" xml="dawkins-bozi_blud" en="" cs="cs:dawkins-bozi_blud:0:251:3:w32" cst="rozhodn&#x11B;"/>
+  <item id="ex-49460" cql="q-34" xml="angellova-dvoji_zivot" en="" cs="cs:angellova-dvoji_zivot:0:1903:3:w10" cst="rozhodn&#x11B;"/>
+  <item id="ex-51308" cql="q-34" xml="grisham-posledni_vule" en="en:grisham-posledni_vule:0:2598:5:w4" cs="cs:grisham-posledni_vule:0:2562:5:w3" cst="rozhodn&#x11B;"/>
+  <item id="ex-52505" cql="q-34" xml="moriarty-sedmilharky" en="en:moriarty-sedmilharky:0:2184:2:w3" cs="cs:moriarty-sedmilharky:0:2211:2:w3" cst="rozhodn&#x11B;"/>
+  <item id="ex-50429" cql="q-34" xml="dawkins-bozi_blud" en="en:dawkins-bozi_blud:0:891:1:w12" cs="cs:dawkins-bozi_blud:0:898:1:w16" cst="rozhodn&#x11B;"/>
+  <item id="ex-49468" cql="q-34" xml="asimov-ja_robot" en="en:asimov-ja_robot:0:1679:1:w5" cs="cs:asimov-ja_robot:0:1673:1:w2" cst="rozhodn&#x11B;"/>
+  <item id="ex-52409" cql="q-34" xml="mantel-wolf_hall" en="" cs="cs:mantel-wolf_hall:0:4822:3:w4" cst="rozhodn&#x11B;"/>
+  <item id="ex-50279" cql="q-34" xml="clarke-strange_norrell" en="en:clarke-strange_norrell:0:3107:2:w4" cs="cs:clarke-strange_norrell:0:3048:2:w2" cst="Rozhodn&#x11B;"/>
+  <item id="ex-53900" cql="q-34" xml="Toole-Spolceni_hlupcu" en="" cs="cs:Toole-Spolceni_hlupcu:0:3261:3:w4" cst="rozhodn&#x11B;"/>
+  <item id="ex-53776" cql="q-34" xml="Styron-Sofiina_volba" en="en:Styron-Sofiina_volba:0:1297:15:w18 en:Styron-Sofiina_volba:0:1297:15:w6" cs="cs:Styron-Sofiina_volba:0:1315:14:w3" cst="rozhodn&#x11B;"/>
+  <item id="ex-50797" cql="q-34" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:6063:2:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-52765" cql="q-34" xml="OBrien-Treti_straznik" en="" cs="cs:OBrien-Treti_straznik:0:1754:20:w1" cst="Rozhodn&#x11B;"/>
+  <item id="ex-52564" cql="q-34" xml="munro-utek" en="en:munro-utek:0:107:6:w11" cs="cs:munro-utek:0:105:7:w10" cst="rozhodn&#x11B;"/>
+  <item id="ex-49691" cql="q-34" xml="Banks-Most" en="" cs="cs:Banks-Most:0:433:3:w4" cst="rozhodn&#x11B;"/>
+</examples>
