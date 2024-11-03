@@ -1,54 +1,54 @@
 <?xml version="1.0"?>
 <examples>
 <user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
-  <item id="ex-52225" cql="q-28" xml="farrell-nepokoje" en="en:farrell-nepokoje:0:910:1:w1" cs="cs:farrell-nepokoje:0:904:1:w1" cst="Ov&#x161;em"/>
-  <item id="ex-58306" cql="q-28" xml="rowlingova-hpot_kamen" en="en:rowlingova-hpot_kamen:0:1297:3:w8" cs="cs:rowlingova-hpot_kamen:0:1330:3:w2" cst="ov&#x161;em"/>
-  <item id="ex-60357" cql="q-28" xml="updike-kralik_se_vraci" en="" cs="cs:updike-kralik_se_vraci:0:3211:6:w4" cst="ov&#x161;em"/>
-  <item id="ex-50327" cql="q-28" xml="bates-poupata_v_maji" en="en:bates-poupata_v_maji:0:178:2:w5" cs="cs:bates-poupata_v_maji:0:175:2:w1" cst="Ov&#x161;em"/>
-  <item id="ex-54591" cql="q-28" xml="kahneman-mysleni" en="" cs="cs:kahneman-mysleni:0:2136:6:w18" cst="ov&#x161;em"/>
-  <item id="ex-56062" cql="q-28" xml="marshall-v_zajeti" en="en:marshall-v_zajeti:0:593:1:w13" cs="cs:marshall-v_zajeti:0:606:1:w16" cst="ov&#x161;em"/>
-  <item id="ex-50109" cql="q-28" xml="Austenova-Emma" en="en:Austenova-Emma:0:1530:6:w1" cs="cs:Austenova-Emma:0:1483:4:w1" cst="Ov&#x161;em"/>
-  <item id="ex-53968" cql="q-28" xml="Heller-Hlava_XXII" en="en:Heller-Hlava_XXII:0:2183:6:w6" cs="cs:Heller-Hlava_XXII:0:2419:6:w6" cst="ov&#x161;em"/>
-  <item id="ex-50833" cql="q-28" xml="Burns-Mlikar" en="" cs="cs:Burns-Mlikar:0:283:6:w56" cst="ov&#x161;em"/>
-  <item id="ex-58598" cql="q-28" xml="rowlingova-hpot_tajemn" en="en:rowlingova-hpot_tajemn:0:1527:2:w39" cs="cs:rowlingova-hpot_tajemn:0:1752:3:w16" cst="ov&#x161;em"/>
-  <item id="ex-58795" cql="q-28" xml="Rushdie-MauruvPosl_Vzd" en="en:Rushdie-MauruvPosl_Vzd:0:1198:3:w2" cs="cs:Rushdie-MauruvPosl_Vzd:0:1182:3:w3" cst="ov&#x161;em"/>
-  <item id="ex-59089" cql="q-28" xml="shreve-vse_co_pral" en="en:shreve-vse_co_pral:0:1128:2:w12" cs="cs:shreve-vse_co_pral:0:1148:3:w13" cst="ov&#x161;em"/>
-  <item id="ex-52776" cql="q-28" xml="Fromm-Mit_nebo_byt" en="en:Fromm-Mit_nebo_byt:0:84:3:w1" cs="cs:Fromm-Mit_nebo_byt:0:52:3:w3" cst="ov&#x161;em"/>
-  <item id="ex-50229" cql="q-28" xml="Barnes-Arthur_a_George" en="en:Barnes-Arthur_a_George:0:1323:3:w2" cs="cs:Barnes-Arthur_a_George:0:1334:3:w2" cst="ov&#x161;em"/>
-  <item id="ex-50133" cql="q-28" xml="austen-pycha" en="en:austen-pycha:0:1087:7:w4" cs="cs:austen-pycha:0:1060:6:w4" cst="ov&#x161;em"/>
-  <item id="ex-59794" cql="q-28" xml="Stoker-Dracula" en="en:Stoker-Dracula:0:1739:2:w10" cs="cs:Stoker-Dracula:0:1697:3:w8" cst="ov&#x161;em"/>
-  <item id="ex-51204" cql="q-28" xml="Christie-VrazdaVOrient" en="" cs="cs:Christie-VrazdaVOrient:0:1618:2:w14" cst="ov&#x161;em"/>
-  <item id="ex-53856" cql="q-28" xml="hayek-cesta_do_otro" en="en:hayek-cesta_do_otro:0:207:4:w1" cs="cs:hayek-cesta_do_otro:0:209:4:w5" cst="ov&#x161;em"/>
-  <item id="ex-56323" cql="q-28" xml="munro-nepritel_pritel" en="en:munro-nepritel_pritel:0:795:2:w9" cs="cs:munro-nepritel_pritel:0:854:2:w2" cst="ov&#x161;em"/>
-  <item id="ex-49288" cql="q-28" xml="adams-prevazne_neskodn" en="en:adams-prevazne_neskodn:0:1173:3:w26" cs="cs:adams-prevazne_neskodn:0:1137:3:w23" cst="ov&#x161;em"/>
-  <item id="ex-58396" cql="q-28" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:1963:2:w24" cs="cs:rowlingova-hpot_pohar:0:1951:3:w6" cst="ov&#x161;em"/>
-  <item id="ex-60770" cql="q-28" xml="Wells-Valka_svetu" en="en:Wells-Valka_svetu:0:1045:1:w9" cs="cs:Wells-Valka_svetu:0:1068:1:w4" cst="ov&#x161;em"/>
-  <item id="ex-57912" cql="q-28" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:280:1:w1" cs="cs:Puzo-Kmotr:0:277:1:w6" cst="ov&#x161;em"/>
-  <item id="ex-57762" cql="q-28" xml="Pratchett-Dobra_znamen" en="" cs="cs:Pratchett-Dobra_znamen:0:324:1:w6" cst="ov&#x161;em"/>
+  <item id="ex-52225" cql="q-28" xml="farrell-nepokoje" en="en:farrell-nepokoje:0:910:1:w1" cs="cs:farrell-nepokoje:0:904:1:w1" cst="Ov&#x161;em" alignchecked="1" ent="Yet"/>
+  <item id="ex-58306" cql="q-28" xml="rowlingova-hpot_kamen" en="en:rowlingova-hpot_kamen:0:1297:3:w8" cs="cs:rowlingova-hpot_kamen:0:1330:3:w2" cst="ov&#x161;em" alignchecked="1" ent="though"/>
+  <item id="ex-60357" cql="q-28" xml="updike-kralik_se_vraci" en="X" cs="cs:updike-kralik_se_vraci:0:3211:6:w4" cst="ov&#x161;em" alignchecked="1" ent=""/>
+  <item id="ex-50327" cql="q-28" xml="bates-poupata_v_maji" en="en:bates-poupata_v_maji:0:178:2:w5" cs="cs:bates-poupata_v_maji:0:175:2:w1" cst="Ov&#x161;em" alignchecked="1" ent="though"/>
+  <item id="ex-54591" cql="q-28" xml="kahneman-mysleni" en="X" cs="cs:kahneman-mysleni:0:2136:6:w18" cst="ov&#x161;em" alignchecked="1" ent=""/>
+  <item id="ex-56062" cql="q-28" xml="marshall-v_zajeti" en="en:marshall-v_zajeti:0:593:1:w13" cs="cs:marshall-v_zajeti:0:606:1:w16" cst="ov&#x161;em" ent="but"/>
+  <item id="ex-50109" cql="q-28" xml="Austenova-Emma" en="en:Austenova-Emma:0:1530:6:w1" cs="cs:Austenova-Emma:0:1483:4:w1" cst="Ov&#x161;em" alignchecked="1" ent="but"/>
+  <item id="ex-53968" cql="q-28" xml="Heller-Hlava_XXII" en="en:Heller-Hlava_XXII:0:2183:6:w5 en:Heller-Hlava_XXII:0:2183:6:w6" cs="cs:Heller-Hlava_XXII:0:2419:6:w6" cst="ov&#x161;em" alignchecked="1" ent="of course"/>
+  <item id="ex-50833" cql="q-28" xml="Burns-Mlikar" en="X" cs="cs:Burns-Mlikar:0:283:6:w56" cst="ov&#x161;em" alignchecked="1" ent=""/>
+  <item id="ex-58598" cql="q-28" xml="rowlingova-hpot_tajemn" en="en:rowlingova-hpot_tajemn:0:1527:2:w39" cs="cs:rowlingova-hpot_tajemn:0:1752:3:w16" cst="ov&#x161;em" alignchecked="1" ent="but"/>
+  <item id="ex-58795" cql="q-28" xml="Rushdie-MauruvPosl_Vzd" en="X" cs="cs:Rushdie-MauruvPosl_Vzd:0:1182:3:w3" cst="ov&#x161;em" ent="" alignchecked="1"/>
+  <item id="ex-59089" cql="q-28" xml="shreve-vse_co_pral" en="en:shreve-vse_co_pral:0:1128:2:w12" cs="cs:shreve-vse_co_pral:0:1148:3:w13" cst="ov&#x161;em" alignchecked="1" ent="but"/>
+  <item id="ex-52776" cql="q-28" xml="Fromm-Mit_nebo_byt" en="en:Fromm-Mit_nebo_byt:0:84:3:w1" cs="cs:Fromm-Mit_nebo_byt:0:52:3:w3" cst="ov&#x161;em" alignchecked="1" ent="Indeed"/>
+  <item id="ex-50229" cql="q-28" xml="Barnes-Arthur_a_George" en="en:Barnes-Arthur_a_George:0:1323:3:w1 en:Barnes-Arthur_a_George:0:1323:3:w2" cs="cs:Barnes-Arthur_a_George:0:1334:3:w2" cst="ov&#x161;em" alignchecked="1" ent="Of course"/>
+  <item id="ex-50133" cql="q-28" xml="austen-pycha" en="en:austen-pycha:0:1087:7:w3 en:austen-pycha:0:1087:7:w4" cs="cs:austen-pycha:0:1060:6:w4" cst="ov&#x161;em" alignchecked="1" ent="of course"/>
+  <item id="ex-59794" cql="q-28" xml="Stoker-Dracula" en="en:Stoker-Dracula:0:1739:2:w10" cs="cs:Stoker-Dracula:0:1697:3:w8" cst="ov&#x161;em" alignchecked="1" ent="but"/>
+  <item id="ex-51204" cql="q-28" xml="Christie-VrazdaVOrient" en="en:Christie-VrazdaVOrient:0:1646:2:w15 en:Christie-VrazdaVOrient:0:1646:2:w16" cs="cs:Christie-VrazdaVOrient:0:1618:2:w14" cst="ov&#x161;em" alignchecked="1" ent="of course"/>
+  <item id="ex-53856" cql="q-28" xml="hayek-cesta_do_otro" en="en:hayek-cesta_do_otro:0:207:4:w1" cs="cs:hayek-cesta_do_otro:0:209:4:w5" cst="ov&#x161;em" alignchecked="1" ent="But"/>
+  <item id="ex-56323" cql="q-28" xml="munro-nepritel_pritel" en="en:munro-nepritel_pritel:0:795:2:w9" cs="cs:munro-nepritel_pritel:0:854:2:w2" cst="ov&#x161;em" alignchecked="1" ent="however"/>
+  <item id="ex-49288" cql="q-28" xml="adams-prevazne_neskodn" en="en:adams-prevazne_neskodn:0:1173:3:w25 en:adams-prevazne_neskodn:0:1173:3:w26" cs="cs:adams-prevazne_neskodn:0:1137:3:w23" cst="ov&#x161;em" alignchecked="1" ent="of course"/>
+  <item id="ex-58396" cql="q-28" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:1963:2:w24" cs="cs:rowlingova-hpot_pohar:0:1951:3:w6" cst="ov&#x161;em" alignchecked="1" ent="but"/>
+  <item id="ex-60770" cql="q-28" xml="Wells-Valka_svetu" en="en:Wells-Valka_svetu:0:1045:1:w8 en:Wells-Valka_svetu:0:1045:1:w9" cs="cs:Wells-Valka_svetu:0:1068:1:w4" cst="ov&#x161;em" alignchecked="1" ent="of course"/>
+  <item id="ex-57912" cql="q-28" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:280:1:w1" cs="cs:Puzo-Kmotr:0:277:1:w6" cst="ov&#x161;em" alignchecked="1" ent="But"/>
+  <item id="ex-57762" cql="q-28" xml="Pratchett-Dobra_znamen" en="X" cs="cs:Pratchett-Dobra_znamen:0:324:1:w6" cst="ov&#x161;em" alignchecked="1" ent=""/>
   <item id="ex-56645" cql="q-28" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:2672:2:w2" cs="cs:obama-zeme_zaslibena:0:2672:2:w4" cst="ov&#x161;em"/>
-  <item id="ex-60338" cql="q-28" xml="updike-kralik_se_vraci" en="" cs="cs:updike-kralik_se_vraci:0:2562:1:w4" cst="ov&#x161;em"/>
-  <item id="ex-54594" cql="q-28" xml="Kerouac-Na_ceste" en="en:Kerouac-Na_ceste:0:87:4:w35" cs="cs:Kerouac-Na_ceste:0:87:5:w1" cst="ov&#x161;em"/>
-  <item id="ex-60646" cql="q-28" xml="Vonnegut-Kolibka" en="en:Vonnegut-Kolibka:0:73:5:w2" cs="cs:Vonnegut-Kolibka:0:76:5:w4" cst="ov&#x161;em"/>
-  <item id="ex-58837" cql="q-28" xml="sacks-muz_si_pletl" en="en:sacks-muz_si_pletl:0:182:22:w7" cs="cs:sacks-muz_si_pletl:0:818:5:w12" cst="ov&#x161;em"/>
-  <item id="ex-53792" cql="q-28" xml="hawking-historie_casu" en="en:hawking-historie_casu:0:40:2:w7" cs="cs:hawking-historie_casu:0:52:3:w3" cst="ov&#x161;em"/>
-  <item id="ex-51962" cql="q-28" xml="doyle-posledni_poklona" en="en:doyle-posledni_poklona:0:363:1:w5" cs="cs:doyle-posledni_poklona:0:360:1:w4" cst="ov&#x161;em"/>
-  <item id="ex-49724" cql="q-28" xml="angellova-dvoji_zivot" en="" cs="cs:angellova-dvoji_zivot:0:882:4:w2" cst="ov&#x161;em"/>
-  <item id="ex-54814" cql="q-28" xml="krentz-zajatci_snu" en="en:krentz-zajatci_snu:0:414:2:w11" cs="cs:krentz-zajatci_snu:0:419:3:w10" cst="ov&#x161;em"/>
-  <item id="ex-58414" cql="q-28" xml="rowlingova-hpot_pohar" en="" cs="cs:rowlingova-hpot_pohar:0:2561:1:w4" cst="ov&#x161;em"/>
-  <item id="ex-51998" cql="q-28" xml="Doyle-Pribehy_Sherlock" en="en:Doyle-Pribehy_Sherlock:0:1607:1:w5" cs="cs:Doyle-Pribehy_Sherlock:0:1649:1:w4" cst="ov&#x161;em"/>
-  <item id="ex-49734" cql="q-28" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:1110:1:w1" cs="cs:angellova-dvoji_zivot:0:1105:1:w1" cst="Ov&#x161;em"/>
-  <item id="ex-58223" cql="q-28" xml="Roth-lidska_skvrna" en="" cs="cs:Roth-lidska_skvrna:0:604:4:w12" cst="ov&#x161;em"/>
-  <item id="ex-51634" cql="q-28" xml="cook-toxin" en="en:cook-toxin:0:861:2:w2" cs="cs:cook-toxin:0:761:2:w2" cst="Ov&#x161;em"/>
-  <item id="ex-53255" cql="q-28" xml="Golding-Pan_much" en="" cs="cs:Golding-Pan_much:0:2769:1:w3" cst="ov&#x161;em"/>
-  <item id="ex-58638" cql="q-28" xml="rowlingova-hpot_vezen" en="en:rowlingova-hpot_vezen:0:1148:2:w1" cs="cs:rowlingova-hpot_vezen:0:1033:2:w3" cst="ov&#x161;em"/>
-  <item id="ex-58504" cql="q-28" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:5982:4:w8" cs="cs:rowlingova-hpot_pohar:0:5928:4:w3" cst="ov&#x161;em"/>
-  <item id="ex-50259" cql="q-28" xml="Barnes-Arthur_a_George" en="en:Barnes-Arthur_a_George:0:3302:6:w13" cs="cs:Barnes-Arthur_a_George:0:3324:6:w9" cst="ov&#x161;em"/>
-  <item id="ex-58361" cql="q-28" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:481:2:w2" cs="cs:rowlingova-hpot_pohar:0:482:2:w3" cst="ov&#x161;em"/>
-  <item id="ex-51247" cql="q-28" xml="Clancy-Spinava_hra" en="en:Clancy-Spinava_hra:0:120:2:w18" cs="cs:Clancy-Spinava_hra:0:115:2:w18" cst="ov&#x161;em"/>
-  <item id="ex-56337" cql="q-28" xml="munro-nepritel_pritel" en="" cs="cs:munro-nepritel_pritel:0:998:4:w4" cst="ov&#x161;em"/>
-  <item id="ex-54031" cql="q-28" xml="Hemingway-SbohemArmado" en="en:Hemingway-SbohemArmado:0:76:13:w1" cs="cs:Hemingway-SbohemArmado:0:80:13:w4" cst="ov&#x161;em"/>
-  <item id="ex-56179" cql="q-28" xml="McEwan-Sobota" en="en:McEwan-Sobota:0:203:14:w1" cs="cs:McEwan-Sobota:0:199:15:w8" cst="ov&#x161;em"/>
-  <item id="ex-50094" cql="q-28" xml="Austenova-Emma" en="en:Austenova-Emma:0:953:2:w4" cs="cs:Austenova-Emma:0:916:2:w3" cst="ov&#x161;em"/>
-  <item id="ex-49487" cql="q-28" xml="aldiss-helikonie_jaro" en="en:aldiss-helikonie_jaro:0:3492:6:w8" cs="cs:aldiss-helikonie_jaro:0:3409:7:w3" cst="ov&#x161;em"/>
-  <item id="ex-60747" cql="q-28" xml="Wells-Neviditelny" en="en:Wells-Neviditelny:0:1180:3:w4" cs="cs:Wells-Neviditelny:0:1327:3:w8" cst="ov&#x161;em"/>
+  <item id="ex-60338" cql="q-28" xml="updike-kralik_se_vraci" en="X" cs="cs:updike-kralik_se_vraci:0:2562:1:w4" cst="ov&#x161;em" ent="" alignchecked="1"/>
+  <item id="ex-54594" cql="q-28" xml="Kerouac-Na_ceste" en="en:Kerouac-Na_ceste:0:87:4:w35" cs="cs:Kerouac-Na_ceste:0:87:5:w1" cst="ov&#x161;em" alignchecked="1" ent="but"/>
+  <item id="ex-60646" cql="q-28" xml="Vonnegut-Kolibka" en="en:Vonnegut-Kolibka:0:73:5:w1" cs="cs:Vonnegut-Kolibka:0:76:5:w4" cst="ov&#x161;em" alignchecked="1" ent="Actually"/>
+  <item id="ex-58837" cql="q-28" xml="sacks-muz_si_pletl" en="X" cs="cs:sacks-muz_si_pletl:0:818:5:w12" cst="ov&#x161;em" alignchecked="1" ent=""/>
+  <item id="ex-53792" cql="q-28" xml="hawking-historie_casu" en="en:hawking-historie_casu:0:40:2:w7" cs="cs:hawking-historie_casu:0:52:3:w3" cst="ov&#x161;em" alignchecked="1" ent="though"/>
+  <item id="ex-51962" cql="q-28" xml="doyle-posledni_poklona" en="en:doyle-posledni_poklona:0:363:1:w4 en:doyle-posledni_poklona:0:363:1:w5" cs="cs:doyle-posledni_poklona:0:360:1:w4" cst="ov&#x161;em" alignchecked="1" ent="of course"/>
+  <item id="ex-49724" cql="q-28" xml="angellova-dvoji_zivot" en="X" cs="cs:angellova-dvoji_zivot:0:882:4:w2" cst="ov&#x161;em" alignchecked="1" ent=""/>
+  <item id="ex-54814" cql="q-28" xml="krentz-zajatci_snu" en="en:krentz-zajatci_snu:0:414:2:w11" cs="cs:krentz-zajatci_snu:0:419:3:w10" cst="ov&#x161;em" alignchecked="1" ent="but"/>
+  <item id="ex-58414" cql="q-28" xml="rowlingova-hpot_pohar" en="X" cs="cs:rowlingova-hpot_pohar:0:2561:1:w4" cst="ov&#x161;em" alignchecked="1" ent=""/>
+  <item id="ex-51998" cql="q-28" xml="Doyle-Pribehy_Sherlock" en="en:Doyle-Pribehy_Sherlock:0:1607:1:w4 en:Doyle-Pribehy_Sherlock:0:1607:1:w5" cs="cs:Doyle-Pribehy_Sherlock:0:1649:1:w4" cst="ov&#x161;em" alignchecked="1" ent="of course"/>
+  <item id="ex-49734" cql="q-28" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:1110:1:w1" cs="cs:angellova-dvoji_zivot:0:1105:1:w1" cst="Ov&#x161;em" alignchecked="1" ent="But"/>
+  <item id="ex-58223" cql="q-28" xml="Roth-lidska_skvrna" en="X" cs="cs:Roth-lidska_skvrna:0:604:4:w12" cst="ov&#x161;em" ent=""/>
+  <item id="ex-51634" cql="q-28" xml="cook-toxin" en="en:cook-toxin:0:861:2:w2" cs="cs:cook-toxin:0:761:2:w2" cst="Ov&#x161;em" alignchecked="1" ent="But"/>
+  <item id="ex-53255" cql="q-28" xml="Golding-Pan_much" en="en:Golding-Pan_much:0:2728:1:w4" cs="cs:Golding-Pan_much:0:2769:1:w3" cst="ov&#x161;em" alignchecked="1" ent="yes"/>
+  <item id="ex-58638" cql="q-28" xml="rowlingova-hpot_vezen" en="en:rowlingova-hpot_vezen:0:1148:2:w1" cs="cs:rowlingova-hpot_vezen:0:1033:2:w3" cst="ov&#x161;em" alignchecked="1" ent="But"/>
+  <item id="ex-58504" cql="q-28" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:5982:4:w8" cs="cs:rowlingova-hpot_pohar:0:5928:4:w3" cst="ov&#x161;em" alignchecked="1" ent="however"/>
+  <item id="ex-50259" cql="q-28" xml="Barnes-Arthur_a_George" en="en:Barnes-Arthur_a_George:0:3302:6:w13" cs="cs:Barnes-Arthur_a_George:0:3324:6:w9" cst="ov&#x161;em" ent="except"/>
+  <item id="ex-58361" cql="q-28" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:481:2:w2" cs="cs:rowlingova-hpot_pohar:0:482:2:w3" cst="ov&#x161;em" alignchecked="1" ent="But"/>
+  <item id="ex-51247" cql="q-28" xml="Clancy-Spinava_hra" en="en:Clancy-Spinava_hra:0:120:2:w18" cs="cs:Clancy-Spinava_hra:0:115:2:w18" cst="ov&#x161;em" alignchecked="1" ent="but"/>
+  <item id="ex-56337" cql="q-28" xml="munro-nepritel_pritel" en="X" cs="cs:munro-nepritel_pritel:0:998:4:w4" cst="ov&#x161;em" alignchecked="1" ent=""/>
+  <item id="ex-54031" cql="q-28" xml="Hemingway-SbohemArmado" en="en:Hemingway-SbohemArmado:0:76:13:w1" cs="cs:Hemingway-SbohemArmado:0:80:13:w4" cst="ov&#x161;em" alignchecked="1" ent="But"/>
+  <item id="ex-56179" cql="q-28" xml="McEwan-Sobota" en="en:McEwan-Sobota:0:203:14:w1" cs="cs:McEwan-Sobota:0:199:15:w8" cst="ov&#x161;em" alignchecked="1" ent="But"/>
+  <item id="ex-50094" cql="q-28" xml="Austenova-Emma" en="en:Austenova-Emma:0:953:2:w4" cs="cs:Austenova-Emma:0:916:2:w3" cst="ov&#x161;em" alignchecked="1" ent="certainly"/>
+  <item id="ex-49487" cql="q-28" xml="aldiss-helikonie_jaro" en="en:aldiss-helikonie_jaro:0:3492:6:w8" cs="cs:aldiss-helikonie_jaro:0:3409:7:w3" cst="ov&#x161;em" ent="although"/>
+  <item id="ex-60747" cql="q-28" xml="Wells-Neviditelny" en="en:Wells-Neviditelny:0:1180:3:w3 en:Wells-Neviditelny:0:1180:3:w4" cs="cs:Wells-Neviditelny:0:1327:3:w8" cst="ov&#x161;em" alignchecked="1" ent="of course"/>
 </examples>

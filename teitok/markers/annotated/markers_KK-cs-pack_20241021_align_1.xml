@@ -1,54 +1,54 @@
 <?xml version="1.0"?>
 <examples>
 <user id="KK" email="kyckova2@seznam.cz" name="Karol&#xED;na K&#xFD;&#x10D;kov&#xE1;"/>
-  <item id="ex-51233" cql="q-30" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:801:2:w1" cs="cs:Zmeskal-Milostny_dopis:0:772:2:w1" cst="Pochopiteln&#x11B;"/>
-  <item id="ex-50429" cql="q-30" xml="klima-laska_a_smeti" en="en:klima-laska_a_smeti:0:243:4:w4" cs="cs:klima-laska_a_smeti:0:231:4:w3" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51131" cql="q-30" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:1385:15:w13" cs="cs:viewegh-baj_letaPodPsa:0:1448:15:w8" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51185" cql="q-30" xml="Vopenka-Moje_cesta" en="en:Vopenka-Moje_cesta:0:1404:3:w1" cs="cs:Vopenka-Moje_cesta:0:1393:3:w1" cst="Pochopiteln&#x11B;"/>
-  <item id="ex-50231" cql="q-30" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:32:12:w47" cs="cs:Havel-Dalkovy_vyslech:0:30:10:w33" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50767" cql="q-30" xml="Pekarkova-Dej_mi_ty_pr" en="en:Pekarkova-Dej_mi_ty_pr:0:489:7:w11 en:Pekarkova-Dej_mi_ty_pr:0:489:8:w1" cs="cs:Pekarkova-Dej_mi_ty_pr:0:478:7:w13" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51238" cql="q-30" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:994:4:w23 en:Zmeskal-Milostny_dopis:0:994:4:w24" cs="cs:Zmeskal-Milostny_dopis:0:950:3:w24" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51015" cql="q-30" xml="Skvorecky-Mirakl" en="" cs="cs:Skvorecky-Mirakl:0:3544:5:w6" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49748" cql="q-30" xml="Fahrner-Steiner_aneb" en="" cs="cs:Fahrner-Steiner_aneb:0:636:1:w20" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50576" cql="q-30" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:176:11:w25" cs="cs:Lustig-ModlitbaProKHor:0:202:6:w21" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50242" cql="q-30" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:96:2:w1 en:Havel-Dalkovy_vyslech:0:96:2:w2" cs="cs:Havel-Dalkovy_vyslech:0:90:2:w1" cst="Pochopiteln&#x11B;"/>
-  <item id="ex-51140" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:182:1:w4" cs="cs:Viewegh-Vybijena:0:182:1:w4" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51147" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:429:5:w29" cs="cs:Viewegh-Vybijena:0:432:5:w27" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51152" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:937:4:w15" cs="cs:Viewegh-Vybijena:0:942:4:w15" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50443" cql="q-30" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:2965:4:w9" cs="cs:Kohout-Hvezdna_hodina:0:3019:4:w7" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50228" cql="q-30" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:15:37:w8" cs="cs:Havel-Dalkovy_vyslech:0:14:37:w51" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51237" cql="q-30" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:909:31:w5" cs="cs:Zmeskal-Milostny_dopis:0:871:31:w12" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51165" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:1875:6:w1" cs="cs:Viewegh-Vybijena:0:1895:6:w2" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50246" cql="q-30" xml="Havel-Dalkovy_vyslech" en="" cs="cs:Havel-Dalkovy_vyslech:0:110:50:w3" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50479" cql="q-30" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:64:1683:w1" cs="cs:Levy-Umeni_prekladu:0:45:1765:w29" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51080" cql="q-30" xml="Topol-Sestra" en="" cs="cs:Topol-Sestra:0:452:7:w32" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49294" cql="q-30" xml="Ajvaz-Druhe_mesto" en="en:Ajvaz-Druhe_mesto:0:106:7:w1 en:Ajvaz-Druhe_mesto:0:106:7:w2" cs="cs:Ajvaz-Druhe_mesto:0:107:5:w15" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51134" cql="q-30" xml="viewegh-baj_letaPodPsa" en="" cs="cs:viewegh-baj_letaPodPsa:0:1901:1:w3" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51119" cql="q-30" xml="viewegh-baj_letaPodPsa" en="" cs="cs:viewegh-baj_letaPodPsa:0:72:1:w12" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51115" cql="q-30" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:1896:4:w25" cs="cs:Vaculik-Cesky_snar:0:1476:4:w21" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51111" cql="q-30" xml="Urban-Lord_Mord" en="en:Urban-Lord_Mord:0:1295:2:w10" cs="cs:Urban-Lord_Mord:0:1295:2:w12" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51177" cql="q-30" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:1655:5:w21" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50768" cql="q-30" xml="Pekarkova-Dej_mi_ty_pr" en="en:Pekarkova-Dej_mi_ty_pr:0:508:2:w17" cs="cs:Pekarkova-Dej_mi_ty_pr:0:497:1:w11" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51148" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:535:12:w2 en:Viewegh-Vybijena:0:535:12:w3" cs="cs:Viewegh-Vybijena:0:538:12:w1" cst="Pochopiteln&#x11B;"/>
-  <item id="ex-50477" cql="q-30" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:64:965:w1" cs="cs:Levy-Umeni_prekladu:0:45:1220:w2" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50332" cql="q-30" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:689:3:w7" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49385" cql="q-30" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:302:2:w1" cs="cs:bajaja-na_krasne_modre:0:304:2:w5" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50974" cql="q-30" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:122:7:w15" cs="cs:sedlacek-ekonomie:0:140:7:w9" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51135" cql="q-30" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:2068:2:w1 en:viewegh-baj_letaPodPsa:0:2068:2:w2" cs="cs:viewegh-baj_letaPodPsa:0:2132:3:w3" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50333" cql="q-30" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:692:7:w20" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49386" cql="q-30" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:915:13:w1" cs="cs:bajaja-na_krasne_modre:0:933:14:w4" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51129" cql="q-30" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:1088:1:w4" cs="cs:viewegh-baj_letaPodPsa:0:1136:1:w6" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50325" cql="q-30" xml="Hulova-Strucne_dejiny" en="" cs="cs:Hulova-Strucne_dejiny:0:17:1:w15" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50469" cql="q-30" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:6:42:w19" cs="cs:Levy-Umeni_prekladu:0:6:38:w17" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51142" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:227:1:w10" cs="cs:Viewegh-Vybijena:0:228:1:w7" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51138" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:147:5:w88" cs="cs:Viewegh-Vybijena:0:146:4:w80" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50229" cql="q-30" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:15:39:w26" cs="cs:Havel-Dalkovy_vyslech:0:14:39:w20" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51133" cql="q-30" xml="viewegh-baj_letaPodPsa" en="" cs="cs:viewegh-baj_letaPodPsa:0:1883:1:w5" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50248" cql="q-30" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:118:90:w1" cs="cs:Havel-Dalkovy_vyslech:0:110:74:w3" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51081" cql="q-30" xml="Topol-Sestra" en="en:Topol-Sestra:0:1417:1:w80" cs="cs:Topol-Sestra:0:1480:1:w77" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50759" cql="q-30" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:203:1:w8" cs="cs:panek-dejiny_ceskych:0:157:9:w4" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51074" cql="q-30" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:443:3:w9" cs="cs:Strouhal-Zivot_Egyptan:0:458:3:w10" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49747" cql="q-30" xml="Fahrner-Steiner_aneb" en="" cs="cs:Fahrner-Steiner_aneb:0:61:1:w22" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49299" cql="q-30" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:76:1:w1" cs="cs:Ajvaz-Zlaty_vek:0:68:1:w3" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51240" cql="q-30" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:1122:1:w7" cs="cs:Zmeskal-Milostny_dopis:0:1063:1:w3" cst="pochopiteln&#x11B;"/>
+  <item id="ex-51233" cql="q-30" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:801:2:w1 en:Zmeskal-Milostny_dopis:0:801:2:w2 en:Zmeskal-Milostny_dopis:0:801:2:w3" cs="cs:Zmeskal-Milostny_dopis:0:772:2:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="Needless to say"/>
+  <item id="ex-50429" cql="q-30" xml="klima-laska_a_smeti" en="en:klima-laska_a_smeti:0:243:4:w3 en:klima-laska_a_smeti:0:243:4:w4" cs="cs:klima-laska_a_smeti:0:231:4:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-51131" cql="q-30" xml="viewegh-baj_letaPodPsa" en="X" cs="cs:viewegh-baj_letaPodPsa:0:1448:15:w8" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-51185" cql="q-30" xml="Vopenka-Moje_cesta" en="en:Vopenka-Moje_cesta:0:1404:3:w1" cs="cs:Vopenka-Moje_cesta:0:1393:3:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="Naturally"/>
+  <item id="ex-50231" cql="q-30" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:32:12:w47 en:Havel-Dalkovy_vyslech:0:32:12:w48" cs="cs:Havel-Dalkovy_vyslech:0:30:10:w33" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-50767" cql="q-30" xml="Pekarkova-Dej_mi_ty_pr" en="en:Pekarkova-Dej_mi_ty_pr:0:489:8:w1" cs="cs:Pekarkova-Dej_mi_ty_pr:0:478:7:w13" cst="pochopiteln&#x11B;" ent="Obviously" alignchecked="1"/>
+  <item id="ex-51238" cql="q-30" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:994:4:w23 en:Zmeskal-Milostny_dopis:0:994:4:w24" cs="cs:Zmeskal-Milostny_dopis:0:950:3:w24" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-51015" cql="q-30" xml="Skvorecky-Mirakl" en="X" cs="cs:Skvorecky-Mirakl:0:3544:5:w6" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-49748" cql="q-30" xml="Fahrner-Steiner_aneb" en="X" cs="cs:Fahrner-Steiner_aneb:0:636:1:w20" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50576" cql="q-30" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:176:11:w24 en:Lustig-ModlitbaProKHor:0:176:11:w25" cs="cs:Lustig-ModlitbaProKHor:0:202:6:w21" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-50242" cql="q-30" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:96:2:w1 en:Havel-Dalkovy_vyslech:0:96:2:w2" cs="cs:Havel-Dalkovy_vyslech:0:90:2:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
+  <item id="ex-51140" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:182:1:w3 en:Viewegh-Vybijena:0:182:1:w4" cs="cs:Viewegh-Vybijena:0:182:1:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-51147" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:429:5:w29" cs="cs:Viewegh-Vybijena:0:432:5:w27" cst="pochopiteln&#x11B;" alignchecked="1" ent="obviously"/>
+  <item id="ex-51152" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:937:4:w15" cs="cs:Viewegh-Vybijena:0:942:4:w15" cst="pochopiteln&#x11B;" alignchecked="1" ent="understandably"/>
+  <item id="ex-50443" cql="q-30" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:2965:4:w9" cs="cs:Kohout-Hvezdna_hodina:0:3019:4:w7" cst="pochopiteln&#x11B;" alignchecked="1" ent="understandably"/>
+  <item id="ex-50228" cql="q-30" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:15:37:w7 en:Havel-Dalkovy_vyslech:0:15:37:w8" cs="cs:Havel-Dalkovy_vyslech:0:14:37:w51" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-51237" cql="q-30" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:909:31:w4 en:Zmeskal-Milostny_dopis:0:909:31:w5" cs="cs:Zmeskal-Milostny_dopis:0:871:31:w12" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-51165" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:1875:6:w1 en:Viewegh-Vybijena:0:1875:6:w2" cs="cs:Viewegh-Vybijena:0:1895:6:w2" cst="pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
+  <item id="ex-50246" cql="q-30" xml="Havel-Dalkovy_vyslech" en="X" cs="cs:Havel-Dalkovy_vyslech:0:110:50:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50479" cql="q-30" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:64:1683:w1" cs="cs:Levy-Umeni_prekladu:0:45:1765:w29" cst="pochopiteln&#x11B;" alignchecked="1" ent="naturally"/>
+  <item id="ex-51080" cql="q-30" xml="Topol-Sestra" en="- " cs="cs:Topol-Sestra:0:452:7:w32" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-49294" cql="q-30" xml="Ajvaz-Druhe_mesto" en="en:Ajvaz-Druhe_mesto:0:106:7:w1 en:Ajvaz-Druhe_mesto:0:106:7:w2" cs="cs:Ajvaz-Druhe_mesto:0:107:5:w15" cst="pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
+  <item id="ex-51134" cql="q-30" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:1836:1:w2 en:viewegh-baj_letaPodPsa:0:1836:1:w3" cs="cs:viewegh-baj_letaPodPsa:0:1901:1:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
+  <item id="ex-51119" cql="q-30" xml="viewegh-baj_letaPodPsa" en="X" cs="cs:viewegh-baj_letaPodPsa:0:72:1:w12" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-51115" cql="q-30" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:1896:4:w24 en:Vaculik-Cesky_snar:0:1896:4:w25" cs="cs:Vaculik-Cesky_snar:0:1476:4:w21" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-51111" cql="q-30" xml="Urban-Lord_Mord" en="en:Urban-Lord_Mord:0:1295:2:w10" cs="cs:Urban-Lord_Mord:0:1295:2:w12" cst="pochopiteln&#x11B;" alignchecked="1" ent="naturally"/>
+  <item id="ex-51177" cql="q-30" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1761:5:w24 en:Viewegh-VychovaDivekCR:0:1761:5:w25" cs="cs:Viewegh-VychovaDivekCR:0:1655:5:w21" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-50768" cql="q-30" xml="Pekarkova-Dej_mi_ty_pr" en="X" cs="cs:Pekarkova-Dej_mi_ty_pr:0:497:1:w11" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-51148" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:535:12:w2 en:Viewegh-Vybijena:0:535:12:w3" cs="cs:Viewegh-Vybijena:0:538:12:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-50477" cql="q-30" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:64:965:w1" cs="cs:Levy-Umeni_prekladu:0:45:1220:w2" cst="pochopiteln&#x11B;" alignchecked="1" ent="Understandably"/>
+  <item id="ex-50332" cql="q-30" xml="Hulova-Strucne_dejiny" en="X" cs="cs:Hulova-Strucne_dejiny:0:689:3:w7" cst="pochopiteln&#x11B;" ent="" alignchecked="1"/>
+  <item id="ex-49385" cql="q-30" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:302:2:w1" cs="cs:bajaja-na_krasne_modre:0:304:2:w5" cst="pochopiteln&#x11B;" alignchecked="1" ent="Obviously"/>
+  <item id="ex-50974" cql="q-30" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:122:7:w15" cs="cs:sedlacek-ekonomie:0:140:7:w9" cst="pochopiteln&#x11B;" alignchecked="1" ent="understandably"/>
+  <item id="ex-51135" cql="q-30" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:2068:2:w1 en:viewegh-baj_letaPodPsa:0:2068:2:w2" cs="cs:viewegh-baj_letaPodPsa:0:2132:3:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
+  <item id="ex-50333" cql="q-30" xml="Hulova-Strucne_dejiny" en="X" cs="cs:Hulova-Strucne_dejiny:0:692:7:w20" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-49386" cql="q-30" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:915:13:w1" cs="cs:bajaja-na_krasne_modre:0:933:14:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="Obviously"/>
+  <item id="ex-51129" cql="q-30" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:1088:1:w4" cs="cs:viewegh-baj_letaPodPsa:0:1136:1:w6" cst="pochopiteln&#x11B;" alignchecked="1" ent="obviously"/>
+  <item id="ex-50325" cql="q-30" xml="Hulova-Strucne_dejiny" en="X" cs="cs:Hulova-Strucne_dejiny:0:17:1:w15" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50469" cql="q-30" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:6:42:w19" cs="cs:Levy-Umeni_prekladu:0:6:38:w17" cst="pochopiteln&#x11B;" alignchecked="1" ent="naturally"/>
+  <item id="ex-51142" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:227:1:w10" cs="cs:Viewegh-Vybijena:0:228:1:w7" cst="pochopiteln&#x11B;" alignchecked="1" ent="obviously"/>
+  <item id="ex-51138" cql="q-30" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:147:5:w88" cs="cs:Viewegh-Vybijena:0:146:4:w80" cst="pochopiteln&#x11B;" alignchecked="1" ent="obviously"/>
+  <item id="ex-50229" cql="q-30" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:15:39:w26" cs="cs:Havel-Dalkovy_vyslech:0:14:39:w20" cst="pochopiteln&#x11B;" alignchecked="1" ent="understandably"/>
+  <item id="ex-51133" cql="q-30" xml="viewegh-baj_letaPodPsa" en="X" cs="cs:viewegh-baj_letaPodPsa:0:1883:1:w5" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50248" cql="q-30" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:118:90:w1" cs="cs:Havel-Dalkovy_vyslech:0:110:74:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="Naturally"/>
+  <item id="ex-51081" cql="q-30" xml="Topol-Sestra" en="en:Topol-Sestra:0:1417:1:w80" cs="cs:Topol-Sestra:0:1480:1:w77" cst="pochopiteln&#x11B;" alignchecked="1" ent="naturally"/>
+  <item id="ex-50759" cql="q-30" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:203:1:w8" cs="cs:panek-dejiny_ceskych:0:157:9:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="understandably"/>
+  <item id="ex-51074" cql="q-30" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:443:3:w9" cs="cs:Strouhal-Zivot_Egyptan:0:458:3:w10" cst="pochopiteln&#x11B;" alignchecked="1" ent="understandably"/>
+  <item id="ex-49747" cql="q-30" xml="Fahrner-Steiner_aneb" en="X" cs="cs:Fahrner-Steiner_aneb:0:61:1:w22" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-49299" cql="q-30" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:76:1:w1" cs="cs:Ajvaz-Zlaty_vek:0:68:1:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="Naturally"/>
+  <item id="ex-51240" cql="q-30" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:1122:1:w4 en:Zmeskal-Milostny_dopis:0:1122:1:w5" cs="cs:Zmeskal-Milostny_dopis:0:1063:1:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
 </examples>

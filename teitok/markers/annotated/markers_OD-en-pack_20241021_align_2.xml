@@ -1,54 +1,54 @@
 <?xml version="1.0"?>
 <examples>
 <user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
-  <item id="ex-49895" cql="q-30" xml="forsyth-vyjednavac" en="" cs="cs:forsyth-vyjednavac:0:451:3:w24" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50897" cql="q-30" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:2237:1:w1 en:Puzo-Kmotr:0:2237:1:w6" cs="cs:Puzo-Kmotr:0:2170:1:w5" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49486" cql="q-30" xml="bellow-dobrodruzstvi" en="" cs="cs:bellow-dobrodruzstvi:0:219:5:w8" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50362" cql="q-30" xml="Isaacson-Steve_Jobs" en="en:Isaacson-Steve_Jobs:0:2180:3:w21 en:Isaacson-Steve_Jobs:0:2180:3:w22" cs="cs:Isaacson-Steve_Jobs:0:2158:2:w19" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50536" cql="q-30" xml="ludlum-bourneuv_mytus" en="en:ludlum-bourneuv_mytus:0:1373:3:w20 en:ludlum-bourneuv_mytus:0:1373:3:w21" cs="cs:ludlum-bourneuv_mytus:0:1374:3:w17" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49436" cql="q-30" xml="barnes-vedomi_konce" en="en:barnes-vedomi_konce:0:359:19:w12 en:barnes-vedomi_konce:0:359:19:w6" cs="cs:barnes-vedomi_konce:0:445:1:w3" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50208" cql="q-30" xml="hailey-konecna_diag" en="" cs="cs:hailey-konecna_diag:0:1539:2:w17" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49578" cql="q-30" xml="brown-sifra" en="" cs="cs:brown-sifra:0:227:2:w8" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50970" cql="q-30" xml="Salinger-Devet_povidek" en="en:Salinger-Devet_povidek:0:912:3:w9" cs="cs:Salinger-Devet_povidek:0:823:2:w6" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51038" cql="q-30" xml="Steel-Druha_sance" en="en:Steel-Druha_sance:0:879:1:w5 en:Steel-Druha_sance:0:879:1:w6" cs="cs:Steel-Druha_sance:0:881:1:w5" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51088" cql="q-30" xml="trevor-lucy_gault" en="en:trevor-lucy_gault:0:986:2:w1 en:trevor-lucy_gault:0:986:2:w2" cs="cs:trevor-lucy_gault:0:981:2:w1" cst="Pochopiteln&#x11B;"/>
-  <item id="ex-50051" cql="q-30" xml="greene-honor_konzul" en="en:greene-honor_konzul:0:352:4:w20" cs="cs:greene-honor_konzul:0:353:4:w15" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49461" cql="q-30" xml="barnes-zadny_duvod" en="en:barnes-zadny_duvod:0:232:2:w1 en:barnes-zadny_duvod:0:232:2:w2" cs="cs:barnes-zadny_duvod:0:233:2:w1" cst="Pochopiteln&#x11B;"/>
-  <item id="ex-49442" cql="q-30" xml="barnes-vedomi_konce" en="en:barnes-vedomi_konce:0:552:2:w8" cs="cs:barnes-vedomi_konce:0:667:2:w12" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49631" cql="q-30" xml="chandler-opona" en="en:chandler-opona:0:566:2:w5" cs="cs:chandler-opona:0:538:2:w4" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50160" cql="q-30" xml="Grisham-Kral_advokatu" en="en:Grisham-Kral_advokatu:0:2314:1:w12" cs="cs:Grisham-Kral_advokatu:0:1502:1:w12" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50612" cql="q-30" xml="McEwan-Sobota" en="en:McEwan-Sobota:0:46:1:w1" cs="cs:McEwan-Sobota:0:48:1:w3" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49270" cql="q-30" xml="adams-restaurant_na_ko" en="" cs="cs:adams-restaurant_na_ko:0:962:18:w4" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50920" cql="q-30" xml="Roth-lidska_skvrna" en="en:Roth-lidska_skvrna:0:287:1:w1 en:Roth-lidska_skvrna:0:287:1:w2" cs="cs:Roth-lidska_skvrna:0:298:1:w1" cst="Pochopiteln&#x11B;"/>
-  <item id="ex-50799" cql="q-30" xml="Popper-hledani" en="en:Popper-hledani:0:433:1:w1" cs="cs:Popper-hledani:0:414:1:w1" cst="Pochopiteln&#x11B;"/>
-  <item id="ex-50750" cql="q-30" xml="orwell-farma_zvirat" en="" cs="cs:orwell-farma_zvirat:0:513:2:w2" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50715" cql="q-30" xml="Nabokov-Lolita" en="en:Nabokov-Lolita:0:1204:2:w74" cs="cs:Nabokov-Lolita:0:608:12:w74" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50363" cql="q-30" xml="Isaacson-Steve_Jobs" en="" cs="cs:Isaacson-Steve_Jobs:0:2195:3:w7" cst="pochopiteln&#x11B;"/>
-  <item id="ex-51049" cql="q-30" xml="Stoker-Dracula" en="en:Stoker-Dracula:0:79:1:w1 en:Stoker-Dracula:0:79:1:w2" cs="cs:Stoker-Dracula:0:78:1:w1" cst="Pochopiteln&#x11B;"/>
-  <item id="ex-50144" cql="q-30" xml="grisham-klient" en="en:grisham-klient:0:4600:3:w10 en:grisham-klient:0:4600:3:w8" cs="cs:grisham-klient:0:4634:3:w8" cst="pochopiteln&#x11B;"/>
+  <item id="ex-49895" cql="q-30" xml="forsyth-vyjednavac" en="X" cs="cs:forsyth-vyjednavac:0:451:3:w24" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50897" cql="q-30" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:2237:1:w1 en:Puzo-Kmotr:0:2237:1:w2" cs="cs:Puzo-Kmotr:0:2170:1:w5" cst="pochopiteln&#x11B;" alignchecked="1" ent="Sure enough"/>
+  <item id="ex-49486" cql="q-30" xml="bellow-dobrodruzstvi" en="en:bellow-dobrodruzstvi:0:219:5:w10 en:bellow-dobrodruzstvi:0:219:5:w11" cs="cs:bellow-dobrodruzstvi:0:219:5:w8" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-50362" cql="q-30" xml="Isaacson-Steve_Jobs" en="X" cs="cs:Isaacson-Steve_Jobs:0:2158:2:w19" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50536" cql="q-30" xml="ludlum-bourneuv_mytus" en="en:ludlum-bourneuv_mytus:0:1373:3:w20 en:ludlum-bourneuv_mytus:0:1373:3:w21" cs="cs:ludlum-bourneuv_mytus:0:1374:3:w17" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-49436" cql="q-30" xml="barnes-vedomi_konce" en="en:barnes-vedomi_konce:0:359:19:w6 en:barnes-vedomi_konce:0:359:19:w7" cs="cs:barnes-vedomi_konce:0:445:1:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-50208" cql="q-30" xml="hailey-konecna_diag" en="X" cs="cs:hailey-konecna_diag:0:1539:2:w17" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-49578" cql="q-30" xml="brown-sifra" en="X" cs="cs:brown-sifra:0:227:2:w8" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50970" cql="q-30" xml="Salinger-Devet_povidek" en="en:Salinger-Devet_povidek:0:912:3:w8 en:Salinger-Devet_povidek:0:912:3:w9" cs="cs:Salinger-Devet_povidek:0:823:2:w6" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-51038" cql="q-30" xml="Steel-Druha_sance" en="en:Steel-Druha_sance:0:879:1:w5 en:Steel-Druha_sance:0:879:1:w6" cs="cs:Steel-Druha_sance:0:881:1:w5" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-51088" cql="q-30" xml="trevor-lucy_gault" en="en:trevor-lucy_gault:0:986:2:w1 en:trevor-lucy_gault:0:986:2:w2" cs="cs:trevor-lucy_gault:0:981:2:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
+  <item id="ex-50051" cql="q-30" xml="greene-honor_konzul" en="en:greene-honor_konzul:0:352:4:w19 en:greene-honor_konzul:0:352:4:w20" cs="cs:greene-honor_konzul:0:353:4:w15" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-49461" cql="q-30" xml="barnes-zadny_duvod" en="en:barnes-zadny_duvod:0:232:2:w1 en:barnes-zadny_duvod:0:232:2:w2" cs="cs:barnes-zadny_duvod:0:233:2:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
+  <item id="ex-49442" cql="q-30" xml="barnes-vedomi_konce" en="en:barnes-vedomi_konce:0:552:2:w7 en:barnes-vedomi_konce:0:552:2:w8" cs="cs:barnes-vedomi_konce:0:667:2:w12" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-49631" cql="q-30" xml="chandler-opona" en="en:chandler-opona:0:566:2:w4 en:chandler-opona:0:566:2:w5" cs="cs:chandler-opona:0:538:2:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-50160" cql="q-30" xml="Grisham-Kral_advokatu" en="en:Grisham-Kral_advokatu:0:2314:1:w12" cs="cs:Grisham-Kral_advokatu:0:1502:1:w12" cst="pochopiteln&#x11B;" alignchecked="1" ent="sure"/>
+  <item id="ex-50612" cql="q-30" xml="McEwan-Sobota" en="en:McEwan-Sobota:0:46:1:w1" cs="cs:McEwan-Sobota:0:48:1:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="Naturally"/>
+  <item id="ex-49270" cql="q-30" xml="adams-restaurant_na_ko" en="X" cs="cs:adams-restaurant_na_ko:0:962:18:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50920" cql="q-30" xml="Roth-lidska_skvrna" en="en:Roth-lidska_skvrna:0:287:1:w1 en:Roth-lidska_skvrna:0:287:1:w2" cs="cs:Roth-lidska_skvrna:0:298:1:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
+  <item id="ex-50799" cql="q-30" xml="Popper-hledani" en="en:Popper-hledani:0:433:1:w1" cs="cs:Popper-hledani:0:414:1:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="Clearly"/>
+  <item id="ex-50750" cql="q-30" xml="orwell-farma_zvirat" en="X" cs="cs:orwell-farma_zvirat:0:513:2:w2" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50715" cql="q-30" xml="Nabokov-Lolita" en="en:Nabokov-Lolita:0:1204:2:w78 en:Nabokov-Lolita:0:1204:2:w79" cs="cs:Nabokov-Lolita:0:608:12:w74" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-50363" cql="q-30" xml="Isaacson-Steve_Jobs" en="X" cs="cs:Isaacson-Steve_Jobs:0:2195:3:w7" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-51049" cql="q-30" xml="Stoker-Dracula" en="en:Stoker-Dracula:0:79:1:w1 en:Stoker-Dracula:0:79:1:w2" cs="cs:Stoker-Dracula:0:78:1:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
+  <item id="ex-50144" cql="q-30" xml="grisham-klient" en="en:grisham-klient:0:4600:3:w7 en:grisham-klient:0:4600:3:w8" cs="cs:grisham-klient:0:4634:3:w8" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-49844" cql="q-30" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:7187:2:w11" cs="cs:follett-pilire_zeme:0:7125:2:w5" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49352" cql="q-30" xml="asimov-druha_nadace" en="en:asimov-druha_nadace:0:1753:2:w1" cs="cs:asimov-druha_nadace:0:1730:2:w1" cst="Pochopiteln&#x11B;"/>
-  <item id="ex-50382" cql="q-30" xml="Jackson-Petka" en="" cs="cs:Jackson-Petka:0:960:1:w4" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50924" cql="q-30" xml="Roth-lidska_skvrna" en="en:Roth-lidska_skvrna:0:526:24:w20" cs="cs:Roth-lidska_skvrna:0:548:24:w20" cst="pochopiteln&#x11B;"/>
+  <item id="ex-49352" cql="q-30" xml="asimov-druha_nadace" en="en:asimov-druha_nadace:0:1753:2:w1" cs="cs:asimov-druha_nadace:0:1730:2:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="Naturally"/>
+  <item id="ex-50382" cql="q-30" xml="Jackson-Petka" en="en:Jackson-Petka:0:970:1:w1 en:Jackson-Petka:0:970:1:w2" cs="cs:Jackson-Petka:0:960:1:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="By rights"/>
+  <item id="ex-50924" cql="q-30" xml="Roth-lidska_skvrna" en="en:Roth-lidska_skvrna:0:526:24:w19 en:Roth-lidska_skvrna:0:526:24:w20" cs="cs:Roth-lidska_skvrna:0:548:24:w20" cst="pochopiteln&#x11B;" alignchecked="1" ent="then-of course"/>
   <item id="ex-49853" cql="q-30" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:7425:4:w5 en:follett-pilire_zeme:0:7425:4:w8" cs="cs:follett-pilire_zeme:0:7359:6:w4" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49355" cql="q-30" xml="asimov-druha_nadace" en="" cs="cs:asimov-druha_nadace:0:2104:5:w4" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50876" cql="q-30" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:52:4:w5" cs="cs:Puzo-Kmotr:0:52:5:w3" cst="pochopiteln&#x11B;"/>
+  <item id="ex-49355" cql="q-30" xml="asimov-druha_nadace" en="en:asimov-druha_nadace:0:2125:4:w3 en:asimov-druha_nadace:0:2125:4:w4" cs="cs:asimov-druha_nadace:0:2104:5:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-50876" cql="q-30" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:52:4:w4 en:Puzo-Kmotr:0:52:4:w5" cs="cs:Puzo-Kmotr:0:52:5:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-49785" cql="q-30" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:1423:2:w5" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50079" cql="q-30" xml="grisham-advokat_chudy" en="en:grisham-advokat_chudy:0:1348:1:w5" cs="cs:grisham-advokat_chudy:0:1393:1:w6" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50987" cql="q-30" xml="shreve-vse_co_pral" en="en:shreve-vse_co_pral:0:401:1:w4" cs="cs:shreve-vse_co_pral:0:411:1:w4" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50947" cql="q-30" xml="rowlingova-hpot_fenix" en="en:rowlingova-hpot_fenix:0:8696:2:w8" cs="cs:rowlingova-hpot_fenix:0:8645:2:w3" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49469" cql="q-30" xml="barnes-zadny_duvod" en="en:barnes-zadny_duvod:0:393:7:w6" cs="cs:barnes-zadny_duvod:0:393:7:w3" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50911" cql="q-30" xml="pynchon-vykrik" en="en:pynchon-vykrik:0:3493:2:w5" cs="cs:pynchon-vykrik:0:3462:2:w9" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49642" cql="q-30" xml="clancy-hon_na_ponorku" en="en:clancy-hon_na_ponorku:0:235:5:w25" cs="cs:clancy-hon_na_ponorku:0:241:5:w26" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50616" cql="q-30" xml="McEwan-Sobota" en="en:McEwan-Sobota:0:683:1:w6" cs="cs:McEwan-Sobota:0:664:1:w10" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50223" cql="q-30" xml="harris-mlceni_jehn" en="" cs="cs:harris-mlceni_jehn:0:1637:1:w47" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50565" cql="q-30" xml="ludlum-bourneuv_mytus" en="en:ludlum-bourneuv_mytus:0:5611:8:w14 en:ludlum-bourneuv_mytus:0:5611:8:w15" cs="cs:ludlum-bourneuv_mytus:0:5633:7:w7" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49432" cql="q-30" xml="barnes-vedomi_konce" en="en:barnes-vedomi_konce:0:311:1:w15" cs="cs:barnes-vedomi_konce:0:380:1:w11" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49324" cql="q-30" xml="angellova-dvoji_zivot" en="" cs="cs:angellova-dvoji_zivot:0:1216:1:w22" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50355" cql="q-30" xml="Isaacson-Steve_Jobs" en="en:Isaacson-Steve_Jobs:0:1672:2:w31" cs="cs:Isaacson-Steve_Jobs:0:1618:8:w30" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49368" cql="q-30" xml="atwood-muzeum_zkamenel" en="" cs="cs:atwood-muzeum_zkamenel:0:1755:8:w21" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49319" cql="q-30" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:6:1:w6" cs="cs:angellova-dvoji_zivot:0:6:1:w4" cst="pochopiteln&#x11B;"/>
-  <item id="ex-50210" cql="q-30" xml="hailey-konecna_diag" en="en:hailey-konecna_diag:0:1400:1:w2" cs="cs:hailey-konecna_diag:0:1873:1:w2" cst="Pochopiteln&#x11B;"/>
-  <item id="ex-50835" cql="q-30" xml="Popper-Otevrena_spol_2" en="en:Popper-Otevrena_spol_2:0:173:16:w43" cs="cs:Popper-Otevrena_spol_2:0:203:19:w36" cst="pochopiteln&#x11B;"/>
-  <item id="ex-49935" cql="q-30" xml="franzen-rozhreseni" en="en:franzen-rozhreseni:0:3142:9:w10" cs="cs:franzen-rozhreseni:0:3167:12:w11" cst="pochopiteln&#x11B;"/>
+  <item id="ex-50079" cql="q-30" xml="grisham-advokat_chudy" en="en:grisham-advokat_chudy:0:1348:1:w1 en:grisham-advokat_chudy:0:1348:1:w2" cs="cs:grisham-advokat_chudy:0:1393:1:w6" cst="pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
+  <item id="ex-50987" cql="q-30" xml="shreve-vse_co_pral" en="en:shreve-vse_co_pral:0:401:1:w4" cs="cs:shreve-vse_co_pral:0:411:1:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="certainly"/>
+  <item id="ex-50947" cql="q-30" xml="rowlingova-hpot_fenix" en="en:rowlingova-hpot_fenix:0:8696:2:w3 en:rowlingova-hpot_fenix:0:8696:2:w4" cs="cs:rowlingova-hpot_fenix:0:8645:2:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-49469" cql="q-30" xml="barnes-zadny_duvod" en="en:barnes-zadny_duvod:0:393:7:w5 en:barnes-zadny_duvod:0:393:7:w6" cs="cs:barnes-zadny_duvod:0:393:7:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-50911" cql="q-30" xml="pynchon-vykrik" en="en:pynchon-vykrik:0:3493:2:w5" cs="cs:pynchon-vykrik:0:3462:2:w9" cst="pochopiteln&#x11B;" alignchecked="1" ent="naturally"/>
+  <item id="ex-49642" cql="q-30" xml="clancy-hon_na_ponorku" en="en:clancy-hon_na_ponorku:0:235:5:w28 en:clancy-hon_na_ponorku:0:235:5:w29 en:clancy-hon_na_ponorku:0:235:5:w30" cs="cs:clancy-hon_na_ponorku:0:241:5:w26" cst="pochopiteln&#x11B;" alignchecked="1" ent="to be sure"/>
+  <item id="ex-50616" cql="q-30" xml="McEwan-Sobota" en="en:McEwan-Sobota:0:683:1:w6" cs="cs:McEwan-Sobota:0:664:1:w10" cst="pochopiteln&#x11B;" alignchecked="1" ent="naturally"/>
+  <item id="ex-50223" cql="q-30" xml="harris-mlceni_jehn" en="X" cs="cs:harris-mlceni_jehn:0:1637:1:w47" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50565" cql="q-30" xml="ludlum-bourneuv_mytus" en="en:ludlum-bourneuv_mytus:0:5611:8:w14 en:ludlum-bourneuv_mytus:0:5611:8:w15" cs="cs:ludlum-bourneuv_mytus:0:5633:7:w7" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-49432" cql="q-30" xml="barnes-vedomi_konce" en="en:barnes-vedomi_konce:0:311:1:w14 en:barnes-vedomi_konce:0:311:1:w15" cs="cs:barnes-vedomi_konce:0:380:1:w11" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-49324" cql="q-30" xml="angellova-dvoji_zivot" en="X" cs="cs:angellova-dvoji_zivot:0:1216:1:w22" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50355" cql="q-30" xml="Isaacson-Steve_Jobs" en="en:Isaacson-Steve_Jobs:0:1672:2:w31" cs="cs:Isaacson-Steve_Jobs:0:1618:8:w30" cst="pochopiteln&#x11B;" alignchecked="1" ent="understandably"/>
+  <item id="ex-49368" cql="q-30" xml="atwood-muzeum_zkamenel" en="-" cs="cs:atwood-muzeum_zkamenel:0:1755:8:w21" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-49319" cql="q-30" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:6:1:w5 en:angellova-dvoji_zivot:0:6:1:w6" cs="cs:angellova-dvoji_zivot:0:6:1:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-50210" cql="q-30" xml="hailey-konecna_diag" en="en:hailey-konecna_diag:0:1400:1:w10 en:hailey-konecna_diag:0:1400:1:w11" cs="cs:hailey-konecna_diag:0:1873:1:w2" cst="Pochopiteln&#x11B;" alignchecked="1" ent="can understand"/>
+  <item id="ex-50835" cql="q-30" xml="Popper-Otevrena_spol_2" en="en:Popper-Otevrena_spol_2:0:173:16:w42 en:Popper-Otevrena_spol_2:0:173:16:w43" cs="cs:Popper-Otevrena_spol_2:0:203:19:w36" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-49935" cql="q-30" xml="franzen-rozhreseni" en="X" cs="cs:franzen-rozhreseni:0:3167:12:w11" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
 </examples>
