@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<examples>
+<user id="KB" email="blazkovakate@seznam.cz" name="Kate&#x159;ina Bla&#x17E;kov&#xE1;"/>
+  <item id="ex-68994" cql="q-42" xml="Kundera-Nesnesit_lehko" en="en:Kundera-Nesnesit_lehko:0:1511:5:w26" cs="cs:Kundera-Nesnesit_lehko:0:1506:5:w22" cst="t&#x159;eba"/>
+  <item id="ex-76394" cql="q-42" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:1671:1:w18" cst="t&#x159;eba"/>
+  <item id="ex-62708" cql="q-42" xml="cermak-zaklady_metod" en="en:cermak-zaklady_metod:0:798:2:w15" cs="cs:cermak-zaklady_metod:0:810:2:w13" cst="t&#x159;eba"/>
+  <item id="ex-74285" cql="q-42" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:300:1:w3" cs="cs:Skvorecky-Mirakl:0:377:1:w4" cst="t&#x159;eba"/>
+  <item id="ex-75129" cql="q-42" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:734:2:w1" cs="cs:styblova-skalpel_pros:0:754:2:w2" cst="T&#x159;eba"/>
+  <item id="ex-61073" cql="q-42" xml="Balaban-Mozna_ze_odcha" en="en:Balaban-Mozna_ze_odcha:0:713:1:w9" cs="cs:Balaban-Mozna_ze_odcha:0:725:1:w3" cst="t&#x159;eba"/>
+  <item id="ex-72564" cql="q-42" xml="platzova-anarchista" en="en:platzova-anarchista:0:829:3:w4" cs="cs:platzova-anarchista:0:847:3:w2" cst="t&#x159;eba"/>
+  <item id="ex-66467" cql="q-42" xml="hajicek-selsky_baroko" en="" cs="cs:hajicek-selsky_baroko:0:728:3:w1" cst="T&#x159;eba"/>
+  <item id="ex-71758" cql="q-42" xml="Ourednik-Europeana" en="" cs="cs:Ourednik-Europeana:0:13:4:w28" cst="t&#x159;eba"/>
+  <item id="ex-62516" cql="q-42" xml="Capek-Valka_s_mloky" en="en:Capek-Valka_s_mloky:0:938:25:w13" cs="cs:Capek-Valka_s_mloky:0:939:26:w10" cst="t&#x159;eba"/>
+  <item id="ex-62477" cql="q-42" xml="Capek-TovarnaNaAbsolut" en="" cs="cs:Capek-TovarnaNaAbsolut:0:338:4:w3" cst="t&#x159;eba"/>
+  <item id="ex-66575" cql="q-42" xml="Hasek-OsudyDobrehoVvSV" en="" cs="cs:Hasek-OsudyDobrehoVvSV:0:3581:2:w3" cst="t&#x159;eba"/>
+  <item id="ex-72081" cql="q-42" xml="Pekarkova-Dej_mi_ty_pr" en="" cs="cs:Pekarkova-Dej_mi_ty_pr:0:999:1:w30" cst="t&#x159;eba"/>
+  <item id="ex-75634" cql="q-42" xml="Topol-Sestra" en="" cs="cs:Topol-Sestra:0:396:5:w10" cst="t&#x159;eba"/>
+  <item id="ex-60003" cql="q-42" xml="Ajvaz-Druhe_mesto" en="en:Ajvaz-Druhe_mesto:0:249:4:w2" cs="cs:Ajvaz-Druhe_mesto:0:265:4:w2" cst="t&#x159;eba"/>
+  <item id="ex-76451" cql="q-42" xml="Vopenka-Moje_cesta" en="en:Vopenka-Moje_cesta:0:1069:2:w1" cs="cs:Vopenka-Moje_cesta:0:1057:17:w14" cst="t&#x159;eba"/>
+  <item id="ex-76115" cql="q-42" xml="Urban-Sedmikosteli" en="en:Urban-Sedmikosteli:0:312:3:w2" cs="cs:Urban-Sedmikosteli:0:321:2:w2" cst="T&#x159;eba"/>
+  <item id="ex-75806" cql="q-42" xml="tuckova-vyhnani_Gerty" en="" cs="cs:tuckova-vyhnani_Gerty:0:1827:5:w1" cst="T&#x159;eba"/>
+  <item id="ex-75708" cql="q-42" xml="Topol-Sestra" en="" cs="cs:Topol-Sestra:0:3084:34:w19" cst="t&#x159;eba"/>
+  <item id="ex-74287" cql="q-42" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:412:4:w2" cs="cs:Skvorecky-Mirakl:0:505:6:w2" cst="t&#x159;eba"/>
+  <item id="ex-72011" cql="q-42" xml="Paral-Milenci_a_vrazi" en="en:Paral-Milenci_a_vrazi:0:3510:1:w4" cs="cs:Paral-Milenci_a_vrazi:0:274:35:w3" cst="t&#x159;eba"/>
+  <item id="ex-68790" cql="q-42" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:3084:2:w3" cst="t&#x159;eba"/>
+  <item id="ex-60131" cql="q-42" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:82:1:w73" cs="cs:Ajvaz-Zlaty_vek:0:73:1:w66" cst="t&#x159;eba"/>
+  <item id="ex-74325" cql="q-42" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:1469:2:w3" cs="cs:Skvorecky-Mirakl:0:1697:1:w3" cst="t&#x159;eba"/>
+  <item id="ex-76460" cql="q-42" xml="Vopenka-Moje_cesta" en="" cs="cs:Vopenka-Moje_cesta:0:1496:3:w5" cst="t&#x159;eba"/>
+  <item id="ex-68808" cql="q-42" xml="kohout-snezim" en="en:kohout-snezim:0:276:5:w12" cs="cs:kohout-snezim:0:253:3:w40" cst="t&#x159;eba"/>
+  <item id="ex-60136" cql="q-42" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:124:12:w6" cs="cs:Ajvaz-Zlaty_vek:0:112:5:w56" cst="t&#x159;eba"/>
+  <item id="ex-76352" cql="q-42" xml="Viewegh-Vybijena" en="" cs="cs:Viewegh-Vybijena:0:146:4:w5" cst="t&#x159;eba"/>
+  <item id="ex-68672" cql="q-42" xml="klima-laska_a_smeti" en="" cs="cs:klima-laska_a_smeti:0:1368:1:w23" cst="t&#x159;eba"/>
+  <item id="ex-71880" cql="q-42" xml="panek-dejiny_ceskych" en="" cs="cs:panek-dejiny_ceskych:0:161:25:w30" cst="t&#x159;eba"/>
+  <item id="ex-76505" cql="q-42" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:930:5:w1" cs="cs:Vopenka-Paty_rozmer:0:950:5:w2" cst="t&#x159;eba"/>
+  <item id="ex-62531" cql="q-42" xml="Capek-Valka_s_mloky" en="en:Capek-Valka_s_mloky:0:1323:2:w1" cs="cs:Capek-Valka_s_mloky:0:1468:2:w1" cst="T&#x159;eba"/>
+  <item id="ex-76433" cql="q-42" xml="Vopenka-Moje_cesta" en="" cs="cs:Vopenka-Moje_cesta:0:425:3:w10" cst="t&#x159;eba"/>
+  <item id="ex-66597" cql="q-42" xml="Havel-Audience" en="en:Havel-Audience:0:286:3:w1 en:Havel-Audience:0:286:3:w5" cs="cs:Havel-Audience:0:541:2:w1" cst="T&#x159;eba"/>
+  <item id="ex-75641" cql="q-42" xml="Topol-Sestra" en="en:Topol-Sestra:0:459:8:w1" cs="cs:Topol-Sestra:0:487:8:w3" cst="t&#x159;eba"/>
+  <item id="ex-72595" cql="q-42" xml="Polacek-Bylo_nas_pet" en="en:Polacek-Bylo_nas_pet:0:1092:1:w19" cs="cs:Polacek-Bylo_nas_pet:0:1087:1:w13" cst="t&#x159;eba"/>
+  <item id="ex-75564" cql="q-42" xml="Topol-Chladnou_zemi" en="" cs="cs:Topol-Chladnou_zemi:0:1367:2:w6" cst="t&#x159;eba"/>
+  <item id="ex-61066" cql="q-42" xml="Balaban-Mozna_ze_odcha" en="" cs="cs:Balaban-Mozna_ze_odcha:0:510:1:w1" cst="T&#x159;eba"/>
+  <item id="ex-60083" cql="q-42" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:1570:6:w11" cs="cs:ajvaz-prazdne_ulice:0:1291:4:w22" cst="t&#x159;eba"/>
+  <item id="ex-74271" cql="q-42" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:1186:9:w7" cs="cs:skvorecky-hrichy_pater:0:1184:10:w4" cst="t&#x159;eba"/>
+  <item id="ex-60162" cql="q-42" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:375:9:w3" cs="cs:Ajvaz-Zlaty_vek:0:358:5:w17" cst="t&#x159;eba"/>
+  <item id="ex-60072" cql="q-42" xml="ajvaz-prazdne_ulice" en="" cs="cs:ajvaz-prazdne_ulice:0:1096:1:w2" cst="T&#x159;eba"/>
+  <item id="ex-72569" cql="q-42" xml="platzova-anarchista" en="" cs="cs:platzova-anarchista:0:1004:3:w21" cst="t&#x159;eba"/>
+  <item id="ex-76187" cql="q-42" xml="Vaculik-Cesky_snar" en="" cs="cs:Vaculik-Cesky_snar:0:641:5:w21" cst="t&#x159;eba"/>
+  <item id="ex-69066" cql="q-42" xml="kundera-zert" en="" cs="cs:kundera-zert:0:1153:1:w276" cst="t&#x159;eba"/>
+  <item id="ex-68351" cql="q-42" xml="Jirotka-Saturnin" en="" cs="cs:Jirotka-Saturnin:0:697:2:w12" cst="t&#x159;eba"/>
+  <item id="ex-60097" cql="q-42" xml="ajvaz-prazdne_ulice" en="" cs="cs:ajvaz-prazdne_ulice:0:1452:4:w16" cst="t&#x159;eba"/>
+  <item id="ex-62706" cql="q-42" xml="cermak-zaklady_metod" en="en:cermak-zaklady_metod:0:649:1:w30" cs="cs:cermak-zaklady_metod:0:655:1:w21" cst="t&#x159;eba"/>
+  <item id="ex-70236" cql="q-42" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:363:7:w30" cs="cs:Lustig-ModlitbaProKHor:0:399:6:w33" cst="t&#x159;eba"/>
+  <item id="ex-65234" cql="q-42" xml="Fuks-SpalovacMrtvol" en="en:Fuks-SpalovacMrtvol:0:259:18:w7" cs="cs:Fuks-SpalovacMrtvol:0:274:12:w6" cst="t&#x159;eba"/>
+</examples>

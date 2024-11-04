@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<examples>
+<user id="KK" email="kyckova2@seznam.cz" name="Karol&#xED;na K&#xFD;&#x10D;kov&#xE1;"/>
+  <item id="ex-64040" cql="q-36" xml="klima-leto" en="en:klima-leto:0:567:4:w4" cs="cs:klima-leto:0:680:3:w4" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66438" cql="q-36" xml="Skvorecky-PribehIng_2" en="" cs="cs:Skvorecky-PribehIng_2:0:2980:7:w34" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-60606" cql="q-36" xml="Balaban-Mozna_ze_odcha" en="en:Balaban-Mozna_ze_odcha:0:304:1:w3" cs="cs:Balaban-Mozna_ze_odcha:0:315:1:w4" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-65275" cql="q-36" xml="panek-dejiny_ceskych" en="" cs="cs:panek-dejiny_ceskych:0:1226:6:w46" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66219" cql="q-36" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:772:6:w9" cs="cs:sedlacek-ekonomie:0:777:6:w10" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-60581" cql="q-36" xml="Balaban-Kudy_sel_andel" en="en:Balaban-Kudy_sel_andel:0:232:2:w5" cs="cs:Balaban-Kudy_sel_andel:0:232:2:w4" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-64363" cql="q-36" xml="Levy-Umeni_prekladu" en="" cs="cs:Levy-Umeni_prekladu:0:45:1285:w7" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-62946" cql="q-36" xml="Hasek-OsudyDobrehoVvSV" en="en:Hasek-OsudyDobrehoVvSV:0:4861:2:w18" cs="cs:Hasek-OsudyDobrehoVvSV:0:3313:5:w14" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-67073" cql="q-36" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1324:2:w4" cs="cs:Topol-Kloktat_dehet:0:1321:1:w17" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-67180" cql="q-36" xml="Urban-Sedmikosteli" en="en:Urban-Sedmikosteli:0:1324:9:w1 en:Urban-Sedmikosteli:0:1324:9:w2" cs="cs:Urban-Sedmikosteli:0:1279:12:w2" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-67201" cql="q-36" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:1619:1:w32" cs="cs:Vaculik-Cesky_snar:0:1265:1:w17" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-64095" cql="q-36" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:3172:1:w6" cs="cs:Kohout-Hvezdna_hodina:0:3229:1:w7" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-60594" cql="q-36" xml="Balaban-Kudy_sel_andel" en="en:Balaban-Kudy_sel_andel:0:843:6:w10" cs="cs:Balaban-Kudy_sel_andel:0:839:6:w8" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-60584" cql="q-36" xml="Balaban-Kudy_sel_andel" en="en:Balaban-Kudy_sel_andel:0:298:5:w15" cs="cs:Balaban-Kudy_sel_andel:0:299:5:w14" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-67269" cql="q-36" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1371:1:w6" cs="cs:Viewegh-VychovaDivekCR:0:1287:1:w8" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-62961" cql="q-36" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:15:51:w16" cs="cs:Havel-Dalkovy_vyslech:0:14:47:w19" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-64354" cql="q-36" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:29:305:w10" cs="cs:Levy-Umeni_prekladu:0:15:517:w8" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66341" cql="q-36" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:257:2:w10" cs="cs:skvorecky-hrichy_pater:0:255:2:w6" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-59846" cql="q-36" xml="Ajvaz-Druhe_mesto" en="en:Ajvaz-Druhe_mesto:0:113:5:w2" cs="cs:Ajvaz-Druhe_mesto:0:114:5:w4" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66670" cql="q-36" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:928:7:w16" cs="cs:Strouhal-Zivot_Egyptan:0:949:3:w8" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66389" cql="q-36" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:4065:17:w203" cs="cs:Skvorecky-Mirakl:0:4722:13:w166" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66375" cql="q-36" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:2055:2:w3" cs="cs:Skvorecky-Mirakl:0:2337:2:w4" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66359" cql="q-36" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:515:3:w2" cs="cs:Skvorecky-Mirakl:0:611:2:w1" cst="Skute&#x10D;n&#x11B;"/>
+  <item id="ex-65276" cql="q-36" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:1480:6:w18" cs="cs:panek-dejiny_ceskych:0:1255:6:w14" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-67185" cql="q-36" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:345:2:w5" cs="cs:Vaculik-Cesky_snar:0:261:1:w15" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-64191" cql="q-36" xml="kundera-zert" en="en:kundera-zert:0:645:5:w39" cs="cs:kundera-zert:0:663:6:w42" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-63356" cql="q-36" xml="Hulova-Strucne_dejiny" en="en:Hulova-Strucne_dejiny:0:192:2:w12" cs="cs:Hulova-Strucne_dejiny:0:182:2:w17" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-59878" cql="q-36" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:1916:3:w6" cs="cs:ajvaz-prazdne_ulice:0:1624:3:w7" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-65285" cql="q-36" xml="panek-dejiny_ceskych" en="" cs="cs:panek-dejiny_ceskych:0:1409:1:w13" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66672" cql="q-36" xml="Strouhal-Zivot_Egyptan" en="" cs="cs:Strouhal-Zivot_Egyptan:0:1348:5:w31" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-63361" cql="q-36" xml="Hulova-Strucne_dejiny" en="en:Hulova-Strucne_dejiny:0:748:6:w15" cs="cs:Hulova-Strucne_dejiny:0:668:3:w52" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-59880" cql="q-36" xml="ajvaz-prazdne_ulice" en="" cs="cs:ajvaz-prazdne_ulice:0:1714:3:w3" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66427" cql="q-36" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:1874:1:w46" cs="cs:Skvorecky-PribehIng_2:0:1575:2:w7" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-63015" cql="q-36" xml="havel-largo_desolato" en="" cs="cs:havel-largo_desolato:0:846:2:w12" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-64158" cql="q-36" xml="Kundera-Nesmrtelnost" en="en:Kundera-Nesmrtelnost:0:272:1:w4" cs="cs:Kundera-Nesmrtelnost:0:275:1:w3" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-67078" cql="q-36" xml="Topol-Sestra" en="en:Topol-Sestra:0:2710:16:w8" cs="cs:Topol-Sestra:0:2831:15:w6" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66684" cql="q-36" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:1322:2:w4" cs="cs:styblova-skalpel_pros:0:1363:2:w5" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-60598" cql="q-36" xml="Balaban-Mozna_ze_odcha" en="en:Balaban-Mozna_ze_odcha:0:167:7:w12" cs="cs:Balaban-Mozna_ze_odcha:0:173:6:w16" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66666" cql="q-36" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:438:4:w28" cs="cs:Strouhal-Zivot_Egyptan:0:453:6:w3" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-62967" cql="q-36" xml="Havel-Dalkovy_vyslech" en="" cs="cs:Havel-Dalkovy_vyslech:0:42:2:w5" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66343" cql="q-36" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:516:3:w14" cs="cs:skvorecky-hrichy_pater:0:515:3:w14" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-64706" cql="q-36" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:205:6:w23" cs="cs:Lustig-ModlitbaProKHor:0:228:49:w4" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66233" cql="q-36" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:1297:7:w2" cs="cs:sedlacek-ekonomie:0:1250:7:w2" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-60579" cql="q-36" xml="Balaban-Kudy_sel_andel" en="en:Balaban-Kudy_sel_andel:0:139:2:w74" cs="cs:Balaban-Kudy_sel_andel:0:140:2:w68" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-59866" cql="q-36" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:1532:2:w4" cs="cs:ajvaz-prazdne_ulice:0:1254:2:w2" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-65272" cql="q-36" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:1166:3:w18" cs="cs:panek-dejiny_ceskych:0:942:3:w11" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-59886" cql="q-36" xml="ajvaz-prazdne_ulice" en="" cs="cs:ajvaz-prazdne_ulice:0:1784:8:w5" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-59864" cql="q-36" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:1444:1:w21" cs="cs:ajvaz-prazdne_ulice:0:1168:1:w17" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-64364" cql="q-36" xml="Levy-Umeni_prekladu" en="" cs="cs:Levy-Umeni_prekladu:0:45:1640:w7" cst="skute&#x10D;n&#x11B;"/>
+  <item id="ex-66407" cql="q-36" xml="Skvorecky-PribehIng_1" en="en:Skvorecky-PribehIng_1:0:3241:1:w5" cs="cs:Skvorecky-PribehIng_1:0:2460:2:w4" cst="skute&#x10D;n&#x11B;"/>
+</examples>

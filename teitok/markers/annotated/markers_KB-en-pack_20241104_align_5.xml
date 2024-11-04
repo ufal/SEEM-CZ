@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<examples>
+<user id="KB" email="blazkovakate@seznam.cz" name="Kate&#x159;ina Bla&#x17E;kov&#xE1;"/>
+  <item id="ex-60315" cql="q-43" xml="searle-mysl_mozek_veda" en="" cs="cs:searle-mysl_mozek_veda:0:62:5:w28" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59886" cql="q-43" xml="Francis-Chladna_zrada" en="" cs="cs:Francis-Chladna_zrada:0:2387:9:w1" cst="&#xDA;dajn&#x11B;"/>
+  <item id="ex-60165" cql="q-43" xml="obama-zeme_zaslibena" en="" cs="cs:obama-zeme_zaslibena:0:2299:2:w20" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60286" cql="q-43" xml="rowlingova-hpot_relik" en="en:rowlingova-hpot_relik:0:742:1:w10 en:rowlingova-hpot_relik:0:742:1:w11" cs="cs:rowlingova-hpot_relik:0:743:1:w10" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59771" cql="q-43" xml="Barnes-Arthur_a_George" en="" cs="cs:Barnes-Arthur_a_George:0:1575:2:w13" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60023" cql="q-43" xml="Irving-Rok_vdovou" en="en:Irving-Rok_vdovou:0:3373:6:w15" cs="cs:Irving-Rok_vdovou:0:3375:6:w13" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60326" cql="q-43" xml="silva-tajna_sluzba" en="en:silva-tajna_sluzba:0:2481:3:w10 en:silva-tajna_sluzba:0:2481:3:w11" cs="cs:silva-tajna_sluzba:0:2455:3:w16" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60079" cql="q-43" xml="krentz-zajatci_snu" en="" cs="cs:krentz-zajatci_snu:0:3335:3:w18" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59754" cql="q-43" xml="Asimov-Nadace" en="en:Asimov-Nadace:0:2034:1:w16 en:Asimov-Nadace:0:2034:1:w18" cs="cs:Asimov-Nadace:0:2016:1:w13" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59993" cql="q-43" xml="hayek-cesta_do_otro" en="en:hayek-cesta_do_otro:0:97:2:w5" cs="cs:hayek-cesta_do_otro:0:100:2:w6" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59810" cql="q-43" xml="brown-chut_lasky" en="en:brown-chut_lasky:0:1495:1:w14" cs="cs:brown-chut_lasky:0:1483:1:w15" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60321" cql="q-43" xml="shreve-vse_co_pral" en="en:shreve-vse_co_pral:0:445:2:w6" cs="cs:shreve-vse_co_pral:0:455:2:w9" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60323" cql="q-43" xml="shreve-vse_co_pral" en="en:shreve-vse_co_pral:0:694:9:w17" cs="cs:shreve-vse_co_pral:0:713:8:w18" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60183" cql="q-43" xml="OBrien-Treti_straznik" en="" cs="cs:OBrien-Treti_straznik:0:1746:6:w10" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60201" cql="q-43" xml="Orwell-1984" en="en:Orwell-1984:0:1267:16:w42" cs="cs:Orwell-1984:0:1267:16:w33" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60234" cql="q-43" xml="Popper-Otevrena_spol_1" en="en:Popper-Otevrena_spol_1:0:338:9:w16" cs="cs:Popper-Otevrena_spol_1:0:361:9:w11" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59922" cql="q-43" xml="galbraith-smrtici_bila" en="en:galbraith-smrtici_bila:0:1873:2:w4" cs="cs:galbraith-smrtici_bila:0:1870:2:w5" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60317" cql="q-43" xml="searle-mysl_mozek_veda" en="en:searle-mysl_mozek_veda:0:143:5:w6" cs="cs:searle-mysl_mozek_veda:0:143:5:w9" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59765" cql="q-43" xml="banville-more" en="en:banville-more:0:66:11:w5" cs="cs:banville-more:0:68:11:w6" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59755" cql="q-43" xml="asimov-ocelove_jesky" en="en:asimov-ocelove_jesky:0:1029:5:w8" cs="cs:asimov-ocelove_jesky:0:1032:4:w6" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60260" cql="q-43" xml="pynchon-vykrik" en="en:pynchon-vykrik:0:4029:2:w18" cs="cs:pynchon-vykrik:0:3996:2:w15" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59818" cql="q-43" xml="brown-sifra" en="en:brown-sifra:0:4615:2:w12" cs="cs:brown-sifra:0:4264:2:w11" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59971" cql="q-43" xml="Grisham-Kral_advokatu" en="en:Grisham-Kral_advokatu:0:2785:2:w10 en:Grisham-Kral_advokatu:0:2785:2:w28" cs="cs:Grisham-Kral_advokatu:0:1859:2:w12" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60104" cql="q-43" xml="lukacs-churchill" en="" cs="cs:lukacs-churchill:0:96:3:w3" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59709" cql="q-43" xml="adams-restaurant_na_ko" en="en:adams-restaurant_na_ko:0:65:1:w2" cs="cs:adams-restaurant_na_ko:0:32:26:w1" cst="&#xDA;dajn&#x11B;"/>
+  <item id="ex-60171" cql="q-43" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:2820:4:w6" cs="cs:obama-zeme_zaslibena:0:2820:4:w10" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60296" cql="q-43" xml="rowlingova-hpot_vezen" en="en:rowlingova-hpot_vezen:0:671:2:w24" cs="cs:rowlingova-hpot_vezen:0:617:2:w26" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60130" cql="q-43" xml="munro-utek" en="en:munro-utek:0:1338:3:w12" cs="cs:munro-utek:0:1326:3:w15" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60123" cql="q-43" xml="moriarty-sedmilharky" en="en:moriarty-sedmilharky:0:489:4:w29" cs="cs:moriarty-sedmilharky:0:494:4:w19" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60115" cql="q-43" xml="marshall-v_zajeti" en="en:marshall-v_zajeti:0:518:2:w33" cs="cs:marshall-v_zajeti:0:529:2:w33" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60285" cql="q-43" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:3792:2:w4" cs="cs:rowlingova-hpot_pohar:0:3770:2:w2" cst="&#xDA;dajn&#x11B;"/>
+  <item id="ex-60024" cql="q-43" xml="Irving-Svet_podleGarpa" en="en:Irving-Svet_podleGarpa:0:622:3:w7" cs="cs:Irving-Svet_podleGarpa:0:629:3:w5" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60357" cql="q-43" xml="smith-o_krase" en="en:smith-o_krase:0:3367:12:w3" cs="cs:smith-o_krase:0:3363:11:w1" cst="&#xDA;dajn&#x11B;"/>
+  <item id="ex-60290" cql="q-43" xml="rowlingova-hpot_relik" en="en:rowlingova-hpot_relik:0:3914:2:w14 en:rowlingova-hpot_relik:0:3914:2:w15" cs="cs:rowlingova-hpot_relik:0:3908:2:w18" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60204" cql="q-43" xml="Palahniuk-zalknuti" en="en:Palahniuk-zalknuti:0:1363:1:w11" cs="cs:Palahniuk-zalknuti:0:1367:1:w10" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59967" cql="q-43" xml="Grisham-Kral_advokatu" en="en:Grisham-Kral_advokatu:0:2512:2:w18" cs="cs:Grisham-Kral_advokatu:0:1655:2:w18" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59873" cql="q-43" xml="Doyle-Pribehy_Sherlock" en="en:Doyle-Pribehy_Sherlock:0:2200:7:w1 en:Doyle-Pribehy_Sherlock:0:2200:7:w2" cs="cs:Doyle-Pribehy_Sherlock:0:2203:4:w1" cst="&#xDA;dajn&#x11B;"/>
+  <item id="ex-59725" cql="q-43" xml="albright-peklo" en="en:albright-peklo:0:1016:7:w18" cs="cs:albright-peklo:0:987:7:w15" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60028" cql="q-43" xml="Irving-Svet_podleGarpa" en="en:Irving-Svet_podleGarpa:0:4893:1:w4" cs="cs:Irving-Svet_podleGarpa:0:4943:1:w4" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60172" cql="q-43" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:2838:2:w22 en:obama-zeme_zaslibena:0:2838:2:w23" cs="cs:obama-zeme_zaslibena:0:2838:2:w24" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59876" cql="q-43" xml="farrell-nepokoje" en="en:farrell-nepokoje:0:1147:6:w30" cs="cs:farrell-nepokoje:0:1140:6:w23" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59726" cql="q-43" xml="albright-peklo" en="" cs="cs:albright-peklo:0:1016:6:w10" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60160" cql="q-43" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:1945:4:w31" cs="cs:obama-zeme_zaslibena:0:1944:5:w21" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59859" cql="q-43" xml="dawkins-bozi_blud" en="en:dawkins-bozi_blud:0:292:3:w16" cs="cs:dawkins-bozi_blud:0:308:3:w12" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60342" cql="q-43" xml="Singer-RodinaMoskatova" en="en:Singer-RodinaMoskatova:0:4037:13:w13" cs="cs:Singer-RodinaMoskatova:0:4059:13:w9" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60319" cql="q-43" xml="searle-mysl_mozek_veda" en="" cs="cs:searle-mysl_mozek_veda:0:237:5:w4" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59929" cql="q-43" xml="galbraith-smrtici_bila" en="en:galbraith-smrtici_bila:0:4445:3:w7" cs="cs:galbraith-smrtici_bila:0:4436:4:w6" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60186" cql="q-43" xml="OCallaghan-nas_coney" en="en:OCallaghan-nas_coney:0:178:4:w20" cs="cs:OCallaghan-nas_coney:0:176:4:w17" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60178" cql="q-43" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:3106:3:w12" cs="cs:obama-zeme_zaslibena:0:3107:3:w18" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-59767" cql="q-43" xml="Barnes-Arthur_a_George" en="en:Barnes-Arthur_a_George:0:336:1:w22" cs="cs:Barnes-Arthur_a_George:0:344:1:w18" cst="&#xFA;dajn&#x11B;"/>
+</examples>
