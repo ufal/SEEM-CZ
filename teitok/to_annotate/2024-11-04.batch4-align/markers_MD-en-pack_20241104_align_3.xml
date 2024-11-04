@@ -1,51 +1,53 @@
-<examples><item id="ex-61023" cql="q-40" xml="schmidt-google" en="" cs="cs:schmidt-google:0:857:3:w1" cst="Stěží" />
-<item id="ex-60110" cql="q-40" xml="Dickens-NadejneVyhlidk" en="en:Dickens-NadejneVyhlidk:0:1098:1:w21" cs="cs:Dickens-NadejneVyhlidk:0:1095:1:w16" cst="stěží" />
-<item id="ex-60682" cql="q-40" xml="Lindseyova-Zamilovany" en="en:Lindseyova-Zamilovany:0:1545:3:w4" cs="cs:Lindseyova-Zamilovany:0:1554:3:w3" cst="stěží" />
-<item id="ex-60965" cql="q-40" xml="robilant-milenci_benat" en="en:robilant-milenci_benat:0:347:1:w15" cs="cs:robilant-milenci_benat:0:199:8:w14" cst="stěží" />
-<item id="ex-59888" cql="q-40" xml="Banks-Most" en="" cs="cs:Banks-Most:0:1816:5:w24" cst="stěží" />
-<item id="ex-60370" cql="q-40" xml="Greene-vesmir" en="en:Greene-vesmir:0:115:2:w11" cs="cs:Greene-vesmir:0:118:2:w12" cst="stěží" />
-<item id="ex-61045" cql="q-40" xml="Singer-RodinaMoskatova" en="" cs="cs:Singer-RodinaMoskatova:0:3742:9:w1" cst="Stěží" />
-<item id="ex-60441" cql="q-40" xml="Hemingway-OstrovyUpr_p" en="en:Hemingway-OstrovyUpr_p:0:1684:2:w2" cs="cs:Hemingway-OstrovyUpr_p:0:1675:2:w6" cst="stěží" />
-<item id="ex-59863" cql="q-40" xml="Asimov-Nadace" en="" cs="cs:Asimov-Nadace:0:235:2:w8" cst="stěží" />
-<item id="ex-60249" cql="q-40" xml="Fromm-Mit_nebo_byt" en="en:Fromm-Mit_nebo_byt:0:124:1:w27" cs="cs:Fromm-Mit_nebo_byt:0:96:1:w24" cst="stěží" />
-<item id="ex-59948" cql="q-40" xml="brown-andele_demoni" en="en:brown-andele_demoni:0:2419:2:w12 en:brown-andele_demoni:0:2419:2:w15" cs="cs:brown-andele_demoni:0:2044:3:w6" cst="stěží" />
-<item id="ex-61033" cql="q-40" xml="siddons-bezpec_vysiny" en="en:siddons-bezpec_vysiny:0:2623:2:w3" cs="cs:siddons-bezpec_vysiny:0:2611:2:w2" cst="stěží" />
-<item id="ex-61040" cql="q-40" xml="Singer-RodinaMoskatova" en="en:Singer-RodinaMoskatova:0:1292:1:w13" cs="cs:Singer-RodinaMoskatova:0:1293:1:w10" cst="stěží" />
-<item id="ex-60735" cql="q-40" xml="McCarthy-Hranice" en="en:McCarthy-Hranice:0:3233:1:w35 en:McCarthy-Hranice:0:3233:1:w36" cs="cs:McCarthy-Hranice:0:3240:1:w32" cst="stěží" />
-<item id="ex-60764" cql="q-40" xml="munro-nepritel_pritel" en="" cs="cs:munro-nepritel_pritel:0:2489:5:w12" cst="stěží" />
-<item id="ex-60797" cql="q-40" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:2324:5:w45" cs="cs:obama-zeme_zaslibena:0:2324:5:w43" cst="stěží" />
-<item id="ex-60177" cql="q-40" xml="farrell-nepokoje" en="" cs="cs:farrell-nepokoje:0:875:3:w17" cst="stěží" />
-<item id="ex-61027" cql="q-40" xml="searle-mysl_mozek_veda" en="" cs="cs:searle-mysl_mozek_veda:0:133:9:w17" cst="stěží" />
-<item id="ex-59876" cql="q-40" xml="atwood-muzeum_zkamenel" en="" cs="cs:atwood-muzeum_zkamenel:0:1038:4:w21" cst="stěží" />
-<item id="ex-59866" cql="q-40" xml="asimov-ocelove_jesky" en="" cs="cs:asimov-ocelove_jesky:0:485:1:w3" cst="stěží" />
-<item id="ex-60900" cql="q-40" xml="Popper-Otevrena_spol_1" en="en:Popper-Otevrena_spol_1:0:447:3:w14" cs="cs:Popper-Otevrena_spol_1:0:475:3:w15" cst="stěží" />
-<item id="ex-59963" cql="q-40" xml="Brown-Pavucina_lzi" en="en:Brown-Pavucina_lzi:0:282:1:w3" cs="cs:Brown-Pavucina_lzi:0:285:1:w2" cst="stěží" />
-<item id="ex-60239" cql="q-40" xml="fowles-franc_milenka" en="en:fowles-franc_milenka:0:2704:1:w27 en:fowles-franc_milenka:0:2704:1:w28 en:fowles-franc_milenka:0:2704:1:w29" cs="cs:fowles-franc_milenka:0:2716:1:w28" cst="stěží" />
-<item id="ex-60501" cql="q-40" xml="Irving-Svet_podleGarpa" en="" cs="cs:Irving-Svet_podleGarpa:0:799:2:w15" cst="stěží" />
-<item id="ex-59710" cql="q-40" xml="adams-daleka_cesta" en="en:adams-daleka_cesta:0:1058:4:w17" cs="cs:adams-daleka_cesta:0:1057:4:w12" cst="stěží" />
-<item id="ex-60704" cql="q-40" xml="Lovelock-Gaia_Novy_poh" en="en:Lovelock-Gaia_Novy_poh:0:84:5:w12" cs="cs:Lovelock-Gaia_Novy_poh:0:92:5:w12" cst="stěží" />
-<item id="ex-60984" cql="q-40" xml="rowlingova-hpot_pohar" en="" cs="cs:rowlingova-hpot_pohar:0:3338:2:w5" cst="stěží" />
-<item id="ex-60561" cql="q-40" xml="Kesey-Vyhodme_ho_z_kol" en="en:Kesey-Vyhodme_ho_z_kol:0:59:13:w10 en:Kesey-Vyhodme_ho_z_kol:0:59:13:w2" cs="cs:Kesey-Vyhodme_ho_z_kol:0:56:14:w11" cst="stěží" />
-<item id="ex-60535" cql="q-40" xml="james-plany_touhy" en="en:james-plany_touhy:0:827:6:w10" cs="cs:james-plany_touhy:0:827:6:w9" cst="stěží" />
-<item id="ex-60519" cql="q-40" xml="Jackson-Petka" en="en:Jackson-Petka:0:1171:2:w42" cs="cs:Jackson-Petka:0:1167:4:w28" cst="stěží" />
-<item id="ex-60963" cql="q-40" xml="robilant-milenci_benat" en="en:robilant-milenci_benat:0:14:1:w18" cs="cs:robilant-milenci_benat:0:13:1:w18" cst="stěží" />
-<item id="ex-60371" cql="q-40" xml="Greene-vesmir" en="" cs="cs:Greene-vesmir:0:347:11:w8" cst="stěží" />
-<item id="ex-61071" cql="q-40" xml="Steel-Druha_sance" en="" cs="cs:Steel-Druha_sance:0:76:8:w21" cst="stěží" />
-<item id="ex-60972" cql="q-40" xml="rowlingova-hpot_kamen" en="" cs="cs:rowlingova-hpot_kamen:0:805:8:w9" cst="stěží" />
-<item id="ex-60781" cql="q-40" xml="obama-zeme_zaslibena" en="" cs="cs:obama-zeme_zaslibena:0:260:7:w10" cst="stěží" />
-<item id="ex-60231" cql="q-40" xml="fowles-franc_milenka" en="en:fowles-franc_milenka:0:863:4:w16" cs="cs:fowles-franc_milenka:0:872:4:w37" cst="stěží" />
-<item id="ex-60075" cql="q-40" xml="clinton-ziva_historie" en="en:clinton-ziva_historie:0:750:4:w2 en:clinton-ziva_historie:0:750:4:w3" cs="cs:clinton-ziva_historie:0:753:4:w1" cst="Stěží" />
-<item id="ex-59743" cql="q-40" xml="aldiss-helikonie_jaro" en="en:aldiss-helikonie_jaro:0:2536:1:w6" cs="cs:aldiss-helikonie_jaro:0:2480:1:w5" cst="stěží" />
-<item id="ex-60380" cql="q-40" xml="Greene-vesmir" en="" cs="cs:Greene-vesmir:0:769:2:w11" cst="stěží" />
-<item id="ex-60706" cql="q-40" xml="Lovelock-Gaia_Novy_poh" en="en:Lovelock-Gaia_Novy_poh:0:200:1:w10" cs="cs:Lovelock-Gaia_Novy_poh:0:212:1:w10" cst="stěží" />
-<item id="ex-60080" cql="q-40" xml="clinton-ziva_historie" en="en:clinton-ziva_historie:0:1190:2:w3" cs="cs:clinton-ziva_historie:0:1195:2:w1" cst="Stěží" />
-<item id="ex-59745" cql="q-40" xml="aldiss-helikonie_jaro" en="en:aldiss-helikonie_jaro:0:3035:1:w26" cs="cs:aldiss-helikonie_jaro:0:2961:1:w22" cst="stěží" />
-<item id="ex-60652" cql="q-40" xml="Lessingova-Trava_zpiva" en="en:Lessingova-Trava_zpiva:0:811:2:w4" cs="cs:Lessingova-Trava_zpiva:0:827:2:w3" cst="stěží" />
-<item id="ex-60046" cql="q-40" xml="Clancy-Spinava_hra" en="en:Clancy-Spinava_hra:0:1793:12:w15" cs="cs:Clancy-Spinava_hra:0:1786:12:w18" cst="stěží" />
-<item id="ex-61069" cql="q-40" xml="smith-sberatel" en="en:smith-sberatel:0:2790:1:w17 en:smith-sberatel:0:2790:1:w18" cs="cs:smith-sberatel:0:2696:1:w13" cst="stěží" />
-<item id="ex-61031" cql="q-40" xml="siddons-bezpec_vysiny" en="" cs="cs:siddons-bezpec_vysiny:0:1269:4:w13" cst="stěží" />
-<item id="ex-60191" cql="q-40" xml="Fieldingova-panenka" en="" cs="cs:Fieldingova-panenka:0:2856:5:w3" cst="stěží" />
-<item id="ex-60740" cql="q-40" xml="McEwan_Na-Chesilske" en="" cs="cs:McEwan_Na-Chesilske:0:111:1:w9" cst="stěží" />
-<item id="ex-60718" cql="q-40" xml="ludlum-bourneuv_mytus" en="en:ludlum-bourneuv_mytus:0:4739:6:w8" cs="cs:ludlum-bourneuv_mytus:0:4753:9:w6" cst="stěží" />
-<item id="ex-59880" cql="q-40" xml="atwood-muzeum_zkamenel" en="" cs="cs:atwood-muzeum_zkamenel:0:1613:4:w1" cst="stěží" />
+<?xml version="1.0"?>
+<examples>
+  <item id="ex-61023" cql="q-40" xml="schmidt-google" en="" cs="cs:schmidt-google:0:857:3:w1" cst="St&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60110" cql="q-40" xml="Dickens-NadejneVyhlidk" en="en:Dickens-NadejneVyhlidk:0:1098:1:w21" cs="cs:Dickens-NadejneVyhlidk:0:1095:1:w16" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60682" cql="q-40" xml="Lindseyova-Zamilovany" en="en:Lindseyova-Zamilovany:0:1545:3:w4" cs="cs:Lindseyova-Zamilovany:0:1554:3:w3" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60965" cql="q-40" xml="robilant-milenci_benat" en="en:robilant-milenci_benat:0:347:1:w15" cs="cs:robilant-milenci_benat:0:199:8:w14" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-59888" cql="q-40" xml="Banks-Most" en="" cs="cs:Banks-Most:0:1816:5:w24" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60370" cql="q-40" xml="Greene-vesmir" en="en:Greene-vesmir:0:115:2:w11" cs="cs:Greene-vesmir:0:118:2:w12" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-61045" cql="q-40" xml="Singer-RodinaMoskatova" en="" cs="cs:Singer-RodinaMoskatova:0:3742:9:w1" cst="St&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60441" cql="q-40" xml="Hemingway-OstrovyUpr_p" en="en:Hemingway-OstrovyUpr_p:0:1684:2:w2" cs="cs:Hemingway-OstrovyUpr_p:0:1675:2:w6" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-59863" cql="q-40" xml="Asimov-Nadace" en="" cs="cs:Asimov-Nadace:0:235:2:w8" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60249" cql="q-40" xml="Fromm-Mit_nebo_byt" en="en:Fromm-Mit_nebo_byt:0:124:1:w27" cs="cs:Fromm-Mit_nebo_byt:0:96:1:w24" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-59948" cql="q-40" xml="brown-andele_demoni" en="en:brown-andele_demoni:0:2419:2:w12 en:brown-andele_demoni:0:2419:2:w15" cs="cs:brown-andele_demoni:0:2044:3:w6" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-61033" cql="q-40" xml="siddons-bezpec_vysiny" en="en:siddons-bezpec_vysiny:0:2623:2:w3" cs="cs:siddons-bezpec_vysiny:0:2611:2:w2" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-61040" cql="q-40" xml="Singer-RodinaMoskatova" en="en:Singer-RodinaMoskatova:0:1292:1:w13" cs="cs:Singer-RodinaMoskatova:0:1293:1:w10" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60735" cql="q-40" xml="McCarthy-Hranice" en="en:McCarthy-Hranice:0:3233:1:w35 en:McCarthy-Hranice:0:3233:1:w36" cs="cs:McCarthy-Hranice:0:3240:1:w32" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60764" cql="q-40" xml="munro-nepritel_pritel" en="" cs="cs:munro-nepritel_pritel:0:2489:5:w12" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60797" cql="q-40" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:2324:5:w45" cs="cs:obama-zeme_zaslibena:0:2324:5:w43" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60177" cql="q-40" xml="farrell-nepokoje" en="" cs="cs:farrell-nepokoje:0:875:3:w17" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-61027" cql="q-40" xml="searle-mysl_mozek_veda" en="" cs="cs:searle-mysl_mozek_veda:0:133:9:w17" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-59876" cql="q-40" xml="atwood-muzeum_zkamenel" en="" cs="cs:atwood-muzeum_zkamenel:0:1038:4:w21" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-59866" cql="q-40" xml="asimov-ocelove_jesky" en="" cs="cs:asimov-ocelove_jesky:0:485:1:w3" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60900" cql="q-40" xml="Popper-Otevrena_spol_1" en="en:Popper-Otevrena_spol_1:0:447:3:w14" cs="cs:Popper-Otevrena_spol_1:0:475:3:w15" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-59963" cql="q-40" xml="Brown-Pavucina_lzi" en="en:Brown-Pavucina_lzi:0:282:1:w3" cs="cs:Brown-Pavucina_lzi:0:285:1:w2" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60239" cql="q-40" xml="fowles-franc_milenka" en="en:fowles-franc_milenka:0:2704:1:w27 en:fowles-franc_milenka:0:2704:1:w28 en:fowles-franc_milenka:0:2704:1:w29" cs="cs:fowles-franc_milenka:0:2716:1:w28" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60501" cql="q-40" xml="Irving-Svet_podleGarpa" en="" cs="cs:Irving-Svet_podleGarpa:0:799:2:w15" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-59710" cql="q-40" xml="adams-daleka_cesta" en="en:adams-daleka_cesta:0:1058:4:w17" cs="cs:adams-daleka_cesta:0:1057:4:w12" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60704" cql="q-40" xml="Lovelock-Gaia_Novy_poh" en="en:Lovelock-Gaia_Novy_poh:0:84:5:w12" cs="cs:Lovelock-Gaia_Novy_poh:0:92:5:w12" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60984" cql="q-40" xml="rowlingova-hpot_pohar" en="" cs="cs:rowlingova-hpot_pohar:0:3338:2:w5" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60561" cql="q-40" xml="Kesey-Vyhodme_ho_z_kol" en="en:Kesey-Vyhodme_ho_z_kol:0:59:13:w10 en:Kesey-Vyhodme_ho_z_kol:0:59:13:w2" cs="cs:Kesey-Vyhodme_ho_z_kol:0:56:14:w11" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60535" cql="q-40" xml="james-plany_touhy" en="en:james-plany_touhy:0:827:6:w10" cs="cs:james-plany_touhy:0:827:6:w9" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60519" cql="q-40" xml="Jackson-Petka" en="en:Jackson-Petka:0:1171:2:w42" cs="cs:Jackson-Petka:0:1167:4:w28" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60963" cql="q-40" xml="robilant-milenci_benat" en="en:robilant-milenci_benat:0:14:1:w18" cs="cs:robilant-milenci_benat:0:13:1:w18" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60371" cql="q-40" xml="Greene-vesmir" en="" cs="cs:Greene-vesmir:0:347:11:w8" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-61071" cql="q-40" xml="Steel-Druha_sance" en="" cs="cs:Steel-Druha_sance:0:76:8:w21" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60972" cql="q-40" xml="rowlingova-hpot_kamen" en="" cs="cs:rowlingova-hpot_kamen:0:805:8:w9" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60781" cql="q-40" xml="obama-zeme_zaslibena" en="" cs="cs:obama-zeme_zaslibena:0:260:7:w10" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60231" cql="q-40" xml="fowles-franc_milenka" en="en:fowles-franc_milenka:0:863:4:w16" cs="cs:fowles-franc_milenka:0:872:4:w37" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60075" cql="q-40" xml="clinton-ziva_historie" en="en:clinton-ziva_historie:0:750:4:w2 en:clinton-ziva_historie:0:750:4:w3" cs="cs:clinton-ziva_historie:0:753:4:w1" cst="St&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-59743" cql="q-40" xml="aldiss-helikonie_jaro" en="en:aldiss-helikonie_jaro:0:2536:1:w6" cs="cs:aldiss-helikonie_jaro:0:2480:1:w5" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60380" cql="q-40" xml="Greene-vesmir" en="" cs="cs:Greene-vesmir:0:769:2:w11" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60706" cql="q-40" xml="Lovelock-Gaia_Novy_poh" en="en:Lovelock-Gaia_Novy_poh:0:200:1:w10" cs="cs:Lovelock-Gaia_Novy_poh:0:212:1:w10" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60080" cql="q-40" xml="clinton-ziva_historie" en="en:clinton-ziva_historie:0:1190:2:w3" cs="cs:clinton-ziva_historie:0:1195:2:w1" cst="St&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-59745" cql="q-40" xml="aldiss-helikonie_jaro" en="en:aldiss-helikonie_jaro:0:3035:1:w26" cs="cs:aldiss-helikonie_jaro:0:2961:1:w22" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60652" cql="q-40" xml="Lessingova-Trava_zpiva" en="en:Lessingova-Trava_zpiva:0:811:2:w4" cs="cs:Lessingova-Trava_zpiva:0:827:2:w3" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60046" cql="q-40" xml="Clancy-Spinava_hra" en="en:Clancy-Spinava_hra:0:1793:12:w15" cs="cs:Clancy-Spinava_hra:0:1786:12:w18" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-61069" cql="q-40" xml="smith-sberatel" en="en:smith-sberatel:0:2790:1:w17 en:smith-sberatel:0:2790:1:w18" cs="cs:smith-sberatel:0:2696:1:w13" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-61031" cql="q-40" xml="siddons-bezpec_vysiny" en="" cs="cs:siddons-bezpec_vysiny:0:1269:4:w13" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60191" cql="q-40" xml="Fieldingova-panenka" en="" cs="cs:Fieldingova-panenka:0:2856:5:w3" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60740" cql="q-40" xml="McEwan_Na-Chesilske" en="" cs="cs:McEwan_Na-Chesilske:0:111:1:w9" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-60718" cql="q-40" xml="ludlum-bourneuv_mytus" en="en:ludlum-bourneuv_mytus:0:4739:6:w8" cs="cs:ludlum-bourneuv_mytus:0:4753:9:w6" cst="st&#x11B;&#x17E;&#xED;"/>
+  <item id="ex-59880" cql="q-40" xml="atwood-muzeum_zkamenel" en="" cs="cs:atwood-muzeum_zkamenel:0:1613:4:w1" cst="st&#x11B;&#x17E;&#xED;"/>
 </examples>
