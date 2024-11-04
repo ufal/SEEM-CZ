@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
   <item id="ex-70822" cql="q-37" xml="kundera-zert" en="en:kundera-zert:0:1236:6:w3" cs="cs:kundera-zert:0:1264:6:w3" cst="snad"/>
   <item id="ex-66250" cql="q-37" xml="Fuks-MysiNatalieMoosha" en="" cs="cs:Fuks-MysiNatalieMoosha:0:1212:4:w3" cst="snad"/>
   <item id="ex-78162" cql="q-37" xml="Topol-Chladnou_zemi" en="en:Topol-Chladnou_zemi:0:246:1:w24 en:Topol-Chladnou_zemi:0:246:1:w25" cs="cs:Topol-Chladnou_zemi:0:270:1:w27" cst="snad"/>

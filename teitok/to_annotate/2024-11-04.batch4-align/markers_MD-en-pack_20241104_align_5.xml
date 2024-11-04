@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
   <item id="ex-62413" cql="q-45" xml="Hawking-Klic_k_vesmiru" en="en:Hawking-Klic_k_vesmiru:0:990:5:w16" cs="cs:Hawking-Klic_k_vesmiru:0:1053:4:w9" cst="v&#xE1;&#x17E;n&#x11B;"/>
   <item id="ex-66096" cql="q-45" xml="Styron-Sofiina_volba" en="en:Styron-Sofiina_volba:0:317:1:w12" cs="cs:Styron-Sofiina_volba:0:327:1:w10" cst="v&#xE1;&#x17E;n&#x11B;"/>
   <item id="ex-60646" cql="q-45" xml="Bradbury-451_stupnu_F" en="" cs="cs:Bradbury-451_stupnu_F:0:196:2:w6" cst="v&#xE1;&#x17E;n&#x11B;"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="KB" email="blazkovakate@seznam.cz" name="Kate&#x159;ina Bla&#x17E;kov&#xE1;"/>
   <item id="ex-62762" cql="q-38" xml="grisham-bratrstvo" en="" cs="cs:grisham-bratrstvo:0:1126:1:w1" cst="Sotva"/>
   <item id="ex-60714" cql="q-38" xml="brown-sifra" en="" cs="cs:brown-sifra:0:1537:2:w6" cst="sotva"/>
   <item id="ex-65349" cql="q-38" xml="Roth-lidska_skvrna" en="en:Roth-lidska_skvrna:0:484:182:w34" cs="cs:Roth-lidska_skvrna:0:506:179:w31" cst="sotva"/>

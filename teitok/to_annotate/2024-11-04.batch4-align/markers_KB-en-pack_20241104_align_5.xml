@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="KB" email="blazkovakate@seznam.cz" name="Kate&#x159;ina Bla&#x17E;kov&#xE1;"/>
   <item id="ex-60315" cql="q-43" xml="searle-mysl_mozek_veda" en="" cs="cs:searle-mysl_mozek_veda:0:62:5:w28" cst="&#xFA;dajn&#x11B;"/>
   <item id="ex-59886" cql="q-43" xml="Francis-Chladna_zrada" en="" cs="cs:Francis-Chladna_zrada:0:2387:9:w1" cst="&#xDA;dajn&#x11B;"/>
   <item id="ex-60165" cql="q-43" xml="obama-zeme_zaslibena" en="" cs="cs:obama-zeme_zaslibena:0:2299:2:w20" cst="&#xFA;dajn&#x11B;"/>

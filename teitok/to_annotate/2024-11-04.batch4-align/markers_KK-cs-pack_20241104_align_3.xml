@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="KK" email="kyckova2@seznam.cz" name="Karol&#xED;na K&#xFD;&#x10D;kov&#xE1;"/>
   <item id="ex-60579" cql="q-40" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:437:2:w12 en:Kohout-Hvezdna_hodina:0:437:2:w16" cs="cs:Kohout-Hvezdna_hodina:0:440:2:w11" cst="st&#x11B;&#x17E;&#xED;"/>
   <item id="ex-61182" cql="q-40" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1602:2:w4" cs="cs:Viewegh-VychovaDivekCR:0:1503:3:w5" cst="st&#x11B;&#x17E;&#xED;"/>
   <item id="ex-59997" cql="q-40" xml="Capek-Valka_s_mloky" en="en:Capek-Valka_s_mloky:0:1207:13:w14 en:Capek-Valka_s_mloky:0:1207:13:w16" cs="cs:Capek-Valka_s_mloky:0:1351:15:w11" cst="st&#x11B;&#x17E;&#xED;"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
   <item id="ex-62643" cql="q-44" xml="fowles-sberatel" en="en:fowles-sberatel:0:2424:5:w2" cs="cs:fowles-sberatel:0:2413:5:w1" cst="Ur&#x10D;it&#x11B;"/>
   <item id="ex-66816" cql="q-44" xml="Pratchett-Soudne_sestr" en="" cs="cs:Pratchett-Soudne_sestr:0:3447:4:w14" cst="ur&#x10D;it&#x11B;"/>
   <item id="ex-68455" cql="q-44" xml="Tolkien-Pan_prstenu_3" en="en:Tolkien-Pan_prstenu_3:0:2175:1:w18" cs="cs:Tolkien-Pan_prstenu_3:0:2153:1:w17" cst="ur&#x10D;it&#x11B;"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
   <item id="ex-62323" cql="q-36" xml="franzen-rozhreseni" en="" cs="cs:franzen-rozhreseni:0:4488:1:w12" cst="skute&#x10D;n&#x11B;"/>
   <item id="ex-66780" cql="q-36" xml="Styron-Sofiina_volba" en="" cs="cs:Styron-Sofiina_volba:0:727:6:w6" cst="skute&#x10D;n&#x11B;"/>
   <item id="ex-60725" cql="q-36" xml="barnes-zadny_duvod" en="en:barnes-zadny_duvod:0:508:5:w2" cs="cs:barnes-zadny_duvod:0:508:5:w10" cst="skute&#x10D;n&#x11B;"/>

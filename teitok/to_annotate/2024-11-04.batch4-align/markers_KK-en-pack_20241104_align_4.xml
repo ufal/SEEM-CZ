@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="KK" email="kyckova2@seznam.cz" name="Karol&#xED;na K&#xFD;&#x10D;kov&#xE1;"/>
   <item id="ex-65472" cql="q-37" xml="Forsyth-Ctvrty_protoko" en="en:Forsyth-Ctvrty_protoko:0:1444:2:w8" cs="cs:Forsyth-Ctvrty_protoko:0:1483:1:w6" cst="snad"/>
   <item id="ex-75733" cql="q-37" xml="rowling-princ" en="en:rowling-princ:0:4924:1:w1" cs="cs:rowling-princ:0:4801:1:w1" cst="Snad"/>
   <item id="ex-61870" cql="q-37" xml="bellow-dobrodruzstvi" en="" cs="cs:bellow-dobrodruzstvi:0:262:10:w2" cst="snad"/>

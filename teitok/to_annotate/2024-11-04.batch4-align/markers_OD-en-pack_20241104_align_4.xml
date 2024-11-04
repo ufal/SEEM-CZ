@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
   <item id="ex-66244" cql="q-42" xml="grisham-klient" en="en:grisham-klient:0:3851:2:w16" cs="cs:grisham-klient:0:3899:3:w16" cst="t&#x159;eba"/>
   <item id="ex-75331" cql="q-42" xml="Tolkien-Pan_prstenu_2" en="" cs="cs:Tolkien-Pan_prstenu_2:0:1256:6:w1" cst="T&#x159;eba"/>
   <item id="ex-62100" cql="q-42" xml="Brown-Pavucina_lzi" en="en:Brown-Pavucina_lzi:0:1321:2:w3" cs="cs:Brown-Pavucina_lzi:0:1327:1:w3" cst="t&#x159;eba"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
   <item id="ex-61180" cql="q-41" xml="klima-leto" en="" cs="cs:klima-leto:0:396:2:w19" cst="t&#x11B;&#x17E;ko"/>
   <item id="ex-62275" cql="q-41" xml="Urban-Sedmikosteli" en="en:Urban-Sedmikosteli:0:1196:3:w1" cs="cs:Urban-Sedmikosteli:0:1154:2:w2" cst="t&#x11B;&#x17E;ko"/>
   <item id="ex-60394" cql="q-41" xml="Douskova-Hrdy_Budzes" en="en:Douskova-Hrdy_Budzes:0:436:3:w25" cs="cs:Douskova-Hrdy_Budzes:0:416:3:w20" cst="t&#x11B;&#x17E;ko"/>

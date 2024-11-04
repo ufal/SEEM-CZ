@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <examples>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
   <item id="ex-61023" cql="q-40" xml="schmidt-google" en="" cs="cs:schmidt-google:0:857:3:w1" cst="St&#x11B;&#x17E;&#xED;"/>
   <item id="ex-60110" cql="q-40" xml="Dickens-NadejneVyhlidk" en="en:Dickens-NadejneVyhlidk:0:1098:1:w21" cs="cs:Dickens-NadejneVyhlidk:0:1095:1:w16" cst="st&#x11B;&#x17E;&#xED;"/>
   <item id="ex-60682" cql="q-40" xml="Lindseyova-Zamilovany" en="en:Lindseyova-Zamilovany:0:1545:3:w4" cs="cs:Lindseyova-Zamilovany:0:1554:3:w3" cst="st&#x11B;&#x17E;&#xED;"/>
