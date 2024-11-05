@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <examples>
 <user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
-  <item id="ex-50804" cql="q-33" xml="skvorecky-hrichy_pater" en="-" cs="cs:skvorecky-hrichy_pater:0:1131:2:w5" cst="p&#x159;irozen&#x11B;" alignchecked="0" ent=""/>
+  <item id="ex-50804" cql="q-33" xml="skvorecky-hrichy_pater" en="-" cs="cs:skvorecky-hrichy_pater:0:1131:2:w5" cst="p&#x159;irozen&#x11B;" alignchecked="1" ent=""/>
   <item id="ex-50270" cql="q-33" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:809:6:w1" cs="cs:Kohout-Hvezdna_hodina:0:829:4:w4" cst="p&#x159;irozen&#x11B;" alignchecked="1" ent="Naturally"/>
   <item id="ex-50884" cql="q-33" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:2070:1:w1" cs="cs:Skvorecky-PribehIng_2:0:1719:5:w3" cst="p&#x159;irozen&#x11B;" alignchecked="1" ent="Naturally"/>
   <item id="ex-51011" cql="q-33" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:743:5:w7" cs="cs:Vaculik-Cesky_snar:0:578:4:w15" cst="p&#x159;irozen&#x11B;" alignchecked="1" ent="natural"/>
@@ -33,7 +33,7 @@
   <item id="ex-50888" cql="q-33" xml="Skvorecky-PribehIng_2" en="X" cs="cs:Skvorecky-PribehIng_2:0:2525:2:w5" cst="p&#x159;irozen&#x11B;" alignchecked="1" ent=""/>
   <item id="ex-50826" cql="q-33" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:563:1:w1" cs="cs:Skvorecky-Mirakl:0:661:1:w1" cst="P&#x159;irozen&#x11B;" alignchecked="1" ent="Naturally"/>
   <item id="ex-50225" cql="q-33" xml="Jirotka-Saturnin" en="en:Jirotka-Saturnin:0:319:5:w1" cs="cs:Jirotka-Saturnin:0:390:5:w1" cst="P&#x159;irozen&#x11B;" alignchecked="1" ent="Naturally"/>
-  <item id="ex-50801" cql="q-33" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:1110:8:w1" cs="cs:skvorecky-hrichy_pater:0:1109:7:w9" cst="p&#x159;irozen&#x11B;" ent="True"/>
+  <item id="ex-50801" cql="q-33" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:1110:8:w1" cs="cs:skvorecky-hrichy_pater:0:1109:7:w9" cst="p&#x159;irozen&#x11B;" ent="True" alignchecked="1"/>
   <item id="ex-50660" cql="q-33" xml="platzova-anarchista" en="en:platzova-anarchista:0:991:1:w13" cs="cs:platzova-anarchista:0:1009:1:w13" cst="p&#x159;irozen&#x11B;" alignchecked="1" ent="inherently"/>
   <item id="ex-50796" cql="q-33" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:862:3:w2" cs="cs:skvorecky-hrichy_pater:0:862:8:w1" cst="P&#x159;irozen&#x11B;" alignchecked="1" ent="Sure"/>
   <item id="ex-50966" cql="q-33" xml="tuckova-vyhnani_Gerty" en="en:tuckova-vyhnani_Gerty:0:2190:3:w15" cs="cs:tuckova-vyhnani_Gerty:0:2212:3:w14" cst="p&#x159;irozen&#x11B;" alignchecked="1" ent="naturally"/>
