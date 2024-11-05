@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <examples>
-<user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
+<user id="VP" email="vladimir.petkevic@ff.cuni.cz" name="Vladim&#xED;r Petkevi&#x10D;"/>
   <item id="ex-59291" cql="q-35" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:1383:1:w12 en:Viewegh-Vybijena:0:1383:1:w13 en:Viewegh-Vybijena:0:1383:1:w14 en:Viewegh-Vybijena:0:1383:1:w15 en:Viewegh-Vybijena:0:1383:1:w16 en:Viewegh-Vybijena:0:1383:1:w17 en:Viewegh-Vybijena:0:1383:1:w18 en:Viewegh-Vybijena:0:1383:1:w19 en:Viewegh-Vybijena:0:1383:1:w20 en:Viewegh-Vybijena:0:1383:1:w21 en:Viewegh-Vybijena:0:1383:1:w22" cs="cs:Viewegh-Vybijena:0:1392:1:w5" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="as if it were the most natural thing in the world"/>
   <item id="ex-54643" cql="q-35" xml="Kundera-Nesmrtelnost" en="en:Kundera-Nesmrtelnost:0:210:2:w5 en:Kundera-Nesmrtelnost:0:210:2:w6" cs="cs:Kundera-Nesmrtelnost:0:213:2:w3" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-58904" cql="q-35" xml="Topol-Chladnou_zemi" en="en:Topol-Chladnou_zemi:0:117:1:w12" cs="cs:Topol-Chladnou_zemi:0:129:1:w11" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="still"/>
