@@ -42,7 +42,7 @@ def main():
             itemelem.attrib["en"] = envalue
             logging.debug(f"Storing aligned ids {envalue} into the annotation item {itemelem.attrib['id']}")
 
-    input_doc.xml.write(sys.stdout, encoding="unicode")
+    input_doc.xml.write(sys.stdout, encoding="unicode", xml_declaration=True)
 
 if __name__ == "__main__":
     main()
