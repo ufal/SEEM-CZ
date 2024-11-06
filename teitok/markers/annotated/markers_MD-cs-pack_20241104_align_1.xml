@@ -40,15 +40,15 @@
   <item id="ex-70292" cql="q-37" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:2239:1:w5" cs="cs:Kohout-Hvezdna_hodina:0:2280:1:w3" cst="snad" alignchecked="1" ent="maybe"/>
   <item id="ex-60199" cql="q-37" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:577:3:w25" cs="cs:Ajvaz-Zlaty_vek:0:558:2:w41" cst="snad" alignchecked="1" ent="Book&#x2014;perhaps"/>
   <item id="ex-66247" cql="q-37" xml="Fuks-MysiNatalieMoosha" en="en:Fuks-MysiNatalieMoosha:0:1237:1:w18" cs="cs:Fuks-MysiNatalieMoosha:0:1184:1:w10" cst="snad" alignchecked="1" ent="perhaps"/>
-  <item id="ex-73805" cql="q-37" xml="Paral-Milenci_a_vrazi" en="en:Paral-Milenci_a_vrazi:0:1647:1:w8" cs="cs:Paral-Milenci_a_vrazi:0:122:114:w7" cst="snad"/>
-  <item id="ex-67693" cql="q-37" xml="Hasek-OsudyDobrehoVvSV" en="" cs="cs:Hasek-OsudyDobrehoVvSV:0:3458:1:w17" cst="snad"/>
-  <item id="ex-78338" cql="q-37" xml="Topol-Sestra" en="" cs="cs:Topol-Sestra:0:1876:2:w41" cst="snad"/>
-  <item id="ex-70809" cql="q-37" xml="kundera-zert" en="en:kundera-zert:0:1024:3:w88 en:kundera-zert:0:1024:3:w94" cs="cs:kundera-zert:0:1052:8:w21" cst="snad"/>
-  <item id="ex-67699" cql="q-37" xml="Hasek-OsudyDobrehoVvSV" en="" cs="cs:Hasek-OsudyDobrehoVvSV:0:3533:9:w14" cst="snad"/>
-  <item id="ex-70590" cql="q-37" xml="Kundera-Nesnesit_lehko" en="en:Kundera-Nesnesit_lehko:0:1373:14:w1" cs="cs:Kundera-Nesnesit_lehko:0:1364:16:w1" cst="Snad"/>
-  <item id="ex-76428" cql="q-37" xml="Skvorecky-Mirakl" en="" cs="cs:Skvorecky-Mirakl:0:1316:1:w3" cst="snad"/>
-  <item id="ex-70662" cql="q-37" xml="kundera-smich" en="" cs="cs:kundera-smich:0:1406:6:w1" cst="Snad"/>
-  <item id="ex-67610" cql="q-37" xml="hakl-o_rodicich_a_dete" en="en:hakl-o_rodicich_a_dete:0:488:2:w23 en:hakl-o_rodicich_a_dete:0:488:2:w25" cs="cs:hakl-o_rodicich_a_dete:0:489:2:w18" cst="snad"/>
-  <item id="ex-76499" cql="q-37" xml="Skvorecky-Mirakl" en="" cs="cs:Skvorecky-Mirakl:0:3706:3:w1" cst="Snad"/>
-  <item id="ex-69447" cql="q-37" xml="Jirotka-Saturnin" en="en:Jirotka-Saturnin:0:414:7:w1" cs="cs:Jirotka-Saturnin:0:504:7:w1" cst="Snad"/>
+  <item id="ex-73805" cql="q-37" xml="Paral-Milenci_a_vrazi" en="X" cs="cs:Paral-Milenci_a_vrazi:0:122:114:w7" cst="snad" alignchecked="1" ent=""/>
+  <item id="ex-67693" cql="q-37" xml="Hasek-OsudyDobrehoVvSV" en="-" cs="cs:Hasek-OsudyDobrehoVvSV:0:3458:1:w17" cst="snad" alignchecked="1" ent=""/>
+  <item id="ex-78338" cql="q-37" xml="Topol-Sestra" en="X" cs="cs:Topol-Sestra:0:1876:2:w41" cst="snad" alignchecked="1" ent=""/>
+  <item id="ex-70809" cql="q-37" xml="kundera-zert" en="en:kundera-zert:0:1024:3:w88 en:kundera-zert:0:1024:3:w94 en:kundera-zert:0:1024:3:w98" cs="cs:kundera-zert:0:1052:8:w21 cs:kundera-zert:0:1052:8:w25 cs:kundera-zert:0:1052:8:w28" cst="snad snad snad" alignchecked="1" ent="perhaps perhaps perhaps"/>
+  <item id="ex-67699" cql="q-37" xml="Hasek-OsudyDobrehoVvSV" en="-" cs="cs:Hasek-OsudyDobrehoVvSV:0:3533:9:w14" cst="snad" alignchecked="1" ent=""/>
+  <item id="ex-70590" cql="q-37" xml="Kundera-Nesnesit_lehko" en="en:Kundera-Nesnesit_lehko:0:1373:14:w1" cs="cs:Kundera-Nesnesit_lehko:0:1364:16:w1" cst="Snad" alignchecked="1" ent="Perhaps"/>
+  <item id="ex-76428" cql="q-37" xml="Skvorecky-Mirakl" en="X" cs="cs:Skvorecky-Mirakl:0:1316:1:w3" cst="snad" alignchecked="1" ent=""/>
+  <item id="ex-70662" cql="q-37" xml="kundera-smich" en="en:kundera-smich:0:1543:5:w1" cs="cs:kundera-smich:0:1406:6:w1" cst="Snad" alignchecked="1" ent="Maybe"/>
+  <item id="ex-67610" cql="q-37" xml="hakl-o_rodicich_a_dete" en="en:hakl-o_rodicich_a_dete:0:488:2:w25" cs="cs:hakl-o_rodicich_a_dete:0:489:2:w18" cst="snad" alignchecked="1" ent="guess"/>
+  <item id="ex-76499" cql="q-37" xml="Skvorecky-Mirakl" en="X" cs="cs:Skvorecky-Mirakl:0:3706:3:w1" cst="Snad" alignchecked="1" ent=""/>
+  <item id="ex-69447" cql="q-37" xml="Jirotka-Saturnin" en="en:Jirotka-Saturnin:0:414:7:w1" cs="cs:Jirotka-Saturnin:0:504:7:w1" cst="Snad" alignchecked="1" ent="Perhaps"/>
 </examples>
