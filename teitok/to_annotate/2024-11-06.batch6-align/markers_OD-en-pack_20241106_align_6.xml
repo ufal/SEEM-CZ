@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
+  <item id="ex-95447" cql="q-52" xml="galbraith-hedvabnik" en="" cs="cs:galbraith-hedvabnik:0:3434:2:w21 cs:galbraith-hedvabnik:0:3434:2:w22" cst="podle všeho"/>
+  <item id="ex-95086" cql="q-52" xml="clarke-strange_norrell" en="" cs="cs:clarke-strange_norrell:0:589:4:w2 cs:clarke-strange_norrell:0:589:4:w3" cst="podle všeho"/>
+  <item id="ex-95863" cql="q-52" xml="obama-zeme_zaslibena" en="" cs="cs:obama-zeme_zaslibena:0:2349:1:w4 cs:obama-zeme_zaslibena:0:2349:1:w5" cst="podle všeho"/>
+  <item id="ex-96023" cql="q-52" xml="shreve-vse_co_pral" en="" cs="cs:shreve-vse_co_pral:0:2121:3:w19 cs:shreve-vse_co_pral:0:2121:3:w20" cst="podle všeho"/>
+  <item id="ex-95018" cql="q-52" xml="Brown-zdravim_temnoto" en="" cs="cs:Brown-zdravim_temnoto:0:1164:1:w1 cs:Brown-zdravim_temnoto:0:1164:1:w2" cst="Podle všeho"/>
+  <item id="ex-95769" cql="q-52" xml="mitchell-atlas_mraku" en="en:mitchell-atlas_mraku:0:260:6:w1" cs="cs:mitchell-atlas_mraku:0:261:5:w3 cs:mitchell-atlas_mraku:0:261:5:w4" cst="podle všeho"/>
+  <item id="ex-95177" cql="q-52" xml="dawkins-bozi_blud" en="" cs="cs:dawkins-bozi_blud:0:464:5:w21 cs:dawkins-bozi_blud:0:464:5:w22" cst="podle všeho"/>
+  <item id="ex-95602" cql="q-52" xml="Kerouac-Na_ceste" en="" cs="cs:Kerouac-Na_ceste:0:588:7:w22 cs:Kerouac-Na_ceste:0:588:7:w23" cst="podle všeho"/>
+  <item id="ex-95059" cql="q-52" xml="Capote-Snidane_Tiffany" en="" cs="cs:Capote-Snidane_Tiffany:0:129:1:w8 cs:Capote-Snidane_Tiffany:0:129:1:w9" cst="podle všeho"/>
+  <item id="ex-95029" cql="q-52" xml="Burns-Mlikar" en="en:Burns-Mlikar:0:72:28:w22" cs="cs:Burns-Mlikar:0:67:28:w30 cs:Burns-Mlikar:0:67:28:w31" cst="podle všeho"/>
+  <item id="ex-95208" cql="q-52" xml="dawkins-bozi_blud" en="en:dawkins-bozi_blud:0:1229:5:w16" cs="cs:dawkins-bozi_blud:0:1243:4:w11 cs:dawkins-bozi_blud:0:1243:4:w12" cst="podle všeho"/>
+  <item id="ex-95751" cql="q-52" xml="mccarthy-C" en="" cs="cs:mccarthy-C:0:2036:3:w8 cs:mccarthy-C:0:2036:3:w9" cst="podle všeho"/>
+  <item id="ex-96097" cql="q-52" xml="smith-o_krase" en="" cs="cs:smith-o_krase:0:2069:5:w2 cs:smith-o_krase:0:2069:5:w3" cst="Podle všeho"/>
+  <item id="ex-94855" cql="q-52" xml="adams-daleka_cesta" en="en:adams-daleka_cesta:0:1562:6:w3" cs="cs:adams-daleka_cesta:0:1578:6:w2 cs:adams-daleka_cesta:0:1578:6:w3" cst="podle všeho"/>
+  <item id="ex-96219" cql="q-52" xml="Wilson-Lidska_priroz" en="" cs="cs:Wilson-Lidska_priroz:0:344:6:w4 cs:Wilson-Lidska_priroz:0:344:6:w5" cst="podle všeho"/>
+  <item id="ex-96167" cql="q-52" xml="updike-kralik_se_vraci" en="" cs="cs:updike-kralik_se_vraci:0:1505:2:w7 cs:updike-kralik_se_vraci:0:1505:2:w8" cst="podle všeho"/>
+  <item id="ex-96134" cql="q-52" xml="Steinbeck-Mysi_a_lide" en="" cs="cs:Steinbeck-Mysi_a_lide:0:965:1:w3 cs:Steinbeck-Mysi_a_lide:0:965:1:w4" cst="podle všeho"/>
+  <item id="ex-95864" cql="q-52" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:2413:1:w4 en:obama-zeme_zaslibena:0:2413:1:w5" cs="cs:obama-zeme_zaslibena:0:2413:1:w3 cs:obama-zeme_zaslibena:0:2413:1:w4" cst="podle všeho"/>
+  <item id="ex-95730" cql="q-52" xml="London-Tulak_po_hvezda" en="" cs="cs:London-Tulak_po_hvezda:0:1792:7:w1 cs:London-Tulak_po_hvezda:0:1792:7:w2" cst="Podle všeho"/>
+  <item id="ex-95395" cql="q-52" xml="Forsyth-Ctvrty_protoko" en="en:Forsyth-Ctvrty_protoko:0:3378:3:w1 en:Forsyth-Ctvrty_protoko:0:3378:3:w2" cs="cs:Forsyth-Ctvrty_protoko:0:3444:3:w1 cs:Forsyth-Ctvrty_protoko:0:3444:3:w2" cst="Podle všeho"/>
+  <item id="ex-94933" cql="q-52" xml="atwood-muzeum_zkamenel" en="" cs="cs:atwood-muzeum_zkamenel:0:1519:1:w12 cs:atwood-muzeum_zkamenel:0:1519:1:w13" cst="podle všeho"/>
+  <item id="ex-95883" cql="q-52" xml="obama-zeme_zaslibena" en="" cs="cs:obama-zeme_zaslibena:0:3125:3:w2 cs:obama-zeme_zaslibena:0:3125:3:w3" cst="podle všeho"/>
+  <item id="ex-95404" cql="q-52" xml="franzen-rozhreseni" en="" cs="cs:franzen-rozhreseni:0:420:1:w5 cs:franzen-rozhreseni:0:420:1:w6" cst="podle všeho"/>
+  <item id="ex-94936" cql="q-52" xml="atwood-muzeum_zkamenel" en="en:atwood-muzeum_zkamenel:0:1550:1:w2 en:atwood-muzeum_zkamenel:0:1550:1:w3" cs="cs:atwood-muzeum_zkamenel:0:1932:1:w2 cs:atwood-muzeum_zkamenel:0:1932:1:w3" cst="Podle všeho"/>
+  <item id="ex-95336" cql="q-52" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:4372:2:w9" cs="cs:follett-pilire_zeme:0:4358:2:w6 cs:follett-pilire_zeme:0:4358:2:w7" cst="podle všeho"/>
+  <item id="ex-95638" cql="q-52" xml="lawrence-pann_cikan" en="en:lawrence-pann_cikan:0:179:3:w3" cs="cs:lawrence-pann_cikan:0:177:3:w3 cs:lawrence-pann_cikan:0:177:3:w4" cst="podle všeho"/>
+  <item id="ex-95069" cql="q-52" xml="Christie-VrazdaVOrient" en="en:Christie-VrazdaVOrient:0:282:4:w1" cs="cs:Christie-VrazdaVOrient:0:274:4:w1 cs:Christie-VrazdaVOrient:0:274:4:w2" cst="Podle všeho"/>
+  <item id="ex-95219" cql="q-52" xml="Dickens-PrihodyO_Twist" en="en:Dickens-PrihodyO_Twist:0:470:6:w17 en:Dickens-PrihodyO_Twist:0:470:6:w18" cs="cs:Dickens-PrihodyO_Twist:0:481:7:w44 cs:Dickens-PrihodyO_Twist:0:481:7:w45" cst="podle všeho"/>
+  <item id="ex-96101" cql="q-52" xml="smith-o_krase" en="" cs="cs:smith-o_krase:0:2368:4:w6 cs:smith-o_krase:0:2368:4:w7" cst="podle všeho"/>
+  <item id="ex-95786" cql="q-52" xml="munro-nepritel_pritel" en="en:munro-nepritel_pritel:0:1528:3:w6" cs="cs:munro-nepritel_pritel:0:1606:3:w7 cs:munro-nepritel_pritel:0:1606:3:w8" cst="podle všeho"/>
+  <item id="ex-96053" cql="q-52" xml="Singer-RodinaMoskatova" en="en:Singer-RodinaMoskatova:0:2369:5:w1" cs="cs:Singer-RodinaMoskatova:0:2381:5:w6 cs:Singer-RodinaMoskatova:0:2381:5:w7" cst="podle všeho"/>
+  <item id="ex-95014" cql="q-52" xml="brown-chut_lasky" en="en:brown-chut_lasky:0:1565:4:w3" cs="cs:brown-chut_lasky:0:1551:4:w2 cs:brown-chut_lasky:0:1551:4:w3" cst="podle všeho"/>
+  <item id="ex-94909" cql="q-52" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:1174:3:w1" cs="cs:angellova-dvoji_zivot:0:1170:3:w1 cs:angellova-dvoji_zivot:0:1170:3:w2" cst="Podle všeho"/>
+  <item id="ex-95856" cql="q-52" xml="obama-zeme_zaslibena" en="" cs="cs:obama-zeme_zaslibena:0:1871:4:w3 cs:obama-zeme_zaslibena:0:1871:4:w4" cst="podle všeho"/>
+  <item id="ex-94950" cql="q-52" xml="banville-more" en="en:banville-more:0:244:3:w1 en:banville-more:0:244:3:w2" cs="cs:banville-more:0:248:3:w1 cs:banville-more:0:248:3:w2" cst="Podle všeho"/>
+  <item id="ex-94904" cql="q-52" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:342:2:w4 en:angellova-dvoji_zivot:0:342:2:w5" cs="cs:angellova-dvoji_zivot:0:340:2:w2 cs:angellova-dvoji_zivot:0:340:2:w3" cst="podle všeho"/>
+  <item id="ex-95771" cql="q-52" xml="mitchell-atlas_mraku" en="en:mitchell-atlas_mraku:0:1015:3:w12 en:mitchell-atlas_mraku:0:1015:3:w8" cs="cs:mitchell-atlas_mraku:0:1013:2:w6 cs:mitchell-atlas_mraku:0:1013:2:w7" cst="podle všeho"/>
+  <item id="ex-95483" cql="q-52" xml="galbraith-smrtici_bila" en="" cs="cs:galbraith-smrtici_bila:0:7206:4:w20 cs:galbraith-smrtici_bila:0:7206:4:w21" cst="podle všeho"/>
+  <item id="ex-95323" cql="q-52" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:2979:2:w1 cs:follett-pilire_zeme:0:2979:2:w2" cst="Podle všeho"/>
+  <item id="ex-94916" cql="q-52" xml="asimov-druha_nadace" en="en:asimov-druha_nadace:0:2272:5:w2" cs="cs:asimov-druha_nadace:0:2247:5:w5 cs:asimov-druha_nadace:0:2247:5:w6" cst="podle všeho"/>
+  <item id="ex-95085" cql="q-52" xml="clarke-strange_norrell" en="" cs="cs:clarke-strange_norrell:0:446:1:w56 cs:clarke-strange_norrell:0:446:1:w57" cst="podle všeho"/>
+  <item id="ex-95544" cql="q-52" xml="hayek-cesta_do_otro" en="" cs="cs:hayek-cesta_do_otro:0:353:10:w4 cs:hayek-cesta_do_otro:0:353:10:w5" cst="podle všeho"/>
+  <item id="ex-95162" cql="q-52" xml="cook-toxin" en="en:cook-toxin:0:1540:2:w2" cs="cs:cook-toxin:0:1298:2:w1 cs:cook-toxin:0:1298:2:w2" cst="Podle všeho"/>
+  <item id="ex-95949" cql="q-52" xml="pynchon-vykrik" en="" cs="cs:pynchon-vykrik:0:241:4:w17 cs:pynchon-vykrik:0:241:4:w18" cst="podle všeho"/>
+  <item id="ex-95444" cql="q-52" xml="galbraith-hedvabnik" en="" cs="cs:galbraith-hedvabnik:0:2764:2:w1 cs:galbraith-hedvabnik:0:2764:2:w2" cst="Podle všeho"/>
+  <item id="ex-95163" cql="q-52" xml="cook-toxin" en="en:cook-toxin:0:1688:3:w13" cs="cs:cook-toxin:0:1426:3:w17 cs:cook-toxin:0:1426:3:w18" cst="podle všeho"/>
+  <item id="ex-95388" cql="q-52" xml="Forsyth-Ctvrty_protoko" en="en:Forsyth-Ctvrty_protoko:0:2346:3:w1 en:Forsyth-Ctvrty_protoko:0:2346:3:w2" cs="cs:Forsyth-Ctvrty_protoko:0:2402:3:w1 cs:Forsyth-Ctvrty_protoko:0:2402:3:w2" cst="Podle všeho"/>
+  <item id="ex-95708" cql="q-52" xml="lodge-nejtissi_trest" en="en:lodge-nejtissi_trest:0:1361:8:w1" cs="cs:lodge-nejtissi_trest:0:1379:9:w1 cs:lodge-nejtissi_trest:0:1379:9:w2" cst="Podle všeho"/>
+  <item id="ex-95406" cql="q-52" xml="franzen-rozhreseni" en="" cs="cs:franzen-rozhreseni:0:512:2:w19 cs:franzen-rozhreseni:0:512:2:w20" cst="podle všeho"/>
+  <item id="ex-95147" cql="q-52" xml="clarke-strange_norrell" en="en:clarke-strange_norrell:0:5508:5:w18" cs="cs:clarke-strange_norrell:0:5408:4:w15 cs:clarke-strange_norrell:0:5408:4:w16" cst="podle všeho"/>
+</examples>

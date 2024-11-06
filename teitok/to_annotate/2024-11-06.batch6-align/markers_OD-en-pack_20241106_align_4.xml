@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
+  <item id="ex-92868" cql="q-50" xml="Francis-Drahy_cas" en="en:Francis-Drahy_cas:0:1460:4:w4" cs="cs:Francis-Drahy_cas:0:2393:2:w5" cst="zřetelně"/>
+  <item id="ex-93543" cql="q-50" xml="Salinger-KdoChytaVZite" en="en:Salinger-KdoChytaVZite:0:708:3:w13" cs="cs:Salinger-KdoChytaVZite:0:714:3:w14" cst="zřetelně"/>
+  <item id="ex-92651" cql="q-50" xml="barnes-vedomi_konce" en="" cs="cs:barnes-vedomi_konce:0:783:1:w13" cst="zřetelně"/>
+  <item id="ex-93188" cql="q-50" xml="lee-jablecne_vino" en="en:lee-jablecne_vino:0:469:4:w13" cs="cs:lee-jablecne_vino:0:461:4:w11" cst="zřetelně"/>
+  <item id="ex-93338" cql="q-50" xml="Nabokov-Lolita" en="en:Nabokov-Lolita:0:172:3:w40" cs="cs:Nabokov-Lolita:0:61:2:w68" cst="zřetelně"/>
+  <item id="ex-92625" cql="q-50" xml="Austenova-Emma" en="" cs="cs:Austenova-Emma:0:2273:1:w32" cst="zřetelně"/>
+  <item id="ex-93076" cql="q-50" xml="james-plany_touhy" en="en:james-plany_touhy:0:258:10:w15" cs="cs:james-plany_touhy:0:256:11:w18" cst="zřetelně"/>
+  <item id="ex-92729" cql="q-50" xml="Christie-VrazdaVOrient" en="en:Christie-VrazdaVOrient:0:1377:6:w16" cs="cs:Christie-VrazdaVOrient:0:1354:6:w13" cst="zřetelně"/>
+  <item id="ex-93599" cql="q-50" xml="Steinbeck-ToulavyAutob" en="" cs="cs:Steinbeck-ToulavyAutob:0:574:6:w18" cst="zřetelně"/>
+  <item id="ex-93625" cql="q-50" xml="Styron-Sofiina_volba" en="en:Styron-Sofiina_volba:0:975:1:w4 en:Styron-Sofiina_volba:0:975:1:w5" cs="cs:Styron-Sofiina_volba:0:992:1:w3" cst="zřetelně"/>
+  <item id="ex-93649" cql="q-50" xml="trevor-lucy_gault" en="en:trevor-lucy_gault:0:79:1:w9" cs="cs:trevor-lucy_gault:0:78:1:w8" cst="zřetelně"/>
+  <item id="ex-92974" cql="q-50" xml="hailey-konecna_diag" en="" cs="cs:hailey-konecna_diag:0:524:3:w2" cst="zřetelně"/>
+  <item id="ex-92639" cql="q-50" xml="banks-pisen_kamene" en="en:banks-pisen_kamene:0:378:3:w22" cs="cs:banks-pisen_kamene:0:377:2:w58" cst="zřetelně"/>
+  <item id="ex-92628" cql="q-50" xml="austen-pycha" en="en:austen-pycha:0:612:2:w11 en:austen-pycha:0:612:2:w12" cs="cs:austen-pycha:0:610:2:w10" cst="zřetelně"/>
+  <item id="ex-93718" cql="q-50" xml="X-Referencni_ramec" en="en:X-Referencni_ramec:0:1440:1:w3" cs="cs:X-Referencni_ramec:0:1405:1:w8" cst="zřetelně"/>
+  <item id="ex-92744" cql="q-50" xml="clarke-strange_norrell" en="en:clarke-strange_norrell:0:1146:5:w12" cs="cs:clarke-strange_norrell:0:1118:7:w12" cst="zřetelně"/>
+  <item id="ex-93067" cql="q-50" xml="ishiguro-malir_sveta" en="en:ishiguro-malir_sveta:0:590:2:w27 en:ishiguro-malir_sveta:0:590:2:w29" cs="cs:ishiguro-malir_sveta:0:590:2:w20" cst="zřetelně"/>
+  <item id="ex-93442" cql="q-50" xml="Popper-hledani" en="en:Popper-hledani:0:310:4:w11" cs="cs:Popper-hledani:0:291:4:w11" cst="zřetelně"/>
+  <item id="ex-92523" cql="q-50" xml="adams-daleka_cesta" en="en:adams-daleka_cesta:0:1038:3:w5" cs="cs:adams-daleka_cesta:0:1037:3:w6" cst="zřetelně"/>
+  <item id="ex-93558" cql="q-50" xml="Singer-RodinaMoskatova" en="en:Singer-RodinaMoskatova:0:2678:4:w4" cs="cs:Singer-RodinaMoskatova:0:2694:4:w2" cst="zřetelně"/>
+  <item id="ex-93494" cql="q-50" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:925:2:w18" cs="cs:rowlingova-hpot_pohar:0:924:2:w20" cst="zřetelně"/>
+  <item id="ex-93480" cql="q-50" xml="Roth-lidska_skvrna" en="en:Roth-lidska_skvrna:0:313:6:w28" cs="cs:Roth-lidska_skvrna:0:334:6:w29" cst="zřetelně"/>
+  <item id="ex-93460" cql="q-50" xml="Pratchett-Soudne_sestr" en="en:Pratchett-Soudne_sestr:0:1117:1:w10" cs="cs:Pratchett-Soudne_sestr:0:1105:1:w12" cst="zřetelně"/>
+  <item id="ex-93189" cql="q-50" xml="lee-jablecne_vino" en="en:lee-jablecne_vino:0:509:17:w4" cs="cs:lee-jablecne_vino:0:500:16:w5" cst="zřetelně"/>
+  <item id="ex-93630" cql="q-50" xml="Tolkien-Hobit" en="en:Tolkien-Hobit:0:922:2:w24" cs="cs:Tolkien-Hobit:0:863:2:w15" cst="zřetelně"/>
+  <item id="ex-93059" cql="q-50" xml="Irving-Svet_podleGarpa" en="en:Irving-Svet_podleGarpa:0:2379:5:w10 en:Irving-Svet_podleGarpa:0:2379:5:w6" cs="cs:Irving-Svet_podleGarpa:0:2400:4:w10" cst="zřetelně"/>
+  <item id="ex-92842" cql="q-50" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:4981:2:w1" cs="cs:follett-pilire_zeme:0:4957:2:w4" cst="zřetelně"/>
+  <item id="ex-92563" cql="q-50" xml="aldiss-helikonie_jaro" en="en:aldiss-helikonie_jaro:0:460:7:w7" cs="cs:aldiss-helikonie_jaro:0:451:9:w12" cst="zřetelně"/>
+  <item id="ex-93248" cql="q-50" xml="lodge-hostujici_prof" en="" cs="cs:lodge-hostujici_prof:0:1660:7:w19" cst="zřetelně"/>
+  <item id="ex-93560" cql="q-50" xml="Singer-RodinaMoskatova" en="en:Singer-RodinaMoskatova:0:4415:7:w6" cs="cs:Singer-RodinaMoskatova:0:4440:5:w4" cst="zřetelně"/>
+  <item id="ex-92847" cql="q-50" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:6577:5:w23" cst="zřetelně"/>
+  <item id="ex-92565" cql="q-50" xml="aldiss-helikonie_jaro" en="en:aldiss-helikonie_jaro:0:1460:1:w20" cs="cs:aldiss-helikonie_jaro:0:1439:1:w8" cst="zřetelně"/>
+  <item id="ex-93532" cql="q-50" xml="rowling-princ" en="" cs="cs:rowling-princ:0:5260:1:w15" cst="zřetelně"/>
+  <item id="ex-92808" cql="q-50" xml="Doyle-Pribehy_Sherlock" en="en:Doyle-Pribehy_Sherlock:0:1296:6:w8" cs="cs:Doyle-Pribehy_Sherlock:0:1367:5:w9" cst="zřetelně"/>
+  <item id="ex-93001" cql="q-50" xml="Hemingway-Fiesta" en="en:Hemingway-Fiesta:0:1980:8:w5" cs="cs:Hemingway-Fiesta:0:1979:8:w5" cst="zřetelně"/>
+  <item id="ex-93604" cql="q-50" xml="Stoker-Dracula" en="en:Stoker-Dracula:0:326:1:w37" cs="cs:Stoker-Dracula:0:318:1:w16" cst="zřetelně"/>
+  <item id="ex-93588" cql="q-50" xml="smith-sberatel" en="en:smith-sberatel:0:643:4:w14" cs="cs:smith-sberatel:0:590:4:w18" cst="zřetelně"/>
+  <item id="ex-92643" cql="q-50" xml="banville-more" en="en:banville-more:0:318:4:w12" cs="cs:banville-more:0:321:4:w9" cst="zřetelně"/>
+  <item id="ex-93550" cql="q-50" xml="silva-tajna_sluzba" en="en:silva-tajna_sluzba:0:1254:1:w31" cs="cs:silva-tajna_sluzba:0:1242:1:w18" cst="zřetelně"/>
+  <item id="ex-92750" cql="q-50" xml="clarke-strange_norrell" en="en:clarke-strange_norrell:0:4931:4:w17" cs="cs:clarke-strange_norrell:0:4840:4:w11" cst="zřetelně"/>
+  <item id="ex-93444" cql="q-50" xml="Popper-hledani" en="en:Popper-hledani:0:458:2:w6" cs="cs:Popper-hledani:0:440:2:w2" cst="zřetelně"/>
+  <item id="ex-93085" cql="q-50" xml="kahneman-mysleni" en="en:kahneman-mysleni:0:1682:4:w9" cs="cs:kahneman-mysleni:0:1739:4:w7" cst="zřetelně"/>
+  <item id="ex-93354" cql="q-50" xml="OBrien-Treti_straznik" en="en:OBrien-Treti_straznik:0:787:1:w12" cs="cs:OBrien-Treti_straznik:0:802:1:w12" cst="zřetelně"/>
+  <item id="ex-92623" cql="q-50" xml="Austenova-Emma" en="en:Austenova-Emma:0:2033:15:w5" cs="cs:Austenova-Emma:0:1984:16:w4" cst="zřetelně"/>
+  <item id="ex-92543" cql="q-50" xml="adams-sbohem_a_dik" en="" cs="cs:adams-sbohem_a_dik:0:488:1:w19" cst="zřetelně"/>
+  <item id="ex-93185" cql="q-50" xml="Le_Carre-Single__singl" en="en:Le_Carre-Single__singl:0:34:2:w2" cs="cs:Le_Carre-Single__singl:0:38:2:w2" cst="zřetelně"/>
+  <item id="ex-92595" cql="q-50" xml="asimov-druha_nadace" en="en:asimov-druha_nadace:0:1692:2:w12" cs="cs:asimov-druha_nadace:0:1669:2:w11" cst="zřetelně"/>
+  <item id="ex-92541" cql="q-50" xml="adams-restaurant_na_ko" en="en:adams-restaurant_na_ko:0:1262:2:w33" cs="cs:adams-restaurant_na_ko:0:560:2:w27" cst="zřetelně"/>
+  <item id="ex-93077" cql="q-50" xml="james-plany_touhy" en="en:james-plany_touhy:0:404:8:w2" cs="cs:james-plany_touhy:0:401:8:w2" cst="zřetelně"/>
+  <item id="ex-93512" cql="q-50" xml="rowlingova-hpot_relik" en="en:rowlingova-hpot_relik:0:5936:1:w44" cs="cs:rowlingova-hpot_relik:0:5944:1:w42" cst="zřetelně"/>
+</examples>

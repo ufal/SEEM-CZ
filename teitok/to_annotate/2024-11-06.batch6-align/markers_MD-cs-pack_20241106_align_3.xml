@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<examples>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
+  <item id="ex-87920" cql="q-49" xml="Kundera-Nesnesit_lehko" en="en:Kundera-Nesnesit_lehko:0:1130:1:w25" cs="cs:Kundera-Nesnesit_lehko:0:1123:3:w15" cst="zřejmě"/>
+  <item id="ex-85062" cql="q-49" xml="Fahrner-Steiner_aneb" en="" cs="cs:Fahrner-Steiner_aneb:0:59:1:w13" cst="zřejmě"/>
+  <item id="ex-91015" cql="q-49" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:4187:5:w7" cs="cs:Skvorecky-PribehIng_2:0:3473:7:w8" cst="zřejmě"/>
+  <item id="ex-91831" cql="q-49" xml="topol-andel" en="en:topol-andel:0:188:4:w35" cs="cs:topol-andel:0:196:4:w31" cst="zřejmě"/>
+  <item id="ex-82741" cql="q-49" xml="Ajvaz-Zlaty_vek" en="" cs="cs:Ajvaz-Zlaty_vek:0:443:1:w4" cst="zřejmě"/>
+  <item id="ex-90932" cql="q-49" xml="Skvorecky-Mirakl" en="" cs="cs:Skvorecky-Mirakl:0:1177:1:w18" cst="zřejmě"/>
+  <item id="ex-86471" cql="q-49" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:115:9:w1" cs="cs:Havel-Dalkovy_vyslech:0:108:7:w1" cst="Zřejmě"/>
+  <item id="ex-89688" cql="q-49" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:174:5:w5" cs="cs:panek-dejiny_ceskych:0:131:4:w5" cst="zřejmě"/>
+  <item id="ex-83295" cql="q-49" xml="Balaban-Mozna_ze_odcha" en="en:Balaban-Mozna_ze_odcha:0:81:2:w15" cs="cs:Balaban-Mozna_ze_odcha:0:86:2:w9" cst="zřejmě"/>
+  <item id="ex-82747" cql="q-49" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:585:12:w14" cs="cs:Ajvaz-Zlaty_vek:0:566:8:w25" cst="zřejmě"/>
+  <item id="ex-86502" cql="q-49" xml="havel-largo_desolato" en="en:havel-largo_desolato:0:700:2:w12" cs="cs:havel-largo_desolato:0:699:2:w7" cst="zřejmě"/>
+  <item id="ex-90914" cql="q-49" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:1207:3:w18" cs="cs:skvorecky-hrichy_pater:0:1204:7:w17" cst="zřejmě"/>
+  <item id="ex-92029" cql="q-49" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:651:1:w14" cs="cs:Vaculik-Cesky_snar:0:500:1:w13" cst="zřejmě"/>
+  <item id="ex-82601" cql="q-49" xml="Ajvaz-Druhe_mesto" en="en:Ajvaz-Druhe_mesto:0:115:13:w8" cs="cs:Ajvaz-Druhe_mesto:0:116:10:w6" cst="zřejmě"/>
+  <item id="ex-92148" cql="q-49" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:722:1:w2" cs="cs:Viewegh-VychovaDivekCR:0:678:1:w2" cst="zřejmě"/>
+  <item id="ex-92120" cql="q-49" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:878:1:w2" cs="cs:Viewegh-Vybijena:0:882:1:w1" cst="Zřejmě"/>
+  <item id="ex-92089" cql="q-49" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:472:2:w2" cs="cs:viewegh-baj_letaPodPsa:0:494:2:w1" cst="Zřejmě"/>
+  <item id="ex-91016" cql="q-49" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:4404:1:w14" cs="cs:Skvorecky-PribehIng_2:0:3659:1:w9" cst="zřejmě"/>
+  <item id="ex-90898" cql="q-49" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:854:9:w13" cs="cs:skvorecky-hrichy_pater:0:854:7:w21" cst="zřejmě"/>
+  <item id="ex-87828" cql="q-49" xml="kohout-snezim" en="en:kohout-snezim:0:53:8:w11" cs="cs:kohout-snezim:0:34:4:w9" cst="zřejmě"/>
+  <item id="ex-82665" cql="q-49" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:768:7:w18" cs="cs:ajvaz-prazdne_ulice:0:743:8:w15" cst="zřejmě"/>
+  <item id="ex-91390" cql="q-49" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:706:2:w20" cs="cs:Strouhal-Zivot_Egyptan:0:725:2:w23" cst="zřejmě"/>
+  <item id="ex-87837" cql="q-49" xml="kohout-snezim" en="en:kohout-snezim:0:1247:4:w4" cs="cs:kohout-snezim:0:1180:4:w2" cst="Zřejmě"/>
+  <item id="ex-82668" cql="q-49" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:786:5:w8" cs="cs:ajvaz-prazdne_ulice:0:759:5:w3" cst="zřejmě"/>
+  <item id="ex-87769" cql="q-49" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:691:2:w44" cst="zřejmě"/>
+  <item id="ex-89716" cql="q-49" xml="Paral-Milenci_a_vrazi" en="" cs="cs:Paral-Milenci_a_vrazi:0:67:176:w3" cst="zřejmě"/>
+  <item id="ex-84230" cql="q-49" xml="Capek-TovarnaNaAbsolut" en="en:Capek-TovarnaNaAbsolut:0:673:2:w10" cs="cs:Capek-TovarnaNaAbsolut:0:632:1:w9" cst="zřejmě"/>
+  <item id="ex-86513" cql="q-49" xml="Havel-ZahradniSlavnost" en="en:Havel-ZahradniSlavnost:0:223:3:w4" cs="cs:Havel-ZahradniSlavnost:0:248:3:w4" cst="zřejmě"/>
+  <item id="ex-92033" cql="q-49" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:869:8:w21" cs="cs:Vaculik-Cesky_snar:0:676:8:w14" cst="zřejmě"/>
+  <item id="ex-90947" cql="q-49" xml="Skvorecky-Mirakl" en="" cs="cs:Skvorecky-Mirakl:0:2556:2:w3" cst="zřejmě"/>
+  <item id="ex-91866" cql="q-49" xml="Topol-Sestra" en="en:Topol-Sestra:0:2324:5:w30" cs="cs:Topol-Sestra:0:2438:4:w22" cst="zřejmě"/>
+  <item id="ex-82737" cql="q-49" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:432:3:w1" cs="cs:Ajvaz-Zlaty_vek:0:415:3:w2" cst="zřejmě"/>
+  <item id="ex-82641" cql="q-49" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:477:4:w2" cs="cs:ajvaz-prazdne_ulice:0:461:4:w3" cst="zřejmě"/>
+  <item id="ex-91008" cql="q-49" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:2053:1:w3" cs="cs:Skvorecky-PribehIng_2:0:1711:1:w3" cst="zřejmě"/>
+  <item id="ex-82681" cql="q-49" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:1054:1:w1" cs="cs:ajvaz-prazdne_ulice:0:957:1:w3" cst="zřejmě"/>
+  <item id="ex-82636" cql="q-49" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:373:2:w28" cs="cs:ajvaz-prazdne_ulice:0:360:1:w34" cst="zřejmě"/>
+  <item id="ex-90934" cql="q-49" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:1308:2:w4" cs="cs:Skvorecky-Mirakl:0:1501:2:w2" cst="zřejmě"/>
+  <item id="ex-92200" cql="q-49" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:607:4:w41" cs="cs:Vopenka-Paty_rozmer:0:612:4:w29" cst="zřejmě"/>
+  <item id="ex-87962" cql="q-49" xml="kundera-zert" en="en:kundera-zert:0:624:1:w6" cs="cs:kundera-zert:0:642:1:w7" cst="zřejmě"/>
+  <item id="ex-87756" cql="q-49" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:312:4:w19" cst="zřejmě"/>
+  <item id="ex-82648" cql="q-49" xml="ajvaz-prazdne_ulice" en="" cs="cs:ajvaz-prazdne_ulice:0:532:1:w19" cst="zřejmě"/>
+  <item id="ex-85048" cql="q-49" xml="Durych-Bozi_duha" en="en:Durych-Bozi_duha:0:909:3:w3" cs="cs:Durych-Bozi_duha:0:926:3:w2" cst="zřejmě"/>
+  <item id="ex-88781" cql="q-49" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:88:4:w4" cs="cs:Lustig-ModlitbaProKHor:0:91:3:w33" cst="zřejmě"/>
+  <item id="ex-86456" cql="q-49" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:27:36:w7" cs="cs:Havel-Dalkovy_vyslech:0:26:34:w7" cst="zřejmě"/>
+  <item id="ex-91414" cql="q-49" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:1267:6:w27" cs="cs:Strouhal-Zivot_Egyptan:0:1292:6:w22" cst="zřejmě"/>
+  <item id="ex-87917" cql="q-49" xml="Kundera-Nesmrtelnost" en="en:Kundera-Nesmrtelnost:0:1197:6:w1" cs="cs:Kundera-Nesmrtelnost:0:1203:6:w1" cst="Zřejmě"/>
+  <item id="ex-86457" cql="q-49" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:53:15:w7" cs="cs:Havel-Dalkovy_vyslech:0:48:12:w7" cst="zřejmě"/>
+  <item id="ex-87821" cql="q-49" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:3393:3:w9" cst="zřejmě"/>
+  <item id="ex-90772" cql="q-49" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:510:2:w5" cs="cs:sedlacek-ekonomie:0:521:2:w3" cst="zřejmě"/>
+  <item id="ex-87839" cql="q-49" xml="kohout-snezim" en="en:kohout-snezim:0:1390:2:w24" cs="cs:kohout-snezim:0:1323:2:w20" cst="zřejmě"/>
+</examples>

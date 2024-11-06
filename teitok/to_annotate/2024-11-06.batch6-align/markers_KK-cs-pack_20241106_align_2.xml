@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<examples>
+<user id="KK" email="kyckova2@seznam.cz" name="Karol&#xED;na K&#xFD;&#x10D;kov&#xE1;"/>
+  <item id="ex-81938" cql="q-48" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:919:1:w9" cs="cs:panek-dejiny_ceskych:0:720:1:w6" cst="zjevně"/>
+  <item id="ex-81548" cql="q-48" xml="Jedlicka-Kde_zivot_nas" en="en:Jedlicka-Kde_zivot_nas:0:118:5:w46" cs="cs:Jedlicka-Kde_zivot_nas:0:123:5:w34" cst="zjevně"/>
+  <item id="ex-82357" cql="q-48" xml="Urban-Lord_Mord" en="en:Urban-Lord_Mord:0:987:6:w12" cs="cs:Urban-Lord_Mord:0:997:4:w6" cst="zjevně"/>
+  <item id="ex-82365" cql="q-48" xml="Vopenka-Moje_cesta" en="en:Vopenka-Moje_cesta:0:594:4:w12" cs="cs:Vopenka-Moje_cesta:0:581:4:w10" cst="zjevně"/>
+  <item id="ex-81472" cql="q-48" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:65:69:w11" cs="cs:Havel-Dalkovy_vyslech:0:60:56:w13" cst="zjevně"/>
+  <item id="ex-81631" cql="q-48" xml="kohout-snezim" en="en:kohout-snezim:0:2043:1:w10" cs="cs:kohout-snezim:0:1961:1:w9" cst="zjevně"/>
+  <item id="ex-81471" cql="q-48" xml="Havel-Dalkovy_vyslech" en="" cs="cs:Havel-Dalkovy_vyslech:0:32:8:w36" cst="zjevně"/>
+  <item id="ex-82359" cql="q-48" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:17:2:w40" cs="cs:viewegh-baj_letaPodPsa:0:15:2:w27" cst="zjevně"/>
+  <item id="ex-82369" cql="q-48" xml="Vopenka-Muj_bratr" en="en:Vopenka-Muj_bratr:0:1013:1:w4" cs="cs:Vopenka-Muj_bratr:0:954:1:w2" cst="zjevně"/>
+  <item id="ex-81945" cql="q-48" xml="Pekarkova-Dej_mi_ty_pr" en="en:Pekarkova-Dej_mi_ty_pr:0:832:2:w3" cs="cs:Pekarkova-Dej_mi_ty_pr:0:806:2:w3" cst="zjevně"/>
+  <item id="ex-82248" cql="q-48" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:1271:4:w9" cs="cs:sedlacek-ekonomie:0:1231:3:w6" cst="zjevně"/>
+  <item id="ex-82281" cql="q-48" xml="Skvorecky-Mirakl" en="" cs="cs:Skvorecky-Mirakl:0:438:1:w5" cst="zjevně"/>
+  <item id="ex-81627" cql="q-48" xml="kohout-snezim" en="en:kohout-snezim:0:631:5:w22" cs="cs:kohout-snezim:0:593:4:w20" cst="zjevně"/>
+  <item id="ex-82370" cql="q-48" xml="Vopenka-Muj_bratr" en="en:Vopenka-Muj_bratr:0:1267:2:w6" cs="cs:Vopenka-Muj_bratr:0:1187:1:w12" cst="zjevně"/>
+  <item id="ex-81007" cql="q-48" xml="cermak-zaklady_metod" en="" cs="cs:cermak-zaklady_metod:0:880:1:w32" cst="zjevně"/>
+  <item id="ex-80705" cql="q-48" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:458:5:w21" cs="cs:Ajvaz-Zlaty_vek:0:442:3:w19" cst="zjevně"/>
+  <item id="ex-82328" cql="q-48" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:505:5:w1 en:styblova-skalpel_pros:0:505:5:w10" cs="cs:styblova-skalpel_pros:0:497:4:w11" cst="zjevně"/>
+  <item id="ex-82368" cql="q-48" xml="Vopenka-Muj_bratr" en="en:Vopenka-Muj_bratr:0:489:6:w13" cs="cs:Vopenka-Muj_bratr:0:458:7:w7" cst="zjevně"/>
+  <item id="ex-81630" cql="q-48" xml="kohout-snezim" en="en:kohout-snezim:0:1856:1:w13" cs="cs:kohout-snezim:0:1775:1:w4" cst="zjevně"/>
+  <item id="ex-81937" cql="q-48" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:382:5:w18" cs="cs:panek-dejiny_ceskych:0:280:5:w14" cst="zjevně"/>
+  <item id="ex-80701" cql="q-48" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:670:6:w10" cs="cs:ajvaz-prazdne_ulice:0:644:6:w9" cst="zjevně"/>
+  <item id="ex-81944" cql="q-48" xml="Paral-Milenci_a_vrazi" en="en:Paral-Milenci_a_vrazi:0:3497:2:w16" cs="cs:Paral-Milenci_a_vrazi:0:274:7:w12" cst="zjevně"/>
+  <item id="ex-81940" cql="q-48" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:1649:11:w3" cs="cs:panek-dejiny_ceskych:0:1423:10:w2" cst="zjevně"/>
+  <item id="ex-81939" cql="q-48" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:1117:3:w15" cs="cs:panek-dejiny_ceskych:0:897:3:w10" cst="zjevně"/>
+  <item id="ex-82372" cql="q-48" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:623:6:w3" cs="cs:Vopenka-Paty_rozmer:0:628:5:w1" cst="Zjevně"/>
+  <item id="ex-81640" cql="q-48" xml="Kundera-Nesmrtelnost" en="en:Kundera-Nesmrtelnost:0:798:5:w2" cs="cs:Kundera-Nesmrtelnost:0:803:5:w3" cst="zjevně"/>
+  <item id="ex-82346" cql="q-48" xml="Topol-Kloktat_dehet" en="en:Topol-Kloktat_dehet:0:1644:4:w20" cs="cs:Topol-Kloktat_dehet:0:1635:4:w15" cst="zjevně"/>
+  <item id="ex-81622" cql="q-48" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:121:3:w6" cs="cs:Kohout-Hvezdna_hodina:0:120:1:w29" cst="zjevně"/>
+  <item id="ex-80703" cql="q-48" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:184:1:w10" cs="cs:Ajvaz-Zlaty_vek:0:171:1:w12" cst="zjevně"/>
+  <item id="ex-81641" cql="q-48" xml="Kundera-Nesmrtelnost" en="en:Kundera-Nesmrtelnost:0:931:1:w11" cs="cs:Kundera-Nesmrtelnost:0:935:1:w9" cst="zjevně"/>
+  <item id="ex-82363" cql="q-48" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:161:2:w4" cs="cs:Viewegh-VychovaDivekCR:0:158:2:w5" cst="zjevně"/>
+  <item id="ex-82348" cql="q-48" xml="Topol-Sestra" en="en:Topol-Sestra:0:601:7:w13" cs="cs:Topol-Sestra:0:637:6:w12" cst="zjevně"/>
+  <item id="ex-81620" cql="q-48" xml="klima-laska_a_smeti" en="en:klima-laska_a_smeti:0:993:2:w27" cs="cs:klima-laska_a_smeti:0:953:2:w23" cst="zjevně"/>
+  <item id="ex-81628" cql="q-48" xml="kohout-snezim" en="en:kohout-snezim:0:1017:3:w16" cs="cs:kohout-snezim:0:958:3:w13" cst="zjevně"/>
+  <item id="ex-82364" cql="q-48" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1955:1:w18" cs="cs:Viewegh-VychovaDivekCR:0:1837:1:w5" cst="zjevně"/>
+  <item id="ex-81473" cql="q-48" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:182:6:w20" cs="cs:Havel-Dalkovy_vyslech:0:166:5:w18" cst="zjevně"/>
+  <item id="ex-82367" cql="q-48" xml="Vopenka-Muj_bratr" en="" cs="cs:Vopenka-Muj_bratr:0:19:8:w1" cst="Zjevně"/>
+  <item id="ex-81942" cql="q-48" xml="Paral-Milenci_a_vrazi" en="en:Paral-Milenci_a_vrazi:0:825:1:w16" cs="cs:Paral-Milenci_a_vrazi:0:67:72:w13" cst="zjevně"/>
+  <item id="ex-81643" cql="q-48" xml="kundera-smich" en="en:kundera-smich:0:1377:3:w23" cs="cs:kundera-smich:0:1257:3:w19" cst="zjevně"/>
+  <item id="ex-81941" cql="q-48" xml="Paral-Milenci_a_vrazi" en="en:Paral-Milenci_a_vrazi:0:154:1:w34" cs="cs:Paral-Milenci_a_vrazi:0:15:9:w26" cst="zjevně"/>
+  <item id="ex-82329" cql="q-48" xml="styblova-skalpel_pros" en="" cs="cs:styblova-skalpel_pros:0:1461:1:w15" cst="zjevně"/>
+  <item id="ex-81632" cql="q-48" xml="kohout-snezim" en="en:kohout-snezim:0:2356:3:w3" cs="cs:kohout-snezim:0:2273:3:w1" cst="Zjevně"/>
+  <item id="ex-82283" cql="q-48" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:2580:9:w8" cs="cs:Skvorecky-Mirakl:0:2935:5:w91" cst="zjevně"/>
+  <item id="ex-80702" cql="q-48" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:1582:12:w19" cs="cs:ajvaz-prazdne_ulice:0:1302:12:w17" cst="zjevně"/>
+  <item id="ex-81943" cql="q-48" xml="Paral-Milenci_a_vrazi" en="en:Paral-Milenci_a_vrazi:0:2480:5:w37" cs="cs:Paral-Milenci_a_vrazi:0:189:14:w63" cst="zjevně"/>
+  <item id="ex-82371" cql="q-48" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:338:1:w23" cs="cs:Vopenka-Paty_rozmer:0:342:1:w19" cst="zjevně"/>
+  <item id="ex-81625" cql="q-48" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:2755:2:w2" cs="cs:Kohout-Hvezdna_hodina:0:2810:1:w24" cst="zjevně"/>
+  <item id="ex-82366" cql="q-48" xml="Vopenka-Moje_cesta" en="en:Vopenka-Moje_cesta:0:683:3:w22" cs="cs:Vopenka-Moje_cesta:0:669:3:w14" cst="zjevně"/>
+  <item id="ex-81008" cql="q-48" xml="cermak-zaklady_metod" en="en:cermak-zaklady_metod:0:899:4:w5" cs="cs:cermak-zaklady_metod:0:885:5:w5" cst="zjevně"/>
+  <item id="ex-82247" cql="q-48" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:695:3:w55" cs="cs:sedlacek-ekonomie:0:702:3:w37" cst="zjevně"/>
+</examples>

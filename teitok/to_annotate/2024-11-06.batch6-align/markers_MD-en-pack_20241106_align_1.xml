@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<examples>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
+  <item id="ex-80237" cql="q-47" xml="doyle-posledni_poklona" en="" cs="cs:doyle-posledni_poklona:0:523:2:w4" cst="zajisté"/>
+  <item id="ex-80567" cql="q-47" xml="rowling-princ" en="" cs="cs:rowling-princ:0:5491:1:w28" cst="zajisté"/>
+  <item id="ex-80106" cql="q-47" xml="austen-pycha" en="en:austen-pycha:0:691:1:w3" cs="cs:austen-pycha:0:681:3:w2" cst="Zajisté"/>
+  <item id="ex-80440" cql="q-47" xml="lukacs-churchill" en="en:lukacs-churchill:0:150:10:w8" cs="cs:lukacs-churchill:0:161:9:w8" cst="zajisté"/>
+  <item id="ex-80474" cql="q-47" xml="Milne-Pu_zatisi" en="en:Milne-Pu_zatisi:0:413:2:w2" cs="cs:Milne-Pu_zatisi:0:392:2:w2" cst="Zajisté"/>
+  <item id="ex-80094" cql="q-47" xml="Austenova-Emma" en="en:Austenova-Emma:0:1182:1:w4" cs="cs:Austenova-Emma:0:1141:1:w2" cst="Zajisté"/>
+  <item id="ex-80305" cql="q-47" xml="hailey-konecna_diag" en="en:hailey-konecna_diag:0:2511:1:w8" cs="cs:hailey-konecna_diag:0:3340:2:w2" cst="Zajisté"/>
+  <item id="ex-80138" cql="q-47" xml="brown-sifra" en="en:brown-sifra:0:2895:1:w2 en:brown-sifra:0:2895:1:w3" cs="cs:brown-sifra:0:2703:1:w2" cst="Zajisté"/>
+  <item id="ex-80593" cql="q-47" xml="Stoker-Dracula" en="" cs="cs:Stoker-Dracula:0:1879:12:w4" cst="zajisté"/>
+  <item id="ex-80615" cql="q-47" xml="wilson-cim_hori_svet" en="" cs="cs:wilson-cim_hori_svet:0:222:24:w3" cst="zajisté"/>
+  <item id="ex-80272" cql="q-47" xml="fowles-franc_milenka" en="en:fowles-franc_milenka:0:1253:1:w2 en:fowles-franc_milenka:0:1253:1:w3" cs="cs:fowles-franc_milenka:0:1260:1:w2" cst="Zajisté"/>
+  <item id="ex-80100" cql="q-47" xml="austen-pycha" en="en:austen-pycha:0:221:1:w2" cs="cs:austen-pycha:0:224:1:w2" cst="Zajisté"/>
+  <item id="ex-80095" cql="q-47" xml="Austenova-Emma" en="en:Austenova-Emma:0:2154:3:w27 en:Austenova-Emma:0:2154:3:w30" cs="cs:Austenova-Emma:0:2105:5:w22" cst="zajisté"/>
+  <item id="ex-80173" cql="q-47" xml="carroll-alenka_zrcadle" en="en:carroll-alenka_zrcadle:0:818:1:w2" cs="cs:carroll-alenka_zrcadle:0:783:1:w2" cst="Zajisté"/>
+  <item id="ex-80300" cql="q-47" xml="hailey-konecna_diag" en="" cs="cs:hailey-konecna_diag:0:1918:1:w4" cst="zajisté"/>
+  <item id="ex-80507" cql="q-47" xml="Popper-Otevrena_spol_1" en="en:Popper-Otevrena_spol_1:0:89:6:w3" cs="cs:Popper-Otevrena_spol_1:0:104:5:w1" cst="Zajisté"/>
+  <item id="ex-80044" cql="q-47" xml="adams-restaurant_na_ko" en="en:adams-restaurant_na_ko:0:1388:1:w2" cs="cs:adams-restaurant_na_ko:0:636:1:w2" cst="Zajisté"/>
+  <item id="ex-80581" cql="q-47" xml="Smithova-Hotel_svet" en="en:Smithova-Hotel_svet:0:978:1:w1 en:Smithova-Hotel_svet:0:978:1:w2" cs="cs:Smithova-Hotel_svet:0:966:1:w1" cst="Zajisté"/>
+  <item id="ex-80531" cql="q-47" xml="Popper-Otevrena_spol_2" en="en:Popper-Otevrena_spol_2:0:487:10:w17" cs="cs:Popper-Otevrena_spol_2:0:532:9:w16" cst="zajisté"/>
+  <item id="ex-80524" cql="q-47" xml="Popper-Otevrena_spol_1" en="en:Popper-Otevrena_spol_1:0:401:7:w7" cs="cs:Popper-Otevrena_spol_1:0:427:7:w6" cst="zajisté"/>
+  <item id="ex-80516" cql="q-47" xml="Popper-Otevrena_spol_1" en="" cs="cs:Popper-Otevrena_spol_1:0:288:8:w29" cst="zajisté"/>
+  <item id="ex-80441" cql="q-47" xml="lukacs-churchill" en="en:lukacs-churchill:0:216:6:w7" cs="cs:lukacs-churchill:0:226:7:w6" cst="zajisté"/>
+  <item id="ex-80617" cql="q-47" xml="wilson-cim_hori_svet" en="en:wilson-cim_hori_svet:0:688:1:w2" cs="cs:wilson-cim_hori_svet:0:697:1:w2" cst="Zajisté"/>
+  <item id="ex-80296" cql="q-47" xml="grisham-posledni_vule" en="en:grisham-posledni_vule:0:361:2:w4 en:grisham-posledni_vule:0:361:2:w5" cs="cs:grisham-posledni_vule:0:355:1:w7" cst="zajisté"/>
+  <item id="ex-80224" cql="q-47" xml="dawkins-sobecky_gen" en="en:dawkins-sobecky_gen:0:177:4:w5" cs="cs:dawkins-sobecky_gen:0:176:5:w1" cst="Zajisté"/>
+  <item id="ex-80075" cql="q-47" xml="Asimov-Nadace" en="en:Asimov-Nadace:0:278:2:w1" cs="cs:Asimov-Nadace:0:278:2:w1" cst="Zajisté"/>
+  <item id="ex-80449" cql="q-47" xml="mantel-wolf_hall" en="en:mantel-wolf_hall:0:1437:2:w3" cs="cs:mantel-wolf_hall:0:1437:2:w3" cst="zajisté"/>
+  <item id="ex-80582" cql="q-47" xml="Steelova-Palomino" en="en:Steelova-Palomino:0:504:1:w1" cs="cs:Steelova-Palomino:0:732:1:w2" cst="Zajisté"/>
+  <item id="ex-80227" cql="q-47" xml="dawkins-sobecky_gen" en="en:dawkins-sobecky_gen:0:645:8:w8" cs="cs:dawkins-sobecky_gen:0:645:8:w8" cst="zajisté"/>
+  <item id="ex-80076" cql="q-47" xml="Asimov-Nadace" en="en:Asimov-Nadace:0:491:1:w2" cs="cs:Asimov-Nadace:0:489:1:w2" cst="Zajisté"/>
+  <item id="ex-80562" cql="q-47" xml="rowlingova-hpot_tajemn" en="en:rowlingova-hpot_tajemn:0:712:2:w35 en:rowlingova-hpot_tajemn:0:712:2:w39" cs="cs:rowlingova-hpot_tajemn:0:762:3:w28" cst="zajisté"/>
+  <item id="ex-80209" cql="q-47" xml="clarke-strange_norrell" en="en:clarke-strange_norrell:0:2358:2:w1" cs="cs:clarke-strange_norrell:0:2310:2:w1" cst="Zajisté"/>
+  <item id="ex-80279" cql="q-47" xml="fowles-franc_milenka" en="" cs="cs:fowles-franc_milenka:0:3124:1:w17" cst="zajisté"/>
+  <item id="ex-80596" cql="q-47" xml="Tolkien-Pan_prstenu_2" en="en:Tolkien-Pan_prstenu_2:0:2919:5:w1" cs="cs:Tolkien-Pan_prstenu_2:0:2898:5:w2" cst="zajisté"/>
+  <item id="ex-80588" cql="q-47" xml="Stoker-Dracula" en="" cs="cs:Stoker-Dracula:0:53:3:w10" cst="zajisté"/>
+  <item id="ex-80102" cql="q-47" xml="austen-pycha" en="en:austen-pycha:0:300:2:w6" cs="cs:austen-pycha:0:306:1:w7" cst="zajisté"/>
+  <item id="ex-80579" cql="q-47" xml="Smithova-Hotel_svet" en="en:Smithova-Hotel_svet:0:972:1:w1 en:Smithova-Hotel_svet:0:972:1:w2" cs="cs:Smithova-Hotel_svet:0:960:1:w1" cst="Zajisté"/>
+  <item id="ex-80185" cql="q-47" xml="Christie-KapsaPlnaZita" en="" cs="cs:Christie-KapsaPlnaZita:0:1609:2:w1" cst="Zajisté"/>
+  <item id="ex-80508" cql="q-47" xml="Popper-Otevrena_spol_1" en="" cs="cs:Popper-Otevrena_spol_1:0:152:19:w5" cst="zajisté"/>
+  <item id="ex-80348" cql="q-47" xml="Huxley-Konec_civilizac" en="en:Huxley-Konec_civilizac:0:938:1:w2" cs="cs:Huxley-Konec_civilizac:0:1056:1:w2" cst="Zajisté"/>
+  <item id="ex-80492" cql="q-47" xml="petersova-svaty_zlodej" en="en:petersova-svaty_zlodej:0:299:3:w8" cs="cs:petersova-svaty_zlodej:0:285:3:w6" cst="zajisté"/>
+  <item id="ex-80093" cql="q-47" xml="Austenova-Emma" en="en:Austenova-Emma:0:1031:1:w2" cs="cs:Austenova-Emma:0:993:1:w2" cst="Zajisté"/>
+  <item id="ex-80069" cql="q-47" xml="asimov-druha_nadace" en="en:asimov-druha_nadace:0:599:6:w6" cs="cs:asimov-druha_nadace:0:583:6:w2" cst="zajisté"/>
+  <item id="ex-80439" cql="q-47" xml="lukacs-churchill" en="en:lukacs-churchill:0:143:2:w10" cs="cs:lukacs-churchill:0:154:2:w10" cst="zajisté"/>
+  <item id="ex-80079" cql="q-47" xml="asimov-ocelove_jesky" en="en:asimov-ocelove_jesky:0:1696:1:w2" cs="cs:asimov-ocelove_jesky:0:1691:1:w2" cst="Zajisté"/>
+  <item id="ex-80068" cql="q-47" xml="asimov-druha_nadace" en="en:asimov-druha_nadace:0:572:1:w10" cs="cs:asimov-druha_nadace:0:555:2:w2" cst="Zajisté"/>
+  <item id="ex-80540" cql="q-47" xml="Pratchett-Soudne_sestr" en="en:Pratchett-Soudne_sestr:0:2883:3:w1 en:Pratchett-Soudne_sestr:0:2883:3:w4" cs="cs:Pratchett-Soudne_sestr:0:2843:3:w2" cst="zajisto"/>
+  <item id="ex-80246" cql="q-47" xml="doyle-rudy_kruh" en="en:doyle-rudy_kruh:0:181:2:w3 en:doyle-rudy_kruh:0:181:2:w4" cs="cs:doyle-rudy_kruh:0:180:2:w3" cst="zajisté"/>
+  <item id="ex-80594" cql="q-47" xml="Tolkien-Hobit" en="en:Tolkien-Hobit:0:1133:1:w2" cs="cs:Tolkien-Hobit:0:1066:4:w2" cst="Zajisté"/>
+  <item id="ex-80205" cql="q-47" xml="clarke-strange_norrell" en="en:clarke-strange_norrell:0:217:1:w2" cs="cs:clarke-strange_norrell:0:208:1:w2" cst="Zajisté"/>
+</examples>
