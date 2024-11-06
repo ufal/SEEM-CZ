@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <examples>
 <user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
-  <item id="ex-61180" cql="q-41" xml="klima-leto" en="" cs="cs:klima-leto:0:396:2:w19" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-62275" cql="q-41" xml="Urban-Sedmikosteli" en="en:Urban-Sedmikosteli:0:1196:3:w1" cs="cs:Urban-Sedmikosteli:0:1154:2:w2" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-60394" cql="q-41" xml="Douskova-Hrdy_Budzes" en="en:Douskova-Hrdy_Budzes:0:436:3:w25" cs="cs:Douskova-Hrdy_Budzes:0:416:3:w20" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-61941" cql="q-41" xml="sedlacek-ekonomie" en="" cs="cs:sedlacek-ekonomie:0:379:3:w11" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-62023" cql="q-41" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:210:1:w1" cs="cs:Skvorecky-PribehIng_2:0:153:20:w2" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-60164" cql="q-41" xml="Capek-TovarnaNaAbsolut" en="en:Capek-TovarnaNaAbsolut:0:731:8:w4" cs="cs:Capek-TovarnaNaAbsolut:0:686:14:w2" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-61560" cql="q-41" xml="Mornstajnova-Hana" en="en:Mornstajnova-Hana:0:1582:3:w18" cs="cs:Mornstajnova-Hana:0:1510:4:w4" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-60842" cql="q-41" xml="Havel-Audience" en="en:Havel-Audience:0:211:2:w1" cs="cs:Havel-Audience:0:397:1:w2" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-62302" cql="q-41" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1431:1:w10" cs="cs:Viewegh-VychovaDivekCR:0:1346:2:w10" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-62316" cql="q-41" xml="Vopenka-Moje_cesta" en="" cs="cs:Vopenka-Moje_cesta:0:1043:5:w12" cst="t&#x11B;&#x17E;ko"/>
+  <item id="ex-61180" cql="q-41" xml="klima-leto" en="-" cs="cs:klima-leto:0:396:2:w19" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent=""/>
+  <item id="ex-62275" cql="q-41" xml="Urban-Sedmikosteli" en="en:Urban-Sedmikosteli:0:1196:3:w1" cs="cs:Urban-Sedmikosteli:0:1154:2:w2" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent="Hardly"/>
+  <item id="ex-60394" cql="q-41" xml="Douskova-Hrdy_Budzes" en="en:Douskova-Hrdy_Budzes:0:436:3:w16 en:Douskova-Hrdy_Budzes:0:436:3:w17 en:Douskova-Hrdy_Budzes:0:436:3:w18 en:Douskova-Hrdy_Budzes:0:436:3:w19 en:Douskova-Hrdy_Budzes:0:436:3:w20" cs="cs:Douskova-Hrdy_Budzes:0:416:3:w20" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent="it &#x2019;d be hard to"/>
+  <item id="ex-61941" cql="q-41" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:373:3:w11 en:sedlacek-ekonomie:0:373:3:w12 en:sedlacek-ekonomie:0:373:3:w13 en:sedlacek-ekonomie:0:373:3:w14" cs="cs:sedlacek-ekonomie:0:379:3:w11" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent="it is difficult to"/>
+  <item id="ex-62023" cql="q-41" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:210:1:w4" cs="cs:Skvorecky-PribehIng_2:0:153:20:w2" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent="not"/>
+  <item id="ex-60164" cql="q-41" xml="Capek-TovarnaNaAbsolut" en="en:Capek-TovarnaNaAbsolut:0:731:8:w2 en:Capek-TovarnaNaAbsolut:0:731:8:w3 en:Capek-TovarnaNaAbsolut:0:731:8:w4 en:Capek-TovarnaNaAbsolut:0:731:8:w5" cs="cs:Capek-TovarnaNaAbsolut:0:686:14:w2" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent="it was hard work"/>
+  <item id="ex-61560" cql="q-41" xml="Mornstajnova-Hana" en="" cs="cs:Mornstajnova-Hana:0:1510:4:w4" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent=""/>
+  <item id="ex-60842" cql="q-41" xml="Havel-Audience" en="en:Havel-Audience:0:211:2:w1" cs="cs:Havel-Audience:0:397:1:w2" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent="Hardly"/>
+  <item id="ex-62302" cql="q-41" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1431:1:w14" cs="cs:Viewegh-VychovaDivekCR:0:1346:2:w10" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent="difficult"/>
+  <item id="ex-62316" cql="q-41" xml="Vopenka-Moje_cesta" en="-" cs="cs:Vopenka-Moje_cesta:0:1043:5:w12" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent=""/>
   <item id="ex-62326" cql="q-41" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:369:4:w11" cs="cs:Vopenka-Paty_rozmer:0:373:3:w16" cst="t&#x11B;&#x17E;ko"/>
   <item id="ex-61219" cql="q-41" xml="Kundera-Smesne_lasky" en="en:Kundera-Smesne_lasky:0:633:3:w18" cs="cs:Kundera-Smesne_lasky:0:638:2:w19" cst="t&#x11B;&#x17E;ko"/>
   <item id="ex-60170" cql="q-41" xml="Capek-Valka_s_mloky" en="en:Capek-Valka_s_mloky:0:1134:1:w4" cs="cs:Capek-Valka_s_mloky:0:1278:1:w2" cst="t&#x11B;&#x17E;ko"/>

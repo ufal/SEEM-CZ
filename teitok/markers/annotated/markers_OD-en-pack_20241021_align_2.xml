@@ -26,14 +26,14 @@
   <item id="ex-50363" cql="q-30" xml="Isaacson-Steve_Jobs" en="X" cs="cs:Isaacson-Steve_Jobs:0:2195:3:w7" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
   <item id="ex-51049" cql="q-30" xml="Stoker-Dracula" en="en:Stoker-Dracula:0:79:1:w1 en:Stoker-Dracula:0:79:1:w2" cs="cs:Stoker-Dracula:0:78:1:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
   <item id="ex-50144" cql="q-30" xml="grisham-klient" en="en:grisham-klient:0:4600:3:w7 en:grisham-klient:0:4600:3:w8" cs="cs:grisham-klient:0:4634:3:w8" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
-  <item id="ex-49844" cql="q-30" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:7187:2:w11" cs="cs:follett-pilire_zeme:0:7125:2:w5" cst="pochopiteln&#x11B;"/>
+  <item id="ex-49844" cql="q-30" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:7187:2:w10 en:follett-pilire_zeme:0:7187:2:w11" cs="cs:follett-pilire_zeme:0:7125:2:w5" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-49352" cql="q-30" xml="asimov-druha_nadace" en="en:asimov-druha_nadace:0:1753:2:w1" cs="cs:asimov-druha_nadace:0:1730:2:w1" cst="Pochopiteln&#x11B;" alignchecked="1" ent="Naturally"/>
   <item id="ex-50382" cql="q-30" xml="Jackson-Petka" en="en:Jackson-Petka:0:970:1:w1 en:Jackson-Petka:0:970:1:w2" cs="cs:Jackson-Petka:0:960:1:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="By rights"/>
   <item id="ex-50924" cql="q-30" xml="Roth-lidska_skvrna" en="en:Roth-lidska_skvrna:0:526:24:w19 en:Roth-lidska_skvrna:0:526:24:w20" cs="cs:Roth-lidska_skvrna:0:548:24:w20" cst="pochopiteln&#x11B;" alignchecked="1" ent="then-of course"/>
-  <item id="ex-49853" cql="q-30" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:7425:4:w5 en:follett-pilire_zeme:0:7425:4:w8" cs="cs:follett-pilire_zeme:0:7359:6:w4" cst="pochopiteln&#x11B;"/>
+  <item id="ex-49853" cql="q-30" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:7425:4:w7 en:follett-pilire_zeme:0:7425:4:w8" cs="cs:follett-pilire_zeme:0:7359:6:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-49355" cql="q-30" xml="asimov-druha_nadace" en="en:asimov-druha_nadace:0:2125:4:w3 en:asimov-druha_nadace:0:2125:4:w4" cs="cs:asimov-druha_nadace:0:2104:5:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-50876" cql="q-30" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:52:4:w4 en:Puzo-Kmotr:0:52:4:w5" cs="cs:Puzo-Kmotr:0:52:5:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
-  <item id="ex-49785" cql="q-30" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:1423:2:w5" cst="pochopiteln&#x11B;"/>
+  <item id="ex-49785" cql="q-30" xml="follett-pilire_zeme" en="X" cs="cs:follett-pilire_zeme:0:1423:2:w5" cst="pochopiteln&#x11B;" alignchecked="1" ent=""/>
   <item id="ex-50079" cql="q-30" xml="grisham-advokat_chudy" en="en:grisham-advokat_chudy:0:1348:1:w1 en:grisham-advokat_chudy:0:1348:1:w2" cs="cs:grisham-advokat_chudy:0:1393:1:w6" cst="pochopiteln&#x11B;" alignchecked="1" ent="Of course"/>
   <item id="ex-50987" cql="q-30" xml="shreve-vse_co_pral" en="en:shreve-vse_co_pral:0:401:1:w4" cs="cs:shreve-vse_co_pral:0:411:1:w4" cst="pochopiteln&#x11B;" alignchecked="1" ent="certainly"/>
   <item id="ex-50947" cql="q-30" xml="rowlingova-hpot_fenix" en="en:rowlingova-hpot_fenix:0:8696:2:w3 en:rowlingova-hpot_fenix:0:8696:2:w4" cs="cs:rowlingova-hpot_fenix:0:8645:2:w3" cst="pochopiteln&#x11B;" alignchecked="1" ent="of course"/>
