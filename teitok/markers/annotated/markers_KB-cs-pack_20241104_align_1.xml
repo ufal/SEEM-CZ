@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <examples>
 <user id="KB" email="blazkovakate@seznam.cz" name="Kate&#x159;ina Bla&#x17E;kov&#xE1;"/>
-  <item id="ex-70128" cql="q-39" xml="Vopenka-Paty_rozmer" en="" cs="cs:Vopenka-Paty_rozmer:0:464:2:w4" cst="sp&#xED;&#x161;"/>
-  <item id="ex-65157" cql="q-39" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:691:2:w40" cst="sp&#xED;&#x161;"/>
-  <item id="ex-69056" cql="q-39" xml="Skvorecky-Mirakl" en="" cs="cs:Skvorecky-Mirakl:0:2840:11:w9" cst="sp&#xED;&#x161;"/>
-  <item id="ex-70005" cql="q-39" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:147:5:w51" cs="cs:Viewegh-Vybijena:0:146:4:w49" cst="sp&#xED;&#x161;e"/>
-  <item id="ex-62518" cql="q-39" xml="Douskova-Hrdy_Budzes" en="" cs="cs:Douskova-Hrdy_Budzes:0:363:2:w38" cst="sp&#xED;&#x161;"/>
-  <item id="ex-66314" cql="q-39" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:592:2:w8" cs="cs:Lustig-ModlitbaProKHor:0:647:2:w5" cst="sp&#xED;&#x161;e"/>
-  <item id="ex-70481" cql="q-39" xml="Zmeskal-Milostny_dopis" en="" cs="cs:Zmeskal-Milostny_dopis:0:860:15:w22" cst="sp&#xED;&#x161;e"/>
-  <item id="ex-67386" cql="q-39" xml="panek-dejiny_ceskych" en="" cs="cs:panek-dejiny_ceskych:0:1572:7:w31" cst="sp&#xED;&#x161;e"/>
-  <item id="ex-60591" cql="q-39" xml="Balaban-Mozna_ze_odcha" en="en:Balaban-Mozna_ze_odcha:0:276:5:w1" cs="cs:Balaban-Mozna_ze_odcha:0:287:5:w1" cst="Sp&#xED;&#x161;"/>
-  <item id="ex-65793" cql="q-39" xml="Levy-Umeni_prekladu" en="" cs="cs:Levy-Umeni_prekladu:0:8:49:w12" cst="sp&#xED;&#x161;e"/>
-  <item id="ex-64051" cql="q-39" xml="hajicek-selsky_baroko" en="en:hajicek-selsky_baroko:0:1704:1:w10 en:hajicek-selsky_baroko:0:1704:1:w3 en:hajicek-selsky_baroko:0:1704:1:w8" cs="cs:hajicek-selsky_baroko:0:1693:1:w5" cst="sp&#xED;&#x161;"/>
-  <item id="ex-70146" cql="q-39" xml="Vopenka-Paty_rozmer" en="" cs="cs:Vopenka-Paty_rozmer:0:1638:7:w8" cst="sp&#xED;&#x161;"/>
-  <item id="ex-70470" cql="q-39" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:598:1:w7 en:Zmeskal-Milostny_dopis:0:598:1:w8" cs="cs:Zmeskal-Milostny_dopis:0:583:1:w8" cst="sp&#xED;&#x161;"/>
-  <item id="ex-69129" cql="q-39" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:177:8:w17" cs="cs:Skvorecky-PribehIng_2:0:124:9:w6" cst="sp&#xED;&#x161;"/>
+  <item id="ex-70128" cql="q-39" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:460:2:w7" cs="cs:Vopenka-Paty_rozmer:0:464:2:w4" cst="sp&#xED;&#x161;" alignchecked="1" ent="instead"/>
+  <item id="ex-65157" cql="q-39" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:691:2:w40" cst="sp&#xED;&#x161;" ent=""/>
+  <item id="ex-69056" cql="q-39" xml="Skvorecky-Mirakl" en="X" cs="cs:Skvorecky-Mirakl:0:2840:11:w9" cst="sp&#xED;&#x161;" alignchecked="1" ent=""/>
+  <item id="ex-70005" cql="q-39" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:147:5:w51" cs="cs:Viewegh-Vybijena:0:146:4:w49" cst="sp&#xED;&#x161;e" alignchecked="1" ent="more"/>
+  <item id="ex-62518" cql="q-39" xml="Douskova-Hrdy_Budzes" en="X" cs="cs:Douskova-Hrdy_Budzes:0:363:2:w38" cst="sp&#xED;&#x161;" alignchecked="1" ent=""/>
+  <item id="ex-66314" cql="q-39" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:592:2:w8" cs="cs:Lustig-ModlitbaProKHor:0:647:2:w5" cst="sp&#xED;&#x161;e" alignchecked="1" ent="more"/>
+  <item id="ex-70481" cql="q-39" xml="Zmeskal-Milostny_dopis" en="X" cs="cs:Zmeskal-Milostny_dopis:0:860:15:w22" cst="sp&#xED;&#x161;e" alignchecked="1" ent=""/>
+  <item id="ex-67386" cql="q-39" xml="panek-dejiny_ceskych" en="X" cs="cs:panek-dejiny_ceskych:0:1572:7:w31" cst="sp&#xED;&#x161;e" alignchecked="1" ent=""/>
+  <item id="ex-60591" cql="q-39" xml="Balaban-Mozna_ze_odcha" en="en:Balaban-Mozna_ze_odcha:0:276:5:w1" cs="cs:Balaban-Mozna_ze_odcha:0:287:5:w1" cst="Sp&#xED;&#x161;" alignchecked="1" ent="More"/>
+  <item id="ex-65793" cql="q-39" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:8:62:w15" cs="cs:Levy-Umeni_prekladu:0:8:49:w12" cst="sp&#xED;&#x161;e" alignchecked="1" ent="only"/>
+  <item id="ex-64051" cql="q-39" xml="hajicek-selsky_baroko" en="en:hajicek-selsky_baroko:0:1704:1:w8 en:hajicek-selsky_baroko:0:1704:1:w9 en:hajicek-selsky_baroko:0:1704:1:w10" cs="cs:hajicek-selsky_baroko:0:1693:1:w5" cst="sp&#xED;&#x161;" ent="quite a lot"/>
+  <item id="ex-70146" cql="q-39" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:1612:8:w10" cs="cs:Vopenka-Paty_rozmer:0:1638:7:w8" cst="sp&#xED;&#x161;" alignchecked="1" ent="just"/>
+  <item id="ex-70470" cql="q-39" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:598:1:w7" cs="cs:Zmeskal-Milostny_dopis:0:583:1:w8" cst="sp&#xED;&#x161;" alignchecked="1" ent="more"/>
+  <item id="ex-69129" cql="q-39" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:177:8:w17" cs="cs:Skvorecky-PribehIng_2:0:124:9:w6" cst="sp&#xED;&#x161;" alignchecked="1" ent="rather"/>
   <item id="ex-69178" cql="q-39" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:4220:2:w7" cs="cs:Skvorecky-PribehIng_2:0:3508:2:w4" cst="sp&#xED;&#x161;"/>
   <item id="ex-69649" cql="q-39" xml="topol-andel" en="en:topol-andel:0:64:1:w16" cs="cs:topol-andel:0:68:1:w7" cst="sp&#xED;&#x161;"/>
   <item id="ex-65300" cql="q-39" xml="Kundera-Nesmrtelnost" en="en:Kundera-Nesmrtelnost:0:353:14:w29" cs="cs:Kundera-Nesmrtelnost:0:356:12:w17" cst="sp&#xED;&#x161;e"/>
