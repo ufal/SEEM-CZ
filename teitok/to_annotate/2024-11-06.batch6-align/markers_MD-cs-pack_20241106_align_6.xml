@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-<user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Danková"/>
   <item id="ex-95781" cql="q-52" xml="Mornstajnova-Hana" en="en:Mornstajnova-Hana:0:1543:5:w1" cs="cs:Mornstajnova-Hana:0:1470:5:w1 cs:Mornstajnova-Hana:0:1470:5:w2" cst="Podle všeho"/>
   <item id="ex-95058" cql="q-52" xml="Capek-Valka_s_mloky" en="" cs="cs:Capek-Valka_s_mloky:0:1122:1:w1 cs:Capek-Valka_s_mloky:0:1122:1:w2" cst="Podle všeho"/>
   <item id="ex-96075" cql="q-52" xml="Skvorecky-PribehIng_1" en="en:Skvorecky-PribehIng_1:0:4650:1:w10 en:Skvorecky-PribehIng_1:0:4650:1:w9" cs="cs:Skvorecky-PribehIng_1:0:3642:2:w9 cs:Skvorecky-PribehIng_1:0:3642:2:w10" cst="podle všeho"/>

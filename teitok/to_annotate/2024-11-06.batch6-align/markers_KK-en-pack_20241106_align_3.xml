@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-<user id="KK" email="kyckova2@seznam.cz" name="Karol&#xED;na K&#xFD;&#x10D;kov&#xE1;"/>
+<user id="KK" email="kyckova2@seznam.cz" name="Karolína Kýčková"/>
   <item id="ex-85255" cql="q-49" xml="Fieldingova-panenka" en="en:Fieldingova-panenka:0:448:1:w1 en:Fieldingova-panenka:0:448:1:w2" cs="cs:Fieldingova-panenka:0:445:1:w1" cst="Zřejmě"/>
   <item id="ex-90121" cql="q-49" xml="Popper-Otevrena_spol_2" en="" cs="cs:Popper-Otevrena_spol_2:0:642:9:w1" cst="Zřejmě"/>
   <item id="ex-91972" cql="q-49" xml="Updike-Kraliku_utikej" en="" cs="cs:Updike-Kraliku_utikej:0:977:3:w14" cst="zřejmě"/>

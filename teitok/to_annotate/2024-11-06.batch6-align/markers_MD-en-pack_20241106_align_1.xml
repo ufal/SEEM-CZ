@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-<user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Danková"/>
   <item id="ex-80237" cql="q-47" xml="doyle-posledni_poklona" en="" cs="cs:doyle-posledni_poklona:0:523:2:w4" cst="zajisté"/>
   <item id="ex-80567" cql="q-47" xml="rowling-princ" en="" cs="cs:rowling-princ:0:5491:1:w28" cst="zajisté"/>
   <item id="ex-80106" cql="q-47" xml="austen-pycha" en="en:austen-pycha:0:691:1:w3" cs="cs:austen-pycha:0:681:3:w2" cst="Zajisté"/>

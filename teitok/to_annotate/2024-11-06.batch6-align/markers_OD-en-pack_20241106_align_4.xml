@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-<user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
+<user id="OD" email="odrobil@seznam.cz" name="Ondřej Drobil"/>
   <item id="ex-92868" cql="q-50" xml="Francis-Drahy_cas" en="en:Francis-Drahy_cas:0:1460:4:w4" cs="cs:Francis-Drahy_cas:0:2393:2:w5" cst="zřetelně"/>
   <item id="ex-93543" cql="q-50" xml="Salinger-KdoChytaVZite" en="en:Salinger-KdoChytaVZite:0:708:3:w13" cs="cs:Salinger-KdoChytaVZite:0:714:3:w14" cst="zřetelně"/>
   <item id="ex-92651" cql="q-50" xml="barnes-vedomi_konce" en="" cs="cs:barnes-vedomi_konce:0:783:1:w13" cst="zřetelně"/>

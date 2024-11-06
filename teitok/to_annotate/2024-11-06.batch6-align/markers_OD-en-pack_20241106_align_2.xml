@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-<user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
+<user id="OD" email="odrobil@seznam.cz" name="Ondřej Drobil"/>
   <item id="ex-81252" cql="q-48" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:3812:2:w21" cs="cs:follett-pilire_zeme:0:3805:2:w14" cst="zjevně"/>
   <item id="ex-82173" cql="q-48" xml="rowling-princ" en="en:rowling-princ:0:1656:2:w5" cs="cs:rowling-princ:0:1638:2:w5" cst="zjevně"/>
   <item id="ex-80891" cql="q-48" xml="Boyd-Neklid" en="" cs="cs:Boyd-Neklid:0:1422:1:w4" cst="zjevně"/>
