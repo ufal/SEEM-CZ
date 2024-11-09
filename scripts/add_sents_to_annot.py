@@ -40,7 +40,7 @@ def main():
             logging.debug(f"Storing sentence {sentid} into the annotation item {itemelem.attrib['id']}")
             itemelem.attrib["cssent"] = book.get_sentence(sentid)
 
-    input_doc.xml.write(sys.stdout, encoding="unicode")
+    input_doc.xml.write(sys.stdout, encoding="unicode", xml_declaration=True)
 
 if __name__ == "__main__":
     main()
