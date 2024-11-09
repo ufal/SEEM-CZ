@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <examples>
 <user id="MD" email="m.dankova25@gmail.com" name="Michaela Dankov&#xE1;"/>
-  <item id="ex-60501" cql="q-41" xml="follett-pilire_zeme" en="" cs="cs:follett-pilire_zeme:0:132:1:w11" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-61678" cql="q-41" xml="orwell-farma_zvirat" en="en:orwell-farma_zvirat:0:609:3:w7" cs="cs:orwell-farma_zvirat:0:607:3:w7" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-62231" cql="q-41" xml="updike-kralik_se_vraci" en="en:updike-kralik_se_vraci:0:42:6:w1" cs="cs:updike-kralik_se_vraci:0:39:6:w1" cst="T&#x11B;&#x17E;ko"/>
-  <item id="ex-60004" cql="q-41" xml="Barnes-Arthur_a_George" en="en:Barnes-Arthur_a_George:0:2359:3:w4" cs="cs:Barnes-Arthur_a_George:0:2375:3:w2" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-61017" cql="q-41" xml="Irving-PravidlaMostarn" en="en:Irving-PravidlaMostarn:0:2729:5:w4" cs="cs:Irving-PravidlaMostarn:0:2712:4:w7" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-61157" cql="q-41" xml="kilham-mezi_medvedy" en="" cs="cs:kilham-mezi_medvedy:0:121:4:w4" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-59935" cql="q-41" xml="asimov-ja_robot" en="en:asimov-ja_robot:0:892:1:w4" cs="cs:asimov-ja_robot:0:889:1:w5" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-60829" cql="q-41" xml="harris-mlceni_jehn" en="en:harris-mlceni_jehn:0:2063:2:w21" cs="cs:harris-mlceni_jehn:0:2057:3:w14" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-60195" cql="q-41" xml="chevalier-divka_s_perl" en="en:chevalier-divka_s_perl:0:1706:5:w15" cs="cs:chevalier-divka_s_perl:0:1645:5:w16" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-61836" cql="q-41" xml="Ridley-Genom" en="en:Ridley-Genom:0:325:2:w3" cs="cs:Ridley-Genom:0:310:5:w1" cst="T&#x11B;&#x17E;ko"/>
-  <item id="ex-61885" cql="q-41" xml="rowlingova-hpot_fenix" en="" cs="cs:rowlingova-hpot_fenix:0:3470:2:w24" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-61927" cql="q-41" xml="sacks-muz_si_pletl" en="en:sacks-muz_si_pletl:0:207:33:w41" cs="cs:sacks-muz_si_pletl:0:1021:2:w19" cst="t&#x11B;&#x17E;ko"/>
-  <item id="ex-60626" cql="q-41" xml="frost-sez_sedmi" en="en:frost-sez_sedmi:0:1128:1:w4" cs="cs:frost-sez_sedmi:0:1128:1:w2" cst="T&#x11B;&#x17E;ko"/>
-  <item id="ex-59960" cql="q-41" xml="Austenova-Emma" en="en:Austenova-Emma:0:461:6:w24" cs="cs:Austenova-Emma:0:438:6:w24" cst="t&#x11B;&#x17E;ko"/>
+  <item id="ex-60501" cql="q-41" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:136:1:w14 en:follett-pilire_zeme:0:136:1:w15" cs="cs:follett-pilire_zeme:0:132:1:w11" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent="kept slipping"/>
+  <item id="ex-61678" cql="q-41" xml="orwell-farma_zvirat" en="en:orwell-farma_zvirat:0:609:3:w7" cs="cs:orwell-farma_zvirat:0:607:3:w7" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent="harsh"/>
+  <item id="ex-62231" cql="q-41" xml="updike-kralik_se_vraci" en="en:updike-kralik_se_vraci:0:42:6:w1" cs="cs:updike-kralik_se_vraci:0:39:6:w1" cst="T&#x11B;&#x17E;ko" alignchecked="1" ent="Hard"/>
+  <item id="ex-60004" cql="q-41" xml="Barnes-Arthur_a_George" en="-" cs="cs:Barnes-Arthur_a_George:0:2375:3:w2" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent=""/>
+  <item id="ex-61017" cql="q-41" xml="Irving-PravidlaMostarn" en="-" cs="cs:Irving-PravidlaMostarn:0:2712:4:w7" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent=""/>
+  <item id="ex-61157" cql="q-41" xml="kilham-mezi_medvedy" en="-" cs="cs:kilham-mezi_medvedy:0:121:4:w4" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent=""/>
+  <item id="ex-59935" cql="q-41" xml="asimov-ja_robot" en="en:asimov-ja_robot:0:892:1:w4" cs="cs:asimov-ja_robot:0:889:1:w5" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent="difficult"/>
+  <item id="ex-60829" cql="q-41" xml="harris-mlceni_jehn" en="-" cs="cs:harris-mlceni_jehn:0:2057:3:w14" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent=""/>
+  <item id="ex-60195" cql="q-41" xml="chevalier-divka_s_perl" en="-" cs="cs:chevalier-divka_s_perl:0:1645:5:w16" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent=""/>
+  <item id="ex-61836" cql="q-41" xml="Ridley-Genom" en="en:Ridley-Genom:0:325:2:w3" cs="cs:Ridley-Genom:0:310:5:w1" cst="T&#x11B;&#x17E;ko" alignchecked="1" ent="hardly"/>
+  <item id="ex-61885" cql="q-41" xml="rowlingova-hpot_fenix" en="-" cs="cs:rowlingova-hpot_fenix:0:3470:2:w24" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent=""/>
+  <item id="ex-61927" cql="q-41" xml="sacks-muz_si_pletl" en="en:sacks-muz_si_pletl:0:207:33:w41" cs="cs:sacks-muz_si_pletl:0:1021:2:w19" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent="scarcely"/>
+  <item id="ex-60626" cql="q-41" xml="frost-sez_sedmi" en="en:frost-sez_sedmi:0:1128:1:w4" cs="cs:frost-sez_sedmi:0:1128:1:w2" cst="T&#x11B;&#x17E;ko" alignchecked="1" ent="difficult"/>
+  <item id="ex-59960" cql="q-41" xml="Austenova-Emma" en="-" cs="cs:Austenova-Emma:0:438:6:w24" cst="t&#x11B;&#x17E;ko" alignchecked="1" ent=""/>
   <item id="ex-59941" cql="q-41" xml="Asimov-Nadace" en="en:Asimov-Nadace:0:975:4:w2" cs="cs:Asimov-Nadace:0:970:3:w17" cst="t&#x11B;&#x17E;ko"/>
   <item id="ex-62065" cql="q-41" xml="Steel-Strazny_andel" en="en:Steel-Strazny_andel:0:332:2:w3" cs="cs:Steel-Strazny_andel:0:603:2:w2" cst="t&#x11B;&#x17E;ko"/>
   <item id="ex-60226" cql="q-41" xml="clarke-setkani_ramou" en="en:clarke-setkani_ramou:0:197:2:w3" cs="cs:clarke-setkani_ramou:0:216:2:w1" cst="T&#x11B;&#x17E;ko"/>

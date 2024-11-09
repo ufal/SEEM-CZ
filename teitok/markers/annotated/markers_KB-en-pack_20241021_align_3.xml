@@ -44,7 +44,7 @@
   <item id="ex-54225" cql="q-32" xml="rooney-normalni_lidi" en="en:rooney-normalni_lidi:0:2144:4:w2" cs="cs:rooney-normalni_lidi:0:2127:4:w8" cst="pr&#xFD;" alignchecked="1" ent="said"/>
   <item id="ex-49820" cql="q-32" xml="Barth-Na_konci_cesty" en="X" cs="cs:Barth-Na_konci_cesty:0:219:1:w1" cst="Prej" alignchecked="1" ent=""/>
   <item id="ex-54153" cql="q-32" xml="Puzo-Kmotr" en="X" cs="cs:Puzo-Kmotr:0:2498:3:w7" cst="pr&#xFD;" alignchecked="1" ent=""/>
-  <item id="ex-50480" cql="q-32" xml="clarke-strange_norrell" en="" cs="cs:clarke-strange_norrell:0:2459:2:w8" cst="pr&#xFD;"/>
+  <item id="ex-50480" cql="q-32" xml="clarke-strange_norrell" en="en:clarke-strange_norrell:0:2510:2:w3" cs="cs:clarke-strange_norrell:0:2459:2:w8" cst="pr&#xFD;" alignchecked="1" ent="said"/>
   <item id="ex-53237" cql="q-32" xml="mantel-wolf_hall" en="en:mantel-wolf_hall:0:3689:2:w2" cs="cs:mantel-wolf_hall:0:3682:2:w2" cst="pr&#xFD;" alignchecked="1" ent="says"/>
   <item id="ex-52083" cql="q-32" xml="Isaacson-Steve_Jobs" en="en:Isaacson-Steve_Jobs:0:1078:1:w10" cs="cs:Isaacson-Steve_Jobs:0:1040:2:w9" cst="pr&#xFD;" alignchecked="1" ent="saying"/>
   <item id="ex-53021" cql="q-32" xml="ludlum-bourneuv_mytus" en="en:ludlum-bourneuv_mytus:0:4739:4:w47" cs="cs:ludlum-bourneuv_mytus:0:4753:7:w19" cst="pr&#xFD;" alignchecked="1" ent="tell"/>
