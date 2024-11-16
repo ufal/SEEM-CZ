@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<examples>
+<user id="KK" email="kyckova2@seznam.cz" name="Karolína Kýčková"/>
+  <item id="ex-85255" cql="q-49" xml="Fieldingova-panenka" en="en:Fieldingova-panenka:0:448:1:w1 en:Fieldingova-panenka:0:448:1:w2" cs="cs:Fieldingova-panenka:0:445:1:w1" cst="Zřejmě"/>
+  <item id="ex-90121" cql="q-49" xml="Popper-Otevrena_spol_2" en="" cs="cs:Popper-Otevrena_spol_2:0:642:9:w1" cst="Zřejmě"/>
+  <item id="ex-91972" cql="q-49" xml="Updike-Kraliku_utikej" en="" cs="cs:Updike-Kraliku_utikej:0:977:3:w14" cst="zřejmě"/>
+  <item id="ex-83538" cql="q-49" xml="barnes-zadny_duvod" en="" cs="cs:barnes-zadny_duvod:0:97:3:w19" cst="zřejmě"/>
+  <item id="ex-87095" cql="q-49" xml="Irving-Svet_podleGarpa" en="" cs="cs:Irving-Svet_podleGarpa:0:1856:1:w3" cst="zřejmě"/>
+  <item id="ex-87623" cql="q-49" xml="Kesey-Vyhodme_ho_z_kol" en="" cs="cs:Kesey-Vyhodme_ho_z_kol:0:2069:1:w4" cst="zřejmě"/>
+  <item id="ex-83339" cql="q-49" xml="banville-more" en="en:banville-more:0:334:12:w25" cs="cs:banville-more:0:338:12:w23" cst="zřejmě"/>
+  <item id="ex-86627" cql="q-49" xml="Hemingway-Komu_zvoni_h" en="" cs="cs:Hemingway-Komu_zvoni_h:0:862:14:w1" cst="Zřejmě"/>
+  <item id="ex-84023" cql="q-49" xml="Brown-Pavucina_lzi" en="en:Brown-Pavucina_lzi:0:1893:9:w6" cs="cs:Brown-Pavucina_lzi:0:1922:8:w3" cst="zřejmě"/>
+  <item id="ex-90428" cql="q-49" xml="rowlingova-hpot_kamen" en="en:rowlingova-hpot_kamen:0:1876:2:w3" cs="cs:rowlingova-hpot_kamen:0:1899:2:w4" cst="zřejmě"/>
+  <item id="ex-90625" cql="q-49" xml="rowling-princ" en="en:rowling-princ:0:1625:2:w16" cs="cs:rowling-princ:0:1607:2:w16" cst="zřejmě"/>
+  <item id="ex-90806" cql="q-49" xml="shreve-vse_co_pral" en="" cs="cs:shreve-vse_co_pral:0:640:1:w6" cst="zřejmě"/>
+  <item id="ex-85738" cql="q-49" xml="franzen-rozhreseni" en="en:franzen-rozhreseni:0:4646:1:w6" cs="cs:franzen-rozhreseni:0:4686:1:w6" cst="zřejmě"/>
+  <item id="ex-83440" cql="q-49" xml="Barnes-Arthur_a_George" en="" cs="cs:Barnes-Arthur_a_George:0:2685:3:w3" cst="zřejmě"/>
+  <item id="ex-83363" cql="q-49" xml="Barnes-Arthur_a_George" en="en:Barnes-Arthur_a_George:0:464:4:w9" cs="cs:Barnes-Arthur_a_George:0:471:4:w10" cst="zřejmě"/>
+  <item id="ex-91368" cql="q-49" xml="Stoker-Dracula" en="" cs="cs:Stoker-Dracula:0:1906:14:w5" cst="zřejmě"/>
+  <item id="ex-84150" cql="q-49" xml="Brown-zdravim_temnoto" en="en:Brown-zdravim_temnoto:0:4757:2:w10" cs="cs:Brown-zdravim_temnoto:0:4753:2:w10" cst="zřejmě"/>
+  <item id="ex-86543" cql="q-49" xml="hayek-cesta_do_otro" en="en:hayek-cesta_do_otro:0:449:3:w8" cs="cs:hayek-cesta_do_otro:0:449:2:w24" cst="zřejmě"/>
+  <item id="ex-88583" cql="q-49" xml="lodge-hostujici_prof" en="" cs="cs:lodge-hostujici_prof:0:393:4:w10" cst="zřejmě"/>
+  <item id="ex-82453" cql="q-49" xml="adams-daleka_cesta" en="en:adams-daleka_cesta:0:1242:2:w28" cs="cs:adams-daleka_cesta:0:1257:2:w26" cst="zřejmě"/>
+  <item id="ex-90226" cql="q-49" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:2130:4:w10" cs="cs:Puzo-Kmotr:0:2063:4:w12" cst="zřejmě"/>
+  <item id="ex-92293" cql="q-49" xml="Wells-Valka_svetu" en="en:Wells-Valka_svetu:0:479:2:w4" cs="cs:Wells-Valka_svetu:0:492:2:w1" cst="Zřejmě"/>
+  <item id="ex-89254" cql="q-49" xml="moriarty-sedmilharky" en="en:moriarty-sedmilharky:0:1156:3:w3" cs="cs:moriarty-sedmilharky:0:1172:2:w4" cst="zřejmě"/>
+  <item id="ex-89145" cql="q-49" xml="McCarthy-Hranice" en="en:McCarthy-Hranice:0:3139:3:w2" cs="cs:McCarthy-Hranice:0:3146:3:w1" cst="Zřejmě"/>
+  <item id="ex-89021" cql="q-49" xml="mantel-wolf_hall" en="" cs="cs:mantel-wolf_hall:0:637:3:w7" cst="zřejmě"/>
+  <item id="ex-91953" cql="q-49" xml="Updike-Kraliku_utikej" en="en:Updike-Kraliku_utikej:0:111:10:w20" cs="cs:Updike-Kraliku_utikej:0:120:10:w16" cst="zřejmě"/>
+  <item id="ex-87098" cql="q-49" xml="Irving-Svet_podleGarpa" en="en:Irving-Svet_podleGarpa:0:1903:1:w21" cs="cs:Irving-Svet_podleGarpa:0:1924:1:w18" cst="zřejmě"/>
+  <item id="ex-92162" cql="q-49" xml="Vonnegut-Kolibka" en="" cs="cs:Vonnegut-Kolibka:0:1168:4:w12" cst="zřejmě"/>
+  <item id="ex-90667" cql="q-49" xml="rowling-princ" en="en:rowling-princ:0:5575:4:w1" cs="cs:rowling-princ:0:5420:4:w2" cst="zřejmě"/>
+  <item id="ex-86393" cql="q-49" xml="hailey-konecna_diag" en="en:hailey-konecna_diag:0:1039:1:w8" cs="cs:hailey-konecna_diag:0:1383:1:w9" cst="zřejmě"/>
+  <item id="ex-85033" cql="q-49" xml="Durrell-Ptaci_zvirata" en="en:Durrell-Ptaci_zvirata:0:1492:7:w21" cs="cs:Durrell-Ptaci_zvirata:0:1462:8:w26" cst="zřejmě"/>
+  <item id="ex-82942" cql="q-49" xml="Amis-Stastny_Jim" en="" cs="cs:Amis-Stastny_Jim:0:1993:5:w10" cst="zřejmě"/>
+  <item id="ex-87174" cql="q-49" xml="Irving-Svet_podleGarpa" en="" cs="cs:Irving-Svet_podleGarpa:0:3915:1:w6" cst="zřejmě"/>
+  <item id="ex-90244" cql="q-49" xml="pynchon-vykrik" en="en:pynchon-vykrik:0:1864:1:w41" cs="cs:pynchon-vykrik:0:1843:2:w31" cst="zřejmě"/>
+  <item id="ex-85086" cql="q-49" xml="farrell-nepokoje" en="en:farrell-nepokoje:0:200:4:w1" cs="cs:farrell-nepokoje:0:195:5:w1" cst="Zřejmě"/>
+  <item id="ex-82978" cql="q-49" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:417:4:w1" cs="cs:angellova-dvoji_zivot:0:415:4:w4" cst="zřejmě"/>
+  <item id="ex-90038" cql="q-49" xml="Popper-hledani" en="en:Popper-hledani:0:754:2:w12" cs="cs:Popper-hledani:0:731:2:w6" cst="zřejmě"/>
+  <item id="ex-84797" cql="q-49" xml="Doyle-Pribehy_Sherlock" en="en:Doyle-Pribehy_Sherlock:0:698:2:w5" cs="cs:Doyle-Pribehy_Sherlock:0:728:2:w5" cst="zřejmě"/>
+  <item id="ex-85934" cql="q-49" xml="galbraith-smrtici_bila" en="" cs="cs:galbraith-smrtici_bila:0:171:1:w6" cst="zřejmě"/>
+  <item id="ex-90468" cql="q-49" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:1273:2:w2" cs="cs:rowlingova-hpot_pohar:0:1266:3:w5" cst="zřejmě"/>
+  <item id="ex-90334" cql="q-49" xml="Roth-lidska_skvrna" en="" cs="cs:Roth-lidska_skvrna:0:641:1:w49" cst="zřejmě"/>
+  <item id="ex-83470" cql="q-49" xml="Barnes-Arthur_a_George" en="en:Barnes-Arthur_a_George:0:3296:4:w1" cs="cs:Barnes-Arthur_a_George:0:3318:4:w5" cst="zřejmě"/>
+  <item id="ex-90191" cql="q-49" xml="Puzo-Kmotr" en="" cs="cs:Puzo-Kmotr:0:1337:1:w4" cst="zřejmě"/>
+  <item id="ex-84269" cql="q-49" xml="carroll-alenka_zrcadle" en="en:carroll-alenka_zrcadle:0:654:1:w1" cs="cs:carroll-alenka_zrcadle:0:620:1:w3" cst="zřejmě"/>
+  <item id="ex-88597" cql="q-49" xml="lodge-hostujici_prof" en="" cs="cs:lodge-hostujici_prof:0:963:2:w22" cst="zřejmě"/>
+  <item id="ex-86690" cql="q-49" xml="Hemingway-OstrovyUpr_p" en="en:Hemingway-OstrovyUpr_p:0:6373:15:w2" cs="cs:Hemingway-OstrovyUpr_p:0:6341:14:w1" cst="Zřejmě"/>
+  <item id="ex-88204" cql="q-49" xml="Lessingova-Puklina" en="en:Lessingova-Puklina:0:564:4:w25" cs="cs:Lessingova-Puklina:0:551:4:w25" cst="zřejmě"/>
+  <item id="ex-83324" cql="q-49" xml="banville-more" en="en:banville-more:0:2:5:w10" cs="cs:banville-more:0:2:5:w8" cst="zřejmě"/>
+  <item id="ex-82771" cql="q-49" xml="Allen-Bez_peri" en="en:Allen-Bez_peri:0:337:2:w12" cs="cs:Allen-Bez_peri:0:335:2:w9" cst="zřejmě"/>
+  <item id="ex-92270" cql="q-49" xml="Wells-Neviditelny" en="en:Wells-Neviditelny:0:1050:2:w11" cs="cs:Wells-Neviditelny:0:1150:1:w10" cst="zřejmě"/>
+</examples>

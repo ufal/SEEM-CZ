@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<examples>
+<user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
+  <item id="ex-81252" cql="q-48" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:3812:2:w21" cs="cs:follett-pilire_zeme:0:3805:2:w14" cst="zjevně"/>
+  <item id="ex-82173" cql="q-48" xml="rowling-princ" en="en:rowling-princ:0:1656:2:w5" cs="cs:rowling-princ:0:1638:2:w5" cst="zjevně"/>
+  <item id="ex-80891" cql="q-48" xml="Boyd-Neklid" en="" cs="cs:Boyd-Neklid:0:1422:1:w4" cst="zjevně"/>
+  <item id="ex-81709" cql="q-48" xml="Le_Carre-Single__singl" en="" cs="cs:Le_Carre-Single__singl:0:798:5:w9" cst="zjevně"/>
+  <item id="ex-81896" cql="q-48" xml="moriarty-sedmilharky" en="" cs="cs:moriarty-sedmilharky:0:3524:1:w29" cst="zjevně"/>
+  <item id="ex-80788" cql="q-48" xml="barnes-zadny_duvod" en="en:barnes-zadny_duvod:0:351:6:w4" cs="cs:barnes-zadny_duvod:0:351:6:w4" cst="zjevně"/>
+  <item id="ex-81540" cql="q-48" xml="ishiguro-neopoustej_me" en="en:ishiguro-neopoustej_me:0:1123:4:w9" cs="cs:ishiguro-neopoustej_me:0:1106:4:w13" cst="zjevně"/>
+  <item id="ex-80982" cql="q-48" xml="bukowski-postovni_urad" en="" cs="cs:bukowski-postovni_urad:0:2103:2:w5" cst="zjevně"/>
+  <item id="ex-82246" cql="q-48" xml="sacks-muz_si_pletl" en="en:sacks-muz_si_pletl:0:112:4:w1" cs="cs:sacks-muz_si_pletl:0:422:5:w1" cst="Zjevně"/>
+  <item id="ex-82317" cql="q-48" xml="smith-sberatel" en="" cs="cs:smith-sberatel:0:1784:1:w7" cst="zjevně"/>
+  <item id="ex-82382" cql="q-48" xml="Wells-Valka_svetu" en="" cs="cs:Wells-Valka_svetu:0:782:3:w9" cst="zjevně"/>
+  <item id="ex-81372" cql="q-48" xml="galbraith-hedvabnik" en="" cs="cs:galbraith-hedvabnik:0:4016:1:w12" cst="zjevně"/>
+  <item id="ex-80813" cql="q-48" xml="bernieres-mandolina" en="en:bernieres-mandolina:0:2486:3:w53 en:bernieres-mandolina:0:2486:3:w69" cs="cs:bernieres-mandolina:0:2345:3:w56" cst="zjevně"/>
+  <item id="ex-80794" cql="q-48" xml="Barth-Na_konci_cesty" en="en:Barth-Na_konci_cesty:0:272:2:w16" cs="cs:Barth-Na_konci_cesty:0:277:1:w22" cst="zjevně"/>
+  <item id="ex-81022" cql="q-48" xml="Clancy-Spinava_hra" en="" cs="cs:Clancy-Spinava_hra:0:1153:3:w7" cst="zjevně"/>
+  <item id="ex-81522" cql="q-48" xml="Irving-Rok_vdovou" en="" cs="cs:Irving-Rok_vdovou:0:3850:3:w2" cst="zjevně"/>
+  <item id="ex-81979" cql="q-48" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:2298:2:w2" cs="cs:Puzo-Kmotr:0:2229:3:w1" cst="Zjevně"/>
+  <item id="ex-80634" cql="q-48" xml="adams-prevazne_neskodn" en="en:adams-prevazne_neskodn:0:147:2:w5" cs="cs:adams-prevazne_neskodn:0:143:2:w5" cst="zjevně"/>
+  <item id="ex-82196" cql="q-48" xml="rowling-princ" en="" cs="cs:rowling-princ:0:2863:2:w5" cst="zjevně"/>
+  <item id="ex-82075" cql="q-48" xml="rowlingova-hpot_relik" en="en:rowlingova-hpot_relik:0:2268:1:w24" cs="cs:rowlingova-hpot_relik:0:2281:1:w22" cst="zjevně"/>
+  <item id="ex-82047" cql="q-48" xml="rowlingova-hpot_relik" en="en:rowlingova-hpot_relik:0:259:2:w5" cs="cs:rowlingova-hpot_relik:0:256:2:w4" cst="zjevně"/>
+  <item id="ex-82016" cql="q-48" xml="rowlingova-hpot_fenix" en="en:rowlingova-hpot_fenix:0:3899:1:w6" cs="cs:rowlingova-hpot_fenix:0:3909:1:w4" cst="zjevně"/>
+  <item id="ex-81713" cql="q-48" xml="Lessingova-Puklina" en="en:Lessingova-Puklina:0:96:5:w25" cs="cs:Lessingova-Puklina:0:74:5:w19" cst="zjevně"/>
+  <item id="ex-82331" cql="q-48" xml="Tolkien-Pan_prstenu_1" en="en:Tolkien-Pan_prstenu_1:0:96:2:w1 en:Tolkien-Pan_prstenu_1:0:96:2:w3" cs="cs:Tolkien-Pan_prstenu_1:0:70:7:w5" cst="zjevně"/>
+  <item id="ex-81506" cql="q-48" xml="Irving-Rok_vdovou" en="en:Irving-Rok_vdovou:0:656:1:w15" cs="cs:Irving-Rok_vdovou:0:650:1:w17" cst="zjevně"/>
+  <item id="ex-81191" cql="q-48" xml="Doctorow-Ragtime" en="en:Doctorow-Ragtime:0:92:31:w26" cs="cs:Doctorow-Ragtime:0:91:31:w22" cst="zjevně"/>
+  <item id="ex-80698" cql="q-48" xml="adichie-amerikana" en="en:adichie-amerikana:0:3255:1:w16 en:adichie-amerikana:0:3255:1:w18" cs="cs:adichie-amerikana:0:3258:1:w12" cst="zjevně"/>
+  <item id="ex-81736" cql="q-48" xml="Lindseyova-Zamilovany" en="" cs="cs:Lindseyova-Zamilovany:0:955:1:w2" cst="zjevně"/>
+  <item id="ex-82200" cql="q-48" xml="rowling-princ" en="en:rowling-princ:0:3245:1:w7" cs="cs:rowling-princ:0:3173:1:w10" cst="zjevně"/>
+  <item id="ex-81210" cql="q-48" xml="evans-pomezi" en="en:evans-pomezi:0:1016:1:w19 en:evans-pomezi:0:1016:1:w31 en:evans-pomezi:0:1016:1:w33" cs="cs:evans-pomezi:0:1006:3:w6" cst="zjevně"/>
+  <item id="ex-80706" cql="q-48" xml="albright-peklo" en="en:albright-peklo:0:1055:3:w4" cs="cs:albright-peklo:0:1026:3:w2" cst="zjevně"/>
+  <item id="ex-82152" cql="q-48" xml="rowling-princ" en="en:rowling-princ:0:221:1:w18" cs="cs:rowling-princ:0:223:1:w17" cst="zjevně"/>
+  <item id="ex-81132" cql="q-48" xml="Dickens-NadejneVyhlidk" en="" cs="cs:Dickens-NadejneVyhlidk:0:604:2:w20" cst="zjevně"/>
+  <item id="ex-81400" cql="q-48" xml="galbraith-smrtici_bila" en="en:galbraith-smrtici_bila:0:3683:1:w7" cs="cs:galbraith-smrtici_bila:0:3675:1:w5" cst="zjevně"/>
+  <item id="ex-82258" cql="q-48" xml="siddons-bezpec_vysiny" en="en:siddons-bezpec_vysiny:0:811:10:w1" cs="cs:siddons-bezpec_vysiny:0:817:13:w1" cst="Zjevně"/>
+  <item id="ex-82223" cql="q-48" xml="rowling-princ" en="en:rowling-princ:0:4769:1:w18" cs="cs:rowling-princ:0:4658:1:w23" cst="zjevně"/>
+  <item id="ex-80856" cql="q-48" xml="Blatty-Exorcista_Soubo" en="en:Blatty-Exorcista_Soubo:0:2943:19:w11" cs="cs:Blatty-Exorcista_Soubo:0:2757:11:w12" cst="zjevně"/>
+  <item id="ex-82187" cql="q-48" xml="rowling-princ" en="en:rowling-princ:0:2358:3:w12 en:rowling-princ:0:2358:3:w9" cs="cs:rowling-princ:0:2319:3:w15" cst="zjevně"/>
+  <item id="ex-81033" cql="q-48" xml="Clarke-2001_Vesmir_od" en="" cs="cs:Clarke-2001_Vesmir_od:0:1156:2:w1" cst="Zjevně"/>
+  <item id="ex-81983" cql="q-48" xml="robilant-milenci_benat" en="en:robilant-milenci_benat:0:168:3:w15" cs="cs:robilant-milenci_benat:0:100:7:w11" cst="zjevně"/>
+  <item id="ex-81556" cql="q-48" xml="kahneman-mysleni" en="en:kahneman-mysleni:0:38:6:w8" cs="cs:kahneman-mysleni:0:40:6:w6" cst="zjevně"/>
+  <item id="ex-81930" cql="q-48" xml="OCallaghan-nas_coney" en="en:OCallaghan-nas_coney:0:326:5:w12" cs="cs:OCallaghan-nas_coney:0:323:5:w11" cst="zjevně"/>
+  <item id="ex-80784" cql="q-48" xml="barnes-zadny_duvod" en="en:barnes-zadny_duvod:0:46:7:w29" cs="cs:barnes-zadny_duvod:0:46:7:w32" cst="zjevně"/>
+  <item id="ex-80674" cql="q-48" xml="adams-zivot_vesmir" en="en:adams-zivot_vesmir:0:1356:2:w17" cs="cs:adams-zivot_vesmir:0:1349:2:w17" cst="zjevně"/>
+  <item id="ex-81633" cql="q-48" xml="krentz-zajatci_snu" en="" cs="cs:krentz-zajatci_snu:0:309:2:w1" cst="Zjevně"/>
+  <item id="ex-80728" cql="q-48" xml="asimov-druha_nadace" en="en:asimov-druha_nadace:0:410:4:w1" cs="cs:asimov-druha_nadace:0:400:4:w3" cst="zjevně"/>
+  <item id="ex-80669" cql="q-48" xml="adams-zivot_vesmir" en="en:adams-zivot_vesmir:0:766:2:w4" cs="cs:adams-zivot_vesmir:0:758:2:w2" cst="zjevně"/>
+  <item id="ex-81542" cql="q-48" xml="james-pad_odst_sedi" en="en:james-pad_odst_sedi:0:3174:2:w3" cs="cs:james-pad_odst_sedi:0:2990:2:w3" cst="zjevně"/>
+  <item id="ex-82111" cql="q-48" xml="rowlingova-hpot_relik" en="" cs="cs:rowlingova-hpot_relik:0:4924:4:w3" cst="zjevně"/>
+  <item id="ex-81288" cql="q-48" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:9062:4:w4" cs="cs:follett-pilire_zeme:0:8978:4:w2" cst="zjevně"/>
+</examples>
