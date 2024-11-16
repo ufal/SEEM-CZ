@@ -15,9 +15,9 @@
   <item id="ex-64505" cql="q-38" xml="McEwan-Sobota" en="en:McEwan-Sobota:0:186:8:w7" cs="cs:McEwan-Sobota:0:183:6:w8" cst="sotva" alignchecked="1" ent="barely"/>
   <item id="ex-66235" cql="q-38" xml="Tolkien-Pan_prstenu_1" en="X" cs="cs:Tolkien-Pan_prstenu_1:0:1418:1:w1" cst="Sotva" alignchecked="1" ent=""/>
   <item id="ex-59731" cql="q-38" xml="adams-daleka_cesta" en="X" cs="cs:adams-daleka_cesta:0:1655:2:w1" cst="Sotva" alignchecked="1" ent=""/>
-  <item id="ex-66862" cql="q-38" xml="zimbardo-lucifer_efekt" en="en:zimbardo-lucifer_efekt:0:270:1:w7 en:zimbardo-lucifer_efekt:0:270:1:w8" cs="cs:zimbardo-lucifer_efekt:0:244:1:w4" cst="sotva" ent="for long"/>
+  <item id="ex-66862" cql="q-38" xml="zimbardo-lucifer_efekt" en="en:zimbardo-lucifer_efekt:0:270:1:w7 en:zimbardo-lucifer_efekt:0:270:1:w8" cs="cs:zimbardo-lucifer_efekt:0:244:1:w4" cst="sotva" ent="for long" alignchecked="1"/>
   <item id="ex-66753" cql="q-38" xml="Wells-Valka_svetu" en="en:Wells-Valka_svetu:0:832:2:w1 en:Wells-Valka_svetu:0:832:2:w2 en:Wells-Valka_svetu:0:832:2:w3" cs="cs:Wells-Valka_svetu:0:849:2:w1" cst="Sotva" alignchecked="1" ent="So soon as"/>
-  <item id="ex-66384" cql="q-38" xml="Toole-Spolceni_hlupcu" en="en:Toole-Spolceni_hlupcu:0:3046:4:w9" cs="cs:Toole-Spolceni_hlupcu:0:3103:4:w13" cst="sotva" ent="not"/>
+  <item id="ex-66384" cql="q-38" xml="Toole-Spolceni_hlupcu" en="en:Toole-Spolceni_hlupcu:0:3046:4:w9" cs="cs:Toole-Spolceni_hlupcu:0:3103:4:w13" cst="sotva" ent="not" alignchecked="1"/>
   <item id="ex-65352" cql="q-38" xml="Roth-lidska_skvrna" en="en:Roth-lidska_skvrna:0:633:1:w2" cs="cs:Roth-lidska_skvrna:0:655:1:w2" cst="sotva" alignchecked="1" ent="barely"/>
   <item id="ex-64441" cql="q-38" xml="McCarthy-Hranice" en="en:McCarthy-Hranice:0:3955:2:w4" cs="cs:McCarthy-Hranice:0:3963:2:w3" cst="sotva" alignchecked="1" ent="just"/>
   <item id="ex-62156" cql="q-38" xml="frost-sez_sedmi" en="en:frost-sez_sedmi:0:169:2:w2" cs="cs:frost-sez_sedmi:0:169:2:w3" cst="sotva" alignchecked="1" ent="just"/>
@@ -31,7 +31,7 @@
   <item id="ex-61458" cql="q-38" xml="Dickens-PrihodyO_Twist" en="X" cs="cs:Dickens-PrihodyO_Twist:0:373:1:w21" cst="sotva" alignchecked="1" ent=""/>
   <item id="ex-66249" cql="q-38" xml="Tolkien-Pan_prstenu_1" en="en:Tolkien-Pan_prstenu_1:0:2121:1:w4 en:Tolkien-Pan_prstenu_1:0:2121:1:w5" cs="cs:Tolkien-Pan_prstenu_1:0:1979:1:w4" cst="sotva" alignchecked="1" ent="rather less"/>
   <item id="ex-64650" cql="q-38" xml="munro-utek" en="en:munro-utek:0:1940:1:w3" cs="cs:munro-utek:0:1926:1:w1" cst="Sotva" alignchecked="1" ent="hardly"/>
-  <item id="ex-66062" cql="q-38" xml="Stoker-Dracula" en="en:Stoker-Dracula:0:1957:21:w1" cs="cs:Stoker-Dracula:0:1913:21:w1" cst="Sotva" ent="When"/>
+  <item id="ex-66062" cql="q-38" xml="Stoker-Dracula" en="en:Stoker-Dracula:0:1957:21:w1" cs="cs:Stoker-Dracula:0:1913:21:w1" cst="Sotva" ent="When" alignchecked="1"/>
   <item id="ex-60454" cql="q-38" xml="barnes-vedomi_konce" en="X" cs="cs:barnes-vedomi_konce:0:12:4:w3" cst="sotva" alignchecked="1" ent=""/>
   <item id="ex-60037" cql="q-38" xml="anonym-anglick_pohadky" en="en:anonym-anglick_pohadky:0:534:1:w2" cs="cs:anonym-anglick_pohadky:0:526:1:w1" cst="Sotva" alignchecked="1" ent="after"/>
   <item id="ex-65320" cql="q-38" xml="riggs-sirotcinec" en="X" cs="cs:riggs-sirotcinec:0:1915:1:w3" cst="sotva" alignchecked="1" ent=""/>

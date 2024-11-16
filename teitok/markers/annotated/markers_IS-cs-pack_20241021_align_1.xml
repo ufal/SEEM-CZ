@@ -49,6 +49,6 @@
   <item id="ex-59329" cql="q-28" xml="Skvorecky-Mirakl" en="X" cs="cs:Skvorecky-Mirakl:0:2171:8:w3" cst="ov&#x161;em" alignchecked="1" ent=""/>
   <item id="ex-54922" cql="q-28" xml="Kundera-Smesne_lasky" en="en:Kundera-Smesne_lasky:0:855:6:w17 en:Kundera-Smesne_lasky:0:855:6:w18" cs="cs:Kundera-Smesne_lasky:0:861:8:w5" cst="ov&#x161;em" alignchecked="1" ent="of course"/>
   <item id="ex-54932" cql="q-28" xml="Kundera-Smesne_lasky" en="en:Kundera-Smesne_lasky:0:1299:3:w1 en:Kundera-Smesne_lasky:0:1299:3:w2" cs="cs:Kundera-Smesne_lasky:0:1314:3:w2" cst="ov&#x161;em" alignchecked="1" ent="Of course"/>
-  <item id="ex-59478" cql="q-28" xml="Skvorecky-PribehIng_2" en="" cs="cs:Skvorecky-PribehIng_2:0:2136:3:w2" cst="ov&#x161;em"/>
-  <item id="ex-54965" cql="q-28" xml="kundera-zert" en="" cs="cs:kundera-zert:0:12:13:w8" cst="ov&#x161;em"/>
+  <item id="ex-59478" cql="q-28" xml="Skvorecky-PribehIng_2" en="X" cs="cs:Skvorecky-PribehIng_2:0:2136:3:w2" cst="ov&#x161;em" alignchecked="1" ent=""/>
+  <item id="ex-54965" cql="q-28" xml="kundera-zert" en="X" cs="cs:kundera-zert:0:12:13:w8" cst="ov&#x161;em" alignchecked="1" ent=""/>
 </examples>

@@ -15,7 +15,7 @@
   <item id="ex-60253" cql="q-46" xml="Fuks-MysiNatalieMoosha" en="en:Fuks-MysiNatalieMoosha:0:2137:1:w23" cs="cs:Fuks-MysiNatalieMoosha:0:2062:1:w19" cst="vskutku" alignchecked="1" ent="really"/>
   <item id="ex-60194" cql="q-46" xml="Fuks-MysiNatalieMoosha" en="en:Fuks-MysiNatalieMoosha:0:551:14:w5" cs="cs:Fuks-MysiNatalieMoosha:0:521:25:w6" cst="vskutku" alignchecked="1" ent="really"/>
   <item id="ex-60857" cql="q-46" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1702:1:w71" cs="cs:Viewegh-VychovaDivekCR:0:1599:2:w6" cst="vskutku" alignchecked="1" ent="truly"/>
-  <item id="ex-60212" cql="q-46" xml="Fuks-MysiNatalieMoosha" en="en:Fuks-MysiNatalieMoosha:0:929:2:w32" cs="cs:Fuks-MysiNatalieMoosha:0:878:2:w33" cst="vskutku" alignchecked="1" ent="Really"/>
+  <item id="ex-60212" cql="q-46" xml="Fuks-MysiNatalieMoosha" en="en:Fuks-MysiNatalieMoosha:0:929:2:w32 en:Fuks-MysiNatalieMoosha:0:929:2:w33 en:Fuks-MysiNatalieMoosha:0:929:2:w34" cs="cs:Fuks-MysiNatalieMoosha:0:878:2:w33" cst="vskutku" alignchecked="1" ent="Really and truly"/>
   <item id="ex-60267" cql="q-46" xml="Fuks-SpalovacMrtvol" en="en:Fuks-SpalovacMrtvol:0:158:14:w23" cs="cs:Fuks-SpalovacMrtvol:0:170:10:w18" cst="vskutku" alignchecked="1" ent="indeed"/>
   <item id="ex-60370" cql="q-46" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:113:19:w20" cs="cs:Havel-Dalkovy_vyslech:0:106:15:w14" cst="vskutku" alignchecked="1" ent="really"/>
   <item id="ex-59797" cql="q-46" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:231:2:w10" cs="cs:bajaja-na_krasne_modre:0:231:2:w8" cst="vskutku" alignchecked="1" ent="truly"/>
@@ -46,7 +46,7 @@
   <item id="ex-60908" cql="q-46" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:811:2:w6" cs="cs:Zmeskal-Milostny_dopis:0:776:2:w7" cst="vskutku" alignchecked="1" ent="truly"/>
   <item id="ex-60183" cql="q-46" xml="Fuks-MysiNatalieMoosha" en="en:Fuks-MysiNatalieMoosha:0:65:5:w36" cs="cs:Fuks-MysiNatalieMoosha:0:58:5:w29" cst="vskutku" alignchecked="1" ent="indeed"/>
   <item id="ex-60625" cql="q-46" xml="panek-dejiny_ceskych" en="X" cs="cs:panek-dejiny_ceskych:0:715:4:w5" cst="vskutku" alignchecked="1" ent=""/>
-  <item id="ex-60820" cql="q-46" xml="Urban-Sedmikosteli" en="X" cs="cs:Urban-Sedmikosteli:0:1452:1:w9" cst="vskutku" alignchecked="1" ent=""/>
+  <item id="ex-60820" cql="q-46" xml="Urban-Sedmikosteli" en="en:Urban-Sedmikosteli:0:1505:2:w4" cs="cs:Urban-Sedmikosteli:0:1452:1:w9" cst="vskutku" alignchecked="1" ent="most"/>
   <item id="ex-60508" cql="q-46" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:47:112:w9" cs="cs:Levy-Umeni_prekladu:0:33:62:w9" cst="vskutku" alignchecked="1" ent="vskutku"/>
   <item id="ex-60244" cql="q-46" xml="Fuks-MysiNatalieMoosha" en="X" cs="cs:Fuks-MysiNatalieMoosha:0:1940:1:w6" cst="vskutku" alignchecked="1" ent=""/>
   <item id="ex-60224" cql="q-46" xml="Fuks-MysiNatalieMoosha" en="en:Fuks-MysiNatalieMoosha:0:1250:1:w5" cs="cs:Fuks-MysiNatalieMoosha:0:1197:1:w2" cst="Vskutku" alignchecked="1" ent="really"/>

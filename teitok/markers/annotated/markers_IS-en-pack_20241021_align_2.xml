@@ -1,54 +1,54 @@
 <?xml version="1.0"?>
 <examples>
 <user id="IS" email="iur.sav.gal@icloud.com" name="Iurii Savelev-Galiaminskii"/>
-  <item id="ex-49936" cql="q-25" xml="grisham-advokat_chudy" en="" cs="cs:grisham-advokat_chudy:0:3583:1:w5" cst="nepochybn&#x11B;"/>
-  <item id="ex-50963" cql="q-25" xml="Toole-Spolceni_hlupcu" en="en:Toole-Spolceni_hlupcu:0:3663:4:w1 en:Toole-Spolceni_hlupcu:0:3663:4:w2" cs="cs:Toole-Spolceni_hlupcu:0:3760:4:w1" cst="Nepochybn&#x11B;"/>
-  <item id="ex-49555" cql="q-25" xml="Christie-KapsaPlnaZita" en="en:Christie-KapsaPlnaZita:0:1401:6:w18" cs="cs:Christie-KapsaPlnaZita:0:1364:6:w14" cst="nepochybn&#x11B;"/>
-  <item id="ex-50521" cql="q-25" xml="moriarty-sedmilharky" en="" cs="cs:moriarty-sedmilharky:0:916:6:w7" cst="nepochybn&#x11B;"/>
-  <item id="ex-50689" cql="q-25" xml="Popper-Otevrena_spol_2" en="en:Popper-Otevrena_spol_2:0:555:2:w4" cs="cs:Popper-Otevrena_spol_2:0:604:2:w5" cst="nepochybn&#x11B;"/>
-  <item id="ex-49446" cql="q-25" xml="bernieres-mandolina" en="en:bernieres-mandolina:0:1386:4:w14 en:bernieres-mandolina:0:1386:4:w15" cs="cs:bernieres-mandolina:0:1287:4:w17" cst="nepochybn&#x11B;"/>
-  <item id="ex-50427" cql="q-25" xml="London-Tulak_po_hvezda" en="en:London-Tulak_po_hvezda:0:1084:1:w4" cs="cs:London-Tulak_po_hvezda:0:1074:1:w1" cst="Nepochybn&#x11B;"/>
-  <item id="ex-49646" cql="q-25" xml="Dickens-PrihodyO_Twist" en="en:Dickens-PrihodyO_Twist:0:1620:3:w8" cs="cs:Dickens-PrihodyO_Twist:0:1617:1:w61" cst="nepochybn&#x11B;"/>
-  <item id="ex-51080" cql="q-25" xml="Woolfova-strasidelny" en="en:Woolfova-strasidelny:0:464:37:w10 en:Woolfova-strasidelny:0:464:37:w11" cs="cs:Woolfova-strasidelny:0:467:39:w9" cst="nepochybn&#x11B;"/>
-  <item id="ex-50092" cql="q-25" xml="Irving-PravidlaMostarn" en="en:Irving-PravidlaMostarn:0:2842:4:w1 en:Irving-PravidlaMostarn:0:2842:4:w2" cs="cs:Irving-PravidlaMostarn:0:2826:4:w1" cst="Nepochybn&#x11B;"/>
-  <item id="ex-49509" cql="q-25" xml="brown-chut_lasky" en="en:brown-chut_lasky:0:506:3:w17 en:brown-chut_lasky:0:506:3:w18" cs="cs:brown-chut_lasky:0:504:4:w9" cst="nepochybn&#x11B;"/>
-  <item id="ex-49452" cql="q-25" xml="bernieres-mandolina" en="en:bernieres-mandolina:0:2333:4:w7" cs="cs:bernieres-mandolina:0:2205:4:w7" cst="nepochybn&#x11B;"/>
-  <item id="ex-49681" cql="q-25" xml="farrell-nepokoje" en="en:farrell-nepokoje:0:265:3:w35" cs="cs:farrell-nepokoje:0:260:3:w28" cst="nepochybn&#x11B;"/>
-  <item id="ex-50213" cql="q-25" xml="king-carrie" en="en:king-carrie:0:641:1:w17" cs="cs:king-carrie:0:685:1:w16" cst="nepochybn&#x11B;"/>
-  <item id="ex-50754" cql="q-25" xml="rowlingova-hpot_relik" en="en:rowlingova-hpot_relik:0:3178:4:w8" cs="cs:rowlingova-hpot_relik:0:3177:4:w10" cst="nepochybn&#x11B;"/>
-  <item id="ex-49270" cql="q-25" xml="adams-prevazne_neskodn" en="en:adams-prevazne_neskodn:0:1080:6:w19" cs="cs:adams-prevazne_neskodn:0:1048:6:w19" cst="nepochybn&#x11B;"/>
-  <item id="ex-51021" cql="q-25" xml="Vonnegut-Jatka_c_5" en="en:Vonnegut-Jatka_c_5:0:950:5:w13" cs="cs:Vonnegut-Jatka_c_5:0:932:5:w10" cst="nepochybn&#x11B;"/>
-  <item id="ex-50850" cql="q-25" xml="Rushdie-MauruvPosl_Vzd" en="en:Rushdie-MauruvPosl_Vzd:0:527:2:w17" cs="cs:Rushdie-MauruvPosl_Vzd:0:518:2:w14" cst="nepochybn&#x11B;"/>
-  <item id="ex-50822" cql="q-25" xml="rowling-princ" en="en:rowling-princ:0:4019:2:w2" cs="cs:rowling-princ:0:3920:3:w2" cst="nepochybn&#x11B;"/>
-  <item id="ex-50791" cql="q-25" xml="rowlingova-hpot_vezen" en="en:rowlingova-hpot_vezen:0:4139:7:w8" cs="cs:rowlingova-hpot_vezen:0:3703:7:w8" cst="nepochybn&#x11B;"/>
-  <item id="ex-50523" cql="q-25" xml="morris-naha_opice" en="en:morris-naha_opice:0:30:2:w4" cs="cs:morris-naha_opice:0:29:2:w5" cst="nepochybn&#x11B;"/>
-  <item id="ex-50186" cql="q-25" xml="james-pad_odst_sedi" en="en:james-pad_odst_sedi:0:5087:1:w12 en:james-pad_odst_sedi:0:5087:1:w13" cs="cs:james-pad_odst_sedi:0:4916:2:w4" cst="nepochybn&#x11B;"/>
-  <item id="ex-49864" cql="q-25" xml="frost-sez_sedmi" en="en:frost-sez_sedmi:0:4667:3:w25" cs="cs:frost-sez_sedmi:0:4667:3:w22" cst="nepochybn&#x11B;"/>
-  <item id="ex-49368" cql="q-25" xml="Austenova-Emma" en="en:Austenova-Emma:0:291:9:w15" cs="cs:Austenova-Emma:0:288:10:w4" cst="nepochybn&#x11B;"/>
-  <item id="ex-50544" cql="q-25" xml="munro-utek" en="en:munro-utek:0:2457:5:w2 en:munro-utek:0:2457:5:w3" cs="cs:munro-utek:0:2442:5:w4" cst="nepochybn&#x11B;"/>
-  <item id="ex-51025" cql="q-25" xml="Vonnegut-Kolibka" en="en:Vonnegut-Kolibka:0:1057:2:w9" cs="cs:Vonnegut-Kolibka:0:1004:2:w4" cst="nepochybn&#x11B;"/>
-  <item id="ex-49879" cql="q-25" xml="galbraith-hedvabnik" en="en:galbraith-hedvabnik:0:2372:1:w1" cs="cs:galbraith-hedvabnik:0:2345:1:w4" cst="nepochybn&#x11B;"/>
-  <item id="ex-49371" cql="q-25" xml="Austenova-Emma" en="en:Austenova-Emma:0:510:2:w4 en:Austenova-Emma:0:510:2:w5" cs="cs:Austenova-Emma:0:487:2:w2" cst="Nepochybn&#x11B;"/>
-  <item id="ex-50942" cql="q-25" xml="Tolkien-Pan_prstenu_1" en="en:Tolkien-Pan_prstenu_1:0:44:1:w8" cs="cs:Tolkien-Pan_prstenu_1:0:34:1:w1" cst="Nepochybn&#x11B;"/>
-  <item id="ex-49789" cql="q-25" xml="forsyth-vyjednavac" en="en:forsyth-vyjednavac:0:288:2:w8" cs="cs:forsyth-vyjednavac:0:305:3:w5" cst="nepochybn&#x11B;"/>
-  <item id="ex-50120" cql="q-25" xml="Irving-Rok_vdovou" en="en:Irving-Rok_vdovou:0:3970:1:w3" cs="cs:Irving-Rok_vdovou:0:3972:1:w3" cst="nepochybn&#x11B;"/>
-  <item id="ex-51091" cql="q-25" xml="zusak-zlodejka_knih" en="en:zusak-zlodejka_knih:0:225:1:w5" cs="cs:zusak-zlodejka_knih:0:232:1:w9" cst="nepochybn&#x11B;"/>
-  <item id="ex-51057" cql="q-25" xml="wilson-cim_hori_svet" en="en:wilson-cim_hori_svet:0:1593:1:w11 en:wilson-cim_hori_svet:0:1593:1:w12 en:wilson-cim_hori_svet:0:1593:1:w7" cs="cs:wilson-cim_hori_svet:0:1635:1:w10" cst="nepochybn&#x11B;"/>
-  <item id="ex-49517" cql="q-25" xml="brown-sifra" en="en:brown-sifra:0:992:5:w3" cs="cs:brown-sifra:0:922:5:w13" cst="nepochybn&#x11B;"/>
-  <item id="ex-50987" cql="q-25" xml="updike-kralik_se_vraci" en="en:updike-kralik_se_vraci:0:3329:15:w19" cs="cs:updike-kralik_se_vraci:0:3338:15:w4" cst="nepochybn&#x11B;"/>
-  <item id="ex-49692" cql="q-25" xml="farrell-nepokoje" en="en:farrell-nepokoje:0:650:8:w52" cs="cs:farrell-nepokoje:0:645:10:w43" cst="nepochybn&#x11B;"/>
-  <item id="ex-50758" cql="q-25" xml="rowlingova-hpot_relik" en="" cs="cs:rowlingova-hpot_relik:0:3932:1:w8" cst="nepochybn&#x11B;"/>
-  <item id="ex-50443" cql="q-25" xml="Lovelock-Gaia_Novy_poh" en="en:Lovelock-Gaia_Novy_poh:0:266:4:w18" cs="cs:Lovelock-Gaia_Novy_poh:0:279:2:w55" cst="nepochybn&#x11B;"/>
-  <item id="ex-50719" cql="q-25" xml="rowlingova-hpot_kamen" en="en:rowlingova-hpot_kamen:0:2342:2:w9" cs="cs:rowlingova-hpot_kamen:0:2373:2:w8" cst="nepochybn&#x11B;"/>
-  <item id="ex-49442" cql="q-25" xml="bernieres-mandolina" en="en:bernieres-mandolina:0:55:4:w3" cs="cs:bernieres-mandolina:0:52:4:w1" cst="Nepochybn&#x11B;"/>
-  <item id="ex-49344" cql="q-25" xml="Asimov-Nadace" en="en:Asimov-Nadace:0:1509:4:w4" cs="cs:Asimov-Nadace:0:1501:4:w9" cst="nepochybn&#x11B;"/>
-  <item id="ex-50514" cql="q-25" xml="melville-bartleby" en="en:melville-bartleby:0:169:12:w14 en:melville-bartleby:0:169:12:w61" cs="cs:melville-bartleby:0:168:7:w66" cst="nepochybn&#x11B;"/>
-  <item id="ex-49384" cql="q-25" xml="Austenova-Emma" en="en:Austenova-Emma:0:1398:8:w14 en:Austenova-Emma:0:1398:8:w15" cs="cs:Austenova-Emma:0:1351:7:w16" cst="nepochybn&#x11B;"/>
-  <item id="ex-49339" cql="q-25" xml="asimov-nadace_a_rise" en="en:asimov-nadace_a_rise:0:1675:2:w6" cs="cs:asimov-nadace_a_rise:0:1708:2:w5" cst="nepochybn&#x11B;"/>
-  <item id="ex-50430" cql="q-25" xml="Lovelock-Gaia" en="" cs="cs:Lovelock-Gaia:0:564:11:w1" cst="Nepochybn&#x11B;"/>
-  <item id="ex-50896" cql="q-25" xml="smith-o_krase" en="en:smith-o_krase:0:155:4:w9" cs="cs:smith-o_krase:0:154:4:w10" cst="nepochybn&#x11B;"/>
-  <item id="ex-49978" cql="q-25" xml="hailey-konecna_diag" en="en:hailey-konecna_diag:0:350:1:w5 en:hailey-konecna_diag:0:350:1:w8" cs="cs:hailey-konecna_diag:0:503:1:w4" cst="nepochybn&#x11B;"/>
-  <item id="ex-51081" cql="q-25" xml="Wright-Na_konci_rijna" en="en:Wright-Na_konci_rijna:0:142:1:w19" cs="cs:Wright-Na_konci_rijna:0:142:1:w12" cst="nepochybn&#x11B;"/>
-  <item id="ex-49776" cql="q-25" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:9039:5:w20" cs="cs:follett-pilire_zeme:0:8957:5:w24" cst="nepochybn&#x11B;"/>
-  <item id="ex-49351" cql="q-25" xml="asimov-ocelove_jesky" en="en:asimov-ocelove_jesky:0:1103:1:w2" cs="cs:asimov-ocelove_jesky:0:1106:1:w2" cst="Nepochybn&#x11B;"/>
+  <item id="ex-49936" cql="q-25" xml="grisham-advokat_chudy" en="X" cs="cs:grisham-advokat_chudy:0:3583:1:w5" cst="nepochybn&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50963" cql="q-25" xml="Toole-Spolceni_hlupcu" en="en:Toole-Spolceni_hlupcu:0:3663:4:w1 en:Toole-Spolceni_hlupcu:0:3663:4:w2" cs="cs:Toole-Spolceni_hlupcu:0:3760:4:w1" cst="Nepochybn&#x11B;" alignchecked="1" ent="No doubt"/>
+  <item id="ex-49555" cql="q-25" xml="Christie-KapsaPlnaZita" en="en:Christie-KapsaPlnaZita:0:1401:6:w18" cs="cs:Christie-KapsaPlnaZita:0:1364:6:w14" cst="nepochybn&#x11B;" alignchecked="1" ent="sure"/>
+  <item id="ex-50521" cql="q-25" xml="moriarty-sedmilharky" en="en:moriarty-sedmilharky:0:904:7:w1 en:moriarty-sedmilharky:0:904:7:w2" cs="cs:moriarty-sedmilharky:0:916:6:w7" cst="nepochybn&#x11B;" alignchecked="1" ent="No doubt"/>
+  <item id="ex-50689" cql="q-25" xml="Popper-Otevrena_spol_2" en="en:Popper-Otevrena_spol_2:0:555:2:w4" cs="cs:Popper-Otevrena_spol_2:0:604:2:w5" cst="nepochybn&#x11B;" alignchecked="1" ent="undoubtedly"/>
+  <item id="ex-49446" cql="q-25" xml="bernieres-mandolina" en="en:bernieres-mandolina:0:1386:4:w14 en:bernieres-mandolina:0:1386:4:w15" cs="cs:bernieres-mandolina:0:1287:4:w17" cst="nepochybn&#x11B;" alignchecked="1" ent="no doubt"/>
+  <item id="ex-50427" cql="q-25" xml="London-Tulak_po_hvezda" en="en:London-Tulak_po_hvezda:0:1084:1:w4" cs="cs:London-Tulak_po_hvezda:0:1074:1:w1" cst="Nepochybn&#x11B;" alignchecked="1" ent="certainly"/>
+  <item id="ex-49646" cql="q-25" xml="Dickens-PrihodyO_Twist" en="en:Dickens-PrihodyO_Twist:0:1620:3:w8" cs="cs:Dickens-PrihodyO_Twist:0:1617:1:w61" cst="nepochybn&#x11B;" alignchecked="1" ent="doubtless"/>
+  <item id="ex-51080" cql="q-25" xml="Woolfova-strasidelny" en="en:Woolfova-strasidelny:0:464:37:w10 en:Woolfova-strasidelny:0:464:37:w11" cs="cs:Woolfova-strasidelny:0:467:39:w9" cst="nepochybn&#x11B;" alignchecked="1" ent="no doubt"/>
+  <item id="ex-50092" cql="q-25" xml="Irving-PravidlaMostarn" en="en:Irving-PravidlaMostarn:0:2842:4:w1 en:Irving-PravidlaMostarn:0:2842:4:w2" cs="cs:Irving-PravidlaMostarn:0:2826:4:w1" cst="Nepochybn&#x11B;" alignchecked="1" ent="No doubt"/>
+  <item id="ex-49509" cql="q-25" xml="brown-chut_lasky" en="en:brown-chut_lasky:0:506:3:w17 en:brown-chut_lasky:0:506:3:w18" cs="cs:brown-chut_lasky:0:504:4:w9" cst="nepochybn&#x11B;" alignchecked="1" ent="no doubt"/>
+  <item id="ex-49452" cql="q-25" xml="bernieres-mandolina" en="en:bernieres-mandolina:0:2333:4:w7" cs="cs:bernieres-mandolina:0:2205:4:w7" cst="nepochybn&#x11B;" alignchecked="1" ent="undoubtedly"/>
+  <item id="ex-49681" cql="q-25" xml="farrell-nepokoje" en="en:farrell-nepokoje:0:265:3:w35" cs="cs:farrell-nepokoje:0:260:3:w28" cst="nepochybn&#x11B;" alignchecked="1" ent="indubitably"/>
+  <item id="ex-50213" cql="q-25" xml="king-carrie" en="en:king-carrie:0:641:1:w17" cs="cs:king-carrie:0:685:1:w16" cst="nepochybn&#x11B;" alignchecked="1" ent="undoubtedly"/>
+  <item id="ex-50754" cql="q-25" xml="rowlingova-hpot_relik" en="en:rowlingova-hpot_relik:0:3178:4:w8" cs="cs:rowlingova-hpot_relik:0:3177:4:w10" cst="nepochybn&#x11B;" alignchecked="1" ent="surely"/>
+  <item id="ex-49270" cql="q-25" xml="adams-prevazne_neskodn" en="en:adams-prevazne_neskodn:0:1080:6:w19" cs="cs:adams-prevazne_neskodn:0:1048:6:w19" cst="nepochybn&#x11B;" alignchecked="1" ent="obviously"/>
+  <item id="ex-51021" cql="q-25" xml="Vonnegut-Jatka_c_5" en="en:Vonnegut-Jatka_c_5:0:950:5:w13" cs="cs:Vonnegut-Jatka_c_5:0:932:5:w10" cst="nepochybn&#x11B;" alignchecked="1" ent="evidently"/>
+  <item id="ex-50850" cql="q-25" xml="Rushdie-MauruvPosl_Vzd" en="en:Rushdie-MauruvPosl_Vzd:0:527:2:w17" cs="cs:Rushdie-MauruvPosl_Vzd:0:518:2:w14" cst="nepochybn&#x11B;" alignchecked="1" ent="no-doubt-nonexistent"/>
+  <item id="ex-50822" cql="q-25" xml="rowling-princ" en="en:rowling-princ:0:4019:2:w2" cs="cs:rowling-princ:0:3920:3:w2" cst="nepochybn&#x11B;" alignchecked="1" ent="must"/>
+  <item id="ex-50791" cql="q-25" xml="rowlingova-hpot_vezen" en="en:rowlingova-hpot_vezen:0:4139:7:w8" cs="cs:rowlingova-hpot_vezen:0:3703:7:w8" cst="nepochybn&#x11B;" alignchecked="1" ent="definitely"/>
+  <item id="ex-50523" cql="q-25" xml="morris-naha_opice" en="en:morris-naha_opice:0:30:2:w4" cs="cs:morris-naha_opice:0:29:2:w5" cst="nepochybn&#x11B;" alignchecked="1" ent="undoubtedly"/>
+  <item id="ex-50186" cql="q-25" xml="james-pad_odst_sedi" en="en:james-pad_odst_sedi:0:5087:1:w12 en:james-pad_odst_sedi:0:5087:1:w13" cs="cs:james-pad_odst_sedi:0:4916:2:w4" cst="nepochybn&#x11B;" alignchecked="1" ent="no doubt"/>
+  <item id="ex-49864" cql="q-25" xml="frost-sez_sedmi" en="en:frost-sez_sedmi:0:4667:3:w25" cs="cs:frost-sez_sedmi:0:4667:3:w22" cst="nepochybn&#x11B;" alignchecked="1" ent="unmistakably"/>
+  <item id="ex-49368" cql="q-25" xml="Austenova-Emma" en="en:Austenova-Emma:0:291:9:w15" cs="cs:Austenova-Emma:0:288:10:w4" cst="nepochybn&#x11B;" alignchecked="1" ent="undoubtedly"/>
+  <item id="ex-50544" cql="q-25" xml="munro-utek" en="en:munro-utek:0:2457:5:w2 en:munro-utek:0:2457:5:w3" cs="cs:munro-utek:0:2442:5:w4" cst="nepochybn&#x11B;" alignchecked="1" ent="somebody&#x2014;no doubt"/>
+  <item id="ex-51025" cql="q-25" xml="Vonnegut-Kolibka" en="en:Vonnegut-Kolibka:0:1057:2:w9" cs="cs:Vonnegut-Kolibka:0:1004:2:w4" cst="nepochybn&#x11B;" alignchecked="1" ent="surely"/>
+  <item id="ex-49879" cql="q-25" xml="galbraith-hedvabnik" en="en:galbraith-hedvabnik:0:2372:1:w1" cs="cs:galbraith-hedvabnik:0:2345:1:w4" cst="nepochybn&#x11B;" alignchecked="1" ent="Doubtless"/>
+  <item id="ex-49371" cql="q-25" xml="Austenova-Emma" en="en:Austenova-Emma:0:510:2:w4 en:Austenova-Emma:0:510:2:w5" cs="cs:Austenova-Emma:0:487:2:w2" cst="Nepochybn&#x11B;" alignchecked="1" ent="no doubt"/>
+  <item id="ex-50942" cql="q-25" xml="Tolkien-Pan_prstenu_1" en="en:Tolkien-Pan_prstenu_1:0:44:1:w8" cs="cs:Tolkien-Pan_prstenu_1:0:34:1:w1" cst="Nepochybn&#x11B;" alignchecked="1" ent="doubtless"/>
+  <item id="ex-49789" cql="q-25" xml="forsyth-vyjednavac" en="en:forsyth-vyjednavac:0:288:2:w8" cs="cs:forsyth-vyjednavac:0:305:3:w5" cst="nepochybn&#x11B;" alignchecked="1" ent="definitely"/>
+  <item id="ex-50120" cql="q-25" xml="Irving-Rok_vdovou" en="en:Irving-Rok_vdovou:0:3970:1:w3" cs="cs:Irving-Rok_vdovou:0:3972:1:w3" cst="nepochybn&#x11B;" alignchecked="1" ent="unquestionably"/>
+  <item id="ex-51091" cql="q-25" xml="zusak-zlodejka_knih" en="en:zusak-zlodejka_knih:0:225:1:w5" cs="cs:zusak-zlodejka_knih:0:232:1:w9" cst="nepochybn&#x11B;" alignchecked="1" ent="certainly"/>
+  <item id="ex-51057" cql="q-25" xml="wilson-cim_hori_svet" en="en:wilson-cim_hori_svet:0:1593:1:w11 en:wilson-cim_hori_svet:0:1593:1:w12" cs="cs:wilson-cim_hori_svet:0:1635:1:w10" cst="nepochybn&#x11B;" alignchecked="1" ent="no doubt"/>
+  <item id="ex-49517" cql="q-25" xml="brown-sifra" en="en:brown-sifra:0:992:5:w3" cs="cs:brown-sifra:0:922:5:w13" cst="nepochybn&#x11B;" alignchecked="1" ent="definitely"/>
+  <item id="ex-50987" cql="q-25" xml="updike-kralik_se_vraci" en="en:updike-kralik_se_vraci:0:3329:15:w19" cs="cs:updike-kralik_se_vraci:0:3338:15:w4" cst="nepochybn&#x11B;" alignchecked="1" ent="sure"/>
+  <item id="ex-49692" cql="q-25" xml="farrell-nepokoje" en="en:farrell-nepokoje:0:650:8:w52" cs="cs:farrell-nepokoje:0:645:10:w43" cst="nepochybn&#x11B;" alignchecked="1" ent="undoubtedly"/>
+  <item id="ex-50758" cql="q-25" xml="rowlingova-hpot_relik" en="X" cs="cs:rowlingova-hpot_relik:0:3932:1:w8" cst="nepochybn&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50443" cql="q-25" xml="Lovelock-Gaia_Novy_poh" en="en:Lovelock-Gaia_Novy_poh:0:266:4:w18" cs="cs:Lovelock-Gaia_Novy_poh:0:279:2:w55" cst="nepochybn&#x11B;" alignchecked="1" ent="undoubtedly"/>
+  <item id="ex-50719" cql="q-25" xml="rowlingova-hpot_kamen" en="en:rowlingova-hpot_kamen:0:2342:2:w9" cs="cs:rowlingova-hpot_kamen:0:2373:2:w8" cst="nepochybn&#x11B;" alignchecked="1" ent="definitely"/>
+  <item id="ex-49442" cql="q-25" xml="bernieres-mandolina" en="en:bernieres-mandolina:0:55:4:w3" cs="cs:bernieres-mandolina:0:52:4:w1" cst="Nepochybn&#x11B;" alignchecked="1" ent="bound"/>
+  <item id="ex-49344" cql="q-25" xml="Asimov-Nadace" en="X" cs="cs:Asimov-Nadace:0:1501:4:w9" cst="nepochybn&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50514" cql="q-25" xml="melville-bartleby" en="en:melville-bartleby:0:169:12:w14" cs="cs:melville-bartleby:0:168:7:w66" cst="nepochybn&#x11B;" alignchecked="1" ent="doubtless"/>
+  <item id="ex-49384" cql="q-25" xml="Austenova-Emma" en="en:Austenova-Emma:0:1398:8:w14 en:Austenova-Emma:0:1398:8:w15" cs="cs:Austenova-Emma:0:1351:7:w16" cst="nepochybn&#x11B;" alignchecked="1" ent="no doubt"/>
+  <item id="ex-49339" cql="q-25" xml="asimov-nadace_a_rise" en="en:asimov-nadace_a_rise:0:1675:2:w6" cs="cs:asimov-nadace_a_rise:0:1708:2:w5" cst="nepochybn&#x11B;" alignchecked="1" ent="undoubtedly"/>
+  <item id="ex-50430" cql="q-25" xml="Lovelock-Gaia" en="X" cs="cs:Lovelock-Gaia:0:564:11:w1" cst="Nepochybn&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-50896" cql="q-25" xml="smith-o_krase" en="en:smith-o_krase:0:155:4:w9" cs="cs:smith-o_krase:0:154:4:w10" cst="nepochybn&#x11B;" alignchecked="1" ent="surely"/>
+  <item id="ex-49978" cql="q-25" xml="hailey-konecna_diag" en="en:hailey-konecna_diag:0:350:1:w7 en:hailey-konecna_diag:0:350:1:w8" cs="cs:hailey-konecna_diag:0:503:1:w4" cst="nepochybn&#x11B;" alignchecked="1" ent="of course"/>
+  <item id="ex-51081" cql="q-25" xml="Wright-Na_konci_rijna" en="en:Wright-Na_konci_rijna:0:142:1:w19" cs="cs:Wright-Na_konci_rijna:0:142:1:w12" cst="nepochybn&#x11B;" alignchecked="1" ent="doubtless"/>
+  <item id="ex-49776" cql="q-25" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:9039:5:w20" cs="cs:follett-pilire_zeme:0:8957:5:w24" cst="nepochybn&#x11B;" alignchecked="1" ent="undoubtedly"/>
+  <item id="ex-49351" cql="q-25" xml="asimov-ocelove_jesky" en="en:asimov-ocelove_jesky:0:1103:1:w2" cs="cs:asimov-ocelove_jesky:0:1106:1:w2" cst="Nepochybn&#x11B;" alignchecked="1" ent="Quite"/>
 </examples>

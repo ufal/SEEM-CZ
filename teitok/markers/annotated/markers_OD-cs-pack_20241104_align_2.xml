@@ -1,54 +1,54 @@
 <?xml version="1.0"?>
 <examples>
 <user id="OD" email="odrobil@seznam.cz" name="Ond&#x159;ej Drobil"/>
-  <item id="ex-60408" cql="q-43" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1116:2:w26" cs="cs:Viewegh-VychovaDivekCR:0:1039:2:w19" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60062" cql="q-43" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:2061:1:w13" cs="cs:Kohout-Hvezdna_hodina:0:2101:1:w10" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60367" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:259:6:w11" cs="cs:Strouhal-Zivot_Egyptan:0:270:6:w8" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60401" cql="q-43" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:1688:6:w11" cs="cs:viewegh-baj_letaPodPsa:0:1755:6:w6" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-59984" cql="q-43" xml="hakl-o_rodicich_a_dete" en="en:hakl-o_rodicich_a_dete:0:455:9:w1" cs="cs:hakl-o_rodicich_a_dete:0:456:8:w1" cst="&#xDA;dajn&#x11B;"/>
-  <item id="ex-60320" cql="q-43" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:787:6:w3" cs="cs:sedlacek-ekonomie:0:788:6:w3" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60410" cql="q-43" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1563:4:w7" cs="cs:Viewegh-VychovaDivekCR:0:1462:4:w5" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60335" cql="q-43" xml="sindelka-chyba" en="en:sindelka-chyba:0:1456:35:w17" cs="cs:sindelka-chyba:0:1461:36:w12" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-59981" cql="q-43" xml="hajicek-selsky_baroko" en="en:hajicek-selsky_baroko:0:658:1:w38" cs="cs:hajicek-selsky_baroko:0:656:2:w16" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60213" cql="q-43" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:1500:7:w37" cs="cs:panek-dejiny_ceskych:0:1275:7:w34" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-59990" cql="q-43" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:34:5:w39" cs="cs:Havel-Dalkovy_vyslech:0:32:5:w38" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60372" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:647:3:w15" cs="cs:Strouhal-Zivot_Egyptan:0:667:3:w18" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60375" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="" cs="cs:Strouhal-Zivot_Egyptan:0:737:2:w3" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60378" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:1205:5:w14" cs="cs:Strouhal-Zivot_Egyptan:0:1235:5:w9" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60069" cql="q-43" xml="kohout-snezim" en="en:kohout-snezim:0:305:1:w5" cs="cs:kohout-snezim:0:279:1:w4" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-59982" cql="q-43" xml="hajicek-selsky_baroko" en="" cs="cs:hajicek-selsky_baroko:0:1807:16:w5" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60411" cql="q-43" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:1583:3:w5" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60394" cql="q-43" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:923:6:w19" cs="cs:Vaculik-Cesky_snar:0:722:5:w15" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-59992" cql="q-43" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:84:126:w1" cs="cs:Havel-Dalkovy_vyslech:0:78:108:w36" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60212" cql="q-43" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:1060:1:w42" cs="cs:panek-dejiny_ceskych:0:848:1:w32" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60348" cql="q-43" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:1193:7:w21" cs="cs:skvorecky-hrichy_pater:0:1190:7:w85" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-59759" cql="q-43" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:40:3:w36" cs="cs:bajaja-na_krasne_modre:0:40:3:w22" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60369" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:463:3:w46" cs="cs:Strouhal-Zivot_Egyptan:0:478:4:w42" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60354" cql="q-43" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:3603:5:w37" cs="cs:Skvorecky-PribehIng_2:0:2982:8:w38" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60353" cql="q-43" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:3559:8:w4" cs="cs:Skvorecky-PribehIng_2:0:2953:10:w7" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60351" cql="q-43" xml="Skvorecky-PribehIng_1" en="en:Skvorecky-PribehIng_1:0:3609:6:w30" cs="cs:Skvorecky-PribehIng_1:0:2785:7:w23" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60414" cql="q-43" xml="Viewegh-VychovaDivekCR" en="" cs="cs:Viewegh-VychovaDivekCR:0:1698:2:w10" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60376" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:767:2:w2" cs="cs:Strouhal-Zivot_Egyptan:0:785:2:w1" cst="&#xDA;dajn&#x11B;"/>
-  <item id="ex-60202" cql="q-43" xml="Ourednik-Prihodna_chvi" en="en:Ourednik-Prihodna_chvi:0:38:7:w38" cs="cs:Ourednik-Prihodna_chvi:0:36:7:w32" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60059" cql="q-43" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:626:2:w11" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-59763" cql="q-43" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:1464:6:w1" cs="cs:bajaja-na_krasne_modre:0:1477:5:w1" cst="&#xDA;dajn&#x11B;"/>
-  <item id="ex-60329" cql="q-43" xml="sindelka-chyba" en="en:sindelka-chyba:0:32:3:w15 en:sindelka-chyba:0:32:3:w28" cs="cs:sindelka-chyba:0:30:3:w13" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60397" cql="q-43" xml="viewegh-baj_letaPodPsa" en="" cs="cs:viewegh-baj_letaPodPsa:0:319:1:w19" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60388" cql="q-43" xml="topol-andel" en="en:topol-andel:0:584:4:w34" cs="cs:topol-andel:0:594:4:w7" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60379" cql="q-43" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:1552:2:w24" cs="cs:styblova-skalpel_pros:0:1588:3:w7" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60366" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:57:5:w17" cs="cs:Strouhal-Zivot_Egyptan:0:59:9:w6" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60010" cql="q-43" xml="Hulova-Strucne_dejiny" en="en:Hulova-Strucne_dejiny:0:519:1:w20" cs="cs:Hulova-Strucne_dejiny:0:467:1:w13" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60071" cql="q-43" xml="kohout-snezim" en="en:kohout-snezim:0:961:4:w9" cs="cs:kohout-snezim:0:903:4:w7" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60371" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:644:5:w18" cs="cs:Strouhal-Zivot_Egyptan:0:664:5:w8" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-59983" cql="q-43" xml="hakl-o_rodicich_a_dete" en="en:hakl-o_rodicich_a_dete:0:32:5:w15" cs="cs:hakl-o_rodicich_a_dete:0:35:5:w19" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60368" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:424:3:w3" cs="cs:Strouhal-Zivot_Egyptan:0:439:3:w4" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60004" cql="q-43" xml="Hulova-Pamet_babicce" en="en:Hulova-Pamet_babicce:0:889:7:w23" cs="cs:Hulova-Pamet_babicce:0:874:7:w11" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60349" cql="q-43" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:1321:6:w11" cs="cs:Skvorecky-Mirakl:0:1522:6:w3" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60214" cql="q-43" xml="panek-dejiny_ceskych" en="" cs="cs:panek-dejiny_ceskych:0:1344:2:w14" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60346" cql="q-43" xml="skvorecky-hrichy_pater" en="" cs="cs:skvorecky-hrichy_pater:0:881:6:w11" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-59904" cql="q-43" xml="Fuks-SpalovacMrtvol" en="en:Fuks-SpalovacMrtvol:0:404:13:w6" cs="cs:Fuks-SpalovacMrtvol:0:422:7:w4" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-59761" cql="q-43" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:1225:23:w10" cs="cs:bajaja-na_krasne_modre:0:1246:22:w9" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60391" cql="q-43" xml="topol-vylet_k_hale" en="en:topol-vylet_k_hale:0:106:2:w3 en:topol-vylet_k_hale:0:106:2:w4" cs="cs:topol-vylet_k_hale:0:108:2:w8" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-59838" cql="q-43" xml="cermak-zaklady_metod" en="en:cermak-zaklady_metod:0:12:3:w10" cs="cs:cermak-zaklady_metod:0:10:2:w26" cst="&#xFA;dajn&#x11B;"/>
-  <item id="ex-60356" cql="q-43" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:4331:2:w6" cs="cs:Skvorecky-PribehIng_2:0:3604:3:w5" cst="&#xFA;dajn&#x11B;"/>
+  <item id="ex-60408" cql="q-43" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1116:2:w26" cs="cs:Viewegh-VychovaDivekCR:0:1039:2:w19" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="apparently"/>
+  <item id="ex-60062" cql="q-43" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:2061:1:w13" cs="cs:Kohout-Hvezdna_hodina:0:2101:1:w10" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="supposedly"/>
+  <item id="ex-60367" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:259:6:w9 en:Strouhal-Zivot_Egyptan:0:259:6:w10 en:Strouhal-Zivot_Egyptan:0:259:6:w11" cs="cs:Strouhal-Zivot_Egyptan:0:270:6:w8" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="we are told"/>
+  <item id="ex-60401" cql="q-43" xml="viewegh-baj_letaPodPsa" en="X" cs="cs:viewegh-baj_letaPodPsa:0:1755:6:w6" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-59984" cql="q-43" xml="hakl-o_rodicich_a_dete" en="en:hakl-o_rodicich_a_dete:0:455:9:w1" cs="cs:hakl-o_rodicich_a_dete:0:456:8:w1" cst="&#xDA;dajn&#x11B;" alignchecked="1" ent="Apparently"/>
+  <item id="ex-60320" cql="q-43" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:787:6:w3" cs="cs:sedlacek-ekonomie:0:788:6:w3" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="allegedly"/>
+  <item id="ex-60410" cql="q-43" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1563:4:w6 en:Viewegh-VychovaDivekCR:0:1563:4:w7" cs="cs:Viewegh-VychovaDivekCR:0:1462:4:w5" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="she alleged"/>
+  <item id="ex-60335" cql="q-43" xml="sindelka-chyba" en="en:sindelka-chyba:0:1456:35:w17" cs="cs:sindelka-chyba:0:1461:36:w12" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="allegedly"/>
+  <item id="ex-59981" cql="q-43" xml="hajicek-selsky_baroko" en="en:hajicek-selsky_baroko:0:658:1:w38" cs="cs:hajicek-selsky_baroko:0:656:2:w16" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="supposedly"/>
+  <item id="ex-60213" cql="q-43" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:1500:7:w37" cs="cs:panek-dejiny_ceskych:0:1275:7:w34" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="allegedly"/>
+  <item id="ex-59990" cql="q-43" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:34:5:w39" cs="cs:Havel-Dalkovy_vyslech:0:32:5:w38" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="allegedly"/>
+  <item id="ex-60372" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:647:3:w15" cs="cs:Strouhal-Zivot_Egyptan:0:667:3:w18" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="allegedly"/>
+  <item id="ex-60375" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="X" cs="cs:Strouhal-Zivot_Egyptan:0:737:2:w3" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-60378" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:1205:5:w13 en:Strouhal-Zivot_Egyptan:0:1205:5:w14" cs="cs:Strouhal-Zivot_Egyptan:0:1235:5:w9" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="is said"/>
+  <item id="ex-60069" cql="q-43" xml="kohout-snezim" en="en:kohout-snezim:0:305:1:w5" cs="cs:kohout-snezim:0:279:1:w4" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="supposedly"/>
+  <item id="ex-59982" cql="q-43" xml="hajicek-selsky_baroko" en="en:hajicek-selsky_baroko:0:1818:16:w1 en:hajicek-selsky_baroko:0:1818:16:w2" cs="cs:hajicek-selsky_baroko:0:1807:16:w5" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="They say"/>
+  <item id="ex-60411" cql="q-43" xml="Viewegh-VychovaDivekCR" en="X" cs="cs:Viewegh-VychovaDivekCR:0:1583:3:w5" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-60394" cql="q-43" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:923:6:w19" cs="cs:Vaculik-Cesky_snar:0:722:5:w15" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="ostensibly"/>
+  <item id="ex-59992" cql="q-43" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:84:126:w1" cs="cs:Havel-Dalkovy_vyslech:0:78:108:w36" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="Apparently"/>
+  <item id="ex-60212" cql="q-43" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:1060:1:w42" cs="cs:panek-dejiny_ceskych:0:848:1:w32" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="allegedly"/>
+  <item id="ex-60348" cql="q-43" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:1193:7:w11 en:skvorecky-hrichy_pater:0:1193:7:w12 en:skvorecky-hrichy_pater:0:1193:7:w13 en:skvorecky-hrichy_pater:0:1193:7:w15" cs="cs:skvorecky-hrichy_pater:0:1190:7:w85" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="I &#x2019;ve claimed to"/>
+  <item id="ex-59759" cql="q-43" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:40:3:w35 en:bajaja-na_krasne_modre:0:40:3:w36" cs="cs:bajaja-na_krasne_modre:0:40:3:w22" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="was said"/>
+  <item id="ex-60369" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:463:3:w46" cs="cs:Strouhal-Zivot_Egyptan:0:478:4:w42" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="actually"/>
+  <item id="ex-60354" cql="q-43" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:3603:5:w37" cs="cs:Skvorecky-PribehIng_2:0:2982:8:w38" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="allegedly"/>
+  <item id="ex-60353" cql="q-43" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:3559:8:w4" cs="cs:Skvorecky-PribehIng_2:0:2953:10:w7" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="allegedly"/>
+  <item id="ex-60351" cql="q-43" xml="Skvorecky-PribehIng_1" en="en:Skvorecky-PribehIng_1:0:3609:6:w29 en:Skvorecky-PribehIng_1:0:3609:6:w30" cs="cs:Skvorecky-PribehIng_1:0:2785:7:w23" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="was said"/>
+  <item id="ex-60414" cql="q-43" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1810:2:w1 en:Viewegh-VychovaDivekCR:0:1810:2:w2 en:Viewegh-VychovaDivekCR:0:1810:2:w3 en:Viewegh-VychovaDivekCR:0:1810:2:w4" cs="cs:Viewegh-VychovaDivekCR:0:1698:2:w10" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="He told me that"/>
+  <item id="ex-60376" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:767:2:w2" cs="cs:Strouhal-Zivot_Egyptan:0:785:2:w1" cst="&#xDA;dajn&#x11B;" alignchecked="1" ent="Alleged"/>
+  <item id="ex-60202" cql="q-43" xml="Ourednik-Prihodna_chvi" en="en:Ourednik-Prihodna_chvi:0:38:7:w38" cs="cs:Ourednik-Prihodna_chvi:0:36:7:w32" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="allegedly"/>
+  <item id="ex-60059" cql="q-43" xml="Kohout-Hvezdna_hodina" en="X" cs="cs:Kohout-Hvezdna_hodina:0:626:2:w11" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-59763" cql="q-43" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:1464:6:w1" cs="cs:bajaja-na_krasne_modre:0:1477:5:w1" cst="&#xDA;dajn&#x11B;" alignchecked="1" ent="Allegedly"/>
+  <item id="ex-60329" cql="q-43" xml="sindelka-chyba" en="en:sindelka-chyba:0:32:3:w13 en:sindelka-chyba:0:32:3:w15" cs="cs:sindelka-chyba:0:30:3:w13" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="was alleged"/>
+  <item id="ex-60397" cql="q-43" xml="viewegh-baj_letaPodPsa" en="X" cs="cs:viewegh-baj_letaPodPsa:0:319:1:w19" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-60388" cql="q-43" xml="topol-andel" en="en:topol-andel:0:584:4:w34" cs="cs:topol-andel:0:594:4:w7" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="supposedly"/>
+  <item id="ex-60379" cql="q-43" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:1552:2:w24" cs="cs:styblova-skalpel_pros:0:1588:3:w7" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="allegedly"/>
+  <item id="ex-60366" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:57:5:w15 en:Strouhal-Zivot_Egyptan:0:57:5:w17" cs="cs:Strouhal-Zivot_Egyptan:0:59:9:w6" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="was supposed"/>
+  <item id="ex-60010" cql="q-43" xml="Hulova-Strucne_dejiny" en="X" cs="cs:Hulova-Strucne_dejiny:0:467:1:w13" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent=""/>
+  <item id="ex-60071" cql="q-43" xml="kohout-snezim" en="en:kohout-snezim:0:961:4:w9" cs="cs:kohout-snezim:0:903:4:w7" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="supposedly"/>
+  <item id="ex-60371" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:644:5:w17 en:Strouhal-Zivot_Egyptan:0:644:5:w18 en:Strouhal-Zivot_Egyptan:0:644:5:w19" cs="cs:Strouhal-Zivot_Egyptan:0:664:5:w8" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="the story goes"/>
+  <item id="ex-59983" cql="q-43" xml="hakl-o_rodicich_a_dete" en="en:hakl-o_rodicich_a_dete:0:32:5:w15" cs="cs:hakl-o_rodicich_a_dete:0:35:5:w19" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="apparently"/>
+  <item id="ex-60368" cql="q-43" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:424:3:w3" cs="cs:Strouhal-Zivot_Egyptan:0:439:3:w4" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="purported"/>
+  <item id="ex-60004" cql="q-43" xml="Hulova-Pamet_babicce" en="en:Hulova-Pamet_babicce:0:889:7:w23" cs="cs:Hulova-Pamet_babicce:0:874:7:w11" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="supposedly"/>
+  <item id="ex-60349" cql="q-43" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:1321:6:w10 en:Skvorecky-Mirakl:0:1321:6:w11" cs="cs:Skvorecky-Mirakl:0:1522:6:w3" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="was supposed"/>
+  <item id="ex-60214" cql="q-43" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:1570:2:w13 en:panek-dejiny_ceskych:0:1570:2:w14 en:panek-dejiny_ceskych:0:1570:2:w15" cs="cs:panek-dejiny_ceskych:0:1344:2:w14" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="according to which"/>
+  <item id="ex-60346" cql="q-43" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:882:4:w7" cs="cs:skvorecky-hrichy_pater:0:881:6:w11" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="said"/>
+  <item id="ex-59904" cql="q-43" xml="Fuks-SpalovacMrtvol" en="en:Fuks-SpalovacMrtvol:0:404:13:w6" cs="cs:Fuks-SpalovacMrtvol:0:422:7:w4" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="allegedly"/>
+  <item id="ex-59761" cql="q-43" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:1225:23:w9 en:bajaja-na_krasne_modre:0:1225:23:w10" cs="cs:bajaja-na_krasne_modre:0:1246:22:w9" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="some say"/>
+  <item id="ex-60391" cql="q-43" xml="topol-vylet_k_hale" en="en:topol-vylet_k_hale:0:106:2:w1 en:topol-vylet_k_hale:0:106:2:w2 en:topol-vylet_k_hale:0:106:2:w3 en:topol-vylet_k_hale:0:106:2:w4" cs="cs:topol-vylet_k_hale:0:108:2:w8" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="Word was out that"/>
+  <item id="ex-59838" cql="q-43" xml="cermak-zaklady_metod" en="en:cermak-zaklady_metod:0:12:3:w9 en:cermak-zaklady_metod:0:12:3:w10" cs="cs:cermak-zaklady_metod:0:10:2:w26" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="was said"/>
+  <item id="ex-60356" cql="q-43" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:4331:2:w5 en:Skvorecky-PribehIng_2:0:4331:2:w6" cs="cs:Skvorecky-PribehIng_2:0:3604:3:w5" cst="&#xFA;dajn&#x11B;" alignchecked="1" ent="is supposed"/>
 </examples>
