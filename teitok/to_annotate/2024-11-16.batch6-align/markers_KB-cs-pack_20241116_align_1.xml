@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-<user id="OD" email="odrobil@seznam.cz" name="Ondřej Drobil"/>
+<user id="KB" email="blazkovakate@seznam.cz" name="Kateřina Blažková"/>
   <item id="ex-94798" cql="q-51" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:126:2:w24 en:Vopenka-Paty_rozmer:0:126:2:w25" cs="cs:Vopenka-Paty_rozmer:0:125:2:w16" cst="nutně"/>
   <item id="ex-94374" cql="q-51" xml="Kohout-Hvezdna_hodina" en="" cs="cs:Kohout-Hvezdna_hodina:0:583:1:w9" cst="nutně"/>
   <item id="ex-94719" cql="q-51" xml="sedlacek-ekonomie" en="en:sedlacek-ekonomie:0:933:3:w32" cs="cs:sedlacek-ekonomie:0:920:3:w31" cst="nutně"/>

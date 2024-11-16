@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-<user id="MD" email="m.dankova25@gmail.com" name="Michaela Danková"/>
+<user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
   <item id="ex-93208" cql="q-50" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:45:90:w13" cs="cs:Levy-Umeni_prekladu:0:31:122:w16" cst="zřetelně"/>
   <item id="ex-92987" cql="q-50" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:146:9:w3" cs="cs:Havel-Dalkovy_vyslech:0:132:7:w13" cst="zřetelně"/>
   <item id="ex-93565" cql="q-50" xml="skvorecky-hrichy_pater" en="" cs="cs:skvorecky-hrichy_pater:0:1126:8:w29" cst="zřetelně"/>
