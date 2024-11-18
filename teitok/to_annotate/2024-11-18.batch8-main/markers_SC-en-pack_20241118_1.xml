@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <examples>
-<user id="KK" email="kyckova2@seznam.cz" name="Karol&#xED;na K&#xFD;&#x10D;kov&#xE1;"/>
+<user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
   <item id="ex-62766" cql="q-39" xml="farrell-nepokoje" en="en:farrell-nepokoje:0:1493:2:w13" cs="cs:farrell-nepokoje:0:1483:2:w14" cst="sp&#xED;&#x161;" ent="but" alignchecked="1"/>
   <item id="ex-68235" cql="q-39" xml="pynchon-vykrik" en="en:pynchon-vykrik:0:2678:2:w10 en:pynchon-vykrik:0:2678:2:w11" cs="cs:pynchon-vykrik:0:2653:2:w13" cst="sp&#xED;&#x161;" alignchecked="1" ent="tend to"/>
   <item id="ex-70453" cql="q-39" xml="zimbardo-lucifer_efekt" en="en:zimbardo-lucifer_efekt:0:3241:1:w19" cs="cs:zimbardo-lucifer_efekt:0:3180:1:w18" cst="sp&#xED;&#x161;e" alignchecked="1" ent="rather"/>

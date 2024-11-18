@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <examples>
-<user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
+<user id="OD" email="odrobil@seznam.cz" name="Ondřej Drobil"/>
   <item id="ex-55039" cql="q-24" xml="Vopenka-Moje_cesta" en="en:Vopenka-Moje_cesta:0:1448:5:w9" cs="cs:Vopenka-Moje_cesta:0:1437:5:w13" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="people&#x2014;probably"/>
   <item id="ex-52390" cql="q-24" xml="Kohout-Hvezdna_hodina" en="-" cs="cs:Kohout-Hvezdna_hodina:0:506:3:w57" cst="nejsp&#xED;&#x161;" alignchecked="1" ent=""/>
   <item id="ex-54864" cql="q-24" xml="Topol-Sestra" en="en:Topol-Sestra:0:601:2:w32 en:Topol-Sestra:0:601:2:w33 en:Topol-Sestra:0:601:2:w34 en:Topol-Sestra:0:601:2:w35" cs="cs:Topol-Sestra:0:637:1:w29" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="nothing so much as"/>
