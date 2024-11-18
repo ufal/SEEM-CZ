@@ -36,7 +36,7 @@
   <item id="ex-66426" cql="q-38" xml="Topol-Sestra" en="en:Topol-Sestra:0:1370:4:w2" cs="cs:Topol-Sestra:0:1435:4:w1" cst="Sotva" alignchecked="1" ent="sooner"/>
   <item id="ex-63677" cql="q-38" xml="kohout-snezim" en="en:kohout-snezim:0:1198:3:w16" cs="cs:kohout-snezim:0:1135:3:w14" cst="sotva" alignchecked="1" ent="hardly"/>
   <item id="ex-64905" cql="q-38" xml="otcenasek-romeo_julie" en="en:otcenasek-romeo_julie:0:1064:5:w14" cs="cs:otcenasek-romeo_julie:0:1085:5:w9" cst="sotva" alignchecked="1" ent="hardly"/>
-  <item id="ex-66545" cql="q-38" xml="Urban-Sedmikosteli" en="en:Urban-Sedmikosteli:0:1340:3:w13 en:Urban-Sedmikosteli:0:1340:3:w15 en:Urban-Sedmikosteli:0:1340:3:w16" cs="cs:Urban-Sedmikosteli:0:1294:3:w9" cst="sotva" ent="all could do"/>
+  <item id="ex-66545" cql="q-38" xml="Urban-Sedmikosteli" en="en:Urban-Sedmikosteli:0:1340:3:w13 en:Urban-Sedmikosteli:0:1340:3:w15 en:Urban-Sedmikosteli:0:1340:3:w16" cs="cs:Urban-Sedmikosteli:0:1294:3:w9" cst="sotva" ent="all could do" alignchecked="1"/>
   <item id="ex-66529" cql="q-38" xml="Urban-Lord_Mord" en="en:Urban-Lord_Mord:0:638:1:w37" cs="cs:Urban-Lord_Mord:0:649:1:w30" cst="sotva" alignchecked="1" ent="scarcely"/>
   <item id="ex-62903" cql="q-38" xml="Hasek-OsudyDobrehoVvSV" en="en:Hasek-OsudyDobrehoVvSV:0:4278:3:w14" cs="cs:Hasek-OsudyDobrehoVvSV:0:2883:4:w27" cst="sotva" alignchecked="1" ent="barely"/>
   <item id="ex-66449" cql="q-38" xml="tuckova-vyhnani_Gerty" en="en:tuckova-vyhnani_Gerty:0:396:1:w20" cs="cs:tuckova-vyhnani_Gerty:0:392:1:w16" cst="sotva" alignchecked="1" ent="barely"/>
