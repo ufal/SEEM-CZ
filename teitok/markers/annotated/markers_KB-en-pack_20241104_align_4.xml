@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <examples>
 <user id="KB" email="blazkovakate@seznam.cz" name="Kate&#x159;ina Bla&#x17E;kov&#xE1;"/>
-  <item id="ex-62762" cql="q-38" xml="grisham-bratrstvo" en="X" cs="cs:grisham-bratrstvo:0:1126:1:w1" cst="Sotva" alignchecked="1" ent=""/>
+  <item id="ex-62762" cql="q-38" xml="grisham-bratrstvo" en="en:grisham-bratrstvo:0:1132:1:w7" cs="cs:grisham-bratrstvo:0:1126:1:w1" cst="Sotva" alignchecked="1" ent="when"/>
   <item id="ex-60714" cql="q-38" xml="brown-sifra" en="X" cs="cs:brown-sifra:0:1537:2:w6" cst="sotva" alignchecked="1" ent=""/>
   <item id="ex-65349" cql="q-38" xml="Roth-lidska_skvrna" en="en:Roth-lidska_skvrna:0:484:182:w34 en:Roth-lidska_skvrna:0:484:182:w35" cs="cs:Roth-lidska_skvrna:0:506:179:w31" cst="sotva" alignchecked="1" ent="soon as"/>
   <item id="ex-65945" cql="q-38" xml="Steel-Druha_sance" en="en:Steel-Druha_sance:0:919:1:w3" cs="cs:Steel-Druha_sance:0:921:1:w1" cst="Sotva" alignchecked="1" ent="just"/>
@@ -14,7 +14,7 @@
   <item id="ex-61415" cql="q-38" xml="Dickens-NadejneVyhlidk" en="en:Dickens-NadejneVyhlidk:0:735:1:w14" cs="cs:Dickens-NadejneVyhlidk:0:732:1:w9" cst="sotva" alignchecked="1" ent="before"/>
   <item id="ex-64505" cql="q-38" xml="McEwan-Sobota" en="en:McEwan-Sobota:0:186:8:w7" cs="cs:McEwan-Sobota:0:183:6:w8" cst="sotva" alignchecked="1" ent="barely"/>
   <item id="ex-66235" cql="q-38" xml="Tolkien-Pan_prstenu_1" en="X" cs="cs:Tolkien-Pan_prstenu_1:0:1418:1:w1" cst="Sotva" alignchecked="1" ent=""/>
-  <item id="ex-59731" cql="q-38" xml="adams-daleka_cesta" en="X" cs="cs:adams-daleka_cesta:0:1655:2:w1" cst="Sotva" alignchecked="1" ent=""/>
+  <item id="ex-59731" cql="q-38" xml="adams-daleka_cesta" en="en:adams-daleka_cesta:0:1640:2:w1" cs="cs:adams-daleka_cesta:0:1655:2:w1" cst="Sotva" alignchecked="1" ent="When"/>
   <item id="ex-66862" cql="q-38" xml="zimbardo-lucifer_efekt" en="en:zimbardo-lucifer_efekt:0:270:1:w7 en:zimbardo-lucifer_efekt:0:270:1:w8" cs="cs:zimbardo-lucifer_efekt:0:244:1:w4" cst="sotva" ent="for long" alignchecked="1"/>
   <item id="ex-66753" cql="q-38" xml="Wells-Valka_svetu" en="en:Wells-Valka_svetu:0:832:2:w1 en:Wells-Valka_svetu:0:832:2:w2 en:Wells-Valka_svetu:0:832:2:w3" cs="cs:Wells-Valka_svetu:0:849:2:w1" cst="Sotva" alignchecked="1" ent="So soon as"/>
   <item id="ex-66384" cql="q-38" xml="Toole-Spolceni_hlupcu" en="en:Toole-Spolceni_hlupcu:0:3046:4:w9" cs="cs:Toole-Spolceni_hlupcu:0:3103:4:w13" cst="sotva" ent="not" alignchecked="1"/>

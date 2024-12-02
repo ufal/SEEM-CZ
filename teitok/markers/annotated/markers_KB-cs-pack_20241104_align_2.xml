@@ -38,7 +38,7 @@
   <item id="ex-75641" cql="q-42" xml="Topol-Sestra" en="en:Topol-Sestra:0:459:8:w1 en:Topol-Sestra:0:459:8:w2" cs="cs:Topol-Sestra:0:487:8:w3" cst="t&#x159;eba" ent="What if" alignchecked="1"/>
   <item id="ex-72595" cql="q-42" xml="Polacek-Bylo_nas_pet" en="X" cs="cs:Polacek-Bylo_nas_pet:0:1087:1:w13" cst="t&#x159;eba" alignchecked="1" ent=""/>
   <item id="ex-75564" cql="q-42" xml="Topol-Chladnou_zemi" en="X" cs="cs:Topol-Chladnou_zemi:0:1367:2:w6" cst="t&#x159;eba" alignchecked="1" ent=""/>
-  <item id="ex-61066" cql="q-42" xml="Balaban-Mozna_ze_odcha" en="X" cs="cs:Balaban-Mozna_ze_odcha:0:510:1:w1" cst="T&#x159;eba" alignchecked="1" ent=""/>
+  <item id="ex-61066" cql="q-42" xml="Balaban-Mozna_ze_odcha" en="en:Balaban-Mozna_ze_odcha:0:498:1:w4 en:Balaban-Mozna_ze_odcha:0:498:1:w5 en:Balaban-Mozna_ze_odcha:0:498:1:w6" cs="cs:Balaban-Mozna_ze_odcha:0:510:1:w1" cst="T&#x159;eba" alignchecked="1" ent="let &#x2019;s call"/>
   <item id="ex-60083" cql="q-42" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:1570:6:w11" cs="cs:ajvaz-prazdne_ulice:0:1291:4:w22" cst="t&#x159;eba" alignchecked="1" ent="should"/>
   <item id="ex-74271" cql="q-42" xml="skvorecky-hrichy_pater" en="X" cs="cs:skvorecky-hrichy_pater:0:1184:10:w4" cst="t&#x159;eba" alignchecked="1" ent=""/>
   <item id="ex-60162" cql="q-42" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:375:9:w3" cs="cs:Ajvaz-Zlaty_vek:0:358:5:w17" cst="t&#x159;eba" alignchecked="1" ent="necessary"/>
@@ -47,7 +47,7 @@
   <item id="ex-76187" cql="q-42" xml="Vaculik-Cesky_snar" en="X" cs="cs:Vaculik-Cesky_snar:0:641:5:w21" cst="t&#x159;eba" alignchecked="1" ent=""/>
   <item id="ex-69066" cql="q-42" xml="kundera-zert" en="X" cs="cs:kundera-zert:0:1153:1:w276" cst="t&#x159;eba" alignchecked="1" ent=""/>
   <item id="ex-68351" cql="q-42" xml="Jirotka-Saturnin" en="en:Jirotka-Saturnin:0:591:2:w13" cs="cs:Jirotka-Saturnin:0:697:2:w12" cst="t&#x159;eba" alignchecked="1" ent="though"/>
-  <item id="ex-60097" cql="q-42" xml="ajvaz-prazdne_ulice" en="X" cs="cs:ajvaz-prazdne_ulice:0:1452:4:w16" cst="t&#x159;eba" alignchecked="1" ent=""/>
+  <item id="ex-60097" cql="q-42" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:1736:4:w17 en:ajvaz-prazdne_ulice:0:1736:4:w18 en:ajvaz-prazdne_ulice:0:1736:4:w19" cs="cs:ajvaz-prazdne_ulice:0:1452:4:w16" cst="t&#x159;eba" alignchecked="1" ent="in this case"/>
   <item id="ex-62706" cql="q-42" xml="cermak-zaklady_metod" en="en:cermak-zaklady_metod:0:649:1:w30" cs="cs:cermak-zaklady_metod:0:655:1:w21" cst="t&#x159;eba" alignchecked="1" ent="necessary"/>
   <item id="ex-70236" cql="q-42" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:363:7:w30" cs="cs:Lustig-ModlitbaProKHor:0:399:6:w33" cst="t&#x159;eba" alignchecked="1" ent="must"/>
   <item id="ex-65234" cql="q-42" xml="Fuks-SpalovacMrtvol" en="en:Fuks-SpalovacMrtvol:0:259:18:w7" cs="cs:Fuks-SpalovacMrtvol:0:274:12:w6" cst="t&#x159;eba" alignchecked="1" ent="necessary"/>

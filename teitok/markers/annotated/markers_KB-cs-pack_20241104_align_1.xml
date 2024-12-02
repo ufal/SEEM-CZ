@@ -21,7 +21,7 @@
   <item id="ex-70137" cql="q-39" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:936:7:w9" cs="cs:Vopenka-Paty_rozmer:0:956:13:w6" cst="sp&#xED;&#x161;" alignchecked="1" ent="more"/>
   <item id="ex-61754" cql="q-39" xml="Capek-Valka_s_mloky" en="en:Capek-Valka_s_mloky:0:649:6:w25" cs="cs:Capek-Valka_s_mloky:0:652:6:w21" cst="sp&#xED;&#x161;e" alignchecked="1" ent="more"/>
   <item id="ex-60597" cql="q-39" xml="Balaban-Mozna_ze_odcha" en="X" cs="cs:Balaban-Mozna_ze_odcha:0:669:3:w4" cst="sp&#xED;&#x161;" alignchecked="1" ent=""/>
-  <item id="ex-69877" cql="q-39" xml="Urban-Lord_Mord" en="en:Urban-Lord_Mord:0:677:2:w3" cs="cs:Urban-Lord_Mord:0:688:2:w9" cst="sp&#xED;&#x161;" alignchecked="1" ent="more"/>
+  <item id="ex-69877" cql="q-39" xml="Urban-Lord_Mord" en="en:Urban-Lord_Mord:0:677:2:w3 en:Urban-Lord_Mord:0:677:2:w4" cs="cs:Urban-Lord_Mord:0:688:2:w9" cst="sp&#xED;&#x161;" alignchecked="1" ent="more likely"/>
   <item id="ex-64100" cql="q-39" xml="Hasek-OsudyDobrehoVvSV" en="en:Hasek-OsudyDobrehoVvSV:0:4770:4:w1" cs="cs:Hasek-OsudyDobrehoVvSV:0:3245:4:w1" cst="Sp&#xED;&#x161;e" alignchecked="1" ent="Rather"/>
   <item id="ex-65409" cql="q-39" xml="kundera-zert" en="en:kundera-zert:0:630:2:w11" cs="cs:kundera-zert:0:648:2:w14" cst="sp&#xED;&#x161;" alignchecked="1" ent="only"/>
   <item id="ex-67459" cql="q-39" xml="Pekarkova-Dej_mi_ty_pr" en="X" cs="cs:Pekarkova-Dej_mi_ty_pr:0:1499:1:w11" cst="sp&#xED;&#x161;" alignchecked="1" ent=""/>
@@ -40,7 +40,7 @@
   <item id="ex-59939" cql="q-39" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:2010:3:w33" cs="cs:ajvaz-prazdne_ulice:0:1719:3:w32" cst="sp&#xED;&#x161;" alignchecked="1" ent="more"/>
   <item id="ex-66746" cql="q-39" xml="Mornstajnova-Hana" en="en:Mornstajnova-Hana:0:926:3:w50" cs="cs:Mornstajnova-Hana:0:894:3:w46" cst="sp&#xED;&#x161;" alignchecked="1" ent="almost"/>
   <item id="ex-69083" cql="q-39" xml="Skvorecky-PribehIng_1" en="en:Skvorecky-PribehIng_1:0:432:5:w4" cs="cs:Skvorecky-PribehIng_1:0:301:3:w12" cst="sp&#xED;&#x161;" alignchecked="1" ent="more"/>
-  <item id="ex-65115" cql="q-39" xml="klima-leto" en="-" cs="cs:klima-leto:0:448:1:w20" cst="sp&#xED;&#x161;" alignchecked="1" ent=""/>
+  <item id="ex-65115" cql="q-39" xml="klima-leto" en="en:klima-leto:0:363:2:w3" cs="cs:klima-leto:0:448:1:w20" cst="sp&#xED;&#x161;" alignchecked="1" ent="seemed"/>
   <item id="ex-59942" cql="q-39" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:31:11:w24 en:Ajvaz-Zlaty_vek:0:31:11:w25" cs="cs:Ajvaz-Zlaty_vek:0:23:8:w16" cst="sp&#xED;&#x161;e" alignchecked="1" ent="tended to"/>
   <item id="ex-69035" cql="q-39" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:1117:3:w6" cs="cs:Skvorecky-Mirakl:0:1288:3:w1" cst="Sp&#xED;&#x161;" alignchecked="1" ent="more"/>
   <item id="ex-64509" cql="q-39" xml="Hulova-Strucne_dejiny" en="en:Hulova-Strucne_dejiny:0:733:1:w148" cs="cs:Hulova-Strucne_dejiny:0:654:2:w28" cst="sp&#xED;&#x161;" alignchecked="1" ent="instead"/>

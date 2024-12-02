@@ -29,7 +29,7 @@
   <item id="ex-64957" cql="q-38" xml="Paral-Milenci_a_vrazi" en="en:Paral-Milenci_a_vrazi:0:2518:1:w21" cs="cs:Paral-Milenci_a_vrazi:0:191:12:w17" cst="sotva" alignchecked="1" ent="hardly"/>
   <item id="ex-63722" cql="q-38" xml="Kundera-Nesmrtelnost" en="en:Kundera-Nesmrtelnost:0:1314:4:w18" cs="cs:Kundera-Nesmrtelnost:0:1320:4:w18" cst="sotva" alignchecked="1" ent="hardly"/>
   <item id="ex-60357" cql="q-38" xml="Balaban-Kudy_sel_andel" en="en:Balaban-Kudy_sel_andel:0:798:3:w8" cs="cs:Balaban-Kudy_sel_andel:0:795:3:w4" cst="sotva" alignchecked="1" ent="barely"/>
-  <item id="ex-65806" cql="q-38" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:1198:2:w20" cs="cs:skvorecky-hrichy_pater:0:1195:2:w5" cst="sotva" ent="over"/>
+  <item id="ex-65806" cql="q-38" xml="skvorecky-hrichy_pater" en="en:skvorecky-hrichy_pater:0:1198:2:w20 en:skvorecky-hrichy_pater:0:1198:2:w15" cs="cs:skvorecky-hrichy_pater:0:1195:2:w5" cst="sotva" ent="over n&#x2019;t" alignchecked="1"/>
   <item id="ex-66455" cql="q-38" xml="tuckova-vyhnani_Gerty" en="en:tuckova-vyhnani_Gerty:0:1341:11:w35" cs="cs:tuckova-vyhnani_Gerty:0:1360:10:w27" cst="sotva" alignchecked="1" ent="not-quite-sixteen-year-old"/>
   <item id="ex-63727" cql="q-38" xml="Kundera-Nesnesit_lehko" en="en:Kundera-Nesnesit_lehko:0:139:6:w10" cs="cs:Kundera-Nesnesit_lehko:0:143:6:w9" cst="sotva" alignchecked="1" ent="sooner"/>
   <item id="ex-60359" cql="q-38" xml="Balaban-Mozna_ze_odcha" en="en:Balaban-Mozna_ze_odcha:0:118:3:w4" cs="cs:Balaban-Mozna_ze_odcha:0:124:1:w55" cst="sotva" alignchecked="1" ent="scarcely"/>
