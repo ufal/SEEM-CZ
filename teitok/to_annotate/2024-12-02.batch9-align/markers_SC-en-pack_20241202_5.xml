@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-  <user id="VP" email="vladimir.petkevic@ff.cuni.cz" name="Vladimír Petkevič"/>
+<user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
   <item id="ex-25614" cql="q-15" xml="grisham-klient" en="en:grisham-klient:0:4454:2:w5" cs="cs:grisham-klient:0:4491:3:w5" cst="bezpečně" use="content" predlemma="" predtag="" predverbtag="" pred="" cssent="Její malý klient je bezpečně ukryt v pěkném vězení a má k dispozici a na zavolání stráže , zatímco ona tu sedí ve tmě sama a přemýšlí o Bonovi , Pirinim a kdoví o kom dalším , kdo by tu ještě někde mohl číhat ."/>
   <item id="ex-26077" cql="q-15" xml="smith-o_krase" en="en:smith-o_krase:0:50:3:w36" cs="cs:smith-o_krase:0:50:3:w17" cst="bezpečně" use="certain" certainty="full" commfuntype="decl" commfunsubtype="domněnka s vysokou jistotou" scope="sent" pred="cs:smith-o_krase:0:50:3:w18" tfpos="neutral" sentpos="pseudofirst" modalpersp="unclear" evidencetype="inference" predlemma="vědět" predtag="VpMS----R-AAI--" predverbtag="VDA3SR" cssent="Ale byl odhodlaný pokračovat v této linii výslechu , přestože takhle původně vůbec začínat nechtěl a bezpečně věděl , že tím směřuje k vytvoření situace , která vůbec ničemu nepomůže ."/>
   <item id="ex-25399" cql="q-15" xml="brown-sifra" en="en:brown-sifra:0:4634:3:w4" cs="cs:brown-sifra:0:4278:7:w16" cst="bezpečně" use="content" predlemma="" predtag="" predverbtag="" cssent="&quot; Myslím , že to je ukázka dobré vůle a záruka , abychom se cítili bezpečně . &quot;"/>

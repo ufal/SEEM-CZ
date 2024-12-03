@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-  <user id="LP" email="polakova@ufal.mff.cuni.cz" name="Lucie Poláková"/>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Danková"/>
   <item id="ex-28199" cql="q-20" xml="kohout-snezim" en="en:kohout-snezim:0:1430:1:w4" cs="cs:kohout-snezim:0:1363:1:w3" cst="jasně" dictexample="1" use="answer" commfuntype="agree" commfunsubtype="souhlas" cssent="- No jasně ." predlemma="" predtag="" predverbtag=""/>
   <item id="ex-30488" cql="q-20" xml="Topol-Sestra" en="en:Topol-Sestra:0:316:1:w3" cs="cs:Topol-Sestra:0:328:1:w1" cst="Jasně" use="confirm" certainty="full" commfuntype="expr" commfunsubtype="přesvědčení" scope="ellipsis" tfpos="neutral" sentpos="first" modalpersp="clear" modif="cs:Topol-Sestra:0:328:1:w18 cs:Topol-Sestra:0:328:1:w16 cs:Topol-Sestra:0:328:1:w17" evidencetype="inference" cssent="Jasně , nasazuje je sem on , Temnej kníže , de mu o děti , to je jasný ." predlemma="" predtag="" predverbtag="" comment="nevím, co má přijít do substituce, mluvčí reaguje na nedořečenost (...) v předchozí větě"/>
   <item id="ex-30930" cql="q-20" xml="Zmeskal-Milostny_dopis" en="" cs="cs:Zmeskal-Milostny_dopis:0:418:1:w7" cst="jasně" use="answer" commfuntype="agree" commfunsubtype="souhlas" comment="odpověď v telefonním rozhovoru, nekoherentní věta, možné dvojí čtení (odpověď druhé straně či sebeutvrzení)" predlemma="" predtag="" predverbtag="" cssent="‚ Už je moc pozdě , jasně , zavolám zítra , vyřídím mu to , ‘ otočila se ke mně a řekla :"/>
