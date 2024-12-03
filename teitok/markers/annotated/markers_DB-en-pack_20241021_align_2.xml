@@ -24,7 +24,7 @@
   <item id="ex-50505" cql="q-26" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:4252:4:w20" cs="cs:rowlingova-hpot_pohar:0:4223:3:w15" cst="o&#x10D;ividn&#x11B;" ent="seem"/>
   <item id="ex-50253" cql="q-26" xml="McEwan-Sobota" en="en:McEwan-Sobota:0:208:6:w59" cs="cs:McEwan-Sobota:0:204:6:w61" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="manifestly"/>
   <item id="ex-50866" cql="q-26" xml="zimbardo-lucifer_efekt" en="en:zimbardo-lucifer_efekt:0:2111:1:w21" cs="cs:zimbardo-lucifer_efekt:0:2085:1:w16" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="apparently"/>
-  <item id="ex-50079" cql="q-26" xml="james-plany_touhy" en="-" cs="cs:james-plany_touhy:0:1527:1:w15" cst="o&#x10D;ividn&#x11B;" ent=""/>
+  <item id="ex-50079" cql="q-26" xml="james-plany_touhy" en="-" cs="cs:james-plany_touhy:0:1527:1:w15" cst="o&#x10D;ividn&#x11B;" ent="" alignchecked="1"/>
   <item id="ex-49782" cql="q-26" xml="galbraith-hedvabnik" en="en:galbraith-hedvabnik:0:4960:1:w16" cs="cs:galbraith-hedvabnik:0:4893:1:w19" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="apparently"/>
   <item id="ex-49344" cql="q-26" xml="atwood-muzeum_zkamenel" en="en:atwood-muzeum_zkamenel:0:1080:6:w2" cs="cs:atwood-muzeum_zkamenel:0:1100:6:w1" cst="O&#x10D;ividn&#x11B;" alignchecked="1" ent="obviously"/>
   <item id="ex-50272" cql="q-26" xml="moriarty-sedmilharky" en="en:moriarty-sedmilharky:0:2790:2:w24" cs="cs:moriarty-sedmilharky:0:2826:3:w1" cst="O&#x10D;ividn&#x11B;" alignchecked="1" ent="apparently"/>
@@ -41,11 +41,11 @@
   <item id="ex-49623" cql="q-26" xml="dawkins-sobecky_gen" en="en:dawkins-sobecky_gen:0:312:7:w7" cs="cs:dawkins-sobecky_gen:0:311:8:w3" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="apparent"/>
   <item id="ex-50472" cql="q-26" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:422:7:w19" cs="cs:rowlingova-hpot_pohar:0:423:11:w12" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="apparently"/>
   <item id="ex-50132" cql="q-26" xml="kilham-mezi_medvedy" en="-" cs="cs:kilham-mezi_medvedy:0:300:9:w1" cst="O&#x10D;ividn&#x11B;" alignchecked="1" ent=""/>
-  <item id="ex-50433" cql="q-26" xml="rowlingova-hpot_fenix" en="en:rowlingova-hpot_fenix:0:3686:2:w106" cs="cs:rowlingova-hpot_fenix:0:3692:9:w13" cst="o&#x10D;ividn&#x11B;" ent="looked"/>
+  <item id="ex-50433" cql="q-26" xml="rowlingova-hpot_fenix" en="en:rowlingova-hpot_fenix:0:3686:2:w106" cs="cs:rowlingova-hpot_fenix:0:3692:9:w13" cst="o&#x10D;ividn&#x11B;" ent="looked" alignchecked="1"/>
   <item id="ex-49418" cql="q-26" xml="Barth-Na_konci_cesty" en="en:Barth-Na_konci_cesty:0:279:6:w6" cs="cs:Barth-Na_konci_cesty:0:284:5:w6" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="apparently"/>
   <item id="ex-49320" cql="q-26" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:1900:3:w2" cs="cs:angellova-dvoji_zivot:0:1869:3:w5" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="apparently"/>
   <item id="ex-50245" cql="q-26" xml="McEwan-Amsterdam" en="en:McEwan-Amsterdam:0:104:2:w5" cs="cs:McEwan-Amsterdam:0:155:2:w2" cst="O&#x10D;ividn&#x11B;" alignchecked="1" ent="Apparently"/>
-  <item id="ex-49360" cql="q-26" xml="Austenova-Emma" en="en:Austenova-Emma:0:581:1:w43" cs="cs:Austenova-Emma:0:556:1:w35" cst="o&#x10D;ividn&#x11B;" ent="much"/>
+  <item id="ex-49360" cql="q-26" xml="Austenova-Emma" en="en:Austenova-Emma:0:581:1:w43" cs="cs:Austenova-Emma:0:556:1:w35" cst="o&#x10D;ividn&#x11B;" ent="much" alignchecked="1"/>
   <item id="ex-49315" cql="q-26" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:1339:1:w7" cs="cs:angellova-dvoji_zivot:0:1331:1:w7" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="apparently"/>
   <item id="ex-50119" cql="q-26" xml="kilham-mezi_medvedy" en="X" cs="cs:kilham-mezi_medvedy:0:138:4:w1" cst="O&#x10D;ividn&#x11B;" alignchecked="1" ent=""/>
   <item id="ex-50600" cql="q-26" xml="rowling-princ" en="en:rowling-princ:0:2422:2:w1" cs="cs:rowling-princ:0:2379:2:w1" cst="O&#x10D;ividn&#x11B;" alignchecked="1" ent="Apparently"/>

@@ -24,9 +24,9 @@
   <item id="ex-57644" cql="q-35" xml="rowlingova-hpot_relik" en="en:rowlingova-hpot_relik:0:1339:1:w2 en:rowlingova-hpot_relik:0:1339:1:w3" cs="cs:rowlingova-hpot_relik:0:1344:1:w2" cst="Samoz&#x159;ejm&#x11B;" alignchecked="1" ent="Of course"/>
   <item id="ex-51088" cql="q-35" xml="clancy-hon_na_ponorku" en="en:clancy-hon_na_ponorku:0:2109:1:w2" cs="cs:clancy-hon_na_ponorku:0:2184:1:w2" cst="Samoz&#x159;ejm&#x11B;" alignchecked="1" ent="Certainly"/>
   <item id="ex-53276" cql="q-35" xml="Heller-Hlava_XXII" en="en:Heller-Hlava_XXII:0:3080:1:w2" cs="cs:Heller-Hlava_XXII:0:3447:1:w2" cst="Samoz&#x159;ejm&#x11B;" alignchecked="1" ent="Sure"/>
-  <item id="ex-54495" cql="q-35" xml="kilham-mezi_medvedy" en="" cs="cs:kilham-mezi_medvedy:0:59:7:w9" cst="samoz&#x159;ejm&#x11B;" ent=""/>
+  <item id="ex-54495" cql="q-35" xml="kilham-mezi_medvedy" en="X" cs="cs:kilham-mezi_medvedy:0:59:7:w9" cst="samoz&#x159;ejm&#x11B;" ent="" alignchecked="1"/>
   <item id="ex-49288" cql="q-35" xml="adams-prevazne_neskodn" en="en:adams-prevazne_neskodn:0:59:4:w6 en:adams-prevazne_neskodn:0:59:4:w7" cs="cs:adams-prevazne_neskodn:0:59:5:w2" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
-  <item id="ex-56201" cql="q-35" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:7:1:w7 en:obama-zeme_zaslibena:0:7:1:w8" cs="cs:obama-zeme_zaslibena:0:7:1:w4" cst="samoz&#x159;ejm&#x11B;"/>
+  <item id="ex-56201" cql="q-35" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:7:1:w7 en:obama-zeme_zaslibena:0:7:1:w8" cs="cs:obama-zeme_zaslibena:0:7:1:w4" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-58227" cql="q-35" xml="silva-tajna_sluzba" en="en:silva-tajna_sluzba:0:3160:1:w5 en:silva-tajna_sluzba:0:3160:1:w6" cs="cs:silva-tajna_sluzba:0:3128:1:w6" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-55407" cql="q-35" xml="ludlum-bourneuv_mytus" en="en:ludlum-bourneuv_mytus:0:1417:2:w5 en:ludlum-bourneuv_mytus:0:1417:2:w6" cs="cs:ludlum-bourneuv_mytus:0:1418:2:w1" cst="Samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-55280" cql="q-35" xml="lodge-nejtissi_trest" en="en:lodge-nejtissi_trest:0:325:13:w22 en:lodge-nejtissi_trest:0:325:13:w23" cs="cs:lodge-nejtissi_trest:0:332:13:w22" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
@@ -34,13 +34,13 @@
   <item id="ex-58054" cql="q-35" xml="schmidt-google" en="en:schmidt-google:0:538:8:w8 en:schmidt-google:0:538:8:w9" cs="cs:schmidt-google:0:517:5:w4" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-53730" cql="q-35" xml="Irving-Rok_vdovou" en="en:Irving-Rok_vdovou:0:180:3:w6 en:Irving-Rok_vdovou:0:180:3:w7" cs="cs:Irving-Rok_vdovou:0:179:3:w5" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-59394" cql="q-35" xml="weinberg-sneni_finalni" en="en:weinberg-sneni_finalni:0:192:5:w36 en:weinberg-sneni_finalni:0:192:5:w37" cs="cs:weinberg-sneni_finalni:0:191:7:w19" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
-  <item id="ex-58134" cql="q-35" xml="shreve-vse_co_pral" en="X" cs="cs:shreve-vse_co_pral:0:1703:4:w1" cst="Samoz&#x159;ejm&#x11B;" ent=""/>
+  <item id="ex-58134" cql="q-35" xml="shreve-vse_co_pral" en="en:shreve-vse_co_pral:0:1679:4:w1" cs="cs:shreve-vse_co_pral:0:1703:4:w1" cst="Samoz&#x159;ejm&#x11B;" ent="Though" alignchecked="1"/>
   <item id="ex-57111" cql="q-35" xml="Pratchett-Soudne_sestr" en="en:Pratchett-Soudne_sestr:0:2179:1:w11 en:Pratchett-Soudne_sestr:0:2179:1:w12" cs="cs:Pratchett-Soudne_sestr:0:2154:1:w11" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-53210" cql="q-35" xml="hayek-cesta_do_otro" en="-" cs="cs:hayek-cesta_do_otro:0:165:3:w4" cst="samoz&#x159;ejm&#x11B;" ent=""/>
   <item id="ex-51835" cql="q-35" xml="farrell-nepokoje" en="en:farrell-nepokoje:0:594:1:w2 en:farrell-nepokoje:0:594:1:w3" cs="cs:farrell-nepokoje:0:589:1:w2" cst="Samoz&#x159;ejm&#x11B;" alignchecked="1" ent="Of course"/>
   <item id="ex-49639" cql="q-35" xml="angellova-dvoji_zivot" en="X" cs="cs:angellova-dvoji_zivot:0:1309:1:w4" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent=""/>
   <item id="ex-53806" cql="q-35" xml="Irving-Rok_vdovou" en="en:Irving-Rok_vdovou:0:3556:2:w5 en:Irving-Rok_vdovou:0:3556:2:w6" cs="cs:Irving-Rok_vdovou:0:3561:2:w2" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
-  <item id="ex-56219" cql="q-35" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:916:1:w2" cs="cs:obama-zeme_zaslibena:0:915:1:w4" cst="samoz&#x159;ejm&#x11B;"/>
+  <item id="ex-56219" cql="q-35" xml="obama-zeme_zaslibena" en="en:obama-zeme_zaslibena:0:916:1:w2 en:obama-zeme_zaslibena:0:916:1:w1" cs="cs:obama-zeme_zaslibena:0:915:1:w4" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="course Of"/>
   <item id="ex-51871" cql="q-35" xml="farrell-nepokoje" en="X" cs="cs:farrell-nepokoje:0:1520:2:w4" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent=""/>
   <item id="ex-49649" cql="q-35" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:1676:6:w4 en:angellova-dvoji_zivot:0:1676:6:w5" cs="cs:angellova-dvoji_zivot:0:1663:6:w4" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-55835" cql="q-35" xml="mitchell-atlas_mraku" en="en:mitchell-atlas_mraku:0:2715:1:w5 en:mitchell-atlas_mraku:0:2715:1:w6" cs="cs:mitchell-atlas_mraku:0:2713:1:w5" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
