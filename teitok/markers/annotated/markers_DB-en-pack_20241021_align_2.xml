@@ -12,16 +12,16 @@
   <item id="ex-50749" cql="q-26" xml="Toole-Spolceni_hlupcu" en="en:Toole-Spolceni_hlupcu:0:3259:4:w8" cs="cs:Toole-Spolceni_hlupcu:0:3325:4:w7" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="apparently"/>
   <item id="ex-50855" cql="q-26" xml="Wright-Na_konci_rijna" en="en:Wright-Na_konci_rijna:0:872:3:w19" cs="cs:Wright-Na_konci_rijna:0:872:3:w18" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="noticeably"/>
   <item id="ex-49986" cql="q-26" xml="Irving-H_New_Hampshire" en="en:Irving-H_New_Hampshire:0:2999:2:w4" cs="cs:Irving-H_New_Hampshire:0:3006:2:w2" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="clearly"/>
-  <item id="ex-49461" cql="q-26" xml="brown-chut_lasky" en="en:brown-chut_lasky:0:1105:3:w7" cs="cs:brown-chut_lasky:0:1100:3:w5" cst="o&#x10D;ividn&#x11B;" ent="unmistakably"/>
+  <item id="ex-49461" cql="q-26" xml="brown-chut_lasky" en="en:brown-chut_lasky:0:1105:3:w7" cs="cs:brown-chut_lasky:0:1100:3:w5" cst="o&#x10D;ividn&#x11B;" ent="unmistakably" alignchecked="1"/>
   <item id="ex-49428" cql="q-26" xml="bernieres-mandolina" en="en:bernieres-mandolina:0:711:1:w38" cs="cs:bernieres-mandolina:0:672:1:w24" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="evident"/>
   <item id="ex-49612" cql="q-26" xml="dawkins-bozi_blud" en="en:dawkins-bozi_blud:0:1047:2:w19" cs="cs:dawkins-bozi_blud:0:1061:2:w16" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="obviously"/>
   <item id="ex-50095" cql="q-26" xml="Jerome-TriM_ve_cl" en="en:Jerome-TriM_ve_cl:0:630:2:w28" cs="cs:Jerome-TriM_ve_cl:0:616:2:w26" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="evident"/>
   <item id="ex-50468" cql="q-26" xml="rowlingova-hpot_kamen" en="en:rowlingova-hpot_kamen:0:2903:1:w16" cs="cs:rowlingova-hpot_kamen:0:2931:2:w1" cst="o&#x10D;ividn&#x11B;" ent="quite"/>
   <item id="ex-49270" cql="q-26" xml="adams-daleka_cesta" en="en:adams-daleka_cesta:0:976:4:w4" cs="cs:adams-daleka_cesta:0:974:4:w3" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="clearly"/>
   <item id="ex-50697" cql="q-26" xml="stevenson-jekyll" en="en:stevenson-jekyll:0:162:2:w6" cs="cs:stevenson-jekyll:0:161:2:w4" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="legibly"/>
-  <item id="ex-50564" cql="q-26" xml="rowlingova-hpot_tajemn" en="en:rowlingova-hpot_tajemn:0:2163:1:w17" cs="cs:rowlingova-hpot_tajemn:0:2374:1:w12" cst="o&#x10D;ividn&#x11B;" ent="seem"/>
+  <item id="ex-50564" cql="q-26" xml="rowlingova-hpot_tajemn" en="en:rowlingova-hpot_tajemn:0:2163:1:w17" cs="cs:rowlingova-hpot_tajemn:0:2374:1:w12" cst="o&#x10D;ividn&#x11B;" ent="seem" alignchecked="1"/>
   <item id="ex-50536" cql="q-26" xml="rowlingova-hpot_relik" en="en:rowlingova-hpot_relik:0:2666:1:w22" cs="cs:rowlingova-hpot_relik:0:2672:1:w18" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="evidently"/>
-  <item id="ex-50505" cql="q-26" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:4252:4:w20" cs="cs:rowlingova-hpot_pohar:0:4223:3:w15" cst="o&#x10D;ividn&#x11B;" ent="seem"/>
+  <item id="ex-50505" cql="q-26" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:4252:4:w20" cs="cs:rowlingova-hpot_pohar:0:4223:3:w15" cst="o&#x10D;ividn&#x11B;" ent="seem" alignchecked="1"/>
   <item id="ex-50253" cql="q-26" xml="McEwan-Sobota" en="en:McEwan-Sobota:0:208:6:w59" cs="cs:McEwan-Sobota:0:204:6:w61" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="manifestly"/>
   <item id="ex-50866" cql="q-26" xml="zimbardo-lucifer_efekt" en="en:zimbardo-lucifer_efekt:0:2111:1:w21" cs="cs:zimbardo-lucifer_efekt:0:2085:1:w16" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="apparently"/>
   <item id="ex-50079" cql="q-26" xml="james-plany_touhy" en="-" cs="cs:james-plany_touhy:0:1527:1:w15" cst="o&#x10D;ividn&#x11B;" ent="" alignchecked="1"/>
@@ -29,7 +29,7 @@
   <item id="ex-49344" cql="q-26" xml="atwood-muzeum_zkamenel" en="en:atwood-muzeum_zkamenel:0:1080:6:w2" cs="cs:atwood-muzeum_zkamenel:0:1100:6:w1" cst="O&#x10D;ividn&#x11B;" alignchecked="1" ent="obviously"/>
   <item id="ex-50272" cql="q-26" xml="moriarty-sedmilharky" en="en:moriarty-sedmilharky:0:2790:2:w24" cs="cs:moriarty-sedmilharky:0:2826:3:w1" cst="O&#x10D;ividn&#x11B;" alignchecked="1" ent="apparently"/>
   <item id="ex-50701" cql="q-26" xml="Stoker-Dracula" en="en:Stoker-Dracula:0:2002:5:w7" cs="cs:Stoker-Dracula:0:1955:5:w4" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="manifest"/>
-  <item id="ex-49791" cql="q-26" xml="galbraith-smrtici_bila" en="en:galbraith-smrtici_bila:0:773:3:w36" cs="cs:galbraith-smrtici_bila:0:772:3:w33" cst="o&#x10D;ividn&#x11B;" ent="seem"/>
+  <item id="ex-49791" cql="q-26" xml="galbraith-smrtici_bila" en="en:galbraith-smrtici_bila:0:773:3:w36" cs="cs:galbraith-smrtici_bila:0:772:3:w33" cst="o&#x10D;ividn&#x11B;" ent="seem" alignchecked="1"/>
   <item id="ex-49347" cql="q-26" xml="atwood-muzeum_zkamenel" en="en:atwood-muzeum_zkamenel:0:1286:3:w2" cs="cs:atwood-muzeum_zkamenel:0:1312:3:w3" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="obviously"/>
   <item id="ex-50646" cql="q-26" xml="Singer-RodinaMoskatova" en="en:Singer-RodinaMoskatova:0:229:2:w3" cs="cs:Singer-RodinaMoskatova:0:230:2:w6" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="apparently"/>
   <item id="ex-49720" cql="q-26" xml="fowles-franc_milenka" en="en:fowles-franc_milenka:0:3160:2:w5" cs="cs:fowles-franc_milenka:0:3170:2:w5" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="evidently"/>
