@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ondřej Drobil"/>
   <item id="ex-94136" cql="q-51" xml="galbraith-hedvabnik" en="en:galbraith-hedvabnik:0:3185:3:w8 en:galbraith-hedvabnik:0:3185:3:w9" cs="cs:galbraith-hedvabnik:0:3142:3:w9" cst="nutně" alignchecked="1" ent="bound to" cssent="Jedna z vyšetřovacích verzí , jimiž se policie nutně zabývá , spočívá v teorii , že Quinea někdo zabil kvůli tomu , aby naplno neodhalil něco , co v Bombyx mori jen naznačuje . “"/>
   <item id="ex-94675" cql="q-51" xml="Ridley-Genom" en="en:Ridley-Genom:0:372:5:w3" cs="cs:Ridley-Genom:0:358:5:w3" cst="nutně" alignchecked="1" ent="badly" cssent="Naše genomy nutně potřebují odvšivit ."/>
   <item id="ex-93894" cql="q-51" xml="Bradbury-MartanskaKron" en="en:Bradbury-MartanskaKron:0:2060:5:w2" cs="cs:Bradbury-MartanskaKron:0:2070:5:w4" cst="nutně" alignchecked="1" ent="have" cssent="Musíme s vámi nutně mluvit ."/>

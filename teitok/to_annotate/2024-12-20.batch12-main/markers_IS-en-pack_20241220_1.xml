@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+<user id="IS" email="iur.sav.gal@icloud.com" name="Iurii Savelev-Galiaminskii"/>
   <item id="ex-85255" cql="q-49" xml="Fieldingova-panenka" en="en:Fieldingova-panenka:0:448:1:w4" cs="cs:Fieldingova-panenka:0:445:1:w1" cst="Zřejmě" alignchecked="1" ent="probably" cssent="Zřejmě se všichni dobře vyspali , pomyslela si závistivě , když si vybavila ty mučivé bezesné hodiny mezi půlnocí a šestou ráno , kdy sebou házela na posteli , převracela se a proklínala všechno , co mělo něco společného s Kanadou ."/>
   <item id="ex-90121" cql="q-49" xml="Popper-Otevrena_spol_2" en="en:Popper-Otevrena_spol_2:0:589:9:w2" cs="cs:Popper-Otevrena_spol_2:0:642:9:w1" cst="Zřejmě" alignchecked="1" ent="seems" cssent="Zřejmě to naznačuje , že když se vyvarujeme tohoto opomenutí , můžeme se vyhnout rozporu ."/>
   <item id="ex-91972" cql="q-49" xml="Updike-Kraliku_utikej" en="X" cs="cs:Updike-Kraliku_utikej:0:977:3:w14" cst="zřejmě" alignchecked="1" ent="" cssent="Vaše žena byla vzadu na zahradě s vaším kloučkem a nějakou paní , zřejmě přítelkyní - aspoň mi tak připadala - paní Fosterovou ?"/>

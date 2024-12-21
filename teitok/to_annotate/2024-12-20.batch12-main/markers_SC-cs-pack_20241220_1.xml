@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+<user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
   <item id="ex-50333" cql="q-26" xml="Paral-Milenci_a_vrazi" en="en:Paral-Milenci_a_vrazi:0:1813:2:w15" cs="cs:Paral-Milenci_a_vrazi:0:136:92:w15" cst="očividně" alignchecked="1" ent="obvious" cssent="&quot; Alexi - &quot; zděsila se promovaná lékařka Dáša Zíbrtová ve své ordinaci a očividně na ní vyrazil pot ."/>
   <item id="ex-50799" cql="q-26" xml="Viewegh-Vybijena" en="en:Viewegh-Vybijena:0:1089:5:w2" cs="cs:Viewegh-Vybijena:0:1096:5:w1" cst="Očividně" alignchecked="1" ent="clearly" cssent="Očividně to nedokáže pochopit ."/>
   <item id="ex-50155" cql="q-26" xml="Kohout-Hvezdna_hodina" en="-" cs="cs:Kohout-Hvezdna_hodina:0:779:2:w18" cst="očividně" alignchecked="1" ent="" cssent="než si sedl za stůl , měl v hlavě dokonale uklizeno , vyházel z ní , co očividně nevedlo nikam , aby udělal místo novým námětům a řešením ."/>
