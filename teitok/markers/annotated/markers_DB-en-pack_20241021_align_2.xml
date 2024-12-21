@@ -16,7 +16,7 @@
   <item id="ex-49428" cql="q-26" xml="bernieres-mandolina" en="en:bernieres-mandolina:0:711:1:w38" cs="cs:bernieres-mandolina:0:672:1:w24" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="evident"/>
   <item id="ex-49612" cql="q-26" xml="dawkins-bozi_blud" en="en:dawkins-bozi_blud:0:1047:2:w19" cs="cs:dawkins-bozi_blud:0:1061:2:w16" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="obviously"/>
   <item id="ex-50095" cql="q-26" xml="Jerome-TriM_ve_cl" en="en:Jerome-TriM_ve_cl:0:630:2:w28" cs="cs:Jerome-TriM_ve_cl:0:616:2:w26" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="evident"/>
-  <item id="ex-50468" cql="q-26" xml="rowlingova-hpot_kamen" en="en:rowlingova-hpot_kamen:0:2903:1:w16" cs="cs:rowlingova-hpot_kamen:0:2931:2:w1" cst="o&#x10D;ividn&#x11B;" ent="quite"/>
+  <item id="ex-50468" cql="q-26" xml="rowlingova-hpot_kamen" en="en:rowlingova-hpot_kamen:0:2903:1:w15" cs="cs:rowlingova-hpot_kamen:0:2931:2:w1" cst="o&#x10D;ividn&#x11B;" ent="looking" alignchecked="1"/>
   <item id="ex-49270" cql="q-26" xml="adams-daleka_cesta" en="en:adams-daleka_cesta:0:976:4:w4" cs="cs:adams-daleka_cesta:0:974:4:w3" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="clearly"/>
   <item id="ex-50697" cql="q-26" xml="stevenson-jekyll" en="en:stevenson-jekyll:0:162:2:w6" cs="cs:stevenson-jekyll:0:161:2:w4" cst="o&#x10D;ividn&#x11B;" alignchecked="1" ent="legibly"/>
   <item id="ex-50564" cql="q-26" xml="rowlingova-hpot_tajemn" en="en:rowlingova-hpot_tajemn:0:2163:1:w17" cs="cs:rowlingova-hpot_tajemn:0:2374:1:w12" cst="o&#x10D;ividn&#x11B;" ent="seem" alignchecked="1"/>

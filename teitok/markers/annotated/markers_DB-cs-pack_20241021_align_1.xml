@@ -17,7 +17,7 @@
   <item id="ex-50479" cql="q-29" xml="Kohout-Hvezdna_hodina" en="X" cs="cs:Kohout-Hvezdna_hodina:0:1760:3:w12" cst="patrn&#x11B;" ent="" alignchecked="1"/>
   <item id="ex-51197" cql="q-29" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:1730:6:w15" cs="cs:Vopenka-Paty_rozmer:0:1758:6:w11" cst="patrn&#x11B;" alignchecked="1" ent="apparently"/>
   <item id="ex-49349" cql="q-29" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:486:5:w20" cs="cs:Ajvaz-Zlaty_vek:0:470:5:w16" cst="patrn&#x11B;" ent="appears" alignchecked="1"/>
-  <item id="ex-49344" cql="q-29" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:215:4:w3" cs="cs:Ajvaz-Zlaty_vek:0:201:7:w1" cst="Patrn&#x11B;" ent="like"/>
+  <item id="ex-49344" cql="q-29" xml="Ajvaz-Zlaty_vek" en="en:Ajvaz-Zlaty_vek:0:215:4:w3 en:Ajvaz-Zlaty_vek:0:215:4:w2" cs="cs:Ajvaz-Zlaty_vek:0:201:7:w1" cst="Patrn&#x11B;" ent="like looked" alignchecked="1"/>
   <item id="ex-51049" cql="q-29" xml="Strouhal-Zivot_Egyptan" en="en:Strouhal-Zivot_Egyptan:0:1030:4:w19" cs="cs:Strouhal-Zivot_Egyptan:0:1051:5:w15" cst="patrn&#x11B;" alignchecked="1" ent="presumably"/>
   <item id="ex-49642" cql="q-29" xml="Capek-Valka_s_mloky" en="-" cs="cs:Capek-Valka_s_mloky:0:1186:18:w5" cst="patrn&#x11B;" alignchecked="1" ent=""/>
   <item id="ex-50517" cql="q-29" xml="Levy-Umeni_prekladu" en="X" cs="cs:Levy-Umeni_prekladu:0:45:1275:w12" cst="patrn&#x11B;" alignchecked="1" ent=""/>
@@ -30,7 +30,7 @@
   <item id="ex-50919" cql="q-29" xml="Skvorecky-Mirakl" en="en:Skvorecky-Mirakl:0:58:7:w7" cs="cs:Skvorecky-Mirakl:0:81:3:w7" cst="patrn&#x11B;" ent="would" alignchecked="1"/>
   <item id="ex-51155" cql="q-29" xml="Urban-Sedmikosteli" en="en:Urban-Sedmikosteli:0:857:2:w6" cs="cs:Urban-Sedmikosteli:0:832:2:w21" cst="patrn&#x11B;" ent="would" alignchecked="1"/>
   <item id="ex-50601" cql="q-29" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:548:5:w2" cs="cs:Lustig-ModlitbaProKHor:0:600:4:w3" cst="patrn&#x11B;" alignchecked="1" ent="apparently"/>
-  <item id="ex-51160" cql="q-29" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:1968:4:w11" cs="cs:Vaculik-Cesky_snar:0:1528:4:w5" cst="patrn&#x11B;" ent="think"/>
+  <item id="ex-51160" cql="q-29" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:1968:4:w11 en:Vaculik-Cesky_snar:0:1968:4:w9 en:Vaculik-Cesky_snar:0:1968:4:w10" cs="cs:Vaculik-Cesky_snar:0:1528:4:w5" cst="patrn&#x11B;" ent="think should n&#x2019;t" alignchecked="1"/>
   <item id="ex-50991" cql="q-29" xml="Skvorecky-PribehIng_1" en="en:Skvorecky-PribehIng_1:0:3074:1:w4" cs="cs:Skvorecky-PribehIng_1:0:2313:2:w2" cst="patrn&#x11B;" alignchecked="1" ent="clearly"/>
   <item id="ex-50513" cql="q-29" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:29:8:w8 en:Levy-Umeni_prekladu:0:29:8:w9 en:Levy-Umeni_prekladu:0:29:8:w10" cs="cs:Levy-Umeni_prekladu:0:15:178:w4" cst="patrn&#x11B;" alignchecked="1" ent="in all probability"/>
   <item id="ex-50238" cql="q-29" xml="Hasek-OsudyDobrehoVvSV" en="-" cs="cs:Hasek-OsudyDobrehoVvSV:0:3762:1:w2" cst="Patrn&#x11B;" alignchecked="1" ent=""/>

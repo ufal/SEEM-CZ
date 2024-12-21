@@ -36,7 +36,7 @@
   <item id="ex-59394" cql="q-35" xml="weinberg-sneni_finalni" en="en:weinberg-sneni_finalni:0:192:5:w36 en:weinberg-sneni_finalni:0:192:5:w37" cs="cs:weinberg-sneni_finalni:0:191:7:w19" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
   <item id="ex-58134" cql="q-35" xml="shreve-vse_co_pral" en="en:shreve-vse_co_pral:0:1679:4:w1" cs="cs:shreve-vse_co_pral:0:1703:4:w1" cst="Samoz&#x159;ejm&#x11B;" ent="Though" alignchecked="1"/>
   <item id="ex-57111" cql="q-35" xml="Pratchett-Soudne_sestr" en="en:Pratchett-Soudne_sestr:0:2179:1:w11 en:Pratchett-Soudne_sestr:0:2179:1:w12" cs="cs:Pratchett-Soudne_sestr:0:2154:1:w11" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
-  <item id="ex-53210" cql="q-35" xml="hayek-cesta_do_otro" en="-" cs="cs:hayek-cesta_do_otro:0:165:3:w4" cst="samoz&#x159;ejm&#x11B;" ent=""/>
+  <item id="ex-53210" cql="q-35" xml="hayek-cesta_do_otro" en="-" cs="cs:hayek-cesta_do_otro:0:165:3:w4" cst="samoz&#x159;ejm&#x11B;" ent="" alignchecked="1"/>
   <item id="ex-51835" cql="q-35" xml="farrell-nepokoje" en="en:farrell-nepokoje:0:594:1:w2 en:farrell-nepokoje:0:594:1:w3" cs="cs:farrell-nepokoje:0:589:1:w2" cst="Samoz&#x159;ejm&#x11B;" alignchecked="1" ent="Of course"/>
   <item id="ex-49639" cql="q-35" xml="angellova-dvoji_zivot" en="X" cs="cs:angellova-dvoji_zivot:0:1309:1:w4" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent=""/>
   <item id="ex-53806" cql="q-35" xml="Irving-Rok_vdovou" en="en:Irving-Rok_vdovou:0:3556:2:w5 en:Irving-Rok_vdovou:0:3556:2:w6" cs="cs:Irving-Rok_vdovou:0:3561:2:w2" cst="samoz&#x159;ejm&#x11B;" alignchecked="1" ent="of course"/>
