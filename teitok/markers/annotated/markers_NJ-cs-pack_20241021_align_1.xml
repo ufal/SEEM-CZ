@@ -20,7 +20,7 @@
   <item id="ex-57567" cql="q-27" xml="kundera-zert" en="en:kundera-zert:0:1112:1:w86" cs="cs:kundera-zert:0:1139:1:w90" cst="opravdu" alignchecked="1" ent="really"/>
   <item id="ex-51289" cql="q-27" xml="Capek-Valka_s_mloky" en="en:Capek-Valka_s_mloky:0:1133:4:w17" cs="cs:Capek-Valka_s_mloky:0:1277:4:w18" cst="opravdu" alignchecked="1" ent="really"/>
   <item id="ex-63933" cql="q-27" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:1387:6:w6" cs="cs:viewegh-baj_letaPodPsa:0:1450:6:w1" cst="Opravdu" alignchecked="1" ent="really"/>
-  <item id="ex-58256" cql="q-27" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:80:6:w11 en:Lustig-ModlitbaProKHor:0:80:6:w3" cs="cs:Lustig-ModlitbaProKHor:0:82:5:w8 cs:Lustig-ModlitbaProKHor:0:82:5:w1" cst="opravdu R&#xE1;d" alignchecked="1" ent="very very"/>
+  <item id="ex-58256" cql="q-27" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:80:6:w11" cs="cs:Lustig-ModlitbaProKHor:0:82:5:w8" cst="opravdu" alignchecked="1" ent="very"/>
   <item id="ex-52422" cql="q-27" xml="Douskova-Hrdy_Budzes" en="X" cs="cs:Douskova-Hrdy_Budzes:0:79:3:w24" cst="vopravdu" alignchecked="1" ent=""/>
   <item id="ex-57449" cql="q-27" xml="Kundera-Valcik_na_rozl" en="en:Kundera-Valcik_na_rozl:0:653:4:w2" cs="cs:Kundera-Valcik_na_rozl:0:662:4:w2" cst="Opravdu" alignchecked="1" ent="Really"/>
   <item id="ex-62502" cql="q-27" xml="Skvorecky-PribehIng_1" en="en:Skvorecky-PribehIng_1:0:1636:1:w5" cs="cs:Skvorecky-PribehIng_1:0:1205:1:w3" cst="opravdu" alignchecked="1" ent="really"/>
@@ -49,6 +49,6 @@
   <item id="ex-58260" cql="q-27" xml="Lustig-ModlitbaProKHor" en="X" cs="cs:Lustig-ModlitbaProKHor:0:118:4:w5" cst="opravdu" alignchecked="1" ent=""/>
   <item id="ex-56749" cql="q-27" xml="Jirotka-Saturnin" en="en:Jirotka-Saturnin:0:119:4:w18" cs="cs:Jirotka-Saturnin:0:151:4:w13" cst="opravdu" alignchecked="1" ent="really"/>
   <item id="ex-63125" cql="q-27" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:1834:3:w2" cs="cs:styblova-skalpel_pros:0:1863:2:w2" cst="opravdu" alignchecked="1" ent="really"/>
-  <item id="ex-57183" cql="q-27" xml="kohout-snezim" en="X" cs="cs:kohout-snezim:0:2840:4:w7" cst="opravdu" alignchecked="1" ent=""/>
+  <item id="ex-57183" cql="q-27" xml="kohout-snezim" en="en:kohout-snezim:0:2922:3:w6" cs="cs:kohout-snezim:0:2840:4:w7" cst="opravdu" alignchecked="1" ent="must"/>
   <item id="ex-57281" cql="q-27" xml="Kundera-Nesmrtelnost" en="en:Kundera-Nesmrtelnost:0:202:1:w8" cs="cs:Kundera-Nesmrtelnost:0:205:1:w8" cst="opravdu" alignchecked="1" ent="really"/>
 </examples>
