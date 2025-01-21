@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ondřej Drobil"/>
   <item id="ex-81252" cql="q-48" xml="follett-pilire_zeme" en="en:follett-pilire_zeme:0:3812:2:w21" cs="cs:follett-pilire_zeme:0:3805:2:w14" cst="zjevně" alignchecked="1" ent="visibly" cssent="Jako skrýš byl dost nápadný , ale nikoho by pochopitelně nenapadlo vykrást tak zjevně chudičký kostelík ."/>
   <item id="ex-82173" cql="q-48" xml="rowling-princ" en="en:rowling-princ:0:1656:2:w5" cs="cs:rowling-princ:0:1638:2:w5" cst="zjevně" alignchecked="1" ent="evidently" cssent="Crabbemu ani Goylovi se zjevně nepodařilo dosáhnout u NKÚ požadovaného hodnocení , postoupili však čtyři jiní studenti Zmijozelu a mezi nimi i Malfoy ."/>
   <item id="ex-80891" cql="q-48" xml="Boyd-Neklid" en="en:Boyd-Neklid:0:1416:1:w3" cs="cs:Boyd-Neklid:0:1422:1:w4" cst="zjevně" alignchecked="1" ent="seemed" cssent="Ten příslib ho zjevně oživil a on se vroucně usmál ."/>

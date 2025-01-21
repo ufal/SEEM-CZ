@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ondřej Drobil"/>
   <item id="ex-51953" cql="q-34" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:674:1:w42" cs="cs:Kohout-Hvezdna_hodina:0:689:1:w41" cst="rozhodně" alignchecked="1" ent="certainly" cssent="Že ho nechal navštívit matku , že neodmítl intervenci ve prospěch Jitčina otce a nakonec tak nekonvenčně zafungoval při výslechu sklepmistra , mohl být samozřejmě , pokud měl Beran pravdu , klasický trik , ale v nové atmosféře se dalo rozhodně líp dýchat ."/>
   <item id="ex-53982" cql="q-34" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:791:6:w27" cs="cs:viewegh-baj_letaPodPsa:0:830:7:w22" cst="rozhodně" alignchecked="1" ent="certainly" cssent="Stromy kolem se jenom míhají a tam vpředu , na konci lesa , čeká možná nějaký hezký , chytrý chlapec , rozhodně sympatičtější než ty neznámé stařeny , které na ni zezadu cosi pokřikují ."/>
   <item id="ex-51355" cql="q-34" xml="Hasek-OsudyDobrehoVvSV" en="en:Hasek-OsudyDobrehoVvSV:0:310:2:w4" cs="cs:Hasek-OsudyDobrehoVvSV:0:217:1:w16" cst="rozhodně" alignchecked="1" ent="definitely" cssent="&quot; Napřed bych ten konec světa musel vidět , &quot; ledabyle odvětil Švejk , &quot; rozhodně se ho ale zejtra ještě nedočkám . &quot;"/>
