@@ -93,6 +93,7 @@
     </interp>
     
     <interp key="modif" display="Modifikace" type="idrefs" file="src" color="#ab2222" disabledif="use=answer|use=other|use=content"/>
+    <interp key="modift" display="Modifikace (forma)" type="lookup" ref="modif" fld="form"/>
     
     <interp key="evidence" display="Evidence" type="idrefs" file="src" color="#3399ff" disabledif="use=answer|use=other|use=content"/>
     <!-- <interp key="evidencetype" display="Typ evidence" type="multi" multisep="," disabledif="use=answer|use=other|use=content"> -->
