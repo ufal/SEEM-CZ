@@ -92,7 +92,7 @@
         <option value="unclear" display="nejasná atribuce"/>
     </interp>
     
-    <interp key="modif" display="Modifikace" nolist="1" type="idrefs" file="src" color="#ab2222" disabledif="use=answer|use=other|use=content"/>
+    <interp key="modif" display="Modifikace" type="idrefs" file="src" color="#ab2222" disabledif="use=answer|use=other|use=content"/>
     
     <interp key="evidence" display="Evidence" type="idrefs" file="src" color="#3399ff" disabledif="use=answer|use=other|use=content"/>
     <!-- <interp key="evidencetype" display="Typ evidence" type="multi" multisep="," disabledif="use=answer|use=other|use=content"> -->
