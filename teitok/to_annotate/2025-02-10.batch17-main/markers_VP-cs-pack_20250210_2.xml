@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-  <user id="NJ" email="naty.jalovcova@seznam.cz" name="Natálie Jalovcová"/>
+<user id="VP" email="vladimir.petkevic@ff.cuni.cz" name="Vladimír Petkevič"/>
   <item id="ex-58759" cql="q-27" xml="Mornstajnova-Hana" en="en:Mornstajnova-Hana:0:1197:1:w17" cs="cs:Mornstajnova-Hana:0:1150:1:w17" cst="opravdu" alignchecked="1" ent="really" cssent="Zmlkl , jako kdyby si teprve teď uvědomil , že to , co řekl , se opravdu může stát ."/>
   <item id="ex-55118" cql="q-27" xml="Hasek-OsudyDobrehoVvSV" en="-" cs="cs:Hasek-OsudyDobrehoVvSV:0:4623:4:w26" cst="opravdu" alignchecked="1" ent="" cssent="Z toho usoudila , že měl s ní , se starou bábou , nějaký nekalý záměry , a potom , když ho viděla , že opravdu vystupuje z houští , lekla se , utekla a napsala hned oznámení k místní školní radě , že ji chtěl znásilnit ."/>
   <item id="ex-63842" cql="q-27" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:1267:2:w8" cs="cs:Vaculik-Cesky_snar:0:997:2:w8" cst="opravdu" alignchecked="1" ent="really" cssent="&quot; Ale teď vážné slovo : ty opravdu jedeš ? &quot;"/>

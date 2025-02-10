@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-  <user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Danková"/>
   <item id="ex-50025" cql="q-29" xml="Fromm-Mit_nebo_byt" en="en:Fromm-Mit_nebo_byt:0:691:2:w1" cs="cs:Fromm-Mit_nebo_byt:0:675:2:w4" cst="patrně" alignchecked="1" ent="Perhaps" cssent="Historikové v budoucnu patrně budou referovat o tom , že nejrevolučnější událostí dvacátého století bylo zahájení osvobozování žen a pád mužské nadvlády ."/>
   <item id="ex-49519" cql="q-29" xml="bellow-dobrodruzstvi" en="en:bellow-dobrodruzstvi:0:387:4:w1" cs="cs:bellow-dobrodruzstvi:0:385:4:w6" cst="patrně" alignchecked="1" ent="Probably" cssent="A Kreindl s Einhornem se patrně rozhodli , že potřebuju pořádně sprdnout ."/>
   <item id="ex-50709" cql="q-29" xml="munro-utek" en="X" cs="cs:munro-utek:0:2234:4:w1" cst="Patrně" alignchecked="1" ent="" cssent="Patrně odsunul něco z cesty , odstrčil se od pracovního stolu , vstal a váhavě k ní vykročil ."/>

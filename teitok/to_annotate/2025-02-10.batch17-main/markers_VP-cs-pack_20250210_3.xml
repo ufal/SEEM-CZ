@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-  <user id="KK" email="kyckova2@seznam.cz" name="Karolína Kýčková"/>
+<user id="VP" email="vladimir.petkevic@ff.cuni.cz" name="Vladimír Petkevič"/>
   <item id="ex-81938" cql="q-48" xml="panek-dejiny_ceskych" en="en:panek-dejiny_ceskych:0:919:1:w9" cs="cs:panek-dejiny_ceskych:0:720:1:w6" cst="zjevně" alignchecked="1" ent="visibly" cssent="Politický systém absolutní monarchie byl zjevně obnoven až tzv . silvestrovskými patenty z konce roku 1851 ."/>
   <item id="ex-81548" cql="q-48" xml="Jedlicka-Kde_zivot_nas" en="en:Jedlicka-Kde_zivot_nas:0:118:5:w46" cs="cs:Jedlicka-Kde_zivot_nas:0:123:5:w34" cst="zjevně" alignchecked="1" ent="almost" cssent="Mrtvé , kteří zahynuli v nedostatečných krytech , zahrnuli příštího dne rumem a hlínou a na troskách znovu začali stavět monstrózní chemické přístroje , zběsilou spleť konstrukcí a potrubí , která jako by zjevně demonstrovala poslední křečovité pohyby umírajících ."/>
   <item id="ex-82357" cql="q-48" xml="Urban-Lord_Mord" en="en:Urban-Lord_Mord:0:987:6:w12" cs="cs:Urban-Lord_Mord:0:997:4:w6" cst="zjevně" alignchecked="1" ent="manifest" cssent="Můj kašel , dřív přítomný zjevně či latentně , ale pořád , teď zůstával v nebytí , průdušnice se nezanítily , neformoval se povlak flegmatu , který měl chránit , ale zároveň dusil , nemuselo to krkolomně ven ."/>

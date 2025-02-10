@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-  <user id="NJ" email="naty.jalovcova@seznam.cz" name="Natálie Jalovcová"/>
+<user id="VP" email="vladimir.petkevic@ff.cuni.cz" name="Vladimír Petkevič"/>
   <item id="ex-51849" cql="q-24" xml="Irving-H_New_Hampshire" en="en:Irving-H_New_Hampshire:0:4541:1:w52" cs="cs:Irving-H_New_Hampshire:0:4539:2:w48" cst="nejspíš" alignchecked="1" ent="probably" cssent="&quot; Můj bratr Frank by řekl , že je to nechutné , když byste vy - jako učitelé literatury - radši utratili peníze na nějakou herečku napodobující mrtvou spisovatelku , o jejíž práci ani neučíte , než abyste je utratili na žijícího spisovatele , jehož práci jste nejspíš ani nečetli ."/>
   <item id="ex-50245" cql="q-24" xml="clarke-strange_norrell" en="en:clarke-strange_norrell:0:2224:3:w2 en:clarke-strange_norrell:0:2224:3:w3" cs="cs:clarke-strange_norrell:0:2176:3:w1" cst="Nejspíš" alignchecked="1" ent="dare say" cssent="Nejspíš nám to půjde velmi pomalu ."/>
   <item id="ex-53775" cql="q-24" xml="riggs-sirotcinec" en="en:riggs-sirotcinec:0:821:2:w9" cs="cs:riggs-sirotcinec:0:820:2:w8" cst="nejspíše" alignchecked="1" ent="perhaps" cssent="Vy jste mě také viděl , ale nejspíše jste si to ne - uvědomil ."/>

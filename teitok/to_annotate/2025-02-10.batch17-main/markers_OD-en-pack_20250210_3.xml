@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ondřej Drobil"/>
   <item id="ex-80237" cql="q-47" xml="doyle-posledni_poklona" en="en:doyle-posledni_poklona:0:527:2:w3" cs="cs:doyle-posledni_poklona:0:523:2:w4" cst="zajisté" alignchecked="1" ent="must" cssent="„ Uvědomujete si zajisté , pane Dodde , že plukovník Emsworth má k tomu právo a že v jeho domě se podle zákona nemáme čeho dožadovat ."/>
   <item id="ex-80567" cql="q-47" xml="rowling-princ" en="en:rowling-princ:0:5645:1:w27" cs="cs:rowling-princ:0:5491:1:w28" cst="zajisté" alignchecked="1" ent="must" cssent="„ Pottere - &quot; ( Harry si všiml , že mu opět začala říkat příjmením ) „ vzhledem k tomu , že profesor Brumbál zemřel , si zajisté uvědomujete , že se situace poněkud změnila - &quot;"/>
   <item id="ex-80106" cql="q-47" xml="austen-pycha" en="en:austen-pycha:0:691:1:w2 en:austen-pycha:0:691:1:w3" cs="cs:austen-pycha:0:681:3:w2" cst="Zajisté" alignchecked="1" ent="Most willingly" cssent="„ Zajisté . &quot;"/>

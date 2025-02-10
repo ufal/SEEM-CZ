@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-  <user id="MD" email="m.dankova25@gmail.com" name="Michaela Danková"/>
+<user id="OD" email="odrobil@seznam.cz" name="Ondřej Drobil"/>
   <item id="ex-70822" cql="q-37" xml="kundera-zert" en="en:kundera-zert:0:1236:6:w3" cs="cs:kundera-zert:0:1264:6:w3" cst="snad" alignchecked="1" ent="perhaps" cssent="On mi snad zprotivil lidové písně a on mi je teď zas očistil ?"/>
   <item id="ex-66250" cql="q-37" xml="Fuks-MysiNatalieMoosha" en="en:Fuks-MysiNatalieMoosha:0:1268:6:w4" cs="cs:Fuks-MysiNatalieMoosha:0:1212:4:w3" cst="snad" alignchecked="1" ent="perhaps" cssent="Nebo tam snad … &quot; chlapec se tajemně usmál , &quot; prodáváte svíčky ? &quot;"/>
   <item id="ex-78162" cql="q-37" xml="Topol-Chladnou_zemi" en="en:Topol-Chladnou_zemi:0:246:1:w24 en:Topol-Chladnou_zemi:0:246:1:w25" cs="cs:Topol-Chladnou_zemi:0:270:1:w27" cst="snad" alignchecked="1" ent=", maybe" cssent="Cítila , že si s Lebem u našeho počítače při shánění kontaktů , pořádání peněžních sbírek a bubnování na poplach vedeme víc než skvěle , ale snad protože byla nově příchozí a viděla zhoubu našeho města očima člověka ze světa , tvrdila , že proti bagrům nám nesmírně pomůže , přitáhneme - li do podhradí více lidí ."/>
