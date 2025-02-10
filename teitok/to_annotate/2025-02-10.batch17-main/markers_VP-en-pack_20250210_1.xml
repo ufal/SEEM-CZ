@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<examples>
+<user id="NJ" email="naty.jalovcova@seznam.cz" name="Nat&#xE1;lie Jalovcov&#xE1;"/>
+  <item id="ex-51849" cql="q-24" xml="Irving-H_New_Hampshire" en="en:Irving-H_New_Hampshire:0:4541:1:w52" cs="cs:Irving-H_New_Hampshire:0:4539:2:w48" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-50245" cql="q-24" xml="clarke-strange_norrell" en="en:clarke-strange_norrell:0:2224:3:w2 en:clarke-strange_norrell:0:2224:3:w3" cs="cs:clarke-strange_norrell:0:2176:3:w1" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="dare say"/>
+  <item id="ex-53775" cql="q-24" xml="riggs-sirotcinec" en="en:riggs-sirotcinec:0:821:2:w9" cs="cs:riggs-sirotcinec:0:820:2:w8" cst="nejsp&#xED;&#x161;e" alignchecked="1" ent="perhaps"/>
+  <item id="ex-54244" cql="q-24" xml="rowling-princ" en="en:rowling-princ:0:3663:1:w2" cs="cs:rowling-princ:0:3574:1:w2" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="Probably"/>
+  <item id="ex-49984" cql="q-24" xml="brown-chut_lasky" en="en:brown-chut_lasky:0:910:1:w31" cs="cs:brown-chut_lasky:0:902:1:w32" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-53080" cql="q-24" xml="moriarty-sedmilharky" en="en:moriarty-sedmilharky:0:3449:2:w3" cs="cs:moriarty-sedmilharky:0:3490:2:w2" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="think"/>
+  <item id="ex-50670" cql="q-24" xml="evans-pomezi" en="en:evans-pomezi:0:561:3:w8" cs="cs:evans-pomezi:0:557:5:w2" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-52309" cql="q-24" xml="king-carrie" en="en:king-carrie:0:180:7:w25" cs="cs:king-carrie:0:201:7:w10" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="suppose"/>
+  <item id="ex-50121" cql="q-24" xml="carroll-alenka_v_kraji" en="en:carroll-alenka_v_kraji:0:789:2:w3" cs="cs:carroll-alenka_v_kraji:0:839:2:w3" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="seemed"/>
+  <item id="ex-50008" cql="q-24" xml="Brown-zdravim_temnoto" en="en:Brown-zdravim_temnoto:0:12:3:w16" cs="cs:Brown-zdravim_temnoto:0:13:3:w14" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-50797" cql="q-24" xml="Faulkner-Mesto" en="en:Faulkner-Mesto:0:132:6:w4 en:Faulkner-Mesto:0:132:6:w5" cs="cs:Faulkner-Mesto:0:137:5:w22" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="would be"/>
+  <item id="ex-53011" cql="q-24" xml="moriarty-sedmilharky" en="en:moriarty-sedmilharky:0:92:3:w2" cs="cs:moriarty-sedmilharky:0:95:3:w4" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-54511" cql="q-24" xml="smith-sberatel" en="X" cs="cs:smith-sberatel:0:1923:6:w5" cst="nejsp&#xED;&#x161;" alignchecked="1" ent=""/>
+  <item id="ex-49288" cql="q-24" xml="adams-daleka_cesta" en="en:adams-daleka_cesta:0:1585:3:w28 en:adams-daleka_cesta:0:1585:3:w29" cs="cs:adams-daleka_cesta:0:1600:3:w25" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="most likely"/>
+  <item id="ex-55123" cql="q-24" xml="wilson-cim_hori_svet" en="en:wilson-cim_hori_svet:0:466:4:w3" cs="cs:wilson-cim_hori_svet:0:467:4:w1" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="perhaps"/>
+  <item id="ex-54801" cql="q-24" xml="Toole-Spolceni_hlupcu" en="en:Toole-Spolceni_hlupcu:0:1358:9:w14" cs="cs:Toole-Spolceni_hlupcu:0:1377:9:w15" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probly"/>
+  <item id="ex-54660" cql="q-24" xml="Stoker-Dracula" en="en:Stoker-Dracula:0:1362:13:w2" cs="cs:Stoker-Dracula:0:1332:14:w4" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="may"/>
+  <item id="ex-53778" cql="q-24" xml="riggs-sirotcinec" en="en:riggs-sirotcinec:0:1277:3:w2" cs="cs:riggs-sirotcinec:0:1276:3:w2" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="Guess"/>
+  <item id="ex-52947" cql="q-24" xml="McEwan-Pokani" en="en:McEwan-Pokani:0:1429:12:w14" cs="cs:McEwan-Pokani:0:1430:13:w9" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="perhaps"/>
+  <item id="ex-51602" cql="q-24" xml="Hemingway-Fiesta" en="en:Hemingway-Fiesta:0:1816:1:w3" cs="cs:Hemingway-Fiesta:0:1815:1:w3" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="suppose"/>
+  <item id="ex-49590" cql="q-24" xml="atwood-muzeum_zkamenel" en="X" cs="cs:atwood-muzeum_zkamenel:0:709:4:w1" cst="nejsp&#xED;&#x161;" alignchecked="1" ent=""/>
+  <item id="ex-53854" cql="q-24" xml="rowlingova-hpot_fenix" en="X" cs="cs:rowlingova-hpot_fenix:0:3168:1:w2" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent=""/>
+  <item id="ex-51638" cql="q-24" xml="Hemingway-OstrovyUpr_p" en="en:Hemingway-OstrovyUpr_p:0:844:3:w4" cs="cs:Hemingway-OstrovyUpr_p:0:838:3:w5" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="guess"/>
+  <item id="ex-49600" cql="q-24" xml="atwood-muzeum_zkamenel" en="en:atwood-muzeum_zkamenel:0:786:3:w3" cs="cs:atwood-muzeum_zkamenel:0:800:3:w1" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="supposed"/>
+  <item id="ex-51240" cql="q-24" xml="Gaiman-Nikdykde" en="en:Gaiman-Nikdykde:0:1500:3:w6" cs="cs:Gaiman-Nikdykde:0:1399:19:w5" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-52622" cql="q-24" xml="lodge-nejtissi_trest" en="en:lodge-nejtissi_trest:0:380:1:w3" cs="cs:lodge-nejtissi_trest:0:386:1:w2" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="suppose"/>
+  <item id="ex-50177" cql="q-24" xml="Christie-KapsaPlnaZita" en="en:Christie-KapsaPlnaZita:0:2277:1:w4" cs="cs:Christie-KapsaPlnaZita:0:2203:1:w2" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-50840" cql="q-24" xml="Faulkner-Mesto" en="en:Faulkner-Mesto:0:950:2:w12" cs="cs:Faulkner-Mesto:0:949:2:w12" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-54525" cql="q-24" xml="Steel-Druha_sance" en="en:Steel-Druha_sance:0:76:4:w25" cs="cs:Steel-Druha_sance:0:76:5:w3" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="about"/>
+  <item id="ex-53143" cql="q-24" xml="munro-utek" en="en:munro-utek:0:1692:3:w2" cs="cs:munro-utek:0:1679:3:w2" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-54364" cql="q-24" xml="shreve-vse_co_pral" en="en:shreve-vse_co_pral:0:2044:5:w26" cs="cs:shreve-vse_co_pral:0:2075:6:w25" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="may"/>
+  <item id="ex-49969" cql="q-24" xml="brown-andele_demoni" en="en:brown-andele_demoni:0:4273:1:w15" cs="cs:brown-andele_demoni:0:3661:3:w16" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-49489" cql="q-24" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:487:6:w3" cs="cs:angellova-dvoji_zivot:0:482:7:w6" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="maybe"/>
+  <item id="ex-53746" cql="q-24" xml="pynchon-vykrik" en="en:pynchon-vykrik:0:2889:5:w3" cs="cs:pynchon-vykrik:0:2865:5:w5" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="appear"/>
+  <item id="ex-49656" cql="q-24" xml="Banks-Most" en="en:Banks-Most:0:654:1:w2" cs="cs:Banks-Most:0:633:1:w2" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="Precipitously"/>
+  <item id="ex-49442" cql="q-24" xml="albright-peklo" en="en:albright-peklo:0:198:9:w7" cs="cs:albright-peklo:0:192:7:w4" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="likely"/>
+  <item id="ex-53091" cql="q-24" xml="munro-nepritel_pritel" en="en:munro-nepritel_pritel:0:409:7:w2 en:munro-nepritel_pritel:0:409:7:w1" cs="cs:munro-nepritel_pritel:0:464:6:w1" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="likely More"/>
+  <item id="ex-55287" cql="q-24" xml="zusak-zlodejka_knih" en="en:zusak-zlodejka_knih:0:4716:2:w4" cs="cs:zusak-zlodejka_knih:0:4720:2:w4" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-51993" cql="q-24" xml="Isaacson-Steve_Jobs" en="X" cs="cs:Isaacson-Steve_Jobs:0:2125:3:w30" cst="nejsp&#xED;&#x161;" alignchecked="1" ent=""/>
+  <item id="ex-51186" cql="q-24" xml="franzen-rozhreseni" en="en:franzen-rozhreseni:0:1622:2:w4" cs="cs:franzen-rozhreseni:0:1634:2:w2" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-49516" cql="q-24" xml="angellova-dvoji_zivot" en="en:angellova-dvoji_zivot:0:1877:4:w3" cs="cs:angellova-dvoji_zivot:0:1846:4:w6" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-50242" cql="q-24" xml="clarke-strange_norrell" en="en:clarke-strange_norrell:0:2140:5:w21" cs="cs:clarke-strange_norrell:0:2094:5:w19" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="seem"/>
+  <item id="ex-52150" cql="q-24" xml="james-plany_touhy" en="en:james-plany_touhy:0:879:4:w7" cs="cs:james-plany_touhy:0:878:4:w5" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="suppose"/>
+  <item id="ex-50605" cql="q-24" xml="Doyle-Pribehy_Sherlock" en="en:Doyle-Pribehy_Sherlock:0:3057:11:w18" cs="cs:Doyle-Pribehy_Sherlock:0:3032:9:w16" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="best"/>
+  <item id="ex-53951" cql="q-24" xml="rowlingova-hpot_pohar" en="en:rowlingova-hpot_pohar:0:629:1:w3" cs="cs:rowlingova-hpot_pohar:0:629:1:w2" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="Spect"/>
+  <item id="ex-51836" cql="q-24" xml="Irving-H_New_Hampshire" en="en:Irving-H_New_Hampshire:0:3577:3:w4" cs="cs:Irving-H_New_Hampshire:0:3588:3:w2" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+  <item id="ex-50611" cql="q-24" xml="Doyle-Pribehy_Sherlock" en="en:Doyle-Pribehy_Sherlock:0:3956:6:w8" cs="cs:Doyle-Pribehy_Sherlock:0:3809:6:w10" cst="nejsp&#xED;&#x161;e" alignchecked="1" ent="might"/>
+  <item id="ex-51575" cql="q-24" xml="Heller-Hlava_XXII" en="en:Heller-Hlava_XXII:0:2088:3:w1 en:Heller-Hlava_XXII:0:2088:3:w2" cs="cs:Heller-Hlava_XXII:0:2302:3:w1" cst="Nejsp&#xED;&#x161;" alignchecked="1" ent="Just about"/>
+  <item id="ex-52859" cql="q-24" xml="mantel-wolf_hall" en="en:mantel-wolf_hall:0:642:9:w23" cs="cs:mantel-wolf_hall:0:646:9:w16" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="likely"/>
+  <item id="ex-51647" cql="q-24" xml="Hemingway-OstrovyUpr_p" en="en:Hemingway-OstrovyUpr_p:0:1717:6:w6" cs="cs:Hemingway-OstrovyUpr_p:0:1709:6:w9" cst="nejsp&#xED;&#x161;" alignchecked="1" ent="probably"/>
+</examples>

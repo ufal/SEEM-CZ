@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<examples>
+<user id="NJ" email="naty.jalovcova@seznam.cz" name="Nat&#xE1;lie Jalovcov&#xE1;"/>
+  <item id="ex-58759" cql="q-27" xml="Mornstajnova-Hana" en="en:Mornstajnova-Hana:0:1197:1:w17" cs="cs:Mornstajnova-Hana:0:1150:1:w17" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-55118" cql="q-27" xml="Hasek-OsudyDobrehoVvSV" en="-" cs="cs:Hasek-OsudyDobrehoVvSV:0:4623:4:w26" cst="opravdu" alignchecked="1" ent=""/>
+  <item id="ex-63842" cql="q-27" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:1267:2:w8" cs="cs:Vaculik-Cesky_snar:0:997:2:w8" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-64170" cql="q-27" xml="Vopenka-Muj_bratr" en="en:Vopenka-Muj_bratr:0:1530:11:w7" cs="cs:Vopenka-Muj_bratr:0:1433:11:w7" cst="opravdu" alignchecked="1" ent="truly"/>
+  <item id="ex-54997" cql="q-27" xml="hakl-o_rodicich_a_dete" en="X" cs="cs:hakl-o_rodicich_a_dete:0:924:4:w15" cst="vopravdu" alignchecked="1" ent=""/>
+  <item id="ex-63522" cql="q-27" xml="Topol-Sestra" en="en:Topol-Sestra:0:1431:2:w3" cs="cs:Topol-Sestra:0:1495:2:w3" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-57085" cql="q-27" xml="klima-laska_a_smeti" en="en:klima-laska_a_smeti:0:1003:6:w3" cs="cs:klima-laska_a_smeti:0:963:6:w1" cst="Opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-62447" cql="q-27" xml="skvorecky-hrichy_pater" en="X" cs="cs:skvorecky-hrichy_pater:0:1581:1:w5" cst="opravdu" alignchecked="1" ent=""/>
+  <item id="ex-55069" cql="q-27" xml="Hasek-OsudyDobrehoVvSV" en="en:Hasek-OsudyDobrehoVvSV:0:3714:1:w6" cs="cs:Hasek-OsudyDobrehoVvSV:0:2483:1:w4" cst="opravdu" alignchecked="1" ent="truly"/>
+  <item id="ex-55030" cql="q-27" xml="Hasek-OsudyDobrehoVvSV" en="en:Hasek-OsudyDobrehoVvSV:0:1105:2:w2" cs="cs:Hasek-OsudyDobrehoVvSV:0:703:3:w5" cst="vopravdu" alignchecked="1" ent="really"/>
+  <item id="ex-57148" cql="q-27" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:2863:5:w9" cs="cs:Kohout-Hvezdna_hodina:0:2919:4:w13" cst="opravdu" alignchecked="1" ent="truly"/>
+  <item id="ex-63487" cql="q-27" xml="Topol-KockaNaKolejich" en="en:Topol-KockaNaKolejich:0:895:1:w5" cs="cs:Topol-KockaNaKolejich:0:851:2:w4" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-64647" cql="q-27" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:1187:2:w12" cs="cs:Zmeskal-Milostny_dopis:0:1127:2:w11" cst="opravdu" alignchecked="1" ent="definitely"/>
+  <item id="ex-49516" cql="q-27" xml="Ajvaz-Druhe_mesto" en="en:Ajvaz-Druhe_mesto:0:197:1:w14" cs="cs:Ajvaz-Druhe_mesto:0:214:1:w14" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-63844" cql="q-27" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:1301:5:w21" cs="cs:Vaculik-Cesky_snar:0:1028:4:w30" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-63133" cql="q-27" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:2095:2:w3" cs="cs:styblova-skalpel_pros:0:2123:2:w3" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-57567" cql="q-27" xml="kundera-zert" en="en:kundera-zert:0:1112:1:w86" cs="cs:kundera-zert:0:1139:1:w90" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-51289" cql="q-27" xml="Capek-Valka_s_mloky" en="en:Capek-Valka_s_mloky:0:1133:4:w17" cs="cs:Capek-Valka_s_mloky:0:1277:4:w18" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-63933" cql="q-27" xml="viewegh-baj_letaPodPsa" en="en:viewegh-baj_letaPodPsa:0:1387:6:w6" cs="cs:viewegh-baj_letaPodPsa:0:1450:6:w1" cst="Opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-58256" cql="q-27" xml="Lustig-ModlitbaProKHor" en="en:Lustig-ModlitbaProKHor:0:80:6:w11" cs="cs:Lustig-ModlitbaProKHor:0:82:5:w8" cst="opravdu" alignchecked="1" ent="very"/>
+  <item id="ex-52422" cql="q-27" xml="Douskova-Hrdy_Budzes" en="X" cs="cs:Douskova-Hrdy_Budzes:0:79:3:w24" cst="vopravdu" alignchecked="1" ent=""/>
+  <item id="ex-57449" cql="q-27" xml="Kundera-Valcik_na_rozl" en="en:Kundera-Valcik_na_rozl:0:653:4:w2" cs="cs:Kundera-Valcik_na_rozl:0:662:4:w2" cst="Opravdu" alignchecked="1" ent="Really"/>
+  <item id="ex-62502" cql="q-27" xml="Skvorecky-PribehIng_1" en="en:Skvorecky-PribehIng_1:0:1636:1:w5" cs="cs:Skvorecky-PribehIng_1:0:1205:1:w3" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-55084" cql="q-27" xml="Hasek-OsudyDobrehoVvSV" en="en:Hasek-OsudyDobrehoVvSV:0:4465:5:w14" cs="cs:Hasek-OsudyDobrehoVvSV:0:3017:25:w8" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-57170" cql="q-27" xml="kohout-snezim" en="en:kohout-snezim:0:980:5:w19" cs="cs:kohout-snezim:0:920:3:w51" cst="opravdu" alignchecked="1" ent="truly"/>
+  <item id="ex-64654" cql="q-27" xml="Zmeskal-Milostny_dopis" en="en:Zmeskal-Milostny_dopis:0:1308:25:w4" cs="cs:Zmeskal-Milostny_dopis:0:1229:24:w6" cst="opravdu" alignchecked="1" ent="truly"/>
+  <item id="ex-63553" cql="q-27" xml="Topol-Sestra" en="en:Topol-Sestra:0:3269:4:w89" cs="cs:Topol-Sestra:0:3418:4:w62" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-64228" cql="q-27" xml="Vopenka-Paty_rozmer" en="en:Vopenka-Paty_rozmer:0:1570:2:w3" cs="cs:Vopenka-Paty_rozmer:0:1595:2:w1" cst="Opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-54990" cql="q-27" xml="hakl-o_rodicich_a_dete" en="en:hakl-o_rodicich_a_dete:0:355:1:w3" cs="cs:hakl-o_rodicich_a_dete:0:357:1:w4" cst="vopravdu" alignchecked="1" ent="really"/>
+  <item id="ex-49596" cql="q-27" xml="ajvaz-prazdne_ulice" en="X" cs="cs:ajvaz-prazdne_ulice:0:1791:6:w4" cst="opravdu" alignchecked="1" ent=""/>
+  <item id="ex-63828" cql="q-27" xml="Vaculik-Cesky_snar" en="en:Vaculik-Cesky_snar:0:565:30:w2" cs="cs:Vaculik-Cesky_snar:0:442:26:w2" cst="opravdu" alignchecked="1" ent="just"/>
+  <item id="ex-52448" cql="q-27" xml="Douskova-Hrdy_Budzes" en="en:Douskova-Hrdy_Budzes:0:820:2:w6" cs="cs:Douskova-Hrdy_Budzes:0:784:2:w9" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-49585" cql="q-27" xml="ajvaz-prazdne_ulice" en="en:ajvaz-prazdne_ulice:0:1702:3:w26" cs="cs:ajvaz-prazdne_ulice:0:1419:2:w52" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-63527" cql="q-27" xml="Topol-Sestra" en="X" cs="cs:Topol-Sestra:0:1876:2:w38" cst="opravdu" alignchecked="1" ent=""/>
+  <item id="ex-59848" cql="q-27" xml="Paral-Milenci_a_vrazi" en="en:Paral-Milenci_a_vrazi:0:1222:1:w6" cs="cs:Paral-Milenci_a_vrazi:0:91:25:w5" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-57423" cql="q-27" xml="kundera-smich" en="en:kundera-smich:0:927:2:w6 en:kundera-smich:0:927:2:w7" cs="cs:kundera-smich:0:836:3:w9" cst="opravdu" alignchecked="1" ent="at all"/>
+  <item id="ex-50058" cql="q-27" xml="bajaja-na_krasne_modre" en="en:bajaja-na_krasne_modre:0:445:9:w2" cs="cs:bajaja-na_krasne_modre:0:447:9:w2" cst="opravdu" alignchecked="1" ent="indeed"/>
+  <item id="ex-55116" cql="q-27" xml="Hasek-OsudyDobrehoVvSV" en="-" cs="cs:Hasek-OsudyDobrehoVvSV:0:4455:17:w5" cst="vopravdu" alignchecked="1" ent=""/>
+  <item id="ex-60260" cql="q-27" xml="platzova-anarchista" en="X" cs="cs:platzova-anarchista:0:477:1:w11" cst="opravdu" alignchecked="1" ent=""/>
+  <item id="ex-57055" cql="q-27" xml="klima-laska_a_smeti" en="X" cs="cs:klima-laska_a_smeti:0:26:6:w38" cst="opravdu" alignchecked="1" ent=""/>
+  <item id="ex-63981" cql="q-27" xml="Viewegh-VychovaDivekCR" en="en:Viewegh-VychovaDivekCR:0:1021:1:w49" cs="cs:Viewegh-VychovaDivekCR:0:955:1:w42" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-58753" cql="q-27" xml="Mornstajnova-Hana" en="en:Mornstajnova-Hana:0:976:7:w9" cs="cs:Mornstajnova-Hana:0:937:7:w6" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-57058" cql="q-27" xml="klima-laska_a_smeti" en="en:klima-laska_a_smeti:0:87:1:w9" cs="cs:klima-laska_a_smeti:0:86:1:w8" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-57553" cql="q-27" xml="kundera-zert" en="en:kundera-zert:0:872:2:w4" cs="cs:kundera-zert:0:893:2:w3" cst="opravdu" alignchecked="1" ent="seriously"/>
+  <item id="ex-63089" cql="q-27" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:878:7:w2" cs="cs:styblova-skalpel_pros:0:924:6:w1" cst="Opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-58260" cql="q-27" xml="Lustig-ModlitbaProKHor" en="X" cs="cs:Lustig-ModlitbaProKHor:0:118:4:w5" cst="opravdu" alignchecked="1" ent=""/>
+  <item id="ex-56749" cql="q-27" xml="Jirotka-Saturnin" en="en:Jirotka-Saturnin:0:119:4:w18" cs="cs:Jirotka-Saturnin:0:151:4:w13" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-63125" cql="q-27" xml="styblova-skalpel_pros" en="en:styblova-skalpel_pros:0:1834:3:w2" cs="cs:styblova-skalpel_pros:0:1863:2:w2" cst="opravdu" alignchecked="1" ent="really"/>
+  <item id="ex-57183" cql="q-27" xml="kohout-snezim" en="en:kohout-snezim:0:2922:3:w6" cs="cs:kohout-snezim:0:2840:4:w7" cst="opravdu" alignchecked="1" ent="must"/>
+  <item id="ex-57281" cql="q-27" xml="Kundera-Nesmrtelnost" en="en:Kundera-Nesmrtelnost:0:202:1:w8" cs="cs:Kundera-Nesmrtelnost:0:205:1:w8" cst="opravdu" alignchecked="1" ent="really"/>
+</examples>
