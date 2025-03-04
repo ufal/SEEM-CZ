@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+<user id="KB" email="blazkovakate@seznam.cz" name="Kateřina Blažková"/>
   <item id="ex-61180" cql="q-41" xml="klima-leto" en="-" cs="cs:klima-leto:0:396:2:w19" cst="těžko" alignchecked="1" ent="" cssent="David ty příběhy poslouchal se zájmem , i když se ho netýkaly , i když přicházely z jiného těžko pochopitelného světa ."/>
   <item id="ex-62275" cql="q-41" xml="Urban-Sedmikosteli" en="en:Urban-Sedmikosteli:0:1196:3:w1" cs="cs:Urban-Sedmikosteli:0:1154:2:w2" cst="těžko" alignchecked="1" ent="Hardly" cssent="Historik těžko , policajt taky ne . &quot;"/>
   <item id="ex-60394" cql="q-41" xml="Douskova-Hrdy_Budzes" en="en:Douskova-Hrdy_Budzes:0:436:3:w18 en:Douskova-Hrdy_Budzes:0:436:3:w19" cs="cs:Douskova-Hrdy_Budzes:0:416:3:w20" cst="těžko" alignchecked="1" ent="be hard" cssent="Dokonce i pani Veverková domlouvala babičce , ať je na dědu hodnější , že by druhýho tak hodnýho mužskýho těžko hledala ."/>

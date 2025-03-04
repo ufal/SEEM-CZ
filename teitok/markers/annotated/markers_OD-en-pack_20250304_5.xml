@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+<user id="OD" email="odrobil@seznam.cz" name="Ondřej Drobil"/>
   <item id="ex-61023" cql="q-40" xml="schmidt-google" en="en:schmidt-google:0:893:3:w3" cs="cs:schmidt-google:0:857:3:w1" cst="Stěží" alignchecked="1" ent="hardly" cssent="Stěží stojí za námahu a čas , zvláště když jejich úspěch není zdaleka jistý ."/>
   <item id="ex-60110" cql="q-40" xml="Dickens-NadejneVyhlidk" en="en:Dickens-NadejneVyhlidk:0:1098:1:w21" cs="cs:Dickens-NadejneVyhlidk:0:1095:1:w16" cst="stěží" alignchecked="1" ent="scarcely" cssent="Srdce mi tlouklo tak rychle a v uších mi hučelo tak silně , že jsem stěží dokázal vykoktat , že žádnou námitku nemám ."/>
   <item id="ex-60682" cql="q-40" xml="Lindseyova-Zamilovany" en="en:Lindseyova-Zamilovany:0:1545:3:w3" cs="cs:Lindseyova-Zamilovany:0:1554:3:w3" cst="stěží" alignchecked="1" ent="only" cssent="Snědla toho stěží polovinu , když do pokoje vstoupila Regina s výčitkou :"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Danková"/>
   <item id="ex-93208" cql="q-50" xml="Levy-Umeni_prekladu" en="en:Levy-Umeni_prekladu:0:45:90:w13" cs="cs:Levy-Umeni_prekladu:0:31:122:w16" cst="zřetelně" alignchecked="1" ent="clearly" cssent="Rozdíly mezi jednotlivými kontexty se co možná vyhraňují , za každou replikou v dialogu se zřetelně objevuje celý významový kontext , do něhož je zapojena , a vyhraněný noetický postoj nebo trvalý efekt osoby [ … ] ."/>
   <item id="ex-92987" cql="q-50" xml="Havel-Dalkovy_vyslech" en="en:Havel-Dalkovy_vyslech:0:146:9:w3" cs="cs:Havel-Dalkovy_vyslech:0:132:7:w13" cst="zřetelně" alignchecked="1" ent="obviously" cssent="Mimo jiné : zdá se mi , že právě o Bělohradském to zřetelně platí - pořád jsou přece v českém exilu jakési problémy s tím , kam vlastně patří ."/>
   <item id="ex-93565" cql="q-50" xml="skvorecky-hrichy_pater" en="X" cs="cs:skvorecky-hrichy_pater:0:1126:8:w29" cst="zřetelně" alignchecked="1" ent="" cssent="A měli v tom bytě krásnou prostornou koupelnu , v který jsem se nikdy nezamykala , ponivač to byla naprosto spolehlivě mravná domácnost a mimoto bylo vždycky úplně zřetelně slyšet šplouchání ve vaně a šum sprchy k čemuž navíc jsem pokaždý řádně ohlásila , že si jdu očistit tělo od denního potu ."/>
