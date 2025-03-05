@@ -12,3 +12,4 @@
 <user id="KB" email="blazkovakate@seznam.cz" name="Kateřina Blažková"/>
 <user id="DB" email="david.burda@natur.cuni.cz" name="David Burda"/>
 <user id="VK" email="kettnerova@ufal.mff.cuni.cz" name="Václava Kettnerová"/>
+<user id="RM" email="mannova.rachel@gmail.com" name="Ráchel Mannová"/>
