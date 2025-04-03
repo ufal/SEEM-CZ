@@ -13,3 +13,4 @@
 <user id="DB" email="david.burda@natur.cuni.cz" name="David Burda"/>
 <user id="VK" email="kettnerova@ufal.mff.cuni.cz" name="Václava Kettnerová"/>
 <user id="RM" email="mannova.rachel@gmail.com" name="Ráchel Mannová"/>
+<user id="MC" email="michaela.chodounska@uni-potsdam.de" name="Michaela Chodounská"/>
