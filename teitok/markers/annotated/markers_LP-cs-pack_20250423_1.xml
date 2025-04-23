@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-<user id="KK" email="kyckova2@seznam.cz" name="Karolína Kýčková"/>
+<user id="LP" email="polakova@ufal.mff.cuni.cz" name="Lucie Poláková"/>
   <item id="ex-50804" cql="q-33" xml="skvorecky-hrichy_pater" en="-" cs="cs:skvorecky-hrichy_pater:0:1131:2:w5" cst="přirozeně" alignchecked="1" ent="" cssent="Já o těchto věcech přirozeně nic nevím , zato mi na Dalym bylo od začátku něco nápadný , jako kdyby mi někoho připomínal , ale ne zjevem , a když se pak nadšeně zapojil do hry - ne do bridže , ten jsem se bohužel v Kalifornii nikdy nenaučila - a když pak prohrál první stovku ( Snyders byl tou dobou už o $ 170 , - lehčí a začínal litovat ) a dali jsme si pauzičku na občerstvení , najednou mi ta podoba došla ."/>
   <item id="ex-50270" cql="q-33" xml="Kohout-Hvezdna_hodina" en="en:Kohout-Hvezdna_hodina:0:809:6:w1" cs="cs:Kohout-Hvezdna_hodina:0:829:4:w4" cst="přirozeně" alignchecked="1" ent="Naturally" cssent="Na ples jdu přirozeně s ní , ale nerad bych svou … tu citlivou ženu urazil či dokonce pokořil ."/>
   <item id="ex-50884" cql="q-33" xml="Skvorecky-PribehIng_2" en="en:Skvorecky-PribehIng_2:0:2070:1:w1" cs="cs:Skvorecky-PribehIng_2:0:1719:5:w3" cst="přirozeně" alignchecked="1" ent="Naturally" cssent="Krupka se přirozeně nemohl ohradit proti označení za socialistického umělce , a o pocitu svobody se rovněž šířit nechtěl , neboť ani to dost dobře nemohl ."/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-<user id="SC" email="stanislav.cincibuch@gmail.com" name="Stanislav Cincibuch"/>
+<user id="LP" email="polakova@ufal.mff.cuni.cz" name="Lucie Poláková"/>
   <item id="ex-64040" cql="q-36" xml="klima-leto" en="en:klima-leto:0:567:4:w4" cs="cs:klima-leto:0:680:3:w4" cst="skutečně" alignchecked="1" ent="really" cssent="Anebo se snad skutečně zbláznil a zamiloval se ?"/>
   <item id="ex-66438" cql="q-36" xml="Skvorecky-PribehIng_2" en="X" cs="cs:Skvorecky-PribehIng_2:0:2980:7:w34" cst="skutečně" alignchecked="1" ent="" cssent="Jak víš , dyž ho přestali pouštět , začal dávat různý velezrádný prohlášení k dispozici západnímu tisku , ale nechali ho na svobodě , ačkoliv si to , ubožák , za to úsilí skutečně nezasloužil ."/>
   <item id="ex-60606" cql="q-36" xml="Balaban-Mozna_ze_odcha" en="en:Balaban-Mozna_ze_odcha:0:304:1:w3" cs="cs:Balaban-Mozna_ze_odcha:0:315:1:w4" cst="skutečně" alignchecked="1" ent="really" cssent="Kdyby andělé měli skutečně létat , pomyslela si Věra , proč by potom bůh tvořil ptáky a to jejich hrozné sternum , které vybíhá z hrudi jako hora ?"/>

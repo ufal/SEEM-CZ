@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-<user id="OD" email="odrobil@seznam.cz" name="Ondřej Drobil"/>
+<user id="VK" email="kettnerova@ufal.mff.cuni.cz" name="Václava Kettnerová"/>
   <item id="ex-63232" cql="q-45" xml="kundera-zert" en="X" cs="cs:kundera-zert:0:289:6:w17" cst="vážně" alignchecked="1" ent="" cssent="Nikdo nezradil hru : ani ukázněný a smířený autor mírových manifestů Bedřich , který teď běžel vážně a důstojně pomalým tempem s ostatními , ani Josef z vesnice , ani Pavel Pěkný , který mne neměl rád , ani starý Ambroz , který běžel toporně vzpřímen s rukama založenýma za zády , ani zrzavý Petráň , který ječel vysokým hláskem , ani Maďar Varga , který křičel v běhu &quot; Hurá ! &quot; , nikdo z nich nepokazil tu výbornou a jednoduchou inscenaci , která způsobovala , že my , kteří jsme stáli kolem , jsme padali smíchem ."/>
   <item id="ex-66503" cql="q-45" xml="viewegh-baj_letaPodPsa" en="X" cs="cs:viewegh-baj_letaPodPsa:0:2171:2:w4" cst="vážně" alignchecked="1" ent="" cssent="&quot; Tady se vážně nedá psát ! &quot;"/>
   <item id="ex-62347" cql="q-45" xml="Hasek-OsudyDobrehoVvSV" en="en:Hasek-OsudyDobrehoVvSV:0:3251:1:w5" cs="cs:Hasek-OsudyDobrehoVvSV:0:2183:1:w3" cst="vážně" alignchecked="1" ent="solemnly" cssent="Strážmistr přešel vážně kolem ní , a zastaviv se podruhé před ní , promluvil slavnostně :"/>
