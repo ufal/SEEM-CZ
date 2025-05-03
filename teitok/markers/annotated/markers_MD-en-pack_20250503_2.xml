@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-  <user id="LP" email="polakova@ufal.mff.cuni.cz" name="Lucie Poláková"/>
+<user id="MD" email="m.dankova25@gmail.com" name="Michaela Danková"/>
   <item id="ex-49895" cql="q-30" xml="forsyth-vyjednavac" en="X" cs="cs:forsyth-vyjednavac:0:451:3:w24" cst="pochopitelně" alignchecked="1" ent="" cssent="Za čtrnáct dní byl kontaktován v Rijádu a bylo mu řečeno , že jeden člověk by se rád setkal s jeho přáteli , pochopitelně za podmínky přísného utajení ."/>
   <item id="ex-50897" cql="q-30" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:2237:1:w1 en:Puzo-Kmotr:0:2237:1:w2" cs="cs:Puzo-Kmotr:0:2170:1:w5" cst="pochopitelně" alignchecked="1" ent="Sure enough" cssent="V Palm Springs bylo pochopitelně vše v nejlepším pořádku ."/>
   <item id="ex-49486" cql="q-30" xml="bellow-dobrodruzstvi" en="en:bellow-dobrodruzstvi:0:219:5:w10 en:bellow-dobrodruzstvi:0:219:5:w11" cs="cs:bellow-dobrodruzstvi:0:219:5:w8" cst="pochopitelně" alignchecked="1" ent="of course" cssent="Tam , kam se chystal , bude pochopitelně vždycky mít někoho , aby mu pomohl , ale já měl takovou představu , že by měl být pánem aspoň něčeho mála , co bude jeho vlastní , až bude cestovat z místa na místo ."/>

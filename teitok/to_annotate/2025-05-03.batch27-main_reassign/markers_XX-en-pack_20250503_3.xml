@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <examples>
-  <user id="JS" email="jana.sindlerova@ff.cuni.cz" name="Jana &#x160;indlerov&#xE1;"/>
   <item id="ex-28016" cql="q-20" xml="Kerouac-Na_ceste" en="" cs="cs:Kerouac-Na_ceste:0:164:2:w2" cst="Jasn&#x11B;" cssent="&quot; Jasn&#x11B; , tedy &#x2026; ehm &#x2026; ov&#x161;em , p&#x159;ijel jsi - ty d&#x11B;vko , tak ses kone&#x10D;n&#x11B; rozhoupal ."/>
   <item id="ex-26334" cql="q-20" xml="clinton-ziva_historie" en="" cs="cs:clinton-ziva_historie:0:398:2:w13" cst="jasn&#x11B;" cssent="Tak jsem ho p&#x159;im&#x11B;la , aby stanovil datum , do n&#x11B;j&#x17E; se jasn&#x11B; vyslov&#xED; ."/>
   <item id="ex-29834" cql="q-20" xml="rowlingova-hpot_tajemn" en="" cs="cs:rowlingova-hpot_tajemn:0:1145:2:w13" cst="jasn&#x11B;" cssent="Ud&#x11B;l&#xE1;m z v&#xE1;s odstra&#x161;uj&#xED;c&#xED; p&#x159;&#xED;klad &#x2026; kde m&#xE1;m ten formul&#xE1;&#x159; &#x2026; no jasn&#x11B; &#x2026; &quot;"/>
