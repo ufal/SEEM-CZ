@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-  <user id="JS" email="jana.sindlerova@ff.cuni.cz" name="Jana Šindlerová"/>
+<user id="MC" email="michaela.chodounska@uni-potsdam.de" name="Michaela Chodounská"/>
   <item id="ex-51072" cql="q-32" xml="fowles-sberatel" en="X" cs="cs:fowles-sberatel:0:1929:2:w10" cst="prý" alignchecked="1" ent="" cssent="Mabel tohle psaní ani neukážu , říká , že prý takové řeči nemáš rád ."/>
   <item id="ex-54126" cql="q-32" xml="Puzo-Kmotr" en="en:Puzo-Kmotr:0:74:7:w6 en:Puzo-Kmotr:0:74:7:w7" cs="cs:Puzo-Kmotr:0:73:8:w2" cst="prý" ent="was said" alignchecked="1" cssent="Vyniká prý zejména tím , že je schopen provést vraždu zcela sám , bez společníků , což téměř automaticky znemožňuje silám zákona ho odhalit a usvědčit ."/>
   <item id="ex-55790" cql="q-32" xml="Vonnegut-Kolibka" en="X" cs="cs:Vonnegut-Kolibka:0:1978:4:w14" cst="prý" alignchecked="1" ent="" cssent="Řekl mi ještě , že si vzal heslo univerzity k srdci , což prý také vysvětluje slípku a řeznický nůž ."/>

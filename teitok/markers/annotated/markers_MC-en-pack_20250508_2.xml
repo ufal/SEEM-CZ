@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <examples>
-<user id="RM" email="mannova.rachel@gmail.com" name="Ráchel Mannová"/>
+<user id="MC" email="michaela.chodounska@uni-potsdam.de" name="Michaela Chodounská"/>
   <item id="ex-49833" cql="q-26" xml="galbraith-smrtici_bila" en="en:galbraith-smrtici_bila:0:4753:2:w3" cs="cs:galbraith-smrtici_bila:0:4744:2:w1" cst="Očividně" alignchecked="1" ent="evidently" cssent="Očividně při těch vzpomínkách trpěl ."/>
   <item id="ex-50674" cql="q-26" xml="smith-sberatel" en="en:smith-sberatel:0:1250:3:w10" cs="cs:smith-sberatel:0:1182:3:w4" cst="očividně" alignchecked="1" ent="obviously" cssent="Jeho mozek se očividně vzdal už před časem , ale nyní to vzdávalo jeho tělo ."/>
   <item id="ex-49489" cql="q-26" xml="Clancy-Spinava_hra" en="en:Clancy-Spinava_hra:0:2068:4:w1" cs="cs:Clancy-Spinava_hra:0:2086:4:w2" cst="očividně" alignchecked="1" ent="Apparently" cssent="Oba očividně nebyli ve své kůži - a Harrison se nakonec rozhodl utnout triviality a přejít k jádru pudla ."/>
