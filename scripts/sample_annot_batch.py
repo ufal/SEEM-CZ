@@ -67,7 +67,7 @@ parser.add_argument("--output-suffix", type=str, default="", help="The suffix to
 parser.add_argument("--skip-annotated", nargs='*', default=[], help="List of already annotated files. All annotated occurences will be skipped.")
 args = parser.parse_args()
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 
 query_group = QueryGroup(args.grouped_queries)
 srclang_index = SrclangIndex(args.srclang_index)
@@ -90,6 +90,7 @@ for occur_elem in xml.findall('.//item'):
     cs_id = occur_elem.attrib["cs"]
     # skip if the occurence has already been annotated
     if cs_id in already_annotated:
+        logging.debug(f"Skipping already annotated occurence: {cs_id}")
         continue
     bookid = occur_elem.attrib["xml"]
     srclang = srclang_index[bookid]
