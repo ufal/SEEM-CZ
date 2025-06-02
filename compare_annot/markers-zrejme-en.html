@@ -1,0 +1,5033 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<title>Comparison of SEEM-CZ parallel annotations</title>
+<style>
+#wrap {display: flex; align-items: flex-start;}
+#main {width: 100%; padding: 5px; background: white; z-index:100;}
+
+/* menu controls */
+#main-menu {position:fixed; z-index:150; top: 4px; right:4px; display:none;
+            padding: 5px 55px 5px 5px; background-color:gray; border-radius: 5px;}
+#main-menu div {display: inline-block;}
+#menubtn {position: fixed; right: 8px; top: 8px; z-index: 200;}
+#menubtn div {width: 30px; height: 4px; background-color: black; margin: 5px 0; transition: 0.4s;}
+.change .b1 {transform: translate(0, 9px) rotate(-45deg);}
+.change .b2 {opacity: 0;}
+.change .b3 {transform: translate(0, -9px) rotate(45deg);}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th:first-child, td:first-child {width: 15%;}
+
+th:nth-child(2), td:nth-child(2) {width: 42%;}
+
+th:nth-child(2), td:nth-child(2) {width: 42%;}
+
+
+/* Ensure header cells stretch to fill available space */
+th {
+    text-align: left;
+    position: sticky;
+    top: 0;
+    background-color: white; /* Background color to hide the original header */
+    z-index: 1;
+}
+
+.cssent {color: red;}
+.ensent {color: blue;}
+.attr-name {background-color: lightgrey;}
+
+.base-attr {column-span: all;}
+.all-empty {display: none;}
+.all-same {display: none;}
+</style>
+</head>
+<body>
+ <div id="wrap">
+  <div id="main-menu">
+   Show<br/>
+   <div>
+    <div>
+     
+     <input id="show-attr-cs" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-cs">Výraz v češtině (ID)</label><br/>
+     
+     <input id="show-attr-en" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-en">Výraz v angličtině (ID)</label><br/>
+     
+     <input id="show-attr-dictexample" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-dictexample">Příklad do slovníku</label><br/>
+     
+     <input id="show-attr-use" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-use">Užití</label><br/>
+     
+     <input id="show-attr-certainty" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-certainty">Míra jistoty</label><br/>
+     
+     <input id="show-attr-certaintynote" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-certaintynote">Poznámka (míra jistoty)</label><br/>
+     
+     <input id="show-attr-commfuntype" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-commfuntype">Typ komunikační funkce</label><br/>
+     
+     <input id="show-attr-commfunsubtype" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-commfunsubtype">Konkrétní komunikační funkce</label><br/>
+     
+     <input id="show-attr-commfunnote" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-commfunnote">Poznámka (komunikační funkce)</label><br/>
+     
+     <input id="show-attr-scope" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-scope">Dosah</label><br/>
+     
+     <input id="show-attr-pred" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-pred">Predikát</label><br/>
+     
+     <input id="show-attr-predlemma" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-predlemma">Predikát (lemma)</label><br/>
+     
+     <input id="show-attr-predtag" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-predtag">Predikát (tag)</label><br/>
+     
+     <input id="show-attr-predverbtag" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-predverbtag">Predikát (verbtag)</label><br/>
+     
+     <input id="show-attr-member" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-member">Člen</label><br/>
+     
+     <input id="show-attr-tfpos" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-tfpos">Pozice v AČ</label><br/>
+     
+     <input id="show-attr-sentpos" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-sentpos">Místo ve větě</label><br/>
+     
+     <input id="show-attr-neg" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-neg">Přítomnost negace</label><br/>
+     
+     <input id="show-attr-modalpersp" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-modalpersp">Perspektiva modality</label><br/>
+     
+     <input id="show-attr-modif" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-modif">Modifikace</label><br/>
+     
+     <input id="show-attr-evidence" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-evidence">Evidence</label><br/>
+     
+     <input id="show-attr-evidencetype" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-evidencetype">Typ evidence</label><br/>
+     
+     <input id="show-attr-comment" type="checkbox" checked onclick="menuitemclick(this);"><label for="show-attr-comment">Komentář</label><br/>
+     
+    </div>
+    <div>
+     <input id="show-all-empty" type="checkbox" onclick="menuitemclick(this);"><label for="show-all-empty">All empty</label><br/>
+     <input id="show-all-same" type="checkbox" onclick="menuitemclick(this);"><label for="show-all-same">All same</label><br/>
+    </div>
+    
+    <!--
+    <input id="show-etype" type="checkbox"  onclick="$('.etype').toggle(this.checked);"><label for="show-etype">etype</label><br/>
+    <input id="show-sent_id" type="checkbox" onclick="$('.sent_id').toggle(this.checked);"><label for="show-sent_id">sent_id</label><br/>
+    <input id="show-trees" type="checkbox" checked onclick="$('.showtree').toggle(this.checked);"><label for="show-trees">trees</label><br/>
+    <input id="show-color" type="checkbox" checked onclick="$('.m').toggleClass('nocolor',!this.checked);"><label for="show-color">colors</label><br/>
+    <input id="show-boxes" type="checkbox" checked onclick="$('.m').toggleClass('nobox',!this.checked);"><label for="show-boxes">boxes</label></div><div>
+    <input id="show-norm" type="checkbox" checked onclick="$('.norm').toggle(this.checked);"><label for="show-norm">non-mentions</label><br/>
+    <input id="show-heads" type="checkbox" checked onclick="$('.head').toggleClass('nobold',!this.checked);"><label for="show-heads">heads in bold</label><br/>
+    <input id="show-empty" type="checkbox" checked onclick="$('.empty').toggle(this.checked);"><label for="show-empty">empty words</label><br/>
+    <input id="show-breaks" type="checkbox" checked onclick="$('.sentence').toggleClass('display-inline',!this.checked);"><label for="show-breaks">sentence per line</label><br/>
+    <input id="show-pars" type="checkbox" checked onclick="$('.par').toggle(this.checked);"><label for="show-pars">paragraphs</label><br/>
+    <input id="show-docs" type="checkbox" checked onclick="$('h1').toggle(this.checked);"><label for="show-docs">document names</label><br/>
+    -->
+   </div>
+   <!--
+   <fieldset onclick="$('.m').toggleClass('htype',$('#htype')[0].checked)">
+    <legend>bg color:</legend>
+    <label><input type="radio" name="bgcolor" id="etype" checked>entity type</label>
+    <label><input type="radio" name="bgcolor" id="htype">head upos</label>
+   </fieldset>
+   -->
+  </div>
+  <button id="menubtn" title="Visualization options" onclick="menuclick(this)"><div class="b1"></div><div class="b2"></div><div class="b3"></div></button>
+
+  <div id="main">
+   <table>
+    <thead><tr><th></th><th>markers_IS-en-pack_20241220_1.xml</th><th>markers_VK-en-pack_20250122_1.xml</th></tr></thead>
+    <tbody>
+     
+     <tr><td colspan="3"><h1 id="ex-88583">Example ex-88583: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Bylo to neuvěřitelné , ale rozhlasová show Charlese Boona zřejmě přiváděla celou Euforitu do vytržení .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">It was hard to believe , but the Charles Boon Show was all the rage at Euphoric State .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>&#34;X&#34;</td>
+     <td>&#34;X&#34;</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>přiváděla</td>
+     <td>přiváděla do vytržení</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>přivádět</td>
+     <td>přivádět do vytržení</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>VpFS----R-AAI--</td>
+     <td>VpFS----R-AAI-- RR--2---------- NNNS2-----A----</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR ------ ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>nejasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;Do pracovny mu začali proudit lidé ,  kteří se s ním dychtili seznámit kvůli nějaké historce z Boonova života v Anglii&#34;</td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>reasoning</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>váhám,  zda není modifikácí: &#34;bylo to neuvěřitelné&#34;,  ale to spane pod ten kontrast</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-82978">Example ex-82978: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Nejdřív bych se zřejmě měla rozhodnout , jestli Stefanové mi vynahradí typy , jako je Barry .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Maybe I needed to decide if the Stefanos made up for the Barrys .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>Maybe</td>
+     <td>Maybe</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td>ano</td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  "><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>zavazující</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>introspekce</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>doporučení (zavazující introspekce)</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>bych se měla rozhodnout</td>
+     <td>bych se měla rozhodnout</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>být se mít rozhodnout</td>
+     <td>být se mít rozhodnout</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>Vc-S---1----I-- P7--4---------- VpFS----R-AAI-- Vf--------A-P--</td>
+     <td>Vc-S---1----I-- P7--4---------- VpFS----R-AAI-- Vf--------A-P--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>A----- ------ VCA1SP VFA---</td>
+     <td>A----- ------ VCA1SP VFA---</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td>měla bych</td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-84269">Example ex-84269: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Valihrach se zřejmě velmi rozhněval , protože dlouhou chvíli nemluvil , až konečně zavrčel hlubokým hlasem :</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Evidently Humpty Dumpty was very angry , though he said nothing for a minute or two . When he did speak again , it was in a deep growl .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>Evidently</td>
+     <td>Evidently</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td>ano</td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>se rozhněval</td>
+     <td>rozhněval se</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>se rozhněvat</td>
+     <td>rozhněvat se</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>P7--4---------- VpMS----R-AAP--</td>
+     <td>VpMS----R-AAP-- P7--4----------</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>------ VDA3SR</td>
+     <td>VDA3SR ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td>velmi</td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>protože dlouhou chvíli nemluvil ,  až konečně zavrčel hlubokým hlasem</td>
+     <td>protože dlouhou chvíli nemluvil</td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-87623">Example ex-87623: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">&#34; Vy si zřejmě neuvědomujete vážnost situace , &#34; povídal .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">“ All of you fail to compren &#39; the complexities of the situation , ” he said .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>&#34;X&#34;</td>
+     <td>&#34;X&#34;</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>direktivní/kontaktová</td>
+     <td>direktivní/kontaktová</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>předpoklad</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>výčitka</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>neuvědomujete</td>
+     <td>neuvědomujete si</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>uvědomovat</td>
+     <td>uvědomovat se</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>VB-P---2P-NAI--</td>
+     <td>VB-P---2P-NAI-- P7--3----------</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA2PP</td>
+     <td>VDA2PP ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg  all-same"><td class="attr-name">Přítomnost negace</td>
+     <td>ano</td>
+     <td>ano</td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td>povídal</td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;McMurphy a Sandy seděli ve stínu ,  usrkávali sirup ,  culili se a šmajchlovali ,  a pan Turkle co chvíli usínal&#34;</td>
+     <td>&#34;Já a Harding jsme byli zřejmě jediný ,  komu na tom záleželo ; [u] McMurphy a Sandy seděli ve stínu ,  usrkávali sirup ,  culili se a šmajchlovali ,  a pan Turkle co chvíli usínal . [u] Harding se v nich marné snažil probudit špetku zájmu . &#34;</td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-90625">Example ex-90625: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Harry se zdviženou hůlkou stál jako na trní a chystal se odrazit útok , který zřejmě nikdy neměl přijít .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Harry had his wand raised , waiting on tenterhooks to repel a jinx that seemed unlikely ever to come .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seemed</td>
+     <td>seemed</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>neměl přijít</td>
+     <td>neměl přijít</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>mít přijít</td>
+     <td>mít přijít</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpIS----R-NAI-- Vf--------A-P--</td>
+     <td>VpIS----R-NAI-- Vf--------A-P--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR VFA---</td>
+     <td>VDA3SR VFA---</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg  all-same"><td class="attr-name">Přítomnost negace</td>
+     <td>ano</td>
+     <td>ano</td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>nejasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td>neměl</td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;Ron ,  který měl seslat kletbu na Harryho ,  v obličeji celý zrudl a rty pevně tiskl k sobě ,  aby odolal pokušení vyřknout slova zaklínadla nahlas .&#34;</td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Opět nevím,  potože se mi zdá,  že je v dosahu té částice i </td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-90806">Example ex-90806: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">William Bliss , kterému se zřejmě ulevilo , že nad dozvuky zdlouhavé zimy může konečně udělat kříž , přivedl Etnu postranním vchodem kaple k oltáři .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">William Bliss , who appeared to be relieved to have the turmoil of the late winter put to rest , brought Etna from a side door of the chapel to the altar .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>appeared to</td>
+     <td>appeared to</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>se ulevilo</td>
+     <td>se ulevilo</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>se ulevit</td>
+     <td>se ulevit</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>P7--4---------- VpNS----R-AAP--</td>
+     <td>P7--4---------- VpNS----R-AAP--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>------ VDA3SR</td>
+     <td>------ VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>nejasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>že nad dozvuky zdlouhavé zimy může konečně udělat kříž</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>reasoning</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>nejsem si jistá evidencí</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-91953">Example ex-91953: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Karbanátky byly mastnější a teplejší , než jaké dostanete v Breweru , a žemle tu zřejmě rozpékají .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">The hamburgers had been fatter and warmer than the ones you get in Brewer , and the buns had seemed steamed .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seemed</td>
+     <td>seemed</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>odhad</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>rozpékají</td>
+     <td>rozpékají</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>rozpékat</td>
+     <td>rozpékat</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VB-P---3P-AAI--</td>
+     <td>VB-P---3P-AAI--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3PP</td>
+     <td>VDA3PP</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td>Smyslová evidence dává největší smysl logicky,  avšak v textu chybí jednoznačná evidence.</td>
+     <td>Bez evidence.</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-86690">Example ex-86690: <i>Zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Zřejmě ty druhé kolíky v těch kanálech vytáhli , aby nás vtáhli tady do toho .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">They must have pulled the other stakes on the channels to suck us into that one .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>Zřejmě</td>
+     <td>Zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>must have</td>
+     <td>must have</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>vytáhli</td>
+     <td>vytáhli</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>vytáhnout</td>
+     <td>vytáhnout</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpMP----R-AAP--</td>
+     <td>VpMP----R-AAP--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3PR</td>
+     <td>VDA3PR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td>zdůrazněná</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>první</td>
+     <td>první</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>aby nás vtáhli tady do toho</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>reasoning</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-87095">Example ex-87095: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Helenu to zřejmě zmátlo :</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Helen looked puzzled .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>&#34;X&#34;</td>
+     <td>&#34;X&#34;</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>zmátlo</td>
+     <td>zmátlo</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>zmást</td>
+     <td>zmást</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpNS----R-AAP--</td>
+     <td>VpNS----R-AAP--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>nejasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;&#34; Já bych řekla ,  že o to přece vůbec nejde . &#34;&#34;</td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>hearsay</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-83339">Example ex-83339: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Pod námi , v prohlubni mezi dunami , ležela na ručníku Rose , byla na zádech , ruce měla pod hlavou a zřejmě spala .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Below us in a hollow in the dunes Rose lay on her back on a beach towel with her hands behind her head and seemed to be asleep .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seemed</td>
+     <td>seemed</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td>ano</td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>spala</td>
+     <td>spala</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>spát</td>
+     <td>spát</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpFS----R-AAI--</td>
+     <td>VpFS----R-AAI--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>pseudoprvní</td>
+     <td>pseudoprvní</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>Pod námi ležela na ručníku Rose ,  byla na zádech ,  ruce měla pod hlavou</td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-85934">Example ex-85934: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Nikdo jiný si to ale zřejmě nemyslel .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Nobody else seemed to think so .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seemed</td>
+     <td>seemed</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>si nemyslel</td>
+     <td>nemyslel</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>se myslet</td>
+     <td>myslet</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>P7--3---------- VpMS----R-NAI--</td>
+     <td>VpMS----R-NAI--</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>------ VDA3SR</td>
+     <td>VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg  all-same"><td class="attr-name">Přítomnost negace</td>
+     <td>ano</td>
+     <td>ano</td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  all-same"><td class="attr-name">Modifikace</td>
+     <td>ale</td>
+     <td>ale</td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;Zaznamenal mezi přítomnými dokonce jistou úlevu ,  když Michael dospěl k závěru své řeči a neučinil sebemenší narážku na nože ,  jizvy ,  gorilí masky nebo pletené kukly .&#34;</td>
+     <td>&#34;Zaznamenal mezi přítomnými dokonce jistou úlevu ,  když Michael dospěl k závěru své řeči a neučinil sebemenší narážku na nože ,  jizvy ,  gorilí masky nebo pletené kukly&#34;</td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-86393">Example ex-86393: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Zmínila se o Rh faktoru a ten jí zřejmě působil starost .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">She had mentioned Rh factors , and obviously the subject was on her mind .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>obviously</td>
+     <td>obviously</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>působil</td>
+     <td>působil starost</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>působit</td>
+     <td>působit starost</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>VpIS----R-AAI--</td>
+     <td>VpIS----R-AAI-- NNFS4-----A----</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td>Zmínila se</td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-90667">Example ex-90667: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Malfoy zřejmě díky té zatracené ruce viděl a vedl je , my se ale neodvážili použít žádné kletby ani jiná kouzla , protože jsme se báli , že bychom trefili jeden druhého .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Obviously Malfoy could see because of that hand thing and was guiding them , but we did n’t dare use any curses or anything in case we hit each other , and by the time we ’d reached a corridor that was light , they ’d gone . ’</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>Obviously</td>
+     <td>Obviously</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  "><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>člen</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>viděl vedl</td>
+     <td></td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>vidět vést</td>
+     <td></td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>VpMS----R-AAI-- VpMS----R-AAI--</td>
+     <td></td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR VDA3SR</td>
+     <td></td>
+     
+     <tr class="attr-member  "><td class="attr-name">Člen</td>
+     <td></td>
+     <td>díky té zatracené ruce</td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;a slyšeli jsme ,  jak kolem nás běží nějací lidé .&#34;</td>
+     <td>&#34;Tou tmou ale nic neproniklo . [u] Tápali jsme kolem sebe ,  abychom z chodby našli cestu ven poslepu ,  a slyšeli jsme ,  jak kolem nás běží nějací lidé &#34;</td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-89145">Example ex-89145: <i>Zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Zřejmě čekala , jestli slepec nebude pokračovat ;</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">She seemed to be waiting for the blind man to say more and when he did not she continued as before .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>Zřejmě</td>
+     <td>Zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seemed</td>
+     <td>seemed</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>čekala</td>
+     <td>čekala</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>čekat</td>
+     <td>čekat</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpFS----R-AAI--</td>
+     <td>VpFS----R-AAI--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>první</td>
+     <td>první</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>nejasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;Podíval se na ženu .&#34;</td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td></td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Evidence tu vůbec není. </td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-85086">Example ex-85086: <i>Zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Zřejmě měla na srdci něco důležitého .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Evidently what she was saying was important .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>Zřejmě</td>
+     <td>Zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>Evidently</td>
+     <td>Evidently</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>měla</td>
+     <td>měla na srdci</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>mít</td>
+     <td>mít na srdce</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>VpFS----R-AAI--</td>
+     <td>VpFS----R-AAI-- RR--6---------- NNNS6-----A----</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR ------ ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td>zdůrazněná</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>první</td>
+     <td>první</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;Mluvila o překot a se značnou naléhavostí v hlase .&#34;</td>
+     <td>&#34;Mluvila o překot a se značnou naléhavostí v hlase.&#34;</td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-85738">Example ex-85738: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">“ Ona mi ta hlava zřejmě nefunguje , jak má . ”</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">&#34; My head does n&#39;t seem to work right . &#34;</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seem</td>
+     <td>seem</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>nefunguje</td>
+     <td>nefunguje</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>fungovat</td>
+     <td>fungovat</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VB-S---3P-NAI--</td>
+     <td>VB-S---3P-NAI--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SP</td>
+     <td>VDA3SP</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg  all-same"><td class="attr-name">Přítomnost negace</td>
+     <td>ano</td>
+     <td>ano</td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>&#34;Dělá mi starosti ,  že s mou hlavou není něco v pořádku&#34;</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>reasoning</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Váhám,  jestli reasoning,  nebo inference (mluví o tom kus textu).</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-92162">Example ex-92162: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Uklonil se H . Loweovi Crosbymu , výrobci bicyklů , kterého zřejmě považoval za nového velvyslance .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">He bowed to H . Lowe Crosby , the bicycle manufacturer , mistaking him for the new Ambassador .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>mistaking</td>
+     <td>mistaking</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>považoval</td>
+     <td>považoval</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>považovat</td>
+     <td>považovat</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpMS----R-AAI--</td>
+     <td>VpMS----R-AAI--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>Uklonil se</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Ale tady to vypadá,  že by bylo třeba vyznačit </td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-85255">Example ex-85255: <i>Zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Zřejmě se všichni dobře vyspali , pomyslela si závistivě , když si vybavila ty mučivé bezesné hodiny mezi půlnocí a šestou ráno , kdy sebou házela na posteli , převracela se a proklínala všechno , co mělo něco společného s Kanadou .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Of course they probably all had a good night &#39;s sleep , she thinks enviously , recalling the frustrating hours between midnight and six a . m . that she spent tossing and turning and cursing all things Canadian .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>Zřejmě</td>
+     <td>Zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>probably</td>
+     <td>probably</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>se vyspali</td>
+     <td>se vyspali</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>se vyspat</td>
+     <td>se vyspat</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>P7--4---------- VpMP----R-AAP--</td>
+     <td>P7--4---------- VpMP----R-AAP--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>------ VDA3PR</td>
+     <td>------ VDA3PR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td>zdůrazněná</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>první</td>
+     <td>první</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td>pomyslela si</td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>&#34;Zatím ještě nikdo neklimbal.&#34;</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-84150">Example ex-84150: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Jestli Curtis usoudí , že má Valentina , pak zřejmě nechá Stana Crenshawa plavat a pustí ho z hlavy .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">If Curtis thought he had Valentino , then he probably should just let it drop and forget Stan Crenshaw .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>probably</td>
+     <td>probably</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>kosntatování</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>nechá plavat pustí</td>
+     <td>nechá plavat pustí hlavy z</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>nechat plavat pustit</td>
+     <td>nechat plavat pustit hlava z</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>VB-S---3P-AAP-- Vf--------A-I-- VB-S---3P-AAP--</td>
+     <td>VB-S---3P-AAP-- Vf--------A-I-- VB-S---3P-AAP-- NNFS2-----A---- RR--2----------</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SF VFA--- VDA3SF</td>
+     <td>VDA3SF VFA--- VDA3SF ------ ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>pseudoprvní</td>
+     <td>pseudoprvní</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>má Valentina Jestli Curtis usoudí že</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>reasoning</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-92293">Example ex-92293: <i>Zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Zřejmě jim byla společná představa , že Marťané jsou prostě jacísi lidé obřího vzrůstu , kteří sice mohou město napadnout a snad i vyplenit , ale které nakonec čeká jistá zkáza .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">The idea people seemed to have here was that the Martians were simply formidable human beings , who might attack and sack the town , to be certainly destroyed in the end .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>Zřejmě</td>
+     <td>Zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seemed</td>
+     <td>seemed</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>byla společná</td>
+     <td>byla společná</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>být společný</td>
+     <td>být společný</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpFS----R-AAI-- AAFS1----1A----</td>
+     <td>VpFS----R-AAI-- AAFS1----1A----</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR ------</td>
+     <td>VDA3SR ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td>zdůrazněná</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>první</td>
+     <td>první</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>nejasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;Lidé pokřikovali jeden přes druhého ,  vyskytl se i někdo ,  kdo si zažertoval .&#34;</td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-83470">Example ex-83470: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Něco takového se dá zřejmě vydržet jen tehdy , když se člověk od rána do noci soustředí na podrobnosti svého případu , když nemyslí na nic jiného , když má srovnaná v hlavě všechna fakta a argumenty , kdyby je najednou potřeboval .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Perhaps the only way to survive was to concentrate utterly , from dawn to dusk , on the minutiae of your own case , to have nothing else in your head , to have all the facts and arguments marshalled for whenever they might be needed .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>Perhaps</td>
+     <td>Perhaps</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td>ano</td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>introspekce</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>se dá vydržet</td>
+     <td>se dá vydržet</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>se dát vydržet</td>
+     <td>se dát vydržet</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>P7--4---------- VB-S---3P-AAP-- Vf--------A-P--</td>
+     <td>P7--4---------- VB-S---3P-AAP-- Vf--------A-P--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>------ VDA3SF VFA---</td>
+     <td>------ VDA3SF VFA---</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td>jen</td>
+     <td></td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Je tu gradace,  ale nemá dosah na </td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-88597">Example ex-88597: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Zdá se , že prof . Zapp je vzdor svému poněkud neandrtálskému vzezření a klackovitému chování přece jen vzdělaný člověk a zřejmě se vyzná ve všech těch módních jménech , jako jsou Chomsky a Saussure a Lévi - Strauss , kterými vás Robin vždycky zastrašoval , nebo o nich ví aspoň tolik , aby mohl Robina zesměšnit .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">It seems that Mr Zapp , despite his somewhat Neanderthal appearance and loutish manners , is really quite clever and knows all about these fashionable people like Chomsky and Saussure and Lévi-Strauss that Robin has been browbeating the rest of you with , or at least enough about them to make Robin look fairly silly .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>&#34;X&#34;</td>
+     <td>&#34;X&#34;</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>se vyzná ví</td>
+     <td>vyzná se</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>se vyznat vědět</td>
+     <td>vyznat se</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>P7--4---------- VB-S---3P-AAP-- VB-S---3P-AAI--</td>
+     <td>VB-S---3P-AAP-- P7--4----------</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>------ VDA3SF VDA3SP</td>
+     <td>VDA3SF ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  "><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>pseudoprvní</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>nejasná atribuce</td>
+     
+     <tr class="attr-modif  all-same"><td class="attr-name">Modifikace</td>
+     <td>Zdá se</td>
+     <td>Zdá se</td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>&#34;od Boba jsem se dozvěděla ,  že na posledním učitelském semináři setřel Morris Zapp Robina&#34;</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>hearsay</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Dávám hearsay,  ale nejasné,  protože tady není zřejmá atribuce. Navíc evidence je od toho dost daleko.</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-92270">Example ex-92270: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Potom začala šmejdit po pokoji a všechno očichávala , zřejmě s úmyslem někde se uvelebit .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">After that she went smelling round the room , - evidently with the idea of making herself at home .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>evidently</td>
+     <td>evidently</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td>ano</td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>člen</td>
+     <td>člen</td>
+     
+     <tr class="attr-pred all-empty "><td class="attr-name">Predikát</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predlemma all-empty "><td class="attr-name">Predikát (lemma)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predtag all-empty "><td class="attr-name">Predikát (tag)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predverbtag all-empty "><td class="attr-name">Predikát (verbtag)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-member  "><td class="attr-name">Člen</td>
+     <td>s úmyslem někde se uvelebit .</td>
+     <td>s úmyslem</td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td></td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  "><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>první</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>začala šmejdit po pokoji a všechno očichávala</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-88204">Example ex-88204: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Vzpomínám na uspokojení , jež jsem cítil — pro historika neexistuje cennější odměna — , když jsem pochopil pravdu , že ve skutečnosti šlo zřejmě o vyvrcholení neshod , které ani jedna ze stran nedokázala jen tak odpustit či zapomenout .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">I remember the satisfaction , the feeling–and there is nothing like it for an historian , that moment when I realised the truth–that there might have been a culmination of disagreements in rows neither side could easily forgive and forget .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>might have been</td>
+     <td>might have been</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>šlo o vyvrcholení</td>
+     <td>šlo o vyvrcholení</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>jít o vyvrcholení</td>
+     <td>jít o vyvrcholení</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpNS----R-AAI-- RR--4---------- NNNS4-----A----</td>
+     <td>VpNS----R-AAI-- RR--4---------- NNNS4-----A----</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR ------ ------</td>
+     <td>VDA3SR ------ ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>zdůrazněná</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td>jsem pochopil</td>
+     <td>pochopil jsem ve skutečnosti</td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-90428">Example ex-90428: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">&#34; Mamka se zřejmě víc snaží , když je to pro někoho , kdo není z rodiny . &#34;</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">‘ She obviously makes more of an effort if you ’re not family . ’</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>obviously</td>
+     <td>obviously</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td>ano</td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  "><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>člen</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>se snaží</td>
+     <td></td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>se snažit</td>
+     <td></td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>P7--4---------- VB-S---3P-AAI--</td>
+     <td></td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>------ VDA3SP</td>
+     <td></td>
+     
+     <tr class="attr-member  "><td class="attr-name">Člen</td>
+     <td></td>
+     <td>víc</td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>&#34;Ovšem ten Harryho je lepší než naše&#34;</td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Váhám s dosahem,  podle mě je tady predikát a měrové adv spojené: snažit se víc. V anotaci ale nejde podchytit. </td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-91368">Example ex-91368: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Dlouhý denní spánek ji zřejmě osvěžil a vzpružil ; teď je veselá a milá jako jindy .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Her long sleep all day have refresh and restore her , for now she is all sweet and bright as ever .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>&#34;X&#34;</td>
+     <td>&#34;X&#34;</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td>ano</td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>osvěžil vzpružil</td>
+     <td>vzpružil osvěžil</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>osvěžit vzpružit</td>
+     <td>vzpružit osvěžit</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpIS----R-AAP-- VpIS----R-AAP--</td>
+     <td>VpIS----R-AAP-- VpIS----R-AAP--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR VDA3SR</td>
+     <td>VDA3SR VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>teď je veselá a milá jako jindy</td>
+     <td>teď je veselá milá a</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>reasoning</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-83538">Example ex-83538: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Ceasar si toho člověka prohlédne od hlavy až k patě , pak projeví svůj drsný humor , který zřejmě v člověku probouzí postavení vojevůdce , a otáže se ho :</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Caesar looks the fellow up and down , then asks , with the rough wit generalship seems to inspire , ‘ What makes you think the thing you have at the moment is life ? ’</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seems</td>
+     <td>seems</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>předpoklad</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>probouzí</td>
+     <td>probouzí</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>probouzet</td>
+     <td>probouzet</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VB-S---3P-AAI--</td>
+     <td>VB-S---3P-AAI--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SP</td>
+     <td>VDA3SP</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  "><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>pseudoprvní</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td></td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-87098">Example ex-87098: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Jeho pán zavolal veterináře , &#34; vyprávěl Garp , &#34; a ten dal psovi nějaké injekce - zřejmě na uklidnění .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">&#34; His master called a vet , &#34; Garp said , &#34; and the vet gave the dog some shots-I guess to calm him down .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>guess</td>
+     <td>guess</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td>ano</td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote  "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td>až vyšší střední</td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>člen</td>
+     <td>člen</td>
+     
+     <tr class="attr-pred all-empty "><td class="attr-name">Predikát</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predlemma all-empty "><td class="attr-name">Predikát (lemma)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predtag all-empty "><td class="attr-name">Predikát (tag)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predverbtag all-empty "><td class="attr-name">Predikát (verbtag)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-member  all-same"><td class="attr-name">Člen</td>
+     <td>na uklidnění</td>
+     <td>na uklidnění</td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td></td>
+     <td>zdůrazněná</td>
+     
+     <tr class="attr-sentpos  "><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>pseudoprvní</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>nejasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  all-same"><td class="attr-name">Evidence</td>
+     <td>&#34;Dva dny pak ležel pes v noci na podlaze kavárny a ve dne pod vozem ,  a i když šla kočka po chodníku anebo seděla na konci uličky a umývala se ,  pes se ani nepohnul .&#34;</td>
+     <td>&#34;Dva dny pak ležel pes v noci na podlaze kavárny a ve dne pod vozem ,  a i když šla kočka po chodníku anebo seděla na konci uličky a umývala se ,  pes se ani nepohnul .&#34;</td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-90191">Example ex-90191: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Pana Adamse to zřejmě nijak nepřekvapilo .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Mr . Adams did n’t seem surprised .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>n’t seem</td>
+     <td>n’t seem</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote  "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td>až vyšší střední</td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>nepřekvapilo</td>
+     <td>nepřekvapilo</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>překvapit</td>
+     <td>překvapit</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpNS----R-NAP--</td>
+     <td>VpNS----R-NAP--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg  all-same"><td class="attr-name">Přítomnost negace</td>
+     <td>ano</td>
+     <td>ano</td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>nejasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>&#34; Pojďme tedy do mé pracovny ! “ navrhl &#34;</td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>evidence je až v následující větě</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-90468">Example ex-90468: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">&#34; Jedna z nich zřejmě létala ještě ve vzduchu , když tam strašníci dorazili - &#34;</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">“ Apparently one of them was still rocketing around when the please-men turned up — ”</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>Apparently</td>
+     <td>Apparently</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td>ano</td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>létala</td>
+     <td>létala</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>létat</td>
+     <td>létat</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpFS----R-AAI--</td>
+     <td>VpFS----R-AAI--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-85033">Example ex-85033: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Za chvíli jsme však už viděli , jak se čtyři zkušení námořníci odrážejí od vraku plachetnice a plavou ke břehu a Larry s Donaldem vlekou zřejmě vodou kapitána Creeche .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">But presently we saw the four expert sailors swimming away from the wreck of the yacht , Larry and Donald apparently propelling Captain Creech through the water .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>apparently</td>
+     <td>apparently</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>člen</td>
+     <td>člen</td>
+     
+     <tr class="attr-pred all-empty "><td class="attr-name">Predikát</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predlemma all-empty "><td class="attr-name">Predikát (lemma)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predtag all-empty "><td class="attr-name">Predikát (tag)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predverbtag all-empty "><td class="attr-name">Predikát (verbtag)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-member  "><td class="attr-name">Člen</td>
+     <td>kapitána Creeche</td>
+     <td>vodou</td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td></td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>jsme viděli</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td>Nejsem si úplně jistý dosahem EEM kvůli slovosledu,  ale tato anotace by vzhledem ke kontextu měla dávat největší smysl.</td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-91972">Example ex-91972: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Vaše žena byla vzadu na zahradě s vaším kloučkem a nějakou paní , zřejmě přítelkyní - aspoň mi tak připadala - paní Fosterovou ?</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Your wife was in the back yard with your boy and what I took to be an old girl friend , a Mrs . - Foster ?</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>&#34;X&#34;</td>
+     <td>&#34;X&#34;</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td>ano</td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>člen</td>
+     <td>člen</td>
+     
+     <tr class="attr-pred all-empty "><td class="attr-name">Predikát</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predlemma all-empty "><td class="attr-name">Predikát (lemma)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predtag all-empty "><td class="attr-name">Predikát (tag)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-predverbtag all-empty "><td class="attr-name">Predikát (verbtag)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-member  "><td class="attr-name">Člen</td>
+     <td>přítelkyní</td>
+     <td>paní Fosterovou přítelkyní</td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>zdůrazněná</td>
+     
+     <tr class="attr-sentpos  "><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>první</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td>aspoň</td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>aspoň mi tak připadala</td>
+     <td>tak aspoň mi připadala</td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-90121">Example ex-90121: <i>Zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Zřejmě to naznačuje , že když se vyvarujeme tohoto opomenutí , můžeme se vyhnout rozporu .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">This seems to indicate that by avoiding that neglect we may avoid the contradiction .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>Zřejmě</td>
+     <td>Zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seems</td>
+     <td>seems</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>?přesvědčení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>naznačuje</td>
+     <td>naznačuje</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>naznačovat</td>
+     <td>naznačovat</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VB-S---3P-AAI--</td>
+     <td>VB-S---3P-AAI--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SP</td>
+     <td>VDA3SP</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td>zdůrazněná</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>první</td>
+     <td>první</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;Připravuje nás na &#34; zdánlivou rozporuplnost &#34; a říká nám ,  že ta &#34; závisí &#34; na nějakém opomenutí&#34;</td>
+     <td>&#34;a říká nám ,  že ta &#34;</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>hearsay, reasoning</td>
+     <td>hearsay</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-84023">Example ex-84023: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Náraz větru zřejmě na chvíli plamen ztlumil .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">A gust of wind had momentarily killed the flame .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>&#34;X&#34;</td>
+     <td>&#34;X&#34;</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote  "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td>nižší střední</td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>introspekce</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>ztlumil</td>
+     <td>ztlumil</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>ztlumit</td>
+     <td>ztlumit</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpIS----R-AAP--</td>
+     <td>VpIS----R-AAP--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;Než se stihla začít bát ,  že zhaslo ,  záře se znovu objevila . Ale tady přece nikdo být nemohl …&#34;</td>
+     <td>&#34; Asi se mi něco zdálo ,  usoudila nakonec.&#34;</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>reasoning</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-84797">Example ex-84797: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Jejich poslední slova byla zřejmě jakýmsi heslem .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Their concluding words had evidently been some form of sign and countersign .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>evidently</td>
+     <td>evidently</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>konstatování</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>byla heslem</td>
+     <td>byla heslem jakýmsi</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>být heslo</td>
+     <td>být heslo jakýsi</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>VpNP----R-AAI-- NNNS7-----A----</td>
+     <td>VpNP----R-AAI-- NNNS7-----A---- PZNS7----------</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3PR ------</td>
+     <td>VDA3PR ------ ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>&#34;Devět ku sedmi !  [u] &#34;</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>reasoning</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-83363">Example ex-83363: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Našel i kancelář pro Wooda , který u něj zřejmě získal stálé zaměstnání .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">He found an office for Wood , who seemed to have attached himself as permanent staff .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seemed</td>
+     <td>seemed</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td>ano</td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>získal</td>
+     <td>získal</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>získat</td>
+     <td>získat</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpMS----R-AAP--</td>
+     <td>VpMS----R-AAP--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td></td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Bez evidence.</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-87174">Example ex-87174: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Ta příjemná guvernérova protikandidátka byla zřejmě také jedna z nich .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">The nice woman running against the governor was also a kind of New York divorcee .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>&#34;X&#34;</td>
+     <td>&#34;X&#34;</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>byla jedna z nich</td>
+     <td>jedna byla</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>být jeden z oni</td>
+     <td>jeden být</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>VpFS----R-AAI-- ClFS1---------- RR--2---------- P5FP2--3-------</td>
+     <td>ClFS1---------- VpFS----R-AAI--</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR ------ ------ ------</td>
+     <td>------ VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  all-same"><td class="attr-name">Modifikace</td>
+     <td>také</td>
+     <td>také</td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-90038">Example ex-90038: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Právě tato zpětná vazba je zřejmě odpovědná za přehnanější formy a rituály .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">It is , one may conjecture , this feedback which is mainly responsible for the more exaggerated forms and rituals .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>may conjecture</td>
+     <td>may conjecture</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>je odpovědná</td>
+     <td>je odpovědná</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>být odpovědný</td>
+     <td>být odpovědný</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VB-S---3P-AAI-- AAFS1----1A----</td>
+     <td>VB-S---3P-AAI-- AAFS1----1A----</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SP ------</td>
+     <td>VDA3SP ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td>Právě</td>
+     <td></td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-86543">Example ex-86543: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Jde o problém , který by vznikl v socialistické společnosti stejně jako v kterékoli jiné , a velká většina pracovníků v socialismu by zřejmě byla stejně málo ochotná garantovat donekonečna vysoké mzdy těm , kteří nastoupili do zaměstnání za mimořádných válečných okolností .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">This is a problem which would arise in a socialist society no less than in any other ; and the great majority of workmen would probably be just as little inclined to guarantee in perpetuity their present wages to those who were drawn into specially well paid employments because of the special need of war .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>probably</td>
+     <td>probably</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>by byla ochotná</td>
+     <td>by byla ochotná</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>být být ochotný</td>
+     <td>být být ochotný</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>Vc----------I-- VpFS----R-AAI-- AAFS1----1A----</td>
+     <td>Vc----------I-- VpFS----R-AAI-- AAFS1----1A----</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>A----- VCA3SP ------</td>
+     <td>A----- VCA3SP ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg  "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td>ano</td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td>stejně málo</td>
+     <td>byla by</td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Dávám negaci,  protože tu sice není explicitně,  ale značí ji slovo </td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-82453">Example ex-82453: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Dříve se nedostal k tomu , aby si je pořádně prohlédl , ale teď když je viděl , uvědomil si , že hrůza a vyčerpání zřejmě nebyly hlavní příčinou Cesmínová zhroucení .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">He had not previously been able to get a good look at it , but now that he did , he realized that terror and fatigue had probably not been the principal causes of Holly ’s collapse .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>probably</td>
+     <td>probably</td>
+     
+     <tr class="attr-dictexample  all-same"><td class="attr-name">Příklad do slovníku</td>
+     <td>ano</td>
+     <td>ano</td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>nebyly příčinou</td>
+     <td>nebyly příčinou</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>být příčina</td>
+     <td>být příčina</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpIP----R-NAI-- NNFS7-----A----</td>
+     <td>VpIP----R-NAI-- NNFS7-----A----</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3PR ------</td>
+     <td>VDA3PR ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg  "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td>ano</td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  all-same"><td class="attr-name">Modifikace</td>
+     <td>uvědomil si</td>
+     <td>uvědomil si</td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>&#34;Byl zle poraněný – hůř než Řešetlák .&#34;</td>
+     <td>je když viděl</td>
+     
+     <tr class="attr-evidencetype  all-same"><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-86627">Example ex-86627: <i>Zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Zřejmě ho nenávidí a mně už důvěřuje a věří ve mne , protože ve mně vidí představitele toho , v co věří .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">He hates him , I believe , and he already trusts me and believes in me as a representative of what he believes in .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>Zřejmě</td>
+     <td>Zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>believe</td>
+     <td>believe</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td>ano</td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>nenávidí důvěřuje věří vidí</td>
+     <td>nenávidí</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>nenávidět důvěřovat věřit vidět</td>
+     <td>nenávidět</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>VB-S---3P-AAI-- VB-S---3P-AAI-- VB-S---3P-AAI-- VB-S---3P-AAI--</td>
+     <td>VB-S---3P-AAI--</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SP VDA3SP VDA3SP VDA3SP</td>
+     <td>VDA3SP</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td>zdůrazněná</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>první</td>
+     <td>první</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  all-same"><td class="attr-name">Evidence</td>
+     <td>&#34;Jestli o to požádám Anselma ,  tak ho zabije ,  i když říká ,  že je proti zabíjení&#34;</td>
+     <td>&#34;Jestli o to požádám Anselma ,  tak ho zabije ,  i když říká ,  že je proti zabíjení&#34;</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>reasoning</td>
+     <td>inference</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-83324">Example ex-83324: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Mořští ptáci kňourali a střemhlav nalétávali , zřejmě zkrušeni podívanou na tu rozlehlou mísu , plnou vody a boulící se jako puchýř , olověně namodralou a zhoubně lesklou .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">The seabirds mewled and swooped , unnerved , it seemed , by the spectacle of that vast bowl of water bulging like a blister , lead-blue and malignantly agleam .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seemed</td>
+     <td>seemed</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote  "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td>až vyšší střední</td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  "><td class="attr-name">Dosah</td>
+     <td>člen</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td></td>
+     <td>zkrušeni</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td></td>
+     <td>zkrušit</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td></td>
+     <td>VsMP------APP--</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td></td>
+     <td>VOP-P-</td>
+     
+     <tr class="attr-member  "><td class="attr-name">Člen</td>
+     <td>zkrušeni podívanou na tu rozlehlou mísu ,  plnou vody a boulící se jako puchýř ,  olověně namodralou a zhoubně lesklou .</td>
+     <td></td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td></td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  "><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>první</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>kňourali</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>podle mě je tu predikát &#34;byli zkrušení&#34;,  proto dávám na predikát,  ne na člen</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-90226">Example ex-90226: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Není to pomatený gangster střílející z automatu , za jakého ho zřejmě považuješ .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">He ’s not a crazy machine-gunning mobster as you seem to think .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>seem</td>
+     <td>seem</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  "><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>direktivní/kontaktová</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>předpoklad</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>vysvětlení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>považuješ</td>
+     <td>považuješ</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>považovat</td>
+     <td>považovat</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VB-S---2P-AAI--</td>
+     <td>VB-S---2P-AAI--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA2SP</td>
+     <td>VDA2SP</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg  "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td>ano</td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>&#34;Kay na něho nechápavě hleděla : [u] „ To je přece směšné . [u] Co kdyby tak smýšleli všichni ? [u] Jak by vůbec ještě mohla společnost fungovat ? [u] Vrátili bychom se do doby neandrtálců . [u] Miku ,  tomu ,  co říkáš ,  přece sám nemůžeš věřit ?&#34;</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>reasoning</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-82771">Example ex-82771: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Na zemi ležel mrtvý Clifford Wheel , kterého zřejmě někdo zezadu udeřil kroketovou pálkou .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">On the floor was the body of Clifford Wheel , who apparently had been struck from behind with a croquet mallet .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>apparently</td>
+     <td>apparently</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td>ano</td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>konstatování</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>udeřil</td>
+     <td>udeřil</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>udeřit</td>
+     <td>udeřit</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpMS----R-AAP--</td>
+     <td>VpMS----R-AAP--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>nejasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>Na zemi ležel mrtvý</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-90244">Example ex-90244: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">„ V luxusní rezidenční budově na Upper West Side byla dnes nalezena mrtvola muže , který byl později identifikován jako Lester Traipse , známý podnikatel ze Silicon Alley … jde zřejmě o sebevraždu , i když policie nevylučuje ani vraždu .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Seeming a bit too chirpy for the material , a newslady announces , “ A body found today in a deluxe Upper West Side apartment building has been identified as Lester Traipse , a well-known Silicon Alley entrepreneur … an apparent suicide , though police say murder is n’t being ruled out . ”</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>apparent</td>
+     <td>apparent</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote  "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td>až vyšší střední</td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněka</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>tvrzení</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>jde o sebevraždu</td>
+     <td>jde o sebevraždu</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>jít o sebevražda</td>
+     <td>jít o sebevražda</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VB-S---3P-AAI-- RR--4---------- NNFS4-----A----</td>
+     <td>VB-S---3P-AAI-- RR--4---------- NNFS4-----A----</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SP ------ ------</td>
+     <td>VDA3SP ------ ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>nejasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td>i když</td>
+     <td></td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td></td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>bez evidence</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-83440">Example ex-83440: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Doufal jste zřejmě , že vám odpovím , že srst i oblečení bylo smotané dohromady do nějakého starého kusu pytloviny , kam je ve své neschopnosti nacpal nějaký policajt .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">You were hoping I might say that the skin and the clothing were all rolled up together in some old piece of sacking into which the police had incompetently stuffed them .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>might</td>
+     <td>might</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td>ano</td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  "><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>direktivní/kontaktová</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>předpoklad</td>
+     
+     <tr class="attr-commfunnote  "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td>nesouhlas</td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>Doufal jste</td>
+     <td>Doufal jste</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>doufat být</td>
+     <td>doufat být</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpMS----R-AAI-- VB-P---2P-AAI--</td>
+     <td>VpMS----R-AAI-- VB-P---2P-AAI--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA2vR A-----</td>
+     <td>VDA2vR A-----</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td>vlastní réma</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>poslední</td>
+     <td>poslední</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td></td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Bez evidence. Kontrast tam je,  ale až v další větě.</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-90334">Example ex-90334: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Zpovzdálí asi tří metrů jsem sledoval , jak se sunou v chumlu lidí uličkou k trávníku zalitému sluncem , Coleman opět něco tiše vypráví Faunii s rukou položenou mezi jejími lopatkami , s dlaní na páteři ji směruje ven a zároveň jí vysvětluje cosi o čemsi , co zřejmě nevěděla .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">I watched from some ten feet behind as they moved in a shuffling cluster of people slowly up the incline of the aisle toward the sunlit lawn , Coleman talking quietly to Faunia again , his hand between her shoulder blades , the palm of his hand against her spine guiding her along as he explained whatever he was now explaining about whatever it was she did not know .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>&#34;X&#34;</td>
+     <td>&#34;X&#34;</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td>ano</td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  all-same"><td class="attr-name">Predikát</td>
+     <td>nevěděla</td>
+     <td>nevěděla</td>
+     
+     <tr class="attr-predlemma  all-same"><td class="attr-name">Predikát (lemma)</td>
+     <td>vědět</td>
+     <td>vědět</td>
+     
+     <tr class="attr-predtag  all-same"><td class="attr-name">Predikát (tag)</td>
+     <td>VpFS----R-NAI--</td>
+     <td>VpFS----R-NAI--</td>
+     
+     <tr class="attr-predverbtag  all-same"><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR</td>
+     <td>VDA3SR</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg  all-same"><td class="attr-name">Přítomnost negace</td>
+     <td>ano</td>
+     <td>ano</td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td>sledoval jsem</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td>smyslová</td>
+     
+     <tr class="attr-comment all-empty "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td></td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-89021">Example ex-89021: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">Jak mu naznačit , že je zřejmě sám využívá pro jakýsi rodinný podnik ?</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">He thinks of calling in her father , Sir Thomas , and telling him off again , but – even without mentioning the old rumour about Henry and Lady Boleyn – how can you explain to a man that as his first daughter was a whore , so his second one should be too : insinuating that it ’s some sort of family business he puts them into ?</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>insinuating</td>
+     <td>insinuating</td>
+     
+     <tr class="attr-dictexample  "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td>ano</td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jiné</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td></td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  "><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>tázací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>fabulace</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  "><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td></td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>využívá</td>
+     <td></td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>využívat</td>
+     <td></td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>VB-S---3P-AAI--</td>
+     <td></td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SP</td>
+     <td></td>
+     
+     <tr class="attr-member  "><td class="attr-name">Člen</td>
+     <td></td>
+     <td>sám</td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td></td>
+     
+     <tr class="attr-sentpos  "><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td></td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  "><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td></td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td></td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Bez evidence.</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-89254">Example ex-89254: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">No tak to zřejmě nebyla jen procházka růžovým sadem , protože já jsem na tom kvízovém večeru čistou náhodou něco zaslechla .</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Well , obviously it was n’t all roses , because I did overhear something at the trivia night , quite by accident .</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>obviously</td>
+     <td>obviously</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  all-same"><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>evidenciální</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>střední</td>
+     
+     <tr class="attr-certaintynote  "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td>až vyšší střední</td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  "><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka,  vysvětlení</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  all-same"><td class="attr-name">Dosah</td>
+     <td>věta</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td>nebyla procházka</td>
+     <td>nebyla procházka růžovým sadem</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td>být procházka</td>
+     <td>být procházka růžový sad</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td>VpFS----R-NAI-- NNFS1-----A----</td>
+     <td>VpFS----R-NAI-- NNFS1-----A---- AAIS7----1A---- NNIS7-----A----</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td>VDA3SR ------</td>
+     <td>VDA3SR ------ ------ ------</td>
+     
+     <tr class="attr-member all-empty "><td class="attr-name">Člen</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-tfpos  all-same"><td class="attr-name">Pozice v AČ</td>
+     <td>neutrální</td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  all-same"><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>jinde</td>
+     
+     <tr class="attr-neg  all-same"><td class="attr-name">Přítomnost negace</td>
+     <td>ano</td>
+     <td>ano</td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif  "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td>něco zaslechla</td>
+     
+     <tr class="attr-evidence  "><td class="attr-name">Evidence</td>
+     <td>protože já jsem na tom kvízovém večeru čistou náhodou něco zaslechla</td>
+     <td>něco zaslechla</td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>smyslová</td>
+     <td>hearsay</td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>Je tam kontrast s předešlou větou. Nevím,  jestli se to nějak značí.</td>
+     
+     
+     
+     <tr><td colspan="3"><h1 id="ex-82942">Example ex-82942: <i>zřejmě</i></h1></td></tr>
+     <tr><td colspan="3"><span class="cssent">obyvatelé této duševní , mravní a tělesné žumpy , zřejmě věnující od nepaměti krátká období bdělého stavu přestupkům proti mravopočestnosti , byli příliš chudí a zejména příliš lakomí …</span></td></tr>
+     <tr><td colspan="3"><span class="ensent">Dixon &#39;s head switched angrily to and fro in vain search for a clock ; the inhabitants of this mental , moral and physical backwater , devoting as they had done for years their few waking moments to the pursuit of offences against chastity , were too poor , and were also too mean …</span></td></tr>
+     <tr class="attr-cs  all-same"><td class="attr-name">Výraz v češtině (ID)</td>
+     <td>zřejmě</td>
+     <td>zřejmě</td>
+     
+     <tr class="attr-en  all-same"><td class="attr-name">en</td>
+     <td>&#34;X&#34;</td>
+     <td>&#34;X&#34;</td>
+     
+     <tr class="attr-dictexample all-empty "><td class="attr-name">Příklad do slovníku</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-use  "><td class="attr-name">Užití</td>
+     <td>evidenciální</td>
+     <td>jistotní</td>
+     
+     <tr class="attr-certainty  "><td class="attr-name">Míra jistoty</td>
+     <td>---</td>
+     <td>vyšší střední</td>
+     
+     <tr class="attr-certaintynote all-empty "><td class="attr-name">Poznámka (míra jistoty)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-commfuntype  all-same"><td class="attr-name">Typ komunikační funkce</td>
+     <td>sdělovací</td>
+     <td>sdělovací</td>
+     
+     <tr class="attr-commfunsubtype  all-same"><td class="attr-name">Konkrétní komunikační funkce</td>
+     <td>domněnka</td>
+     <td>domněnka</td>
+     
+     <tr class="attr-commfunnote all-empty "><td class="attr-name">Poznámka (komunikační funkce)</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-scope  "><td class="attr-name">Dosah</td>
+     <td>člen</td>
+     <td>věta</td>
+     
+     <tr class="attr-pred  "><td class="attr-name">Predikát</td>
+     <td></td>
+     <td>věnující</td>
+     
+     <tr class="attr-predlemma  "><td class="attr-name">Predikát (lemma)</td>
+     <td></td>
+     <td>věnující</td>
+     
+     <tr class="attr-predtag  "><td class="attr-name">Predikát (tag)</td>
+     <td></td>
+     <td>AGMP1-----A----</td>
+     
+     <tr class="attr-predverbtag  "><td class="attr-name">Predikát (verbtag)</td>
+     <td></td>
+     <td>------</td>
+     
+     <tr class="attr-member  "><td class="attr-name">Člen</td>
+     <td>věnující od nepaměti krátká období bdělého stavu přestupkům proti mravopočestnosti</td>
+     <td></td>
+     
+     <tr class="attr-tfpos  "><td class="attr-name">Pozice v AČ</td>
+     <td></td>
+     <td>neutrální</td>
+     
+     <tr class="attr-sentpos  "><td class="attr-name">Místo ve větě</td>
+     <td>jinde</td>
+     <td>první</td>
+     
+     <tr class="attr-neg all-empty "><td class="attr-name">Přítomnost negace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-modalpersp  all-same"><td class="attr-name">Perspektiva modality</td>
+     <td>jasná atribuce</td>
+     <td>jasná atribuce</td>
+     
+     <tr class="attr-modif all-empty "><td class="attr-name">Modifikace</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidence all-empty "><td class="attr-name">Evidence</td>
+     <td></td>
+     <td></td>
+     
+     <tr class="attr-evidencetype  "><td class="attr-name">Typ evidence</td>
+     <td>inference</td>
+     <td></td>
+     
+     <tr class="attr-comment  "><td class="attr-name">Komentář</td>
+     <td></td>
+     <td>bez evidence</td>
+     
+     
+     
+    </tbody>
+   </table>
+  </div>
+
+  <script>
+
+   function menuitemclick(x) {
+    let itemClass = x.id.match(/show-(.*)/)[1];
+    let topElem = findElementAtTop();
+    $("."+itemClass).toggle(this.checked);
+    // Scroll to topElement
+    $('html, body').animate({
+     scrollTop: $(topElem).offset().top - 50
+     }, 0);
+   }
+
+   function menuclick(x) {
+    x.classList.toggle("change");
+    $("#main-menu").toggle();
+   }
+
+   function findElementAtTop() {
+    let elements = $('#main h1');
+    let topElement = null;
+    let minDistance = Number.MAX_VALUE;
+
+    elements.each(function() {
+     let rect = this.getBoundingClientRect();
+     let distanceToTop = Math.abs(rect.top);
+     if (distanceToTop < minDistance) {
+      minDistance = distanceToTop;
+      topElement = this;
+     }
+    });
+
+    return topElement;
+   }
+  </script>
+ </div>
+</body>
+</html>
