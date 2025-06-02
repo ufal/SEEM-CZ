@@ -13,6 +13,7 @@ class BookDoc:
         self._build_index()
 
     def _build_index(self):
+        self._id_to_elem = {}
         self._sent_index = {}
         self._tok_index = {}
         self._tok_seq = []
@@ -23,6 +24,7 @@ class BookDoc:
             sent_start_idx = tok_idx
             for tokelem in sentelem.findall('.//tok'):
                 #logging.debug(f"{tokelem = }")
+                self._id_to_elem[tokelem.attrib["id"]] = tokelem
                 self._tok_index[tokelem.attrib["id"]] = tok_idx
                 self._tok_seq.append(tokelem.text)
                 tok_idx += 1
@@ -38,6 +40,9 @@ class BookDoc:
         if not tokidx:
             return None
         return self._tok_seq[tokidx]
+
+    def get_token_elem(self, tokid):
+        return self._id_to_elem.get(tokid)
 
     def get_sentence(self, sentid):
         sent_range = self._sent_index.get(sentid)
