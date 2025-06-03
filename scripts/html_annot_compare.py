@@ -128,7 +128,13 @@ def extract_attrs(elem_bundle):
     }
 
 def iter_annot_bundles(doc_list):
-    all_ids = set([docid for doc in doc_list for docid in doc.ids])
+    # Iterate over all unique IDs in the documents sorted in the order of the first document
+    all_ids = []
+    for doc in doc_list:
+        for docid in doc.ids:
+            if docid not in all_ids:
+                all_ids.append(docid)
+
     for docid in all_ids:
         yield [doc.annot_by_id(docid) for doc in doc_list]
 
