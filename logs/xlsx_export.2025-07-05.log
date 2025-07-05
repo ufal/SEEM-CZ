@@ -1,0 +1,715 @@
+2025-07-05 11:12:26,650 - INFO - Validated 80 out of 80 marker files
+2025-07-05 11:12:26,652 - INFO - Exporting 80 marker files to XLSX
+2025-07-05 11:12:26,652 - INFO - Using schema definition: teitok/config/markers_def.xml
+2025-07-05 11:12:26,652 - INFO - Output will be saved to: teitok/export/all_finished.xlsx
+2025-07-05 11:12:26,653 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-asi.xml
+2025-07-05 11:12:26,656 - WARNING - Multiple informative verbtags found: A----- VCA1SP ------. Using only the first one.
+2025-07-05 11:12:26,656 - WARNING - Multiple informative verbtags found: A----- VDP1SF VFA---. Using only the first one.
+2025-07-05 11:12:26,657 - WARNING - Multiple informative verbtags found: A----- VDA1PF VFA---. Using only the first one.
+2025-07-05 11:12:26,657 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-asi.xml
+2025-07-05 11:12:26,657 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-bezpecne.xml
+2025-07-05 11:12:26,659 - WARNING - Multiple informative verbtags found: A----- VDP3SP. Using only the first one.
+2025-07-05 11:12:26,660 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-bezpecne.xml
+2025-07-05 11:12:26,660 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-bezpochyby.xml
+2025-07-05 11:12:26,664 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,664 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,664 - WARNING - Multiple informative verbtags found: VDA2PP ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,665 - WARNING - Multiple informative verbtags found: VDA3SR --p---. Using only the first one.
+2025-07-05 11:12:26,665 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,665 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-bezpochyby.xml
+2025-07-05 11:12:26,665 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-doopravdy.xml
+2025-07-05 11:12:26,667 - WARNING - Multiple informative verbtags found: A----- VCA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,668 - WARNING - Multiple informative verbtags found: VDA2SF VFA---. Using only the first one.
+2025-07-05 11:12:26,668 - WARNING - Multiple informative verbtags found: VDA1SR VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,668 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-doopravdy.xml
+2025-07-05 11:12:26,668 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-evidentne.xml
+2025-07-05 11:12:26,671 - WARNING - Multiple informative verbtags found: VDA3PR --p---. Using only the first one.
+2025-07-05 11:12:26,671 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,671 - INFO - Extracted 29 items from teitok/markers/finished/markers_gold-cs-evidentne.xml
+2025-07-05 11:12:26,671 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-fakt.xml
+2025-07-05 11:12:26,674 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,675 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR. Using only the first one.
+2025-07-05 11:12:26,675 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,676 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-fakt.xml
+2025-07-05 11:12:26,676 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-jasne.xml
+2025-07-05 11:12:26,679 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,679 - WARNING - Multiple informative verbtags found: A----- VDP3PP. Using only the first one.
+2025-07-05 11:12:26,679 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-jasne.xml
+2025-07-05 11:12:26,679 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-jednoznacne.xml
+2025-07-05 11:12:26,682 - WARNING - Multiple informative verbtags found: A----- VDP3PP. Using only the first one.
+2025-07-05 11:12:26,683 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-jednoznacne.xml
+2025-07-05 11:12:26,683 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-jiste.xml
+2025-07-05 11:12:26,685 - WARNING - Multiple informative verbtags found: A----- VCA3SP ------. Using only the first one.
+2025-07-05 11:12:26,686 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,686 - WARNING - Multiple informative verbtags found: A----- VCA1SP. Using only the first one.
+2025-07-05 11:12:26,686 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP. Using only the first one.
+2025-07-05 11:12:26,686 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,686 - WARNING - Multiple informative verbtags found: A----- ------ A----- VCA1SR. Using only the first one.
+2025-07-05 11:12:26,687 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,687 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP. Using only the first one.
+2025-07-05 11:12:26,687 - WARNING - Multiple informative verbtags found: A----- VCA1SP. Using only the first one.
+2025-07-05 11:12:26,687 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-jiste.xml
+2025-07-05 11:12:26,687 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-kazdopadne.xml
+2025-07-05 11:12:26,690 - WARNING - Multiple informative verbtags found: VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,690 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR. Using only the first one.
+2025-07-05 11:12:26,691 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,691 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-kazdopadne.xml
+2025-07-05 11:12:26,691 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-mozna.xml
+2025-07-05 11:12:26,694 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,694 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,694 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,694 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,694 - WARNING - Multiple informative verbtags found: VCA3PP A----- ------. Using only the first one.
+2025-07-05 11:12:26,695 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,695 - WARNING - Multiple informative verbtags found: VCA2SP A----- VFA---. Using only the first one.
+2025-07-05 11:12:26,695 - WARNING - Multiple informative verbtags found: VDA1SR A-----. Using only the first one.
+2025-07-05 11:12:26,695 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,695 - WARNING - Multiple informative verbtags found: A----- VDA1SR ------. Using only the first one.
+2025-07-05 11:12:26,695 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP. Using only the first one.
+2025-07-05 11:12:26,695 - WARNING - Multiple informative verbtags found: A----- VDP3SP. Using only the first one.
+2025-07-05 11:12:26,696 - WARNING - Multiple informative verbtags found: VCA3PP A-----. Using only the first one.
+2025-07-05 11:12:26,696 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-mozna.xml
+2025-07-05 11:12:26,696 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-nejspis.xml
+2025-07-05 11:12:26,698 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,698 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,699 - WARNING - Multiple informative verbtags found: VDA3SP ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,699 - WARNING - Multiple informative verbtags found: ------ VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,699 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,700 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,700 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,700 - WARNING - Multiple informative verbtags found: VCA1PP A----- ------. Using only the first one.
+2025-07-05 11:12:26,700 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-nejspis.xml
+2025-07-05 11:12:26,700 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-nepochybne.xml
+2025-07-05 11:12:26,703 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,703 - WARNING - Multiple informative verbtags found: VDA3PF VFA---. Using only the first one.
+2025-07-05 11:12:26,704 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-nepochybne.xml
+2025-07-05 11:12:26,704 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-nutne.xml
+2025-07-05 11:12:26,707 - WARNING - Multiple informative verbtags found: A----- ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,707 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,707 - WARNING - Multiple informative verbtags found: A----- VCA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,707 - WARNING - Multiple informative verbtags found: VDA3SP VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,707 - WARNING - Multiple informative verbtags found: VDA3PP VFA---. Using only the first one.
+2025-07-05 11:12:26,708 - WARNING - Multiple informative verbtags found: ------ VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,708 - WARNING - Multiple informative verbtags found: VDA3SR VFA--- ------ ------. Using only the first one.
+2025-07-05 11:12:26,708 - WARNING - Multiple informative verbtags found: A----- VDA1PR. Using only the first one.
+2025-07-05 11:12:26,708 - WARNING - Multiple informative verbtags found: VDA3SP VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,708 - WARNING - Multiple informative verbtags found: VDA3SP VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,708 - WARNING - Multiple informative verbtags found: VDA3SB VDA3SP. Using only the first one.
+2025-07-05 11:12:26,708 - WARNING - Multiple informative verbtags found: VCA3SP A----- VFA---. Using only the first one.
+2025-07-05 11:12:26,709 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,709 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,709 - WARNING - Multiple informative verbtags found: VDA3SR VFA--- ------ ------. Using only the first one.
+2025-07-05 11:12:26,709 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-nutne.xml
+2025-07-05 11:12:26,709 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-ocividne.xml
+2025-07-05 11:12:26,711 - WARNING - Multiple informative verbtags found: VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,712 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,712 - WARNING - Multiple informative verbtags found: VDA3SP --p---. Using only the first one.
+2025-07-05 11:12:26,713 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,713 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,713 - WARNING - Multiple informative verbtags found: A----- VDP3SP. Using only the first one.
+2025-07-05 11:12:26,713 - WARNING - Multiple informative verbtags found: A----- VDP3SP. Using only the first one.
+2025-07-05 11:12:26,713 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-ocividne.xml
+2025-07-05 11:12:26,713 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-opravdu.xml
+2025-07-05 11:12:26,716 - WARNING - Multiple informative verbtags found: ------ VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,716 - WARNING - Multiple informative verbtags found: ------ VDA2SP VFA---. Using only the first one.
+2025-07-05 11:12:26,716 - WARNING - Multiple informative verbtags found: A----- VDA1SR VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,717 - WARNING - Multiple informative verbtags found: A----- VCA2SP. Using only the first one.
+2025-07-05 11:12:26,717 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR VFA---. Using only the first one.
+2025-07-05 11:12:26,717 - WARNING - Multiple informative verbtags found: A----- VDP3SP. Using only the first one.
+2025-07-05 11:12:26,717 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,717 - WARNING - Multiple informative verbtags found: A----- VDA2PR VFA---. Using only the first one.
+2025-07-05 11:12:26,717 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR. Using only the first one.
+2025-07-05 11:12:26,717 - WARNING - Multiple informative verbtags found: ------ VDA2SP VFA---. Using only the first one.
+2025-07-05 11:12:26,717 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,718 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,718 - WARNING - Multiple informative verbtags found: ------ VDA1SF VFA---. Using only the first one.
+2025-07-05 11:12:26,718 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,718 - WARNING - Multiple informative verbtags found: VDA2PP VFA---. Using only the first one.
+2025-07-05 11:12:26,718 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,718 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-opravdu.xml
+2025-07-05 11:12:26,718 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-ovsem.xml
+2025-07-05 11:12:26,721 - WARNING - Multiple informative verbtags found: A----- VDP3SP. Using only the first one.
+2025-07-05 11:12:26,721 - WARNING - Multiple informative verbtags found: VDA1SR A----- VFA---. Using only the first one.
+2025-07-05 11:12:26,721 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,721 - WARNING - Multiple informative verbtags found: A----- VDA1PR. Using only the first one.
+2025-07-05 11:12:26,722 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,722 - WARNING - Multiple informative verbtags found: A----- VDP3SP. Using only the first one.
+2025-07-05 11:12:26,722 - WARNING - Multiple informative verbtags found: ------ VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,722 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,722 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,722 - WARNING - Multiple informative verbtags found: A----- ------ ------ VDA1SF. Using only the first one.
+2025-07-05 11:12:26,723 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-ovsem.xml
+2025-07-05 11:12:26,723 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-patrne.xml
+2025-07-05 11:12:26,725 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,726 - WARNING - Multiple informative verbtags found: VDA1PF VFA---. Using only the first one.
+2025-07-05 11:12:26,726 - WARNING - Multiple informative verbtags found: A----- VDA2SR. Using only the first one.
+2025-07-05 11:12:26,726 - WARNING - Multiple informative verbtags found: A----- ------ VCA1PP. Using only the first one.
+2025-07-05 11:12:26,726 - WARNING - Multiple informative verbtags found: A----- VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,727 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,727 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,727 - WARNING - Multiple informative verbtags found: A----- VDA1PR. Using only the first one.
+2025-07-05 11:12:26,727 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-patrne.xml
+2025-07-05 11:12:26,727 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-pochopitelne.xml
+2025-07-05 11:12:26,730 - WARNING - Multiple informative verbtags found: VDA3PR --p---. Using only the first one.
+2025-07-05 11:12:26,730 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR. Using only the first one.
+2025-07-05 11:12:26,730 - WARNING - Multiple informative verbtags found: VFA--- VDA3SP. Using only the first one.
+2025-07-05 11:12:26,730 - WARNING - Multiple informative verbtags found: VDA3PR ------ VDA3PR. Using only the first one.
+2025-07-05 11:12:26,730 - WARNING - Multiple informative verbtags found: VDA1SR A-----. Using only the first one.
+2025-07-05 11:12:26,730 - WARNING - Multiple informative verbtags found: VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,731 - WARNING - Multiple informative verbtags found: VCA3SP VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,731 - WARNING - Multiple informative verbtags found: VDA1PR A-----. Using only the first one.
+2025-07-05 11:12:26,731 - WARNING - Multiple informative verbtags found: VDA1PR A-----. Using only the first one.
+2025-07-05 11:12:26,731 - WARNING - Multiple informative verbtags found: VDA1PR A-----. Using only the first one.
+2025-07-05 11:12:26,732 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-pochopitelne.xml
+2025-07-05 11:12:26,732 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-podle_vseho.xml
+2025-07-05 11:12:26,734 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,734 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP. Using only the first one.
+2025-07-05 11:12:26,735 - WARNING - Multiple informative verbtags found: A----- VDP3PR. Using only the first one.
+2025-07-05 11:12:26,735 - WARNING - Multiple informative verbtags found: ------ VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,735 - INFO - Extracted 39 items from teitok/markers/finished/markers_gold-cs-podle_vseho.xml
+2025-07-05 11:12:26,735 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-pravdepodobne.xml
+2025-07-05 11:12:26,738 - WARNING - Multiple informative verbtags found: VCA3SP A----- VFA---. Using only the first one.
+2025-07-05 11:12:26,738 - WARNING - Multiple informative verbtags found: A----- VCA3SP ------. Using only the first one.
+2025-07-05 11:12:26,739 - WARNING - Multiple informative verbtags found: A----- A----- VCA1SR VFA---. Using only the first one.
+2025-07-05 11:12:26,739 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,739 - WARNING - Multiple informative verbtags found: ------ VDA3SR VDA3SR. Using only the first one.
+2025-07-05 11:12:26,739 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,740 - WARNING - Multiple informative verbtags found: VCA3PP A-----. Using only the first one.
+2025-07-05 11:12:26,740 - WARNING - Multiple informative verbtags found: A----- VCA3SP ------. Using only the first one.
+2025-07-05 11:12:26,740 - WARNING - Multiple informative verbtags found: VDA3SF A-----. Using only the first one.
+2025-07-05 11:12:26,740 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,740 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-pravdepodobne.xml
+2025-07-05 11:12:26,740 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-prirozene.xml
+2025-07-05 11:12:26,743 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,743 - WARNING - Multiple informative verbtags found: VCA1SR A----- A----- ------. Using only the first one.
+2025-07-05 11:12:26,743 - WARNING - Multiple informative verbtags found: VDA1PR A-----. Using only the first one.
+2025-07-05 11:12:26,743 - WARNING - Multiple informative verbtags found: VDA1SR A----- VFA---. Using only the first one.
+2025-07-05 11:12:26,743 - WARNING - Multiple informative verbtags found: VDA1PR A-----. Using only the first one.
+2025-07-05 11:12:26,743 - WARNING - Multiple informative verbtags found: VDA1PP VFA---. Using only the first one.
+2025-07-05 11:12:26,743 - WARNING - Multiple informative verbtags found: VDA1SR VDA1SP. Using only the first one.
+2025-07-05 11:12:26,744 - WARNING - Multiple informative verbtags found: VDA1SR A-----. Using only the first one.
+2025-07-05 11:12:26,744 - WARNING - Multiple informative verbtags found: VDA1PR A-----. Using only the first one.
+2025-07-05 11:12:26,744 - WARNING - Multiple informative verbtags found: A----- --p---. Using only the first one.
+2025-07-05 11:12:26,744 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-prirozene.xml
+2025-07-05 11:12:26,744 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-pry.xml
+2025-07-05 11:12:26,747 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,747 - WARNING - Multiple informative verbtags found: A----- VDA2PR. Using only the first one.
+2025-07-05 11:12:26,747 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,747 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,748 - WARNING - Multiple informative verbtags found: A----- VDA2PR. Using only the first one.
+2025-07-05 11:12:26,748 - WARNING - Multiple informative verbtags found: VCA1PP A-----. Using only the first one.
+2025-07-05 11:12:26,748 - WARNING - Multiple informative verbtags found: ------ VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,748 - WARNING - Multiple informative verbtags found: VDA3PP VFA---. Using only the first one.
+2025-07-05 11:12:26,749 - WARNING - Multiple informative verbtags found: VDA3SP --p---. Using only the first one.
+2025-07-05 11:12:26,749 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-pry.xml
+2025-07-05 11:12:26,749 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-rozhodne.xml
+2025-07-05 11:12:26,751 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,752 - WARNING - Multiple informative verbtags found: A----- VCA2SP. Using only the first one.
+2025-07-05 11:12:26,752 - WARNING - Multiple informative verbtags found: A----- ------ VCA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,752 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,752 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,752 - WARNING - Multiple informative verbtags found: A----- VCA1SP. Using only the first one.
+2025-07-05 11:12:26,753 - WARNING - Multiple informative verbtags found: VDA3SR VFA--- ------ ------. Using only the first one.
+2025-07-05 11:12:26,753 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,753 - WARNING - Multiple informative verbtags found: A----- ------ VCA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,753 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-rozhodne.xml
+2025-07-05 11:12:26,753 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-samozrejme.xml
+2025-07-05 11:12:26,756 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,756 - WARNING - Multiple informative verbtags found: VDA3PR VDA3PR. Using only the first one.
+2025-07-05 11:12:26,756 - WARNING - Multiple informative verbtags found: VDA1SR A-----. Using only the first one.
+2025-07-05 11:12:26,756 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,756 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,757 - WARNING - Multiple informative verbtags found: A----- VDA3PF. Using only the first one.
+2025-07-05 11:12:26,757 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,757 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,757 - WARNING - Multiple informative verbtags found: A----- VDA1PR. Using only the first one.
+2025-07-05 11:12:26,758 - WARNING - Multiple informative verbtags found: A----- VDA1SR VFA---. Using only the first one.
+2025-07-05 11:12:26,758 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,758 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-samozrejme.xml
+2025-07-05 11:12:26,758 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-skutecne.xml
+2025-07-05 11:12:26,760 - WARNING - Multiple informative verbtags found: VCA3PP VFA---. Using only the first one.
+2025-07-05 11:12:26,761 - WARNING - Multiple informative verbtags found: ------ VDA3PR VFA---. Using only the first one.
+2025-07-05 11:12:26,761 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,761 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,761 - WARNING - Multiple informative verbtags found: VDA1SR A-----. Using only the first one.
+2025-07-05 11:12:26,761 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,762 - WARNING - Multiple informative verbtags found: A----- A----- VCA2SR ------. Using only the first one.
+2025-07-05 11:12:26,762 - WARNING - Multiple informative verbtags found: A----- VDP3PP. Using only the first one.
+2025-07-05 11:12:26,762 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,762 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-skutecne.xml
+2025-07-05 11:12:26,762 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-snad.xml
+2025-07-05 11:12:26,765 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,765 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR. Using only the first one.
+2025-07-05 11:12:26,765 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,765 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,765 - WARNING - Multiple informative verbtags found: VDA2PP VFA---. Using only the first one.
+2025-07-05 11:12:26,766 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,766 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,766 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,766 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,766 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-snad.xml
+2025-07-05 11:12:26,766 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-sotva.xml
+2025-07-05 11:12:26,769 - WARNING - Multiple informative verbtags found: VDA3PP VFA---. Using only the first one.
+2025-07-05 11:12:26,770 - WARNING - Multiple informative verbtags found: A----- ------ VCA1SP. Using only the first one.
+2025-07-05 11:12:26,770 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-sotva.xml
+2025-07-05 11:12:26,770 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-spis.xml
+2025-07-05 11:12:26,773 - WARNING - Multiple informative verbtags found: A----- VDP3PR. Using only the first one.
+2025-07-05 11:12:26,773 - WARNING - Multiple informative verbtags found: VDA3PP ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,774 - WARNING - Multiple informative verbtags found: A----- VDA1SF. Using only the first one.
+2025-07-05 11:12:26,774 - WARNING - Multiple informative verbtags found: VCA1PP A----- VFA---. Using only the first one.
+2025-07-05 11:12:26,774 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-spis.xml
+2025-07-05 11:12:26,774 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-stezi.xml
+2025-07-05 11:12:26,777 - WARNING - Multiple informative verbtags found: VDA3SP VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,777 - WARNING - Multiple informative verbtags found: VDA3PP VFA---. Using only the first one.
+2025-07-05 11:12:26,778 - WARNING - Multiple informative verbtags found: A----- VDP3PF. Using only the first one.
+2025-07-05 11:12:26,778 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-stezi.xml
+2025-07-05 11:12:26,778 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-tezko.xml
+2025-07-05 11:12:26,781 - WARNING - Multiple informative verbtags found: VDA1PP VFA---. Using only the first one.
+2025-07-05 11:12:26,781 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,781 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,781 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP. Using only the first one.
+2025-07-05 11:12:26,782 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-tezko.xml
+2025-07-05 11:12:26,782 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-treba.xml
+2025-07-05 11:12:26,784 - WARNING - Multiple informative verbtags found: A----- VCA2vP VFA---. Using only the first one.
+2025-07-05 11:12:26,784 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,785 - WARNING - Multiple informative verbtags found: A----- ------ A----- VCA1SR. Using only the first one.
+2025-07-05 11:12:26,785 - WARNING - Multiple informative verbtags found: VDA1SR A----- VFA---. Using only the first one.
+2025-07-05 11:12:26,785 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-treba.xml
+2025-07-05 11:12:26,785 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-udajne.xml
+2025-07-05 11:12:26,788 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,789 - WARNING - Multiple informative verbtags found: VDA3SP --p---. Using only the first one.
+2025-07-05 11:12:26,789 - WARNING - Multiple informative verbtags found: VDA3PP VFA---. Using only the first one.
+2025-07-05 11:12:26,789 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,789 - WARNING - Multiple informative verbtags found: ------ VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,789 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,789 - WARNING - Multiple informative verbtags found: VDA3PR VFA---. Using only the first one.
+2025-07-05 11:12:26,790 - WARNING - Multiple informative verbtags found: VDA3PR VFA---. Using only the first one.
+2025-07-05 11:12:26,790 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-udajne.xml
+2025-07-05 11:12:26,790 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-urcite.xml
+2025-07-05 11:12:26,793 - WARNING - Multiple informative verbtags found: VDA3SF ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,793 - WARNING - Multiple informative verbtags found: VFA--- VCA1SR A----- A-----. Using only the first one.
+2025-07-05 11:12:26,793 - WARNING - Multiple informative verbtags found: VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,793 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,793 - WARNING - Multiple informative verbtags found: VDA1SF VFA---. Using only the first one.
+2025-07-05 11:12:26,793 - WARNING - Multiple informative verbtags found: VCA3SP A----- VOP-S- ------ ------. Using only the first one.
+2025-07-05 11:12:26,793 - WARNING - Multiple informative verbtags found: VDA3SR VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,794 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,794 - WARNING - Multiple informative verbtags found: ------ A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,794 - WARNING - Multiple informative verbtags found: VCA3SP A----- ------. Using only the first one.
+2025-07-05 11:12:26,794 - WARNING - Multiple informative verbtags found: A----- VCA3SP ------. Using only the first one.
+2025-07-05 11:12:26,794 - WARNING - Multiple informative verbtags found: ------ A----- VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,794 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,794 - WARNING - Multiple informative verbtags found: A----- VCA2vP. Using only the first one.
+2025-07-05 11:12:26,794 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-urcite.xml
+2025-07-05 11:12:26,795 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-vazne.xml
+2025-07-05 11:12:26,797 - WARNING - Multiple informative verbtags found: VDA3SF VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,798 - WARNING - Multiple informative verbtags found: A----- VDA1SF. Using only the first one.
+2025-07-05 11:12:26,798 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-vazne.xml
+2025-07-05 11:12:26,798 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-vskutku.xml
+2025-07-05 11:12:26,801 - WARNING - Multiple informative verbtags found: A----- VDA2PR. Using only the first one.
+2025-07-05 11:12:26,801 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,801 - WARNING - Multiple informative verbtags found: ------ VDA1SF VFA---. Using only the first one.
+2025-07-05 11:12:26,801 - WARNING - Multiple informative verbtags found: VDA2PP VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,802 - WARNING - Multiple informative verbtags found: VDA1PR A----- ------. Using only the first one.
+2025-07-05 11:12:26,802 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,802 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-vskutku.xml
+2025-07-05 11:12:26,802 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-zajiste.xml
+2025-07-05 11:12:26,805 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,805 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,805 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,805 - WARNING - Multiple informative verbtags found: VDA3PR VFA---. Using only the first one.
+2025-07-05 11:12:26,805 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,806 - WARNING - Multiple informative verbtags found: VDA1SR A----- VFA---. Using only the first one.
+2025-07-05 11:12:26,806 - WARNING - Multiple informative verbtags found: A----- VDA1PF. Using only the first one.
+2025-07-05 11:12:26,806 - WARNING - Multiple informative verbtags found: VDA1SR A----- VFA---. Using only the first one.
+2025-07-05 11:12:26,806 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-zajiste.xml
+2025-07-05 11:12:26,806 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-zjevne.xml
+2025-07-05 11:12:26,809 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,810 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,810 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-zjevne.xml
+2025-07-05 11:12:26,810 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-zrejme.xml
+2025-07-05 11:12:26,813 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR. Using only the first one.
+2025-07-05 11:12:26,813 - WARNING - Multiple informative verbtags found: VDA3SP VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,814 - WARNING - Multiple informative verbtags found: A----- VDP3PR. Using only the first one.
+2025-07-05 11:12:26,814 - WARNING - Multiple informative verbtags found: VDA1SR A-----. Using only the first one.
+2025-07-05 11:12:26,814 - WARNING - Multiple informative verbtags found: VDA1SR A-----. Using only the first one.
+2025-07-05 11:12:26,814 - WARNING - Multiple informative verbtags found: VDA3PR VDA3PR. Using only the first one.
+2025-07-05 11:12:26,814 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,815 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,815 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,815 - WARNING - Multiple informative verbtags found: VDA1SR ------ A-----. Using only the first one.
+2025-07-05 11:12:26,815 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-zrejme.xml
+2025-07-05 11:12:26,815 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-zretelne.xml
+2025-07-05 11:12:26,818 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-zretelne.xml
+2025-07-05 11:12:26,818 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-asi.xml
+2025-07-05 11:12:26,821 - WARNING - Multiple informative verbtags found: A----- VDP3PR. Using only the first one.
+2025-07-05 11:12:26,821 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,821 - WARNING - Multiple informative verbtags found: A----- VDA2PR. Using only the first one.
+2025-07-05 11:12:26,822 - WARNING - Multiple informative verbtags found: VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,822 - WARNING - Multiple informative verbtags found: A----- VCA1SP. Using only the first one.
+2025-07-05 11:12:26,822 - WARNING - Multiple informative verbtags found: VCA1PP A-----. Using only the first one.
+2025-07-05 11:12:26,822 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-asi.xml
+2025-07-05 11:12:26,822 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-bezpecne.xml
+2025-07-05 11:12:26,825 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,825 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,826 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR VFA---. Using only the first one.
+2025-07-05 11:12:26,826 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,826 - WARNING - Multiple informative verbtags found: A----- VDA1PR. Using only the first one.
+2025-07-05 11:12:26,826 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-bezpecne.xml
+2025-07-05 11:12:26,826 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-bezpochyby.xml
+2025-07-05 11:12:26,829 - WARNING - Multiple informative verbtags found: VCA3SP A----- ------. Using only the first one.
+2025-07-05 11:12:26,829 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,830 - WARNING - Multiple informative verbtags found: VDA1SR A-----. Using only the first one.
+2025-07-05 11:12:26,830 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP. Using only the first one.
+2025-07-05 11:12:26,830 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,830 - WARNING - Multiple informative verbtags found: VDA3PR VFA---. Using only the first one.
+2025-07-05 11:12:26,830 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,830 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,830 - WARNING - Multiple informative verbtags found: A----- ------ VFA--- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,830 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,831 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,831 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-bezpochyby.xml
+2025-07-05 11:12:26,831 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-doopravdy.xml
+2025-07-05 11:12:26,833 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR. Using only the first one.
+2025-07-05 11:12:26,834 - WARNING - Multiple informative verbtags found: VDA3SR A-----. Using only the first one.
+2025-07-05 11:12:26,834 - WARNING - Multiple informative verbtags found: A----- VDP3SP. Using only the first one.
+2025-07-05 11:12:26,834 - WARNING - Multiple informative verbtags found: VDA1PR A-----. Using only the first one.
+2025-07-05 11:12:26,835 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-doopravdy.xml
+2025-07-05 11:12:26,835 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-evidentne.xml
+2025-07-05 11:12:26,838 - WARNING - Multiple informative verbtags found: VDP3SR A-----. Using only the first one.
+2025-07-05 11:12:26,838 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,839 - WARNING - Multiple informative verbtags found: VFA--- VDA3SR. Using only the first one.
+2025-07-05 11:12:26,839 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,839 - WARNING - Multiple informative verbtags found: A----- ------ VDA2vR. Using only the first one.
+2025-07-05 11:12:26,840 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-evidentne.xml
+2025-07-05 11:12:26,840 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-fakt.xml
+2025-07-05 11:12:26,842 - WARNING - Multiple informative verbtags found: VDA1SR A----- --p---. Using only the first one.
+2025-07-05 11:12:26,843 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,843 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,843 - WARNING - Multiple informative verbtags found: VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,843 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,844 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-fakt.xml
+2025-07-05 11:12:26,844 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-jasne.xml
+2025-07-05 11:12:26,847 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-jasne.xml
+2025-07-05 11:12:26,847 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-jednoznacne.xml
+2025-07-05 11:12:26,851 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-jednoznacne.xml
+2025-07-05 11:12:26,851 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-jiste.xml
+2025-07-05 11:12:26,854 - WARNING - Multiple informative verbtags found: A----- VCA3SP ------. Using only the first one.
+2025-07-05 11:12:26,854 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,854 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,854 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,854 - WARNING - Multiple informative verbtags found: A----- VDA2vR. Using only the first one.
+2025-07-05 11:12:26,855 - WARNING - Multiple informative verbtags found: VCA3SP A----- ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,855 - WARNING - Multiple informative verbtags found: A----- VCA3SP VDA3SR. Using only the first one.
+2025-07-05 11:12:26,855 - WARNING - Multiple informative verbtags found: A----- VDA3PF ------. Using only the first one.
+2025-07-05 11:12:26,855 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,855 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,855 - WARNING - Multiple informative verbtags found: VDA2vR A-----. Using only the first one.
+2025-07-05 11:12:26,856 - WARNING - Multiple informative verbtags found: VDA3SF A-----. Using only the first one.
+2025-07-05 11:12:26,856 - WARNING - Multiple informative verbtags found: A----- ------ VCA1SP. Using only the first one.
+2025-07-05 11:12:26,856 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,856 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-jiste.xml
+2025-07-05 11:12:26,856 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-kazdopadne.xml
+2025-07-05 11:12:26,859 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,859 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,859 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,859 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,859 - WARNING - Multiple informative verbtags found: VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,860 - WARNING - Multiple informative verbtags found: A----- VDA2vR. Using only the first one.
+2025-07-05 11:12:26,860 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,860 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,860 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,861 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-kazdopadne.xml
+2025-07-05 11:12:26,861 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-mozna.xml
+2025-07-05 11:12:26,864 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,864 - WARNING - Multiple informative verbtags found: A----- VCA1SP. Using only the first one.
+2025-07-05 11:12:26,864 - WARNING - Multiple informative verbtags found: A----- VDA2SF. Using only the first one.
+2025-07-05 11:12:26,864 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,864 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,864 - WARNING - Multiple informative verbtags found: A----- ------|A----- VCA2SP VFA---. Using only the first one.
+2025-07-05 11:12:26,865 - WARNING - Multiple informative verbtags found: A----- VDP2vP. Using only the first one.
+2025-07-05 11:12:26,865 - WARNING - Multiple informative verbtags found: VDA3PR VFA---. Using only the first one.
+2025-07-05 11:12:26,865 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,865 - WARNING - Multiple informative verbtags found: A----- VCA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,865 - WARNING - Multiple informative verbtags found: A----- VCA1SP. Using only the first one.
+2025-07-05 11:12:26,866 - WARNING - Multiple informative verbtags found: A----- ------ VCA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,866 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-mozna.xml
+2025-07-05 11:12:26,866 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-nejspis.xml
+2025-07-05 11:12:26,869 - WARNING - Multiple informative verbtags found: A----- VDA2PR. Using only the first one.
+2025-07-05 11:12:26,869 - WARNING - Multiple informative verbtags found: VDA2PP ------ ------ VDA2vR. Using only the first one.
+2025-07-05 11:12:26,869 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP ------ VCA3SP. Using only the first one.
+2025-07-05 11:12:26,870 - WARNING - Multiple informative verbtags found: A----- VCA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,870 - WARNING - Multiple informative verbtags found: A----- VDP3PP. Using only the first one.
+2025-07-05 11:12:26,870 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,870 - WARNING - Multiple informative verbtags found: A----- VDA2vR. Using only the first one.
+2025-07-05 11:12:26,870 - WARNING - Multiple informative verbtags found: ------ VDA3PR VFA---. Using only the first one.
+2025-07-05 11:12:26,871 - WARNING - Multiple informative verbtags found: A----- VDA3PF. Using only the first one.
+2025-07-05 11:12:26,871 - WARNING - Multiple informative verbtags found: A----- ------ VCA3PP. Using only the first one.
+2025-07-05 11:12:26,871 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,871 - WARNING - Multiple informative verbtags found: A----- VCA1SP. Using only the first one.
+2025-07-05 11:12:26,871 - WARNING - Multiple informative verbtags found: VDA3SP --p---. Using only the first one.
+2025-07-05 11:12:26,871 - WARNING - Multiple informative verbtags found: A----- VCA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,871 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,871 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-nejspis.xml
+2025-07-05 11:12:26,871 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-nepochybne.xml
+2025-07-05 11:12:26,874 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,874 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,875 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,875 - WARNING - Multiple informative verbtags found: VDA3SP ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,875 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,876 - WARNING - Multiple informative verbtags found: A----- VDA2vR. Using only the first one.
+2025-07-05 11:12:26,876 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,876 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-nepochybne.xml
+2025-07-05 11:12:26,876 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-nutne.xml
+2025-07-05 11:12:26,879 - WARNING - Multiple informative verbtags found: A----- VCA3SP VFA--- --p---. Using only the first one.
+2025-07-05 11:12:26,879 - WARNING - Multiple informative verbtags found: VDA3PP VFA---. Using only the first one.
+2025-07-05 11:12:26,879 - WARNING - Multiple informative verbtags found: VDA3SR VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,880 - WARNING - Multiple informative verbtags found: VDA3PP VFA---. Using only the first one.
+2025-07-05 11:12:26,880 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-nutne.xml
+2025-07-05 11:12:26,880 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-ocividne.xml
+2025-07-05 11:12:26,883 - WARNING - Multiple informative verbtags found: A----- VDP3PR. Using only the first one.
+2025-07-05 11:12:26,883 - WARNING - Multiple informative verbtags found: VDA3PR --p---. Using only the first one.
+2025-07-05 11:12:26,883 - WARNING - Multiple informative verbtags found: VDA3SR VOP-S-. Using only the first one.
+2025-07-05 11:12:26,884 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,884 - WARNING - Multiple informative verbtags found: ------ VDA1SR ------ A-----. Using only the first one.
+2025-07-05 11:12:26,885 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-ocividne.xml
+2025-07-05 11:12:26,885 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-opravdu.xml
+2025-07-05 11:12:26,887 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,887 - WARNING - Multiple informative verbtags found: VDA1SR A-----. Using only the first one.
+2025-07-05 11:12:26,887 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,888 - WARNING - Multiple informative verbtags found: A----- VDA3SR. Using only the first one.
+2025-07-05 11:12:26,888 - WARNING - Multiple informative verbtags found: VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,888 - WARNING - Multiple informative verbtags found: VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,889 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-opravdu.xml
+2025-07-05 11:12:26,889 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-ovsem.xml
+2025-07-05 11:12:26,893 - WARNING - Multiple informative verbtags found: A----- VCA1SP. Using only the first one.
+2025-07-05 11:12:26,893 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-ovsem.xml
+2025-07-05 11:12:26,893 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-patrne.xml
+2025-07-05 11:12:26,895 - WARNING - Multiple informative verbtags found: A----- VDA3PF. Using only the first one.
+2025-07-05 11:12:26,896 - WARNING - Multiple informative verbtags found: VDA3SF VOP-S-. Using only the first one.
+2025-07-05 11:12:26,896 - WARNING - Multiple informative verbtags found: A----- VDP3SP. Using only the first one.
+2025-07-05 11:12:26,896 - WARNING - Multiple informative verbtags found: A----- A----- ------ VCA1SR. Using only the first one.
+2025-07-05 11:12:26,896 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,896 - WARNING - Multiple informative verbtags found: VDA1PF ------ A-----. Using only the first one.
+2025-07-05 11:12:26,896 - WARNING - Multiple informative verbtags found: VDA3SP ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,896 - WARNING - Multiple informative verbtags found: A----- VCA1SP. Using only the first one.
+2025-07-05 11:12:26,897 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,897 - WARNING - Multiple informative verbtags found: VCA3SP A-----. Using only the first one.
+2025-07-05 11:12:26,897 - WARNING - Multiple informative verbtags found: VCA3SP VCA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,897 - WARNING - Multiple informative verbtags found: A----- A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,897 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-patrne.xml
+2025-07-05 11:12:26,897 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-pochopitelne.xml
+2025-07-05 11:12:26,900 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,900 - WARNING - Multiple informative verbtags found: A----- VDA1SR VFA---. Using only the first one.
+2025-07-05 11:12:26,901 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,901 - WARNING - Multiple informative verbtags found: VDA3SR --p---. Using only the first one.
+2025-07-05 11:12:26,901 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,901 - WARNING - Multiple informative verbtags found: VCA1SP ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,901 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,901 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR. Using only the first one.
+2025-07-05 11:12:26,902 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP. Using only the first one.
+2025-07-05 11:12:26,902 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,902 - WARNING - Multiple informative verbtags found: ------ A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,902 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-pochopitelne.xml
+2025-07-05 11:12:26,902 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-podle_vseho.xml
+2025-07-05 11:12:26,905 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,905 - WARNING - Multiple informative verbtags found: A----- VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,905 - WARNING - Multiple informative verbtags found: VDA3PR ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,906 - WARNING - Multiple informative verbtags found: A----- VDA2SR. Using only the first one.
+2025-07-05 11:12:26,906 - WARNING - Multiple informative verbtags found: VDA3PP --p---. Using only the first one.
+2025-07-05 11:12:26,906 - WARNING - Multiple informative verbtags found: A----- VDA1PR. Using only the first one.
+2025-07-05 11:12:26,906 - WARNING - Multiple informative verbtags found: ------ VDA3SR VDA3SR VDA3SR VDA3SR VDA3SR VDA3SR. Using only the first one.
+2025-07-05 11:12:26,907 - WARNING - Multiple informative verbtags found: VDA3SP VDA3PP. Using only the first one.
+2025-07-05 11:12:26,907 - WARNING - Multiple informative verbtags found: VDA3SP VCA3PP A----- ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,907 - WARNING - Multiple informative verbtags found: VDA3PR --p---. Using only the first one.
+2025-07-05 11:12:26,907 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-podle_vseho.xml
+2025-07-05 11:12:26,907 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-pravdepodobne.xml
+2025-07-05 11:12:26,910 - WARNING - Multiple informative verbtags found: VDA1SF VFA---. Using only the first one.
+2025-07-05 11:12:26,911 - WARNING - Multiple informative verbtags found: A----- VDA3PR. Using only the first one.
+2025-07-05 11:12:26,911 - WARNING - Multiple informative verbtags found: VDA3PP --p---. Using only the first one.
+2025-07-05 11:12:26,911 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,912 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-pravdepodobne.xml
+2025-07-05 11:12:26,912 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-prirozene.xml
+2025-07-05 11:12:26,914 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,915 - WARNING - Multiple informative verbtags found: ------ A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,915 - WARNING - Multiple informative verbtags found: VDA3PR VFA---. Using only the first one.
+2025-07-05 11:12:26,915 - WARNING - Multiple informative verbtags found: VDA2SP VFA---. Using only the first one.
+2025-07-05 11:12:26,915 - WARNING - Multiple informative verbtags found: VDA3SR --p---. Using only the first one.
+2025-07-05 11:12:26,915 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,916 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,916 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-prirozene.xml
+2025-07-05 11:12:26,916 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-pry.xml
+2025-07-05 11:12:26,919 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,919 - WARNING - Multiple informative verbtags found: A----- ------ VCA3PP. Using only the first one.
+2025-07-05 11:12:26,920 - WARNING - Multiple informative verbtags found: A----- VDA3SF ------ ------. Using only the first one.
+2025-07-05 11:12:26,920 - WARNING - Multiple informative verbtags found: VDA3SP --p---. Using only the first one.
+2025-07-05 11:12:26,920 - WARNING - Multiple informative verbtags found: A----- VDP3SR ------ VDP3SR. Using only the first one.
+2025-07-05 11:12:26,921 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-pry.xml
+2025-07-05 11:12:26,921 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-rozhodne.xml
+2025-07-05 11:12:26,923 - WARNING - Multiple informative verbtags found: ------ VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,923 - WARNING - Multiple informative verbtags found: VDA1PP VFA---. Using only the first one.
+2025-07-05 11:12:26,923 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,924 - WARNING - Multiple informative verbtags found: A----- VDA3PF VFA---. Using only the first one.
+2025-07-05 11:12:26,924 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,924 - WARNING - Multiple informative verbtags found: ------ VFA--- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,925 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-rozhodne.xml
+2025-07-05 11:12:26,925 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-samozrejme.xml
+2025-07-05 11:12:26,928 - WARNING - Multiple informative verbtags found: VDA3SR --p---. Using only the first one.
+2025-07-05 11:12:26,928 - WARNING - Multiple informative verbtags found: A----- VDP3SF. Using only the first one.
+2025-07-05 11:12:26,929 - WARNING - Multiple informative verbtags found: VDA3SR VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,929 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,929 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,929 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-samozrejme.xml
+2025-07-05 11:12:26,929 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-skutecne.xml
+2025-07-05 11:12:26,932 - WARNING - Multiple informative verbtags found: ------ A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,932 - WARNING - Multiple informative verbtags found: VDA1SR A-----. Using only the first one.
+2025-07-05 11:12:26,932 - WARNING - Multiple informative verbtags found: A----- VDA2PR. Using only the first one.
+2025-07-05 11:12:26,932 - WARNING - Multiple informative verbtags found: A----- VDP3PR. Using only the first one.
+2025-07-05 11:12:26,933 - WARNING - Multiple informative verbtags found: A----- ------ VCA1SP. Using only the first one.
+2025-07-05 11:12:26,933 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,933 - WARNING - Multiple informative verbtags found: VDA3SP VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,934 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR VFA---. Using only the first one.
+2025-07-05 11:12:26,934 - WARNING - Multiple informative verbtags found: A----- VDA1SR. Using only the first one.
+2025-07-05 11:12:26,934 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-skutecne.xml
+2025-07-05 11:12:26,934 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-snad.xml
+2025-07-05 11:12:26,937 - WARNING - Multiple informative verbtags found: A----- VCA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,937 - WARNING - Multiple informative verbtags found: ------|A----- A----- VCP1SP. Using only the first one.
+2025-07-05 11:12:26,937 - WARNING - Multiple informative verbtags found: VCA3SP A----- ------. Using only the first one.
+2025-07-05 11:12:26,937 - WARNING - Multiple informative verbtags found: VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,937 - WARNING - Multiple informative verbtags found: ------ VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,938 - WARNING - Multiple informative verbtags found: A----- VCA1PP VFA--- VFA---. Using only the first one.
+2025-07-05 11:12:26,938 - WARNING - Multiple informative verbtags found: A----- VCA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,938 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR. Using only the first one.
+2025-07-05 11:12:26,938 - WARNING - Multiple informative verbtags found: VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,938 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,938 - WARNING - Multiple informative verbtags found: VCA3SP A----- ------. Using only the first one.
+2025-07-05 11:12:26,938 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,938 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-snad.xml
+2025-07-05 11:12:26,939 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-sotva.xml
+2025-07-05 11:12:26,941 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,941 - WARNING - Multiple informative verbtags found: A----- VDP3SP. Using only the first one.
+2025-07-05 11:12:26,942 - WARNING - Multiple informative verbtags found: A----- VCA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,942 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,942 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,942 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-sotva.xml
+2025-07-05 11:12:26,942 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-spis.xml
+2025-07-05 11:12:26,945 - WARNING - Multiple informative verbtags found: VDA3SP --p---. Using only the first one.
+2025-07-05 11:12:26,945 - WARNING - Multiple informative verbtags found: VDA3SR VDA3SR. Using only the first one.
+2025-07-05 11:12:26,946 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-spis.xml
+2025-07-05 11:12:26,946 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-stezi.xml
+2025-07-05 11:12:26,949 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,949 - WARNING - Multiple informative verbtags found: VFA--- VDA3PF ------ ------. Using only the first one.
+2025-07-05 11:12:26,949 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,950 - WARNING - Multiple informative verbtags found: VDA3PP VFA---. Using only the first one.
+2025-07-05 11:12:26,950 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,950 - WARNING - Multiple informative verbtags found: VDA3SR VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,950 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP. Using only the first one.
+2025-07-05 11:12:26,950 - WARNING - Multiple informative verbtags found: A----- VCA3SP VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,950 - WARNING - Multiple informative verbtags found: VCA3PP A-----. Using only the first one.
+2025-07-05 11:12:26,950 - WARNING - Multiple informative verbtags found: ------ VDA3PF VFA---. Using only the first one.
+2025-07-05 11:12:26,951 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,951 - WARNING - Multiple informative verbtags found: A----- VDA1SR VFA---. Using only the first one.
+2025-07-05 11:12:26,951 - WARNING - Multiple informative verbtags found: VDA3SR --p---. Using only the first one.
+2025-07-05 11:12:26,951 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,951 - WARNING - Multiple informative verbtags found: ------ VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,951 - WARNING - Multiple informative verbtags found: VDA3SR --p---. Using only the first one.
+2025-07-05 11:12:26,951 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,951 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-stezi.xml
+2025-07-05 11:12:26,951 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-tezko.xml
+2025-07-05 11:12:26,954 - WARNING - Multiple informative verbtags found: VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,954 - WARNING - Multiple informative verbtags found: VDA1PP VFA---. Using only the first one.
+2025-07-05 11:12:26,955 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,955 - WARNING - Multiple informative verbtags found: VCA3SP VFA--- A-----. Using only the first one.
+2025-07-05 11:12:26,955 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,955 - WARNING - Multiple informative verbtags found: A----- VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,955 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,955 - WARNING - Multiple informative verbtags found: A----- ------ VCA3PP VFA---. Using only the first one.
+2025-07-05 11:12:26,955 - WARNING - Multiple informative verbtags found: VDA3PR VFA---. Using only the first one.
+2025-07-05 11:12:26,955 - WARNING - Multiple informative verbtags found: A----- VCA3SP ------. Using only the first one.
+2025-07-05 11:12:26,955 - WARNING - Multiple informative verbtags found: A----- VDA2PR VFA---. Using only the first one.
+2025-07-05 11:12:26,956 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,956 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-tezko.xml
+2025-07-05 11:12:26,956 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-treba.xml
+2025-07-05 11:12:26,959 - WARNING - Multiple informative verbtags found: A----- ------ VDA3SF. Using only the first one.
+2025-07-05 11:12:26,959 - WARNING - Multiple informative verbtags found: VDA3PR VFA---. Using only the first one.
+2025-07-05 11:12:26,959 - WARNING - Multiple informative verbtags found: A----- VCA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,959 - WARNING - Multiple informative verbtags found: A----- VCA2SP VFA---. Using only the first one.
+2025-07-05 11:12:26,959 - WARNING - Multiple informative verbtags found: VCA3PP VFA--- ------|A-----. Using only the first one.
+2025-07-05 11:12:26,960 - WARNING - Multiple informative verbtags found: A----- VCA3SP VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,960 - WARNING - Multiple informative verbtags found: A----- VDA1PF. Using only the first one.
+2025-07-05 11:12:26,960 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-treba.xml
+2025-07-05 11:12:26,960 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-udajne.xml
+2025-07-05 11:12:26,963 - WARNING - Multiple informative verbtags found: VFA--- VDA3PP. Using only the first one.
+2025-07-05 11:12:26,963 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,963 - WARNING - Multiple informative verbtags found: A----- VDA2vR. Using only the first one.
+2025-07-05 11:12:26,963 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,963 - WARNING - Multiple informative verbtags found: VCA3PP VFA--- ------ ------ A-----. Using only the first one.
+2025-07-05 11:12:26,963 - WARNING - Multiple informative verbtags found: VDA3PP VFA---. Using only the first one.
+2025-07-05 11:12:26,963 - WARNING - Multiple informative verbtags found: A----- ------ VDA1SR. Using only the first one.
+2025-07-05 11:12:26,964 - WARNING - Multiple informative verbtags found: A----- VCA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,964 - WARNING - Multiple informative verbtags found: ------ VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,964 - WARNING - Multiple informative verbtags found: VDA3SR VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,964 - WARNING - Multiple informative verbtags found: VFA--- VDA3SR. Using only the first one.
+2025-07-05 11:12:26,964 - WARNING - Multiple informative verbtags found: A----- VDP3PR. Using only the first one.
+2025-07-05 11:12:26,964 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,965 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,965 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,965 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,965 - WARNING - Multiple informative verbtags found: A----- VDA1SR VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,965 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-udajne.xml
+2025-07-05 11:12:26,965 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-urcite.xml
+2025-07-05 11:12:26,968 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,968 - WARNING - Multiple informative verbtags found: VDA1PP ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,968 - WARNING - Multiple informative verbtags found: A----- ------ VDA2PR. Using only the first one.
+2025-07-05 11:12:26,968 - WARNING - Multiple informative verbtags found: A----- ------ VCA3SP. Using only the first one.
+2025-07-05 11:12:26,969 - WARNING - Multiple informative verbtags found: VCA3SP A----- ------. Using only the first one.
+2025-07-05 11:12:26,969 - WARNING - Multiple informative verbtags found: A----- A----- VCA1PR VFA---. Using only the first one.
+2025-07-05 11:12:26,969 - WARNING - Multiple informative verbtags found: VCA3SP A----- ------. Using only the first one.
+2025-07-05 11:12:26,969 - WARNING - Multiple informative verbtags found: ------ VDA2SP VFA---. Using only the first one.
+2025-07-05 11:12:26,969 - WARNING - Multiple informative verbtags found: VDA3PR --p---. Using only the first one.
+2025-07-05 11:12:26,969 - WARNING - Multiple informative verbtags found: VDA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,970 - WARNING - Multiple informative verbtags found: VCA3SP A----- ------. Using only the first one.
+2025-07-05 11:12:26,970 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,970 - WARNING - Multiple informative verbtags found: VCA3SP VFA---. Using only the first one.
+2025-07-05 11:12:26,970 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-urcite.xml
+2025-07-05 11:12:26,970 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-vazne.xml
+2025-07-05 11:12:26,973 - WARNING - Multiple informative verbtags found: A----- VDA1PR. Using only the first one.
+2025-07-05 11:12:26,973 - WARNING - Multiple informative verbtags found: A----- VCA1SP VFA--- ------. Using only the first one.
+2025-07-05 11:12:26,973 - WARNING - Multiple informative verbtags found: VDA1SR A----- ------. Using only the first one.
+2025-07-05 11:12:26,974 - WARNING - Multiple informative verbtags found: VDA1PP ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,974 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-vazne.xml
+2025-07-05 11:12:26,974 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-vskutku.xml
+2025-07-05 11:12:26,977 - WARNING - Multiple informative verbtags found: A----- VDA3SF. Using only the first one.
+2025-07-05 11:12:26,977 - WARNING - Multiple informative verbtags found: A----- VCA3SP. Using only the first one.
+2025-07-05 11:12:26,978 - WARNING - Multiple informative verbtags found: A----- VDA1SR ------. Using only the first one.
+2025-07-05 11:12:26,978 - WARNING - Multiple informative verbtags found: A----- VCA3SP ------. Using only the first one.
+2025-07-05 11:12:26,978 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-vskutku.xml
+2025-07-05 11:12:26,978 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-zajiste.xml
+2025-07-05 11:12:26,981 - WARNING - Multiple informative verbtags found: VDA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,981 - WARNING - Multiple informative verbtags found: A----- VDP3SR. Using only the first one.
+2025-07-05 11:12:26,982 - WARNING - Multiple informative verbtags found: A----- VDA2vR. Using only the first one.
+2025-07-05 11:12:26,982 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-zajiste.xml
+2025-07-05 11:12:26,982 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-zjevne.xml
+2025-07-05 11:12:26,985 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,985 - WARNING - Multiple informative verbtags found: A----- VDA1PR. Using only the first one.
+2025-07-05 11:12:26,986 - WARNING - Multiple informative verbtags found: VDA3SR --p---. Using only the first one.
+2025-07-05 11:12:26,986 - WARNING - Multiple informative verbtags found: ------ VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,986 - WARNING - Multiple informative verbtags found: VDA3SR ------ VFA---. Using only the first one.
+2025-07-05 11:12:26,986 - WARNING - Multiple informative verbtags found: A----- VCA3PP. Using only the first one.
+2025-07-05 11:12:26,987 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-zjevne.xml
+2025-07-05 11:12:26,987 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-zrejme.xml
+2025-07-05 11:12:26,990 - WARNING - Multiple informative verbtags found: VDA3SR VFA---. Using only the first one.
+2025-07-05 11:12:26,990 - WARNING - Multiple informative verbtags found: VDA2vR A-----. Using only the first one.
+2025-07-05 11:12:26,990 - WARNING - Multiple informative verbtags found: VDA3SR VDA3SR. Using only the first one.
+2025-07-05 11:12:26,990 - WARNING - Multiple informative verbtags found: VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,990 - WARNING - Multiple informative verbtags found: A----- VCA3SP ------. Using only the first one.
+2025-07-05 11:12:26,991 - WARNING - Multiple informative verbtags found: A----- ------ VCA1SP VFA---. Using only the first one.
+2025-07-05 11:12:26,991 - WARNING - Multiple informative verbtags found: ------ VDA3SF VFA---. Using only the first one.
+2025-07-05 11:12:26,991 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-zrejme.xml
+2025-07-05 11:12:26,991 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-zretelne.xml
+2025-07-05 11:12:26,994 - WARNING - Multiple informative verbtags found: VDA3PR VFA---. Using only the first one.
+2025-07-05 11:12:26,995 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-zretelne.xml
+2025-07-05 11:12:26,995 - INFO - Column order: ['Výraz', 'Jazyk', 'CQL dotaz', 'ID dokumentu', 'Výraz v češtině (ID)', 'Výraz v češtině (formy)', 'Výraz v angličtině (ID)', 'Výraz v angličtině (formy)', 'Příklad do slovníku', 'Užití', 'Míra jistoty', 'Poznámka (míra jistoty)', 'Typ komunikační funkce', 'Konkrétní komunikační funkce', 'Poznámka (komunikační funkce)', 'Dosah', 'Predikát', 'Predikát (lemma)', 'Predikát (tag)', 'Predikát (verbtag)', 'Predikát (verbtag) - Typ slovesa', 'Predikát (verbtag) - Typ slovesného tvaru', 'Predikát (verbtag) - Slovesný rod', 'Predikát (verbtag) - Osoba', 'Predikát (verbtag) - Číslo', 'Predikát (verbtag) - Čas', 'Člen', 'Substituce', 'Pozice v AČ', 'Místo ve větě', 'Přítomnost negace', 'Kontrast/srovnání', 'Perspektiva modality', 'Modifikace', 'Modifikace (forma)', 'Evidence', 'Typ evidence', 'Česká věta', 'Komentář']
+2025-07-05 11:12:26,995 - INFO - Writing 3968 total rows to XLSX file
+2025-07-05 11:12:29,043 - INFO - XLSX export completed successfully: teitok/export/all_finished.xlsx
+2025-07-05 11:12:29,046 - INFO - Export completed successfully
