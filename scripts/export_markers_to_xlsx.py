@@ -12,6 +12,20 @@ import sys
 import xml.etree.ElementTree as ET
 from markerdoc import MarkerDoc, MarkerDocDef
 
+# Column names in Czech
+EXPRESSION_COLUMN = 'Výraz'
+LANGUAGE_COLUMN = 'Jazyk'
+
+# Verbtag position names in Czech (from https://wiki.korpus.cz/doku.php/cnk:syn2020:verbtag)
+VERBTAG_POSITIONS = [
+    'Typ slovesa',          # Position 1: V, A, or -
+    'Typ slovesného tvaru', # Position 2: D, C, I, F, T, O, or -
+    'Slovesný rod',         # Position 3: A, P, p, or -
+    'Osoba',               # Position 4: 1, 2, 3, or -
+    'Číslo',               # Position 5: S, P, v, or -
+    'Čas'                  # Position 6: P, F, B, R, Q, or -
+]
+
 try:
     from openpyxl import Workbook
     from openpyxl.styles import Font
@@ -59,9 +73,85 @@ def extract_expression_and_language(filename):
     logging.warning(f"Could not extract expression and language from filename: {filename}")
     return None, None
 
+def is_verbtag_column(column_name):
+    """
+    Check if a column contains verbtag data.
+    
+    Args:
+        column_name: Display name of the column
+    
+    Returns:
+        True if the column contains verbtag data, False otherwise
+    """
+    # Check if the column name contains "verbtag" (case insensitive)
+    return 'verbtag' in column_name.lower()
+
+def decompose_verbtag(verbtag_value):
+    """
+    Decompose a verbtag value into its 6 positions.
+    If there are multiple verbtags, only keep the ones that carry information.
+    If there are multiple informative verbtags, take the first one and log a warning.
+    
+    Args:
+        verbtag_value: String containing verbtag(s), potentially space-separated
+    
+    Returns:
+        List of dictionaries, each containing the 6 position values for one verbtag
+    """
+    if not verbtag_value or not verbtag_value.strip():
+        return []
+    
+    # Split by whitespace to handle multiple verbtags
+    verbtags = verbtag_value.strip().split()
+    informative_tags = []
+    
+    for verbtag in verbtags:
+        if len(verbtag) == 6:
+            # Check if the verbtag carries information (not all dashes)
+            if verbtag != '------' and not all(c == '-' for c in verbtag):
+                # Decompose the 6-character verbtag
+                positions = {
+                    VERBTAG_POSITIONS[0]: verbtag[0],  # Typ slovesa
+                    VERBTAG_POSITIONS[1]: verbtag[1],  # Typ slovesného tvaru
+                    VERBTAG_POSITIONS[2]: verbtag[2],  # Slovesný rod
+                    VERBTAG_POSITIONS[3]: verbtag[3],  # Osoba
+                    VERBTAG_POSITIONS[4]: verbtag[4],  # Číslo
+                    VERBTAG_POSITIONS[5]: verbtag[5]   # Čas
+                }
+                informative_tags.append(positions)
+    
+    # If we have multiple informative verbtags, take only the first one and warn
+    if len(informative_tags) > 1:
+        logging.warning(f"Multiple informative verbtags found: {verbtag_value}. Using only the first one.")
+        return [informative_tags[0]]
+    elif len(informative_tags) == 1:
+        return informative_tags
+    else:
+        # No informative verbtags found, return empty positions
+        return []
+
+def create_verbtag_column_names(base_column_name, tag_index=None):
+    """
+    Create column names for decomposed verbtag positions.
+    
+    Args:
+        base_column_name: Original column name containing verbtag
+        tag_index: Index of the verbtag (for multiple verbtags), None for single verbtag
+    
+    Returns:
+        List of column names for the 6 positions
+    """
+    if tag_index is not None:
+        # For multiple verbtags, add index: "Predikát (verbtag) - Typ slovesa (1)"
+        return [f"{base_column_name} - {pos_name} ({tag_index + 1})" for pos_name in VERBTAG_POSITIONS]
+    else:
+        # For single verbtag: "Predikát (verbtag) - Typ slovesa"
+        return [f"{base_column_name} - {pos_name}" for pos_name in VERBTAG_POSITIONS]
+
 def get_column_order(def_doc):
     """
-    Get the column order from the definition file using display names.
+    Get the column order from the definition file using display names,
+    including decomposed verbtag columns.
     
     Args:
         def_doc: MarkerDocDef instance
@@ -69,7 +159,7 @@ def get_column_order(def_doc):
     Returns:
         List of column display names in definition order
     """
-    columns = ['Expression', 'Language']  # First two columns with display names
+    columns = [EXPRESSION_COLUMN, LANGUAGE_COLUMN]  # First two columns with display names in Czech
     
     # Add all attributes from the definition in order using display names
     for interp_elem in def_doc.xml.findall(".//interp"):
@@ -77,6 +167,12 @@ def get_column_order(def_doc):
         if key:
             display_name = def_doc.get_display_string(key)
             columns.append(display_name)
+            
+            # If this is a verbtag column, add decomposed columns
+            if is_verbtag_column(display_name):
+                # Add columns for each verbtag position (no need for multiple verbtag handling)
+                verbtag_columns = create_verbtag_column_names(display_name)
+                columns.extend(verbtag_columns)
     
     return columns
 
@@ -105,8 +201,8 @@ def process_marker_file(file_path, def_doc, expression, language):
     
     for item_elem in marker_doc:
         row = {
-            'Expression': expression or '',
-            'Language': language or ''
+            EXPRESSION_COLUMN: expression or '',
+            LANGUAGE_COLUMN: language or ''
         }
         
         # Add all attributes from the item element using display names
@@ -115,6 +211,21 @@ def process_marker_file(file_path, def_doc, expression, language):
             # For values, also try to get display string
             display_value = def_doc.get_display_string(attr_name, attr_value)
             row[display_name] = display_value
+            
+            # If this is a verbtag column, decompose it
+            if is_verbtag_column(display_name):
+                decomposed_tags = decompose_verbtag(attr_value)
+                
+                if len(decomposed_tags) == 1:
+                    # Single informative verbtag - add columns without index
+                    verbtag_columns = create_verbtag_column_names(display_name)
+                    for i, pos_name in enumerate(VERBTAG_POSITIONS):
+                        row[verbtag_columns[i]] = decomposed_tags[0][pos_name]
+                else:
+                    # No informative verbtags - add empty columns
+                    verbtag_columns = create_verbtag_column_names(display_name)
+                    for col_name in verbtag_columns:
+                        row[col_name] = ''
         
         rows.append(row)
     
@@ -137,13 +248,9 @@ def export_to_xlsx(marker_files, output_file, schema_file):
     # Load the schema definition
     def_doc = MarkerDocDef(schema_file)
     
-    # Get column order from definition
-    columns = get_column_order(def_doc)
-    logging.info(f"Column order: {columns}")
-    
     all_rows = []
     
-    # Process each marker file
+    # Process each marker file to collect all data
     for file_path in marker_files:
         filename = os.path.basename(file_path)
         expression, language = extract_expression_and_language(filename)
@@ -154,6 +261,10 @@ def export_to_xlsx(marker_files, output_file, schema_file):
         
         rows = process_marker_file(file_path, def_doc, expression, language)
         all_rows.extend(rows)
+    
+    # Get column order from definition
+    columns = get_column_order(def_doc)
+    logging.info(f"Column order: {columns}")
     
     # Create XLSX file
     logging.info(f"Writing {len(all_rows)} total rows to XLSX file")
