@@ -5,6 +5,7 @@ Script to finalize annotation files by:
 2. Replacing obsolete "clue" attribute with "modif" attribute
 3. Sorting the IDs in attributes of type="idrefs" and logging when order changes
 4. Removing attributes that should be disabled according to "disabledif" rules
+5. Synchronizing lookup attributes with their reference attributes
 """
 
 import argparse
@@ -13,6 +14,7 @@ import os
 import sys
 import xml.etree.ElementTree as ET
 from markerdoc import MarkerDocDef
+from bookdoc import BookDoc
 
 def parse_disabledif_condition(disabledif_str):
     """
@@ -80,6 +82,154 @@ def get_dependent_lookup_attributes(attr_name, def_doc):
             dependent_attrs.append(interp_elem.attrib["key"])
     
     return dependent_attrs
+
+def get_lookup_info(def_doc):
+    """
+    Get mapping of lookup attributes to their reference attributes and fields.
+    
+    Args:
+        def_doc: MarkerDocDef instance for schema information
+    
+    Returns:
+        Dict mapping lookup attribute names to (ref_attr, field) tuples
+    """
+    lookup_info = {}
+    
+    for interp_elem in def_doc.xml.findall(".//interp[@type='lookup']"):
+        lookup_attr = interp_elem.attrib["key"]
+        ref_attr = interp_elem.attrib.get("ref")
+        field = interp_elem.attrib.get("fld", "form")  # default to "form"
+        
+        if ref_attr:
+            lookup_info[lookup_attr] = (ref_attr, field)
+    
+    return lookup_info
+
+def get_book_for_item(item_elem, books_cache, book_dir, lang="cs"):
+    """
+    Get BookDoc instance for the book containing this item.
+    
+    Args:
+        item_elem: XML element for an annotation item
+        books_cache: Dict cache of BookDoc instances
+        book_dir: Directory containing book files
+        lang: Language of the book to load ("cs" or "en")
+    
+    Returns:
+        BookDoc instance or None if not found
+    """
+    book_id = item_elem.attrib.get("xml")
+    if not book_id:
+        return None
+    
+    # Create cache key that includes language
+    cache_key = f"{book_id}-{lang}"
+    
+    if cache_key not in books_cache:
+        try:
+            books_cache[cache_key] = BookDoc(book_id, lang=lang, bookdir=book_dir)
+        except Exception as e:
+            logging.warning(f"Could not load book {book_id} for language {lang}: {e}")
+            books_cache[cache_key] = None
+    
+    return books_cache[cache_key]
+
+def synchronize_lookup_attributes(item_elem, def_doc, books_cache, book_dir):
+    """
+    Synchronize lookup attributes with their reference attributes.
+    Set lookup attribute if reference exists, remove if reference doesn't exist.
+    Validate and correct lookup values.
+    
+    Args:
+        item_elem: XML element for an annotation item
+        def_doc: MarkerDocDef instance for schema information
+        books_cache: Dict cache of BookDoc instances
+        book_dir: Directory containing book files
+    
+    Returns:
+        True if changes were made, False otherwise
+    """
+    changes_made = False
+    item_id = item_elem.attrib.get('id', 'unknown')
+    lookup_info = get_lookup_info(def_doc)
+    
+    # Get file mappings from schema definition
+    file_mapping = get_file_mapping(def_doc)  # e.g., {"src": "cs", "tgt": "en"}
+    ref_attr_file_mapping = get_ref_attr_file_mapping(def_doc)  # e.g., {"cs": "src", "en": "tgt"}
+    
+    for lookup_attr, (ref_attr, field) in lookup_info.items():
+        ref_value = item_elem.attrib.get(ref_attr)
+        lookup_value = item_elem.attrib.get(lookup_attr)
+        
+        if ref_value and ref_value.strip():
+            # Reference attribute exists and is not empty - lookup should be set
+            
+            # Check if the reference value looks like IDs rather than text
+            if not looks_like_ids(ref_value):
+                logging.debug(f"Item {item_id}: Reference attribute '{ref_attr}' contains text rather than IDs: '{ref_value}'. Skipping lookup synchronization for '{lookup_attr}'.")
+                continue
+            
+            # Determine the language based on the file attribute of the reference attribute
+            file_key = ref_attr_file_mapping.get(ref_attr)
+            if file_key:
+                lang = file_mapping.get(file_key, "cs")  # default to Czech if not found
+            else:
+                # Fallback: use "cs" for unknown reference attributes
+                lang = "cs"
+                logging.debug(f"Item {item_id}: No file mapping found for reference attribute '{ref_attr}', defaulting to Czech")
+            
+            # Get book for this item in the appropriate language
+            book = get_book_for_item(item_elem, books_cache, book_dir, lang)
+            if not book:
+                logging.debug(f"Item {item_id}: Could not load {lang} book, skipping lookup synchronization for '{lookup_attr}'")
+                continue
+            
+            expected_values = []
+            
+            # Get values for all referenced token IDs
+            token_ids = ref_value.split()
+            for token_id in token_ids:
+                token_elem = book.get_token_elem(token_id)
+                if token_elem is not None:
+                    if field == "form":
+                        # Use the text content of the token
+                        token_value = token_elem.text
+                    else:
+                        # Use the specified attribute
+                        token_value = token_elem.attrib.get(field, "")
+                    
+                    if token_value:
+                        expected_values.append(token_value)
+                else:
+                    logging.warning(f"Item {item_id}: Token {token_id} not found for lookup attribute '{lookup_attr}'")
+            
+            expected_lookup = " ".join(expected_values)
+            
+            if not lookup_value:
+                # Lookup attribute is missing - add it
+                if expected_lookup:
+                    item_elem.attrib[lookup_attr] = expected_lookup
+                    logging.info(f"Item {item_id}: Added missing lookup attribute '{lookup_attr}' = '{expected_lookup}'")
+                    changes_made = True
+            elif lookup_value != expected_lookup:
+                # Lookup attribute has wrong value - correct it
+                if expected_lookup:
+                    item_elem.attrib[lookup_attr] = expected_lookup
+                    logging.info(f"Item {item_id}: Corrected lookup attribute '{lookup_attr}' from '{lookup_value}' to '{expected_lookup}'")
+                    changes_made = True
+                else:
+                    # No valid tokens found - remove the lookup attribute
+                    del item_elem.attrib[lookup_attr]
+                    logging.info(f"Item {item_id}: Removed invalid lookup attribute '{lookup_attr}' (no valid tokens)")
+                    changes_made = True
+        else:
+            # Reference attribute is empty or missing - lookup should not exist
+            if lookup_value:
+                del item_elem.attrib[lookup_attr]
+                logging.info(f"Item {item_id}: Removed orphaned lookup attribute '{lookup_attr}' (reference '{ref_attr}' is empty)")
+                changes_made = True
+    
+    return changes_made
 
 def remove_disabled_attributes(item_elem, def_doc):
     """
@@ -291,22 +441,67 @@ def replace_clue_with_modif(item_elem):
     
     return changes_made
 
-def finalize_annotation_file(input_file, output_file, schema_file):
+def get_file_mapping(def_doc):
+    """
+    Get mapping of file keys to languages from schema definition.
+    
+    Args:
+        def_doc: MarkerDocDef instance for schema information
+    
+    Returns:
+        Dict mapping file keys to language extensions (e.g., {"src": "cs", "tgt": "en"})
+    """
+    file_mapping = {}
+    
+    # Find files section and extract key -> extension mapping
+    for item_elem in def_doc.xml.findall(".//files/item"):
+        key = item_elem.attrib.get("key")
+        extension = item_elem.attrib.get("extention")  # Note: using "extention" as in the XML
+        if key and extension:
+            file_mapping[key] = extension
+    
+    return file_mapping
+
+def get_ref_attr_file_mapping(def_doc):
+    """
+    Get mapping of reference attributes to their file types.
+    
+    Args:
+        def_doc: MarkerDocDef instance for schema information
+    
+    Returns:
+        Dict mapping reference attribute names to file keys (e.g., {"cs": "src", "en": "tgt"})
+    """
+    ref_attr_file_mapping = {}
+    
+    # Find all interp elements with type="idrefs" and extract key -> file mapping
+    for interp_elem in def_doc.xml.findall(".//interp[@type='idrefs']"):
+        attr_name = interp_elem.attrib.get("key")
+        file_key = interp_elem.attrib.get("file")
+        if attr_name and file_key:
+            ref_attr_file_mapping[attr_name] = file_key
+    
+    return ref_attr_file_mapping
+
+def finalize_annotation_file(input_file, output_file, schema_file, book_dir):
     """
     Process an annotation file by:
     1. Removing authorization tags ("user")
     2. Replacing obsolete "clue" attribute with "modif" attribute
     3. Sorting IDs in attributes of type="idrefs" and logging when order changes
     4. Removing attributes that should be disabled according to "disabledif" rules
+    5. Synchronizing lookup attributes with their reference attributes
     
     Args:
         input_file: Path to input annotation XML file
         output_file: Path to output XML file
         schema_file: Path to schema definition XML file
+        book_dir: Directory containing book files for lookup validation
     """
     # Log which file is being processed
     logging.info(f"Processing annotation file: {input_file}")
     logging.info(f"Using schema definition: {schema_file}")
+    logging.info(f"Using book directory: {book_dir}")
     logging.info(f"Output will be saved to: {output_file}")
     
     # Load the schema definition
@@ -317,6 +512,7 @@ def finalize_annotation_file(input_file, output_file, schema_file):
     root = tree.getroot()
     
     changes_made = False
+    books_cache = {}  # Cache for BookDoc instances
     
     # Remove user tags
     user_elements = root.findall('.//user')
@@ -339,6 +535,10 @@ def finalize_annotation_file(input_file, output_file, schema_file):
         removed_attrs = remove_disabled_attributes(item_elem, def_doc)
         if removed_attrs > 0:
             changes_made = True
+        
+        # Synchronize lookup attributes with their reference attributes
+        if synchronize_lookup_attributes(item_elem, def_doc, books_cache, book_dir):
+            changes_made = True
     
     # Write the modified XML to output file
     if changes_made:
@@ -353,7 +553,7 @@ def finalize_annotation_file(input_file, output_file, schema_file):
 def main():
     """Main function to handle command line arguments and process files"""
     parser = argparse.ArgumentParser(
-        description="Finalize annotation files by removing user tags, replacing obsolete 'clue' with 'modif', sorting idrefs, and removing disabled attributes"
+        description="Finalize annotation files by removing user tags, replacing obsolete 'clue' with 'modif', sorting idrefs, removing disabled attributes, and synchronizing lookup attributes"
     )
     parser.add_argument(
         "input_file",
@@ -367,6 +567,11 @@ def main():
         "-s", "--schema",
         default="teitok/config/markers_def.xml",
         help="Schema definition file (default: teitok/config/markers_def.xml)"
+    )
+    parser.add_argument(
+        "-b", "--book-dir",
+        default="teitok/01.csen_data",
+        help="Directory containing book files for lookup validation (default: teitok/01.csen_data)"
     )
     
     args = parser.parse_args()
@@ -383,11 +588,16 @@ def main():
         logging.error(f"Schema file not found: {args.schema}")
         sys.exit(1)
     
+    # Validate book directory exists
+    if not os.path.exists(args.book_dir):
+        logging.error(f"Book directory not found: {args.book_dir}")
+        sys.exit(1)
+    
     # Determine output file
     output_file = args.output if args.output else args.input_file
     
     try:
-        finalize_annotation_file(args.input_file, output_file, args.schema)
+        finalize_annotation_file(args.input_file, output_file, args.schema, args.book_dir)
         logging.info("Processing completed successfully")
     except Exception as e:
         logging.error(f"Error processing file: {e}")
