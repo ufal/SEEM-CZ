@@ -9,6 +9,7 @@ Script to finalize annotation files by:
 """
 
 import argparse
+import glob
 import logging
 import os
 import sys
@@ -354,10 +355,43 @@ def check_ids_from_same_sentence(ids, item_id, attr_name):
     
     return True
 
+def natural_sort_key(id_str):
+    """
+    Generate a sort key for natural sorting of IDs with numeric parts.
+    
+    Args:
+        id_str: ID string like "cs:book:00:s1:w10"
+    
+    Returns:
+        Tuple that can be used for natural sorting
+    """
+    import re
+    
+    # Split the ID by colons and handle each part
+    parts = id_str.split(':')
+    sort_key = []
+    
+    for part in parts:
+        # Split each part into text and numeric components
+        # This handles cases like "w10", "s1", etc.
+        tokens = re.split(r'(\d+)', part)
+        part_key = []
+        for token in tokens:
+            if token.isdigit():
+                # Convert numeric parts to integers for proper sorting
+                part_key.append(int(token))
+            else:
+                # Keep text parts as strings
+                part_key.append(token)
+        sort_key.append(tuple(part_key))
+    
+    return tuple(sort_key)
+
 def sort_idrefs_in_item(item_elem, def_doc):
     """
     Sort IDs in idrefs attributes and log when order changes.
     Only sorts if the content looks like IDs rather than text.
+    Uses natural sorting to handle numeric parts correctly (e.g., w9 < w10).
     
     Args:
         item_elem: XML element for an annotation item
@@ -379,7 +413,8 @@ def sort_idrefs_in_item(item_elem, def_doc):
                     # Check if IDs come from the same sentence
                     check_ids_from_same_sentence(unique_ids, item_elem.attrib.get('id', 'unknown'), attr_name)
                     
-                    sorted_ids = sorted(unique_ids)
+                    # Use natural sorting to handle numeric parts correctly
+                    sorted_ids = sorted(unique_ids, key=natural_sort_key)
                     sorted_value = " ".join(sorted_ids)
                     
                     if sorted_value != original_value:
@@ -483,7 +518,7 @@ def get_ref_attr_file_mapping(def_doc):
     
     return ref_attr_file_mapping
 
-def finalize_annotation_file(input_file, output_file, schema_file, book_dir):
+def finalize_annotation_file(input_file, output_file, def_doc, book_dir, books_cache=None):
     """
     Process an annotation file by:
     1. Removing authorization tags ("user")
@@ -495,35 +530,50 @@ def finalize_annotation_file(input_file, output_file, schema_file, book_dir):
     Args:
         input_file: Path to input annotation XML file
         output_file: Path to output XML file
-        schema_file: Path to schema definition XML file
+        def_doc: MarkerDocDef instance for schema definition
         book_dir: Directory containing book files for lookup validation
+        books_cache: Optional shared cache for BookDoc instances
+    
+    Returns:
+        True if changes were made to the file, False otherwise
     """
+    # Initialize cache if not provided
+    if books_cache is None:
+        books_cache = {}
+    
     # Log which file is being processed
-    logging.info(f"Processing annotation file: {input_file}")
-    logging.info(f"Using schema definition: {schema_file}")
-    logging.info(f"Using book directory: {book_dir}")
-    logging.info(f"Output will be saved to: {output_file}")
+    logging.info(f"  Input: {input_file}")
+    if output_file != input_file:
+        logging.info(f"  Output: {output_file}")
     
-    # Load the schema definition
-    def_doc = MarkerDocDef(schema_file)
+    # Validate input file exists
+    if not os.path.exists(input_file):
+        logging.error(f"Input file not found: {input_file}")
+        return False
     
-    # Parse the annotation file
-    tree = ET.parse(input_file)
-    root = tree.getroot()
+    try:
+        # Parse the annotation file
+        tree = ET.parse(input_file)
+        root = tree.getroot()
+    except Exception as e:
+        logging.error(f"Error parsing XML file {input_file}: {e}")
+        return False
     
     changes_made = False
-    books_cache = {}  # Cache for BookDoc instances
     
     # Remove user tags
     user_elements = root.findall('.//user')
     if user_elements:
         for user_elem in user_elements:
             root.remove(user_elem)
-            logging.info(f"Removed user element: {user_elem.attrib}")
+            logging.info(f"  Removed user element: {user_elem.attrib}")
             changes_made = True
     
     # Process each item element
+    item_count = 0
     for item_elem in root.findall('.//item'):
+        item_count += 1
+        
         # Replace obsolete "clue" attribute with "modif"
         if replace_clue_with_modif(item_elem):
             changes_made = True
@@ -540,15 +590,25 @@ def finalize_annotation_file(input_file, output_file, schema_file, book_dir):
         if synchronize_lookup_attributes(item_elem, def_doc, books_cache, book_dir):
             changes_made = True
     
+    logging.info(f"  Processed {item_count} annotation item(s)")
+    
     # Write the modified XML to output file
-    if changes_made:
-        # Preserve XML declaration and formatting
-        tree.write(output_file, encoding='utf-8', xml_declaration=True)
-        logging.info(f"Finalized annotation file saved to: {output_file}")
-    else:
-        logging.info("No changes needed in the annotation file")
-        # Still copy the file to output location
-        tree.write(output_file, encoding='utf-8', xml_declaration=True)
+    try:
+        if changes_made:
+            # Preserve XML declaration and formatting
+            tree.write(output_file, encoding='utf-8', xml_declaration=True)
+            logging.info(f"  ✓ Changes saved to: {output_file}")
+        else:
+            logging.info(f"  ○ No changes needed")
+            # Still copy the file to output location if different
+            if output_file != input_file:
+                tree.write(output_file, encoding='utf-8', xml_declaration=True)
+                logging.info(f"  Copied unchanged file to: {output_file}")
+    except Exception as e:
+        logging.error(f"Error writing output file {output_file}: {e}")
+        return False
+    
+    return changes_made
 
 def main():
     """Main function to handle command line arguments and process files"""
@@ -556,12 +616,12 @@ def main():
         description="Finalize annotation files by removing user tags, replacing obsolete 'clue' with 'modif', sorting idrefs, removing disabled attributes, and synchronizing lookup attributes"
     )
     parser.add_argument(
-        "input_file",
-        help="Input annotation XML file (e.g., markers_gold-cs-asi.xml)"
+        "input_pattern",
+        help="Input annotation XML file pattern (e.g., 'markers_*.xml' or 'teitok/markers/finished/*.xml'). Can be a single file or glob pattern."
     )
     parser.add_argument(
-        "-o", "--output",
-        help="Output file path (default: overwrites input file)"
+        "-o", "--output-dir",
+        help="Output directory path (default: overwrites input files in place). If specified, processed files will be saved to this directory with the same filenames."
     )
     parser.add_argument(
         "-s", "--schema",
@@ -573,15 +633,33 @@ def main():
         default="teitok/01.csen_data",
         help="Directory containing book files for lookup validation (default: teitok/01.csen_data)"
     )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Show what files would be processed without actually processing them"
+    )
     
     args = parser.parse_args()
     
     setup_logging()
     
-    # Validate input file exists
-    if not os.path.exists(args.input_file):
-        logging.error(f"Input file not found: {args.input_file}")
+    # Expand glob pattern to get list of files
+    input_files = glob.glob(args.input_pattern)
+    
+    if not input_files:
+        logging.error(f"No files found matching pattern: {args.input_pattern}")
         sys.exit(1)
+    
+    # Sort files for consistent processing order
+    input_files.sort()
+    
+    logging.info(f"Found {len(input_files)} file(s) matching pattern: {args.input_pattern}")
+    
+    if args.dry_run:
+        logging.info("Dry run mode - showing files that would be processed:")
+        for file_path in input_files:
+            logging.info(f"  Would process: {file_path}")
+        return
     
     # Validate schema file exists
     if not os.path.exists(args.schema):
@@ -593,14 +671,58 @@ def main():
         logging.error(f"Book directory not found: {args.book_dir}")
         sys.exit(1)
     
-    # Determine output file
-    output_file = args.output if args.output else args.input_file
+    # Create output directory if specified
+    if args.output_dir:
+        os.makedirs(args.output_dir, exist_ok=True)
+        logging.info(f"Output directory: {args.output_dir}")
     
-    try:
-        finalize_annotation_file(args.input_file, output_file, args.schema, args.book_dir)
-        logging.info("Processing completed successfully")
-    except Exception as e:
-        logging.error(f"Error processing file: {e}")
+    # Load schema definition once for all files
+    logging.info(f"Loading schema definition: {args.schema}")
+    def_doc = MarkerDocDef(args.schema)
+    
+    # Shared cache for BookDoc instances across all files
+    books_cache = {}
+    
+    # Track statistics
+    total_files = len(input_files)
+    processed_files = 0
+    files_with_changes = 0
+    
+    # Process each file
+    for input_file in input_files:
+        try:
+            # Determine output file path
+            if args.output_dir:
+                filename = os.path.basename(input_file)
+                output_file = os.path.join(args.output_dir, filename)
+            else:
+                output_file = input_file
+            
+            logging.info(f"Processing file {processed_files + 1}/{total_files}: {input_file}")
+            
+            # Process the file
+            changes_made = finalize_annotation_file(input_file, output_file, def_doc, args.book_dir, books_cache)
+            
+            if changes_made:
+                files_with_changes += 1
+            
+            processed_files += 1
+            
+        except Exception as e:
+            logging.error(f"Error processing file {input_file}: {e}")
+            # Continue with other files instead of exiting
+            continue
+    
+    # Print summary statistics
+    logging.info(f"Processing completed:")
+    logging.info(f"  Total files: {total_files}")
+    logging.info(f"  Successfully processed: {processed_files}")
+    logging.info(f"  Files with changes: {files_with_changes}")
+    logging.info(f"  Files without changes: {processed_files - files_with_changes}")
+    logging.info(f"  BookDoc cache size: {len(books_cache)} book(s)")
+    
+    if processed_files < total_files:
+        logging.warning(f"  Failed to process: {total_files - processed_files} file(s)")
         sys.exit(1)
 
 if __name__ == "__main__":
