@@ -128,13 +128,10 @@ class MarkerAutoCorrector:
         
         item_id = item.get('id', 'unknown')
         
-        # Placeholder for correction methods - to be implemented based on requirements
-        # Example correction methods:
-        # - self._correct_attribute_order(item, results)
-        # - self._correct_missing_attributes(item, results)
-        # - self._correct_invalid_values(item, results)
-        # - self._correct_idrefs_format(item, results)
-        
+        # Apply correction rules
+        self._check_rule_11(item, item_id, file_path, results)
+        self._check_rule_12(item, item_id, file_path, results)
+
         return results
     
     def _save_corrected_file(self, tree: ET.ElementTree, file_path: str):
@@ -263,8 +260,95 @@ class MarkerAutoCorrector:
                     f.write("APPLIED\n")
         
         logging.info(f"Report exported to {output_path}")
+    
+    def _check_rule_12(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+        """ Rule 12: Check if 'use' attribute is set to 'other' and if communication function attributes are missing.
+        
+        When use='other', the communication function (the 'commfuntype' attribute) must be specified.
+        
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+        """
+        use_value = item.get('use', '')
+        
+        # Check if use="other"
+        if use_value != 'other':
+            return
 
+        # Check for communication function attributes
+        commfuntype = item.get('commfuntype', '').strip()
+        commfunsubtype = item.get('commfunsubtype', '').strip()
+        
+        # commfuntype is missing or empty
+        if not commfuntype:
+            results['issues'].append({
+                'type': 'use_other_missing_commfuntype',
+                'severity': 'medium',
+                'item_id': item_id,
+                'message': f'use="{use_value}" but no communication function (commfuntype/commfunsubtype) specified',
+                'attribute': 'commfuntype',
+                'current_value': '',
+                'suggestion': 'Add commfuntype and commfunsubtype attribute'
+            })
+        elif not commfunsubtype:
+            results['issues'].append({
+                'type': 'use_other_missing_commfunsubtype',
+                'severity': 'medium',
+                'item_id': item_id,
+                'message': f'use="{use_value}" but no communication function (commfuntype/commfunsubtype) specified',
+                'attribute': 'commfuntype',
+                'current_value': '',
+                'suggestion': 'Add commfuntype and commfunsubtype attribute'
+            })
+            # If in fix mode, we could add a default value, but this requires manual review
+            # For now, just report the issue
+            
 
+#        # Auto-correction: remove empty commfuntype attribute (SO FAR NOT IMPLEMENTED)
+#        if self.fix_mode:
+#            del item.attrib['commfuntype']
+#            results['corrections'].append({
+#                'type': 'removed_empty_commfuntype',
+#                'item_id': item_id,
+#                'message': f'Removed empty commfuntype attribute for use="{use_value}"',
+#                'attribute': 'commfuntype'
+#            })
+#            results['modified'] = True
+
+    def _check_rule_11(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+        """ Rule 11: Check if 'use' attribute is set to 'content' and if predicate is missing.
+
+        When use='content', the predicate must be specified.
+
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+        """
+        use_value = item.get('use', '')
+
+        # Check if use="content"
+        if use_value != 'content':
+            return
+
+        # Check for "pred" attribute
+        pred = item.get('pred', '').strip()
+
+        # pred is missing or empty
+        if not pred:
+            results['issues'].append({
+                'type': 'use_content_missing_pred',
+                'severity': 'medium',
+                'item_id': item_id,
+                'message': f'use="{use_value}" but no predicate specified',
+                'attribute': 'pred',
+                'current_value': '',
+                'suggestion': 'Add pred attribute'
+            })
 
 
 
