@@ -1,12 +1,15 @@
 File	Type	Severity	Item ID	Message	Action	Status
 teitok/markers/finished/markers_gold-cs-mozna.xml	11_use_content_missing_pred	medium	ex-45495	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-mozna.xml	05_evidence_without_evidencetype	medium	ex-47993	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-mozna.xml	11_use_content_missing_pred	medium	ex-48495	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-zjevne.xml	11_use_content_missing_pred	medium	ex-81548	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-zjevne.xml	11_use_content_missing_pred	medium	ex-82357	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-zjevne.xml	11_use_content_missing_pred	medium	ex-81472	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-zjevne.xml	05_evidence_without_evidencetype	medium	ex-81007	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-zjevne.xml	11_use_content_missing_pred	medium	ex-82328	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-zjevne.xml	11_use_content_missing_pred	medium	ex-81944	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-zjevne.xml	11_use_content_missing_pred	medium	ex-81939	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-zjevne.xml	05_evidence_without_evidencetype	medium	ex-82346	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-zjevne.xml	11_use_content_missing_pred	medium	ex-81473	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-zjevne.xml	11_use_content_missing_pred	medium	ex-81942	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-zjevne.xml	11_use_content_missing_pred	medium	ex-81643	use="content" but no predicate specified	ISSUE	FOUND
@@ -27,12 +30,16 @@ teitok/markers/finished/markers_gold-cs-treba.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-cs-treba.xml	11_use_content_missing_pred	medium	ex-70236	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-treba.xml	11_use_content_missing_pred	medium	ex-65234	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nutne.xml	03_commfuntype_interr_wrong_use	medium	ex-94798	commfuntype="interr" but use is "certain" instead of "other"	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-nutne.xml	05_evidencetype_inference_with_evidence	medium	ex-94374	evidencetype="inference" but evidence is specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-nutne.xml	05_evidencetype_defined_missing_evidence	medium	ex-94719	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-nutne.xml	05_evidencetype_defined_missing_evidence	medium	ex-93937	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nutne.xml	11_use_content_missing_pred	medium	ex-94732	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nutne.xml	11_use_content_missing_pred	medium	ex-94740	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nutne.xml	11_use_content_missing_pred	medium	ex-94754	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nutne.xml	11_use_content_missing_pred	medium	ex-94381	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nutne.xml	11_use_content_missing_pred	medium	ex-94849	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nutne.xml	11_use_content_missing_pred	medium	ex-93756	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-nutne.xml	05_evidencetype_defined_missing_evidence	medium	ex-94710	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nutne.xml	12_use_other_missing_commfunsubtype	medium	ex-94393	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nutne.xml	11_use_content_missing_pred	medium	ex-94343	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nutne.xml	11_use_content_missing_pred	medium	ex-93760	use="content" but no predicate specified	ISSUE	FOUND
@@ -44,7 +51,9 @@ teitok/markers/finished/markers_gold-cs-nutne.xml	12_use_other_missing_commfunty
 teitok/markers/finished/markers_gold-cs-kazdopadne.xml	11_use_content_missing_pred	medium	ex-25753	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-jiste.xml	03_commfuntype_interr_wrong_use	medium	ex-2883	commfuntype="interr" but use is "certain" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-jiste.xml	11_use_content_missing_pred	medium	ex-6328	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-jiste.xml	05_evidencetype_defined_missing_evidence	medium	ex-6593	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-jiste.xml	11_use_content_missing_pred	medium	ex-6155	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-jiste.xml	05_evidencetype_defined_missing_evidence	medium	ex-3170	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-jasne.xml	11_use_content_missing_pred	medium	ex-27002	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-jasne.xml	11_use_content_missing_pred	medium	ex-30627	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-jasne.xml	11_use_content_missing_pred	medium	ex-30637	use="content" but no predicate specified	ISSUE	FOUND
@@ -88,8 +97,13 @@ teitok/markers/finished/markers_gold-cs-skutecne.xml	11_use_content_missing_pred
 teitok/markers/finished/markers_gold-cs-skutecne.xml	11_use_content_missing_pred	medium	ex-65272	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-skutecne.xml	11_use_content_missing_pred	medium	ex-64364	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-mozna.xml	12_use_other_missing_commfunsubtype	medium	ex-42768	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-mozna.xml	06_tfpos_ownfocus	soft	ex-38318	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-urcite.xml	06_tfpos_ownfocus	soft	ex-33357	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-urcite.xml	06_tfpos_ownfocus	soft	ex-34140	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-urcite.xml	03_commfuntype_interr_wrong_use	medium	ex-34272	commfuntype="interr" but use is "certain" instead of "other"	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-urcite.xml	06_tfpos_ownfocus	soft	ex-34272	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-urcite.xml	11_use_content_missing_pred	medium	ex-30724	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-urcite.xml	06_tfpos_ownfocus	soft	ex-32105	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	12_use_other_missing_commfunsubtype	medium	ex-94675	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	medium	ex-93894	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	12_use_other_missing_commfunsubtype	medium	ex-93848	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
@@ -98,6 +112,7 @@ teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	medium	ex-94726	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	12_use_other_missing_commfunsubtype	medium	ex-94807	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	medium	ex-94225	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-nutne.xml	05_evidence_without_evidencetype	medium	ex-93861	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	medium	ex-93986	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	medium	ex-94309	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	medium	ex-94536	use="content" but no predicate specified	ISSUE	FOUND
@@ -114,6 +129,7 @@ teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	medium	ex-94105	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	medium	ex-94664	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	12_use_other_missing_commfunsubtype	medium	ex-94239	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-nutne.xml	05_evidence_without_evidencetype	medium	ex-94731	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	12_use_other_missing_commfunsubtype	medium	ex-94700	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	medium	ex-93865	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-nutne.xml	11_use_content_missing_pred	medium	ex-94682	use="content" but no predicate specified	ISSUE	FOUND
@@ -158,6 +174,7 @@ teitok/markers/finished/markers_gold-cs-jednoznacne.xml	11_use_content_missing_p
 teitok/markers/finished/markers_gold-cs-jednoznacne.xml	11_use_content_missing_pred	medium	ex-25352	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-jednoznacne.xml	11_use_content_missing_pred	medium	ex-25731	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-jiste.xml	11_use_content_missing_pred	medium	ex-5317	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-jiste.xml	06_tfpos_ownfocus	soft	ex-4375	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-jiste.xml	11_use_content_missing_pred	medium	ex-4856	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-jiste.xml	11_use_content_missing_pred	medium	ex-8364	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-jasne.xml	11_use_content_missing_pred	medium	ex-26334	use="content" but no predicate specified	ISSUE	FOUND
@@ -198,10 +215,16 @@ teitok/markers/finished/markers_gold-en-skutecne.xml	11_use_content_missing_pred
 teitok/markers/finished/markers_gold-en-skutecne.xml	11_use_content_missing_pred	medium	ex-66697	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-opravdu.xml	03_commfuntype_interr_wrong_use	medium	ex-63133	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-opravdu.xml	03_commfuntype_interr_wrong_use	medium	ex-57449	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-opravdu.xml	06_tfpos_ownfocus	soft	ex-57449	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-opravdu.xml	03_commfuntype_interr_wrong_use	medium	ex-59848	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-opravdu.xml	11_use_content_missing_pred	medium	ex-58753	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-zrejme.xml	05_evidencetype_inference_with_evidence	medium	ex-82681	evidencetype="inference" but evidence is specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-zrejme.xml	06_tfpos_ownfocus	soft	ex-92200	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-zrejme.xml	05_evidencetype_defined_missing_evidence	medium	ex-88781	evidencetype="hearsay" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vskutku.xml	11_use_content_missing_pred	medium	ex-60477	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-vskutku.xml	05_evidencetype_inference_with_evidence	medium	ex-60473	evidencetype="inference" but evidence is specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vskutku.xml	11_use_content_missing_pred	medium	ex-60375	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-vskutku.xml	05_evidencetype_inference_with_evidence	medium	ex-60280	evidencetype="inference" but evidence is specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vskutku.xml	11_use_content_missing_pred	medium	ex-60195	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-jednoznacne.xml	11_use_content_missing_pred	medium	ex-25432	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-jednoznacne.xml	11_use_content_missing_pred	medium	ex-25749	use="content" but no predicate specified	ISSUE	FOUND
@@ -235,15 +258,43 @@ teitok/markers/finished/markers_gold-en-jednoznacne.xml	11_use_content_missing_p
 teitok/markers/finished/markers_gold-en-jednoznacne.xml	11_use_content_missing_pred	medium	ex-25397	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-jednoznacne.xml	11_use_content_missing_pred	medium	ex-25452	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-zajiste.xml	03_commfuntype_interr_wrong_use	medium	ex-80576	commfuntype="interr" but use is "certain" instead of "other"	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidencetype_defined_missing_evidence	medium	ex-59886	evidencetype="hearsay" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidencetype_defined_missing_evidence	medium	ex-60023	evidencetype="sensory" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidencetype_defined_missing_evidence	medium	ex-60326	evidencetype="hearsay" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidencetype_defined_missing_evidence	medium	ex-60321	evidencetype="hearsay" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-60323	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-60317	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-59765	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-59818	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-60104	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidencetype_defined_missing_evidence	medium	ex-60130	evidencetype="hearsay" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-60290	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-60204	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-59967	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-59873	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-59726	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-60160	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-59859	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-59929	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-60186	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-60178	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-udajne.xml	05_evidence_without_evidencetype	medium	ex-59767	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25614	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25399	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	05_evidencetype_defined_missing_evidence	medium	ex-25827	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25898	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25374	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	05_evidencetype_defined_missing_evidence	medium	ex-25747	evidencetype="sensory" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	05_evidencetype_defined_missing_evidence	medium	ex-25450	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	05_evidencetype_defined_missing_evidence	medium	ex-26117	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-26142	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	05_evidencetype_defined_missing_evidence	medium	ex-26173	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25387	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25377	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	05_evidencetype_defined_missing_evidence	medium	ex-25465	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25954	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25269	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	06_tfpos_ownfocus	soft	ex-26088	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-26009	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25995	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25979	use="content" but no predicate specified	ISSUE	FOUND
@@ -253,17 +304,22 @@ teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25559	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25324	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25838	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	05_evidencetype_defined_missing_evidence	medium	ex-26090	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25568	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25326	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-26048	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25697	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	05_evidencetype_defined_missing_evidence	medium	ex-26122	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	06_tfpos_ownfocus	soft	ex-26084	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25471	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25956	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25936	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	06_tfpos_ownfocus	soft	ex-25371	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25292	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25332	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25290	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25748	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpecne.xml	06_tfpos_ownfocus	soft	ex-26027	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-bezpecne.xml	11_use_content_missing_pred	medium	ex-25632	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-bezpecne.xml	11_use_content_missing_pred	medium	ex-26187	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-bezpecne.xml	11_use_content_missing_pred	medium	ex-25781	use="content" but no predicate specified	ISSUE	FOUND
@@ -281,6 +337,7 @@ teitok/markers/finished/markers_gold-cs-bezpecne.xml	11_use_content_missing_pred
 teitok/markers/finished/markers_gold-cs-bezpecne.xml	11_use_content_missing_pred	medium	ex-26154	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-bezpecne.xml	11_use_content_missing_pred	medium	ex-25680	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-bezpecne.xml	11_use_content_missing_pred	medium	ex-25802	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-bezpecne.xml	06_tfpos_ownfocus	soft	ex-25922	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-bezpecne.xml	11_use_content_missing_pred	medium	ex-25287	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-bezpecne.xml	11_use_content_missing_pred	medium	ex-26070	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-bezpecne.xml	11_use_content_missing_pred	medium	ex-26051	use="content" but no predicate specified	ISSUE	FOUND
@@ -339,17 +396,23 @@ teitok/markers/finished/markers_gold-cs-doopravdy.xml	11_use_content_missing_pre
 teitok/markers/finished/markers_gold-cs-doopravdy.xml	11_use_content_missing_pred	medium	ex-28006	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-doopravdy.xml	11_use_content_missing_pred	medium	ex-25335	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-doopravdy.xml	11_use_content_missing_pred	medium	ex-27893	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-pravdepodobne.xml	06_tfpos_ownfocus	soft	ex-50494	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-pravdepodobne.xml	11_use_content_missing_pred	medium	ex-50205	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	11_use_content_missing_pred	medium	ex-25758	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-doopravdy.xml	06_tfpos_ownfocus	soft	ex-27783	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	11_use_content_missing_pred	medium	ex-25628	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	11_use_content_missing_pred	medium	ex-25961	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	11_use_content_missing_pred	medium	ex-28010	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	03_commfuntype_interr_wrong_use	medium	ex-27293	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	03_commfuntype_interr_wrong_use	medium	ex-26456	commfuntype="interr" but use is "certain" instead of "other"	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-doopravdy.xml	06_tfpos_ownfocus	soft	ex-26456	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	03_commfuntype_interr_wrong_use	medium	ex-26308	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-doopravdy.xml	06_tfpos_ownfocus	soft	ex-26308	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	12_use_other_missing_commfunsubtype	medium	ex-27862	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	11_use_content_missing_pred	medium	ex-25471	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-doopravdy.xml	06_tfpos_ownfocus	soft	ex-25370	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	11_use_content_missing_pred	medium	ex-26282	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-doopravdy.xml	06_tfpos_ownfocus	soft	ex-25401	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	11_use_content_missing_pred	medium	ex-25927	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	11_use_content_missing_pred	medium	ex-27616	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-doopravdy.xml	11_use_content_missing_pred	medium	ex-26442	use="content" but no predicate specified	ISSUE	FOUND
@@ -361,18 +424,27 @@ teitok/markers/finished/markers_gold-en-fakt.xml	03_commfuntype_interr_wrong_use
 teitok/markers/finished/markers_gold-en-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-207	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-6	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-1268	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-fakt.xml	06_tfpos_ownfocus	soft	ex-922	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-500	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-1847	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-389	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-1414	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-47	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-snad.xml	11_use_content_missing_pred	medium	ex-63233	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-snad.xml	05_evidencetype_defined_missing_evidence	medium	ex-74728	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-snad.xml	11_use_content_missing_pred	medium	ex-77447	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-snad.xml	11_use_content_missing_pred	medium	ex-75568	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-snad.xml	12_use_other_missing_commfunsubtype	medium	ex-61442	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-snad.xml	11_use_content_missing_pred	medium	ex-60867	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-snad.xml	11_use_content_missing_pred	medium	ex-75234	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-urcite.xml	02_scope_member_missing	medium	ex-31136	scope="member" but no member specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-urcite.xml	05_evidencetype_defined_missing_evidence	medium	ex-32539	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-nejspis.xml	05_evidencetype_defined_missing_evidence	medium	ex-50840	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-nejspis.xml	05_evidencetype_defined_missing_evidence	medium	ex-54364	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-nejspis.xml	05_evidencetype_defined_missing_evidence	medium	ex-49969	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-nejspis.xml	05_evidencetype_defined_missing_evidence	medium	ex-49516	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-nejspis.xml	05_evidencetype_defined_missing_evidence	medium	ex-52859	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-patrne.xml	05_evidencetype_defined_missing_evidence	medium	ex-51088	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-zretelne.xml	11_use_content_missing_pred	medium	ex-92868	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-zretelne.xml	11_use_content_missing_pred	medium	ex-93543	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-zretelne.xml	11_use_content_missing_pred	medium	ex-92651	use="content" but no predicate specified	ISSUE	FOUND
@@ -413,6 +485,7 @@ teitok/markers/finished/markers_gold-en-zretelne.xml	11_use_content_missing_pred
 teitok/markers/finished/markers_gold-en-zretelne.xml	11_use_content_missing_pred	medium	ex-93185	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-zretelne.xml	11_use_content_missing_pred	medium	ex-92595	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-zretelne.xml	11_use_content_missing_pred	medium	ex-92541	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-zretelne.xml	06_tfpos_ownfocus	soft	ex-93077	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-zretelne.xml	11_use_content_missing_pred	medium	ex-93512	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	medium	ex-60501	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	medium	ex-61678	use="content" but no predicate specified	ISSUE	FOUND
@@ -421,6 +494,7 @@ teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	medium	ex-61157	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	medium	ex-60829	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	medium	ex-60195	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-tezko.xml	05_evidencetype_defined_missing_evidence	medium	ex-61836	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	medium	ex-60626	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	medium	ex-60226	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	medium	ex-60803	use="content" but no predicate specified	ISSUE	FOUND
@@ -447,11 +521,18 @@ teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	medium	ex-60883	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	medium	ex-61294	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-tezko.xml	11_use_content_missing_pred	medium	ex-59753	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-pry.xml	05_evidencetype_defined_missing_evidence	medium	ex-55528	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-pry.xml	05_evidence_without_evidencetype	medium	ex-55537	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-pry.xml	05_evidencetype_defined_missing_evidence	medium	ex-55542	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-podle_vseho.xml	12_use_other_missing_commfuntype	medium	ex-96017	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-podle_vseho.xml	06_tfpos_ownfocus	soft	ex-96074	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-podle_vseho.xml	12_use_other_missing_commfunsubtype	medium	ex-96145	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-zajiste.xml	05_evidence_without_evidencetype	medium	ex-80516	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-zajiste.xml	05_evidence_without_evidencetype	medium	ex-80279	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-66096	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-60646	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-64285	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-vazne.xml	05_evidencetype_defined_missing_evidence	medium	ex-64950	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-60376	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-62917	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-60477	use="content" but no predicate specified	ISSUE	FOUND
@@ -471,6 +552,7 @@ teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-61699	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-63044	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-66698	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-vazne.xml	05_evidencetype_defined_missing_evidence	medium	ex-66364	evidencetype="sensory" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-60507	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-66151	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-61280	use="content" but no predicate specified	ISSUE	FOUND
@@ -486,6 +568,17 @@ teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-62558	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-61647	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vazne.xml	11_use_content_missing_pred	medium	ex-59986	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-samozrejme.xml	05_evidencetype_defined_missing_evidence	medium	ex-54643	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-samozrejme.xml	06_tfpos_ownfocus	soft	ex-49908	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-samozrejme.xml	05_evidencetype_defined_missing_evidence	medium	ex-59300	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-samozrejme.xml	05_evidencetype_defined_missing_evidence	medium	ex-59089	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-samozrejme.xml	05_evidencetype_defined_missing_evidence	medium	ex-49911	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-samozrejme.xml	05_evidencetype_defined_missing_evidence	medium	ex-59140	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-samozrejme.xml	06_tfpos_ownfocus	soft	ex-59140	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-samozrejme.xml	05_evidencetype_defined_missing_evidence	medium	ex-58915	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-samozrejme.xml	06_tfpos_ownfocus	soft	ex-58305	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-samozrejme.xml	06_tfpos_ownfocus	soft	ex-59231	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-samozrejme.xml	06_tfpos_ownfocus	soft	ex-54573	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-samozrejme.xml	11_use_content_missing_pred	medium	ex-58945	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-samozrejme.xml	11_use_content_missing_pred	medium	ex-51808	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-zretelne.xml	11_use_content_missing_pred	medium	ex-93208	use="content" but no predicate specified	ISSUE	FOUND
@@ -541,6 +634,7 @@ teitok/markers/finished/markers_gold-en-vskutku.xml	11_use_content_missing_pred	
 teitok/markers/finished/markers_gold-en-vskutku.xml	11_use_content_missing_pred	medium	ex-60166	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vskutku.xml	11_use_content_missing_pred	medium	ex-59780	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vskutku.xml	11_use_content_missing_pred	medium	ex-60721	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-vskutku.xml	06_tfpos_ownfocus	soft	ex-60014	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vskutku.xml	11_use_content_missing_pred	medium	ex-59782	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vskutku.xml	11_use_content_missing_pred	medium	ex-60132	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vskutku.xml	11_use_content_missing_pred	medium	ex-60761	use="content" but no predicate specified	ISSUE	FOUND
@@ -548,6 +642,7 @@ teitok/markers/finished/markers_gold-en-vskutku.xml	11_use_content_missing_pred	
 teitok/markers/finished/markers_gold-en-vskutku.xml	11_use_content_missing_pred	medium	ex-59822	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vskutku.xml	11_use_content_missing_pred	medium	ex-59766	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-vskutku.xml	11_use_content_missing_pred	medium	ex-60316	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-ovsem.xml	06_tfpos_ownfocus	soft	ex-53255	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-pry.xml	12_use_other_missing_commfunsubtype	medium	ex-49820	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nejspis.xml	03_commfuntype_interr_wrong_use	medium	ex-55006	commfuntype="interr" but use is "certain" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-1838	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
@@ -569,6 +664,7 @@ teitok/markers/finished/markers_gold-cs-fakt.xml	03_commfuntype_interr_wrong_use
 teitok/markers/finished/markers_gold-cs-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-1788	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-574	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-fakt.xml	03_commfuntype_interr_wrong_use	medium	ex-594	commfuntype="interr" but use is "confirm" instead of "other"	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-pochopitelne.xml	05_evidence_without_evidencetype	medium	ex-49319	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-rozhodne.xml	11_use_content_missing_pred	medium	ex-49614	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-rozhodne.xml	11_use_content_missing_pred	medium	ex-51060	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-rozhodne.xml	11_use_content_missing_pred	medium	ex-52960	use="content" but no predicate specified	ISSUE	FOUND
@@ -580,6 +676,7 @@ teitok/markers/finished/markers_gold-en-rozhodne.xml	11_use_content_missing_pred
 teitok/markers/finished/markers_gold-en-rozhodne.xml	11_use_content_missing_pred	medium	ex-51308	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-rozhodne.xml	11_use_content_missing_pred	medium	ex-49468	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-tezko.xml	11_use_content_missing_pred	medium	ex-61180	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-tezko.xml	06_tfpos_ownfocus	soft	ex-62275	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-tezko.xml	11_use_content_missing_pred	medium	ex-61941	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-tezko.xml	11_use_content_missing_pred	medium	ex-62023	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-tezko.xml	11_use_content_missing_pred	medium	ex-60164	use="content" but no predicate specified	ISSUE	FOUND
@@ -612,6 +709,7 @@ teitok/markers/finished/markers_gold-cs-tezko.xml	12_use_other_missing_commfunty
 teitok/markers/finished/markers_gold-cs-tezko.xml	11_use_content_missing_pred	medium	ex-62304	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-rozhodne.xml	11_use_content_missing_pred	medium	ex-52858	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-rozhodne.xml	11_use_content_missing_pred	medium	ex-52805	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-rozhodne.xml	05_evidence_without_evidencetype	medium	ex-51378	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-rozhodne.xml	11_use_content_missing_pred	medium	ex-51981	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-rozhodne.xml	11_use_content_missing_pred	medium	ex-53480	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-rozhodne.xml	11_use_content_missing_pred	medium	ex-53687	use="content" but no predicate specified	ISSUE	FOUND
@@ -620,7 +718,9 @@ teitok/markers/finished/markers_gold-cs-rozhodne.xml	11_use_content_missing_pred
 teitok/markers/finished/markers_gold-cs-rozhodne.xml	11_use_content_missing_pred	medium	ex-53481	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-rozhodne.xml	11_use_content_missing_pred	medium	ex-52808	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-rozhodne.xml	11_use_content_missing_pred	medium	ex-53471	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-rozhodne.xml	06_tfpos_ownfocus	soft	ex-50136	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-rozhodne.xml	11_use_content_missing_pred	medium	ex-52857	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-rozhodne.xml	05_evidence_without_evidencetype	medium	ex-49689	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-evidentne.xml	11_use_content_missing_pred	medium	ex-25508	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-evidentne.xml	11_use_content_missing_pred	medium	ex-25302	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-snad.xml	12_use_other_missing_commfunsubtype	medium	ex-60012	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
@@ -628,15 +728,20 @@ teitok/markers/finished/markers_gold-cs-snad.xml	12_use_other_missing_commfunsub
 teitok/markers/finished/markers_gold-cs-snad.xml	12_use_other_missing_commfunsubtype	medium	ex-60172	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-snad.xml	12_use_other_missing_commfunsubtype	medium	ex-61388	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-snad.xml	12_use_other_missing_commfunsubtype	medium	ex-70292	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-snad.xml	05_evidence_without_evidencetype	medium	ex-60199	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-snad.xml	12_use_other_missing_commfunsubtype	medium	ex-73805	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-snad.xml	12_use_other_missing_commfunsubtype	medium	ex-78338	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-snad.xml	12_use_other_missing_commfunsubtype	medium	ex-76428	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-snad.xml	12_use_other_missing_commfunsubtype	medium	ex-76499	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-63232	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-vazne.xml	05_evidencetype_defined_missing_evidence	medium	ex-66503	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-62347	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-65662	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-62393	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-vazne.xml	05_evidence_without_evidencetype	medium	ex-66539	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-66568	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-vazne.xml	05_evidence_without_evidencetype	medium	ex-66589	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-vazne.xml	05_evidence_without_evidencetype	medium	ex-64379	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-62335	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-62671	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-64533	use="content" but no predicate specified	ISSUE	FOUND
@@ -656,6 +761,7 @@ teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-66492	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-64393	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-66544	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-vazne.xml	05_evidence_without_evidencetype	medium	ex-66528	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-62339	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-66510	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-62714	use="content" but no predicate specified	ISSUE	FOUND
@@ -668,8 +774,21 @@ teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-60248	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-65663	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-vazne.xml	11_use_content_missing_pred	medium	ex-63679	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-pochopitelne.xml	06_tfpos_ownfocus	soft	ex-50443	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-pochopitelne.xml	06_tfpos_ownfocus	soft	ex-51081	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-ovsem.xml	06_tfpos_ownfocus	soft	ex-59404	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-ovsem.xml	05_evidencetype_defined_missing_evidence	medium	ex-59409	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-ovsem.xml	06_tfpos_ownfocus	soft	ex-54720	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-bezpochyby.xml	05_evidence_without_evidencetype	medium	ex-25510	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-evidentne.xml	11_use_content_missing_pred	medium	ex-25471	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-samozrejme.xml	05_evidence_without_evidencetype	medium	ex-58689	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-samozrejme.xml	05_evidence_without_evidencetype	medium	ex-52040	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-samozrejme.xml	05_evidence_without_evidencetype	medium	ex-55918	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-samozrejme.xml	05_evidence_without_evidencetype	medium	ex-58073	evidence specified but no evidencetype defined	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-samozrejme.xml	05_evidence_without_evidencetype	medium	ex-53727	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-samozrejme.xml	11_use_content_missing_pred	medium	ex-54495	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-samozrejme.xml	06_tfpos_ownfocus	soft	ex-58227	tfpos="ownfocus" detected	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-samozrejme.xml	05_evidencetype_defined_missing_evidence	medium	ex-49649	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-prirozene.xml	11_use_content_missing_pred	medium	ex-51032	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-prirozene.xml	11_use_content_missing_pred	medium	ex-49860	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-prirozene.xml	11_use_content_missing_pred	medium	ex-50866	use="content" but no predicate specified	ISSUE	FOUND
@@ -695,17 +814,21 @@ teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-59948	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-61033	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-61040	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-stezi.xml	05_evidencetype_defined_missing_evidence	medium	ex-60764	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-60177	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-59866	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-59963	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-60501	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-stezi.xml	05_evidencetype_defined_missing_evidence	medium	ex-60984	evidencetype="sensory" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-60561	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-60972	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-stezi.xml	06_tfpos_ownfocus	soft	ex-60781	tfpos="ownfocus" detected	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-60080	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-59745	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-60652	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-61069	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-stezi.xml	11_use_content_missing_pred	medium	ex-60191	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-stezi.xml	05_evidencetype_defined_missing_evidence	medium	ex-59880	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-sotva.xml	11_use_content_missing_pred	medium	ex-60714	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-sotva.xml	11_use_content_missing_pred	medium	ex-61232	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-sotva.xml	11_use_content_missing_pred	medium	ex-60493	use="content" but no predicate specified	ISSUE	FOUND
@@ -725,13 +848,17 @@ teitok/markers/finished/markers_gold-en-sotva.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-en-sotva.xml	11_use_content_missing_pred	medium	ex-64302	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-sotva.xml	11_use_content_missing_pred	medium	ex-62239	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-nepochybne.xml	02_scope_member_missing	medium	ex-50927	scope="member" but no member specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-nepochybne.xml	05_evidencetype_inference_with_evidence	medium	ex-49988	evidencetype="inference" but evidence is specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-nepochybne.xml	05_evidence_without_evidencetype	medium	ex-50600	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-podle_vseho.xml	11_use_content_missing_pred	medium	ex-94936	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-podle_vseho.xml	11_use_content_missing_pred	medium	ex-95219	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-spis.xml	05_evidencetype_inference_with_evidence	medium	ex-67386	evidencetype="inference" but evidence is specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-spis.xml	12_use_other_missing_commfunsubtype	medium	ex-69649	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-spis.xml	03_commfuntype_interr_wrong_use	medium	ex-65409	commfuntype="interr" but use is "certain" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-spis.xml	12_use_other_missing_commfuntype	medium	ex-66746	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-spis.xml	12_use_other_missing_commfunsubtype	medium	ex-65328	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-spis.xml	11_use_content_missing_pred	medium	ex-69106	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-spis.xml	05_evidencetype_defined_missing_evidence	medium	ex-69070	evidencetype="sensory" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-opravdu.xml	11_use_content_missing_pred	medium	ex-63735	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-opravdu.xml	12_use_other_missing_commfunsubtype	medium	ex-60191	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-opravdu.xml	11_use_content_missing_pred	medium	ex-52364	use="content" but no predicate specified	ISSUE	FOUND
@@ -744,8 +871,11 @@ teitok/markers/finished/markers_gold-en-opravdu.xml	12_use_other_missing_commfun
 teitok/markers/finished/markers_gold-en-ocividne.xml	11_use_content_missing_pred	medium	ex-50855	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-ocividne.xml	11_use_content_missing_pred	medium	ex-49986	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-ocividne.xml	11_use_content_missing_pred	medium	ex-49428	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-ocividne.xml	05_evidencetype_inference_with_evidence	medium	ex-50564	evidencetype="inference" but evidence is specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-ocividne.xml	05_evidencetype_defined_missing_evidence	medium	ex-50253	evidencetype="reasoning" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-ocividne.xml	11_use_content_missing_pred	medium	ex-50866	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-ocividne.xml	11_use_content_missing_pred	medium	ex-50701	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-en-ocividne.xml	05_evidencetype_inference_with_evidence	medium	ex-49720	evidencetype="inference" but evidence is specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-ocividne.xml	11_use_content_missing_pred	medium	ex-49623	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-ocividne.xml	11_use_content_missing_pred	medium	ex-49360	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-en-ocividne.xml	11_use_content_missing_pred	medium	ex-50119	use="content" but no predicate specified	ISSUE	FOUND
@@ -772,6 +902,7 @@ teitok/markers/finished/markers_gold-cs-bezpochyby.xml	03_commfuntype_interr_wro
 teitok/markers/finished/markers_gold-cs-bezpochyby.xml	03_commfuntype_interr_wrong_use	medium	ex-26053	commfuntype="interr" but use is "certain" instead of "other"	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-60579	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-61182	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-stezi.xml	05_evidence_without_evidencetype	medium	ex-61028	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-61094	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-59994	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-60726	use="content" but no predicate specified	ISSUE	FOUND
@@ -782,6 +913,7 @@ teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-60474	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-60725	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-61161	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-stezi.xml	05_evidence_without_evidencetype	medium	ex-61167	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-61166	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-61164	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-61192	use="content" but no predicate specified	ISSUE	FOUND
@@ -796,6 +928,7 @@ teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-60600	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-59990	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-61095	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-stezi.xml	05_evidence_without_evidencetype	medium	ex-60597	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-61185	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-60578	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-60546	use="content" but no predicate specified	ISSUE	FOUND
@@ -808,6 +941,7 @@ teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	me
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-60582	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-61188	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-stezi.xml	11_use_content_missing_pred	medium	ex-61193	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-stezi.xml	05_evidence_without_evidencetype	medium	ex-61169	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-sotva.xml	12_use_other_missing_commfuntype	medium	ex-63071	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-sotva.xml	12_use_other_missing_commfuntype	medium	ex-65855	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-sotva.xml	12_use_other_missing_commfuntype	medium	ex-62195	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
@@ -831,12 +965,14 @@ teitok/markers/finished/markers_gold-cs-sotva.xml	12_use_other_missing_commfunty
 teitok/markers/finished/markers_gold-cs-sotva.xml	12_use_other_missing_commfuntype	medium	ex-65793	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-sotva.xml	11_use_content_missing_pred	medium	ex-60343	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-sotva.xml	12_use_other_missing_commfuntype	medium	ex-66406	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-ocividne.xml	05_evidencetype_defined_missing_evidence	medium	ex-50155	evidencetype="sensory" but no evidence specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-ocividne.xml	12_use_other_missing_commfunsubtype	medium	ex-50167	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-ocividne.xml	11_use_content_missing_pred	medium	ex-50168	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-ocividne.xml	11_use_content_missing_pred	medium	ex-50784	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-asi.xml	11_use_content_missing_pred	medium	ex-23149	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-asi.xml	12_use_other_missing_commfunsubtype	medium	ex-4759	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-asi.xml	11_use_content_missing_pred	medium	ex-10595	use="content" but no predicate specified	ISSUE	FOUND
+teitok/markers/finished/markers_gold-cs-asi.xml	05_evidence_without_evidencetype	medium	ex-6720	evidence specified but no evidencetype defined	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-asi.xml	11_use_content_missing_pred	medium	ex-1756	use="content" but no predicate specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-asi.xml	12_use_other_missing_commfunsubtype	medium	ex-24035	use="other" but no communication function (commfuntype/commfunsubtype) specified	ISSUE	FOUND
 teitok/markers/finished/markers_gold-cs-asi.xml	11_use_content_missing_pred	medium	ex-10982	use="content" but no predicate specified	ISSUE	FOUND

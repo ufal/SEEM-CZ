@@ -131,6 +131,8 @@ class MarkerAutoCorrector:
         # Apply correction rules
         self._check_rule_02(item, item_id, file_path, results)
         self._check_rule_03(item, item_id, file_path, results)
+        self._check_rule_05(item, item_id, file_path, results)
+        self._check_rule_06(item, item_id, file_path, results)
         self._check_rule_11(item, item_id, file_path, results)
         self._check_rule_12(item, item_id, file_path, results)
 
@@ -337,7 +339,80 @@ class MarkerAutoCorrector:
                 'current_value': use_value,
                 'suggestion': 'Change use to "other"'
             })
-    
+
+    def _check_rule_05(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+        """ Rule 5: Check if 'evidencetype' is defined and is not 'inference' and 'evidence' is defined.
+
+        Specified evidencetype is not 'inference' iff the evidence is specified.
+
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+        """
+        evidencetype_value = item.get('evidencetype', '').strip()
+        evidence_value = item.get('evidence', '').strip()
+
+        if evidencetype_value and evidencetype_value != 'inference' and not evidence_value:
+            results['issues'].append({
+                'type': '05_evidencetype_defined_missing_evidence',
+                'severity': 'medium',
+                'item_id': item_id,
+                'message': f'evidencetype="{evidencetype_value}" but no evidence specified',
+                'attribute': 'evidence',
+                'current_value': '',
+                'suggestion': 'Add evidence attribute'
+            })
+        elif not evidencetype_value and evidence_value:
+            results['issues'].append({
+                'type': '05_evidence_without_evidencetype',
+                'severity': 'medium',
+                'item_id': item_id,
+                'message': f'evidence specified but no evidencetype defined',
+                'attribute': 'evidencetype',
+                'current_value': '',
+                'suggestion': 'Add evidencetype attribute'
+            })
+        elif evidencetype_value == 'inference' and evidence_value:
+            results['issues'].append({
+                'type': '05_evidencetype_inference_with_evidence',
+                'severity': 'medium',
+                'item_id': item_id,
+                'message': f'evidencetype="{evidencetype_value}" but evidence is specified',
+                'attribute': 'evidencetype',
+                'current_value': evidencetype_value,
+                'suggestion': 'Remove evidencetype attribute'
+            })
+
+    def _check_rule_06(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+        """ Rule 06: List all occurrences of tfpos='ownfocus'.
+
+        When tfpos='ownfocus', it should be verified manually.
+
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+        """
+        tfpos_value = item.get('tfpos', '')
+
+        # Check if tfpos="ownfocus"
+        if tfpos_value != 'ownfocus':
+            return
+        
+        # Report the occurrence     
+        results['issues'].append({
+            'type': '06_tfpos_ownfocus',
+            'severity': 'soft',
+            'item_id': item_id,
+            'message': f'tfpos="{tfpos_value}" detected',
+            'attribute': 'tfpos',
+            'current_value': tfpos_value,
+            'suggestion': 'Verify this occurrence manually'
+        })
+
     def _check_rule_11(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
         """ Rule 11: Check if 'use' attribute is set to 'content' and if predicate is missing.
 
@@ -509,7 +584,8 @@ Examples:
     # Show issue breakdown
     if all_results['summary']['issue_types']:
         print(f"\nIssue breakdown:")
-        for issue_type, count in all_results['summary']['issue_types'].items():
+        for issue_type in sorted(all_results['summary']['issue_types'].keys()):
+            count = all_results['summary']['issue_types'][issue_type]
             print(f"  {issue_type}: {count}")
     
     # Show correction breakdown
