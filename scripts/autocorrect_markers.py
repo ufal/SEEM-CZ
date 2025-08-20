@@ -129,6 +129,7 @@ class MarkerAutoCorrector:
         item_id = item.get('id', 'unknown')
         
         # Apply correction rules
+        self._check_rule_2(item, item_id, file_path, results)
         self._check_rule_11(item, item_id, file_path, results)
         self._check_rule_12(item, item_id, file_path, results)
 
@@ -261,6 +262,69 @@ class MarkerAutoCorrector:
         
         logging.info(f"Report exported to {output_path}")
     
+    def _check_rule_2(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+        """ Rule 2: Check if 'scope' attribute is set to 'member' and if the member is missing.
+        
+        When scope='member', the member must be specified.
+        
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+        """
+        scope_value = item.get('scope', '')
+
+        # Check if scope="member"
+        if scope_value != 'member':
+            return
+
+        # Check for member attributes
+        member = item.get('member', '').strip()
+
+        # member is missing or empty
+        if not member:
+            results['issues'].append({
+                'type': '02_scope_member_missing',
+                'severity': 'medium',
+                'item_id': item_id,
+                'message': f'scope="{scope_value}" but no member specified',
+                'attribute': 'member',
+                'current_value': '',
+                'suggestion': 'Add member attribute'
+            })
+    def _check_rule_11(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+        """ Rule 11: Check if 'use' attribute is set to 'content' and if predicate is missing.
+
+        When use='content', the predicate must be specified.
+
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+        """
+        use_value = item.get('use', '')
+
+        # Check if use="content"
+        if use_value != 'content':
+            return
+
+        # Check for "pred" attribute
+        pred = item.get('pred', '').strip()
+
+        # pred is missing or empty
+        if not pred:
+            results['issues'].append({
+                'type': '11_use_content_missing_pred',
+                'severity': 'medium',
+                'item_id': item_id,
+                'message': f'use="{use_value}" but no predicate specified',
+                'attribute': 'pred',
+                'current_value': '',
+                'suggestion': 'Add pred attribute'
+            })
+
     def _check_rule_12(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
         """ Rule 12: Check if 'use' attribute is set to 'other' and if communication function attributes are missing.
         
@@ -285,7 +349,7 @@ class MarkerAutoCorrector:
         # commfuntype is missing or empty
         if not commfuntype:
             results['issues'].append({
-                'type': 'use_other_missing_commfuntype',
+                'type': '12_use_other_missing_commfuntype',
                 'severity': 'medium',
                 'item_id': item_id,
                 'message': f'use="{use_value}" but no communication function (commfuntype/commfunsubtype) specified',
@@ -295,7 +359,7 @@ class MarkerAutoCorrector:
             })
         elif not commfunsubtype:
             results['issues'].append({
-                'type': 'use_other_missing_commfunsubtype',
+                'type': '12_use_other_missing_commfunsubtype',
                 'severity': 'medium',
                 'item_id': item_id,
                 'message': f'use="{use_value}" but no communication function (commfuntype/commfunsubtype) specified',
@@ -317,38 +381,6 @@ class MarkerAutoCorrector:
 #                'attribute': 'commfuntype'
 #            })
 #            results['modified'] = True
-
-    def _check_rule_11(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
-        """ Rule 11: Check if 'use' attribute is set to 'content' and if predicate is missing.
-
-        When use='content', the predicate must be specified.
-
-        Args:
-            item: XML item element
-            item_id: Item identifier
-            file_path: Source file path
-            results: Results dictionary to update
-        """
-        use_value = item.get('use', '')
-
-        # Check if use="content"
-        if use_value != 'content':
-            return
-
-        # Check for "pred" attribute
-        pred = item.get('pred', '').strip()
-
-        # pred is missing or empty
-        if not pred:
-            results['issues'].append({
-                'type': 'use_content_missing_pred',
-                'severity': 'medium',
-                'item_id': item_id,
-                'message': f'use="{use_value}" but no predicate specified',
-                'attribute': 'pred',
-                'current_value': '',
-                'suggestion': 'Add pred attribute'
-            })
 
 
 
