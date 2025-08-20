@@ -129,7 +129,8 @@ class MarkerAutoCorrector:
         item_id = item.get('id', 'unknown')
         
         # Apply correction rules
-        self._check_rule_2(item, item_id, file_path, results)
+        self._check_rule_02(item, item_id, file_path, results)
+        self._check_rule_03(item, item_id, file_path, results)
         self._check_rule_11(item, item_id, file_path, results)
         self._check_rule_12(item, item_id, file_path, results)
 
@@ -262,7 +263,7 @@ class MarkerAutoCorrector:
         
         logging.info(f"Report exported to {output_path}")
     
-    def _check_rule_2(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+    def _check_rule_02(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
         """ Rule 2: Check if 'scope' attribute is set to 'member' and if the member is missing.
         
         When scope='member', the member must be specified.
@@ -293,6 +294,50 @@ class MarkerAutoCorrector:
                 'current_value': '',
                 'suggestion': 'Add member attribute'
             })
+            
+    def _check_rule_03(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+        """ Rule 2: Check if 'commfuntype' attribute is set to 'interr' and if the use is not 'other'.
+        
+        When commfuntype='interr', the use is likely set to 'other'. We want to list all occurrences where this is not the case.
+        
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+        """
+        commfuntype_value = item.get('commfuntype', '')
+
+        # Check if commfuntype="interr"
+        if commfuntype_value != 'interr':
+            return
+
+        # Check for the use attribute
+        use_value = item.get('use', '').strip()
+
+        # use is missing or empty
+        if not use_value:
+            results['issues'].append({
+                'type': '03_commfuntype_interr_missing_use',
+                'severity': 'soft',
+                'item_id': item_id,
+                'message': f'commfuntype="{commfuntype_value}" but no use specified',
+                'attribute': 'use',
+                'current_value': '',
+                'suggestion': 'Add use attribute'
+            })
+        # If use is not 'other', report it
+        elif use_value != 'other':
+            results['issues'].append({
+                'type': '03_commfuntype_interr_wrong_use',
+                'severity': 'medium',
+                'item_id': item_id,
+                'message': f'commfuntype="{commfuntype_value}" but use is "{use_value}" instead of "other"',
+                'attribute': 'use',
+                'current_value': use_value,
+                'suggestion': 'Change use to "other"'
+            })
+    
     def _check_rule_11(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
         """ Rule 11: Check if 'use' attribute is set to 'content' and if predicate is missing.
 
