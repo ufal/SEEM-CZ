@@ -237,18 +237,22 @@ class MarkerAutoCorrector:
         """
         with open(output_path, 'w', encoding='utf-8') as f:
             # Write header
-            f.write("File\tType\tSeverity\tItem ID\tMessage\tAction\tStatus\n")
+            #f.write("TEITOK-URL\tFile\tType\tSeverity\tItem ID\tMessage\tAction\tStatus\n")
+            f.write("TEITOK-URL\tType\tSeverity\tMessage\tAction\tStatus\n")
             
             # Write results for each file
             for file_result in results['files_processed']:
                 file_path = file_result['file']
+                file_base = os.path.basename(file_path)
                 
                 # Write issues
                 for issue in file_result['issues']:
-                    f.write(f"{file_path}\t")
+                    teitok_url = f"https://quest.ms.mff.cuni.cz/teitok-dev/teitok/eemc/index.php?action=alignann&annotation=markers&aid={file_base}&annid={issue.get('item_id', '')}"
+                    f.write(f"{teitok_url}\t")
+                    #f.write(f"{file_path}\t")
                     f.write(f"{issue.get('type', '')}\t")
                     f.write(f"{issue.get('severity', '')}\t")
-                    f.write(f"{issue.get('item_id', '')}\t")
+                    #f.write(f"{issue.get('item_id', '')}\t")
                     f.write(f"{issue.get('message', '')}\t")
                     f.write("ISSUE\t")
                     f.write("FOUND\n")
