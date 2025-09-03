@@ -32,10 +32,11 @@ from datetime import datetime
 # Import our existing modules
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 try:
-    from markerdoc import MarkerDoc
+    from markerdoc import MarkerDoc, MarkerDocCollection
 except ImportError:
     logging.warning("markerdoc module not available, some features may be limited")
     MarkerDoc = None
+    MarkerDocCollection = None
 
 
 class MarkerAutoCorrector:
@@ -127,14 +128,15 @@ class MarkerAutoCorrector:
         }
         
         item_id = item.get('id', 'unknown')
+        book_id = item.get('xml', 'unknown')
         
         # Apply correction rules
-        self._check_rule_02(item, item_id, file_path, results)
-        self._check_rule_03(item, item_id, file_path, results)
-        self._check_rule_05(item, item_id, file_path, results)
-        self._check_rule_06(item, item_id, file_path, results)
-        self._check_rule_11(item, item_id, file_path, results)
-        self._check_rule_12(item, item_id, file_path, results)
+        self._check_rule_02(item, item_id, file_path, results, book_id)
+        self._check_rule_03(item, item_id, file_path, results, book_id)
+        self._check_rule_05(item, item_id, file_path, results, book_id)
+        self._check_rule_06(item, item_id, file_path, results, book_id)
+        self._check_rule_11(item, item_id, file_path, results, book_id)
+        self._check_rule_12(item, item_id, file_path, results, book_id)
 
         return results
     
@@ -155,7 +157,7 @@ class MarkerAutoCorrector:
         logging.info(f"Saved corrected file: {file_path}")
     
     def process_directory(self, directory: str, pattern: str = "*.xml") -> Dict[str, Any]:
-        """Process all XML files in a directory.
+        """Process all XML files in a directory, grouped by book ID.
         
         Args:
             directory: Directory path to process
@@ -173,6 +175,115 @@ class MarkerAutoCorrector:
         
         logging.info(f"Found {len(xml_files)} XML files to process")
         
+        if not xml_files:
+            return {
+                'files_processed': [],
+                'total_issues': 0,
+                'total_corrections': 0,
+                'files_modified': 0,
+                'summary': {}
+            }
+        
+        # Create a collection of all marker documents
+        if MarkerDocCollection is None:
+            logging.warning("MarkerDocCollection not available, falling back to file-by-file processing")
+            return self._process_directory_file_by_file(xml_files)
+        
+        logging.info("Loading all marker documents...")
+        marker_collection = MarkerDocCollection([str(f) for f in xml_files])
+        
+        logging.info(f"Loaded {marker_collection.get_file_count()} marker documents with {marker_collection.get_total_item_count()} total items")
+        
+        # Group items by book ID
+        items_by_book = marker_collection.get_all_items_grouped_by_book()
+        book_ids = sorted(items_by_book.keys())
+        
+        logging.info(f"Found {len(book_ids)} unique books referenced by items")
+        
+        all_results = {
+            'files_processed': [],
+            'books_processed': [],
+            'total_issues': 0,
+            'total_corrections': 0,
+            'files_modified': 0,
+            'summary': {}
+        }
+        
+        # Track which files have been modified
+        modified_files = set()
+        file_results = {}  # file_path -> results
+        
+        # Process items book by book
+        for book_id in book_ids:
+            book_items = items_by_book[book_id]
+            logging.info(f"Processing book '{book_id}' with {len(book_items)} items")
+            
+            book_results = {
+                'book_id': book_id,
+                'items_processed': len(book_items),
+                'issues': [],
+                'corrections': [],
+                'files_affected': set()
+            }
+            
+            # Process all items for this book
+            for file_path, item_element, marker_doc in book_items:
+                # Initialize file results if needed
+                if file_path not in file_results:
+                    file_results[file_path] = {
+                        'file': file_path,
+                        'issues': [],
+                        'corrections': [],
+                        'modified': False
+                    }
+                
+                # Process the item
+                item_results = self._process_item(item_element, file_path)
+                
+                # Accumulate results
+                file_results[file_path]['issues'].extend(item_results['issues'])
+                file_results[file_path]['corrections'].extend(item_results['corrections'])
+                if item_results['modified']:
+                    file_results[file_path]['modified'] = True
+                    modified_files.add(file_path)
+                
+                # Track book-level results
+                book_results['issues'].extend(item_results['issues'])
+                book_results['corrections'].extend(item_results['corrections'])
+                book_results['files_affected'].add(file_path)
+            
+            all_results['books_processed'].append(book_results)
+            all_results['total_issues'] += len(book_results['issues'])
+            all_results['total_corrections'] += len(book_results['corrections'])
+        
+        # Save modified files
+        if self.fix_mode:
+            for file_path in modified_files:
+                try:
+                    marker_doc = marker_collection.marker_docs[file_path]
+                    self._save_corrected_file(marker_doc.xml, file_path)
+                    logging.info(f"Saved corrections to {file_path}")
+                except Exception as e:
+                    logging.error(f"Failed to save {file_path}: {e}")
+        
+        # Convert file results to list for compatibility
+        all_results['files_processed'] = list(file_results.values())
+        all_results['files_modified'] = len(modified_files)
+        
+        # Generate summary
+        all_results['summary'] = self._generate_summary(all_results)
+        
+        return all_results
+    
+    def _process_directory_file_by_file(self, xml_files) -> Dict[str, Any]:
+        """Fallback method for file-by-file processing when MarkerDocCollection is not available.
+        
+        Args:
+            xml_files: List of XML file paths
+            
+        Returns:
+            Summary of all processing results
+        """
         all_results = {
             'files_processed': [],
             'total_issues': 0,
@@ -212,6 +323,13 @@ class MarkerAutoCorrector:
             'total_issues': results['total_issues'],
             'total_corrections': results['total_corrections']
         }
+        
+        # Add book-level statistics if available
+        if 'books_processed' in results:
+            summary['total_books'] = len(results['books_processed'])
+            summary['books_with_issues'] = sum(1 for b in results['books_processed'] if b['issues'])
+            total_items = sum(b['items_processed'] for b in results['books_processed'])
+            summary['total_items'] = total_items
         
         # Count issue types
         issue_types = Counter()
@@ -259,7 +377,9 @@ class MarkerAutoCorrector:
                 
                 # Write corrections
                 for correction in file_result['corrections']:
+                    book_id = correction.get('book_id', '')
                     f.write(f"{file_path}\t")
+                    f.write(f"{book_id}\t")
                     f.write(f"{correction.get('type', '')}\t")
                     f.write("INFO\t")
                     f.write(f"{correction.get('item_id', '')}\t")
@@ -269,7 +389,7 @@ class MarkerAutoCorrector:
         
         logging.info(f"Report exported to {output_path}")
     
-    def _check_rule_02(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+    def _check_rule_02(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
         """ Rule 2: Check if 'scope' attribute is set to 'member' and if the member is missing.
         
         When scope='member', the member must be specified.
@@ -279,6 +399,7 @@ class MarkerAutoCorrector:
             item_id: Item identifier
             file_path: Source file path
             results: Results dictionary to update
+            book_id: Book identifier
         """
         scope_value = item.get('scope', '')
 
@@ -295,14 +416,15 @@ class MarkerAutoCorrector:
                 'type': '02_scope_member_missing',
                 'severity': 'medium',
                 'item_id': item_id,
+                'book_id': book_id,
                 'message': f'scope="{scope_value}" but no member specified',
                 'attribute': 'member',
                 'current_value': '',
                 'suggestion': 'Add member attribute'
             })
             
-    def _check_rule_03(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
-        """ Rule 2: Check if 'commfuntype' attribute is set to 'interr' and if the use is not 'other'.
+    def _check_rule_03(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
+        """ Rule 3: Check if 'commfuntype' attribute is set to 'interr' and if the use is not 'other'.
         
         When commfuntype='interr', the use is likely set to 'other'. We want to list all occurrences where this is not the case.
         
@@ -311,6 +433,7 @@ class MarkerAutoCorrector:
             item_id: Item identifier
             file_path: Source file path
             results: Results dictionary to update
+            book_id: Book identifier
         """
         commfuntype_value = item.get('commfuntype', '')
 
@@ -327,6 +450,7 @@ class MarkerAutoCorrector:
                 'type': '03_commfuntype_interr_missing_use',
                 'severity': 'soft',
                 'item_id': item_id,
+                'book_id': book_id,
                 'message': f'commfuntype="{commfuntype_value}" but no use specified',
                 'attribute': 'use',
                 'current_value': '',
@@ -338,13 +462,14 @@ class MarkerAutoCorrector:
                 'type': '03_commfuntype_interr_wrong_use',
                 'severity': 'medium',
                 'item_id': item_id,
+                'book_id': book_id,
                 'message': f'commfuntype="{commfuntype_value}" but use is "{use_value}" instead of "other"',
                 'attribute': 'use',
                 'current_value': use_value,
                 'suggestion': 'Change use to "other"'
             })
 
-    def _check_rule_05(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+    def _check_rule_05(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
         """ Rule 5: Check if 'evidencetype' is defined and is not 'inference' and 'evidence' is defined.
 
         Specified evidencetype is not 'inference' iff the evidence is specified.
@@ -354,6 +479,7 @@ class MarkerAutoCorrector:
             item_id: Item identifier
             file_path: Source file path
             results: Results dictionary to update
+            book_id: Book identifier
         """
         evidencetype_value = item.get('evidencetype', '').strip()
         evidence_value = item.get('evidence', '').strip()
@@ -363,6 +489,7 @@ class MarkerAutoCorrector:
                 'type': '05_evidencetype_defined_missing_evidence',
                 'severity': 'medium',
                 'item_id': item_id,
+                'book_id': book_id,
                 'message': f'evidencetype="{evidencetype_value}" but no evidence specified',
                 'attribute': 'evidence',
                 'current_value': '',
@@ -373,6 +500,7 @@ class MarkerAutoCorrector:
                 'type': '05_evidence_without_evidencetype',
                 'severity': 'medium',
                 'item_id': item_id,
+                'book_id': book_id,
                 'message': f'evidence specified but no evidencetype defined',
                 'attribute': 'evidencetype',
                 'current_value': '',
@@ -383,13 +511,14 @@ class MarkerAutoCorrector:
                 'type': '05_evidencetype_inference_with_evidence',
                 'severity': 'medium',
                 'item_id': item_id,
+                'book_id': book_id,
                 'message': f'evidencetype="{evidencetype_value}" but evidence is specified',
                 'attribute': 'evidencetype',
                 'current_value': evidencetype_value,
                 'suggestion': 'Remove evidencetype attribute'
             })
 
-    def _check_rule_06(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+    def _check_rule_06(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
         """ Rule 06: List all occurrences of tfpos='ownfocus'.
 
         When tfpos='ownfocus', it should be verified manually.
@@ -399,6 +528,7 @@ class MarkerAutoCorrector:
             item_id: Item identifier
             file_path: Source file path
             results: Results dictionary to update
+            book_id: Book identifier
         """
         tfpos_value = item.get('tfpos', '')
 
@@ -411,13 +541,14 @@ class MarkerAutoCorrector:
             'type': '06_tfpos_ownfocus',
             'severity': 'soft',
             'item_id': item_id,
+            'book_id': book_id,
             'message': f'tfpos="{tfpos_value}" detected',
             'attribute': 'tfpos',
             'current_value': tfpos_value,
             'suggestion': 'Verify this occurrence manually'
         })
 
-    def _check_rule_11(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+    def _check_rule_11(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
         """ Rule 11: Check if 'use' attribute is set to 'content' and if predicate is missing.
 
         When use='content', the predicate must be specified.
@@ -427,6 +558,7 @@ class MarkerAutoCorrector:
             item_id: Item identifier
             file_path: Source file path
             results: Results dictionary to update
+            book_id: Book identifier
         """
         use_value = item.get('use', '')
 
@@ -443,13 +575,14 @@ class MarkerAutoCorrector:
                 'type': '11_use_content_missing_pred',
                 'severity': 'medium',
                 'item_id': item_id,
+                'book_id': book_id,
                 'message': f'use="{use_value}" but no predicate specified',
                 'attribute': 'pred',
                 'current_value': '',
                 'suggestion': 'Add pred attribute'
             })
 
-    def _check_rule_12(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any]):
+    def _check_rule_12(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
         """ Rule 12: Check if 'use' attribute is set to 'other' and if communication function attributes are missing.
         
         When use='other', the communication function (the 'commfuntype' attribute) must be specified.
@@ -459,6 +592,7 @@ class MarkerAutoCorrector:
             item_id: Item identifier
             file_path: Source file path
             results: Results dictionary to update
+            book_id: Book identifier
         """
         use_value = item.get('use', '')
         
@@ -476,6 +610,7 @@ class MarkerAutoCorrector:
                 'type': '12_use_other_missing_commfuntype',
                 'severity': 'medium',
                 'item_id': item_id,
+                'book_id': book_id,
                 'message': f'use="{use_value}" but no communication function (commfuntype/commfunsubtype) specified',
                 'attribute': 'commfuntype',
                 'current_value': '',
@@ -486,6 +621,7 @@ class MarkerAutoCorrector:
                 'type': '12_use_other_missing_commfunsubtype',
                 'severity': 'medium',
                 'item_id': item_id,
+                'book_id': book_id,
                 'message': f'use="{use_value}" but no communication function (commfuntype/commfunsubtype) specified',
                 'attribute': 'commfuntype',
                 'current_value': '',
@@ -578,6 +714,13 @@ Examples:
     print(f"\nProcessing Summary:")
     print(f"Files processed: {all_results['summary']['total_files']}")
     print(f"Files with issues: {all_results['summary']['files_with_issues']}")
+    
+    # Show book-level statistics if available
+    if 'total_books' in all_results['summary']:
+        print(f"Books processed: {all_results['summary']['total_books']}")
+        print(f"Books with issues: {all_results['summary']['books_with_issues']}")
+        print(f"Total items processed: {all_results['summary']['total_items']}")
+    
     if args.fix:
         print(f"Files corrected: {all_results['summary']['files_corrected']}")
         print(f"Total corrections applied: {all_results['summary']['total_corrections']}")

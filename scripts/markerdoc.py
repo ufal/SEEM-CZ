@@ -83,3 +83,83 @@ class MarkerDocDef:
         if ref:
             names = [name for name in names if self._ref_index[name] == ref]
         return names
+
+class MarkerDocCollection:
+    """Collection of multiple MarkerDoc instances for cross-file book grouping."""
+    
+    def __init__(self, file_paths=None):
+        """Initialize collection with optional list of file paths.
+        
+        Args:
+            file_paths: List of paths to marker XML files
+        """
+        self.marker_docs = {}  # file_path -> MarkerDoc
+        self.file_paths = file_paths or []
+        self._book_items_cache = None
+        
+        # Load files if provided
+        for file_path in self.file_paths:
+            self.add_file(file_path)
+    
+    def add_file(self, file_path):
+        """Add a marker file to the collection.
+        
+        Args:
+            file_path: Path to marker XML file
+        """
+        try:
+            self.marker_docs[file_path] = MarkerDoc(file_path)
+            self._book_items_cache = None  # Invalidate cache
+        except Exception as e:
+            logging.error(f"Failed to load marker file {file_path}: {e}")
+    
+    def get_all_book_ids(self):
+        """Get all unique book IDs across all marker documents.
+        
+        Returns:
+            Set of book IDs
+        """
+        all_book_ids = set()
+        for marker_doc in self.marker_docs.values():
+            all_book_ids.update(marker_doc.booklist)
+        return all_book_ids
+    
+    def get_items_by_book_id(self, book_id):
+        """Get all items referencing a specific book across all marker documents.
+        
+        Args:
+            book_id: Book identifier
+            
+        Returns:
+            List of tuples (file_path, item_element, marker_doc)
+        """
+        items = []
+        for file_path, marker_doc in self.marker_docs.items():
+            book_items = marker_doc.annots_by_bookid(book_id)
+            for item in book_items:
+                items.append((file_path, item, marker_doc))
+        return items
+    
+    def get_all_items_grouped_by_book(self):
+        """Get all items grouped by book ID across all marker documents.
+        
+        Returns:
+            Dict mapping book_id -> list of (file_path, item_element, marker_doc) tuples
+        """
+        if self._book_items_cache is not None:
+            return self._book_items_cache
+        
+        book_items = {}
+        for book_id in self.get_all_book_ids():
+            book_items[book_id] = self.get_items_by_book_id(book_id)
+        
+        self._book_items_cache = book_items
+        return book_items
+    
+    def get_file_count(self):
+        """Get number of loaded marker files."""
+        return len(self.marker_docs)
+    
+    def get_total_item_count(self):
+        """Get total number of items across all files."""
+        return sum(len(doc.annot_elems) for doc in self.marker_docs.values())
