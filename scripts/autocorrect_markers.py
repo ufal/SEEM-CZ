@@ -22,6 +22,7 @@ import xml.etree.ElementTree as ET
 import os
 import sys
 import logging
+import gc
 from collections import defaultdict, Counter
 from typing import Dict, List, Set, Tuple, Optional, Any
 import re
@@ -33,26 +34,30 @@ from datetime import datetime
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 try:
     from markerdoc import MarkerDoc, MarkerDocCollection
+    from bookdoc import BookDoc
 except ImportError:
-    logging.warning("markerdoc module not available, some features may be limited")
+    logging.warning("markerdoc or bookdoc module not available, some features may be limited")
     MarkerDoc = None
     MarkerDocCollection = None
+    BookDoc = None
 
 
 class MarkerAutoCorrector:
     """Auto-corrector for finalized marker files."""
     
-    def __init__(self, schema_path: str, fix_mode: bool = False, create_backup: bool = True):
+    def __init__(self, schema_path: str, fix_mode: bool = False, create_backup: bool = True, book_dir: str = ""):
         """Initialize the auto-corrector.
         
         Args:
             schema_path: Path to the schema definition file
             fix_mode: If True, apply corrections; if False, only report issues
             create_backup: If True, create backup files before making changes
+            book_dir: Directory containing book XML files for BookDoc access
         """
         self.schema_path = schema_path
         self.fix_mode = fix_mode
         self.create_backup = create_backup
+        self.book_dir = book_dir or ""
         
         # Load schema if available
         self.schema_doc = None
@@ -91,7 +96,7 @@ class MarkerAutoCorrector:
             # Process each item
             items = root.findall('.//item')
             for item in items:
-                item_results = self._process_item(item, file_path)
+                item_results = self._process_item(item, file_path, bookdoc=None)
                 results['issues'].extend(item_results['issues'])
                 results['corrections'].extend(item_results['corrections'])
                 if item_results['modified']:
@@ -111,12 +116,13 @@ class MarkerAutoCorrector:
         
         return results
     
-    def _process_item(self, item: ET.Element, file_path: str) -> Dict[str, Any]:
+    def _process_item(self, item: ET.Element, file_path: str, bookdoc=None) -> Dict[str, Any]:
         """Process a single item element.
         
         Args:
             item: XML item element
             file_path: Path to the source file
+            bookdoc: BookDoc instance for additional context
             
         Returns:
             Dictionary with issues found and corrections applied
@@ -131,12 +137,12 @@ class MarkerAutoCorrector:
         book_id = item.get('xml', 'unknown')
         
         # Apply correction rules
-        self._check_rule_02(item, item_id, file_path, results, book_id)
-        self._check_rule_03(item, item_id, file_path, results, book_id)
-        self._check_rule_05(item, item_id, file_path, results, book_id)
-        self._check_rule_06(item, item_id, file_path, results, book_id)
-        self._check_rule_11(item, item_id, file_path, results, book_id)
-        self._check_rule_12(item, item_id, file_path, results, book_id)
+        self._check_rule_02(item, item_id, file_path, results, book_id, bookdoc)
+        self._check_rule_03(item, item_id, file_path, results, book_id, bookdoc)
+        self._check_rule_05(item, item_id, file_path, results, book_id, bookdoc)
+        self._check_rule_06(item, item_id, file_path, results, book_id, bookdoc)
+        self._check_rule_11(item, item_id, file_path, results, book_id, bookdoc)
+        self._check_rule_12(item, item_id, file_path, results, book_id, bookdoc)
 
         return results
     
@@ -199,7 +205,6 @@ class MarkerAutoCorrector:
         book_ids = sorted(items_by_book.keys())
         
         logging.info(f"Found {len(book_ids)} unique books referenced by items")
-        
         all_results = {
             'files_processed': [],
             'books_processed': [],
@@ -214,9 +219,12 @@ class MarkerAutoCorrector:
         file_results = {}  # file_path -> results
         
         # Process items book by book
-        for book_id in book_ids:
+        for book_idx, book_id in enumerate(book_ids):
             book_items = items_by_book[book_id]
-            logging.info(f"Processing book '{book_id}' with {len(book_items)} items")
+            logging.info(f"Processing book {book_idx + 1}/{len(book_ids)}: '{book_id}' with {len(book_items)} items")
+
+            # Load BookDoc if available
+            bookdoc = self._get_bookdoc(book_id)
             
             book_results = {
                 'book_id': book_id,
@@ -238,7 +246,7 @@ class MarkerAutoCorrector:
                     }
                 
                 # Process the item
-                item_results = self._process_item(item_element, file_path)
+                item_results = self._process_item(item_element, file_path, bookdoc=bookdoc)
                 
                 # Accumulate results
                 file_results[file_path]['issues'].extend(item_results['issues'])
@@ -251,6 +259,10 @@ class MarkerAutoCorrector:
                 book_results['issues'].extend(item_results['issues'])
                 book_results['corrections'].extend(item_results['corrections'])
                 book_results['files_affected'].add(file_path)
+            
+            # Clean up BookDoc to free memory
+            del bookdoc
+            gc.collect()  # Force garbage collection to free memory
             
             all_results['books_processed'].append(book_results)
             all_results['total_issues'] += len(book_results['issues'])
@@ -359,7 +371,7 @@ class MarkerAutoCorrector:
             f.write("TEITOK-URL\tType\tSeverity\tMessage\tAction\tStatus\n")
             
             # Write results for each file
-            for file_result in results['files_processed']:
+            for file_result in sorted(results['files_processed'], key=lambda x: x['file']):
                 file_path = file_result['file']
                 file_base = os.path.basename(file_path)
                 
@@ -389,7 +401,7 @@ class MarkerAutoCorrector:
         
         logging.info(f"Report exported to {output_path}")
     
-    def _check_rule_02(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
+    def _check_rule_02(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
         """ Rule 2: Check if 'scope' attribute is set to 'member' and if the member is missing.
         
         When scope='member', the member must be specified.
@@ -400,6 +412,7 @@ class MarkerAutoCorrector:
             file_path: Source file path
             results: Results dictionary to update
             book_id: Book identifier
+            bookdoc: BookDoc instance for additional context (optional)
         """
         scope_value = item.get('scope', '')
 
@@ -423,7 +436,7 @@ class MarkerAutoCorrector:
                 'suggestion': 'Add member attribute'
             })
             
-    def _check_rule_03(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
+    def _check_rule_03(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
         """ Rule 3: Check if 'commfuntype' attribute is set to 'interr' and if the use is not 'other'.
         
         When commfuntype='interr', the use is likely set to 'other'. We want to list all occurrences where this is not the case.
@@ -434,6 +447,7 @@ class MarkerAutoCorrector:
             file_path: Source file path
             results: Results dictionary to update
             book_id: Book identifier
+            bookdoc: BookDoc instance for additional context (optional)
         """
         commfuntype_value = item.get('commfuntype', '')
 
@@ -469,7 +483,7 @@ class MarkerAutoCorrector:
                 'suggestion': 'Change use to "other"'
             })
 
-    def _check_rule_05(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
+    def _check_rule_05(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
         """ Rule 5: Check if 'evidencetype' is defined and is not 'inference' and 'evidence' is defined.
 
         Specified evidencetype is not 'inference' iff the evidence is specified.
@@ -480,6 +494,7 @@ class MarkerAutoCorrector:
             file_path: Source file path
             results: Results dictionary to update
             book_id: Book identifier
+            bookdoc: BookDoc instance for additional context (optional)
         """
         evidencetype_value = item.get('evidencetype', '').strip()
         evidence_value = item.get('evidence', '').strip()
@@ -518,7 +533,7 @@ class MarkerAutoCorrector:
                 'suggestion': 'Remove evidencetype attribute'
             })
 
-    def _check_rule_06(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
+    def _check_rule_06(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
         """ Rule 06: List all occurrences of tfpos='ownfocus'.
 
         When tfpos='ownfocus', it should be verified manually.
@@ -529,6 +544,7 @@ class MarkerAutoCorrector:
             file_path: Source file path
             results: Results dictionary to update
             book_id: Book identifier
+            bookdoc: BookDoc instance for additional context (optional)
         """
         tfpos_value = item.get('tfpos', '')
 
@@ -548,7 +564,7 @@ class MarkerAutoCorrector:
             'suggestion': 'Verify this occurrence manually'
         })
 
-    def _check_rule_11(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
+    def _check_rule_11(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
         """ Rule 11: Check if 'use' attribute is set to 'content' and if predicate is missing.
 
         When use='content', the predicate must be specified.
@@ -559,6 +575,7 @@ class MarkerAutoCorrector:
             file_path: Source file path
             results: Results dictionary to update
             book_id: Book identifier
+            bookdoc: BookDoc instance for additional context (optional)
         """
         use_value = item.get('use', '')
 
@@ -582,7 +599,7 @@ class MarkerAutoCorrector:
                 'suggestion': 'Add pred attribute'
             })
 
-    def _check_rule_12(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str):
+    def _check_rule_12(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
         """ Rule 12: Check if 'use' attribute is set to 'other' and if communication function attributes are missing.
         
         When use='other', the communication function (the 'commfuntype' attribute) must be specified.
@@ -593,6 +610,7 @@ class MarkerAutoCorrector:
             file_path: Source file path
             results: Results dictionary to update
             book_id: Book identifier
+            bookdoc: BookDoc instance for additional context (optional)
         """
         use_value = item.get('use', '')
         
@@ -642,6 +660,27 @@ class MarkerAutoCorrector:
 #            })
 #            results['modified'] = True
 
+    def _get_bookdoc(self, book_id: str, lang: str = "cs"):
+        """Get or load a BookDoc instance for the given book ID.
+        
+        Args:
+            book_id: Book identifier
+            lang: Language code (default: "cs")
+            
+        Returns:
+            BookDoc instance or None if not available/failed to load
+        """
+        if BookDoc is None:
+            return None
+        
+        # Create new instance each time to avoid memory issues
+        try:
+            bookdoc = BookDoc(book_id, lang=lang, bookdir=self.book_dir)
+            logging.debug(f"Loaded BookDoc for {book_id} ({lang})")
+            return bookdoc
+        except Exception as e:
+            logging.warning(f"Failed to load BookDoc for {book_id} ({lang}): {e}")
+            return None
 
 
 def main():
@@ -668,7 +707,7 @@ Examples:
                        help='Apply automatic corrections (default: only report issues)')
     parser.add_argument('--output', '-o', default='marker_autocorrect_report.tsv', 
                        help='Output file for the processing report')
-    parser.add_argument('--schema', default='/home/mnovak/projects/seem-cz/teitok/config/markers_def.xml',
+    parser.add_argument('--schema', default='teitok/config/markers_def.xml',
                        help='Path to schema definition file')
     parser.add_argument('--verbose', '-v', action='store_true', 
                        help='Verbose output')
@@ -676,6 +715,8 @@ Examples:
                        help='File pattern to match (default: *.xml)')
     parser.add_argument('--no-backup', action='store_true', 
                        help='Do not create backup files when fixing')
+    parser.add_argument('--book-dir', default='teitok/01.csen_data', 
+                       help='Directory containing book XML files for BookDoc access')
     
     args = parser.parse_args()
     
@@ -700,7 +741,8 @@ Examples:
     corrector = MarkerAutoCorrector(
         schema_path=args.schema,
         fix_mode=args.fix,
-        create_backup=not args.no_backup
+        create_backup=not args.no_backup,
+        book_dir=args.book_dir
     )
     
     # Process directory
