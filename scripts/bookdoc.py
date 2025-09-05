@@ -15,6 +15,7 @@ class BookDoc:
     def _build_index(self):
         self._id_to_elem = {}
         self._sent_index = {}
+        self._sent_id_to_elem = {}  # New index: sentence ID -> sentence element
         self._tok_index = {}
         self._tok_seq = []
         self._sentid_to_tuid = {}
@@ -22,6 +23,10 @@ class BookDoc:
         tok_idx = 0
         for sentelem in self.xml.findall('.//s'):
             sent_start_idx = tok_idx
+            # Index sentence element by its ID
+            sid = sentelem.attrib["id"]
+            self._sent_id_to_elem[sid] = sentelem
+            
             for tokelem in sentelem.findall('.//tok'):
                 #logging.debug(f"{tokelem = }")
                 self._id_to_elem[tokelem.attrib["id"]] = tokelem
@@ -29,7 +34,6 @@ class BookDoc:
                 self._tok_seq.append(tokelem.text)
                 tok_idx += 1
             sent_end_idx = tok_idx
-            sid = sentelem.attrib["id"]
             self._sent_index[sid] = (sent_start_idx, sent_end_idx)
             tuid = sentelem.attrib["tuid"]
             self._sentid_to_tuid[sid] = tuid
@@ -62,6 +66,30 @@ class BookDoc:
     def get_sentences_by_tuids(self, tuids):
         sentids = sorted(list(set([sentid for tuid in tuids for sentid in self._tuid_to_sentids[tuid]])))
         return [self.get_sentence(sentid) for sentid in sentids]
+
+    def get_sentence_elem_by_tokid(self, tokid):
+        """Get the sentence element containing the given token ID(s).
+        
+        Args:
+            tokid: Token ID or space-delimited token IDs to search for
+            
+        Returns:
+            The sentence element containing the token(s), or None if not found
+        """
+        # Handle multiple token IDs (space-delimited)
+        token_ids = tokid.strip().split()
+        
+        # Use the first token ID to find the sentence
+        if not token_ids:
+            return None
+            
+        first_token_id = token_ids[0]
+        
+        # Extract sentence ID from first token ID (everything before the last colon)
+        sentence_id = ":".join(first_token_id.split(":")[:-1])
+        
+        # Use the index for O(1) lookup
+        return self._sent_id_to_elem.get(sentence_id)
 
     @property
     def tok_index(self):

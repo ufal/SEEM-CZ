@@ -139,6 +139,7 @@ class MarkerAutoCorrector:
         # Apply correction rules
         self._check_rule_02(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_03(item, item_id, file_path, results, book_id, bookdoc)
+        self._check_rule_04(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_05(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_06(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_11(item, item_id, file_path, results, book_id, bookdoc)
@@ -481,6 +482,216 @@ class MarkerAutoCorrector:
                 'attribute': 'use',
                 'current_value': use_value,
                 'suggestion': 'Change use to "other"'
+            })
+
+    def _check_rule_04(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
+        """ Rule 4: Check if 'sentpos' attribute is set to 'first' and verify the word position.
+        
+        When sentpos='first', the referenced Czech word must be:
+        (1) very first word in a sentence,
+        (2) following a punctuation,
+        (3) following a conjunction.
+        
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+            book_id: Book identifier
+            bookdoc: BookDoc instance for additional context (required for this rule)
+        """
+        sentpos_value = item.get('sentpos', '')
+        
+        # Check if sentpos="first"
+        if sentpos_value != 'first':
+            return
+        
+        # Get the Czech word ID(s) from the 'cs' attribute
+        cs_value = item.get('cs', '').strip()
+        if not cs_value:
+            results['issues'].append({
+                'type': '04_sentpos_first_missing_cs',
+                'severity': 'medium',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'sentpos="{sentpos_value}" but no Czech word ID specified in cs attribute',
+                'attribute': 'cs',
+                'current_value': '',
+                'suggestion': 'Add cs attribute with word ID'
+            })
+            return
+        
+        # Handle multiple token IDs (space-delimited)
+        token_ids = cs_value.split()
+        if not token_ids:
+            results['issues'].append({
+                'type': '04_sentpos_first_empty_cs',
+                'severity': 'medium',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'sentpos="{sentpos_value}" but cs attribute is empty',
+                'attribute': 'cs',
+                'current_value': cs_value,
+                'suggestion': 'Add valid word ID(s) to cs attribute'
+            })
+            return
+        
+        # For sentpos="first", we check the position of the first token in the sequence
+        first_token_id = token_ids[0]
+        
+        # If BookDoc is not available, we can't verify the position
+        if bookdoc is None:
+            results['issues'].append({
+                'type': '04_sentpos_first_no_bookdoc',
+                'severity': 'soft',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'sentpos="{sentpos_value}" but BookDoc not available for verification',
+                'attribute': 'sentpos',
+                'current_value': sentpos_value,
+                'suggestion': 'Provide book directory to enable verification'
+            })
+            return
+        
+        # Get token element from BookDoc (using the first token for position checking)
+        try:
+            token_elem = bookdoc.get_token_elem(first_token_id)
+            if token_elem is None:
+                results['issues'].append({
+                    'type': '04_sentpos_first_word_not_found',
+                    'severity': 'medium',
+                    'item_id': item_id,
+                    'book_id': book_id,
+                    'message': f'sentpos="{sentpos_value}" but Czech word ID "{first_token_id}" (first of: {cs_value}) not found in book',
+                    'attribute': 'cs',
+                    'current_value': cs_value,
+                    'suggestion': 'Check if word ID is correct'
+                })
+                return
+            
+            # Get the sentence element containing this token using BookDoc's method
+            sentence_elem = bookdoc.get_sentence_elem_by_tokid(first_token_id)
+            
+            if sentence_elem is None:
+                results['issues'].append({
+                    'type': '04_sentpos_first_no_sentence',
+                    'severity': 'medium',
+                    'item_id': item_id,
+                    'book_id': book_id,
+                    'message': f'sentpos="{sentpos_value}" but could not find sentence for word "{first_token_id}" (first of: {cs_value})',
+                    'attribute': 'cs',
+                    'current_value': cs_value,
+                    'suggestion': 'Check document structure'
+                })
+                return
+            
+            # Get all tokens in the sentence
+            sentence_tokens = sentence_elem.findall('.//tok')
+            if not sentence_tokens:
+                results['issues'].append({
+                    'type': '04_sentpos_first_empty_sentence',
+                    'severity': 'medium',
+                    'item_id': item_id,
+                    'book_id': book_id,
+                    'message': f'sentpos="{sentpos_value}" but sentence contains no tokens',
+                    'attribute': 'cs',
+                    'current_value': cs_value,
+                    'suggestion': 'Check document structure'
+                })
+                return
+            
+            # Find the position of our first token in the sentence
+            token_position = -1
+            for i, tok in enumerate(sentence_tokens):
+                if tok.get('id') == first_token_id:
+                    token_position = i
+                    break
+            
+            if token_position == -1:
+                results['issues'].append({
+                    'type': '04_sentpos_first_token_not_in_sentence',
+                    'severity': 'medium',
+                    'item_id': item_id,
+                    'book_id': book_id,
+                    'message': f'sentpos="{sentpos_value}" but token "{first_token_id}" (first of: {cs_value}) not found in its sentence',
+                    'attribute': 'cs',
+                    'current_value': cs_value,
+                    'suggestion': 'Check document structure'
+                })
+                return
+            
+            # Check if this is valid for sentpos="first"
+            is_valid_first = False
+            reason = ""
+
+            prev_token = None
+            prev_text = ""
+            prev_pos = ""
+            prev_lemma = ""
+            
+            # Case 1: Very first word in sentence
+            if token_position == 0:
+                is_valid_first = True
+                reason = "first word in sentence"
+            else:
+                # Case 2: Following a punctuation
+                # Case 3: Following a conjunction
+                prev_token = sentence_tokens[token_position - 1]
+                prev_text = prev_token.text or ""
+                prev_tag = prev_token.get('tag', '')
+                prev_pos = prev_tag[0] if prev_tag else ''  # First character of tag is the POS
+                prev_lemma = prev_token.get('lemma', '')
+                
+                # Check if previous token is punctuation
+                if prev_pos == 'Z':  # Czech punctuation POS tag is 'Z'
+                    is_valid_first = True
+                    reason = f"following punctuation '{prev_text}'"
+                # Check if previous token is conjunction
+                elif prev_pos == 'J':  # Czech conjunction POS tag is 'J'
+                    is_valid_first = True
+                    reason = f"following conjunction '{prev_text}' ({prev_lemma})"
+                ## Additional check for common conjunctions that might be tagged differently
+                #elif prev_lemma.lower() in ['a', 'ale', 'nebo', 'ani', 'i', 'však', 'proto', 'tedy', 'takže']:
+                #    is_valid_first = True
+                #    reason = f"following conjunction '{prev_text}' ({prev_lemma})"
+
+            if not is_valid_first:
+                if not first_token_id.endswith('w1'):
+                    logging.debug(f'Verifying sentpos="first" for tokens "{cs_value}": first_token="{first_token_id}" position={token_position}, prev_token="{prev_text}" tag={prev_tag} pos={prev_pos} lemma={prev_lemma}, valid={is_valid_first}')
+                    logging.debug(prev_token)
+
+                # Get context for better error message
+                prev_info = ""
+                if prev_token is not None:
+                    prev_info = f" (preceded by '{prev_text}' tag={prev_tag} pos={prev_pos} lemma={prev_lemma})"
+                
+                current_token_text = token_elem.text or ""
+                
+                results['issues'].append({
+                    'type': '04_sentpos_first_invalid_position',
+                    'severity': 'medium',
+                    'item_id': item_id,
+                    'book_id': book_id,
+                    'message': f'sentpos="{sentpos_value}" but word "{current_token_text}" (first token of: {cs_value}) is not in valid "first" position{prev_info}',
+                    'attribute': 'sentpos',
+                    'current_value': sentpos_value,
+                    'suggestion': 'Change sentpos or verify word position'
+                })
+            else:
+                # Log successful validation for debugging
+                current_token_text = token_elem.text or ""
+                logging.debug(f'sentpos="first" validated for tokens "{cs_value}": first_token="{current_token_text}" (ID:{first_token_id}): {reason}')
+                
+        except Exception as e:
+            results['issues'].append({
+                'type': '04_sentpos_first_verification_error',
+                'severity': 'medium',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'sentpos="{sentpos_value}" but error during verification: {e}',
+                'attribute': 'sentpos',
+                'current_value': sentpos_value,
+                'suggestion': 'Check BookDoc and word ID'
             })
 
     def _check_rule_05(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
