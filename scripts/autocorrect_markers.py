@@ -138,10 +138,10 @@ class MarkerAutoCorrector:
         
         # Apply correction rules
         self._check_rule_02(item, item_id, file_path, results, book_id, bookdoc)
-        self._check_rule_03(item, item_id, file_path, results, book_id, bookdoc)
+        #self._check_rule_03(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_04(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_05(item, item_id, file_path, results, book_id, bookdoc)
-        self._check_rule_06(item, item_id, file_path, results, book_id, bookdoc)
+        #self._check_rule_06(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_11(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_12(item, item_id, file_path, results, book_id, bookdoc)
 
