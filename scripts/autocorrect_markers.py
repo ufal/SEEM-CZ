@@ -142,6 +142,7 @@ class MarkerAutoCorrector:
         self._check_rule_04(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_05(item, item_id, file_path, results, book_id, bookdoc)
         #self._check_rule_06(item, item_id, file_path, results, book_id, bookdoc)
+        self._check_rule_10(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_11(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_12(item, item_id, file_path, results, book_id, bookdoc)
 
@@ -775,6 +776,135 @@ class MarkerAutoCorrector:
             'suggestion': 'Verify this occurrence manually'
         })
 
+    def _check_rule_10(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
+        """ Rule 10: Check if 'neg' attribute is set to '1' and verify if the finite verb in pred is negated.
+        
+        When neg='1', the finite verb in the pred attribute must be negated.
+        Finite verbs have tags matching "^V[Bip]" and negation is encoded by "N" at the 11th position of the tag.
+        
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+            book_id: Book identifier
+            bookdoc: BookDoc instance for additional context (required for this rule)
+        """
+        neg_value = item.get('neg', '')
+        
+        # Check if neg="1"
+        if neg_value != '1':
+            return
+        
+        # Get the predicate from the 'pred' attribute
+        pred_value = item.get('pred', '').strip()
+        if not pred_value:
+            results['issues'].append({
+                'type': '10_neg_1_missing_pred',
+                'severity': 'medium',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'neg="{neg_value}" but no predicate specified in pred attribute',
+                'attribute': 'pred',
+                'current_value': '',
+                'suggestion': 'Add pred attribute with verb ID'
+            })
+            return
+        
+        # If BookDoc is not available, we can't verify the negation
+        if bookdoc is None:
+            results['issues'].append({
+                'type': '10_neg_1_no_bookdoc',
+                'severity': 'soft',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'neg="{neg_value}" but BookDoc not available for verification',
+                'attribute': 'neg',
+                'current_value': neg_value,
+                'suggestion': 'Provide book directory to enable verification'
+            })
+            return
+        
+        # Handle multiple token IDs (space-delimited) in pred attribute
+        pred_token_ids = pred_value.split()
+        
+        try:
+            finite_verbs_found = []
+            negated_finite_verbs = []
+            
+            # Check each token in the predicate
+            for token_id in pred_token_ids:
+                token_elem = bookdoc.get_token_elem(token_id)
+                if token_elem is None:
+                    results['issues'].append({
+                        'type': '10_neg_1_pred_token_not_found',
+                        'severity': 'medium',
+                        'item_id': item_id,
+                        'book_id': book_id,
+                        'message': f'neg="{neg_value}" but predicate token ID "{token_id}" not found in book',
+                        'attribute': 'pred',
+                        'current_value': pred_value,
+                        'suggestion': 'Check if predicate token ID is correct'
+                    })
+                    continue
+                
+                # Get the tag attribute
+                tag = token_elem.get('tag', '')
+                if not tag:
+                    continue
+                
+                # Check if this is a finite verb (tag matches "^V[Bip]")
+                import re
+                if re.match(r'^V[Bip]', tag):
+                    token_text = token_elem.text or ""
+                    finite_verbs_found.append((token_id, token_text, tag))
+                    
+                    # Check if the verb is negated (11th position = index 10)
+                    if len(tag) > 10 and tag[10] == 'N':
+                        negated_finite_verbs.append((token_id, token_text, tag))
+            
+            # Analyze results
+            if not finite_verbs_found:
+                results['issues'].append({
+                    'type': '10_neg_1_no_finite_verb',
+                    'severity': 'medium',
+                    'item_id': item_id,
+                    'book_id': book_id,
+                    'message': f'neg="{neg_value}" but no finite verb found in predicate "{pred_value}"',
+                    'attribute': 'pred',
+                    'current_value': pred_value,
+                    'suggestion': 'Check if predicate contains a finite verb'
+                })
+            elif not negated_finite_verbs:
+                # Found finite verbs but none are negated
+                verb_info = ", ".join([f'"{text}" (tag: {tag})' for _, text, tag in finite_verbs_found])
+                results['issues'].append({
+                    'type': '10_neg_1_finite_verb_not_negated',
+                    'severity': 'medium',
+                    'item_id': item_id,
+                    'book_id': book_id,
+                    'message': f'neg="{neg_value}" but finite verb(s) in predicate are not negated: {verb_info}',
+                    'attribute': 'neg',
+                    'current_value': neg_value,
+                    'suggestion': 'Change neg to "0" or verify verb negation'
+                })
+            else:
+                # Found negated finite verbs - this is correct
+                verb_info = ", ".join([f'"{text}" (tag: {tag})' for _, text, tag in negated_finite_verbs])
+                logging.debug(f'neg="1" validated for item {item_id}: found negated finite verb(s): {verb_info}')
+                
+        except Exception as e:
+            results['issues'].append({
+                'type': '10_neg_1_verification_error',
+                'severity': 'medium',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'neg="{neg_value}" but error during verification: {e}',
+                'attribute': 'neg',
+                'current_value': neg_value,
+                'suggestion': 'Check BookDoc and predicate token IDs'
+            })
+    
     def _check_rule_11(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
         """ Rule 11: Check if 'use' attribute is set to 'content' and if predicate is missing.
 
