@@ -137,6 +137,7 @@ class MarkerAutoCorrector:
         book_id = item.get('xml', 'unknown')
         
         # Apply correction rules
+        self._check_rule_01(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_02(item, item_id, file_path, results, book_id, bookdoc)
         #self._check_rule_03(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_04(item, item_id, file_path, results, book_id, bookdoc)
@@ -404,6 +405,110 @@ class MarkerAutoCorrector:
                     f.write("APPLIED\n")
         
         logging.info(f"Report exported to {output_path}")
+    
+    def _check_rule_01(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
+        """ Rule 01: Check that all tokens in the "pred" attribute are part of the predicate.
+        
+        All tokens in the pred attribute must be either:
+        - Verbs (POS tag starting with V)
+        - Reflexive pronouns (POS tag starting with P7)
+        
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+            book_id: Book identifier
+            bookdoc: BookDoc instance for token lookup (required for this rule)
+        """
+        pred_value = item.get('pred', '').strip()
+        
+        # If pred is empty or not present, nothing to check
+        if not pred_value:
+            return
+        
+        # If BookDoc is not available, we can't verify the token types
+        if bookdoc is None:
+            results['issues'].append({
+                'type': '01_pred_no_bookdoc',
+                'severity': 'soft',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'pred attribute present but BookDoc not available for verification',
+                'attribute': 'pred',
+                'current_value': pred_value,
+                'suggestion': 'Provide book directory to enable verification'
+            })
+            return
+        
+        # Parse token IDs from pred
+        token_ids = [token_id.strip() for token_id in pred_value.split() if token_id.strip()]
+        
+        if not token_ids:
+            results['issues'].append({
+                'type': '01_pred_empty_tokens',
+                'severity': 'medium',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'pred attribute contains no valid token IDs',
+                'attribute': 'pred',
+                'current_value': pred_value,
+                'suggestion': 'Add valid token IDs to pred attribute'
+            })
+            return
+        
+        # Check each token ID
+        invalid_tokens = []
+        missing_tokens = []
+        
+        for token_id in token_ids:
+            token_elem = bookdoc.get_token_elem(token_id)
+            if token_elem is None:
+                missing_tokens.append(token_id)
+                continue
+            
+            # Get the POS tag
+            tag = token_elem.get('tag', '')
+            if not tag:
+                invalid_tokens.append((token_id, token_elem.text or "", "no tag"))
+                continue
+            
+            # Check if token is a verb (V.*) or reflexive pronoun (P7.*)
+            if not (tag.startswith('V') or tag.startswith('P7')):
+                token_text = token_elem.text or ""
+                invalid_tokens.append((token_id, token_text, tag))
+        
+        # Report missing tokens
+        if missing_tokens:
+            results['issues'].append({
+                'type': '01_pred_token_not_found',
+                'severity': 'high',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'pred contains token ID(s) not found in book: {", ".join(missing_tokens)}',
+                'attribute': 'pred',
+                'current_value': pred_value,
+                'suggestion': 'Remove non-existent token IDs or fix token ID references'
+            })
+        
+        # Report invalid token types
+        if invalid_tokens:
+            token_info = ", ".join([f'"{text}" (ID: {token_id}, tag: {tag})' for token_id, text, tag in invalid_tokens])
+            results['issues'].append({
+                'type': '01_pred_invalid_token_type',
+                'severity': 'high',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'pred contains tokens that are not verbs or reflexive pronouns: {token_info}',
+                'attribute': 'pred',
+                'current_value': pred_value,
+                'suggestion': 'Remove non-predicate tokens or verify token classification (should be V.* or P7.*)'
+            })
+        
+        # Log successful validation for debugging
+        if not invalid_tokens and not missing_tokens:
+            valid_count = len(token_ids)
+            logging.debug(f'pred attribute validated for item {item_id}: {valid_count} valid predicate token(s)')
     
     def _check_rule_02(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
         """ Rule 2: Check if 'scope' attribute is set to 'member' and if the member is missing.
