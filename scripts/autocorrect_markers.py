@@ -145,6 +145,7 @@ class MarkerAutoCorrector:
         self._check_rule_10(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_11(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_12(item, item_id, file_path, results, book_id, bookdoc)
+        self._check_rule_13(item, item_id, file_path, results, book_id, bookdoc)
 
         return results
     
@@ -991,6 +992,81 @@ class MarkerAutoCorrector:
 #                'attribute': 'commfuntype'
 #            })
 #            results['modified'] = True
+
+    def _check_rule_13(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
+        """ Rule 13: Check if scope="sent" has a filled pred attribute containing a finite verb.
+        
+        If the scope attribute is set to "sent", the pred attribute must:
+        1. Be present and non-empty
+        2. Contain at least one token ID that references a finite verb
+        
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+            book_id: Book identifier
+            bookdoc: BookDoc instance for token lookup
+        """
+        scope_value = item.get('scope', '').strip()
+        
+        # Only check items with scope="sent"
+        if scope_value != 'sent':
+            return
+        
+        pred_value = item.get('pred', '').strip()
+        
+        # Check if pred is missing or empty
+        if not pred_value:
+            results['issues'].append({
+                'type': '13_scope_sent_missing_pred',
+                'severity': 'high',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'scope="sent" but pred attribute is missing or empty',
+                'attribute': 'pred',
+                'current_value': pred_value,
+                'suggestion': 'Add pred attribute with finite verb token IDs'
+            })
+            return
+        
+        # Check if pred contains at least one finite verb
+        if bookdoc is not None:
+            # Parse token IDs from pred
+            token_ids = [token_id.strip() for token_id in pred_value.split() if token_id.strip()]
+            
+            if not token_ids:
+                results['issues'].append({
+                    'type': '13_scope_sent_pred_empty_tokens',
+                    'severity': 'high',
+                    'item_id': item_id,
+                    'book_id': book_id,
+                    'message': f'scope="sent" but pred contains no valid token IDs',
+                    'attribute': 'pred',
+                    'current_value': pred_value,
+                    'suggestion': 'Add finite verb token IDs to pred attribute'
+                })
+                return
+            
+            # Extract finite verbs from the pred tokens
+            finite_verbs = self._extract_finite_verbs(token_ids, bookdoc)
+            
+            if not finite_verbs:
+                results['issues'].append({
+                    'type': '13_scope_sent_pred_no_finite_verb',
+                    'severity': 'high',
+                    'item_id': item_id,
+                    'book_id': book_id,
+                    'message': f'scope="sent" but pred does not contain any finite verbs (tokens: {", ".join(token_ids)})',
+                    'attribute': 'pred',
+                    'current_value': pred_value,
+                    'suggestion': 'Ensure pred contains at least one finite verb token ID'
+                })
+        else:
+            # If no bookdoc available, we can only check that pred is not empty
+            # (which we already did above)
+            logging.debug(f"Rule 13: No BookDoc available for detailed validation of item {item_id}")
+
 
     def _extract_finite_verbs(self, token_ids: List[str], bookdoc) -> List[Tuple[str, str, str]]:
         """Extract finite verbs from a list of token IDs.
