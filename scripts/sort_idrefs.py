@@ -1,6 +1,5 @@
 import argparse
 import logging
-import re
 import sys
 import xml.etree.ElementTree as xmlparser
 
@@ -37,7 +36,7 @@ def main():
             annot_value_items = annot_elem.attrib.get(idref_attr, "").split(" ")
             if not annot_value_items:
                 continue
-            if any([not re.match(r"^(en:|cs:).*w[0-9]+$", annot_value_item) for annot_value_item in annot_value_items]):
+            if any([not BookDoc.is_valid_token_id(annot_value_item) for annot_value_item in annot_value_items]):
                 continue
             lookup_attr_names = annot_def_doc.attr_names(type="lookup", ref=idref_attr)
             lookup_lists = [annot_elem.attrib[lookup_attr_name].split(" ") for lookup_attr_name in lookup_attr_names]

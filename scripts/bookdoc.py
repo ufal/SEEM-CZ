@@ -1,6 +1,7 @@
 from collections import defaultdict
 import logging
 import os
+import re
 import xml.etree.ElementTree as xmlparser
 
 class BookDoc:
@@ -96,3 +97,20 @@ class BookDoc:
         if not self._tok_index:
             self._sent_index, self._tok_index = self._load_sent_tok_index()
         return self._tok_index
+
+    @classmethod
+    def is_valid_token_id(cls, token_id):
+        """Check if a token ID has the correct format.
+        
+        Token IDs should match the pattern: (en:|cs:).*w[0-9]+
+        Examples: cs:book1:s1:w1, en:book2:s5:w23
+        
+        Args:
+            token_id: String to validate as a token ID
+            
+        Returns:
+            bool: True if the token ID format is valid, False otherwise
+        """
+        if not isinstance(token_id, str) or not token_id.strip():
+            return False
+        return bool(re.match(r"^(en:|cs:).*w[0-9]+$", token_id.strip()))

@@ -146,6 +146,7 @@ class MarkerAutoCorrector:
         self._check_rule_11(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_12(item, item_id, file_path, results, book_id, bookdoc)
         self._check_rule_13(item, item_id, file_path, results, book_id, bookdoc)
+        self._check_rule_15(item, item_id, file_path, results, book_id, bookdoc)
 
         return results
     
@@ -1121,6 +1122,107 @@ class MarkerAutoCorrector:
         except Exception as e:
             logging.warning(f"Failed to load BookDoc for {book_id} ({lang}): {e}")
             return None
+
+    def _check_rule_15(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
+        """ Rule 15: Check that the "modif" attribute contains only valid token IDs.
+        
+        The modif attribute should contain space-separated token IDs and nothing else.
+        Each token ID should exist in the document if BookDoc is available.
+        
+        Args:
+            item: XML item element
+            item_id: Item identifier
+            file_path: Source file path
+            results: Results dictionary to update
+            book_id: Book identifier
+            bookdoc: BookDoc instance for token lookup (optional)
+        """
+        modif_value = item.get('modif', '').strip()
+        
+        # If modif is empty or not present, nothing to check
+        if not modif_value:
+            return
+        
+        # Parse token IDs from modif
+        token_ids = [token_id.strip() for token_id in modif_value.split() if token_id.strip()]
+        
+        if not token_ids:
+            results['issues'].append({
+                'type': '15_modif_empty_after_parsing',
+                'severity': 'medium',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'modif attribute contains only whitespace: "{modif_value}"',
+                'attribute': 'modif',
+                'current_value': modif_value,
+                'suggestion': 'Remove modif attribute or add valid token IDs'
+            })
+            return
+        
+        # Check each token ID format and validity
+        invalid_tokens = []
+        missing_tokens = []
+        
+        for token_id in token_ids:
+            # Use BookDoc's token ID format validation
+            if not BookDoc.is_valid_token_id(token_id):
+                invalid_tokens.append(token_id)
+                continue
+            
+            # If BookDoc is available, check if token actually exists
+            if bookdoc is not None:
+                token_elem = bookdoc.get_token_elem(token_id)
+                if token_elem is None:
+                    missing_tokens.append(token_id)
+        
+        # Report invalid token formats
+        if invalid_tokens:
+            results['issues'].append({
+                'type': '15_modif_invalid_token_format',
+                'severity': 'high',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'modif contains invalid token ID format(s): {", ".join(invalid_tokens)}',
+                'attribute': 'modif',
+                'current_value': modif_value,
+                'suggestion': 'Fix token ID format (should match pattern: (en:|cs:).*w[0-9]+)'
+            })
+        
+        # Report missing tokens (if BookDoc is available)
+        if missing_tokens:
+            results['issues'].append({
+                'type': '15_modif_token_not_found',
+                'severity': 'high',
+                'item_id': item_id,
+                'book_id': book_id,
+                'message': f'modif contains token ID(s) not found in book: {", ".join(missing_tokens)}',
+                'attribute': 'modif',
+                'current_value': modif_value,
+                'suggestion': 'Remove non-existent token IDs or fix token ID references'
+            })
+        
+        # # Check for duplicate token IDs
+        # token_counts = {}
+        # for token_id in token_ids:
+        #     token_counts[token_id] = token_counts.get(token_id, 0) + 1
+        
+        # duplicates = [token_id for token_id, count in token_counts.items() if count > 1]
+        # if duplicates:
+        #     results['issues'].append({
+        #         'type': '15_modif_duplicate_tokens',
+        #         'severity': 'medium',
+        #         'item_id': item_id,
+        #         'book_id': book_id,
+        #         'message': f'modif contains duplicate token ID(s): {", ".join(duplicates)}',
+        #         'attribute': 'modif',
+        #         'current_value': modif_value,
+        #         'suggestion': 'Remove duplicate token IDs'
+        #     })
+        
+        # Log successful validation for debugging
+        # if not invalid_tokens and not missing_tokens and not duplicates:
+        if not invalid_tokens and not missing_tokens:
+            logging.debug(f'modif attribute validated for item {item_id}: {len(token_ids)} valid token(s)')
 
 
 def main():
