@@ -829,39 +829,30 @@ class MarkerAutoCorrector:
         pred_token_ids = pred_value.split()
         
         try:
-            finite_verbs_found = []
-            negated_finite_verbs = []
+            # Extract finite verbs using the auxiliary method
+            finite_verbs_found = self._extract_finite_verbs(pred_token_ids, bookdoc)
             
-            # Check each token in the predicate
-            for token_id in pred_token_ids:
-                token_elem = bookdoc.get_token_elem(token_id)
-                if token_elem is None:
-                    results['issues'].append({
-                        'type': '10_neg_1_pred_token_not_found',
-                        'severity': 'medium',
-                        'item_id': item_id,
-                        'book_id': book_id,
-                        'message': f'neg="{neg_value}" but predicate token ID "{token_id}" not found in book',
-                        'attribute': 'pred',
-                        'current_value': pred_value,
-                        'suggestion': 'Check if predicate token ID is correct'
-                    })
-                    continue
-                
-                # Get the tag attribute
-                tag = token_elem.get('tag', '')
-                if not tag:
-                    continue
-                
-                # Check if this is a finite verb (tag matches "^V[Bip]")
-                import re
-                if re.match(r'^V[Bip]', tag):
-                    token_text = token_elem.text or ""
-                    finite_verbs_found.append((token_id, token_text, tag))
-                    
-                    # Check if the verb is negated (11th position = index 10)
-                    if len(tag) > 10 and tag[10] == 'N':
-                        negated_finite_verbs.append((token_id, token_text, tag))
+            # # Check for missing tokens (not handled by auxiliary method)
+            # for token_id in pred_token_ids:
+            #     token_elem = bookdoc.get_token_elem(token_id)
+            #     if token_elem is None:
+            #         results['issues'].append({
+            #             'type': '10_neg_1_pred_token_not_found',
+            #             'severity': 'medium',
+            #             'item_id': item_id,
+            #             'book_id': book_id,
+            #             'message': f'neg="{neg_value}" but predicate token ID "{token_id}" not found in book',
+            #             'attribute': 'pred',
+            #             'current_value': pred_value,
+            #             'suggestion': 'Check if predicate token ID is correct'
+            #         })
+            
+            # Check negation for finite verbs
+            negated_finite_verbs = []
+            for token_id, token_text, tag in finite_verbs_found:
+                # Check if the verb is negated (11th position = index 10)
+                if len(tag) > 10 and tag[10] == 'N':
+                    negated_finite_verbs.append((token_id, token_text, tag))
             
             # Analyze results
             if not finite_verbs_found:
@@ -1000,6 +991,38 @@ class MarkerAutoCorrector:
 #                'attribute': 'commfuntype'
 #            })
 #            results['modified'] = True
+
+    def _extract_finite_verbs(self, token_ids: List[str], bookdoc) -> List[Tuple[str, str, str]]:
+        """Extract finite verbs from a list of token IDs.
+        
+        Args:
+            token_ids: List of token IDs to examine
+            bookdoc: BookDoc instance for token lookup
+            
+        Returns:
+            List of (token_id, token_text, tag) tuples for finite verbs found
+        """
+        finite_verbs_found = []
+        
+        if bookdoc is None:
+            return finite_verbs_found
+        
+        for token_id in token_ids:
+            token_elem = bookdoc.get_token_elem(token_id)
+            if token_elem is None:
+                continue
+            
+            # Get the tag attribute
+            tag = token_elem.get('tag', '')
+            if not tag:
+                continue
+            
+            # Check if this is a finite verb (tag matches "^V[Bip]")
+            if re.match(r'^V[Bip]', tag):
+                token_text = token_elem.text or ""
+                finite_verbs_found.append((token_id, token_text, tag))
+        
+        return finite_verbs_found
 
     def _get_bookdoc(self, book_id: str, lang: str = "cs"):
         """Get or load a BookDoc instance for the given book ID.
