@@ -89,8 +89,8 @@ def is_verbtag_column(column_name):
 def decompose_verbtag(verbtag_value):
     """
     Decompose a verbtag value into its 6 positions.
-    If there are multiple verbtags, only keep the ones that carry information.
-    If there are multiple informative verbtags, take the first one and log a warning.
+    If there are multiple verbtags, select the most informative one (lowest number of hyphens).
+    In case of ties, take the first such one.
     
     Args:
         verbtag_value: String containing verbtag(s), potentially space-separated
@@ -107,25 +107,40 @@ def decompose_verbtag(verbtag_value):
     
     for verbtag in verbtags:
         if len(verbtag) == 6:
-            # Check if the verbtag carries information (not all dashes)
-            if verbtag != '------' and not all(c == '-' for c in verbtag):
-                # Decompose the 6-character verbtag
-                positions = {
-                    VERBTAG_POSITIONS[0]: verbtag[0],  # Typ slovesa
-                    VERBTAG_POSITIONS[1]: verbtag[1],  # Typ slovesného tvaru
-                    VERBTAG_POSITIONS[2]: verbtag[2],  # Slovesný rod
-                    VERBTAG_POSITIONS[3]: verbtag[3],  # Osoba
-                    VERBTAG_POSITIONS[4]: verbtag[4],  # Číslo
-                    VERBTAG_POSITIONS[5]: verbtag[5]   # Čas
-                }
-                informative_tags.append(positions)
+            # Count hyphens to determine informativeness
+            hyphen_count = verbtag.count('-')
+            # Skip if the verbtag carries no information (all hyphens)
+            if hyphen_count == len(verbtag):
+                continue
+            
+            # Decompose the 6-character verbtag
+            positions = {
+                VERBTAG_POSITIONS[0]: verbtag[0],  # Typ slovesa
+                VERBTAG_POSITIONS[1]: verbtag[1],  # Typ slovesného tvaru
+                VERBTAG_POSITIONS[2]: verbtag[2],  # Slovesný rod
+                VERBTAG_POSITIONS[3]: verbtag[3],  # Osoba
+                VERBTAG_POSITIONS[4]: verbtag[4],  # Číslo
+                VERBTAG_POSITIONS[5]: verbtag[5]   # Čas
+            }
+            informative_tags.append((hyphen_count, verbtag, positions))
     
-    # If we have multiple informative verbtags, take only the first one and warn
     if len(informative_tags) > 1:
-        logging.warning(f"Multiple informative verbtags found: {verbtag_value}. Using only the first one.")
-        return [informative_tags[0]]
+        # Sort by hyphen count (ascending) - fewer hyphens = more informative
+        informative_tags.sort(key=lambda x: x[0])
+        most_informative = informative_tags[0]
+        
+        # Check if there are ties with the same hyphen count
+        tied_tags = [tag for tag in informative_tags if tag[0] == most_informative[0]]
+        if len(tied_tags) > 1:
+            logging.info(f"Multiple verbtags with same informativeness found: {verbtag_value}. "
+                        f"Using the first one with {most_informative[0]} hyphens: {most_informative[1]}")
+        else:
+            logging.info(f"Selected most informative verbtag from: {verbtag_value}. "
+                        f"Using: {most_informative[1]} (with {most_informative[0]} hyphens)")
+        
+        return [most_informative[2]]  # Return the positions dictionary
     elif len(informative_tags) == 1:
-        return informative_tags
+        return [informative_tags[0][2]]  # Return the positions dictionary
     else:
         # No informative verbtags found, return empty positions
         return []
