@@ -13,6 +13,7 @@ import xml.etree.ElementTree as ET
 from markerdoc import MarkerDoc, MarkerDocDef
 
 # Column names in Czech
+URL_COLUMN = 'URL'
 EXPRESSION_COLUMN = 'Výraz'
 LANGUAGE_COLUMN = 'Jazyk'
 
@@ -29,6 +30,7 @@ VERBTAG_POSITIONS = [
 try:
     from openpyxl import Workbook
     from openpyxl.styles import Font
+    from openpyxl.worksheet.hyperlink import Hyperlink
 except ImportError:
     print("Error: openpyxl library is required. Install it with: pip install openpyxl")
     sys.exit(1)
@@ -93,7 +95,8 @@ def decompose_verbtag(verbtag_value):
     In case of ties, take the first such one.
     
     Args:
-        verbtag_value: String containing verbtag(s), potentially space-separated
+        verbtag_value: String containing verbtag(s), potentially space-separated and/or
+                      |-separated (for multi-word tokens)
     
     Returns:
         List of dictionaries, each containing the 6 position values for one verbtag
@@ -101,11 +104,15 @@ def decompose_verbtag(verbtag_value):
     if not verbtag_value or not verbtag_value.strip():
         return []
     
-    # Split by whitespace to handle multiple verbtags
-    verbtags = verbtag_value.strip().split()
+    # Split by whitespace and | to handle multiple verbtags (for multi-word tokens)
+    # First split by whitespace, then by | within each token
+    all_verbtags = []
+    for token in verbtag_value.strip().split():
+        all_verbtags.extend(tag.strip() for tag in token.split('|') if tag.strip())
+    
     informative_tags = []
     
-    for verbtag in verbtags:
+    for verbtag in all_verbtags:
         if len(verbtag) == 6:
             # Count hyphens to determine informativeness
             hyphen_count = verbtag.count('-')
@@ -174,7 +181,7 @@ def get_column_order(def_doc):
     Returns:
         List of column display names in definition order
     """
-    columns = [EXPRESSION_COLUMN, LANGUAGE_COLUMN]  # First two columns with display names in Czech
+    columns = [URL_COLUMN, EXPRESSION_COLUMN, LANGUAGE_COLUMN]  # First three columns with display names in Czech
     
     # Add all attributes from the definition in order using display names
     for interp_elem in def_doc.xml.findall(".//interp"):
@@ -215,7 +222,13 @@ def process_marker_file(file_path, def_doc, expression, language):
     rows = []
     
     for item_elem in marker_doc:
+        # Construct TEITOK URL like in autocorrect_markers.py
+        file_base = os.path.basename(file_path)
+        item_id = item_elem.attrib.get("id", "")
+        teitok_url = f"https://quest.ms.mff.cuni.cz/teitok-dev/teitok/eemc/index.php?action=alignann&annotation=markers&aid={file_base}&annid={item_id}"
+        
         row = {
+            URL_COLUMN: teitok_url,
             EXPRESSION_COLUMN: expression or '',
             LANGUAGE_COLUMN: language or ''
         }
@@ -298,7 +311,13 @@ def export_to_xlsx(marker_files, output_file, schema_file):
     for row_idx, row_data in enumerate(all_rows, 2):
         for col_idx, column_display_name in enumerate(columns, 1):
             value = row_data.get(column_display_name, '')
-            ws.cell(row=row_idx, column=col_idx, value=value)
+            cell = ws.cell(row=row_idx, column=col_idx, value=value)
+            
+            # If this is the URL column, make it a hyperlink
+            if column_display_name == URL_COLUMN and value:
+                cell.hyperlink = value
+                # Make hyperlinks blue and underlined (optional styling)
+                cell.style = "Hyperlink"
     
     # Auto-adjust column widths
     for column in ws.columns:

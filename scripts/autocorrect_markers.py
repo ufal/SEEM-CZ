@@ -406,6 +406,36 @@ class MarkerAutoCorrector:
         
         logging.info(f"Report exported to {output_path}")
     
+    def _get_token_tags(self, token_elem):
+        """Get all POS tags for a token element, handling multi-word tokens.
+        
+        For multi-word tokens, tags are separated by '|' characters.
+        
+        Args:
+            token_elem: XML token element
+            
+        Returns:
+            List of POS tags for the token
+        """
+        tag = token_elem.get('tag', '')
+        if not tag:
+            return []
+        
+        # Split by '|' to handle multi-word tokens
+        return [t.strip() for t in tag.split('|') if t.strip()]
+    
+    def _check_any_tag_matches(self, tags, condition_func):
+        """Check if any tag in the list matches the given condition.
+        
+        Args:
+            tags: List of POS tags
+            condition_func: Function that takes a tag and returns True/False
+            
+        Returns:
+            True if any tag matches the condition, False otherwise
+        """
+        return any(condition_func(tag) for tag in tags)
+    
     def _check_rule_01(self, item: ET.Element, item_id: str, file_path: str, results: Dict[str, Any], book_id: str, bookdoc=None):
         """ Rule 01: Check that all tokens in the "pred" attribute are part of the predicate.
         
@@ -468,15 +498,15 @@ class MarkerAutoCorrector:
                 continue
             
             # Get the POS tag
-            tag = token_elem.get('tag', '')
-            if not tag:
+            tags = self._get_token_tags(token_elem)
+            if not tags:
                 invalid_tokens.append((token_id, token_elem.text or "", "no tag"))
                 continue
             
             # Check if token is a verb (V.*) or reflexive pronoun (P7.*)
-            if not (tag.startswith('V') or tag.startswith('P7')):
+            if not (self._check_any_tag_matches(tags, lambda t: t.startswith('V')) or self._check_any_tag_matches(tags, lambda t: t.startswith('P7'))):
                 token_text = token_elem.text or ""
-                invalid_tokens.append((token_id, token_text, tag))
+                invalid_tokens.append((token_id, token_text, tags))
         
         # Report missing tokens
         if missing_tokens:
@@ -493,7 +523,7 @@ class MarkerAutoCorrector:
         
         # Report invalid token types
         if invalid_tokens:
-            token_info = ", ".join([f'"{text}" (ID: {token_id}, tag: {tag})' for token_id, text, tag in invalid_tokens])
+            token_info = ", ".join([f'"{text}" (ID: {token_id}, tag: {" ".join(tags)})' for token_id, text, tags in invalid_tokens])
             results['issues'].append({
                 'type': '01_pred_invalid_token_type',
                 'severity': 'high',
@@ -746,16 +776,19 @@ class MarkerAutoCorrector:
                 # Case 3: Following a conjunction
                 prev_token = sentence_tokens[token_position - 1]
                 prev_text = prev_token.text or ""
-                prev_tag = prev_token.get('tag', '')
-                prev_pos = prev_tag[0] if prev_tag else ''  # First character of tag is the POS
+                prev_tags = self._get_token_tags(prev_token)
                 prev_lemma = prev_token.get('lemma', '')
                 
+                # Check if any tag of previous token is punctuation (Z) or conjunction (J)
+                is_punctuation = self._check_any_tag_matches(prev_tags, lambda tag: tag.startswith('Z'))
+                is_conjunction = self._check_any_tag_matches(prev_tags, lambda tag: tag.startswith('J'))
+                
                 # Check if previous token is punctuation
-                if prev_pos == 'Z':  # Czech punctuation POS tag is 'Z'
+                if is_punctuation:
                     is_valid_first = True
                     reason = f"following punctuation '{prev_text}'"
                 # Check if previous token is conjunction
-                elif prev_pos == 'J':  # Czech conjunction POS tag is 'J'
+                elif is_conjunction:
                     is_valid_first = True
                     reason = f"following conjunction '{prev_text}' ({prev_lemma})"
                 ## Additional check for common conjunctions that might be tagged differently
@@ -764,14 +797,15 @@ class MarkerAutoCorrector:
                 #    reason = f"following conjunction '{prev_text}' ({prev_lemma})"
 
             if not is_valid_first:
+                prev_tags_str = "|".join(prev_tags) if prev_tags else "no_tag"
                 if not first_token_id.endswith('w1'):
-                    logging.debug(f'Verifying sentpos="first" for tokens "{cs_value}": first_token="{first_token_id}" position={token_position}, prev_token="{prev_text}" tag={prev_tag} pos={prev_pos} lemma={prev_lemma}, valid={is_valid_first}')
+                    logging.debug(f'Verifying sentpos="first" for tokens "{cs_value}": first_token="{first_token_id}" position={token_position}, prev_token="{prev_text}" tags={prev_tags_str} lemma={prev_lemma}, valid={is_valid_first}')
                     logging.debug(prev_token)
 
                 # Get context for better error message
                 prev_info = ""
                 if prev_token is not None:
-                    prev_info = f" (preceded by '{prev_text}' tag={prev_tag} pos={prev_pos} lemma={prev_lemma})"
+                    prev_info = f" (preceded by '{prev_text}' tags={prev_tags_str} lemma={prev_lemma})"
                 
                 current_token_text = token_elem.text or ""
                 
@@ -1194,15 +1228,18 @@ class MarkerAutoCorrector:
             if token_elem is None:
                 continue
             
-            # Get the tag attribute
-            tag = token_elem.get('tag', '')
-            if not tag:
+            # Get all tags (handling multi-word tokens with | separators)
+            tags = self._get_token_tags(token_elem)
+            if not tags:
                 continue
             
-            # Check if this is a finite verb (tag matches "^V[Bip]")
-            if re.match(r'^V[Bip]', tag):
+            # Check if any tag is a finite verb (tag matches "^V[Bip]")
+            finite_verb_tags = [tag for tag in tags if re.match(r'^V[Bip]', tag)]
+            if finite_verb_tags:
                 token_text = token_elem.text or ""
-                finite_verbs_found.append((token_id, token_text, tag))
+                # For finite verbs, include all finite verb tags found
+                for tag in finite_verb_tags:
+                    finite_verbs_found.append((token_id, token_text, tag))
         
         return finite_verbs_found
 
