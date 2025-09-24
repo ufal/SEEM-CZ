@@ -225,7 +225,7 @@ def synchronize_lookup_attributes(item_elem, def_doc, books_cache, book_dir):
                     changes_made = True
         else:
             # Reference attribute is empty or missing - lookup should not exist
-            if lookup_value:
+            if lookup_value is not None:
                 del item_elem.attrib[lookup_attr]
                 logging.info(f"Item {item_id}: Removed orphaned lookup attribute '{lookup_attr}' (reference '{ref_attr}' is empty)")
                 changes_made = True
