@@ -17,28 +17,7 @@ import xml.etree.ElementTree as ET
 from markerdoc import MarkerDocDef
 from bookdoc import BookDoc
 
-def parse_disabledif_condition(disabledif_str):
-    """
-    Parse a disabledif condition string and return a list of conditions.
-    
-    Args:
-        disabledif_str: String like "use=answer|use=other|use=content" or "scope=member|scope=ellipsis"
-    
-    Returns:
-        List of tuples (attribute, value) representing the conditions
-    """
-    if not disabledif_str:
-        return []
-    
-    conditions = []
-    # Split by | for OR conditions
-    parts = disabledif_str.split('|')
-    for part in parts:
-        if '=' in part:
-            attr, value = part.split('=', 1)
-            conditions.append((attr.strip(), value.strip()))
-    
-    return conditions
+
 
 def should_attribute_be_disabled(item_elem, attr_name, disabledif_conditions):
     """
@@ -246,17 +225,12 @@ def remove_disabled_attributes(item_elem, def_doc):
     """
     removed_count = 0
     
-    # Get all interp elements with disabledif conditions
-    interp_elements = def_doc.xml.findall(".//interp[@disabledif]")
-    
+    # Get all attribute names that have disabledif conditions using MarkerDocDef
     attributes_to_remove = []
     
-    for interp_elem in interp_elements:
-        attr_name = interp_elem.attrib["key"]
-        disabledif_str = interp_elem.attrib["disabledif"]
-        
-        # Parse the disabledif condition
-        conditions = parse_disabledif_condition(disabledif_str)
+    for attr_name in def_doc.attr_names():
+        # Get the disabledif condition for this attribute using MarkerDocDef
+        conditions = def_doc.get_disabledif_condition(attr_name)
         
         # Check if the attribute should be disabled
         if should_attribute_be_disabled(item_elem, attr_name, conditions):

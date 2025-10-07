@@ -41,6 +41,7 @@ class MarkerDocDef:
         self.xml = xmlparser.parse(file)
         self._build_type_index()
         self._build_display_index()
+        self._build_disabledif_index()
 
     def _build_display_index(self):
         self._key_display_index = {}
@@ -66,6 +67,18 @@ class MarkerDocDef:
                 ref = interp_elem.attrib["ref"]
                 self._ref_index[key] = ref
 
+    def _build_disabledif_index(self):
+        self._disabledif_index = {}
+        for interp_elem in self.xml.findall(".//interp"):
+            key = interp_elem.attrib["key"]
+            disabledif = interp_elem.attrib.get("disabledif")
+            if not key or not disabledif:
+                continue
+            # Parse the disabledif condition
+            # Format: "use=answer|use=other|use=content"
+            conditions = [condition.strip().split('=', 1) for condition in disabledif.split('|') if '=' in condition]
+            self._disabledif_index[key] = conditions
+
     def get_display_string(self, key, value=None):
         if value is None:
             return self._key_display_index.get(key, key)
@@ -83,6 +96,34 @@ class MarkerDocDef:
         if ref:
             names = [name for name in names if self._ref_index[name] == ref]
         return names
+    
+    def get_attr_type(self, key):
+        """Get the type of an attribute (e.g., 'select', 'input', 'lookup')."""
+        return self._type_index.get(key, "input")
+    
+    def get_attr_values(self, key):
+        """Get all possible values for a select-type attribute.
+        
+        Args:
+            key: The attribute key
+            
+        Returns:
+            List of possible values, or empty list if not a select type or no values defined
+        """
+        if key not in self._value_display_index:
+            return []
+        return list(self._value_display_index[key].keys())
+    
+    def get_disabledif_condition(self, key):
+        """Get the disabledif condition for a given attribute key.
+        
+        Args:
+            key: The attribute key
+
+        Returns:
+            The disabledif condition as a list of tuples (attr, value), or an empty list if not found
+        """
+        return self._disabledif_index.get(key, [])
 
 class MarkerDocCollection:
     """Collection of multiple MarkerDoc instances for cross-file book grouping."""
