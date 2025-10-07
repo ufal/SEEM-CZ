@@ -5,7 +5,8 @@ Script to finalize annotation files by:
 2. Replacing obsolete "clue" attribute with "modif" attribute
 3. Sorting the IDs in attributes of type="idrefs" and logging when order changes
 4. Removing attributes that should be disabled according to "disabledif" rules
-5. Synchronizing lookup attributes with their reference attributes
+5. Adding missing attributes that have default values
+6. Synchronizing lookup attributes with their reference attributes
 """
 
 import argparse
@@ -499,7 +500,8 @@ def finalize_annotation_file(input_file, output_file, def_doc, book_dir, books_c
     2. Replacing obsolete "clue" attribute with "modif" attribute
     3. Sorting IDs in attributes of type="idrefs" and logging when order changes
     4. Removing attributes that should be disabled according to "disabledif" rules
-    5. Synchronizing lookup attributes with their reference attributes
+    5. Adding missing attributes that have default values
+    6. Synchronizing lookup attributes with their reference attributes
     
     Args:
         input_file: Path to input annotation XML file
@@ -560,6 +562,10 @@ def finalize_annotation_file(input_file, output_file, def_doc, book_dir, books_c
         if removed_attrs > 0:
             changes_made = True
         
+        # Check for missing attributes that should be present and add them with default values
+        if check_missing_attributes(item_elem, def_doc):
+            changes_made = True
+        
         # Synchronize lookup attributes with their reference attributes
         if synchronize_lookup_attributes(item_elem, def_doc, books_cache, book_dir):
             changes_made = True
@@ -584,10 +590,59 @@ def finalize_annotation_file(input_file, output_file, def_doc, book_dir, books_c
     
     return changes_made
 
+def check_missing_attributes(item_elem, def_doc):
+    """
+    Check for attributes that should be present but are missing.
+    An attribute should be present if it's not disabled by disabledif conditions.
+    For attributes with default values, adds the missing attribute with its default value.
+    
+    Args:
+        item_elem: XML element for an annotation item
+        def_doc: MarkerDocDef instance for schema information
+    
+    Returns:
+        True if changes were made (attributes added), False otherwise
+    """
+    changes_made = False
+    item_id = item_elem.attrib.get('id', 'unknown')
+    
+    # Get all possible attribute names from the schema
+    all_attr_names = def_doc.attr_names()
+    
+    for attr_name in all_attr_names:
+        # Skip if attribute is already present
+        if attr_name in item_elem.attrib:
+            continue
+        
+        # Skip certain attribute types that are handled elsewhere or are auto-generated
+        attr_type = def_doc.get_attr_type(attr_name)
+        if attr_type in ["lookup", "noedit"]:
+            continue
+        
+        # Get the disabledif condition for this attribute
+        conditions = def_doc.get_disabledif_condition(attr_name)
+        
+        # Check if the attribute should be disabled (and thus its absence is expected)
+        if should_attribute_be_disabled(item_elem, attr_name, conditions):
+            # Attribute should be disabled, so its absence is correct
+            continue
+        
+        # Check if the attribute has a default value
+        default_value = def_doc.get_attr_default_value(attr_name)
+        
+        # If we reach here, the attribute should be present but is missing
+        if default_value is not None:
+            # Add the missing attribute with its default value
+            item_elem.attrib[attr_name] = default_value
+            logging.info(f"Item {item_id}: Added missing attribute '{attr_name}' with default value '{default_value}'")
+            changes_made = True
+    
+    return changes_made
+
 def main():
     """Main function to handle command line arguments and process files"""
     parser = argparse.ArgumentParser(
-        description="Finalize annotation files by removing user tags, replacing obsolete 'clue' with 'modif', sorting idrefs, removing disabled attributes, and synchronizing lookup attributes"
+        description="Finalize annotation files by removing user tags, replacing obsolete 'clue' with 'modif', sorting idrefs, removing disabled attributes, adding missing attributes with default values, and synchronizing lookup attributes"
     )
     parser.add_argument(
         "input_pattern",
@@ -661,6 +716,7 @@ def main():
     total_files = len(input_files)
     processed_files = 0
     files_with_changes = 0
+    total_missing_attrs = 0
     
     # Process each file
     for input_file in input_files:

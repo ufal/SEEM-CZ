@@ -42,6 +42,7 @@ class MarkerDocDef:
         self._build_type_index()
         self._build_display_index()
         self._build_disabledif_index()
+        self._build_default_index()
 
     def _build_display_index(self):
         self._key_display_index = {}
@@ -78,6 +79,14 @@ class MarkerDocDef:
             # Format: "use=answer|use=other|use=content"
             conditions = [condition.strip().split('=', 1) for condition in disabledif.split('|') if '=' in condition]
             self._disabledif_index[key] = conditions
+
+    def _build_default_index(self):
+        self._default_index = {}
+        for interp_elem in self.xml.findall(".//interp"):
+            key = interp_elem.attrib.get("key")
+            default_value = interp_elem.attrib.get("default")
+            if key and default_value is not None:
+                self._default_index[key] = default_value
 
     def get_display_string(self, key, value=None):
         if value is None:
@@ -124,6 +133,17 @@ class MarkerDocDef:
             The disabledif condition as a list of tuples (attr, value), or an empty list if not found
         """
         return self._disabledif_index.get(key, [])
+
+    def get_attr_default_value(self, key):
+        """Get the default value for an attribute from the schema.
+        
+        Args:
+            key: The attribute key
+            
+        Returns:
+            Default value string if found, None otherwise
+        """
+        return self._default_index.get(key)
 
 class MarkerDocCollection:
     """Collection of multiple MarkerDoc instances for cross-file book grouping."""
