@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <examples>
+  <user id="LP" email="polakova@ufal.mff.cuni.cz" name="Lucie Pol&#xE1;kov&#xE1;"/>
 <item id="ex-3684" cql="q-8" xml="Steinbeck-Hrozny_hnevu" en="" cs="cs:Steinbeck-Hrozny_hnevu:0:983:1:w2" cst="Jistě" cssent="&quot; Jistě , &quot; souhlasil Tom ." use="answer" commfuntype="agree" commfunsubtype="afirmace" alignchecked="1" dictexample="0" />
 <item id="ex-2068" cql="q-7" xml="Brett-Pravitem_snadno" en="" cs="cs:Brett-Pravitem_snadno:0:574:1:w3" cst="jistě" cssent="&quot; No jistě , já vím , že se zlobíš , vid ? &quot; usmívala se ." use="other" commfuntype="expr" commfunsubtype="jakoby afirmace, s připuštěním názoru druhého" commfunnote="na hranici s kontaktovou fcí a direktivou" dictexample="1" alignchecked="1" neg="0" />
 <item id="ex-1822" cql="q-7" xml="Barnes-Arthur_a_George" en="" cs="cs:Barnes-Arthur_a_George:0:2809:2:w3" cst="jistě" cssent="Četl jste jistě můj rozbor ,  &quot; připomněl ." use="other" commfuntype="direct" commfunsubtype="direktivní předpoklad" pred="cs:Barnes-Arthur_a_George:0:2809:2:w1 cs:Barnes-Arthur_a_George:0:2809:2:w2" predlemma="číst být" predtag="VpMS----R-AAI-- VB-P---2P-AAI--" predverbtag="VDA2vR A-----" alignchecked="1" dictexample="0" neg="0" />
