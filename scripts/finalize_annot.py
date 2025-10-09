@@ -493,7 +493,7 @@ def get_ref_attr_file_mapping(def_doc):
     
     return ref_attr_file_mapping
 
-def finalize_annotation_file(input_file, output_file, def_doc, book_dir, books_cache=None):
+def finalize_annotation_file(input_file, output_file, def_doc, book_dir, books_cache=None, keep_author=False):
     """
     Process an annotation file by:
     1. Removing authorization tags ("user")
@@ -509,6 +509,7 @@ def finalize_annotation_file(input_file, output_file, def_doc, book_dir, books_c
         def_doc: MarkerDocDef instance for schema definition
         book_dir: Directory containing book files for lookup validation
         books_cache: Optional shared cache for BookDoc instances
+        keep_author: If True, keep the "author" attribute in the output files
     
     Returns:
         True if changes were made to the file, False otherwise
@@ -537,13 +538,16 @@ def finalize_annotation_file(input_file, output_file, def_doc, book_dir, books_c
     
     changes_made = False
     
-    # Remove user tags
-    user_elements = root.findall('.//user')
-    if user_elements:
-        for user_elem in user_elements:
-            root.remove(user_elem)
-            logging.info(f"  Removed user element: {user_elem.attrib}")
-            changes_made = True
+    # Remove user tags if keep_author is False
+    if not keep_author:
+        user_elements = root.findall('.//user')
+        if user_elements:
+            for user_elem in user_elements:
+                root.remove(user_elem)
+                logging.info(f"  Removed user element: {user_elem.attrib}")
+                changes_made = True
+    else:
+        logging.info("  Keeping user elements as per --keep-author option")
     
     # Process each item element
     item_count = 0
@@ -667,6 +671,11 @@ def main():
         action="store_true",
         help="Show what files would be processed without actually processing them"
     )
+    parser.add_argument(
+        "--keep-author",
+        action="store_true",
+        help="Keep author information in the output files"
+    )
     
     args = parser.parse_args()
     
@@ -731,8 +740,8 @@ def main():
             logging.info(f"Processing file {processed_files + 1}/{total_files}: {input_file}")
             
             # Process the file
-            changes_made = finalize_annotation_file(input_file, output_file, def_doc, args.book_dir, books_cache)
-            
+            changes_made = finalize_annotation_file(input_file, output_file, def_doc, args.book_dir, books_cache, keep_author=args.keep_author)
+
             if changes_made:
                 files_with_changes += 1
             
