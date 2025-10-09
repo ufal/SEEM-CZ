@@ -8,6 +8,9 @@ class MarkerDoc:
         self.xml = xmlparser.parse(file)
         self.annot_elems = self._annots()
         self._booklist = None
+        
+        # Extract annotator information from the XML root
+        self._extract_annotator_info()
 
     def __iter__(self):
         return iter(self.annot_elems.values())
@@ -33,6 +36,16 @@ class MarkerDoc:
 
     def annot_by_id(self, annot_id):
         return self.annot_elems.get(annot_id)
+
+    def _extract_annotator_info(self):
+        """Extract annotator information from the XML root user element."""
+        user_elem = self.xml.find('user')
+        if user_elem is not None:
+            self.annotator_id = user_elem.get('id', None)
+            self.annotator_name = user_elem.get('name', None)
+        else:
+            self.annotator_id = None
+            self.annotator_name = None
 
 
 class MarkerDocDef:
