@@ -72,23 +72,31 @@ class FeatureDefinition:
     class WeightMatrix:
         """Class for weight matrix adapted for krippendorff's DistanceMetric protocol."""
         
-        def __init__(self, feat_def: 'FeatureDefinition'):
+        def __init__(self, feat_def: 'FeatureDefinition', weighted: bool = True):
             """
             Initialize the weight matrix.
             """
             self.feature_def = feat_def
-            self.weight_matrix = self._create_weight_matrix()
+            if weighted:
+                self.weight_matrix = self._create_weight_matrix()
+            else:
+                self.weight_matrix = self._create_uniform_weight_matrix()
 
-        def _create_weight_matrix(self) -> Optional[np.ndarray]:
+        def _create_uniform_weight_matrix(self) -> np.ndarray:
+            """Create a uniform weight matrix (identity matrix)."""
+            n = len(self.feature_def.values)
+            weights = np.eye(n)
+            return weights
+
+        def _create_weight_matrix(self) -> np.ndarray:
             """Create a weight matrix (n_values x n_values) or None for uniform weighting"""
 
-            # Only "use" feature has a custom weight matrix for now
-            if self.feature_def.feature_name != 'use':
-                return None
+            weights = self._create_uniform_weight_matrix()
 
-            # Values: certain, evidence, confirm, answer, other, content
-            n = len(self.feature_def.values)
-            weights = np.eye(n)  # Start with identity (perfect agreement on diagonal)
+            # Only "use" feature has a custom weight matrix for now
+            # Default weighing is uniform (1.0 if equal, else 0.0)
+            if self.feature_def.feature_name != 'use':
+                return weights
 
             # For use: group certain/evidence/confirm together
             # Find indices of the related values
@@ -98,6 +106,17 @@ class FeatureDefinition:
                         # partial credit for disagreements within certain/evidence/confirm
                         weights[i, j] = FeatureDefinition.USE_RELATED_WEIGHT
             return weights
+
+        def get_weight(self, val1: str, val2: str) -> float:
+            """Get the weight for a pair of values."""
+            # Lookup in the weight matrix if available
+            if self.weight_matrix is not None:
+                i1 = self.feature_def.value_to_index.get(val1)
+                i2 = self.feature_def.value_to_index.get(val2)
+            if i1 is not None and i2 is not None:
+                return self.weight_matrix[i1, i2]
+            # If no weight matrix, use default: 1.0 if equal, else 0.0
+            return float(val1 == val2)
         
         def __call__(self, v1, v2, i1, i2, n_v, dtype=np.float64):
             """
@@ -121,19 +140,25 @@ class FeatureDefinition:
             self.values.append(self.UNDEF_DISABLED)
         # Map values to indices
         self.value_to_index = {v: i for i, v in enumerate(self.values)}
-        self.weight_matrix = self.WeightMatrix(self) if key == 'use' else None
+        self.weight_matrix = self.WeightMatrix(self)
+        self.uniform_weight_matrix = self.WeightMatrix(self, weighted=False)
         self.feature_type = 'ordinal' if key == 'certainty' else 'nominal'
 
-    def get_weighing_for_krippendorff(self, weighted: bool) -> Optional[WeightMatrixDistance]:
+    def get_weighing_for_krippendorff(self, weighted: bool) -> Tuple[str, Optional[WeightMatrix]]:
         """Get a WeightMatrixDistance for Krippendorff's alpha calculation."""
         if not weighted:
-            return self.feature_type
-        return self.weight_matrix
+            return self.feature_type, None
+        if self.feature_name != 'use':
+            logging.warning(f"Weighted Krippendorff's alpha is only implemented for 'use' feature, using unweighted for '{self.feature_name}'")
+            return self.feature_type, None
+        return "weighted", self.weight_matrix
 
-    def get_weight_matrix(self) -> Optional[np.ndarray]:
+    def get_weight_matrix(self, weighted: bool) -> Optional[np.ndarray]:
         """Get the weight matrix for Cohen's Kappa calculation."""
-        return self.weight_matrix
-    
+        if weighted:
+            return self.weight_matrix
+        return self.uniform_weight_matrix
+
     def get_labels(self) -> List[str]:
         """Get all possible labels/values for this feature."""
         return self.values
@@ -174,6 +199,19 @@ class FeatureDefinition:
         if self.split_by_use and use_value and use_value in self.USE_CATEGORIES:
             return f"{self.USE_CATEGORIES[use_value]}+{feat_value}"
         return feat_value
+    
+    def get_numeric_value(self, value: str) -> Optional[float]:
+        """
+        Convert a string value to a numeric value for Krippendorff's alpha calculation.
+        
+        Args:
+            value: The string value to convert
+        Returns:
+            Numeric value or np.nan if the value is None
+        """
+        if value is None:
+            return np.nan
+        return float(self.value_to_index.get(value, np.nan))
 
     def is_feature_disabled(self, item_values: Dict[str, str]) -> bool:
         """
@@ -195,7 +233,7 @@ class FeatureDefinition:
 
 
 
-def load_feature_definitions(def_file: str, split_by_use: bool) -> Dict[str, FeatureDefinition]:
+def load_feature_definitions(def_file: str, split_by_use: bool = False) -> Dict[str, FeatureDefinition]:
     """Load feature definitions from markers_def.xml using MarkerDocDef.
     
     Args:
@@ -364,7 +402,26 @@ class AgreementCalculator:
                         matrix[row_idx, col_idx] = feature_def.get_value_for_iaa(item_values)
 
         return matrix, unit_labels
-    
+
+    def _convert_to_numeric(self, matrix: np.ndarray, feature_def: FeatureDefinition) -> np.ndarray:
+        """
+        Convert a matrix to a numeric format suitable for Krippendorff's alpha calculation.
+        
+        Args:
+            matrix: The original matrix with string values
+            feature_def: The FeatureDefinition for the feature being analyzed
+        Returns:
+            A numeric numpy array where:
+              - Each cell contains the numeric value for the feature, or NaN if not applicable
+        """
+        # Create a vectorized version of get_numeric_value
+        vectorized_get_numeric = np.vectorize(feature_def.get_numeric_value, otypes=[float])
+        
+        # Apply the vectorized function to all elements at once
+        numeric_matrix = vectorized_get_numeric(matrix)
+
+        return numeric_matrix
+
     def print_annotation_matrix(self, feature: str, max_cols: int = 20, max_width: int = 15) -> None:
         """
         Pretty-print the annotation matrix for a given feature.
@@ -444,6 +501,14 @@ class AgreementCalculator:
         Returns:
             Dictionary with agreement statistics
         """
+        feature_def = self.feature_definitions.get(feature)
+        if not feature_def:
+            return {
+                'feature': feature,
+                'alpha': None,
+                'error': f'Feature definition for "{feature}" not found'
+            }
+
         matrix, unit_labels = self.get_annotation_matrix(feature)
         
         if matrix.size == 0:
@@ -455,15 +520,9 @@ class AgreementCalculator:
                 'agreement': None,
                 'error': 'No annotation units found for this feature'
             }
-        
-        # Get weight matrix and feature definition for weighted calculations
-        weight_matrix = None
-        feature_def = None
-        if weighted:
-            feature_def = self.feature_definitions.get(feature)
-            if feature_def:
-                weight_matrix = feature_def.get_weight_matrix()
-        
+
+        weight_matrix = feature_def.get_weight_matrix(weighted)
+
         # Count different types of values
         total_pairs = 0
         total_agreements = 0
@@ -489,26 +548,11 @@ class AgreementCalculator:
             # Count pairwise agreements within this unit
             for i in range(len(valid_values)):
                 for j in range(i + 1, len(valid_values)):
+                    val1, val2 = valid_values[i], valid_values[j]
                     total_pairs += 1
-                    if valid_values[i] == valid_values[j]:
+                    if val1 == val2:
                         total_agreements += 1
-                        if weighted:
-                            weighted_agreements += 1.0
-                    elif weighted and weight_matrix is not None and feature_def:
-                        # Calculate weighted agreement for disagreements
-                        val1, val2 = valid_values[i], valid_values[j]
-                        if val1 in feature_def.value_to_index and val2 in feature_def.value_to_index:
-                            idx1 = feature_def.value_to_index[val1]
-                            idx2 = feature_def.value_to_index[val2]
-                            
-                            # Handle different weight matrix types
-                            if weight_matrix.ndim == 2:
-                                # 2D matrix (e.g., for "use" feature)
-                                weight = weight_matrix[idx1, idx2]
-                            else:
-                                weight = 0.0  # No partial credit for unknown weight formats
-                            
-                            weighted_agreements += weight
+                    weighted_agreements += weight_matrix.get_weight(val1, val2)
         
         if total_pairs == 0:
             return {
@@ -656,8 +700,32 @@ class AgreementCalculator:
         Returns:
             Dictionary with alpha statistics
         """
-        matrix, unit_labels = self.get_annotation_matrix(feature)
+        feature_def = self.feature_definitions.get(feature)
+        if not feature_def:
+            return {
+                'feature': feature,
+                'alpha': None,
+                'error': f'Feature definition for "{feature}" not found'
+            }
         
+        # Get all possible feature values
+        all_values = feature_def.get_labels()
+        if len(all_values) < 2:
+            return {
+                'feature': feature,
+                'alpha': None,
+                'total_units': len(unit_labels),
+                'missing_units': missing_count,
+                'disabled_units': disabled_count,
+                'error': 'Need at least 2 different values for alpha calculation'
+            }
+
+        # Prepare data for Krippendorff's alpha
+        # The krippendorff library expects data in the format:
+        # - rows are annotators
+        # - columns are annotation units
+        # - missing values are None
+        matrix, unit_labels = self.get_annotation_matrix(feature)
         if matrix.size == 0:
             return {
                 'feature': feature,
@@ -669,62 +737,12 @@ class AgreementCalculator:
         
         # Count different types of values
         missing_count = np.sum(matrix == None)
-        disabled_count = np.sum(matrix == FeatureDefinition.UNDEF_DISABLED)
+        disabled_count = np.sum(matrix == FeatureDefinition.UNDEF_DISABLED) 
         
-        # Prepare data for Krippendorff's alpha
-        # The krippendorff library expects data in the format:
-        # - rows are annotators
-        # - columns are annotation units
-        # - missing values should be NaN or None
-        
-        # Convert the matrix to the format expected by krippendorff
-        alpha_matrix = np.full(matrix.shape, np.nan, dtype=object)
-        
-        # Get all possible values from FeatureDefinition if available, otherwise from data
-        feature_def = self.feature_definitions.get(feature)
-        if feature_def:
-            all_values = feature_def.get_labels()
-        else: 
-            logging.warning(f"No feature definition found for '{feature}', using observed values only")
-            all_values = set()
-            for i in range(matrix.shape[0]):
-                for j in range(matrix.shape[1]):
-                    val = matrix[i, j]
-                    if val not in ['UNDEF_MISSING', 'UNDEF_DISABLED'] and val.strip():
-                        all_values.add(val)
-            all_values = sorted(list(all_values))
-
-        if len(all_values) < 2:
-            return {
-                'feature': feature,
-                'alpha': None,
-                'total_units': len(unit_labels),
-                'missing_units': missing_count,
-                'disabled_units': disabled_count,
-                'error': 'Need at least 2 different values for alpha calculation'
-            }
-        
-        # Create a mapping from string values to numeric indices for nominal data
-        value_to_index = {val: idx for idx, val in enumerate(all_values)}
-        
-        # Fill the alpha matrix
-        for i in range(matrix.shape[0]):
-            for j in range(matrix.shape[1]):
-                val = matrix[i, j]
-                if val == 'UNDEF_MISSING':
-                    alpha_matrix[i, j] = np.nan  # Missing value
-                elif val == 'UNDEF_DISABLED':
-                    # For disabled values, we treat them as valid annotations
-                    # Use a special index for disabled state
-                    alpha_matrix[i, j] = len(all_values)  # Index beyond normal values
-                elif val.strip():
-                    alpha_matrix[i, j] = value_to_index[val]
-                else:
-                    alpha_matrix[i, j] = np.nan  # Empty values treated as missing
-        
-        # Convert to numeric array
+        # Convert the annotation matrix and value domain to the format expected by krippendorff        
         try:
-            alpha_matrix_numeric = alpha_matrix.astype(float)
+            value_domain = self._convert_to_numeric(np.array(all_values), feature_def)
+            alpha_matrix = self._convert_to_numeric(matrix, feature_def)
         except ValueError:
             return {
                 'feature': feature,
@@ -736,7 +754,7 @@ class AgreementCalculator:
             }
         
         # Count valid data points (non-NaN values)
-        valid_count = np.sum(~np.isnan(alpha_matrix_numeric))
+        valid_count = np.sum(~np.isnan(alpha_matrix))
         
         if valid_count < 2:
             return {
@@ -748,38 +766,28 @@ class AgreementCalculator:
                 'error': 'Need at least 2 valid data points for alpha calculation'
             }
         
+    
+        level_of_measurement, weight_matrix = feature_def.get_weighing_for_krippendorff(weighted)
+        
         try:
-            weight_matrix = None
-            if weighted:
-                weight_matrix = feature_def.get_weight_matrix()
 
-            # Determine the level of measurement based on availability of weight matrix or feature type
-            measurement_type = None
-            if weight_matrix is not None:
-                # Use custom distance metric based on weight matrix
-                custom_distance = WeightMatrixDistance(weight_matrix, value_to_index)
-                level_of_measurement = custom_distance
-                measurement_type = 'weighted'
-            elif feature == 'certainty':
-                # Ordinal data - categorical with natural ordering
-                level_of_measurement = 'ordinal'
-            elif feature in ['use', 'commfuntype', 'scope', 'tfpos', 'sentpos', 'neg', 'contrast', 'modalpersp']:
-                # Nominal data - categorical without natural ordering
-                level_of_measurement = 'nominal'
-            else:
-                # Default to nominal for unknown features
-                level_of_measurement = 'nominal'
-            
+            #print(alpha_matrix.dtype.kind)
+            #print(alpha_matrix.shape)
+            #print(alpha_matrix)
+            #print(np.unique(alpha_matrix[~np.isnan(alpha_matrix)]))
+            #print(value_domain)
+
             # Calculate Krippendorff's alpha
             alpha = krippendorff.alpha(
-                reliability_data=alpha_matrix_numeric,
-                level_of_measurement=level_of_measurement
+                reliability_data=alpha_matrix,
+                value_domain=value_domain,
+                level_of_measurement=weight_matrix if weight_matrix else level_of_measurement
             )
             
             return {
                 'feature': feature,
                 'alpha': alpha,
-                'level_of_measurement': measurement_type or level_of_measurement,
+                'level_of_measurement': level_of_measurement,
                 'weighted': weighted,
                 'total_units': len(unit_labels),
                 'missing_units': missing_count,
@@ -836,8 +844,8 @@ class AgreementCalculator:
                 continue
             
             print(f"  Total annotation units: {simple_result['total_units']}")
-            print(f"  Missing units (not annotated): {simple_result['missing_units']}")
-            print(f"  Disabled units (treated as valid annotations): {simple_result['disabled_units']}")
+            print(f"  Missing unit-annotator pairs (not annotated): {simple_result['missing_units']}")
+            print(f"  Disabled unit-annotator pairs (treated as valid annotations): {simple_result['disabled_units']}")
             print(f"  Total annotation pairs: {simple_result['total_pairs']}")
             print(f"  Agreements: {simple_result['agreements']}")
             print(f"  Disagreements: {simple_result['disagreements']}")
@@ -981,7 +989,7 @@ def main():
         print("Loading feature definitions...")
         def_file_path = Path(args.def_file)
         if def_file_path.exists():
-            feature_definitions = load_feature_definitions(str(def_file_path))
+            feature_definitions = load_feature_definitions(str(def_file_path), args.split_by_use)
             print(f"Loaded definitions for features: {', '.join(feature_definitions.keys())}")
         else:
             print(f"Warning: Definition file not found: {def_file_path}")
