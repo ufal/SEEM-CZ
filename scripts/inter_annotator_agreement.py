@@ -737,7 +737,9 @@ class AgreementCalculator:
         
         # Count different types of values
         missing_count = np.sum(matrix == None)
-        disabled_count = np.sum(matrix == FeatureDefinition.UNDEF_DISABLED) 
+        disabled_count = np.sum(matrix == FeatureDefinition.UNDEF_DISABLED)
+
+        unique_values = np.unique(matrix[~np.isin(matrix, [None])])
         
         # Convert the annotation matrix and value domain to the format expected by krippendorff        
         try:
@@ -793,7 +795,8 @@ class AgreementCalculator:
                 'missing_units': missing_count,
                 'disabled_units': disabled_count,
                 'valid_values': valid_count,
-                'unique_values': len(all_values)
+                'value_domain': all_values,
+                'unique_values': unique_values.tolist(),
             }
             
         except Exception as e:
@@ -897,10 +900,13 @@ class AgreementCalculator:
                 level = alpha_result.get('level_of_measurement', 'nominal')
                 is_weighted = alpha_result.get('weighted', False)
                 valid_values = alpha_result.get('valid_values', 0)
-                unique_values = alpha_result.get('unique_values', 0)
+                value_domain = alpha_result.get('value_domain', [])
+                unique_values = alpha_result.get('unique_values', [])
                 
                 print(f"  Krippendorff's Alpha ({level}): {alpha_result['alpha']:.4f}")
-                print(f"  Valid data points: {valid_values}, Unique values: {unique_values}")
+                print(f"  Valid data points: {valid_values}")
+                print(f"  Value domain: {', '.join(value_domain)} ({len(value_domain)})")
+                print(f"  Unique values: {', '.join(unique_values)} ({len(unique_values)})")
                 print(f"  (Missing: {alpha_result.get('missing_units', 0)}, Disabled treated as valid: {alpha_result.get('disabled_units', 0)})")
                 
                 # Interpretation of Alpha (similar to Kappa but more conservative)
