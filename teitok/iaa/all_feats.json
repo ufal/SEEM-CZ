@@ -1,0 +1,399 @@
+{
+  "metadata": {
+    "timestamp": "2025-10-14T14:40:29.866136",
+    "annotator_count": 10,
+    "annotators": [
+      {
+        "id": "BS",
+        "name": "Barbora Štěpánková",
+        "files_count": 4,
+        "total_items": 292
+      },
+      {
+        "id": "IS",
+        "name": "Iurii Savelev-Galiaminskii",
+        "files_count": 4,
+        "total_items": 200
+      },
+      {
+        "id": "JS",
+        "name": "Jana Šindlerová",
+        "files_count": 4,
+        "total_items": 292
+      },
+      {
+        "id": "KB",
+        "name": "Kateřina Blažková",
+        "files_count": 1,
+        "total_items": 50
+      },
+      {
+        "id": "LP",
+        "name": "Lucie Poláková",
+        "files_count": 4,
+        "total_items": 293
+      },
+      {
+        "id": "MD",
+        "name": "Michaela Danková",
+        "files_count": 1,
+        "total_items": 50
+      },
+      {
+        "id": "OD",
+        "name": "Ondřej Drobil",
+        "files_count": 2,
+        "total_items": 100
+      },
+      {
+        "id": "SC",
+        "name": "Stanislav Cincibuch",
+        "files_count": 1,
+        "total_items": 50
+      },
+      {
+        "id": "VK",
+        "name": "Václava Kettnerová",
+        "files_count": 1,
+        "total_items": 50
+      },
+      {
+        "id": "VP",
+        "name": "Vladimír Petkevič",
+        "files_count": 2,
+        "total_items": 100
+      }
+    ],
+    "common_annotation_units": 690,
+    "weighted": false
+  },
+  "features": {
+    "use": {
+      "simple_agreement": {
+        "feature": "use",
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 0,
+        "total_pairs": 884,
+        "agreements": 675,
+        "disagreements": 209,
+        "agreement_percentage": 76.35746606334841,
+        "weighted": false
+      },
+      "krippendorffs_alpha": {
+        "feature": "use",
+        "alpha": 0.6182273515151429,
+        "level_of_measurement": "nominal",
+        "weighted": false,
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 0,
+        "valid_values": 1477,
+        "value_domain": [
+          "certain",
+          "evidence",
+          "confirm",
+          "answer",
+          "other",
+          "content"
+        ],
+        "unique_values": [
+          "answer",
+          "certain",
+          "confirm",
+          "content",
+          "evidence",
+          "other"
+        ]
+      }
+    },
+    "certainty": {
+      "simple_agreement": {
+        "feature": "certainty",
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 489,
+        "total_pairs": 884,
+        "agreements": 507,
+        "disagreements": 377,
+        "agreement_percentage": 57.35294117647059,
+        "weighted": false
+      },
+      "krippendorffs_alpha": {
+        "feature": "certainty",
+        "alpha": 0.6376522489291033,
+        "level_of_measurement": "ordinal",
+        "weighted": false,
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 489,
+        "valid_values": 1477,
+        "value_domain": [
+          "no",
+          "hesitate",
+          "medium",
+          "highmedium",
+          "full",
+          "UNDEF_DISABLED"
+        ],
+        "unique_values": [
+          "UNDEF_DISABLED",
+          "full",
+          "hesitate",
+          "highmedium",
+          "medium",
+          "no"
+        ]
+      }
+    },
+    "commfuntype": {
+      "simple_agreement": {
+        "feature": "commfuntype",
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 265,
+        "total_pairs": 884,
+        "agreements": 716,
+        "disagreements": 168,
+        "agreement_percentage": 80.99547511312217,
+        "weighted": false
+      },
+      "krippendorffs_alpha": {
+        "feature": "commfuntype",
+        "alpha": 0.6806806714980277,
+        "level_of_measurement": "nominal",
+        "weighted": false,
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 265,
+        "valid_values": 1477,
+        "value_domain": [
+          "decl",
+          "direct",
+          "interr",
+          "comit",
+          "agree",
+          "expr",
+          "UNDEF_DISABLED"
+        ],
+        "unique_values": [
+          "UNDEF_DISABLED",
+          "agree",
+          "comit",
+          "decl",
+          "direct",
+          "expr",
+          "interr"
+        ]
+      }
+    },
+    "scope": {
+      "simple_agreement": {
+        "feature": "scope",
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 489,
+        "total_pairs": 884,
+        "agreements": 707,
+        "disagreements": 177,
+        "agreement_percentage": 79.97737556561087,
+        "weighted": false
+      },
+      "krippendorffs_alpha": {
+        "feature": "scope",
+        "alpha": 0.6381158604082109,
+        "level_of_measurement": "nominal",
+        "weighted": false,
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 489,
+        "valid_values": 1477,
+        "value_domain": [
+          "sent",
+          "member",
+          "ellipsis",
+          "UNDEF_DISABLED"
+        ],
+        "unique_values": [
+          "UNDEF_DISABLED",
+          "ellipsis",
+          "member",
+          "sent"
+        ]
+      }
+    },
+    "tfpos": {
+      "simple_agreement": {
+        "feature": "tfpos",
+        "total_units": 690,
+        "missing_units": 5431,
+        "disabled_units": 489,
+        "total_pairs": 876,
+        "agreements": 659,
+        "disagreements": 217,
+        "agreement_percentage": 75.22831050228311,
+        "weighted": false
+      },
+      "krippendorffs_alpha": {
+        "feature": "tfpos",
+        "alpha": 0.5193275524149366,
+        "level_of_measurement": "nominal",
+        "weighted": false,
+        "total_units": 690,
+        "missing_units": 5431,
+        "disabled_units": 489,
+        "valid_values": 1469,
+        "value_domain": [
+          "neutral",
+          "emphasis",
+          "ownfocus",
+          "marked",
+          "UNDEF_DISABLED"
+        ],
+        "unique_values": [
+          "UNDEF_DISABLED",
+          "emphasis",
+          "marked",
+          "neutral",
+          "ownfocus"
+        ]
+      }
+    },
+    "sentpos": {
+      "simple_agreement": {
+        "feature": "sentpos",
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 489,
+        "total_pairs": 884,
+        "agreements": 696,
+        "disagreements": 188,
+        "agreement_percentage": 78.73303167420815,
+        "weighted": false
+      },
+      "krippendorffs_alpha": {
+        "feature": "sentpos",
+        "alpha": 0.6678422580272081,
+        "level_of_measurement": "nominal",
+        "weighted": false,
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 489,
+        "valid_values": 1477,
+        "value_domain": [
+          "first",
+          "pseudofirst",
+          "last",
+          "other",
+          "UNDEF_DISABLED"
+        ],
+        "unique_values": [
+          "UNDEF_DISABLED",
+          "first",
+          "last",
+          "other",
+          "pseudofirst"
+        ]
+      }
+    },
+    "neg": {
+      "simple_agreement": {
+        "feature": "neg",
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 337,
+        "total_pairs": 884,
+        "agreements": 820,
+        "disagreements": 64,
+        "agreement_percentage": 92.76018099547511,
+        "weighted": false
+      },
+      "krippendorffs_alpha": {
+        "feature": "neg",
+        "alpha": 0.8436315016548671,
+        "level_of_measurement": "nominal",
+        "weighted": false,
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 337,
+        "valid_values": 1477,
+        "value_domain": [
+          "1",
+          "0",
+          "UNDEF_DISABLED"
+        ],
+        "unique_values": [
+          "0",
+          "1",
+          "UNDEF_DISABLED"
+        ]
+      }
+    },
+    "contrast": {
+      "simple_agreement": {
+        "feature": "contrast",
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 489,
+        "total_pairs": 884,
+        "agreements": 658,
+        "disagreements": 226,
+        "agreement_percentage": 74.43438914027149,
+        "weighted": false
+      },
+      "krippendorffs_alpha": {
+        "feature": "contrast",
+        "alpha": 0.517793500356398,
+        "level_of_measurement": "nominal",
+        "weighted": false,
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 489,
+        "valid_values": 1477,
+        "value_domain": [
+          "1",
+          "0",
+          "UNDEF_DISABLED"
+        ],
+        "unique_values": [
+          "0",
+          "1",
+          "UNDEF_DISABLED"
+        ]
+      }
+    },
+    "modalpersp": {
+      "simple_agreement": {
+        "feature": "modalpersp",
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 489,
+        "total_pairs": 884,
+        "agreements": 660,
+        "disagreements": 224,
+        "agreement_percentage": 74.6606334841629,
+        "weighted": false
+      },
+      "krippendorffs_alpha": {
+        "feature": "modalpersp",
+        "alpha": 0.48128356064560474,
+        "level_of_measurement": "nominal",
+        "weighted": false,
+        "total_units": 690,
+        "missing_units": 5423,
+        "disabled_units": 489,
+        "valid_values": 1477,
+        "value_domain": [
+          "clear",
+          "unclear",
+          "UNDEF_DISABLED"
+        ],
+        "unique_values": [
+          "UNDEF_DISABLED",
+          "clear",
+          "unclear"
+        ]
+      }
+    }
+  }
+}
