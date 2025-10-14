@@ -19,6 +19,8 @@ Example:
 import argparse
 import logging
 import sys
+import json
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Tuple, Any, Optional
 import xml.etree.ElementTree as ET
@@ -925,9 +927,71 @@ class AgreementCalculator:
                     alpha_interpretation = "Almost perfect"
                 print(f"  Alpha Interpretation: {alpha_interpretation}")
     
-    
+    def get_results_dict(self, features: List[str], weighted: bool = False) -> Dict[str, Any]:
+        """
+        Get agreement results as a dictionary suitable for JSON serialization.
+        
+        Args:
+            features: List of feature names to analyze
+            weighted: Whether to use weighted agreement calculation
+            
+        Returns:
+            Dictionary containing all agreement statistics
+        """
+        results = {
+            'metadata': {
+                'timestamp': datetime.now().isoformat(),
+                'annotator_count': self.annotator_count,
+                'annotators': [
+                    {
+                        'id': annotator_id,
+                        'name': self.annotator_docs[annotator_id][0].annotator_name,
+                        'files_count': len(self.annotator_docs[annotator_id]),
+                        'total_items': sum(len(doc.annot_elems) for doc in self.annotator_docs[annotator_id])
+                    }
+                    for annotator_id in self.annotators
+                ],
+                'common_annotation_units': len(self.annotation_units),
+                'weighted': weighted
+            },
+            'features': {}
+        }
+        
+        for feature in features:
+            feature_results = {
+                'simple_agreement': self.calculate_simple_agreement(feature, weighted=weighted),
+                'krippendorffs_alpha': self.calculate_krippendorffs_alpha(feature, weighted=weighted)
+            }
+            
+            # Add Cohen's Kappa for exactly 2 annotators
+            if self.annotator_count == 2:
+                feature_results['cohens_kappa'] = self.calculate_cohens_kappa(feature)
+            
+            results['features'][feature] = feature_results
+        
+        return results
     
 
+
+class NumpyEncoder(json.JSONEncoder):
+    """JSON encoder that handles numpy types."""
+    def default(self, obj):
+        if isinstance(obj, np.integer):
+            return int(obj)
+        elif isinstance(obj, np.floating):
+            return float(obj)
+        elif isinstance(obj, np.ndarray):
+            return obj.tolist()
+        elif isinstance(obj, np.bool_):
+            return bool(obj)
+        return super().default(obj)
+
+
+def save_results_to_json(results: Dict[str, Any], output_file: str):
+    """Save results to a JSON file."""
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(results, f, indent=2, cls=NumpyEncoder, ensure_ascii=False)
+    print(f"\nResults saved to: {output_file}")
 
 
 def main():
@@ -963,7 +1027,13 @@ def main():
     parser.add_argument(
         '--output',
         type=str,
-        help='Optional output file for results (not yet implemented)'
+        help='Output file for results in JSON format'
+    )
+    
+    parser.add_argument(
+        '--json-only',
+        action='store_true',
+        help='Only output JSON format (suppress console output)'
     )
     
     parser.add_argument(
@@ -1011,7 +1081,24 @@ def main():
         
         # Calculate agreement
         calculator = AgreementCalculator(marker_docs, feature_definitions)
-        calculator.print_summary(args.features, print_matrix=args.print_matrix, weighted=args.weighted)
+        
+        # Get results dictionary for JSON output
+        results = calculator.get_results_dict(args.features, weighted=args.weighted)
+        
+        # Save to JSON file if requested
+        if args.output:
+            save_results_to_json(results, args.output)
+        
+        # Print results based on format preference
+        if args.json_only:
+            # Output only JSON to stdout
+            print(json.dumps(results, indent=2, cls=NumpyEncoder, ensure_ascii=False))
+        elif not args.output:
+            # Default console output if no JSON file specified
+            calculator.print_summary(args.features, print_matrix=args.print_matrix, weighted=args.weighted)
+        else:
+            # Both JSON file and console output
+            calculator.print_summary(args.features, print_matrix=args.print_matrix, weighted=args.weighted)
         
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
