@@ -139,7 +139,9 @@ class FeatureDefinition:
         self.disabledif = disabledif
         # Add UNDEF_DISABLED to values if the feature can be disabled
         if disabledif:
-            self.values.append(self.UNDEF_DISABLED)
+            # For the certainty feature, being disabled means practically the same as the 'no' value
+            if self.feature_name != 'certainty':
+                self.values.append(self.UNDEF_DISABLED)
         # Map values to indices
         self.value_to_index = {v: i for i, v in enumerate(self.values)}
         self.weight_matrix = self.WeightMatrix(self)
@@ -193,6 +195,9 @@ class FeatureDefinition:
             The modified value for IAA calculations
         """
         if self.is_feature_disabled(item_values):
+            # For the certainty feature, being disabled means practically the same as the 'no' value
+            if self.feature_name == 'certainty':
+                return 'no'
             return self.UNDEF_DISABLED
         feat_value = item_values.get(self.feature_name)
         if not feat_value:
