@@ -499,8 +499,8 @@ class AgreementCalculator:
         print(f"  Missing (UNDEF_MISSING): {missing_count} ({missing_count/total_cells*100:.1f}%)")
         print(f"  Disabled (UNDEF_DISABLED): {disabled_count} ({disabled_count/total_cells*100:.1f}%)")
         print("=" * 80)
-    
-    def print_coincidence_matrix(self, feature: str) -> None:
+
+    def print_coincidence_matrix(self, feature: str, normalize: bool = False) -> None:
         """
         Print the coincidence matrix for a given feature.
         
@@ -549,7 +549,15 @@ class AgreementCalculator:
                         coincidence_matrix[idx1, idx2] += 1
                         if idx1 != idx2:
                             coincidence_matrix[idx2, idx1] += 1  # Symmetric
-        
+
+        # normalize per columns if requested
+        if normalize:
+            coincidence_matrix = coincidence_matrix.astype(float)
+            col_sums = coincidence_matrix.sum(axis=0)
+            for j in range(n_labels):
+                if col_sums[j] > 0:
+                    coincidence_matrix[:, j] = coincidence_matrix[:, j] / col_sums[j] * 100
+
         # Print the coincidence matrix
         print(f"\nCoincidence Matrix for feature '{feature}':")
         # sum the upper triangle to get total counts
@@ -568,7 +576,10 @@ class AgreementCalculator:
         for i, label in enumerate(labels):
             row = f"{label:<15}"
             for j in range(n_labels):
-                row += f"{coincidence_matrix[i, j]:<15}"
+                if normalize:
+                    row += f"{coincidence_matrix[i, j]:<15.1f}"
+                else:
+                    row += f"{coincidence_matrix[i, j]:<15}"
             print(row)
         
         print("=" * 80)
@@ -898,7 +909,7 @@ class AgreementCalculator:
                 'error': f'Failed to calculate alpha: {str(e)}'
             }
 
-    def print_summary(self, features: List[str], print_matrix: bool = False, weighted: bool = False, print_coincidence_matrix: bool = False):
+    def print_summary(self, features: List[str], print_matrix: bool = False, weighted: bool = False, print_coincidence_matrix: str = None) -> None:
         """
         Print a summary of agreement across specified features.
         
@@ -926,7 +937,7 @@ class AgreementCalculator:
                 self.print_annotation_matrix(feature)
 
             if print_coincidence_matrix:
-                self.print_coincidence_matrix(feature)
+                self.print_coincidence_matrix(feature, (print_coincidence_matrix == 'normalize'))
             
             # Calculate simple agreement
             simple_result = self.calculate_simple_agreement(feature, weighted=weighted)
@@ -1134,8 +1145,8 @@ def main():
 
     parser.add_argument(
         '--print-coincidence-matrix',
-        action='store_true',
-        help='Print the coincidence matrix for each feature (useful for debugging)'
+        choices=['normalize', 'raw'],
+        help='Print the coincidence matrix for each feature (useful for debugging). Use "normalize" to show percentages, "raw" for counts.'
     )
 
     parser.add_argument(
