@@ -312,23 +312,26 @@ class AgreementCalculator:
         for annotator_id, marker_docs in self.annotator_docs.items():
             # Merge all annotations from this annotator across all their files
             for marker_doc in marker_docs:
+                expr_lang = marker_doc.filename.split('-', 1)[1].replace('.xml', '')
                 for item_id, item_elem in marker_doc.annot_elems.items():
                     token_id = item_elem.get('cs', '')
                     if not token_id:
                         continue  # Skip items without token ID
-                    
-                    if token_id not in groups:
-                        groups[token_id] = {}
-                    
+
+                    group_id = expr_lang + '|' + token_id
+
+                    if group_id not in groups:
+                        groups[group_id] = {}
+
                     # If we already have an annotation for this token_id from this annotator,
                     # we could either skip it or handle the conflict. For now, we'll use the first one.
-                    if annotator_id not in groups[token_id]:
-                        groups[token_id][annotator_id] = item_elem
-        
+                    if annotator_id not in groups[group_id]:
+                        groups[group_id][annotator_id] = item_elem
+
         # Only keep groups that have annotations from at least 2 annotators
         filtered_groups = {
-            token_id: annotator_dict 
-            for token_id, annotator_dict in groups.items() 
+            group_id: annotator_dict
+            for group_id, annotator_dict in groups.items()
             if len(annotator_dict) >= 2
         }
         
@@ -521,12 +524,20 @@ class AgreementCalculator:
         print(matrix.shape[1])
         for col_idx in range(matrix.shape[1]):  # For each annotation unit
             column = matrix[:, col_idx]
-            valid_values = [val for val in column if val is not None]
+            row_idx_with_values = [i for i, val in enumerate(column) if val is not None]
             
-            for i in range(len(valid_values)):
-                for j in range(i, len(valid_values)):
-                    val1 = valid_values[i]
-                    val2 = valid_values[j]
+            for i in range(len(row_idx_with_values)):
+                for j in range(i, len(row_idx_with_values)):
+                    row_i, row_j = row_idx_with_values[i], row_idx_with_values[j]
+                    val1, val2 = column[row_i], column[row_j]
+                    if val1 != val2:
+                        expr_lang = unit_labels[col_idx].split('|', 1)[0]
+                        sorted_vals = sorted([val1, val2], key=lambda x: label_to_index.get(x, -1))
+                        if val1 == sorted_vals[0]:
+                            print(f"DIFF_VALUES:\t{sorted_vals[0]}/{sorted_vals[1]}:\t{expr_lang}\t{self.annotators[row_i]}\t{self.annotators[row_j]}")
+                        else:
+                            print(f"DIFF_VALUES:\t{sorted_vals[0]}/{sorted_vals[1]}:\t{expr_lang}\t{self.annotators[row_j]}\t{self.annotators[row_i]}")
+
                     if val1 in label_to_index and val2 in label_to_index:
                         idx1 = label_to_index[val1]
                         idx2 = label_to_index[val2]

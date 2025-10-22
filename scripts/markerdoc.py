@@ -5,6 +5,7 @@ import xml.etree.ElementTree as xmlparser
 class MarkerDoc:
 
     def __init__(self, file):
+        self.filename = file
         self.xml = xmlparser.parse(file)
         self.annot_elems = self._annots()
         self._booklist = None
