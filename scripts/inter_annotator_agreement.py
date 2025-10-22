@@ -492,6 +492,77 @@ class AgreementCalculator:
         print(f"  Disabled (UNDEF_DISABLED): {disabled_count} ({disabled_count/total_cells*100:.1f}%)")
         print("=" * 80)
     
+    def print_coincidence_matrix(self, feature: str) -> None:
+        """
+        Print the coincidence matrix for a given feature.
+        
+        Args:
+            feature: The XML attribute name to display
+        """
+        matrix, unit_labels = self.get_annotation_matrix(feature)
+        
+        if matrix.size == 0:
+            print(f"No annotation matrix for feature '{feature}'")
+            return
+        
+        feature_def = self.feature_definitions.get(feature)
+        if not feature_def:
+            print(f"Feature definition for '{feature}' not found")
+            return
+        
+        # Prepare coincidence matrix
+        labels = feature_def.get_labels()
+        label_to_index = {label: idx for idx, label in enumerate(labels)}
+        n_labels = len(labels)
+        
+        coincidence_matrix = np.zeros((n_labels, n_labels), dtype=int)
+        
+        # Count pairwise co-occurrences
+        print(matrix.shape[1])
+        for col_idx in range(matrix.shape[1]):  # For each annotation unit
+            column = matrix[:, col_idx]
+            valid_values = [val for val in column if val is not None]
+            
+            for i in range(len(valid_values)):
+                for j in range(i, len(valid_values)):
+                    val1 = valid_values[i]
+                    val2 = valid_values[j]
+                    if val1 in label_to_index and val2 in label_to_index:
+                        idx1 = label_to_index[val1]
+                        idx2 = label_to_index[val2]
+                        coincidence_matrix[idx1, idx2] += 1
+                        if idx1 != idx2:
+                            coincidence_matrix[idx2, idx1] += 1  # Symmetric
+        
+        # Print the coincidence matrix
+        print(f"\nCoincidence Matrix for feature '{feature}':")
+        # sum the upper triangle to get total counts
+        upper_sum = np.sum(coincidence_matrix)
+        print(f"Total pairwise counts: {upper_sum}")
+        print("=" * 80)
+        
+        # Print header
+        header = f"{'':<15}"
+        for label in labels:
+            header += f"{label:<15}"
+        print(header)
+        print("-" * len(header))
+        
+        # Print each row
+        for i, label in enumerate(labels):
+            row = f"{label:<15}"
+            for j in range(n_labels):
+                row += f"{coincidence_matrix[i, j]:<15}"
+            print(row)
+        
+        print("=" * 80)
+        
+        # Print summary statistics
+        missing_count = np.sum(matrix == 'UNDEF_MISSING')
+        disabled_count = np.sum(matrix == 'UNDEF_DISABLED')
+        total_cells = matrix.size
+        actual_values = total_cells - missing_count
+
     def calculate_simple_agreement(self, feature: str, weighted: bool = False) -> Dict[str, Any]:
         """
         Calculate simple percentage agreement for a feature across all annotators.
@@ -810,8 +881,8 @@ class AgreementCalculator:
                 'disabled_units': disabled_count,
                 'error': f'Failed to calculate alpha: {str(e)}'
             }
-    
-    def print_summary(self, features: List[str], print_matrix: bool = False, weighted: bool = False):
+
+    def print_summary(self, features: List[str], print_matrix: bool = False, weighted: bool = False, print_coincidence_matrix: bool = False):
         """
         Print a summary of agreement across specified features.
         
@@ -837,6 +908,9 @@ class AgreementCalculator:
             # Optionally print the annotation matrix
             if print_matrix:
                 self.print_annotation_matrix(feature)
+
+            if print_coincidence_matrix:
+                self.print_coincidence_matrix(feature)
             
             # Calculate simple agreement
             simple_result = self.calculate_simple_agreement(feature, weighted=weighted)
@@ -1041,7 +1115,13 @@ def main():
         action='store_true',
         help='Print the annotation matrix for each feature (useful for debugging)'
     )
-    
+
+    parser.add_argument(
+        '--print-coincidence-matrix',
+        action='store_true',
+        help='Print the coincidence matrix for each feature (useful for debugging)'
+    )
+
     parser.add_argument(
         '--weighted',
         action='store_true',
@@ -1095,11 +1175,11 @@ def main():
             print(json.dumps(results, indent=2, cls=NumpyEncoder, ensure_ascii=False))
         elif not args.output:
             # Default console output if no JSON file specified
-            calculator.print_summary(args.features, print_matrix=args.print_matrix, weighted=args.weighted)
+            calculator.print_summary(args.features, print_matrix=args.print_matrix, weighted=args.weighted, print_coincidence_matrix=args.print_coincidence_matrix)
         else:
             # Both JSON file and console output
-            calculator.print_summary(args.features, print_matrix=args.print_matrix, weighted=args.weighted)
-        
+            calculator.print_summary(args.features, print_matrix=args.print_matrix, weighted=args.weighted, print_coincidence_matrix=args.print_coincidence_matrix)
+
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
         import traceback
