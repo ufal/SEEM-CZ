@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2025-10-14T14:40:29.866136",
+    "timestamp": "2025-10-23T15:27:00.380088",
     "annotator_count": 10,
     "annotators": [
       {
@@ -72,8 +72,24 @@
       "simple_agreement": {
         "feature": "use",
         "total_units": 690,
+        "unit_distribution": {
+          "cs-asi": 100,
+          "cs-jiste": 100,
+          "cs-nejspis": 50,
+          "cs-urcite": 50,
+          "en-asi": 97,
+          "en-jiste": 93,
+          "en-spis": 50,
+          "en-treba": 50,
+          "en-zjevne": 50,
+          "en-zrejme": 50
+        },
         "missing_units": 5423,
         "disabled_units": 0,
+        "overlap_distribution": {
+          "3": 97,
+          "2": 593
+        },
         "total_pairs": 884,
         "agreements": 675,
         "disagreements": 209,
@@ -111,33 +127,47 @@
       "simple_agreement": {
         "feature": "certainty",
         "total_units": 690,
+        "unit_distribution": {
+          "cs-asi": 100,
+          "cs-jiste": 100,
+          "cs-nejspis": 50,
+          "cs-urcite": 50,
+          "en-asi": 97,
+          "en-jiste": 93,
+          "en-spis": 50,
+          "en-treba": 50,
+          "en-zjevne": 50,
+          "en-zrejme": 50
+        },
         "missing_units": 5423,
-        "disabled_units": 489,
+        "disabled_units": 0,
+        "overlap_distribution": {
+          "3": 97,
+          "2": 593
+        },
         "total_pairs": 884,
-        "agreements": 507,
-        "disagreements": 377,
-        "agreement_percentage": 57.35294117647059,
+        "agreements": 509,
+        "disagreements": 375,
+        "agreement_percentage": 57.57918552036199,
         "weighted": false
       },
       "krippendorffs_alpha": {
         "feature": "certainty",
-        "alpha": 0.6376522489291033,
+        "alpha": 0.5401283736023377,
         "level_of_measurement": "ordinal",
         "weighted": false,
         "total_units": 690,
         "missing_units": 5423,
-        "disabled_units": 489,
+        "disabled_units": 0,
         "valid_values": 1477,
         "value_domain": [
           "no",
           "hesitate",
           "medium",
           "highmedium",
-          "full",
-          "UNDEF_DISABLED"
+          "full"
         ],
         "unique_values": [
-          "UNDEF_DISABLED",
           "full",
           "hesitate",
           "highmedium",
@@ -150,8 +180,24 @@
       "simple_agreement": {
         "feature": "commfuntype",
         "total_units": 690,
+        "unit_distribution": {
+          "cs-asi": 100,
+          "cs-jiste": 100,
+          "cs-nejspis": 50,
+          "cs-urcite": 50,
+          "en-asi": 97,
+          "en-jiste": 93,
+          "en-spis": 50,
+          "en-treba": 50,
+          "en-zjevne": 50,
+          "en-zrejme": 50
+        },
         "missing_units": 5423,
         "disabled_units": 265,
+        "overlap_distribution": {
+          "3": 97,
+          "2": 593
+        },
         "total_pairs": 884,
         "agreements": 716,
         "disagreements": 168,
@@ -191,8 +237,24 @@
       "simple_agreement": {
         "feature": "scope",
         "total_units": 690,
+        "unit_distribution": {
+          "cs-asi": 100,
+          "cs-jiste": 100,
+          "cs-nejspis": 50,
+          "cs-urcite": 50,
+          "en-asi": 97,
+          "en-jiste": 93,
+          "en-spis": 50,
+          "en-treba": 50,
+          "en-zjevne": 50,
+          "en-zrejme": 50
+        },
         "missing_units": 5423,
         "disabled_units": 489,
+        "overlap_distribution": {
+          "3": 97,
+          "2": 593
+        },
         "total_pairs": 884,
         "agreements": 707,
         "disagreements": 177,
@@ -226,8 +288,24 @@
       "simple_agreement": {
         "feature": "tfpos",
         "total_units": 690,
+        "unit_distribution": {
+          "cs-asi": 100,
+          "cs-jiste": 100,
+          "cs-nejspis": 50,
+          "cs-urcite": 50,
+          "en-asi": 97,
+          "en-jiste": 93,
+          "en-spis": 50,
+          "en-treba": 50,
+          "en-zjevne": 50,
+          "en-zrejme": 50
+        },
         "missing_units": 5431,
         "disabled_units": 489,
+        "overlap_distribution": {
+          "3": 97,
+          "2": 585
+        },
         "total_pairs": 876,
         "agreements": 659,
         "disagreements": 217,
@@ -263,8 +341,24 @@
       "simple_agreement": {
         "feature": "sentpos",
         "total_units": 690,
+        "unit_distribution": {
+          "cs-asi": 100,
+          "cs-jiste": 100,
+          "cs-nejspis": 50,
+          "cs-urcite": 50,
+          "en-asi": 97,
+          "en-jiste": 93,
+          "en-spis": 50,
+          "en-treba": 50,
+          "en-zjevne": 50,
+          "en-zrejme": 50
+        },
         "missing_units": 5423,
         "disabled_units": 489,
+        "overlap_distribution": {
+          "3": 97,
+          "2": 593
+        },
         "total_pairs": 884,
         "agreements": 696,
         "disagreements": 188,
@@ -300,8 +394,24 @@
       "simple_agreement": {
         "feature": "neg",
         "total_units": 690,
+        "unit_distribution": {
+          "cs-asi": 100,
+          "cs-jiste": 100,
+          "cs-nejspis": 50,
+          "cs-urcite": 50,
+          "en-asi": 97,
+          "en-jiste": 93,
+          "en-spis": 50,
+          "en-treba": 50,
+          "en-zjevne": 50,
+          "en-zrejme": 50
+        },
         "missing_units": 5423,
         "disabled_units": 337,
+        "overlap_distribution": {
+          "3": 97,
+          "2": 593
+        },
         "total_pairs": 884,
         "agreements": 820,
         "disagreements": 64,
@@ -333,8 +443,24 @@
       "simple_agreement": {
         "feature": "contrast",
         "total_units": 690,
+        "unit_distribution": {
+          "cs-asi": 100,
+          "cs-jiste": 100,
+          "cs-nejspis": 50,
+          "cs-urcite": 50,
+          "en-asi": 97,
+          "en-jiste": 93,
+          "en-spis": 50,
+          "en-treba": 50,
+          "en-zjevne": 50,
+          "en-zrejme": 50
+        },
         "missing_units": 5423,
         "disabled_units": 489,
+        "overlap_distribution": {
+          "3": 97,
+          "2": 593
+        },
         "total_pairs": 884,
         "agreements": 658,
         "disagreements": 226,
@@ -366,8 +492,24 @@
       "simple_agreement": {
         "feature": "modalpersp",
         "total_units": 690,
+        "unit_distribution": {
+          "cs-asi": 100,
+          "cs-jiste": 100,
+          "cs-nejspis": 50,
+          "cs-urcite": 50,
+          "en-asi": 97,
+          "en-jiste": 93,
+          "en-spis": 50,
+          "en-treba": 50,
+          "en-zjevne": 50,
+          "en-zrejme": 50
+        },
         "missing_units": 5423,
         "disabled_units": 489,
+        "overlap_distribution": {
+          "3": 97,
+          "2": 593
+        },
         "total_pairs": 884,
         "agreements": 660,
         "disagreements": 224,
