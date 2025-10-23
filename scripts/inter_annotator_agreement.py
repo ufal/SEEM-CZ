@@ -620,6 +620,11 @@ class AgreementCalculator:
                 'agreement': None,
                 'error': 'No annotation units found for this feature'
             }
+        
+        unit_distribution = {}
+        for unit_label in unit_labels:
+            expr_lang = unit_label.split('|', 1)[0]
+            unit_distribution[expr_lang] = unit_distribution.get(expr_lang, 0) + 1
 
         weight_matrix = feature_def.get_weight_matrix(weighted)
 
@@ -629,6 +634,7 @@ class AgreementCalculator:
         weighted_agreements = 0.0  # For weighted calculations
         missing_count = 0
         disabled_count = 0
+        overlap_distribution = {}
         
         for col_idx in range(matrix.shape[1]):  # For each annotation unit
             column = matrix[:, col_idx]
@@ -644,6 +650,10 @@ class AgreementCalculator:
 
             if len(valid_values) < 2:
                 continue  # Skip units with fewer than 2 valid annotations
+
+            # Track overlap distribution
+            overlap_key = len(valid_values)
+            overlap_distribution[overlap_key] = overlap_distribution.get(overlap_key, 0) + 1
             
             # Count pairwise agreements within this unit
             for i in range(len(valid_values)):
@@ -667,8 +677,10 @@ class AgreementCalculator:
         result = {
             'feature': feature,
             'total_units': len(unit_labels),
+            'unit_distribution': unit_distribution,
             'missing_units': missing_count,
             'disabled_units': disabled_count,
+            'overlap_distribution': overlap_distribution,
             'total_pairs': total_pairs,
             'agreements': total_agreements,
             'disagreements': total_pairs - total_agreements,
@@ -950,8 +962,15 @@ class AgreementCalculator:
                 continue
             
             print(f"  Total annotation units: {simple_result['total_units']}")
+            print(f"  Unit distribution by expression and source language:")
+            for expr_lang, count in simple_result['unit_distribution'].items():
+                print(f"    {expr_lang}: {count} unit(s)")
             print(f"  Missing unit-annotator pairs (not annotated): {simple_result['missing_units']}")
             print(f"  Disabled unit-annotator pairs (treated as valid annotations): {simple_result['disabled_units']}")
+            print(f"  Overlap distribution (number of annotators per unit):")
+            for overlap_count in sorted(simple_result['overlap_distribution'].keys()):
+                unit_count = simple_result['overlap_distribution'][overlap_count]
+                print(f"    {overlap_count} annotators: {unit_count} unit(s)")
             print(f"  Total annotation pairs: {simple_result['total_pairs']}")
             print(f"  Agreements: {simple_result['agreements']}")
             print(f"  Disagreements: {simple_result['disagreements']}")
