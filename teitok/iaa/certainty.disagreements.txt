@@ -1,0 +1,489 @@
+Loading feature definitions...
+Loaded definitions for features: alignchecked, dictexample, use, certainty, commfuntype, scope, tfpos, sentpos, neg, contrast, modalpersp
+
+Loading annotation files...
+Loaded 75 items from markers_BS-cs-asi.xml
+Annotator: Barbora Štěpánková (BS)
+Loaded 75 items from markers_BS-cs-jiste.xml
+Annotator: Barbora Štěpánková (BS)
+Loaded 72 items from markers_BS-en-asi.xml
+Annotator: Barbora Štěpánková (BS)
+Loaded 70 items from markers_BS-en-jiste.xml
+Annotator: Barbora Štěpánková (BS)
+Loaded 50 items from markers_IS-cs-urcite.xml
+Annotator: Iurii Savelev-Galiaminskii (IS)
+Loaded 50 items from markers_IS-en-treba.xml
+Annotator: Iurii Savelev-Galiaminskii (IS)
+Loaded 50 items from markers_IS-en-zjevne.xml
+Annotator: Iurii Savelev-Galiaminskii (IS)
+Loaded 50 items from markers_IS-en-zrejme.xml
+Annotator: Iurii Savelev-Galiaminskii (IS)
+Loaded 75 items from markers_JS-cs-asi.xml
+Annotator: Jana Šindlerová (JS)
+Loaded 75 items from markers_JS-cs-jiste.xml
+Annotator: Jana Šindlerová (JS)
+Loaded 74 items from markers_JS-en-asi.xml
+Annotator: Jana Šindlerová (JS)
+Loaded 68 items from markers_JS-en-jiste.xml
+Annotator: Jana Šindlerová (JS)
+Loaded 50 items from markers_KB-cs-nejspis.xml
+Annotator: Kateřina Blažková (KB)
+Loaded 75 items from markers_LP-cs-asi.xml
+Annotator: Lucie Poláková (LP)
+Loaded 75 items from markers_LP-cs-jiste.xml
+Annotator: Lucie Poláková (LP)
+Loaded 72 items from markers_LP-en-asi.xml
+Annotator: Lucie Poláková (LP)
+Loaded 71 items from markers_LP-en-jiste.xml
+Annotator: Lucie Poláková (LP)
+Loaded 50 items from markers_MD-en-spis.xml
+Annotator: Michaela Danková (MD)
+Loaded 50 items from markers_OD-cs-nejspis.xml
+Annotator: Ondřej Drobil (OD)
+Loaded 50 items from markers_OD-en-zjevne.xml
+Annotator: Ondřej Drobil (OD)
+Loaded 50 items from markers_SC-en-spis.xml
+Annotator: Stanislav Cincibuch (SC)
+Loaded 50 items from markers_VK-en-zrejme.xml
+Annotator: Václava Kettnerová (VK)
+Loaded 50 items from markers_VP-cs-urcite.xml
+Annotator: Vladimír Petkevič (VP)
+Loaded 50 items from markers_VP-en-treba.xml
+Annotator: Vladimír Petkevič (VP)
+
+Loaded 24 files from 10 unique annotators:
+  1. Barbora Štěpánková (BS): 4 file(s), 292 items
+  2. Iurii Savelev-Galiaminskii (IS): 4 file(s), 200 items
+  3. Jana Šindlerová (JS): 4 file(s), 292 items
+  4. Kateřina Blažková (KB): 1 file(s), 50 items
+  5. Lucie Poláková (LP): 4 file(s), 293 items
+  6. Michaela Danková (MD): 1 file(s), 50 items
+  7. Ondřej Drobil (OD): 2 file(s), 100 items
+  8. Stanislav Cincibuch (SC): 1 file(s), 50 items
+  9. Václava Kettnerová (VK): 1 file(s), 50 items
+  10. Vladimír Petkevič (VP): 2 file(s), 100 items
+Found 690 common annotation units (by token ID)
+
+================================================================================
+INTER-ANNOTATOR AGREEMENT SUMMARY
+================================================================================
+Number of annotators: 10
+  1. Barbora Štěpánková (BS)
+  2. Iurii Savelev-Galiaminskii (IS)
+  3. Jana Šindlerová (JS)
+  4. Kateřina Blažková (KB)
+  5. Lucie Poláková (LP)
+  6. Michaela Danková (MD)
+  7. Ondřej Drobil (OD)
+  8. Stanislav Cincibuch (SC)
+  9. Václava Kettnerová (VK)
+  10. Vladimír Petkevič (VP)
+Common annotation units: 690
+================================================================================
+
+Feature: certainty
+--------------------------------------------------------------------------------
+690
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	BS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	BS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	BS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	BS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	cs-asi	BS	LP
+DIFF_VALUES:	medium/UNDEF_DISABLED:	cs-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	BS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	hesitate/highmedium:	cs-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	JS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	cs-asi	BS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	cs-asi	BS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	cs-asi	JS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	JS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	cs-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	JS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	cs-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	cs-asi	BS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	cs-asi	JS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	cs-asi	BS	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-asi	JS	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-asi	JS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	JS	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	BS	JS
+DIFF_VALUES:	highmedium/full:	cs-jiste	JS	LP
+DIFF_VALUES:	medium/full:	cs-jiste	BS	JS
+DIFF_VALUES:	medium/full:	cs-jiste	BS	LP
+DIFF_VALUES:	medium/full:	cs-jiste	JS	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	BS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	BS	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	medium/full:	cs-jiste	JS	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	medium/full:	cs-jiste	JS	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	medium/highmedium:	cs-jiste	JS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	JS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	BS	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	JS	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	BS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	medium/full:	cs-jiste	BS	JS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	cs-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	medium/UNDEF_DISABLED:	cs-jiste	BS	LP
+DIFF_VALUES:	medium/full:	cs-jiste	BS	JS
+DIFF_VALUES:	medium/highmedium:	cs-jiste	BS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	JS
+DIFF_VALUES:	medium/full:	cs-jiste	LP	JS
+DIFF_VALUES:	highmedium/full:	cs-jiste	JS	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	JS
+DIFF_VALUES:	medium/full:	cs-jiste	BS	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	BS	JS
+DIFF_VALUES:	highmedium/full:	cs-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	medium/highmedium:	cs-jiste	JS	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	JS
+DIFF_VALUES:	highmedium/full:	cs-jiste	BS	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	JS
+DIFF_VALUES:	highmedium/full:	cs-jiste	JS	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	JS	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	JS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	BS	JS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	JS
+DIFF_VALUES:	highmedium/full:	cs-jiste	JS	BS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	JS
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	medium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	BS	LP
+DIFF_VALUES:	highmedium/full:	cs-jiste	LP	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-jiste	BS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	cs-nejspis	OD	KB
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	cs-nejspis	KB	OD
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	medium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	full/UNDEF_DISABLED:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	hesitate/UNDEF_DISABLED:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	cs-urcite	VP	IS
+DIFF_VALUES:	medium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	medium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	medium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	medium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	highmedium/full:	cs-urcite	VP	IS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	BS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-asi	JS	BS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-asi	BS	LP
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-asi	JS	LP
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-asi	BS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-asi	JS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-asi	JS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	LP
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-asi	BS	JS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	BS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	medium/highmedium:	en-asi	BS	JS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-asi	BS	LP
+DIFF_VALUES:	medium/highmedium:	en-asi	LP	JS
+DIFF_VALUES:	medium/full:	en-jiste	BS	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	BS
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	highmedium/full:	en-jiste	BS	JS
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	JS
+DIFF_VALUES:	highmedium/full:	en-jiste	BS	JS
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	no/UNDEF_DISABLED:	en-jiste	BS	JS
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	medium/full:	en-jiste	BS	LP
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-jiste	LP	JS
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	JS
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	medium/full:	en-jiste	JS	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	en-jiste	JS	BS
+DIFF_VALUES:	highmedium/full:	en-jiste	JS	LP
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	en-jiste	JS	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	LP	JS
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	highmedium/full:	en-jiste	BS	JS
+DIFF_VALUES:	highmedium/full:	en-jiste	JS	BS
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	BS
+DIFF_VALUES:	medium/highmedium:	en-jiste	BS	JS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	medium/full:	en-jiste	BS	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	JS
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	BS	LP
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	BS
+DIFF_VALUES:	full/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	BS
+DIFF_VALUES:	highmedium/full:	en-jiste	LP	JS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-jiste	JS	LP
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-spis	MD	SC
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-spis	MD	SC
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-spis	MD	SC
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-spis	MD	SC
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-spis	MD	SC
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-spis	SC	MD
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-spis	SC	MD
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	medium/UNDEF_DISABLED:	en-treba	VP	IS
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-zjevne	OD	IS
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-zjevne	OD	IS
+DIFF_VALUES:	highmedium/UNDEF_DISABLED:	en-zjevne	OD	IS
+DIFF_VALUES:	highmedium/full:	en-zjevne	IS	OD
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/UNDEF_DISABLED:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/highmedium:	en-zrejme	IS	VK
+DIFF_VALUES:	no/medium:	en-zrejme	IS	VK
+
+Coincidence Matrix for feature 'certainty':
+Total pairwise counts: 2738
+================================================================================
+               no             hesitate       medium         highmedium     full           UNDEF_DISABLED 
+---------------------------------------------------------------------------------------------------------
+no             51             0              31             18             0              2              
+hesitate       0              2              0              1              0              1              
+medium         31             0              330            90             19             36             
+highmedium     18             1              90             540            88             32             
+full           0              0              19             88             337            59             
+UNDEF_DISABLED 2              1              36             32             59             724            
+================================================================================
+  Total annotation units: 690
+  Missing unit-annotator pairs (not annotated): 5423
+  Disabled unit-annotator pairs (treated as valid annotations): 489
+  Total annotation pairs: 884
+  Agreements: 507
+  Disagreements: 377
+  Simple agreement: 57.35%
+  Krippendorff's Alpha (ordinal): 0.6377
+  Valid data points: 1477
+  Value domain: no, hesitate, medium, highmedium, full, UNDEF_DISABLED (6)
+  Unique values: UNDEF_DISABLED, full, hesitate, highmedium, medium, no (6)
+  (Missing: 5423, Disabled treated as valid: 489)
+  Alpha Interpretation: Substantial
