@@ -58,7 +58,7 @@ class FeatureDefinition:
     """Represents a feature definition from markers_def.xml with possible values and weighting."""
 
     USE_RELATED_VALUES = {'certain', 'evidence', 'confirm'}
-    USE_RELATED_WEIGHT = 0.9  # Weight for disagreements within certain/evidence/confirm
+    USE_RELATED_WEIGHT = 1.0  # Weight for disagreements within certain/evidence/confirm
 
     USE_CATEGORIES = {
         'certain': 'certain|evidence|confirm',
