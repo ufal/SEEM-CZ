@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2025-10-23T15:27:00.380088",
+    "timestamp": "2025-10-23T17:03:42.275210",
     "annotator_count": 10,
     "annotators": [
       {
@@ -91,14 +91,14 @@
           "2": 593
         },
         "total_pairs": 884,
-        "agreements": 675,
-        "disagreements": 209,
-        "agreement_percentage": 76.35746606334841,
+        "agreements": 739,
+        "disagreements": 145,
+        "agreement_percentage": 83.5972850678733,
         "weighted": false
       },
       "krippendorffs_alpha": {
         "feature": "use",
-        "alpha": 0.6182273515151429,
+        "alpha": 0.6732955572098671,
         "level_of_measurement": "nominal",
         "weighted": false,
         "total_units": 690,
@@ -106,19 +106,15 @@
         "disabled_units": 0,
         "valid_values": 1477,
         "value_domain": [
-          "certain",
-          "evidence",
-          "confirm",
-          "answer",
+          "epistemic",
+          "content",
           "other",
-          "content"
+          "answer"
         ],
         "unique_values": [
           "answer",
-          "certain",
-          "confirm",
           "content",
-          "evidence",
+          "epistemic",
           "other"
         ]
       }

@@ -61,9 +61,9 @@ class FeatureDefinition:
     USE_RELATED_WEIGHT = 1.0  # Weight for disagreements within certain/evidence/confirm
 
     USE_CATEGORIES = {
-        'certain': 'certain|evidence|confirm',
-        'evidence': 'certain|evidence|confirm',
-        'confirm': 'certain|evidence|confirm',
+        'certain': 'epistemic',
+        'evidence': 'epistemic',
+        'confirm': 'epistemic',
         'answer': 'answer',
         'other': 'other',
         'content': 'content'
@@ -128,14 +128,18 @@ class FeatureDefinition:
             return (1 - self.weight_matrix).astype(dtype)
 
 
-    def __init__(self, key: str, values: List[str], disabledif: Optional[str] = None, split_by_use: bool = False):
+    def __init__(self, key: str, values: List[str], disabledif: Optional[str] = None, merge_epistemic: bool = False, split_by_use: bool = False):
         self.feature_name = key
         self.split_by_use = split_by_use
+        self.merge_epistemic = merge_epistemic
         # Values of features are combined with use categories if split_by_use is True
         if split_by_use and key != "use":
             self.values = self.cross_values_by_use(values)
         else:
-            self.values = values
+            if merge_epistemic and key == "use":
+                self.values = list(set(self.USE_CATEGORIES.values()))
+            else:
+                self.values = values
         self.disabledif = disabledif
         # Add UNDEF_DISABLED to values if the feature can be disabled
         if disabledif:
@@ -202,6 +206,8 @@ class FeatureDefinition:
         feat_value = item_values.get(self.feature_name)
         if not feat_value:
             return None
+        if self.merge_epistemic and self.feature_name == 'use':
+            return self.USE_CATEGORIES.get(feat_value, feat_value)
         use_value = item_values.get('use')
         if self.split_by_use and use_value and use_value in self.USE_CATEGORIES:
             return f"{self.USE_CATEGORIES[use_value]}+{feat_value}"
@@ -240,7 +246,7 @@ class FeatureDefinition:
 
 
 
-def load_feature_definitions(def_file: str, split_by_use: bool = False) -> Dict[str, FeatureDefinition]:
+def load_feature_definitions(def_file: str, merge_epistemic: bool = False, split_by_use: bool = False) -> Dict[str, FeatureDefinition]:
     """Load feature definitions from markers_def.xml using MarkerDocDef.
     
     Args:
@@ -266,7 +272,7 @@ def load_feature_definitions(def_file: str, split_by_use: bool = False) -> Dict[
         # Get disabledif condition
         disabledif = marker_def.get_disabledif_condition(attr_name)
 
-        definitions[attr_name] = FeatureDefinition(attr_name, values, disabledif, split_by_use)
+        definitions[attr_name] = FeatureDefinition(attr_name, values, disabledif, merge_epistemic, split_by_use)
 
     return definitions
 
@@ -1173,6 +1179,12 @@ def main():
         action='store_true',
         help='Use weighted agreement calculation (applies custom weights for "use" feature: disagreements between certain/evidence/confirm are penalized less)'
     )
+
+    parser.add_argument(
+        '--merge-epistemic',
+        action='store_true',
+        help='Merge "certain", "evidence", and "confirm" into a single "epistemic" category for agreement calculations (only applies to the "use" feature).',
+    )
         
     parser.add_argument(
         '--split-by-use',
@@ -1191,7 +1203,7 @@ def main():
         print("Loading feature definitions...")
         def_file_path = Path(args.def_file)
         if def_file_path.exists():
-            feature_definitions = load_feature_definitions(str(def_file_path), args.split_by_use)
+            feature_definitions = load_feature_definitions(str(def_file_path), args.merge_epistemic, args.split_by_use)
             print(f"Loaded definitions for features: {', '.join(feature_definitions.keys())}")
         else:
             print(f"Warning: Definition file not found: {def_file_path}")
