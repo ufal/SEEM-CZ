@@ -61,9 +61,9 @@ class FeatureDefinition:
     USE_RELATED_WEIGHT = 1.0  # Weight for disagreements within certain/evidence/confirm
 
     USE_CATEGORIES = {
-        'certain': 'epistemic',
-        'evidence': 'epistemic',
-        'confirm': 'epistemic',
+        'certain': 'epi',
+        'evidence': 'epi',
+        'confirm': 'epi',
         'answer': 'answer',
         'other': 'other',
         'content': 'content'
@@ -128,13 +128,16 @@ class FeatureDefinition:
             return (1 - self.weight_matrix).astype(dtype)
 
 
-    def __init__(self, key: str, values: List[str], disabledif: Optional[str] = None, merge_epistemic: bool = False, split_by_use: bool = False):
+    def __init__(self, key: str, values: List[str], disabledif: Optional[str] = None, merge_epistemic: bool = False, split_by_use: bool = False, only_epistemic: bool = False):
         self.feature_name = key
         self.split_by_use = split_by_use
         self.merge_epistemic = merge_epistemic
+        self.only_epistemic = only_epistemic
         # Values of features are combined with use categories if split_by_use is True
         if split_by_use and key != "use":
             self.values = self.cross_values_by_use(values)
+            if only_epistemic:
+                self.values = [v for v in self.values if v.startswith(self.USE_CATEGORIES['certain'] + '+')]
         else:
             if merge_epistemic and key == "use":
                 self.values = list(set(self.USE_CATEGORIES.values()))
@@ -144,8 +147,10 @@ class FeatureDefinition:
         # Add UNDEF_DISABLED to values if the feature can be disabled
         if disabledif:
             # For the certainty feature, being disabled means practically the same as the 'no' value
-            if self.feature_name != 'certainty':
-                self.values.append(self.UNDEF_DISABLED)
+            if not (only_epistemic and self.is_disabledif_nonepistemic()) and self.feature_name != 'certainty':
+                self.values.insert(0, self.UNDEF_DISABLED)
+
+        print(f"{self.feature_name}: {self.values}")
         # Map values to indices
         self.value_to_index = {v: i for i, v in enumerate(self.values)}
         self.weight_matrix = self.WeightMatrix(self)
@@ -198,19 +203,27 @@ class FeatureDefinition:
         Returns:
             The modified value for IAA calculations
         """
+        feat_value = None
         if self.is_feature_disabled(item_values):
             # For the certainty feature, being disabled means practically the same as the 'no' value
             if self.feature_name == 'certainty':
-                return 'no'
-            return self.UNDEF_DISABLED
-        feat_value = item_values.get(self.feature_name)
+                feat_value = 'no'
+            feat_value = self.UNDEF_DISABLED
+        else:
+            feat_value = item_values.get(self.feature_name)
         if not feat_value:
             return None
-        if self.merge_epistemic and self.feature_name == 'use':
-            return self.USE_CATEGORIES.get(feat_value, feat_value)
-        use_value = item_values.get('use')
-        if self.split_by_use and use_value and use_value in self.USE_CATEGORIES:
-            return f"{self.USE_CATEGORIES[use_value]}+{feat_value}"
+        
+        if self.feature_name == 'use':
+            if self.merge_epistemic:
+                feat_value = self.USE_CATEGORIES.get(feat_value, feat_value)
+        else:
+            use_value = item_values.get('use')
+            if self.split_by_use and use_value and use_value in self.USE_CATEGORIES:
+                feat_value = f"{self.USE_CATEGORIES[use_value]}+{feat_value}"
+            if self.only_epistemic:
+                if not feat_value.startswith(self.USE_CATEGORIES['certain'] + '+'):
+                    return None
         return feat_value
     
     def get_numeric_value(self, value: str) -> Optional[float]:
@@ -244,9 +257,16 @@ class FeatureDefinition:
                 return True
         return False
 
+    def is_disabledif_nonepistemic(self) -> bool:
+        condition_keys, condition_values = zip(*self.disabledif) if self.disabledif else ([], [])
+        if any(key != 'use' for key in condition_keys):
+            return False
+        if any(self.USE_CATEGORIES.get(value, '') == 'epistemic' for value in condition_values):
+            return False
+        return True
 
 
-def load_feature_definitions(def_file: str, merge_epistemic: bool = False, split_by_use: bool = False) -> Dict[str, FeatureDefinition]:
+def load_feature_definitions(def_file: str, merge_epistemic: bool = False, split_by_use: bool = False, only_epistemic: bool = False) -> Dict[str, FeatureDefinition]:
     """Load feature definitions from markers_def.xml using MarkerDocDef.
     
     Args:
@@ -272,7 +292,7 @@ def load_feature_definitions(def_file: str, merge_epistemic: bool = False, split
         # Get disabledif condition
         disabledif = marker_def.get_disabledif_condition(attr_name)
 
-        definitions[attr_name] = FeatureDefinition(attr_name, values, disabledif, merge_epistemic, split_by_use)
+        definitions[attr_name] = FeatureDefinition(attr_name, values, disabledif, merge_epistemic, split_by_use, only_epistemic)
 
     return definitions
 
@@ -603,7 +623,7 @@ class AgreementCalculator:
         Args:
             feature: The XML attribute name to compare
             weighted: Whether to use weighted agreement calculation
-            
+
         Returns:
             Dictionary with agreement statistics
         """
@@ -1189,10 +1209,20 @@ def main():
     parser.add_argument(
         '--split-by-use',
         action='store_true',
-        help='Analyze each attribute separately for different values of the "use" attribute. Groups "certain", "evidence", and "confirm" together, treating "answer", "other", and "content" as separate groups.'
+        help='Analyze each attribute separately for different values of the "use" attribute. Groups "certain", "evidence", and "confirm" together as "epistemic", treating "answer", "other", and "content" as separate groups.'
     )
-    
+
+    parser.add_argument(
+        '--only-epistemic',
+        action='store_true',
+        help='Only calculate agreement for the "epistemic" category (certain, evidence, confirm) of the "use" feature.'
+    )
+
     args = parser.parse_args()
+
+    # only-epistemic implies split-by-use
+    if args.only_epistemic:
+        args.split_by_use = True
     
     if len(args.files) < 2:
         print("Error: At least 2 annotation files are required", file=sys.stderr)
@@ -1203,7 +1233,7 @@ def main():
         print("Loading feature definitions...")
         def_file_path = Path(args.def_file)
         if def_file_path.exists():
-            feature_definitions = load_feature_definitions(str(def_file_path), args.merge_epistemic, args.split_by_use)
+            feature_definitions = load_feature_definitions(str(def_file_path), args.merge_epistemic, args.split_by_use, args.only_epistemic)
             print(f"Loaded definitions for features: {', '.join(feature_definitions.keys())}")
         else:
             print(f"Warning: Definition file not found: {def_file_path}")
