@@ -5,3 +5,6 @@
 /walign
 /teitok/01.csen_data
 /teitok/02.walign
+__pycache__
+*.pyc
+*.pyo
