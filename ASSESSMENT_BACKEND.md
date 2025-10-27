@@ -157,6 +157,24 @@ Response (200 OK):
 
 ## Usage Example
 
+### Using the Example Client
+
+We provide a ready-to-use Python client in `example_client.py`:
+
+```bash
+# Make sure the server is running first
+python3 assessment_backend.py --host 0.0.0.0 --port 5001
+
+# In another terminal, run the example client
+python3 example_client.py
+```
+
+The example client demonstrates:
+- Starting an assessment task
+- Polling for progress updates
+- Displaying progress to the user
+- Retrieving final results
+
 ### Using curl
 
 ```bash
