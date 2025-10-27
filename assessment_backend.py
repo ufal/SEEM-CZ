@@ -353,7 +353,7 @@ def start_assessment():
         
     except Exception as e:
         logger.error(f"Failed to start assessment: {e}", exc_info=True)
-        return jsonify({"error": str(e)}), 500
+        return jsonify({"error": "Failed to start assessment task"}), 500
 
 
 @app.route('/api/assess/progress/<task_id>', methods=['GET'])
@@ -377,7 +377,7 @@ def get_progress(task_id: str):
         
     except Exception as e:
         logger.error(f"Failed to get progress for task {task_id}: {e}", exc_info=True)
-        return jsonify({"error": str(e)}), 500
+        return jsonify({"error": "Failed to retrieve progress"}), 500
 
 
 @app.route('/api/assess/status/<task_id>', methods=['GET'])
@@ -393,7 +393,7 @@ def get_status(task_id: str):
         
     except Exception as e:
         logger.error(f"Failed to get status for task {task_id}: {e}", exc_info=True)
-        return jsonify({"error": str(e)}), 500
+        return jsonify({"error": "Failed to retrieve status"}), 500
 
 
 @app.route('/api/assess/result/<task_id>', methods=['GET'])
@@ -419,7 +419,7 @@ def get_result(task_id: str):
         
     except Exception as e:
         logger.error(f"Failed to get result for task {task_id}: {e}", exc_info=True)
-        return jsonify({"error": str(e)}), 500
+        return jsonify({"error": "Failed to retrieve results"}), 500
 
 
 @app.route('/')
