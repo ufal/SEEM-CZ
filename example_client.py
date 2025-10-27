@@ -10,7 +10,7 @@ import requests
 import time
 import json
 import sys
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 
 
 class AssessmentClient:
@@ -19,7 +19,7 @@ class AssessmentClient:
     def __init__(self, base_url: str = "http://localhost:5001"):
         self.base_url = base_url
     
-    def start_assessment(self, files: list, **kwargs) -> str:
+    def start_assessment(self, files: List[str], **kwargs) -> str:
         """
         Start a new assessment task.
         
@@ -92,7 +92,7 @@ class AssessmentClient:
         
         return response.json()
     
-    def run_assessment_with_progress(self, files: list, **kwargs) -> Dict[str, Any]:
+    def run_assessment_with_progress(self, files: List[str], **kwargs) -> Dict[str, Any]:
         """
         Run an assessment and monitor progress until completion.
         
@@ -128,8 +128,7 @@ class AssessmentClient:
                 print(f"\n✗ Assessment failed: {error}")
                 raise Exception(error)
             
-            # Continue polling
-            time.sleep(0.1)
+            # Note: Long polling already waits, no need for additional sleep
 
 
 def main():
