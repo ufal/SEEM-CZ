@@ -174,51 +174,136 @@ task_manager = TaskManager()
 
 
 def run_assessment_task(task_id: str, files: List[str], features: Optional[List[str]], 
-                        weighted: bool, def_file: str):
+                        weighted: bool, def_file: str, merge_epistemic: bool = False,
+                        split_by_use: bool = False, only_epistemic: bool = False):
     """
     Run the inter-annotator agreement assessment in a background thread.
-    This is a placeholder that simulates the actual computation with progress updates.
+    This integrates with the actual inter_annotator_agreement module.
     """
     try:
         task_manager.update_progress(task_id, 0.0, "Starting assessment...", TaskStatus.RUNNING)
         
-        # Import the actual assessment module
-        # Note: This would normally import and run the actual inter_annotator_agreement module
-        # For now, we'll simulate the process
-        
         logger.info(f"Starting assessment task {task_id} with files: {files}")
         
-        # Simulate loading files
+        # Add scripts directory to Python path to import the IAA module
+        scripts_dir = Path(__file__).parent / 'scripts'
+        if str(scripts_dir) not in sys.path:
+            sys.path.insert(0, str(scripts_dir))
+        
+        # Import the actual assessment module
+        try:
+            from inter_annotator_agreement import (
+                load_marker_doc, load_feature_definitions, 
+                AgreementCalculator, NumpyEncoder
+            )
+        except ImportError as e:
+            logger.error(f"Failed to import inter_annotator_agreement module: {e}")
+            # Fall back to simulation mode if import fails
+            return run_assessment_simulation(task_id, files, features, weighted, def_file)
+        
+        # Load feature definitions
+        task_manager.update_progress(task_id, 0.05, "Loading feature definitions...")
+        feature_definitions = {}
+        def_file_path = Path(def_file)
+        if def_file_path.exists():
+            try:
+                feature_definitions = load_feature_definitions(
+                    str(def_file_path), merge_epistemic, split_by_use, only_epistemic
+                )
+                logger.info(f"Loaded definitions for features: {', '.join(feature_definitions.keys())}")
+            except Exception as e:
+                logger.warning(f"Failed to load feature definitions: {e}")
+        
+        # Load annotation files
         task_manager.update_progress(task_id, 0.1, "Loading annotation files...")
-        time.sleep(1)
+        marker_docs = []
+        for i, filepath in enumerate(files):
+            try:
+                marker_doc = load_marker_doc(filepath)
+                marker_docs.append(marker_doc)
+                progress = 0.1 + (0.2 * (i + 1) / len(files))
+                task_manager.update_progress(
+                    task_id, progress, 
+                    f"Loaded {i + 1}/{len(files)} files..."
+                )
+            except Exception as e:
+                raise ValueError(f"Failed to load file {filepath}: {e}")
         
-        # Simulate processing
-        task_manager.update_progress(task_id, 0.3, "Calculating agreement metrics...")
-        time.sleep(2)
+        # Create agreement calculator
+        task_manager.update_progress(task_id, 0.3, "Initializing agreement calculator...")
+        calculator = AgreementCalculator(marker_docs, feature_definitions)
         
-        task_manager.update_progress(task_id, 0.5, "Computing Cohen's Kappa...")
-        time.sleep(1.5)
+        # Calculate agreement metrics
+        task_manager.update_progress(task_id, 0.4, "Computing agreement metrics...")
         
-        task_manager.update_progress(task_id, 0.7, "Computing Krippendorff's Alpha...")
-        time.sleep(1.5)
+        # Get results for the specified features
+        if not features:
+            features = ['use', 'certainty', 'commfuntype', 'scope', 'tfpos', 
+                       'sentpos', 'neg', 'contrast', 'modalpersp']
+        
+        results = calculator.get_results_dict(features, weighted=weighted)
         
         task_manager.update_progress(task_id, 0.9, "Finalizing results...")
-        time.sleep(1)
         
-        # Simulate results
+        # Format the results
         result = {
             "summary": "Assessment completed successfully",
-            "metrics": {
-                "cohens_kappa": 0.75,
-                "krippendorffs_alpha": 0.72,
-                "agreement_percentage": 85.5
-            },
+            "annotators": results.get("annotators", []),
+            "total_units": results.get("total_units", 0),
+            "features": results.get("features", {}),
             "files": files,
             "timestamp": datetime.now().isoformat()
         }
         
         task_manager.complete_task(task_id, result)
         logger.info(f"Assessment task {task_id} completed successfully")
+        
+    except Exception as e:
+        logger.error(f"Assessment task {task_id} failed: {e}", exc_info=True)
+        task_manager.fail_task(task_id, str(e))
+
+
+def run_assessment_simulation(task_id: str, files: List[str], features: Optional[List[str]], 
+                              weighted: bool, def_file: str):
+    """
+    Simulation mode when actual IAA module is not available.
+    This simulates the process with progress updates.
+    """
+    try:
+        logger.info(f"Running in simulation mode for task {task_id}")
+        
+        # Simulate loading files
+        task_manager.update_progress(task_id, 0.1, "Loading annotation files (simulation)...")
+        time.sleep(1)
+        
+        # Simulate processing
+        task_manager.update_progress(task_id, 0.3, "Calculating agreement metrics (simulation)...")
+        time.sleep(2)
+        
+        task_manager.update_progress(task_id, 0.5, "Computing Cohen's Kappa (simulation)...")
+        time.sleep(1.5)
+        
+        task_manager.update_progress(task_id, 0.7, "Computing Krippendorff's Alpha (simulation)...")
+        time.sleep(1.5)
+        
+        task_manager.update_progress(task_id, 0.9, "Finalizing results (simulation)...")
+        time.sleep(1)
+        
+        # Simulate results
+        result = {
+            "summary": "Assessment completed successfully (simulation mode)",
+            "metrics": {
+                "cohens_kappa": 0.75,
+                "krippendorffs_alpha": 0.72,
+                "agreement_percentage": 85.5
+            },
+            "files": files,
+            "timestamp": datetime.now().isoformat(),
+            "note": "This is simulated data. Install dependencies and provide valid files for real results."
+        }
+        
+        task_manager.complete_task(task_id, result)
+        logger.info(f"Assessment task {task_id} completed successfully (simulation)")
         
     except Exception as e:
         logger.error(f"Assessment task {task_id} failed: {e}", exc_info=True)
@@ -241,6 +326,9 @@ def start_assessment():
         features = data.get('features')
         weighted = data.get('weighted', False)
         def_file = data.get('def_file', 'teitok/config/markers_def.xml')
+        merge_epistemic = data.get('merge_epistemic', False)
+        split_by_use = data.get('split_by_use', False)
+        only_epistemic = data.get('only_epistemic', False)
         
         # Create a new task
         task_id = str(uuid.uuid4())
@@ -249,7 +337,8 @@ def start_assessment():
         # Start the assessment in a background thread
         thread = threading.Thread(
             target=run_assessment_task,
-            args=(task_id, files, features, weighted, def_file),
+            args=(task_id, files, features, weighted, def_file, 
+                  merge_epistemic, split_by_use, only_epistemic),
             daemon=True
         )
         thread.start()

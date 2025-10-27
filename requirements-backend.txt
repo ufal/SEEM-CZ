@@ -1,2 +1,11 @@
+# Backend server dependencies
 Flask>=3.0.0
 flask-cors>=4.0.0
+
+# Inter-annotator agreement dependencies (optional, for full mode)
+# If not installed, the backend runs in simulation mode
+# numpy>=1.24.0
+# statsmodels>=0.14.0
+# scikit-learn>=1.3.0
+# krippendorff>=0.6.0
+# jinja2>=3.1.0

@@ -4,7 +4,8 @@ This backend server provides a REST API for running inter-annotator agreement as
 
 ## Overview
 
-The server allows clients to:
+The server integrates with the `inter_annotator_agreement.py` script to perform actual assessments, or falls back to simulation mode when dependencies are not available. Clients can:
+
 1. Start assessment tasks asynchronously
 2. Monitor progress via long polling (regularly polling for updates)
 3. Retrieve final results when complete
@@ -22,7 +23,11 @@ Long polling is simpler and more compatible than WebSockets:
 Install the required dependencies:
 
 ```bash
+# Backend dependencies
 pip install -r requirements-backend.txt
+
+# For full IAA functionality, also install:
+pip install numpy statsmodels scikit-learn krippendorff jinja2
 ```
 
 ## Running the Server
@@ -38,6 +43,16 @@ Options:
 - `--port PORT`: Port to bind to (default: 5000)
 - `--debug`: Enable debug mode
 
+## Modes of Operation
+
+### 1. Full Mode (with dependencies)
+
+When all dependencies are installed and valid annotation files are provided, the backend runs the actual `inter_annotator_agreement.py` calculations with real progress updates.
+
+### 2. Simulation Mode (fallback)
+
+When dependencies are missing or files don't exist, the backend runs in simulation mode with mock data and simulated progress updates. This is useful for testing the API without needing actual data.
+
 ## API Endpoints
 
 ### 1. Start Assessment
@@ -52,9 +67,21 @@ Request body:
   "files": ["file1.xml", "file2.xml"],
   "features": ["use", "certainty"],  // Optional
   "weighted": true,                   // Optional, default: false
-  "def_file": "path/to/def.xml"      // Optional
+  "def_file": "path/to/def.xml",     // Optional, default: "teitok/config/markers_def.xml"
+  "merge_epistemic": false,           // Optional, default: false
+  "split_by_use": false,              // Optional, default: false
+  "only_epistemic": false             // Optional, default: false
 }
 ```
+
+Parameters:
+- `files`: Array of paths to annotation XML files (minimum 2 required)
+- `features`: Array of feature names to analyze (optional, uses defaults if not specified)
+- `weighted`: Use weighted agreement calculation (optional)
+- `def_file`: Path to markers definition file (optional)
+- `merge_epistemic`: Merge epistemic categories (optional)
+- `split_by_use`: Split analysis by "use" attribute (optional)
+- `only_epistemic`: Only analyze epistemic category (optional)
 
 Response (202 Accepted):
 ```json
