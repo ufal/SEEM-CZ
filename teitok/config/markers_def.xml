@@ -111,7 +111,9 @@
         <option value="inference" display="inference"/>
     </interp>
 
-    <interp key="cssent" display="Česká věta" type="noedit"/>
+    <interp key="cssent" type="noedit"/>
+    
+    <interp key="csctx" display="Český kontext" type="noedit"/>
 
     <interp key="comment" display="Komentář"/>
 </interpGrp>
