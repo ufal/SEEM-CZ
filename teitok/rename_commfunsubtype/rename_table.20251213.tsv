@@ -1,0 +1,281 @@
+773	domněnka			
+232	dotvrzení			
+190	převzatá informace		nedubluje se tato hodnota s evidencí? (Pokud ano, stejně bude třeba zachovat, protože do slovníku se evidence nepromítá)	BŠ - je to první hodnota pro čiště evidenciál - typu "prý" - mám dojem, že je to vlastně víc význam toho slova, než KF
+147	tvrzení			
+144	dotvrzení, zdůraznění			
+128	domněnka, tvrzení		opravdu budeme procházet všechny výskyty, kde je domněnka. Je totiž možné, že nyní v 773 případech spoustu domněnek se zdůrazněním, vysvětlením nebo tvrzením	BŠ - určitě ne - můžem se rozhodnout, že vezmem zdvojené hodnoty, nebo první hodnotu
+81	domněnka, vysvětlení			
+72	souhlas			
+72	odhad do budoucnosti			
+61	ujištění			
+55	přesvědčení			
+51	předpoklad			
+48	direktivní předpoklad			
+47	zdůraznění			
+42	shrnutí, navázání	shrnutí, navazování	mělo by být navazování, ale BACHA nálepky jsou odvozeny spíš od dok. sloves, takže rozhodnout se pro jedno slovo	
+41	introspekce			
+41	domněnka s vysokou jistotou	domněnka	jistota se anotovala jako jiná hodnota, nemělo by to tu být	
+30	konstatování	tvrzení	podle mě jde o tvrzení, alespoň to tak na první pohled vypadá	
+28	připouštění			
+28	domněnka, pozorování			BŠ - bude asi jen domněnka u evi.
+26	spojkový výraz		spojkový výtaz není komunikační funkce, ale pro utřídění ve slovníku je to asi ok, protože to v té hierarchii spadne, kam má	BŠ, jo, to byl můj úmysl
+25	úvaha			
+24	příklad			
+24	navazovací, kontrastivní	navazování s kontrastem	prosba o kontrolu (možná to jde říct líp)	
+22	axiom			
+20	přibližnost	míra		
+18	spojka	spojkový výraz		
+18	shrnutí			
+17	nesouhlas			
+17	domněnka, přesvědčení			
+16	zpochybnění			
+16	žádost o dotvrzení			
+14	navazovací	navazování	výše máš navázání, mělo by to být jednotně (protože je to převážně od dok. slovesa, volila bych navázání)	
+13	sebeujištění			
+12	souhlas, přitakání			
+12	potvrzení	dotvrzení		
+11	žádost o ujištění			
+10	tvrzení, zdůraznění			
+10	podiv	údiv		
+10	navazování		někde je návázání, jdince navazování, je třeba sjednotit	
+10	domněnka, bez konkrétní evidence	domněnka		
+9	vysvětlení			
+8	zpochybnění, ironie			
+8	tvrzení, domněnka	domněnka, tvrzení		
+8	nepřímý direktivní předpoklad			
+8	domněnka s vysokou pravděpodobností	domněnka		
+8	afirmace			
+7	přitakání			
+7	převzatá informace, domněnka	domněnka, převzatá informace		
+7	přání, doufání	doufání		
+7	domněnka, zpochybnění	předpoklad		
+6	souhlas, připouštění			
+6	(sebe)ujištění	ujištění		
+6	nesouhlas, zpochybnění			
+6	modifikace adjektiva		opraveno v datech	
+6	dotvrzení vyjadřující běžný postoj	axiom		
+6	doporučení	doporučení, návrh		
+5	úvaha, podivení	úvaha, údiv		
+5	připuštění	připouštění		
+5	příklad, možnost			
+5	otázka			
+4	zavazující introspekce			
+4	výčitka			
+4	úvaha, fabulování			
+4	upřesnění, oprava	upřesnění		
+4	slib			
+4	příkaz			
+4	předpoklad (alternativní realita)	předpoklad		
+4	hedging			
+4	domněnka s vyšší pravděpodobností	domněnka		
+3	zdůraznění tvrzení	zdůraznění		
+3	vyvození	shrnutí		
+3	úvaha, ověřování	žádost o dotvrzení		
+3	upřesnění			
+3	souhlas, utvrzení		opraveno v datech	
+3	přesvědčování		opraveno v datech	
+3	pochybnost		opraveno v datech	
+3	navázání	navazování		
+3	manipulativní tvrzení	manipulace		
+3	konektivní	navazování		
+3	doufání			
+3	domněnka, doufání	doufání		
+2	zpochybnění, ironie, distance od informace	zpochybnění		
+2	zdůraznění přesvědčení	dotvrzení, zdůraznění		
+2	varování		opraveno v datech	
+2	úvaha, doufání		opraveno v datech	
+2	ujištění se		sebeujištění (je to jinak, opravila jsem v datech)	
+2	údiv			
+2	tvrzení s vysokou jistotou	tvrzení	míra jistoty je anotovaná jinde	
+2	tvrzení, možnost		opraveno v datech	
+2	souhlasná, ujištění		opraveno v datech	
+2	souhlasná	souhlas		
+2	shrnující přesvědčení	shrnutí		
+2	rada			
+2	připuštění názoru	připouštění		
+2	přesvědčení, přání		opraveno v datech	
+2	předpoklad, přesvědčení	předpoklad		
+2	plán	odhad do budoucnosti		
+2	otázka, ujištění se	žádost o ujištění	BŠ	
+2	omluva			
+2	odpověď		opraveno v datech	
+2	nadšené přitakání			
+2	klarifikace		opraveno v datech	
+2	instrospekce	introspekce		
+2	hodnocení		opraveno v datech	
+2	dotvrzení, zdůraznění, odůvodnění	dotvrzení, navazování		
+2	dotvrzení předchozího	dotvrzení		
+2	doporučení, návrh			
+2	domněnka, předpoklad		opraveno v datech	
+2	domněnka, dedukce		nechávám, i když je to jen u dvou případů v patrně, blíží se dedukce, pozorování	
+2	direktivní introspekce		opraveno v datech 	
+2	dedukce, pozorování		opraveno v datech	
+2	axiom - ironie	axiom, ironie		
+1	zvažování		opraveno v datech	
+1	zpochybnění, popř. předpoklad	předpoklad		
+1	zpochybnění, distance od informace až ironie		opraveno v datech	
+1	zdvořilé odmítnutí		opraveno v datech	
+1	zdvojení - určitá estetická funkce		opraveno v datech	
+1	zdůvodnění		opraveno v datech	
+1	zdůrazňovací	zdůraznění		
+1	zdůraznění záporu		opraveno v datech	
+1	zdůraznění, údiv		opraveno v datech	
+1	zdůraznění, signalizace kontrastu	topic-shift		
+1	zdůraznění, přesvědčování	přesvědčování		
+1	zdůraznění, potvrzení	dotvrzení, zdůraznění		
+1	zdůraznění až přesvědčování		opraveno v datech	
+1	žádost ujištění	žádost o ujištění		
+1	žádost o ujištění, dotaz	žádost o ujištění		
+1	žádost o dotvrzení, zdůraznění	žádost o ujištění		
+1	vyvozování, přesvědčení		opraveno v datech	
+1	vyvození, zákaz		opraveno v datech	
+1	vyvození, shrnutí		opraveno v datech	
+1	vyústění děje	shrnutí, navázání		
+1	vysvětlování	vysvětlení		
+1	vysuzování		opraveno v datech	
+1	výhružka			
+1	výčitka/podiv	údiv		
+1	výčet		opraveno v datech	
+1	vágní návaznost v rozhovoru		opraveno v datech	
+1	úvaha, fabulování, nejistota, pochybnost		opraveno v datech	
+1	úvaha, fabulování, introspekce		opraveno v datech	
+1	úvaha, fabulace	úvaha, fabulování		
+1	úvaha do budoucnosti	odhad do budoucnosti		
+1	Úvaha	úvaha		
+1	urážlivá odpověď			
+1	upřesnění, omezení		opraveno v datech	
+1	upřesnění, doplnění	upřesnění		
+1	ujišťování se		opraveno v datech	
+1	ujištění, dotvrzení	ujištění		
+1	ujištění / domněnka s vyšší jistotou		opraveno v datech	
+1	udržení hovoru	navazování		
+1	účel, záměr			
+1	tvrzení o sobě		opraveno v datech	
+1	topic-shift, uvedení kontrastu	topic-shift		
+1	topic shift + přesvědčení	topic-shift		
+1	topic shift + apel	topic-shift		
+1	topic-shift	topic-shift		
+1	strukturační	strukturace		
+1	strukturace textu	shrnutí		
+1	srovnání			
+1	Spíše souhlas.	připouštění		
+1	spíše souhlas	připouštění		
+1	souhlas, zesílení souhlasu	silný souhlas		
+1	souhlas, potvrzení	souhlas, připouštění		
+1	souhlasné bez ironie		opraveno v datech	
+1	souhlasné	souhlas		
+1	souhlas na základě vyšší jistoty	připouštění		
+1	souhlas, afirmace	přitakání		
+1	slabý souhlas		opraveno v datech	
+1	silný souhlas			
+1	silná afirmace		opraveno v datech	
+1	shrnující vyvození z předchozího	shrnutí		
+1	shrnující a navazovací, trochu topic-shift	shrnutí		
+1	sebeutvrzení	sebeujištění		
+1	sebeujišťení	sebeujištění		
+1	sebereflexivní přitakání		opraveno v datech	
+1	sebepřesvědčování		opraveno v datech	
+1	sebeoprava		opraveno v datech	
+1	sdělení s důrazem	dotvrzení, zdůraznění		
+1	rozvažování		opraveno v datech	
+1	příslib	ujištění		
+1	připuštění okolnosti	úvaha		
+1	připouštění, souhlas	souhlas, připouštění		
+1	přibližnost;	přibližnost		
+1	převzatá informace s vysokovu pravděpodobností		opraveno v datech	
+1	převzatá informace s vysokou pravděpodobností		opraveno v datech	
+1	převzatá informace s distancí od informace	převzatá informace		
+1	převzatá informace, popř. domněnka	převzatá informace, domněnka		
+1	převzatá informace a požadavek		opraveno v datech	
+1	přesvědčení / zpochybnění		opraveno v datech 	
+1	přesvědčení se	nadšení		
+1	přesvědčení, předpoklad	předpoklad		
+1	přerušení komunikace za účelem stížnosti (na klacek)	dotvrzení	chyba v anotaci, klidně bych to anotovala jako dotvrzení (možná se sebeujištěním)	
+1	přemítání, shrnutí, introspekce	shrnutí		
+1	přemítání, pochybnost	úvaha		
+1	přemítání	úvaha		
+1	překvapení	údiv		
+1	předpoklad, vysvětlení	předpoklad		
+1	předpoklad (popř. zpochybnění)	předpoklad		
+1	předpoklad, odhad	předpoklad		
+1	přání	fabulování		
+1	pozvání	nabídka		
+1	popření	domněnka		
+1	popis		opraveno v datech	
+1	podiv, uznání		opraveno v datech	
+1	pochybnost, nesouhlas	nesouhlas, pochybnost		
+1	omluva, politování	omluva		
+1	odpověď s expresivitou, silným přesvědčením	shrnutí		
+1	odmítnutí spolupráce (podání infomace)		opraveno v datech	
+1	odmítnutí		opraveno v datech	
+1	odhad do budoucna	odhad do budoucnosti		
+1	odhad		opraveno v datech	
+1	obvinění			
+1	obava			
+1	nesouhlas/zpochybnění	nesouhlas, zpochybnění		
+1	nesouhlasné, ironie	ironie		
+1	(ne)souhlasná	afirmace	opraveno v datech	
+1	nepřímý rozkaz/zákaz		opraveno v datech	
+1	návrh	doporučení, návrh		
+1	navazovací, srovnávací	navazování s kontrastem		
+1	navázání, sebeoprava			
+1	navázání hovoru			
+1	navázaní			
+1	námitka		opraveno v datech	
+1	nadsazený axiom	axiom		
+1	nabídka			
+1	možnost	příklad		
+1	možná otázka?		opraveno v datech	
+1	mírný topic-shift	navazování		
+1	mírné doporučení/výzva	doporučení, návrh		
+1	míra			
+1	metaužití			
+1	měrové	míra		
+1	manipulace, přesvědčování	manipulace		
+1	korekce		opraveno v datech	
+1	konstatování, možnost		opraveno v datech	
+1	konaktivní	navazování		
+1	ironie			
+1	ironické tvrzení	ironie		
+1	introspekce, úvaha			
+1	introspekce s odhadem do budoucnosti	introspekce, úvaha		
+1	introspekce, domněnka	domněnka		
+1	intenzifikace			
+1	idiom &quot;horko těžko&quot;		chyba v anotaci, jde o adverbiální idiomatické plnovýznamové užití 	
+1	hypotéza	připuštění		
+1	fabulování			
+1	fabulace	fabulování		
+1	expresivní, výčitka	obava		
+1	expresivní	výzva		
+1	emotivní potvrzení otázkou		opraveno v datech	
+1	důrazný souhlas		opraveno v datech	
+1	doufání, ujišťování	ujištění		
+1	doufání, přání	doufání		
+1	dotvzení	dotvrzení		
+1	dotvrzovací	dotvrzení		
+1	dotvrzení, popř. sebeujištění	dotvrzení		
+1	dotvrzení a zároveň sebeujištění		opraveno v datech	
+1	dotvrzení a zároveň (sebe)ujištění	dotvrzení		
+1	dotvrzení, ale s ironickým nádechem, a tak možná spíš: typ=expresivní, konkrétní KF = ironický axiom		opraveno v datech	
+1	doptávání	žádost o dotvrzení		
+1	domněnka s vyšší jistotou	domněnka		
+1	domněnka s vysokou jistotou, domněnka je součástí introspekce	domněnka	nechala bych bez jistoty, aby bylo jednotné	
+1	domněnka, smyslová evidence	domněnka		
+1	domněnka,přesvědčení	tvrzení		
+1	domněnka, odhad do budoucnosti	tvrzení		
+1	domněnka, odhad		opraveno v datech	
+1	domněnka na základě smyslové evidence	domněnka		
+1	domněnka, konstatování	doporučení, návrh		
+1	domněnka až přesvědčení	domněnka, přesvědčení		
+1	domněnka, axiom	domněnka		
+1	dedukce		opraveno v datech	
+1	citace	shrnutí, navazování	tady jde o opravu anotace	
+1	axiom, trochu ironické	axiom, ironie		
+1	argumentace, vymezení se proti kom. partnerovi		opraveno v datech	
+1	argumentace	shrnutí, navazování		
+1	alternativní realita	fabulování		
+				
+				
+	BŠ: prozatím bych nechala i dvojité zápisy (domněnka, vysvětlení), delší/nekonzistentní, ale podnětné KF bych dala do poznámky ke KF			
+Pozn. k barvám	vyřešený komentář			
+	opraveno v datech, není potřeba řešit			
