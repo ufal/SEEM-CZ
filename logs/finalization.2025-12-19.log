@@ -1,0 +1,356 @@
+2025-12-19 19:55:40,168 - INFO - Found 40 file(s) matching pattern: teitok/markers/finished/*-cs-*.xml
+2025-12-19 19:55:40,170 - INFO - Loading schema definition: teitok/config/markers_def.xml
+2025-12-19 19:55:40,183 - INFO - Processing file 1/40: teitok/markers/finished/markers_gold-cs-asi.xml
+2025-12-19 19:55:40,183 - INFO -   Input: teitok/markers/finished/markers_gold-cs-asi.xml
+2025-12-19 19:56:22,618 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:22,618 - INFO -   ○ No changes needed
+2025-12-19 19:56:22,618 - INFO - Processing file 2/40: teitok/markers/finished/markers_gold-cs-bezpecne.xml
+2025-12-19 19:56:22,618 - INFO -   Input: teitok/markers/finished/markers_gold-cs-bezpecne.xml
+2025-12-19 19:56:32,531 - WARNING - Item ex-26050: Token X not found for lookup attribute 'ent'
+2025-12-19 19:56:35,910 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:35,910 - INFO -   ○ No changes needed
+2025-12-19 19:56:35,910 - INFO - Processing file 3/40: teitok/markers/finished/markers_gold-cs-bezpochyby.xml
+2025-12-19 19:56:35,910 - INFO -   Input: teitok/markers/finished/markers_gold-cs-bezpochyby.xml
+2025-12-19 19:56:42,672 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:42,672 - INFO -   ○ No changes needed
+2025-12-19 19:56:42,672 - INFO - Processing file 4/40: teitok/markers/finished/markers_gold-cs-doopravdy.xml
+2025-12-19 19:56:42,672 - INFO -   Input: teitok/markers/finished/markers_gold-cs-doopravdy.xml
+2025-12-19 19:56:53,811 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:53,811 - INFO -   ○ No changes needed
+2025-12-19 19:56:53,811 - INFO - Processing file 5/40: teitok/markers/finished/markers_gold-cs-evidentne.xml
+2025-12-19 19:56:53,811 - INFO -   Input: teitok/markers/finished/markers_gold-cs-evidentne.xml
+2025-12-19 19:56:53,816 - INFO -   Processed 29 annotation item(s)
+2025-12-19 19:56:53,816 - INFO -   ○ No changes needed
+2025-12-19 19:56:53,816 - INFO - Processing file 6/40: teitok/markers/finished/markers_gold-cs-fakt.xml
+2025-12-19 19:56:53,816 - INFO -   Input: teitok/markers/finished/markers_gold-cs-fakt.xml
+2025-12-19 19:56:55,864 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:55,864 - INFO -   ○ No changes needed
+2025-12-19 19:56:55,864 - INFO - Processing file 7/40: teitok/markers/finished/markers_gold-cs-jasne.xml
+2025-12-19 19:56:55,864 - INFO -   Input: teitok/markers/finished/markers_gold-cs-jasne.xml
+2025-12-19 19:56:56,195 - INFO - Item ex-25694: Removed disabled attribute 'modift' with value ''
+2025-12-19 19:56:56,195 - INFO - Item ex-25694: Removed orphaned lookup attribute 'predlemma' (reference 'pred' is empty)
+2025-12-19 19:56:56,195 - INFO - Item ex-25694: Removed orphaned lookup attribute 'predtag' (reference 'pred' is empty)
+2025-12-19 19:56:56,195 - INFO - Item ex-25694: Removed orphaned lookup attribute 'predverbtag' (reference 'pred' is empty)
+2025-12-19 19:56:56,199 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:56,202 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-jasne.xml
+2025-12-19 19:56:56,202 - INFO - Processing file 8/40: teitok/markers/finished/markers_gold-cs-jednoznacne.xml
+2025-12-19 19:56:56,202 - INFO -   Input: teitok/markers/finished/markers_gold-cs-jednoznacne.xml
+2025-12-19 19:56:56,354 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:56,354 - INFO -   ○ No changes needed
+2025-12-19 19:56:56,355 - INFO - Processing file 9/40: teitok/markers/finished/markers_gold-cs-jiste.xml
+2025-12-19 19:56:56,355 - INFO -   Input: teitok/markers/finished/markers_gold-cs-jiste.xml
+2025-12-19 19:56:56,956 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:56,957 - INFO -   ○ No changes needed
+2025-12-19 19:56:56,957 - INFO - Processing file 10/40: teitok/markers/finished/markers_gold-cs-kazdopadne.xml
+2025-12-19 19:56:56,957 - INFO -   Input: teitok/markers/finished/markers_gold-cs-kazdopadne.xml
+2025-12-19 19:56:57,296 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:57,296 - INFO -   ○ No changes needed
+2025-12-19 19:56:57,296 - INFO - Processing file 11/40: teitok/markers/finished/markers_gold-cs-mozna.xml
+2025-12-19 19:56:57,296 - INFO -   Input: teitok/markers/finished/markers_gold-cs-mozna.xml
+2025-12-19 19:56:58,267 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:58,267 - INFO -   ○ No changes needed
+2025-12-19 19:56:58,267 - INFO - Processing file 12/40: teitok/markers/finished/markers_gold-cs-nejspis.xml
+2025-12-19 19:56:58,267 - INFO -   Input: teitok/markers/finished/markers_gold-cs-nejspis.xml
+2025-12-19 19:56:58,276 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:58,276 - INFO -   ○ No changes needed
+2025-12-19 19:56:58,276 - INFO - Processing file 13/40: teitok/markers/finished/markers_gold-cs-nepochybne.xml
+2025-12-19 19:56:58,276 - INFO -   Input: teitok/markers/finished/markers_gold-cs-nepochybne.xml
+2025-12-19 19:56:58,284 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:58,284 - INFO -   ○ No changes needed
+2025-12-19 19:56:58,284 - INFO - Processing file 14/40: teitok/markers/finished/markers_gold-cs-nutne.xml
+2025-12-19 19:56:58,284 - INFO -   Input: teitok/markers/finished/markers_gold-cs-nutne.xml
+2025-12-19 19:56:59,327 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,327 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,327 - INFO - Processing file 15/40: teitok/markers/finished/markers_gold-cs-ocividne.xml
+2025-12-19 19:56:59,327 - INFO -   Input: teitok/markers/finished/markers_gold-cs-ocividne.xml
+2025-12-19 19:56:59,337 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,337 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,337 - INFO - Processing file 16/40: teitok/markers/finished/markers_gold-cs-opravdu.xml
+2025-12-19 19:56:59,337 - INFO -   Input: teitok/markers/finished/markers_gold-cs-opravdu.xml
+2025-12-19 19:56:59,345 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,345 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,345 - INFO - Processing file 17/40: teitok/markers/finished/markers_gold-cs-ovsem.xml
+2025-12-19 19:56:59,345 - INFO -   Input: teitok/markers/finished/markers_gold-cs-ovsem.xml
+2025-12-19 19:56:59,354 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,354 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,354 - INFO - Processing file 18/40: teitok/markers/finished/markers_gold-cs-patrne.xml
+2025-12-19 19:56:59,354 - INFO -   Input: teitok/markers/finished/markers_gold-cs-patrne.xml
+2025-12-19 19:56:59,363 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,363 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,363 - INFO - Processing file 19/40: teitok/markers/finished/markers_gold-cs-pochopitelne.xml
+2025-12-19 19:56:59,363 - INFO -   Input: teitok/markers/finished/markers_gold-cs-pochopitelne.xml
+2025-12-19 19:56:59,371 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,371 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,372 - INFO - Processing file 20/40: teitok/markers/finished/markers_gold-cs-podle_vseho.xml
+2025-12-19 19:56:59,372 - INFO -   Input: teitok/markers/finished/markers_gold-cs-podle_vseho.xml
+2025-12-19 19:56:59,379 - INFO -   Processed 39 annotation item(s)
+2025-12-19 19:56:59,379 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,379 - INFO - Processing file 21/40: teitok/markers/finished/markers_gold-cs-pravdepodobne.xml
+2025-12-19 19:56:59,379 - INFO -   Input: teitok/markers/finished/markers_gold-cs-pravdepodobne.xml
+2025-12-19 19:56:59,388 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,388 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,388 - INFO - Processing file 22/40: teitok/markers/finished/markers_gold-cs-prirozene.xml
+2025-12-19 19:56:59,388 - INFO -   Input: teitok/markers/finished/markers_gold-cs-prirozene.xml
+2025-12-19 19:56:59,397 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,397 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,397 - INFO - Processing file 23/40: teitok/markers/finished/markers_gold-cs-pry.xml
+2025-12-19 19:56:59,397 - INFO -   Input: teitok/markers/finished/markers_gold-cs-pry.xml
+2025-12-19 19:56:59,406 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,406 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,406 - INFO - Processing file 24/40: teitok/markers/finished/markers_gold-cs-rozhodne.xml
+2025-12-19 19:56:59,406 - INFO -   Input: teitok/markers/finished/markers_gold-cs-rozhodne.xml
+2025-12-19 19:56:59,548 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,548 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,548 - INFO - Processing file 25/40: teitok/markers/finished/markers_gold-cs-samozrejme.xml
+2025-12-19 19:56:59,548 - INFO -   Input: teitok/markers/finished/markers_gold-cs-samozrejme.xml
+2025-12-19 19:56:59,558 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,558 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,558 - INFO - Processing file 26/40: teitok/markers/finished/markers_gold-cs-skutecne.xml
+2025-12-19 19:56:59,558 - INFO -   Input: teitok/markers/finished/markers_gold-cs-skutecne.xml
+2025-12-19 19:56:59,569 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,569 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,569 - INFO - Processing file 27/40: teitok/markers/finished/markers_gold-cs-snad.xml
+2025-12-19 19:56:59,569 - INFO -   Input: teitok/markers/finished/markers_gold-cs-snad.xml
+2025-12-19 19:56:59,700 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,700 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,700 - INFO - Processing file 28/40: teitok/markers/finished/markers_gold-cs-sotva.xml
+2025-12-19 19:56:59,700 - INFO -   Input: teitok/markers/finished/markers_gold-cs-sotva.xml
+2025-12-19 19:56:59,710 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,710 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,710 - INFO - Processing file 29/40: teitok/markers/finished/markers_gold-cs-spis.xml
+2025-12-19 19:56:59,710 - INFO -   Input: teitok/markers/finished/markers_gold-cs-spis.xml
+2025-12-19 19:56:59,719 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,719 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,720 - INFO - Processing file 30/40: teitok/markers/finished/markers_gold-cs-stezi.xml
+2025-12-19 19:56:59,720 - INFO -   Input: teitok/markers/finished/markers_gold-cs-stezi.xml
+2025-12-19 19:56:59,732 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,732 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,732 - INFO - Processing file 31/40: teitok/markers/finished/markers_gold-cs-tezko.xml
+2025-12-19 19:56:59,732 - INFO -   Input: teitok/markers/finished/markers_gold-cs-tezko.xml
+2025-12-19 19:56:59,743 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,743 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,743 - INFO - Processing file 32/40: teitok/markers/finished/markers_gold-cs-treba.xml
+2025-12-19 19:56:59,743 - INFO -   Input: teitok/markers/finished/markers_gold-cs-treba.xml
+2025-12-19 19:56:59,753 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,753 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,753 - INFO - Processing file 33/40: teitok/markers/finished/markers_gold-cs-udajne.xml
+2025-12-19 19:56:59,753 - INFO -   Input: teitok/markers/finished/markers_gold-cs-udajne.xml
+2025-12-19 19:56:59,883 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,883 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,883 - INFO - Processing file 34/40: teitok/markers/finished/markers_gold-cs-urcite.xml
+2025-12-19 19:56:59,883 - INFO -   Input: teitok/markers/finished/markers_gold-cs-urcite.xml
+2025-12-19 19:56:59,889 - INFO - Item ex-34277: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2025-12-19 19:56:59,891 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,896 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-urcite.xml
+2025-12-19 19:56:59,896 - INFO - Processing file 35/40: teitok/markers/finished/markers_gold-cs-vazne.xml
+2025-12-19 19:56:59,896 - INFO -   Input: teitok/markers/finished/markers_gold-cs-vazne.xml
+2025-12-19 19:56:59,907 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,907 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,908 - INFO - Processing file 36/40: teitok/markers/finished/markers_gold-cs-vskutku.xml
+2025-12-19 19:56:59,908 - INFO -   Input: teitok/markers/finished/markers_gold-cs-vskutku.xml
+2025-12-19 19:56:59,916 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,916 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,917 - INFO - Processing file 37/40: teitok/markers/finished/markers_gold-cs-zajiste.xml
+2025-12-19 19:56:59,917 - INFO -   Input: teitok/markers/finished/markers_gold-cs-zajiste.xml
+2025-12-19 19:56:59,925 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,925 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,925 - INFO - Processing file 38/40: teitok/markers/finished/markers_gold-cs-zjevne.xml
+2025-12-19 19:56:59,925 - INFO -   Input: teitok/markers/finished/markers_gold-cs-zjevne.xml
+2025-12-19 19:56:59,934 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:56:59,934 - INFO -   ○ No changes needed
+2025-12-19 19:56:59,934 - INFO - Processing file 39/40: teitok/markers/finished/markers_gold-cs-zrejme.xml
+2025-12-19 19:56:59,934 - INFO -   Input: teitok/markers/finished/markers_gold-cs-zrejme.xml
+2025-12-19 19:57:00,047 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:57:00,047 - INFO -   ○ No changes needed
+2025-12-19 19:57:00,047 - INFO - Processing file 40/40: teitok/markers/finished/markers_gold-cs-zretelne.xml
+2025-12-19 19:57:00,047 - INFO -   Input: teitok/markers/finished/markers_gold-cs-zretelne.xml
+2025-12-19 19:57:00,059 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:57:00,059 - INFO -   ○ No changes needed
+2025-12-19 19:57:00,060 - INFO - Processing completed:
+2025-12-19 19:57:00,060 - INFO -   Total files: 40
+2025-12-19 19:57:00,060 - INFO -   Successfully processed: 40
+2025-12-19 19:57:00,060 - INFO -   Files with changes: 2
+2025-12-19 19:57:00,060 - INFO -   Files without changes: 38
+2025-12-19 19:57:00,060 - INFO -   BookDoc cache size: 148 book(s)
+2025-12-19 19:57:03,588 - INFO - Found 40 file(s) matching pattern: teitok/markers/finished/*-en-*.xml
+2025-12-19 19:57:03,588 - INFO - Loading schema definition: teitok/config/markers_def.xml
+2025-12-19 19:57:03,590 - INFO - Processing file 1/40: teitok/markers/finished/markers_gold-en-asi.xml
+2025-12-19 19:57:03,590 - INFO -   Input: teitok/markers/finished/markers_gold-en-asi.xml
+2025-12-19 19:58:02,302 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:58:02,302 - INFO -   ○ No changes needed
+2025-12-19 19:58:02,302 - INFO - Processing file 2/40: teitok/markers/finished/markers_gold-en-bezpecne.xml
+2025-12-19 19:58:02,302 - INFO -   Input: teitok/markers/finished/markers_gold-en-bezpecne.xml
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'certainty' with value 'full'
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'commfuntype' with value 'decl'
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'commfunsubtype' with value 'předpoklad'
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'commfunnote' with value 'přání, doufání'
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'scope' with value 'sent'
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'tfpos' with value 'ownfocus'
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'sentpos' with value 'last'
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'neg' with value '0'
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'contrast' with value '1'
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'modalpersp' with value 'clear'
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'modift' with value ''
+2025-12-19 19:58:21,164 - INFO - Item ex-26088: Removed disabled attribute 'evidencetype' with value 'inference'
+2025-12-19 19:58:57,216 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:58:57,224 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-bezpecne.xml
+2025-12-19 19:58:57,224 - INFO - Processing file 3/40: teitok/markers/finished/markers_gold-en-bezpochyby.xml
+2025-12-19 19:58:57,224 - INFO -   Input: teitok/markers/finished/markers_gold-en-bezpochyby.xml
+2025-12-19 19:59:33,290 - INFO -   Processed 50 annotation item(s)
+2025-12-19 19:59:33,290 - INFO -   ○ No changes needed
+2025-12-19 19:59:33,290 - INFO - Processing file 4/40: teitok/markers/finished/markers_gold-en-doopravdy.xml
+2025-12-19 19:59:33,290 - INFO -   Input: teitok/markers/finished/markers_gold-en-doopravdy.xml
+2025-12-19 20:00:06,041 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:00:06,041 - INFO -   ○ No changes needed
+2025-12-19 20:00:06,041 - INFO - Processing file 5/40: teitok/markers/finished/markers_gold-en-evidentne.xml
+2025-12-19 20:00:06,041 - INFO -   Input: teitok/markers/finished/markers_gold-en-evidentne.xml
+2025-12-19 20:00:22,596 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:00:22,596 - INFO -   ○ No changes needed
+2025-12-19 20:00:22,596 - INFO - Processing file 6/40: teitok/markers/finished/markers_gold-en-fakt.xml
+2025-12-19 20:00:22,596 - INFO -   Input: teitok/markers/finished/markers_gold-en-fakt.xml
+2025-12-19 20:00:31,702 - INFO - Item ex-922: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2025-12-19 20:00:45,072 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:00:45,080 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-fakt.xml
+2025-12-19 20:00:45,080 - INFO - Processing file 7/40: teitok/markers/finished/markers_gold-en-jasne.xml
+2025-12-19 20:00:45,080 - INFO -   Input: teitok/markers/finished/markers_gold-en-jasne.xml
+2025-12-19 20:01:02,958 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:01:02,958 - INFO -   ○ No changes needed
+2025-12-19 20:01:02,958 - INFO - Processing file 8/40: teitok/markers/finished/markers_gold-en-jednoznacne.xml
+2025-12-19 20:01:02,958 - INFO -   Input: teitok/markers/finished/markers_gold-en-jednoznacne.xml
+2025-12-19 20:01:14,891 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:01:14,892 - INFO -   ○ No changes needed
+2025-12-19 20:01:14,892 - INFO - Processing file 9/40: teitok/markers/finished/markers_gold-en-jiste.xml
+2025-12-19 20:01:14,892 - INFO -   Input: teitok/markers/finished/markers_gold-en-jiste.xml
+2025-12-19 20:01:26,284 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:01:26,284 - INFO -   ○ No changes needed
+2025-12-19 20:01:26,284 - INFO - Processing file 10/40: teitok/markers/finished/markers_gold-en-kazdopadne.xml
+2025-12-19 20:01:26,284 - INFO -   Input: teitok/markers/finished/markers_gold-en-kazdopadne.xml
+2025-12-19 20:01:49,048 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:01:49,062 - INFO -   ○ No changes needed
+2025-12-19 20:01:49,064 - INFO - Processing file 11/40: teitok/markers/finished/markers_gold-en-mozna.xml
+2025-12-19 20:01:49,064 - INFO -   Input: teitok/markers/finished/markers_gold-en-mozna.xml
+2025-12-19 20:01:59,232 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:01:59,248 - INFO -   ○ No changes needed
+2025-12-19 20:01:59,251 - INFO - Processing file 12/40: teitok/markers/finished/markers_gold-en-nejspis.xml
+2025-12-19 20:01:59,251 - INFO -   Input: teitok/markers/finished/markers_gold-en-nejspis.xml
+2025-12-19 20:02:09,555 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:09,572 - INFO -   ○ No changes needed
+2025-12-19 20:02:09,574 - INFO - Processing file 13/40: teitok/markers/finished/markers_gold-en-nepochybne.xml
+2025-12-19 20:02:09,574 - INFO -   Input: teitok/markers/finished/markers_gold-en-nepochybne.xml
+2025-12-19 20:02:17,402 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:17,424 - INFO -   ○ No changes needed
+2025-12-19 20:02:17,427 - INFO - Processing file 14/40: teitok/markers/finished/markers_gold-en-nutne.xml
+2025-12-19 20:02:17,427 - INFO -   Input: teitok/markers/finished/markers_gold-en-nutne.xml
+2025-12-19 20:02:24,131 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:24,149 - INFO -   ○ No changes needed
+2025-12-19 20:02:24,152 - INFO - Processing file 15/40: teitok/markers/finished/markers_gold-en-ocividne.xml
+2025-12-19 20:02:24,152 - INFO -   Input: teitok/markers/finished/markers_gold-en-ocividne.xml
+2025-12-19 20:02:30,427 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:30,444 - INFO -   ○ No changes needed
+2025-12-19 20:02:30,445 - INFO - Processing file 16/40: teitok/markers/finished/markers_gold-en-opravdu.xml
+2025-12-19 20:02:30,445 - INFO -   Input: teitok/markers/finished/markers_gold-en-opravdu.xml
+2025-12-19 20:02:36,403 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:36,416 - INFO -   ○ No changes needed
+2025-12-19 20:02:36,419 - INFO - Processing file 17/40: teitok/markers/finished/markers_gold-en-ovsem.xml
+2025-12-19 20:02:36,419 - INFO -   Input: teitok/markers/finished/markers_gold-en-ovsem.xml
+2025-12-19 20:02:42,209 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:42,225 - INFO -   ○ No changes needed
+2025-12-19 20:02:42,228 - INFO - Processing file 18/40: teitok/markers/finished/markers_gold-en-patrne.xml
+2025-12-19 20:02:42,228 - INFO -   Input: teitok/markers/finished/markers_gold-en-patrne.xml
+2025-12-19 20:02:50,185 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:50,208 - INFO -   ○ No changes needed
+2025-12-19 20:02:50,210 - INFO - Processing file 19/40: teitok/markers/finished/markers_gold-en-pochopitelne.xml
+2025-12-19 20:02:50,211 - INFO -   Input: teitok/markers/finished/markers_gold-en-pochopitelne.xml
+2025-12-19 20:02:52,532 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:52,545 - INFO -   ○ No changes needed
+2025-12-19 20:02:52,547 - INFO - Processing file 20/40: teitok/markers/finished/markers_gold-en-podle_vseho.xml
+2025-12-19 20:02:52,547 - INFO -   Input: teitok/markers/finished/markers_gold-en-podle_vseho.xml
+2025-12-19 20:02:53,734 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:53,746 - INFO -   ○ No changes needed
+2025-12-19 20:02:53,747 - INFO - Processing file 21/40: teitok/markers/finished/markers_gold-en-pravdepodobne.xml
+2025-12-19 20:02:53,747 - INFO -   Input: teitok/markers/finished/markers_gold-en-pravdepodobne.xml
+2025-12-19 20:02:55,463 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:55,475 - INFO -   ○ No changes needed
+2025-12-19 20:02:55,477 - INFO - Processing file 22/40: teitok/markers/finished/markers_gold-en-prirozene.xml
+2025-12-19 20:02:55,477 - INFO -   Input: teitok/markers/finished/markers_gold-en-prirozene.xml
+2025-12-19 20:02:58,667 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:58,680 - INFO -   ○ No changes needed
+2025-12-19 20:02:58,682 - INFO - Processing file 23/40: teitok/markers/finished/markers_gold-en-pry.xml
+2025-12-19 20:02:58,682 - INFO -   Input: teitok/markers/finished/markers_gold-en-pry.xml
+2025-12-19 20:02:59,541 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:02:59,555 - INFO -   ○ No changes needed
+2025-12-19 20:02:59,557 - INFO - Processing file 24/40: teitok/markers/finished/markers_gold-en-rozhodne.xml
+2025-12-19 20:02:59,557 - INFO -   Input: teitok/markers/finished/markers_gold-en-rozhodne.xml
+2025-12-19 20:03:01,321 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:01,344 - INFO -   ○ No changes needed
+2025-12-19 20:03:01,347 - INFO - Processing file 25/40: teitok/markers/finished/markers_gold-en-samozrejme.xml
+2025-12-19 20:03:01,347 - INFO -   Input: teitok/markers/finished/markers_gold-en-samozrejme.xml
+2025-12-19 20:03:02,903 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:02,920 - INFO -   ○ No changes needed
+2025-12-19 20:03:02,922 - INFO - Processing file 26/40: teitok/markers/finished/markers_gold-en-skutecne.xml
+2025-12-19 20:03:02,922 - INFO -   Input: teitok/markers/finished/markers_gold-en-skutecne.xml
+2025-12-19 20:03:04,091 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:04,109 - INFO -   ○ No changes needed
+2025-12-19 20:03:04,111 - INFO - Processing file 27/40: teitok/markers/finished/markers_gold-en-snad.xml
+2025-12-19 20:03:04,111 - INFO -   Input: teitok/markers/finished/markers_gold-en-snad.xml
+2025-12-19 20:03:19,543 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:19,553 - INFO -   ○ No changes needed
+2025-12-19 20:03:19,555 - INFO - Processing file 28/40: teitok/markers/finished/markers_gold-en-sotva.xml
+2025-12-19 20:03:19,555 - INFO -   Input: teitok/markers/finished/markers_gold-en-sotva.xml
+2025-12-19 20:03:20,776 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:20,789 - INFO -   ○ No changes needed
+2025-12-19 20:03:20,791 - INFO - Processing file 29/40: teitok/markers/finished/markers_gold-en-spis.xml
+2025-12-19 20:03:20,791 - INFO -   Input: teitok/markers/finished/markers_gold-en-spis.xml
+2025-12-19 20:03:22,399 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:22,399 - INFO -   ○ No changes needed
+2025-12-19 20:03:22,400 - INFO - Processing file 30/40: teitok/markers/finished/markers_gold-en-stezi.xml
+2025-12-19 20:03:22,400 - INFO -   Input: teitok/markers/finished/markers_gold-en-stezi.xml
+2025-12-19 20:03:24,073 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:24,074 - INFO -   ○ No changes needed
+2025-12-19 20:03:24,074 - INFO - Processing file 31/40: teitok/markers/finished/markers_gold-en-tezko.xml
+2025-12-19 20:03:24,074 - INFO -   Input: teitok/markers/finished/markers_gold-en-tezko.xml
+2025-12-19 20:03:24,545 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:24,545 - INFO -   ○ No changes needed
+2025-12-19 20:03:24,545 - INFO - Processing file 32/40: teitok/markers/finished/markers_gold-en-treba.xml
+2025-12-19 20:03:24,545 - INFO -   Input: teitok/markers/finished/markers_gold-en-treba.xml
+2025-12-19 20:03:25,794 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:25,794 - INFO -   ○ No changes needed
+2025-12-19 20:03:25,794 - INFO - Processing file 33/40: teitok/markers/finished/markers_gold-en-udajne.xml
+2025-12-19 20:03:25,794 - INFO -   Input: teitok/markers/finished/markers_gold-en-udajne.xml
+2025-12-19 20:03:26,932 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:26,932 - INFO -   ○ No changes needed
+2025-12-19 20:03:26,933 - INFO - Processing file 34/40: teitok/markers/finished/markers_gold-en-urcite.xml
+2025-12-19 20:03:26,933 - INFO -   Input: teitok/markers/finished/markers_gold-en-urcite.xml
+2025-12-19 20:03:26,941 - WARNING - Item ex-26078: IDs in attribute 'en' come from different sentences: ['en:Barnes-Arthur_a_George:0:1211:5:w21', 'en:Barnes-Arthur_a_George:0:1211:6:w3']
+2025-12-19 20:03:28,034 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:28,034 - INFO -   ○ No changes needed
+2025-12-19 20:03:28,034 - INFO - Processing file 35/40: teitok/markers/finished/markers_gold-en-vazne.xml
+2025-12-19 20:03:28,035 - INFO -   Input: teitok/markers/finished/markers_gold-en-vazne.xml
+2025-12-19 20:03:28,500 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:28,500 - INFO -   ○ No changes needed
+2025-12-19 20:03:28,500 - INFO - Processing file 36/40: teitok/markers/finished/markers_gold-en-vskutku.xml
+2025-12-19 20:03:28,500 - INFO -   Input: teitok/markers/finished/markers_gold-en-vskutku.xml
+2025-12-19 20:03:28,681 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:28,681 - INFO -   ○ No changes needed
+2025-12-19 20:03:28,681 - INFO - Processing file 37/40: teitok/markers/finished/markers_gold-en-zajiste.xml
+2025-12-19 20:03:28,681 - INFO -   Input: teitok/markers/finished/markers_gold-en-zajiste.xml
+2025-12-19 20:03:29,252 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:29,252 - INFO -   ○ No changes needed
+2025-12-19 20:03:29,252 - INFO - Processing file 38/40: teitok/markers/finished/markers_gold-en-zjevne.xml
+2025-12-19 20:03:29,252 - INFO -   Input: teitok/markers/finished/markers_gold-en-zjevne.xml
+2025-12-19 20:03:29,264 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:29,264 - INFO -   ○ No changes needed
+2025-12-19 20:03:29,264 - INFO - Processing file 39/40: teitok/markers/finished/markers_gold-en-zrejme.xml
+2025-12-19 20:03:29,264 - INFO -   Input: teitok/markers/finished/markers_gold-en-zrejme.xml
+2025-12-19 20:03:29,276 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:29,276 - INFO -   ○ No changes needed
+2025-12-19 20:03:29,276 - INFO - Processing file 40/40: teitok/markers/finished/markers_gold-en-zretelne.xml
+2025-12-19 20:03:29,276 - INFO -   Input: teitok/markers/finished/markers_gold-en-zretelne.xml
+2025-12-19 20:03:29,293 - INFO -   Processed 50 annotation item(s)
+2025-12-19 20:03:29,293 - INFO -   ○ No changes needed
+2025-12-19 20:03:29,293 - INFO - Processing completed:
+2025-12-19 20:03:29,293 - INFO -   Total files: 40
+2025-12-19 20:03:29,293 - INFO -   Successfully processed: 40
+2025-12-19 20:03:29,293 - INFO -   Files with changes: 2
+2025-12-19 20:03:29,293 - INFO -   Files without changes: 38
+2025-12-19 20:03:29,293 - INFO -   BookDoc cache size: 507 book(s)

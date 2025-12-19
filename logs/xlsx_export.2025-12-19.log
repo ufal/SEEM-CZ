@@ -1,0 +1,909 @@
+2025-12-19 20:25:37,025 - INFO - Validated 80 out of 80 marker files
+2025-12-19 20:25:37,025 - INFO - Exporting 80 marker files to XLSX
+2025-12-19 20:25:37,025 - INFO - Using schema definition: teitok/config/markers_def.xml
+2025-12-19 20:25:37,026 - INFO - Output will be saved to: teitok/export/all_finished.xlsx
+2025-12-19 20:25:37,035 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-asi.xml
+2025-12-19 20:25:37,038 - INFO - Selected most informative verbtag from: A----- VCA1SP ------. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,038 - INFO - Selected most informative verbtag from: ------|A----- VDA2SR. Using: VDA2SR (with 0 hyphens)
+2025-12-19 20:25:37,038 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,038 - INFO - Selected most informative verbtag from: A----- VDP1SF VFA---. Using: VDP1SF (with 0 hyphens)
+2025-12-19 20:25:37,038 - INFO - Selected most informative verbtag from: ------|A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,039 - INFO - Selected most informative verbtag from: A----- VCA3PP VFA---. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,039 - INFO - Selected most informative verbtag from: VFA--- A----- VDA1PF. Using: VDA1PF (with 0 hyphens)
+2025-12-19 20:25:37,039 - INFO - Selected most informative verbtag from: ------|A----- VDA2SR. Using: VDA2SR (with 0 hyphens)
+2025-12-19 20:25:37,039 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-asi.xml
+2025-12-19 20:25:37,039 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-bezpecne.xml
+2025-12-19 20:25:37,040 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,041 - INFO - Selected most informative verbtag from: A----- VCA1SP VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,041 - INFO - Selected most informative verbtag from: VDA3SP ------ VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,041 - INFO - Selected most informative verbtag from: A----- VDP3PR. Using: VDP3PR (with 0 hyphens)
+2025-12-19 20:25:37,041 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,041 - INFO - Selected most informative verbtag from: VDA3SR ------ VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,041 - INFO - Selected most informative verbtag from: VDA1PR A-----. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,041 - INFO - Selected most informative verbtag from: ------|A----- VDA2SR. Using: VDA2SR (with 0 hyphens)
+2025-12-19 20:25:37,042 - INFO - Selected most informative verbtag from: A----- ------ VDA1PR VFA---. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,042 - INFO - Selected most informative verbtag from: VDA3SP ------ VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,042 - INFO - Selected most informative verbtag from: VDA1SR A----- ------. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,042 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,042 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,043 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-bezpecne.xml
+2025-12-19 20:25:37,043 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-bezpochyby.xml
+2025-12-19 20:25:37,045 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,046 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,046 - INFO - Selected most informative verbtag from: VDA2PP ------ VFA---. Using: VDA2PP (with 0 hyphens)
+2025-12-19 20:25:37,046 - INFO - Selected most informative verbtag from: VDA3SR --p---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,046 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,046 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-bezpochyby.xml
+2025-12-19 20:25:37,046 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-doopravdy.xml
+2025-12-19 20:25:37,049 - INFO - Selected most informative verbtag from: A----- VCA1SP VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,049 - INFO - Selected most informative verbtag from: VDA1SR A----- ------. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,049 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,049 - INFO - Selected most informative verbtag from: VDA1SR A----- VFA--- ------. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,049 - INFO - Selected most informative verbtag from: A----- VDA2vR. Using: VDA2vR (with 0 hyphens)
+2025-12-19 20:25:37,050 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,050 - INFO - Selected most informative verbtag from: VDA2SF VFA---. Using: VDA2SF (with 0 hyphens)
+2025-12-19 20:25:37,050 - INFO - Selected most informative verbtag from: ------ VDA1SR VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,050 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,050 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-doopravdy.xml
+2025-12-19 20:25:37,051 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-evidentne.xml
+2025-12-19 20:25:37,052 - INFO - Selected most informative verbtag from: VDA3PR --p---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,052 - INFO - Selected most informative verbtag from: VDA3SR --p---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,052 - INFO - Selected most informative verbtag from: VDA3PP VOP-P-. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,053 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,053 - INFO - Extracted 29 items from teitok/markers/finished/markers_gold-cs-evidentne.xml
+2025-12-19 20:25:37,053 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-fakt.xml
+2025-12-19 20:25:37,054 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,055 - INFO - Selected most informative verbtag from: ------|A----- VDA2SR. Using: VDA2SR (with 0 hyphens)
+2025-12-19 20:25:37,055 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,056 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,056 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-fakt.xml
+2025-12-19 20:25:37,056 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-jasne.xml
+2025-12-19 20:25:37,059 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,059 - INFO - Selected most informative verbtag from: A----- VDP3PR. Using: VDP3PR (with 0 hyphens)
+2025-12-19 20:25:37,060 - INFO - Selected most informative verbtag from: A----- VDP3PP. Using: VDP3PP (with 0 hyphens)
+2025-12-19 20:25:37,060 - INFO - Selected most informative verbtag from: ------|A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,060 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-jasne.xml
+2025-12-19 20:25:37,060 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-jednoznacne.xml
+2025-12-19 20:25:37,062 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,062 - INFO - Selected most informative verbtag from: VCA3SP A----- ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,062 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,062 - INFO - Selected most informative verbtag from: A----- VCA3SP ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,062 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,063 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,063 - INFO - Selected most informative verbtag from: A----- VDP3PP. Using: VDP3PP (with 0 hyphens)
+2025-12-19 20:25:37,063 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,063 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-jednoznacne.xml
+2025-12-19 20:25:37,063 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-jiste.xml
+2025-12-19 20:25:37,065 - INFO - Selected most informative verbtag from: A----- VCA3SP ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,065 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,065 - INFO - Selected most informative verbtag from: A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,065 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,066 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,066 - INFO - Selected most informative verbtag from: A----- ------ A----- VCA1SR. Using: VCA1SR (with 0 hyphens)
+2025-12-19 20:25:37,066 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,066 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,066 - INFO - Selected most informative verbtag from: A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,067 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-jiste.xml
+2025-12-19 20:25:37,067 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-kazdopadne.xml
+2025-12-19 20:25:37,068 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,068 - INFO - Selected most informative verbtag from: VFA--- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,069 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,069 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,070 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-kazdopadne.xml
+2025-12-19 20:25:37,070 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-mozna.xml
+2025-12-19 20:25:37,072 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,072 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,073 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,073 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,073 - INFO - Selected most informative verbtag from: A----- ------ VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,073 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,073 - INFO - Selected most informative verbtag from: A----- VCA2SP VFA---. Using: VCA2SP (with 0 hyphens)
+2025-12-19 20:25:37,074 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,074 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,074 - INFO - Selected most informative verbtag from: A----- VDA1SR ------. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,074 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,075 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,075 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,075 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-mozna.xml
+2025-12-19 20:25:37,075 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-nejspis.xml
+2025-12-19 20:25:37,076 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,076 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,077 - INFO - Selected most informative verbtag from: VDA3SP ------ VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,077 - INFO - Selected most informative verbtag from: ------ VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,077 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,078 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,078 - INFO - Selected most informative verbtag from: VCA3SP A-----. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,078 - INFO - Selected most informative verbtag from: A----- ------ VCA1PP. Using: VCA1PP (with 0 hyphens)
+2025-12-19 20:25:37,078 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-nejspis.xml
+2025-12-19 20:25:37,078 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-nepochybne.xml
+2025-12-19 20:25:37,080 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,081 - INFO - Selected most informative verbtag from: VDA3PF VFA---. Using: VDA3PF (with 0 hyphens)
+2025-12-19 20:25:37,082 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-nepochybne.xml
+2025-12-19 20:25:37,082 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-nutne.xml
+2025-12-19 20:25:37,083 - INFO - Selected most informative verbtag from: ------|A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,083 - INFO - Selected most informative verbtag from: A----- ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,083 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,084 - INFO - Selected most informative verbtag from: A----- VCA1SP VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,084 - INFO - Selected most informative verbtag from: VDA3SP VFA--- ------. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,084 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,084 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,084 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,084 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,084 - INFO - Selected most informative verbtag from: ------ VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,084 - INFO - Selected most informative verbtag from: VDA3SR VFA--- ------ ------. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,085 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,085 - INFO - Selected most informative verbtag from: VDA3SP VFA--- ------. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,085 - INFO - Selected most informative verbtag from: A----- VDA1PF. Using: VDA1PF (with 0 hyphens)
+2025-12-19 20:25:37,085 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,085 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,085 - INFO - Selected most informative verbtag from: ------ VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,085 - INFO - Multiple verbtags with same informativeness found: VDA3SB VDA3SP. Using the first one with 0 hyphens: VDA3SB
+2025-12-19 20:25:37,085 - INFO - Selected most informative verbtag from: ------|A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,085 - INFO - Selected most informative verbtag from: VCA1SP A----- VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,086 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,086 - INFO - Selected most informative verbtag from: VCA3SP A----- VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,086 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,086 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,086 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,086 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-nutne.xml
+2025-12-19 20:25:37,086 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-ocividne.xml
+2025-12-19 20:25:37,088 - INFO - Selected most informative verbtag from: VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,088 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,089 - INFO - Selected most informative verbtag from: VDA3SP --p---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,089 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,089 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,089 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,090 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,090 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-ocividne.xml
+2025-12-19 20:25:37,090 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-opravdu.xml
+2025-12-19 20:25:37,092 - INFO - Selected most informative verbtag from: ------ VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,093 - INFO - Selected most informative verbtag from: ------ VDA2SP VFA---. Using: VDA2SP (with 0 hyphens)
+2025-12-19 20:25:37,093 - INFO - Selected most informative verbtag from: A----- VDA1SR VFA--- ------. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,093 - INFO - Selected most informative verbtag from: A----- VCA2SP. Using: VCA2SP (with 0 hyphens)
+2025-12-19 20:25:37,093 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,093 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,093 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,094 - INFO - Selected most informative verbtag from: VDA2PR A----- VFA---. Using: VDA2PR (with 0 hyphens)
+2025-12-19 20:25:37,094 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,094 - INFO - Selected most informative verbtag from: ------ VDA2SP VFA---. Using: VDA2SP (with 0 hyphens)
+2025-12-19 20:25:37,094 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,094 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,094 - INFO - Selected most informative verbtag from: ------ VDA1SF VFA---. Using: VDA1SF (with 0 hyphens)
+2025-12-19 20:25:37,095 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,095 - INFO - Selected most informative verbtag from: VDA2PP VFA---. Using: VDA2PP (with 0 hyphens)
+2025-12-19 20:25:37,095 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,095 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-opravdu.xml
+2025-12-19 20:25:37,095 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-ovsem.xml
+2025-12-19 20:25:37,097 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,097 - INFO - Selected most informative verbtag from: VDA1SR A----- VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,097 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,097 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,098 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,098 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,098 - INFO - Selected most informative verbtag from: ------ VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,098 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,098 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,099 - INFO - Selected most informative verbtag from: A----- ------ ------ VDA1SF. Using: VDA1SF (with 0 hyphens)
+2025-12-19 20:25:37,099 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-ovsem.xml
+2025-12-19 20:25:37,099 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-patrne.xml
+2025-12-19 20:25:37,100 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,100 - INFO - Selected most informative verbtag from: VDA1PF VFA---. Using: VDA1PF (with 0 hyphens)
+2025-12-19 20:25:37,100 - INFO - Selected most informative verbtag from: A----- VDA2SR. Using: VDA2SR (with 0 hyphens)
+2025-12-19 20:25:37,101 - INFO - Selected most informative verbtag from: A----- ------ VCA1PP. Using: VCA1PP (with 0 hyphens)
+2025-12-19 20:25:37,101 - INFO - Selected most informative verbtag from: A----- VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,102 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,102 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,102 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,102 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-patrne.xml
+2025-12-19 20:25:37,102 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-pochopitelne.xml
+2025-12-19 20:25:37,104 - INFO - Selected most informative verbtag from: VDA3PR --p---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,104 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,104 - INFO - Selected most informative verbtag from: VFA--- VDA3SP. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,104 - INFO - Multiple verbtags with same informativeness found: VDA3PR ------ VDA3PR. Using the first one with 0 hyphens: VDA3PR
+2025-12-19 20:25:37,104 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,104 - INFO - Selected most informative verbtag from: VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,105 - INFO - Selected most informative verbtag from: ------ VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,105 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,105 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,106 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,106 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-pochopitelne.xml
+2025-12-19 20:25:37,106 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-podle_vseho.xml
+2025-12-19 20:25:37,107 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,108 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,108 - INFO - Selected most informative verbtag from: A----- VDP3PR. Using: VDP3PR (with 0 hyphens)
+2025-12-19 20:25:37,109 - INFO - Selected most informative verbtag from: ------ VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,109 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,109 - INFO - Extracted 39 items from teitok/markers/finished/markers_gold-cs-podle_vseho.xml
+2025-12-19 20:25:37,109 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-pravdepodobne.xml
+2025-12-19 20:25:37,110 - INFO - Selected most informative verbtag from: VCA3SP A----- VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,110 - INFO - Selected most informative verbtag from: A----- VCA3SP ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,111 - INFO - Selected most informative verbtag from: A----- A----- VCA1SR VFA---. Using: VCA1SR (with 0 hyphens)
+2025-12-19 20:25:37,111 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,111 - INFO - Multiple verbtags with same informativeness found: ------ VDA3SR VDA3SR. Using the first one with 0 hyphens: VDA3SR
+2025-12-19 20:25:37,111 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,112 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,112 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,112 - INFO - Selected most informative verbtag from: VDA3SF A-----. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,113 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,113 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-pravdepodobne.xml
+2025-12-19 20:25:37,113 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-prirozene.xml
+2025-12-19 20:25:37,115 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,115 - INFO - Selected most informative verbtag from: A----- A----- ------ VCA1SR. Using: VCA1SR (with 0 hyphens)
+2025-12-19 20:25:37,116 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,116 - INFO - Selected most informative verbtag from: VDA1SR A----- VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,116 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,116 - INFO - Selected most informative verbtag from: VFA--- VDA1PP. Using: VDA1PP (with 0 hyphens)
+2025-12-19 20:25:37,116 - INFO - Multiple verbtags with same informativeness found: VDA1SP VDA1SR. Using the first one with 0 hyphens: VDA1SP
+2025-12-19 20:25:37,116 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,117 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,117 - INFO - Multiple verbtags with same informativeness found: A----- --p---. Using the first one with 5 hyphens: A-----
+2025-12-19 20:25:37,117 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-prirozene.xml
+2025-12-19 20:25:37,117 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-pry.xml
+2025-12-19 20:25:37,120 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,120 - INFO - Selected most informative verbtag from: A----- VDA2PR. Using: VDA2PR (with 0 hyphens)
+2025-12-19 20:25:37,120 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,120 - INFO - Selected most informative verbtag from: ------|A----- VCA1PP. Using: VCA1PP (with 0 hyphens)
+2025-12-19 20:25:37,120 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,120 - INFO - Selected most informative verbtag from: ------|A----- VCA1PP. Using: VCA1PP (with 0 hyphens)
+2025-12-19 20:25:37,120 - INFO - Selected most informative verbtag from: A----- VDA2PR. Using: VDA2PR (with 0 hyphens)
+2025-12-19 20:25:37,120 - INFO - Selected most informative verbtag from: A----- VCA1PP. Using: VCA1PP (with 0 hyphens)
+2025-12-19 20:25:37,121 - INFO - Selected most informative verbtag from: ------|A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,121 - INFO - Selected most informative verbtag from: ------|A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,121 - INFO - Selected most informative verbtag from: ------ VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,121 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,122 - INFO - Selected most informative verbtag from: VDA3SP --p---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,122 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-pry.xml
+2025-12-19 20:25:37,122 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-rozhodne.xml
+2025-12-19 20:25:37,123 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,124 - INFO - Selected most informative verbtag from: A----- VCA2SP. Using: VCA2SP (with 0 hyphens)
+2025-12-19 20:25:37,124 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,124 - INFO - Selected most informative verbtag from: A----- ------ VCA1SP VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,124 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,124 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,124 - INFO - Selected most informative verbtag from: A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,125 - INFO - Selected most informative verbtag from: VDA3SR VFA--- ------ ------. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,125 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,125 - INFO - Selected most informative verbtag from: A----- ------ VCA1SP VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,125 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-rozhodne.xml
+2025-12-19 20:25:37,126 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-samozrejme.xml
+2025-12-19 20:25:37,127 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,127 - INFO - Multiple verbtags with same informativeness found: VDA3PR VDA3PR. Using the first one with 0 hyphens: VDA3PR
+2025-12-19 20:25:37,127 - INFO - Selected most informative verbtag from: VDA1SR A-----. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,127 - INFO - Selected most informative verbtag from: A----- VCA3SP ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,127 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,128 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,128 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,129 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,129 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,129 - INFO - Selected most informative verbtag from: VDA1SR A----- VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,129 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,129 - INFO - Selected most informative verbtag from: ------|A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,129 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-samozrejme.xml
+2025-12-19 20:25:37,129 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-skutecne.xml
+2025-12-19 20:25:37,130 - INFO - Selected most informative verbtag from: VCA3PP VFA---. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,131 - INFO - Selected most informative verbtag from: ------ VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,131 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,131 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,131 - INFO - Selected most informative verbtag from: A----- VCA3SP ------ ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,132 - INFO - Selected most informative verbtag from: A----- A----- VCA2SR ------. Using: VCA2SR (with 0 hyphens)
+2025-12-19 20:25:37,132 - INFO - Selected most informative verbtag from: A----- VDP3PP. Using: VDP3PP (with 0 hyphens)
+2025-12-19 20:25:37,132 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,132 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-skutecne.xml
+2025-12-19 20:25:37,132 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-snad.xml
+2025-12-19 20:25:37,134 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,134 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,134 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,134 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,134 - INFO - Selected most informative verbtag from: VDA2PP VFA---. Using: VDA2PP (with 0 hyphens)
+2025-12-19 20:25:37,135 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,135 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,135 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,135 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,136 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,136 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-snad.xml
+2025-12-19 20:25:37,136 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-sotva.xml
+2025-12-19 20:25:37,138 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,138 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,139 - INFO - Selected most informative verbtag from: A----- ------ VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,139 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-sotva.xml
+2025-12-19 20:25:37,139 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-spis.xml
+2025-12-19 20:25:37,142 - INFO - Selected most informative verbtag from: A----- VDP3PR. Using: VDP3PR (with 0 hyphens)
+2025-12-19 20:25:37,142 - INFO - Selected most informative verbtag from: VDA3PP ------ VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,142 - INFO - Selected most informative verbtag from: A----- VDA1SF. Using: VDA1SF (with 0 hyphens)
+2025-12-19 20:25:37,143 - INFO - Selected most informative verbtag from: VCA1PP A----- VFA---. Using: VCA1PP (with 0 hyphens)
+2025-12-19 20:25:37,143 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-spis.xml
+2025-12-19 20:25:37,143 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-stezi.xml
+2025-12-19 20:25:37,145 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,145 - INFO - Selected most informative verbtag from: VDA3SP ------ VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,145 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,145 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,145 - INFO - Selected most informative verbtag from: VDA3SR ------ VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,145 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,146 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,146 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,146 - INFO - Selected most informative verbtag from: ------ VDA1PP VFA---. Using: VDA1PP (with 0 hyphens)
+2025-12-19 20:25:37,146 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,146 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,146 - INFO - Selected most informative verbtag from: A----- VDA1SR VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,146 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,146 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,146 - INFO - Selected most informative verbtag from: A----- VDP3PF. Using: VDP3PF (with 0 hyphens)
+2025-12-19 20:25:37,147 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-stezi.xml
+2025-12-19 20:25:37,147 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-tezko.xml
+2025-12-19 20:25:37,148 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,148 - INFO - Selected most informative verbtag from: VDA1PP VFA---. Using: VDA1PP (with 0 hyphens)
+2025-12-19 20:25:37,148 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,149 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,149 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,149 - INFO - Selected most informative verbtag from: ------ A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,149 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,149 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-tezko.xml
+2025-12-19 20:25:37,149 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-treba.xml
+2025-12-19 20:25:37,152 - INFO - Selected most informative verbtag from: A----- VCA2vP VFA---. Using: VCA2vP (with 0 hyphens)
+2025-12-19 20:25:37,152 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,152 - INFO - Selected most informative verbtag from: A----- ------ A----- VCA1SR. Using: VCA1SR (with 0 hyphens)
+2025-12-19 20:25:37,152 - INFO - Selected most informative verbtag from: VDA1SR A----- VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,153 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,153 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-treba.xml
+2025-12-19 20:25:37,153 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-udajne.xml
+2025-12-19 20:25:37,156 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,156 - INFO - Selected most informative verbtag from: VDA3SP --p---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,156 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,157 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,157 - INFO - Selected most informative verbtag from: ------ VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,157 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,157 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,157 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,157 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-udajne.xml
+2025-12-19 20:25:37,158 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-urcite.xml
+2025-12-19 20:25:37,160 - INFO - Selected most informative verbtag from: ------ VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,160 - INFO - Selected most informative verbtag from: ------|A----- VDA2SR. Using: VDA2SR (with 0 hyphens)
+2025-12-19 20:25:37,160 - INFO - Selected most informative verbtag from: A----- A----- VCA1SR VFA---. Using: VCA1SR (with 0 hyphens)
+2025-12-19 20:25:37,160 - INFO - Selected most informative verbtag from: VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,160 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,160 - INFO - Selected most informative verbtag from: VDA1SF VFA---. Using: VDA1SF (with 0 hyphens)
+2025-12-19 20:25:37,161 - INFO - Selected most informative verbtag from: VCA3SP A----- VOP-S- ------ ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,161 - INFO - Selected most informative verbtag from: VDA3SR VFA--- ------. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,161 - INFO - Selected most informative verbtag from: ------|A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,161 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,162 - INFO - Selected most informative verbtag from: ------ A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,162 - INFO - Selected most informative verbtag from: A----- VCA3SP ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,162 - INFO - Selected most informative verbtag from: A----- VCA3SP ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,162 - INFO - Selected most informative verbtag from: ------ A----- VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,162 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,162 - INFO - Selected most informative verbtag from: A----- VCA2vP. Using: VCA2vP (with 0 hyphens)
+2025-12-19 20:25:37,162 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-urcite.xml
+2025-12-19 20:25:37,162 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-vazne.xml
+2025-12-19 20:25:37,164 - INFO - Selected most informative verbtag from: ------ VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,164 - INFO - Multiple verbtags with same informativeness found: A----- VDA1PR VDA3PR A----- VDA1PR VDA1PR A-----. Using the first one with 0 hyphens: VDA1PR
+2025-12-19 20:25:37,164 - INFO - Selected most informative verbtag from: A----- VDA1SR VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,165 - INFO - Selected most informative verbtag from: VDA1SP ------ VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,165 - INFO - Selected most informative verbtag from: VDA3SR ------ VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,165 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,165 - INFO - Selected most informative verbtag from: A----- VDA1SF. Using: VDA1SF (with 0 hyphens)
+2025-12-19 20:25:37,165 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,165 - INFO - Selected most informative verbtag from: VDA3SR A----- VFP---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,165 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-vazne.xml
+2025-12-19 20:25:37,165 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-vskutku.xml
+2025-12-19 20:25:37,167 - INFO - Selected most informative verbtag from: A----- VDA2PR. Using: VDA2PR (with 0 hyphens)
+2025-12-19 20:25:37,167 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,167 - INFO - Selected most informative verbtag from: ------ VDA1SF VFA---. Using: VDA1SF (with 0 hyphens)
+2025-12-19 20:25:37,168 - INFO - Selected most informative verbtag from: VFA--- ------ VDA2PP. Using: VDA2PP (with 0 hyphens)
+2025-12-19 20:25:37,168 - INFO - Selected most informative verbtag from: VDA1PR A----- ------. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,168 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,169 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-vskutku.xml
+2025-12-19 20:25:37,169 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-zajiste.xml
+2025-12-19 20:25:37,170 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,170 - INFO - Selected most informative verbtag from: VCA3SP A-----. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,170 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,170 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,171 - INFO - Selected most informative verbtag from: VCA3SP A-----. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,171 - INFO - Selected most informative verbtag from: VDA1SR A----- VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,171 - INFO - Selected most informative verbtag from: A----- VDA1PF. Using: VDA1PF (with 0 hyphens)
+2025-12-19 20:25:37,172 - INFO - Selected most informative verbtag from: VDA1SR A----- VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,172 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-zajiste.xml
+2025-12-19 20:25:37,172 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-zjevne.xml
+2025-12-19 20:25:37,173 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,173 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,174 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,174 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,174 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,175 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-zjevne.xml
+2025-12-19 20:25:37,175 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-zrejme.xml
+2025-12-19 20:25:37,177 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,177 - INFO - Selected most informative verbtag from: VDA3SP VFA--- ------. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,177 - INFO - Selected most informative verbtag from: A----- VDP3PR. Using: VDP3PR (with 0 hyphens)
+2025-12-19 20:25:37,177 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,178 - INFO - Selected most informative verbtag from: VDA1SR A-----. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,178 - INFO - Multiple verbtags with same informativeness found: VDA3PR VDA3PR. Using the first one with 0 hyphens: VDA3PR
+2025-12-19 20:25:37,178 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,179 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,179 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,179 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,179 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-zrejme.xml
+2025-12-19 20:25:37,179 - INFO - Processing marker file: teitok/markers/finished/markers_gold-cs-zretelne.xml
+2025-12-19 20:25:37,180 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,180 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,180 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,180 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,181 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,181 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,181 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,181 - INFO - Selected most informative verbtag from: A----- VDA2PR. Using: VDA2PR (with 0 hyphens)
+2025-12-19 20:25:37,181 - INFO - Selected most informative verbtag from: VDA1SR A-----. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,181 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,181 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,182 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,182 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,182 - INFO - Selected most informative verbtag from: VDA1SR A-----. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,182 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-cs-zretelne.xml
+2025-12-19 20:25:37,182 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-asi.xml
+2025-12-19 20:25:37,183 - INFO - Selected most informative verbtag from: A----- VDP3PR. Using: VDP3PR (with 0 hyphens)
+2025-12-19 20:25:37,183 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,183 - INFO - Selected most informative verbtag from: ------|A----- VDA2SR. Using: VDA2SR (with 0 hyphens)
+2025-12-19 20:25:37,184 - INFO - Selected most informative verbtag from: A----- VDA2PR. Using: VDA2PR (with 0 hyphens)
+2025-12-19 20:25:37,184 - INFO - Selected most informative verbtag from: A----- VCA2SP. Using: VCA2SP (with 0 hyphens)
+2025-12-19 20:25:37,184 - INFO - Selected most informative verbtag from: VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,185 - INFO - Selected most informative verbtag from: A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,185 - INFO - Selected most informative verbtag from: A----- VCA1PP. Using: VCA1PP (with 0 hyphens)
+2025-12-19 20:25:37,185 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-asi.xml
+2025-12-19 20:25:37,185 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-bezpecne.xml
+2025-12-19 20:25:37,187 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,187 - INFO - Selected most informative verbtag from: ------|A----- ------ VCA1PP. Using: VCA1PP (with 0 hyphens)
+2025-12-19 20:25:37,187 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,188 - INFO - Selected most informative verbtag from: VIA2P- ------ VFA---. Using: VIA2P- (with 1 hyphens)
+2025-12-19 20:25:37,188 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,188 - INFO - Selected most informative verbtag from: ------|A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,188 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,188 - INFO - Selected most informative verbtag from: ------ A----- VDA1PF VFA---. Using: VDA1PF (with 0 hyphens)
+2025-12-19 20:25:37,188 - INFO - Selected most informative verbtag from: ------|A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,188 - INFO - Selected most informative verbtag from: ------|A----- VCA2SP. Using: VCA2SP (with 0 hyphens)
+2025-12-19 20:25:37,188 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,188 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,188 - INFO - Selected most informative verbtag from: A----- VDP3PR. Using: VDP3PR (with 0 hyphens)
+2025-12-19 20:25:37,189 - INFO - Selected most informative verbtag from: VDA1SR VFA--- ------. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,189 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,189 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,189 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,189 - INFO - Selected most informative verbtag from: ------|A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,189 - INFO - Selected most informative verbtag from: VCA3PP VFA---. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,189 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-bezpecne.xml
+2025-12-19 20:25:37,189 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-bezpochyby.xml
+2025-12-19 20:25:37,192 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,192 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,192 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,192 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,193 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,193 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,193 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,193 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,193 - INFO - Selected most informative verbtag from: A----- ------ VFA--- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,193 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,194 - INFO - Selected most informative verbtag from: VCA3SP A-----. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,194 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,194 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-bezpochyby.xml
+2025-12-19 20:25:37,194 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-doopravdy.xml
+2025-12-19 20:25:37,195 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,195 - INFO - Selected most informative verbtag from: A----- VDA3SR. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,196 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,196 - INFO - Selected most informative verbtag from: ------|A----- VCA2SP. Using: VCA2SP (with 0 hyphens)
+2025-12-19 20:25:37,196 - INFO - Selected most informative verbtag from: VDA1PR A-----. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,197 - INFO - Selected most informative verbtag from: A----- A----- VDP1SR. Using: VDP1SR (with 0 hyphens)
+2025-12-19 20:25:37,197 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-doopravdy.xml
+2025-12-19 20:25:37,197 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-evidentne.xml
+2025-12-19 20:25:37,199 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,199 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,200 - INFO - Selected most informative verbtag from: VFA--- VDA3SR. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,200 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,200 - INFO - Selected most informative verbtag from: A----- ------ VDA2vR. Using: VDA2vR (with 0 hyphens)
+2025-12-19 20:25:37,200 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-evidentne.xml
+2025-12-19 20:25:37,201 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-fakt.xml
+2025-12-19 20:25:37,203 - INFO - Selected most informative verbtag from: VDA1SR A----- --p---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,203 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,203 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,203 - INFO - Selected most informative verbtag from: VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,204 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,204 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,204 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-fakt.xml
+2025-12-19 20:25:37,204 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-jasne.xml
+2025-12-19 20:25:37,206 - INFO - Selected most informative verbtag from: VDA3SR ------ VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,206 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,207 - INFO - Selected most informative verbtag from: VDA3SR ------ VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,207 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,207 - INFO - Selected most informative verbtag from: A----- ------ VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,208 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-jasne.xml
+2025-12-19 20:25:37,208 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-jednoznacne.xml
+2025-12-19 20:25:37,209 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,209 - INFO - Selected most informative verbtag from: A----- VDP3PR. Using: VDP3PR (with 0 hyphens)
+2025-12-19 20:25:37,209 - INFO - Selected most informative verbtag from: VDA1PP VFA---. Using: VDA1PP (with 0 hyphens)
+2025-12-19 20:25:37,209 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,210 - INFO - Selected most informative verbtag from: VDA3PR --p---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,210 - INFO - Selected most informative verbtag from: VDA3SP --p---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,211 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-jednoznacne.xml
+2025-12-19 20:25:37,211 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-jiste.xml
+2025-12-19 20:25:37,213 - INFO - Selected most informative verbtag from: A----- VCA3SP ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,213 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,213 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,213 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,213 - INFO - Selected most informative verbtag from: A----- VDA2vR. Using: VDA2vR (with 0 hyphens)
+2025-12-19 20:25:37,213 - INFO - Selected most informative verbtag from: A----- VCA2vP. Using: VCA2vP (with 0 hyphens)
+2025-12-19 20:25:37,213 - INFO - Selected most informative verbtag from: VCA3SP A----- ------ VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,213 - INFO - Multiple verbtags with same informativeness found: A----- VCA3SP VDA3SR. Using the first one with 0 hyphens: VCA3SP
+2025-12-19 20:25:37,214 - INFO - Selected most informative verbtag from: A----- VDA3PF ------. Using: VDA3PF (with 0 hyphens)
+2025-12-19 20:25:37,214 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,214 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,214 - INFO - Selected most informative verbtag from: VDA2vR A-----. Using: VDA2vR (with 0 hyphens)
+2025-12-19 20:25:37,214 - INFO - Selected most informative verbtag from: VDA3SF A-----. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,215 - INFO - Selected most informative verbtag from: A----- ------ VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,215 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,215 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-jiste.xml
+2025-12-19 20:25:37,215 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-kazdopadne.xml
+2025-12-19 20:25:37,217 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,217 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,217 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,217 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,217 - INFO - Selected most informative verbtag from: VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,218 - INFO - Selected most informative verbtag from: A----- VDA2vR. Using: VDA2vR (with 0 hyphens)
+2025-12-19 20:25:37,218 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,218 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,218 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,219 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-kazdopadne.xml
+2025-12-19 20:25:37,219 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-mozna.xml
+2025-12-19 20:25:37,220 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,220 - INFO - Selected most informative verbtag from: A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,220 - INFO - Selected most informative verbtag from: A----- VDA2SF. Using: VDA2SF (with 0 hyphens)
+2025-12-19 20:25:37,221 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,221 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,221 - INFO - Selected most informative verbtag from: A----- ------|A----- VCA2SP VFA---. Using: VCA2SP (with 0 hyphens)
+2025-12-19 20:25:37,221 - INFO - Selected most informative verbtag from: A----- VDP2vP. Using: VDP2vP (with 0 hyphens)
+2025-12-19 20:25:37,221 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,221 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,222 - INFO - Selected most informative verbtag from: A----- VCA1SP VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,222 - INFO - Selected most informative verbtag from: A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,222 - INFO - Selected most informative verbtag from: A----- ------ VCA1SP VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,222 - INFO - Selected most informative verbtag from: ------|A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,222 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-mozna.xml
+2025-12-19 20:25:37,222 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-nejspis.xml
+2025-12-19 20:25:37,224 - INFO - Selected most informative verbtag from: A----- VDA2PR. Using: VDA2PR (with 0 hyphens)
+2025-12-19 20:25:37,225 - INFO - Multiple verbtags with same informativeness found: VDA2PP ------ ------ VDA2vR. Using the first one with 0 hyphens: VDA2PP
+2025-12-19 20:25:37,225 - INFO - Multiple verbtags with same informativeness found: A----- ------ VCA3SP ------ VCA3SP. Using the first one with 0 hyphens: VCA3SP
+2025-12-19 20:25:37,225 - INFO - Selected most informative verbtag from: A----- VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,225 - INFO - Selected most informative verbtag from: A----- VDP3PP. Using: VDP3PP (with 0 hyphens)
+2025-12-19 20:25:37,225 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,226 - INFO - Selected most informative verbtag from: A----- VDA2vR. Using: VDA2vR (with 0 hyphens)
+2025-12-19 20:25:37,226 - INFO - Selected most informative verbtag from: ------ VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,226 - INFO - Selected most informative verbtag from: A----- VDA3PF. Using: VDA3PF (with 0 hyphens)
+2025-12-19 20:25:37,226 - INFO - Selected most informative verbtag from: A----- ------ VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,226 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,226 - INFO - Selected most informative verbtag from: A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,226 - INFO - Selected most informative verbtag from: VDA3SP --p---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,227 - INFO - Selected most informative verbtag from: A----- VCA1SP VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,227 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,227 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-nejspis.xml
+2025-12-19 20:25:37,227 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-nepochybne.xml
+2025-12-19 20:25:37,228 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,228 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,229 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,229 - INFO - Selected most informative verbtag from: VDA3SP ------ VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,230 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,230 - INFO - Selected most informative verbtag from: A----- VDA2vR. Using: VDA2vR (with 0 hyphens)
+2025-12-19 20:25:37,230 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,230 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-nepochybne.xml
+2025-12-19 20:25:37,230 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-nutne.xml
+2025-12-19 20:25:37,232 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,232 - INFO - Selected most informative verbtag from: VDA1PP VFA---. Using: VDA1PP (with 0 hyphens)
+2025-12-19 20:25:37,232 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,232 - INFO - Selected most informative verbtag from: VDA3SP VFA--- ------. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,232 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,232 - INFO - Selected most informative verbtag from: A----- VCA3SP VFA--- --p---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,232 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,232 - INFO - Selected most informative verbtag from: VDA3PP VFA--- ------. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,232 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,232 - INFO - Selected most informative verbtag from: VDA1PP VFA---. Using: VDA1PP (with 0 hyphens)
+2025-12-19 20:25:37,233 - INFO - Selected most informative verbtag from: VDA3PP ------ VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,233 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,233 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,233 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,233 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA--- ------. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,233 - INFO - Selected most informative verbtag from: VDA3SP VFA--- ------. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,233 - INFO - Selected most informative verbtag from: VDA3SR VFA--- ------. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,233 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,233 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,234 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,234 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,234 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,234 - INFO - Selected most informative verbtag from: VDA3SP VFA--- ------. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,234 - INFO - Selected most informative verbtag from: ------ VDA1PR VFA---. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,234 - INFO - Selected most informative verbtag from: VDA3SP VFA--- ------. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,234 - INFO - Selected most informative verbtag from: VDA3PP VFA--- ------. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,234 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,234 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-nutne.xml
+2025-12-19 20:25:37,234 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-ocividne.xml
+2025-12-19 20:25:37,236 - INFO - Selected most informative verbtag from: A----- VDP3PR. Using: VDP3PR (with 0 hyphens)
+2025-12-19 20:25:37,236 - INFO - Selected most informative verbtag from: VDA3PR --p---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,236 - INFO - Selected most informative verbtag from: VDA3SR VOP-S-. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,237 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,237 - INFO - Selected most informative verbtag from: VDA1PP VFA--- ------ ------ ------ ------. Using: VDA1PP (with 0 hyphens)
+2025-12-19 20:25:37,238 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR ------. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,238 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-ocividne.xml
+2025-12-19 20:25:37,238 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-opravdu.xml
+2025-12-19 20:25:37,240 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,240 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,240 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,241 - INFO - Selected most informative verbtag from: A----- VDA3SR. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,241 - INFO - Selected most informative verbtag from: VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,241 - INFO - Selected most informative verbtag from: VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,242 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-opravdu.xml
+2025-12-19 20:25:37,242 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-ovsem.xml
+2025-12-19 20:25:37,244 - INFO - Selected most informative verbtag from: A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,244 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-ovsem.xml
+2025-12-19 20:25:37,244 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-patrne.xml
+2025-12-19 20:25:37,246 - INFO - Selected most informative verbtag from: A----- VDA3PF. Using: VDA3PF (with 0 hyphens)
+2025-12-19 20:25:37,246 - INFO - Selected most informative verbtag from: VDA3SF VOP-S-. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,246 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,246 - INFO - Selected most informative verbtag from: A----- A----- ------ VCA1SR. Using: VCA1SR (with 0 hyphens)
+2025-12-19 20:25:37,247 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,247 - INFO - Selected most informative verbtag from: VDA1PF ------ A-----. Using: VDA1PF (with 0 hyphens)
+2025-12-19 20:25:37,247 - INFO - Selected most informative verbtag from: VDA3SP ------ VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,247 - INFO - Selected most informative verbtag from: A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,248 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,248 - INFO - Selected most informative verbtag from: VCA3SP A-----. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,248 - INFO - Multiple verbtags with same informativeness found: VCA3SP VCA3SP VFA---. Using the first one with 0 hyphens: VCA3SP
+2025-12-19 20:25:37,248 - INFO - Selected most informative verbtag from: A----- A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,248 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-patrne.xml
+2025-12-19 20:25:37,248 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-pochopitelne.xml
+2025-12-19 20:25:37,250 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,250 - INFO - Selected most informative verbtag from: A----- VDA1SR VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,250 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,250 - INFO - Selected most informative verbtag from: VDA3SR --p---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,251 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,251 - INFO - Selected most informative verbtag from: VCA1SP ------ VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,251 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,251 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,251 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,251 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,252 - INFO - Selected most informative verbtag from: ------ A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,252 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-pochopitelne.xml
+2025-12-19 20:25:37,252 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-podle_vseho.xml
+2025-12-19 20:25:37,253 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,253 - INFO - Selected most informative verbtag from: A----- VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,254 - INFO - Selected most informative verbtag from: VDA3PR ------ VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,254 - INFO - Selected most informative verbtag from: A----- VDA2SR. Using: VDA2SR (with 0 hyphens)
+2025-12-19 20:25:37,254 - INFO - Selected most informative verbtag from: VDA3PP --p---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,254 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,255 - INFO - Multiple verbtags with same informativeness found: ------ VDA3SR VDA3SR VDA3SR VDA3SR VDA3SR VDA3SR. Using the first one with 0 hyphens: VDA3SR
+2025-12-19 20:25:37,255 - INFO - Multiple verbtags with same informativeness found: VDA3SP VDA3PP. Using the first one with 0 hyphens: VDA3SP
+2025-12-19 20:25:37,255 - INFO - Multiple verbtags with same informativeness found: VDA3SP VCA3PP A----- ------ VFA---. Using the first one with 0 hyphens: VDA3SP
+2025-12-19 20:25:37,255 - INFO - Selected most informative verbtag from: VDA3PR --p---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,255 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-podle_vseho.xml
+2025-12-19 20:25:37,256 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-pravdepodobne.xml
+2025-12-19 20:25:37,257 - INFO - Selected most informative verbtag from: VDA1SF VFA---. Using: VDA1SF (with 0 hyphens)
+2025-12-19 20:25:37,258 - INFO - Selected most informative verbtag from: A----- VDA3PR. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,258 - INFO - Selected most informative verbtag from: VDA3PP --p---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,258 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,259 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-pravdepodobne.xml
+2025-12-19 20:25:37,259 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-prirozene.xml
+2025-12-19 20:25:37,261 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,261 - INFO - Selected most informative verbtag from: VCA3PP A----- ------. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,261 - INFO - Selected most informative verbtag from: VDA3SP --p---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,262 - INFO - Selected most informative verbtag from: ------ A----- VDA2PF. Using: VDA2PF (with 0 hyphens)
+2025-12-19 20:25:37,262 - INFO - Selected most informative verbtag from: ------ A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,262 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,262 - INFO - Selected most informative verbtag from: VDA2SP VFA---. Using: VDA2SP (with 0 hyphens)
+2025-12-19 20:25:37,262 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,263 - INFO - Selected most informative verbtag from: VDA3SR --p---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,263 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,263 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,263 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-prirozene.xml
+2025-12-19 20:25:37,263 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-pry.xml
+2025-12-19 20:25:37,266 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,266 - INFO - Selected most informative verbtag from: ------|A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,266 - INFO - Selected most informative verbtag from: A----- ------ VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,266 - INFO - Selected most informative verbtag from: A----- VDA3SF ------ ------. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,267 - INFO - Selected most informative verbtag from: VDA3SP --p---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,267 - INFO - Multiple verbtags with same informativeness found: A----- VDP3SR ------ VDP3SR. Using the first one with 0 hyphens: VDP3SR
+2025-12-19 20:25:37,267 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-pry.xml
+2025-12-19 20:25:37,267 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-rozhodne.xml
+2025-12-19 20:25:37,268 - INFO - Selected most informative verbtag from: ------ VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,269 - INFO - Selected most informative verbtag from: VDA1PP VFA---. Using: VDA1PP (with 0 hyphens)
+2025-12-19 20:25:37,269 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,269 - INFO - Selected most informative verbtag from: A----- VDA3PF VFA---. Using: VDA3PF (with 0 hyphens)
+2025-12-19 20:25:37,269 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,270 - INFO - Selected most informative verbtag from: ------ VFA--- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,270 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-rozhodne.xml
+2025-12-19 20:25:37,270 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-samozrejme.xml
+2025-12-19 20:25:37,272 - INFO - Selected most informative verbtag from: VDA3SR --p---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,272 - INFO - Selected most informative verbtag from: A----- VDP3SF. Using: VDP3SF (with 0 hyphens)
+2025-12-19 20:25:37,273 - INFO - Selected most informative verbtag from: VDA3SR VFA--- ------. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,273 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,273 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,273 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-samozrejme.xml
+2025-12-19 20:25:37,273 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-skutecne.xml
+2025-12-19 20:25:37,274 - INFO - Selected most informative verbtag from: ------ A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,275 - INFO - Selected most informative verbtag from: VDA1SR A-----. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,275 - INFO - Selected most informative verbtag from: A----- VDA2PR. Using: VDA2PR (with 0 hyphens)
+2025-12-19 20:25:37,275 - INFO - Selected most informative verbtag from: A----- VDP3PR. Using: VDP3PR (with 0 hyphens)
+2025-12-19 20:25:37,275 - INFO - Selected most informative verbtag from: A----- ------ VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,276 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,276 - INFO - Selected most informative verbtag from: VDA3SP VFA--- ------. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,276 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,277 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,277 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-skutecne.xml
+2025-12-19 20:25:37,277 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-snad.xml
+2025-12-19 20:25:37,279 - INFO - Selected most informative verbtag from: A----- VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,279 - INFO - Selected most informative verbtag from: ------|A----- A----- VCP1SP. Using: VCP1SP (with 0 hyphens)
+2025-12-19 20:25:37,279 - INFO - Selected most informative verbtag from: ------|A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,279 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,279 - INFO - Selected most informative verbtag from: VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,280 - INFO - Selected most informative verbtag from: ------ VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,280 - INFO - Selected most informative verbtag from: A----- VCA1PP VFA--- VFA---. Using: VCA1PP (with 0 hyphens)
+2025-12-19 20:25:37,280 - INFO - Selected most informative verbtag from: A----- VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,280 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,280 - INFO - Selected most informative verbtag from: VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,281 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,281 - INFO - Selected most informative verbtag from: VCA3SP A----- ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,281 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,281 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-snad.xml
+2025-12-19 20:25:37,281 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-sotva.xml
+2025-12-19 20:25:37,282 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,282 - INFO - Selected most informative verbtag from: A----- VDP3SP. Using: VDP3SP (with 0 hyphens)
+2025-12-19 20:25:37,283 - INFO - Selected most informative verbtag from: A----- VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,283 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,283 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,283 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,283 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,283 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,284 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-sotva.xml
+2025-12-19 20:25:37,284 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-spis.xml
+2025-12-19 20:25:37,285 - INFO - Selected most informative verbtag from: VDA3SP --p---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,285 - INFO - Multiple verbtags with same informativeness found: VDA3SR VDA3SR. Using the first one with 0 hyphens: VDA3SR
+2025-12-19 20:25:37,286 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-spis.xml
+2025-12-19 20:25:37,286 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-stezi.xml
+2025-12-19 20:25:37,287 - INFO - Selected most informative verbtag from: VDA1SR VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,287 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,288 - INFO - Selected most informative verbtag from: ------ VDA3PF ------ VFA---. Using: VDA3PF (with 0 hyphens)
+2025-12-19 20:25:37,288 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,288 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,288 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,288 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,288 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,288 - INFO - Selected most informative verbtag from: VDA3SR VFA--- ------. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,288 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,289 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,289 - INFO - Selected most informative verbtag from: A----- VCA3SP VFA--- ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,289 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,289 - INFO - Selected most informative verbtag from: ------ VDA3PF VFA---. Using: VDA3PF (with 0 hyphens)
+2025-12-19 20:25:37,289 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,289 - INFO - Selected most informative verbtag from: A----- VDA1SR VFA---. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,289 - INFO - Selected most informative verbtag from: VDA3SR --p---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,289 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,290 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,290 - INFO - Selected most informative verbtag from: ------ VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,290 - INFO - Selected most informative verbtag from: VDA3SR --p---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,290 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,290 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-stezi.xml
+2025-12-19 20:25:37,290 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-tezko.xml
+2025-12-19 20:25:37,291 - INFO - Selected most informative verbtag from: VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,292 - INFO - Selected most informative verbtag from: VDA1PP VFA---. Using: VDA1PP (with 0 hyphens)
+2025-12-19 20:25:37,292 - INFO - Selected most informative verbtag from: A----- VCA3PP. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,292 - INFO - Selected most informative verbtag from: A----- VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,292 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,292 - INFO - Selected most informative verbtag from: A----- VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,292 - INFO - Selected most informative verbtag from: ------ VDA3PF VFA---. Using: VDA3PF (with 0 hyphens)
+2025-12-19 20:25:37,292 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,292 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,292 - INFO - Selected most informative verbtag from: A----- ------ VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,293 - INFO - Selected most informative verbtag from: A----- ------ VCA3PP VFA---. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,293 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,293 - INFO - Selected most informative verbtag from: A----- VCA3SP ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,293 - INFO - Selected most informative verbtag from: A----- VDA2PR VFA---. Using: VDA2PR (with 0 hyphens)
+2025-12-19 20:25:37,293 - INFO - Selected most informative verbtag from: A----- ------ VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,293 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,293 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-tezko.xml
+2025-12-19 20:25:37,293 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-treba.xml
+2025-12-19 20:25:37,295 - INFO - Selected most informative verbtag from: A----- ------ VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,295 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,295 - INFO - Selected most informative verbtag from: A----- VCA1SP VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,295 - INFO - Selected most informative verbtag from: ------|A----- VCA1SP. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,295 - INFO - Selected most informative verbtag from: A----- VCA2SP VFA---. Using: VCA2SP (with 0 hyphens)
+2025-12-19 20:25:37,296 - INFO - Selected most informative verbtag from: ------|A----- VCA3PP VFA---. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,296 - INFO - Selected most informative verbtag from: A----- VCA3SP VFA--- ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,296 - INFO - Selected most informative verbtag from: A----- VDA1PF. Using: VDA1PF (with 0 hyphens)
+2025-12-19 20:25:37,296 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-treba.xml
+2025-12-19 20:25:37,296 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-udajne.xml
+2025-12-19 20:25:37,298 - INFO - Selected most informative verbtag from: VFA--- VDA3PP. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,298 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,298 - INFO - Selected most informative verbtag from: A----- VDA2vR. Using: VDA2vR (with 0 hyphens)
+2025-12-19 20:25:37,298 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,298 - INFO - Selected most informative verbtag from: A----- VCA3PP VFA--- ------ ------. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,298 - INFO - Selected most informative verbtag from: VDA3PP VFA---. Using: VDA3PP (with 0 hyphens)
+2025-12-19 20:25:37,298 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,299 - INFO - Selected most informative verbtag from: A----- VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,299 - INFO - Selected most informative verbtag from: ------ VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,299 - INFO - Selected most informative verbtag from: VDA3SR VFA--- ------. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,299 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,300 - INFO - Selected most informative verbtag from: A----- VDP3PR. Using: VDP3PR (with 0 hyphens)
+2025-12-19 20:25:37,300 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,300 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,300 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,300 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,300 - INFO - Selected most informative verbtag from: A----- VDA1SR VFA--- ------. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,301 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-udajne.xml
+2025-12-19 20:25:37,301 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-urcite.xml
+2025-12-19 20:25:37,303 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,303 - INFO - Selected most informative verbtag from: ------ VDA1PP VFA---. Using: VDA1PP (with 0 hyphens)
+2025-12-19 20:25:37,303 - INFO - Selected most informative verbtag from: A----- ------ VDA2PR. Using: VDA2PR (with 0 hyphens)
+2025-12-19 20:25:37,303 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,303 - INFO - Selected most informative verbtag from: A----- ------ VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,303 - INFO - Selected most informative verbtag from: A----- A----- VCA1PR VFA---. Using: VCA1PR (with 0 hyphens)
+2025-12-19 20:25:37,304 - INFO - Selected most informative verbtag from: VCA3SP A----- ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,304 - INFO - Selected most informative verbtag from: ------ VDA2SP VFA---. Using: VDA2SP (with 0 hyphens)
+2025-12-19 20:25:37,304 - INFO - Selected most informative verbtag from: VDA3PR --p---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,304 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,304 - INFO - Selected most informative verbtag from: ------|A----- VDA2SR. Using: VDA2SR (with 0 hyphens)
+2025-12-19 20:25:37,304 - INFO - Selected most informative verbtag from: VCA3SP A----- ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,304 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,305 - INFO - Selected most informative verbtag from: VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,305 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-urcite.xml
+2025-12-19 20:25:37,305 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-vazne.xml
+2025-12-19 20:25:37,306 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,306 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,306 - INFO - Selected most informative verbtag from: A----- VCA1SP VFA--- ------. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,306 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,307 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,307 - INFO - Selected most informative verbtag from: VDA2PP VFA---. Using: VDA2PP (with 0 hyphens)
+2025-12-19 20:25:37,307 - INFO - Selected most informative verbtag from: A----- ------ VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,307 - INFO - Selected most informative verbtag from: ------|A----- ------ VCA1PP. Using: VCA1PP (with 0 hyphens)
+2025-12-19 20:25:37,308 - INFO - Selected most informative verbtag from: VDA1PP ------ VFA---. Using: VDA1PP (with 0 hyphens)
+2025-12-19 20:25:37,308 - INFO - Selected most informative verbtag from: ------ VCA3SP VFA---. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,308 - INFO - Selected most informative verbtag from: A----- VDA1SR. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,308 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-vazne.xml
+2025-12-19 20:25:37,308 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-vskutku.xml
+2025-12-19 20:25:37,309 - INFO - Selected most informative verbtag from: A----- VDA3SF. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,309 - INFO - Selected most informative verbtag from: VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,310 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,310 - INFO - Selected most informative verbtag from: A----- VCA3SP. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,310 - INFO - Selected most informative verbtag from: A----- VDA1SR ------. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,311 - INFO - Selected most informative verbtag from: A----- VCA3SP ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,311 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-vskutku.xml
+2025-12-19 20:25:37,311 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-zajiste.xml
+2025-12-19 20:25:37,312 - INFO - Selected most informative verbtag from: VDA1SP VFA---. Using: VDA1SP (with 0 hyphens)
+2025-12-19 20:25:37,312 - INFO - Selected most informative verbtag from: A----- VDP3SR. Using: VDP3SR (with 0 hyphens)
+2025-12-19 20:25:37,313 - INFO - Selected most informative verbtag from: A----- ------ VCA3PP VFA---. Using: VCA3PP (with 0 hyphens)
+2025-12-19 20:25:37,313 - INFO - Selected most informative verbtag from: A----- VDA2vR. Using: VDA2vR (with 0 hyphens)
+2025-12-19 20:25:37,313 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-zajiste.xml
+2025-12-19 20:25:37,313 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-zjevne.xml
+2025-12-19 20:25:37,315 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,315 - INFO - Selected most informative verbtag from: A----- VDA1PR. Using: VDA1PR (with 0 hyphens)
+2025-12-19 20:25:37,316 - INFO - Selected most informative verbtag from: VDA3SR --p---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,316 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,316 - INFO - Selected most informative verbtag from: ------ VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,317 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-zjevne.xml
+2025-12-19 20:25:37,317 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-zrejme.xml
+2025-12-19 20:25:37,318 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,318 - INFO - Selected most informative verbtag from: VDA2vR A-----. Using: VDA2vR (with 0 hyphens)
+2025-12-19 20:25:37,319 - INFO - Multiple verbtags with same informativeness found: VDA3SR VDA3SR. Using the first one with 0 hyphens: VDA3SR
+2025-12-19 20:25:37,319 - INFO - Selected most informative verbtag from: VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,319 - INFO - Selected most informative verbtag from: A----- VCA3SP ------. Using: VCA3SP (with 0 hyphens)
+2025-12-19 20:25:37,319 - INFO - Selected most informative verbtag from: A----- ------ VCA1SP VFA---. Using: VCA1SP (with 0 hyphens)
+2025-12-19 20:25:37,320 - INFO - Selected most informative verbtag from: ------ VDA3SF VFA---. Using: VDA3SF (with 0 hyphens)
+2025-12-19 20:25:37,320 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-zrejme.xml
+2025-12-19 20:25:37,320 - INFO - Processing marker file: teitok/markers/finished/markers_gold-en-zretelne.xml
+2025-12-19 20:25:37,321 - INFO - Selected most informative verbtag from: VDA1SR A-----. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,321 - INFO - Selected most informative verbtag from: VDA1SR A-----. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,321 - INFO - Selected most informative verbtag from: VDA2SP VFA---. Using: VDA2SP (with 0 hyphens)
+2025-12-19 20:25:37,322 - INFO - Selected most informative verbtag from: VDA1SF VFA---. Using: VDA1SF (with 0 hyphens)
+2025-12-19 20:25:37,322 - INFO - Selected most informative verbtag from: A----- VDA1SR ------. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,322 - INFO - Selected most informative verbtag from: VDA3SP ------ VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,322 - INFO - Selected most informative verbtag from: VDA1SR A-----. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,322 - INFO - Selected most informative verbtag from: VDA1SR A-----. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,322 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,322 - INFO - Selected most informative verbtag from: VDA3PR VFA---. Using: VDA3PR (with 0 hyphens)
+2025-12-19 20:25:37,322 - INFO - Selected most informative verbtag from: VDA3SR VFA---. Using: VDA3SR (with 0 hyphens)
+2025-12-19 20:25:37,323 - INFO - Selected most informative verbtag from: A----- VDA1SR ------ ------. Using: VDA1SR (with 0 hyphens)
+2025-12-19 20:25:37,323 - INFO - Selected most informative verbtag from: VDA3SP VFA---. Using: VDA3SP (with 0 hyphens)
+2025-12-19 20:25:37,323 - INFO - Extracted 50 items from teitok/markers/finished/markers_gold-en-zretelne.xml
+2025-12-19 20:25:37,323 - INFO - Column order: ['URL', 'Výraz', 'Jazyk', 'CQL dotaz', 'ID dokumentu', 'Výraz v češtině (ID)', 'Výraz v češtině (formy)', 'Výraz v angličtině (ID)', 'Výraz v angličtině (formy)', 'Zarovnání skontrolováno', 'Příklad do slovníku', 'Užití', 'Míra jistoty', 'Poznámka (míra jistoty)', 'Typ komunikační funkce', 'Konkrétní komunikační funkce', 'Poznámka (komunikační funkce)', 'Dosah', 'Predikát', 'Predikát (lemma)', 'Predikát (tag)', 'Predikát (verbtag)', 'Predikát (verbtag) - Typ slovesa', 'Predikát (verbtag) - Typ slovesného tvaru', 'Predikát (verbtag) - Slovesný rod', 'Predikát (verbtag) - Osoba', 'Predikát (verbtag) - Číslo', 'Predikát (verbtag) - Čas', 'Člen', 'Substituce', 'Pozice v AČ', 'Místo ve větě', 'Přítomnost negace', 'Kontrast/srovnání', 'Perspektiva modality', 'Modifikace', 'Modifikace (forma)', 'Evidence', 'Typ evidence', 'Česká věta', 'Český kontext', 'Komentář']
+2025-12-19 20:25:37,323 - INFO - Writing 3968 total rows to XLSX file
+2025-12-19 20:25:39,962 - INFO - XLSX export completed successfully: teitok/export/all_finished.xlsx
+2025-12-19 20:25:39,967 - INFO - Export completed successfully
