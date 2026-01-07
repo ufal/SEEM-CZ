@@ -1,0 +1,832 @@
+2026-01-07 17:12:16,272 - INFO - Found 40 file(s) matching pattern: teitok/markers/finished/*-cs-*.xml
+2026-01-07 17:12:16,274 - INFO - Loading schema definition: teitok/config/markers_def.xml
+2026-01-07 17:12:16,292 - INFO - Processing file 1/40: teitok/markers/finished/markers_gold-cs-asi.xml
+2026-01-07 17:12:16,292 - INFO -   Input: teitok/markers/finished/markers_gold-cs-asi.xml
+2026-01-07 17:12:18,144 - INFO - Item ex-20818: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:12:18,144 - INFO - Item ex-20818: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:12:18,145 - INFO - Item ex-20818: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:12:38,993 - INFO - Item ex-22115: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:12:38,993 - INFO - Item ex-22115: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:12:38,993 - INFO - Item ex-22115: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:12:40,282 - INFO - Item ex-22115: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:05,298 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:05,306 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-asi.xml
+2026-01-07 17:13:05,306 - INFO - Processing file 2/40: teitok/markers/finished/markers_gold-cs-bezpecne.xml
+2026-01-07 17:13:05,306 - INFO -   Input: teitok/markers/finished/markers_gold-cs-bezpecne.xml
+2026-01-07 17:13:16,640 - WARNING - Item ex-26050: Token X not found for lookup attribute 'ent'
+2026-01-07 17:13:20,642 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:20,642 - INFO -   ○ No changes needed
+2026-01-07 17:13:20,642 - INFO - Processing file 3/40: teitok/markers/finished/markers_gold-cs-bezpochyby.xml
+2026-01-07 17:13:20,642 - INFO -   Input: teitok/markers/finished/markers_gold-cs-bezpochyby.xml
+2026-01-07 17:13:27,944 - INFO - Item ex-26500: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:27,944 - INFO - Item ex-26500: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:27,944 - INFO - Item ex-26500: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:28,478 - INFO - Item ex-26128: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:28,479 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:28,486 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-bezpochyby.xml
+2026-01-07 17:13:28,486 - INFO - Processing file 4/40: teitok/markers/finished/markers_gold-cs-doopravdy.xml
+2026-01-07 17:13:28,486 - INFO -   Input: teitok/markers/finished/markers_gold-cs-doopravdy.xml
+2026-01-07 17:13:37,589 - INFO - Item ex-26231: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:37,589 - INFO - Item ex-26724: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:41,466 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:41,474 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-doopravdy.xml
+2026-01-07 17:13:41,475 - INFO - Processing file 5/40: teitok/markers/finished/markers_gold-cs-evidentne.xml
+2026-01-07 17:13:41,475 - INFO -   Input: teitok/markers/finished/markers_gold-cs-evidentne.xml
+2026-01-07 17:13:41,478 - INFO - Item ex-25664: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:41,479 - INFO - Item ex-25443: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:41,479 - INFO - Item ex-25443: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:41,479 - INFO - Item ex-25443: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:41,479 - INFO - Item ex-25443: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:41,482 - INFO -   Processed 29 annotation item(s)
+2026-01-07 17:13:41,490 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-evidentne.xml
+2026-01-07 17:13:41,490 - INFO - Processing file 6/40: teitok/markers/finished/markers_gold-cs-fakt.xml
+2026-01-07 17:13:41,490 - INFO -   Input: teitok/markers/finished/markers_gold-cs-fakt.xml
+2026-01-07 17:13:41,912 - INFO - Item ex-1843: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:43,954 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:43,961 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-fakt.xml
+2026-01-07 17:13:43,962 - INFO - Processing file 7/40: teitok/markers/finished/markers_gold-cs-jasne.xml
+2026-01-07 17:13:43,962 - INFO -   Input: teitok/markers/finished/markers_gold-cs-jasne.xml
+2026-01-07 17:13:44,386 - INFO - Item ex-30938: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:44,386 - INFO - Item ex-30938: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:44,386 - INFO - Item ex-30938: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:44,386 - INFO - Item ex-30938: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:44,386 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:44,392 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-jasne.xml
+2026-01-07 17:13:44,393 - INFO - Processing file 8/40: teitok/markers/finished/markers_gold-cs-jednoznacne.xml
+2026-01-07 17:13:44,393 - INFO -   Input: teitok/markers/finished/markers_gold-cs-jednoznacne.xml
+2026-01-07 17:13:44,398 - INFO - Item ex-25712: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:44,398 - INFO - Item ex-25712: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:44,398 - INFO - Item ex-25712: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:44,398 - INFO - Item ex-25712: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:44,589 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:44,596 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-jednoznacne.xml
+2026-01-07 17:13:44,596 - INFO - Processing file 9/40: teitok/markers/finished/markers_gold-cs-jiste.xml
+2026-01-07 17:13:44,596 - INFO -   Input: teitok/markers/finished/markers_gold-cs-jiste.xml
+2026-01-07 17:13:45,300 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:45,300 - INFO -   ○ No changes needed
+2026-01-07 17:13:45,300 - INFO - Processing file 10/40: teitok/markers/finished/markers_gold-cs-kazdopadne.xml
+2026-01-07 17:13:45,300 - INFO -   Input: teitok/markers/finished/markers_gold-cs-kazdopadne.xml
+2026-01-07 17:13:45,309 - INFO - Item ex-26208: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:45,699 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:45,706 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-kazdopadne.xml
+2026-01-07 17:13:45,706 - INFO - Processing file 11/40: teitok/markers/finished/markers_gold-cs-mozna.xml
+2026-01-07 17:13:45,706 - INFO -   Input: teitok/markers/finished/markers_gold-cs-mozna.xml
+2026-01-07 17:13:45,709 - INFO - Item ex-41928: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:45,709 - INFO - Item ex-41928: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:45,709 - INFO - Item ex-41928: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:45,709 - INFO - Item ex-41928: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:45,933 - INFO - Item ex-48048: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:45,933 - INFO - Item ex-48048: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:45,933 - INFO - Item ex-48048: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:46,184 - INFO - Item ex-37505: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:46,185 - INFO - Item ex-47506: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:46,893 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:46,901 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-mozna.xml
+2026-01-07 17:13:46,901 - INFO - Processing file 12/40: teitok/markers/finished/markers_gold-cs-nejspis.xml
+2026-01-07 17:13:46,901 - INFO -   Input: teitok/markers/finished/markers_gold-cs-nejspis.xml
+2026-01-07 17:13:46,903 - INFO - Item ex-55039: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:46,903 - INFO - Item ex-55039: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:46,903 - INFO - Item ex-55039: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:46,903 - INFO - Item ex-55039: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:46,909 - INFO - Item ex-52377: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:46,909 - INFO - Item ex-49650: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:46,909 - INFO - Item ex-49650: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:46,909 - INFO - Item ex-49650: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:46,909 - INFO - Item ex-49650: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:46,910 - INFO - Item ex-52380: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:46,910 - INFO - Item ex-52380: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:46,910 - INFO - Item ex-52380: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:46,910 - INFO - Item ex-52380: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:46,911 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:46,918 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-nejspis.xml
+2026-01-07 17:13:46,919 - INFO - Processing file 13/40: teitok/markers/finished/markers_gold-cs-nepochybne.xml
+2026-01-07 17:13:46,919 - INFO -   Input: teitok/markers/finished/markers_gold-cs-nepochybne.xml
+2026-01-07 17:13:46,928 - INFO - Item ex-51027: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:46,928 - INFO - Item ex-51027: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:46,928 - INFO - Item ex-51027: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:46,929 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:46,935 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-nepochybne.xml
+2026-01-07 17:13:46,935 - INFO - Processing file 14/40: teitok/markers/finished/markers_gold-cs-nutne.xml
+2026-01-07 17:13:46,935 - INFO -   Input: teitok/markers/finished/markers_gold-cs-nutne.xml
+2026-01-07 17:13:46,937 - INFO - Item ex-94798: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:46,940 - INFO - Item ex-93935: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:46,941 - INFO - Item ex-94577: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,137 - INFO - Item ex-94769: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,138 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,146 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-nutne.xml
+2026-01-07 17:13:48,146 - INFO - Processing file 15/40: teitok/markers/finished/markers_gold-cs-ocividne.xml
+2026-01-07 17:13:48,146 - INFO -   Input: teitok/markers/finished/markers_gold-cs-ocividne.xml
+2026-01-07 17:13:48,149 - INFO - Item ex-50155: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,157 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,165 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-ocividne.xml
+2026-01-07 17:13:48,165 - INFO - Processing file 16/40: teitok/markers/finished/markers_gold-cs-opravdu.xml
+2026-01-07 17:13:48,165 - INFO -   Input: teitok/markers/finished/markers_gold-cs-opravdu.xml
+2026-01-07 17:13:48,167 - INFO - Item ex-58759: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,167 - INFO - Item ex-55118: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,173 - INFO - Item ex-57423: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,173 - INFO - Item ex-60260: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,175 - INFO - Item ex-63125: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,175 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,183 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-opravdu.xml
+2026-01-07 17:13:48,183 - INFO - Processing file 17/40: teitok/markers/finished/markers_gold-cs-ovsem.xml
+2026-01-07 17:13:48,183 - INFO -   Input: teitok/markers/finished/markers_gold-cs-ovsem.xml
+2026-01-07 17:13:48,187 - INFO - Item ex-53674: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,189 - INFO - Item ex-51093: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,189 - INFO - Item ex-51093: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,189 - INFO - Item ex-51093: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,194 - INFO - Item ex-54720: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,194 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,202 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-ovsem.xml
+2026-01-07 17:13:48,202 - INFO - Processing file 18/40: teitok/markers/finished/markers_gold-cs-patrne.xml
+2026-01-07 17:13:48,202 - INFO -   Input: teitok/markers/finished/markers_gold-cs-patrne.xml
+2026-01-07 17:13:48,204 - INFO - Item ex-51195: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,204 - INFO - Item ex-51195: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,204 - INFO - Item ex-51195: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,204 - INFO - Item ex-51195: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,205 - INFO - Item ex-50958: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,207 - INFO - Item ex-51197: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,207 - INFO - Item ex-51049: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,207 - INFO - Item ex-51049: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,208 - INFO - Item ex-51049: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,208 - INFO - Item ex-51049: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,208 - INFO - Item ex-50964: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,208 - INFO - Item ex-50964: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,208 - INFO - Item ex-50964: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,209 - INFO - Item ex-50964: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,209 - INFO - Item ex-50934: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,209 - INFO - Item ex-50934: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,209 - INFO - Item ex-50934: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,209 - INFO - Item ex-50934: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,212 - INFO - Item ex-50486: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,212 - INFO - Item ex-50486: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,212 - INFO - Item ex-50486: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,214 - INFO - Item ex-50901: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,214 - INFO - Item ex-50901: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,214 - INFO - Item ex-50901: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,214 - INFO - Item ex-50901: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,214 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,221 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-patrne.xml
+2026-01-07 17:13:48,222 - INFO - Processing file 19/40: teitok/markers/finished/markers_gold-cs-pochopitelne.xml
+2026-01-07 17:13:48,222 - INFO -   Input: teitok/markers/finished/markers_gold-cs-pochopitelne.xml
+2026-01-07 17:13:48,225 - INFO - Item ex-50231: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,225 - INFO - Item ex-50231: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,225 - INFO - Item ex-50231: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,225 - INFO - Item ex-50231: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,230 - INFO - Item ex-51142: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,230 - INFO - Item ex-51142: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,230 - INFO - Item ex-51142: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,230 - INFO - Item ex-51142: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,232 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,240 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-pochopitelne.xml
+2026-01-07 17:13:48,240 - INFO - Processing file 20/40: teitok/markers/finished/markers_gold-cs-podle_vseho.xml
+2026-01-07 17:13:48,240 - INFO -   Input: teitok/markers/finished/markers_gold-cs-podle_vseho.xml
+2026-01-07 17:13:48,243 - INFO - Item ex-96184: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,244 - INFO - Item ex-94887: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,248 - INFO - Item ex-95635: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,248 - INFO - Item ex-95635: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,248 - INFO - Item ex-95635: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,249 - INFO - Item ex-95635: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,250 - INFO -   Processed 39 annotation item(s)
+2026-01-07 17:13:48,257 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-podle_vseho.xml
+2026-01-07 17:13:48,257 - INFO - Processing file 21/40: teitok/markers/finished/markers_gold-cs-pravdepodobne.xml
+2026-01-07 17:13:48,257 - INFO -   Input: teitok/markers/finished/markers_gold-cs-pravdepodobne.xml
+2026-01-07 17:13:48,260 - INFO - Item ex-52434: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,260 - INFO - Item ex-52434: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,260 - INFO - Item ex-52434: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,260 - INFO - Item ex-52434: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,264 - INFO - Item ex-51322: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,264 - INFO - Item ex-51322: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,264 - INFO - Item ex-51322: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,264 - INFO - Item ex-51322: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,269 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,276 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-pravdepodobne.xml
+2026-01-07 17:13:48,276 - INFO - Processing file 22/40: teitok/markers/finished/markers_gold-cs-prirozene.xml
+2026-01-07 17:13:48,276 - INFO -   Input: teitok/markers/finished/markers_gold-cs-prirozene.xml
+2026-01-07 17:13:48,280 - INFO - Item ex-50226: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,280 - INFO - Item ex-50226: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,280 - INFO - Item ex-50226: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,280 - INFO - Item ex-50226: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,282 - INFO - Item ex-50889: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,282 - INFO - Item ex-50889: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,282 - INFO - Item ex-50889: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,282 - INFO - Item ex-50889: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,284 - INFO - Item ex-50801: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,288 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,296 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-prirozene.xml
+2026-01-07 17:13:48,296 - INFO - Processing file 23/40: teitok/markers/finished/markers_gold-cs-pry.xml
+2026-01-07 17:13:48,296 - INFO -   Input: teitok/markers/finished/markers_gold-cs-pry.xml
+2026-01-07 17:13:48,299 - INFO - Item ex-53878: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,300 - INFO - Item ex-50281: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,300 - INFO - Item ex-51228: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,302 - INFO - Item ex-52612: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,304 - INFO - Item ex-53403: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,307 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,314 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-pry.xml
+2026-01-07 17:13:48,314 - INFO - Processing file 24/40: teitok/markers/finished/markers_gold-cs-rozhodne.xml
+2026-01-07 17:13:48,314 - INFO -   Input: teitok/markers/finished/markers_gold-cs-rozhodne.xml
+2026-01-07 17:13:48,318 - INFO - Item ex-54000: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,318 - INFO - Item ex-54000: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,318 - INFO - Item ex-54000: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,318 - INFO - Item ex-54000: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,321 - INFO - Item ex-52859: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,321 - INFO - Item ex-52859: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,321 - INFO - Item ex-52859: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,321 - INFO - Item ex-52859: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,474 - INFO - Item ex-51988: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,476 - INFO - Item ex-50136: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,476 - INFO - Item ex-50136: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,476 - INFO - Item ex-50136: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,476 - INFO - Item ex-50136: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,477 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,484 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-rozhodne.xml
+2026-01-07 17:13:48,484 - INFO - Processing file 25/40: teitok/markers/finished/markers_gold-cs-samozrejme.xml
+2026-01-07 17:13:48,484 - INFO -   Input: teitok/markers/finished/markers_gold-cs-samozrejme.xml
+2026-01-07 17:13:48,488 - INFO - Item ex-56402: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,495 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,502 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-samozrejme.xml
+2026-01-07 17:13:48,502 - INFO - Processing file 26/40: teitok/markers/finished/markers_gold-cs-skutecne.xml
+2026-01-07 17:13:48,502 - INFO -   Input: teitok/markers/finished/markers_gold-cs-skutecne.xml
+2026-01-07 17:13:48,513 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,514 - INFO -   ○ No changes needed
+2026-01-07 17:13:48,514 - INFO - Processing file 27/40: teitok/markers/finished/markers_gold-cs-snad.xml
+2026-01-07 17:13:48,514 - INFO -   Input: teitok/markers/finished/markers_gold-cs-snad.xml
+2026-01-07 17:13:48,688 - INFO - Item ex-61327: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,688 - INFO - Item ex-61327: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,689 - INFO - Item ex-61327: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,689 - INFO - Item ex-61327: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,689 - INFO - Item ex-61337: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,689 - INFO - Item ex-61337: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,689 - INFO - Item ex-61337: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,689 - INFO - Item ex-61337: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,692 - INFO - Item ex-66247: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,692 - INFO - Item ex-66247: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,692 - INFO - Item ex-66247: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,692 - INFO - Item ex-66247: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,693 - INFO - Item ex-70809: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,693 - INFO - Item ex-70809: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,693 - INFO - Item ex-70809: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,693 - INFO - Item ex-70809: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,694 - INFO - Item ex-70662: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,694 - INFO - Item ex-70662: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,694 - INFO - Item ex-70662: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,694 - INFO - Item ex-70662: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,695 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,702 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-snad.xml
+2026-01-07 17:13:48,702 - INFO - Processing file 28/40: teitok/markers/finished/markers_gold-cs-sotva.xml
+2026-01-07 17:13:48,702 - INFO -   Input: teitok/markers/finished/markers_gold-cs-sotva.xml
+2026-01-07 17:13:48,714 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,714 - INFO -   ○ No changes needed
+2026-01-07 17:13:48,714 - INFO - Processing file 29/40: teitok/markers/finished/markers_gold-cs-spis.xml
+2026-01-07 17:13:48,714 - INFO -   Input: teitok/markers/finished/markers_gold-cs-spis.xml
+2026-01-07 17:13:48,718 - INFO - Item ex-70146: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,720 - INFO - Item ex-61754: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,722 - INFO - Item ex-70000: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,725 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,732 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-spis.xml
+2026-01-07 17:13:48,732 - INFO - Processing file 30/40: teitok/markers/finished/markers_gold-cs-stezi.xml
+2026-01-07 17:13:48,732 - INFO -   Input: teitok/markers/finished/markers_gold-cs-stezi.xml
+2026-01-07 17:13:48,746 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,746 - INFO -   ○ No changes needed
+2026-01-07 17:13:48,746 - INFO - Processing file 31/40: teitok/markers/finished/markers_gold-cs-tezko.xml
+2026-01-07 17:13:48,746 - INFO -   Input: teitok/markers/finished/markers_gold-cs-tezko.xml
+2026-01-07 17:13:48,751 - INFO - Item ex-61323: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,759 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,765 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-tezko.xml
+2026-01-07 17:13:48,765 - INFO - Processing file 32/40: teitok/markers/finished/markers_gold-cs-treba.xml
+2026-01-07 17:13:48,765 - INFO -   Input: teitok/markers/finished/markers_gold-cs-treba.xml
+2026-01-07 17:13:48,775 - INFO - Item ex-76433: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,779 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,785 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-treba.xml
+2026-01-07 17:13:48,785 - INFO - Processing file 33/40: teitok/markers/finished/markers_gold-cs-udajne.xml
+2026-01-07 17:13:48,785 - INFO -   Input: teitok/markers/finished/markers_gold-cs-udajne.xml
+2026-01-07 17:13:48,788 - INFO - Item ex-59981: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,788 - INFO - Item ex-59981: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,788 - INFO - Item ex-59981: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,788 - INFO - Item ex-59981: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,792 - INFO - Item ex-60371: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,792 - INFO - Item ex-60371: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,792 - INFO - Item ex-60371: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,792 - INFO - Item ex-60371: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,793 - INFO - Item ex-60004: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,793 - INFO - Item ex-60004: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,793 - INFO - Item ex-60004: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,793 - INFO - Item ex-60004: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,794 - INFO - Item ex-59761: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,794 - INFO - Item ex-59761: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,794 - INFO - Item ex-59761: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,794 - INFO - Item ex-59761: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,948 - INFO - Item ex-60356: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,948 - INFO - Item ex-60356: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,948 - INFO - Item ex-60356: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,948 - INFO - Item ex-60356: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,948 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,955 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-udajne.xml
+2026-01-07 17:13:48,955 - INFO - Processing file 34/40: teitok/markers/finished/markers_gold-cs-urcite.xml
+2026-01-07 17:13:48,955 - INFO -   Input: teitok/markers/finished/markers_gold-cs-urcite.xml
+2026-01-07 17:13:48,966 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,966 - INFO -   ○ No changes needed
+2026-01-07 17:13:48,966 - INFO - Processing file 35/40: teitok/markers/finished/markers_gold-cs-vazne.xml
+2026-01-07 17:13:48,966 - INFO -   Input: teitok/markers/finished/markers_gold-cs-vazne.xml
+2026-01-07 17:13:48,979 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,979 - INFO -   ○ No changes needed
+2026-01-07 17:13:48,980 - INFO - Processing file 36/40: teitok/markers/finished/markers_gold-cs-vskutku.xml
+2026-01-07 17:13:48,980 - INFO -   Input: teitok/markers/finished/markers_gold-cs-vskutku.xml
+2026-01-07 17:13:48,990 - INFO - Item ex-60183: Removed orphaned lookup attribute 'predlemma' (reference 'pred' is empty)
+2026-01-07 17:13:48,991 - INFO - Item ex-60183: Removed orphaned lookup attribute 'predtag' (reference 'pred' is empty)
+2026-01-07 17:13:48,991 - INFO - Item ex-60183: Removed orphaned lookup attribute 'predverbtag' (reference 'pred' is empty)
+2026-01-07 17:13:48,991 - INFO - Item ex-60183: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,991 - INFO - Item ex-60508: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,991 - INFO - Item ex-60224: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:48,991 - INFO - Item ex-60224: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:48,992 - INFO - Item ex-60224: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:48,992 - INFO - Item ex-60224: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:48,992 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:48,999 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-vskutku.xml
+2026-01-07 17:13:48,999 - INFO - Processing file 37/40: teitok/markers/finished/markers_gold-cs-zajiste.xml
+2026-01-07 17:13:48,999 - INFO -   Input: teitok/markers/finished/markers_gold-cs-zajiste.xml
+2026-01-07 17:13:49,004 - INFO - Item ex-80390: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,004 - INFO - Item ex-80155: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,010 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:49,017 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-zajiste.xml
+2026-01-07 17:13:49,017 - INFO - Processing file 38/40: teitok/markers/finished/markers_gold-cs-zjevne.xml
+2026-01-07 17:13:49,017 - INFO -   Input: teitok/markers/finished/markers_gold-cs-zjevne.xml
+2026-01-07 17:13:49,021 - INFO - Item ex-81631: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,022 - INFO - Item ex-82370: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:49,022 - INFO - Item ex-82370: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:49,022 - INFO - Item ex-82370: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:49,022 - INFO - Item ex-82370: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,024 - INFO - Item ex-82346: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,026 - INFO - Item ex-81628: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:13:49,026 - INFO - Item ex-81628: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:13:49,026 - INFO - Item ex-81628: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:13:49,026 - INFO - Item ex-81628: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,029 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:49,036 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-zjevne.xml
+2026-01-07 17:13:49,036 - INFO - Processing file 39/40: teitok/markers/finished/markers_gold-cs-zrejme.xml
+2026-01-07 17:13:49,036 - INFO -   Input: teitok/markers/finished/markers_gold-cs-zrejme.xml
+2026-01-07 17:13:49,040 - INFO - Item ex-83295: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,040 - INFO - Item ex-82747: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,170 - INFO - Item ex-92148: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,172 - INFO - Item ex-87769: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,174 - INFO - Item ex-90934: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,175 - INFO - Item ex-82648: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:13:49,177 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:49,184 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-cs-zrejme.xml
+2026-01-07 17:13:49,185 - INFO - Processing file 40/40: teitok/markers/finished/markers_gold-cs-zretelne.xml
+2026-01-07 17:13:49,185 - INFO -   Input: teitok/markers/finished/markers_gold-cs-zretelne.xml
+2026-01-07 17:13:49,200 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:13:49,201 - INFO -   ○ No changes needed
+2026-01-07 17:13:49,201 - INFO - Processing completed:
+2026-01-07 17:13:49,201 - INFO -   Total files: 40
+2026-01-07 17:13:49,201 - INFO -   Successfully processed: 40
+2026-01-07 17:13:49,201 - INFO -   Files with changes: 32
+2026-01-07 17:13:49,201 - INFO -   Files without changes: 8
+2026-01-07 17:13:49,201 - INFO -   BookDoc cache size: 148 book(s)
+2026-01-07 17:13:53,200 - INFO - Found 40 file(s) matching pattern: teitok/markers/finished/*-en-*.xml
+2026-01-07 17:13:53,200 - INFO - Loading schema definition: teitok/config/markers_def.xml
+2026-01-07 17:13:53,201 - INFO - Processing file 1/40: teitok/markers/finished/markers_gold-en-asi.xml
+2026-01-07 17:13:53,201 - INFO -   Input: teitok/markers/finished/markers_gold-en-asi.xml
+2026-01-07 17:14:11,946 - INFO - Item ex-12529: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:14:19,176 - INFO - Item ex-9169: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:15:00,884 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:15:00,891 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-asi.xml
+2026-01-07 17:15:00,891 - INFO - Processing file 2/40: teitok/markers/finished/markers_gold-en-bezpecne.xml
+2026-01-07 17:15:00,891 - INFO -   Input: teitok/markers/finished/markers_gold-en-bezpecne.xml
+2026-01-07 17:15:11,567 - INFO - Item ex-26173: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:16:01,811 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:16:01,818 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-bezpecne.xml
+2026-01-07 17:16:01,818 - INFO - Processing file 3/40: teitok/markers/finished/markers_gold-en-bezpochyby.xml
+2026-01-07 17:16:01,818 - INFO -   Input: teitok/markers/finished/markers_gold-en-bezpochyby.xml
+2026-01-07 17:16:04,570 - INFO - Item ex-25426: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:16:09,376 - INFO - Item ex-26551: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:16:09,376 - INFO - Item ex-26551: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:16:09,376 - INFO - Item ex-26551: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:16:09,829 - INFO - Item ex-26551: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:16:10,573 - INFO - Item ex-25867: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:16:10,573 - INFO - Item ex-25867: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:16:10,573 - INFO - Item ex-25867: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:16:10,573 - INFO - Item ex-25867: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:16:40,775 - INFO - Item ex-26328: Removed orphaned lookup attribute 'predlemma' (reference 'pred' is empty)
+2026-01-07 17:16:40,775 - INFO - Item ex-26328: Removed orphaned lookup attribute 'predtag' (reference 'pred' is empty)
+2026-01-07 17:16:40,775 - INFO - Item ex-26328: Removed orphaned lookup attribute 'predverbtag' (reference 'pred' is empty)
+2026-01-07 17:16:40,775 - INFO - Item ex-26328: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:16:40,775 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:16:40,783 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-bezpochyby.xml
+2026-01-07 17:16:40,783 - INFO - Processing file 4/40: teitok/markers/finished/markers_gold-en-doopravdy.xml
+2026-01-07 17:16:40,783 - INFO -   Input: teitok/markers/finished/markers_gold-en-doopravdy.xml
+2026-01-07 17:17:16,068 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:17:16,068 - INFO -   ○ No changes needed
+2026-01-07 17:17:16,068 - INFO - Processing file 5/40: teitok/markers/finished/markers_gold-en-evidentne.xml
+2026-01-07 17:17:16,068 - INFO -   Input: teitok/markers/finished/markers_gold-en-evidentne.xml
+2026-01-07 17:17:27,237 - INFO - Item ex-25311: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:28,704 - INFO - Item ex-25350: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:30,304 - INFO - Item ex-25648: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:33,894 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:17:33,901 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-evidentne.xml
+2026-01-07 17:17:33,902 - INFO - Processing file 6/40: teitok/markers/finished/markers_gold-en-fakt.xml
+2026-01-07 17:17:33,902 - INFO -   Input: teitok/markers/finished/markers_gold-en-fakt.xml
+2026-01-07 17:17:34,611 - INFO - Item ex-1384: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:17:34,611 - INFO - Item ex-1384: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:17:34,611 - INFO - Item ex-1384: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:17:35,505 - INFO - Item ex-1384: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:35,827 - INFO - Item ex-961: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:17:35,827 - INFO - Item ex-961: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:17:35,827 - INFO - Item ex-961: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:17:37,390 - INFO - Item ex-961: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:37,391 - INFO - Item ex-226: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:17:37,391 - INFO - Item ex-226: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:17:37,391 - INFO - Item ex-226: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:17:38,955 - INFO - Item ex-226: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:38,955 - INFO - Item ex-207: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:17:38,955 - INFO - Item ex-207: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:17:38,955 - INFO - Item ex-207: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:17:40,277 - INFO - Item ex-207: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:42,939 - INFO - Item ex-6: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:17:42,939 - INFO - Item ex-6: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:17:42,939 - INFO - Item ex-6: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:17:42,939 - INFO - Item ex-6: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:45,829 - INFO - Item ex-89: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:17:45,829 - INFO - Item ex-89: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:17:45,829 - INFO - Item ex-89: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:17:45,829 - INFO - Item ex-89: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:45,829 - INFO - Item ex-500: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:17:45,829 - INFO - Item ex-500: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:17:45,829 - INFO - Item ex-500: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:17:45,830 - INFO - Item ex-500: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:56,188 - INFO - Item ex-389: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:17:56,188 - INFO - Item ex-389: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:17:56,188 - INFO - Item ex-389: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:17:57,016 - INFO - Item ex-389: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:57,016 - INFO - Item ex-1456: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:58,494 - INFO - Item ex-1414: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:17:58,494 - INFO - Item ex-1414: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:17:58,494 - INFO - Item ex-1414: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:17:58,494 - INFO - Item ex-1414: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:17:58,494 - INFO - Item ex-1260: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:17:58,494 - INFO - Item ex-1260: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:17:58,494 - INFO - Item ex-1260: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:17:58,496 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:17:58,503 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-fakt.xml
+2026-01-07 17:17:58,504 - INFO - Processing file 7/40: teitok/markers/finished/markers_gold-en-jasne.xml
+2026-01-07 17:17:58,504 - INFO -   Input: teitok/markers/finished/markers_gold-en-jasne.xml
+2026-01-07 17:18:19,043 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:18:19,043 - INFO -   ○ No changes needed
+2026-01-07 17:18:19,043 - INFO - Processing file 8/40: teitok/markers/finished/markers_gold-en-jednoznacne.xml
+2026-01-07 17:18:19,043 - INFO -   Input: teitok/markers/finished/markers_gold-en-jednoznacne.xml
+2026-01-07 17:18:33,340 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:18:33,340 - INFO -   ○ No changes needed
+2026-01-07 17:18:33,341 - INFO - Processing file 9/40: teitok/markers/finished/markers_gold-en-jiste.xml
+2026-01-07 17:18:33,341 - INFO -   Input: teitok/markers/finished/markers_gold-en-jiste.xml
+2026-01-07 17:18:37,760 - INFO - Item ex-1752: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:18:44,723 - INFO - Item ex-3139: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:18:46,349 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:18:46,357 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-jiste.xml
+2026-01-07 17:18:46,357 - INFO - Processing file 10/40: teitok/markers/finished/markers_gold-en-kazdopadne.xml
+2026-01-07 17:18:46,357 - INFO -   Input: teitok/markers/finished/markers_gold-en-kazdopadne.xml
+2026-01-07 17:19:02,165 - INFO - Item ex-25995: Removed disabled attribute 'certainty' with value 'full'
+2026-01-07 17:19:02,165 - INFO - Item ex-25995: Removed disabled attribute 'certaintynote' with value 'jistotní kvůli domněnce, kondicionálu a slovesu '
+2026-01-07 17:19:02,165 - INFO - Item ex-25995: Removed disabled attribute 'scope' with value 'sent'
+2026-01-07 17:19:02,165 - INFO - Item ex-25995: Removed disabled attribute 'tfpos' with value 'marked'
+2026-01-07 17:19:02,165 - INFO - Item ex-25995: Removed disabled attribute 'sentpos' with value 'other'
+2026-01-07 17:19:02,165 - INFO - Item ex-25995: Removed disabled attribute 'contrast' with value '0'
+2026-01-07 17:19:02,165 - INFO - Item ex-25995: Removed disabled attribute 'modalpersp' with value 'clear'
+2026-01-07 17:19:02,165 - INFO - Item ex-25995: Removed disabled attribute 'modift' with value ''
+2026-01-07 17:19:06,717 - INFO - Item ex-26229: Removed disabled attribute 'certainty' with value 'full'
+2026-01-07 17:19:06,717 - INFO - Item ex-26229: Removed disabled attribute 'certaintynote' with value 'víc než 100%'
+2026-01-07 17:19:06,717 - INFO - Item ex-26229: Removed disabled attribute 'scope' with value 'sent'
+2026-01-07 17:19:06,717 - INFO - Item ex-26229: Removed disabled attribute 'tfpos' with value 'neutral'
+2026-01-07 17:19:06,717 - INFO - Item ex-26229: Removed disabled attribute 'sentpos' with value 'other'
+2026-01-07 17:19:06,717 - INFO - Item ex-26229: Removed disabled attribute 'contrast' with value '0'
+2026-01-07 17:19:06,717 - INFO - Item ex-26229: Removed disabled attribute 'modalpersp' with value 'clear'
+2026-01-07 17:19:06,717 - INFO - Item ex-26229: Removed disabled attribute 'modift' with value ''
+2026-01-07 17:19:08,098 - INFO - Item ex-25309: Removed disabled attribute 'certainty' with value 'medium'
+2026-01-07 17:19:08,098 - INFO - Item ex-25309: Removed disabled attribute 'scope' with value 'sent'
+2026-01-07 17:19:08,098 - INFO - Item ex-25309: Removed disabled attribute 'tfpos' with value 'neutral'
+2026-01-07 17:19:08,098 - INFO - Item ex-25309: Removed disabled attribute 'sentpos' with value 'other'
+2026-01-07 17:19:08,098 - INFO - Item ex-25309: Removed disabled attribute 'contrast' with value '0'
+2026-01-07 17:19:08,098 - INFO - Item ex-25309: Removed disabled attribute 'modalpersp' with value 'clear'
+2026-01-07 17:19:08,098 - INFO - Item ex-25309: Removed disabled attribute 'modift' with value ''
+2026-01-07 17:19:09,034 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:19:09,040 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-kazdopadne.xml
+2026-01-07 17:19:09,041 - INFO - Processing file 11/40: teitok/markers/finished/markers_gold-en-mozna.xml
+2026-01-07 17:19:09,041 - INFO -   Input: teitok/markers/finished/markers_gold-en-mozna.xml
+2026-01-07 17:19:14,190 - INFO - Item ex-35626: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:15,720 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:19:15,728 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-mozna.xml
+2026-01-07 17:19:15,728 - INFO - Processing file 12/40: teitok/markers/finished/markers_gold-en-nejspis.xml
+2026-01-07 17:19:15,729 - INFO -   Input: teitok/markers/finished/markers_gold-en-nejspis.xml
+2026-01-07 17:19:21,321 - INFO - Item ex-49516: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:22,475 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:19:22,482 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-nejspis.xml
+2026-01-07 17:19:22,482 - INFO - Processing file 13/40: teitok/markers/finished/markers_gold-en-nepochybne.xml
+2026-01-07 17:19:22,482 - INFO -   Input: teitok/markers/finished/markers_gold-en-nepochybne.xml
+2026-01-07 17:19:23,367 - INFO - Item ex-51080: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:23,367 - INFO - Item ex-51080: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:23,367 - INFO - Item ex-51080: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:23,953 - INFO - Item ex-51080: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:24,683 - INFO - Item ex-50186: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:24,684 - INFO - Item ex-50186: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:24,684 - INFO - Item ex-50186: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:24,684 - INFO - Item ex-50186: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:24,684 - INFO - Item ex-50544: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:24,684 - INFO - Item ex-50544: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:24,684 - INFO - Item ex-50544: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:24,684 - INFO - Item ex-50544: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:26,786 - INFO - Item ex-49384: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:27,780 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:19:27,787 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-nepochybne.xml
+2026-01-07 17:19:27,787 - INFO - Processing file 14/40: teitok/markers/finished/markers_gold-en-nutne.xml
+2026-01-07 17:19:27,787 - INFO -   Input: teitok/markers/finished/markers_gold-en-nutne.xml
+2026-01-07 17:19:33,398 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:19:33,411 - INFO -   ○ No changes needed
+2026-01-07 17:19:33,413 - INFO - Processing file 15/40: teitok/markers/finished/markers_gold-en-ocividne.xml
+2026-01-07 17:19:33,414 - INFO -   Input: teitok/markers/finished/markers_gold-en-ocividne.xml
+2026-01-07 17:19:34,945 - INFO - Item ex-50095: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:35,390 - INFO - Item ex-50536: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:38,734 - INFO - Item ex-50472: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:38,749 - INFO - Item ex-49315: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:38,750 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:19:38,767 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-ocividne.xml
+2026-01-07 17:19:38,767 - INFO - Processing file 16/40: teitok/markers/finished/markers_gold-en-opravdu.xml
+2026-01-07 17:19:38,767 - INFO -   Input: teitok/markers/finished/markers_gold-en-opravdu.xml
+2026-01-07 17:19:38,773 - INFO - Item ex-55342: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:38,774 - INFO - Item ex-55342: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:38,774 - INFO - Item ex-55342: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:38,774 - INFO - Item ex-55342: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:41,255 - INFO - Item ex-58070: Removed orphaned lookup attribute 'predlemma' (reference 'pred' is empty)
+2026-01-07 17:19:41,272 - INFO - Item ex-58070: Removed orphaned lookup attribute 'predtag' (reference 'pred' is empty)
+2026-01-07 17:19:41,272 - INFO - Item ex-58070: Removed orphaned lookup attribute 'predverbtag' (reference 'pred' is empty)
+2026-01-07 17:19:41,272 - INFO - Item ex-58070: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:44,076 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:19:44,124 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-opravdu.xml
+2026-01-07 17:19:44,124 - INFO - Processing file 17/40: teitok/markers/finished/markers_gold-en-ovsem.xml
+2026-01-07 17:19:44,124 - INFO -   Input: teitok/markers/finished/markers_gold-en-ovsem.xml
+2026-01-07 17:19:46,117 - INFO - Item ex-51998: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:46,127 - INFO - Item ex-51998: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:46,127 - INFO - Item ex-51998: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:46,127 - INFO - Item ex-51998: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:48,938 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:19:48,966 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-ovsem.xml
+2026-01-07 17:19:48,966 - INFO - Processing file 18/40: teitok/markers/finished/markers_gold-en-patrne.xml
+2026-01-07 17:19:48,966 - INFO -   Input: teitok/markers/finished/markers_gold-en-patrne.xml
+2026-01-07 17:19:50,327 - INFO - Item ex-50620: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:50,338 - INFO - Item ex-50620: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:50,338 - INFO - Item ex-50620: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:50,339 - INFO - Item ex-50620: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:51,409 - INFO - Item ex-49775: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:53,054 - INFO - Item ex-51088: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:53,527 - INFO - Item ex-49408: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:55,465 - INFO - Item ex-49729: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:56,407 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:19:56,438 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-patrne.xml
+2026-01-07 17:19:56,438 - INFO - Processing file 19/40: teitok/markers/finished/markers_gold-en-pochopitelne.xml
+2026-01-07 17:19:56,438 - INFO -   Input: teitok/markers/finished/markers_gold-en-pochopitelne.xml
+2026-01-07 17:19:56,457 - INFO - Item ex-49895: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:56,457 - INFO - Item ex-49895: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:56,457 - INFO - Item ex-49895: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:56,457 - INFO - Item ex-49895: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:56,459 - INFO - Item ex-50536: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:56,459 - INFO - Item ex-50536: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:56,460 - INFO - Item ex-50536: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:56,460 - INFO - Item ex-50536: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:56,460 - INFO - Item ex-50970: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:56,460 - INFO - Item ex-50970: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:56,460 - INFO - Item ex-50970: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:56,461 - INFO - Item ex-50970: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:56,461 - INFO - Item ex-51038: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:56,461 - INFO - Item ex-51038: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:56,461 - INFO - Item ex-51038: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:56,461 - INFO - Item ex-51038: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:58,706 - INFO - Item ex-49642: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:58,718 - INFO - Item ex-49642: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:58,718 - INFO - Item ex-49642: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:58,718 - INFO - Item ex-49642: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:58,718 - INFO - Item ex-50565: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:58,718 - INFO - Item ex-50565: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:58,718 - INFO - Item ex-50565: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:58,719 - INFO - Item ex-50565: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:58,719 - INFO - Item ex-49432: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:58,719 - INFO - Item ex-49432: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:58,719 - INFO - Item ex-49432: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:58,719 - INFO - Item ex-49432: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:58,720 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:19:58,735 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-pochopitelne.xml
+2026-01-07 17:19:58,736 - INFO - Processing file 20/40: teitok/markers/finished/markers_gold-en-podle_vseho.xml
+2026-01-07 17:19:58,736 - INFO -   Input: teitok/markers/finished/markers_gold-en-podle_vseho.xml
+2026-01-07 17:19:59,469 - INFO - Item ex-94933: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:59,482 - INFO - Item ex-94933: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:59,483 - INFO - Item ex-94933: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:59,483 - INFO - Item ex-94933: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:59,941 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:19:59,957 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-podle_vseho.xml
+2026-01-07 17:19:59,958 - INFO - Processing file 21/40: teitok/markers/finished/markers_gold-en-pravdepodobne.xml
+2026-01-07 17:19:59,958 - INFO -   Input: teitok/markers/finished/markers_gold-en-pravdepodobne.xml
+2026-01-07 17:19:59,969 - INFO - Item ex-50494: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:19:59,969 - INFO - Item ex-50494: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:19:59,969 - INFO - Item ex-50494: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:19:59,969 - INFO - Item ex-50494: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:59,974 - INFO - Item ex-52042: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:59,975 - INFO - Item ex-50371: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:59,975 - INFO - Item ex-49480: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:19:59,976 - INFO - Item ex-51515: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:01,390 - INFO - Item ex-52417: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:01,427 - INFO - Item ex-51412: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:01,428 - INFO - Item ex-52238: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:01,428 - INFO - Item ex-52238: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:01,428 - INFO - Item ex-52238: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:01,428 - INFO - Item ex-52238: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:01,429 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:01,441 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-pravdepodobne.xml
+2026-01-07 17:20:01,441 - INFO - Processing file 22/40: teitok/markers/finished/markers_gold-en-prirozene.xml
+2026-01-07 17:20:01,441 - INFO -   Input: teitok/markers/finished/markers_gold-en-prirozene.xml
+2026-01-07 17:20:01,449 - INFO - Item ex-50753: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:01,449 - INFO - Item ex-50753: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:01,449 - INFO - Item ex-50753: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:03,093 - INFO - Item ex-50753: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:03,118 - INFO - Item ex-50389: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:05,276 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:05,339 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-prirozene.xml
+2026-01-07 17:20:05,339 - INFO - Processing file 23/40: teitok/markers/finished/markers_gold-en-pry.xml
+2026-01-07 17:20:05,339 - INFO -   Input: teitok/markers/finished/markers_gold-en-pry.xml
+2026-01-07 17:20:06,256 - INFO - Item ex-51072: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:06,283 - INFO - Item ex-52963: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:06,287 - INFO - Item ex-51485: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:06,291 - INFO - Item ex-50972: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:06,293 - INFO - Item ex-52083: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:06,294 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:06,312 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-pry.xml
+2026-01-07 17:20:06,312 - INFO - Processing file 24/40: teitok/markers/finished/markers_gold-en-rozhodne.xml
+2026-01-07 17:20:06,312 - INFO -   Input: teitok/markers/finished/markers_gold-en-rozhodne.xml
+2026-01-07 17:20:06,322 - INFO - Item ex-49964: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:06,322 - INFO - Item ex-52745: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:06,325 - INFO - Item ex-49276: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:06,325 - INFO - Item ex-49276: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:06,325 - INFO - Item ex-49276: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:06,325 - INFO - Item ex-49276: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:08,118 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:08,150 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-rozhodne.xml
+2026-01-07 17:20:08,150 - INFO - Processing file 25/40: teitok/markers/finished/markers_gold-en-samozrejme.xml
+2026-01-07 17:20:08,150 - INFO -   Input: teitok/markers/finished/markers_gold-en-samozrejme.xml
+2026-01-07 17:20:09,576 - INFO - Item ex-57111: Removed orphaned lookup attribute 'predlemma' (reference 'pred' is empty)
+2026-01-07 17:20:09,576 - INFO - Item ex-57111: Removed orphaned lookup attribute 'predtag' (reference 'pred' is empty)
+2026-01-07 17:20:09,577 - INFO - Item ex-57111: Removed orphaned lookup attribute 'predverbtag' (reference 'pred' is empty)
+2026-01-07 17:20:09,577 - INFO - Item ex-57111: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:09,579 - INFO - Item ex-56912: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:09,579 - INFO - Item ex-56912: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:09,579 - INFO - Item ex-56912: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:09,579 - INFO - Item ex-56912: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:09,580 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:09,587 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-samozrejme.xml
+2026-01-07 17:20:09,587 - INFO - Processing file 26/40: teitok/markers/finished/markers_gold-en-skutecne.xml
+2026-01-07 17:20:09,587 - INFO -   Input: teitok/markers/finished/markers_gold-en-skutecne.xml
+2026-01-07 17:20:09,882 - INFO - Item ex-66870: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:10,780 - INFO - Item ex-59933: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:10,792 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:10,807 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-skutecne.xml
+2026-01-07 17:20:10,807 - INFO - Processing file 27/40: teitok/markers/finished/markers_gold-en-snad.xml
+2026-01-07 17:20:10,807 - INFO -   Input: teitok/markers/finished/markers_gold-en-snad.xml
+2026-01-07 17:20:11,270 - INFO - Item ex-69053: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:11,270 - INFO - Item ex-69053: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:11,270 - INFO - Item ex-69053: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:11,270 - INFO - Item ex-69053: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:11,274 - INFO - Item ex-77447: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:11,274 - INFO - Item ex-77447: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:11,274 - INFO - Item ex-77447: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:11,274 - INFO - Item ex-77447: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:27,997 - INFO - Item ex-69180: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:28,007 - INFO - Item ex-60464: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:28,863 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:28,878 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-snad.xml
+2026-01-07 17:20:28,878 - INFO - Processing file 28/40: teitok/markers/finished/markers_gold-en-sotva.xml
+2026-01-07 17:20:28,878 - INFO -   Input: teitok/markers/finished/markers_gold-en-sotva.xml
+2026-01-07 17:20:29,987 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:29,988 - INFO -   ○ No changes needed
+2026-01-07 17:20:29,988 - INFO - Processing file 29/40: teitok/markers/finished/markers_gold-en-spis.xml
+2026-01-07 17:20:29,988 - INFO -   Input: teitok/markers/finished/markers_gold-en-spis.xml
+2026-01-07 17:20:32,086 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:32,096 - INFO -   ○ No changes needed
+2026-01-07 17:20:32,098 - INFO - Processing file 30/40: teitok/markers/finished/markers_gold-en-stezi.xml
+2026-01-07 17:20:32,098 - INFO -   Input: teitok/markers/finished/markers_gold-en-stezi.xml
+2026-01-07 17:20:32,108 - INFO - Item ex-60965: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:32,115 - INFO - Item ex-60239: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:34,659 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:34,690 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-stezi.xml
+2026-01-07 17:20:34,690 - INFO - Processing file 31/40: teitok/markers/finished/markers_gold-en-tezko.xml
+2026-01-07 17:20:34,690 - INFO -   Input: teitok/markers/finished/markers_gold-en-tezko.xml
+2026-01-07 17:20:35,380 - INFO - Item ex-61927: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:35,399 - INFO - Item ex-59960: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:35,401 - INFO - Item ex-59713: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:35,402 - INFO - Item ex-61523: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:35,404 - INFO - Item ex-60775: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:35,410 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:35,449 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-tezko.xml
+2026-01-07 17:20:35,449 - INFO - Processing file 32/40: teitok/markers/finished/markers_gold-en-treba.xml
+2026-01-07 17:20:35,449 - INFO -   Input: teitok/markers/finished/markers_gold-en-treba.xml
+2026-01-07 17:20:35,467 - INFO - Item ex-61529: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:35,467 - INFO - Item ex-63542: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:37,323 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:37,359 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-treba.xml
+2026-01-07 17:20:37,359 - INFO - Processing file 33/40: teitok/markers/finished/markers_gold-en-udajne.xml
+2026-01-07 17:20:37,359 - INFO -   Input: teitok/markers/finished/markers_gold-en-udajne.xml
+2026-01-07 17:20:37,396 - INFO - Item ex-59755: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:37,396 - INFO - Item ex-59755: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:37,396 - INFO - Item ex-59755: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:37,396 - INFO - Item ex-59755: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:37,887 - INFO - Item ex-60171: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:39,259 - INFO - Item ex-59767: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:39,271 - INFO - Item ex-59767: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:39,271 - INFO - Item ex-59767: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:39,271 - INFO - Item ex-59767: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:39,272 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:39,289 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-udajne.xml
+2026-01-07 17:20:39,289 - INFO - Processing file 34/40: teitok/markers/finished/markers_gold-en-urcite.xml
+2026-01-07 17:20:39,289 - INFO -   Input: teitok/markers/finished/markers_gold-en-urcite.xml
+2026-01-07 17:20:39,296 - INFO - Item ex-32340: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:39,299 - WARNING - Item ex-26078: IDs in attribute 'en' come from different sentences: ['en:Barnes-Arthur_a_George:0:1211:5:w21', 'en:Barnes-Arthur_a_George:0:1211:6:w3']
+2026-01-07 17:20:39,687 - INFO - Item ex-33510: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:39,688 - INFO - Item ex-25290: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:39,689 - INFO - Item ex-32431: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:39,691 - INFO - Item ex-25596: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:39,692 - INFO - Item ex-28969: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:39,693 - INFO - Item ex-30980: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:40,615 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:40,622 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-urcite.xml
+2026-01-07 17:20:40,623 - INFO - Processing file 35/40: teitok/markers/finished/markers_gold-en-vazne.xml
+2026-01-07 17:20:40,623 - INFO -   Input: teitok/markers/finished/markers_gold-en-vazne.xml
+2026-01-07 17:20:40,633 - INFO - Item ex-61083: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:40,635 - INFO - Item ex-66186: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:40,638 - INFO - Item ex-60066: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:41,363 - INFO - Item ex-59943: Removed orphaned lookup attribute 'predlemma' (reference 'pred' is empty)
+2026-01-07 17:20:41,378 - INFO - Item ex-59943: Removed orphaned lookup attribute 'predtag' (reference 'pred' is empty)
+2026-01-07 17:20:41,378 - INFO - Item ex-59943: Removed orphaned lookup attribute 'predverbtag' (reference 'pred' is empty)
+2026-01-07 17:20:41,378 - INFO - Item ex-59943: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:41,380 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:41,402 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-vazne.xml
+2026-01-07 17:20:41,402 - INFO - Processing file 36/40: teitok/markers/finished/markers_gold-en-vskutku.xml
+2026-01-07 17:20:41,402 - INFO -   Input: teitok/markers/finished/markers_gold-en-vskutku.xml
+2026-01-07 17:20:41,616 - INFO - Item ex-59780: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:41,616 - INFO - Item ex-59780: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:41,616 - INFO - Item ex-59780: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:41,616 - INFO - Item ex-59780: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:41,618 - INFO - Item ex-60733: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:41,618 - INFO - Item ex-60733: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:41,618 - INFO - Item ex-60733: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:41,618 - INFO - Item ex-60733: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:41,621 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:41,628 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-vskutku.xml
+2026-01-07 17:20:41,628 - INFO - Processing file 37/40: teitok/markers/finished/markers_gold-en-zajiste.xml
+2026-01-07 17:20:41,628 - INFO -   Input: teitok/markers/finished/markers_gold-en-zajiste.xml
+2026-01-07 17:20:41,636 - INFO - Item ex-80100: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:41,636 - INFO - Item ex-80100: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:41,636 - INFO - Item ex-80100: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:42,257 - INFO - Item ex-80227: Removed disabled attribute 'pred' with value 'cs:dawkins-sobecky_gen:0:645:8:w2 cs:dawkins-sobecky_gen:0:645:8:w3 cs:dawkins-sobecky_gen:0:645:8:w12 cs:dawkins-sobecky_gen:0:645:8:w13'
+2026-01-07 17:20:42,257 - INFO - Item ex-80227: Removed disabled attribute 'predlemma' with value 'být se mít přiučit'
+2026-01-07 17:20:42,257 - INFO - Item ex-80227: Removed disabled attribute 'predtag' with value 'Vc----------I-- P7--4---------- VpMP----R-AAI-- Vf--------A-P--'
+2026-01-07 17:20:42,257 - INFO - Item ex-80227: Removed disabled attribute 'predverbtag' with value 'A----- ------ VCA3PP VFA---'
+2026-01-07 17:20:42,263 - INFO - Item ex-80540: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:42,264 - INFO - Item ex-80540: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:42,264 - INFO - Item ex-80540: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:42,264 - INFO - Item ex-80540: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:42,264 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:42,271 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-zajiste.xml
+2026-01-07 17:20:42,271 - INFO - Processing file 38/40: teitok/markers/finished/markers_gold-en-zjevne.xml
+2026-01-07 17:20:42,271 - INFO -   Input: teitok/markers/finished/markers_gold-en-zjevne.xml
+2026-01-07 17:20:42,283 - INFO - Item ex-81713: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:42,283 - INFO - Item ex-81713: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:42,283 - INFO - Item ex-81713: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:42,283 - INFO - Item ex-81713: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:42,284 - INFO - Item ex-80698: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:42,284 - INFO - Item ex-80698: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:42,284 - INFO - Item ex-80698: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:42,284 - INFO - Item ex-80698: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:42,287 - INFO - Item ex-81556: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:42,288 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:42,295 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-zjevne.xml
+2026-01-07 17:20:42,295 - INFO - Processing file 39/40: teitok/markers/finished/markers_gold-en-zrejme.xml
+2026-01-07 17:20:42,295 - INFO -   Input: teitok/markers/finished/markers_gold-en-zrejme.xml
+2026-01-07 17:20:42,302 - INFO - Item ex-91972: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:42,302 - INFO - Item ex-91972: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:42,302 - INFO - Item ex-91972: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:42,302 - INFO - Item ex-91972: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:42,304 - INFO - Item ex-83440: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:42,304 - INFO - Item ex-84150: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:42,306 - INFO - Item ex-87098: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:42,306 - INFO - Item ex-87098: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:42,306 - INFO - Item ex-87098: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:42,306 - INFO - Item ex-87098: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:42,307 - INFO - Item ex-82942: Removed disabled attribute 'predlemma' with value ''
+2026-01-07 17:20:42,307 - INFO - Item ex-82942: Removed disabled attribute 'predtag' with value ''
+2026-01-07 17:20:42,307 - INFO - Item ex-82942: Removed disabled attribute 'predverbtag' with value ''
+2026-01-07 17:20:42,307 - INFO - Item ex-82942: Removed orphaned lookup attribute 'modift' (reference 'modif' is empty)
+2026-01-07 17:20:42,310 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:42,317 - INFO -   ✓ Changes saved to: teitok/markers/finished/markers_gold-en-zrejme.xml
+2026-01-07 17:20:42,317 - INFO - Processing file 40/40: teitok/markers/finished/markers_gold-en-zretelne.xml
+2026-01-07 17:20:42,317 - INFO -   Input: teitok/markers/finished/markers_gold-en-zretelne.xml
+2026-01-07 17:20:42,336 - INFO -   Processed 50 annotation item(s)
+2026-01-07 17:20:42,336 - INFO -   ○ No changes needed
+2026-01-07 17:20:42,336 - INFO - Processing completed:
+2026-01-07 17:20:42,336 - INFO -   Total files: 40
+2026-01-07 17:20:42,336 - INFO -   Successfully processed: 40
+2026-01-07 17:20:42,336 - INFO -   Files with changes: 33
+2026-01-07 17:20:42,336 - INFO -   Files without changes: 7
+2026-01-07 17:20:42,336 - INFO -   BookDoc cache size: 507 book(s)
