@@ -91,7 +91,7 @@ def deref_index_attrs_all(doclist, bookdir):
             for annot_elem in book_annots:
                 #logging.debug(f"Dereferencing index attributes to the {lang} version of {bookid}")
                 deref_attrs_by_book(annot_elem, csbook, INDEX_ATTRS["cs"])
-                cssents, cstuids = csbook.get_sentences_by_tokids(annot_elem.attrib["cs"].split(" "), with_tuids=True)
+                _, cssents, cstuids = zip(*csbook.get_sentences_by_tokids(annot_elem.attrib["cs"].split(" "), with_tuids=True))
                 annot_elem.attrib["cssent"] = " ".join(cssents)
                 deref_attrs_by_book(annot_elem, enbook, INDEX_ATTRS["en"])
                 ensents = enbook.get_sentences_by_tuids(cstuids)

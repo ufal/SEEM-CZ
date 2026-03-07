@@ -54,6 +54,9 @@ class BookDoc:
     def get_token_elem(self, tokid):
         return self._id_to_elem.get(tokid)
 
+    def sentid_by_tokid(self, tokid):
+        return ":".join(tokid.split(":")[:-1])
+
     def get_sentence(self, sentid):
         sent_range = self._sent_index.get(sentid)
         if not sent_range:
@@ -62,12 +65,14 @@ class BookDoc:
         return " ".join(sent_toks)
 
     def get_sentences_by_tokids(self, tokids, with_tuids=False):
-        sentids = list(set([":".join(tokid.split(":")[:-1]) for tokid in tokids]))
-        sents = [self.get_sentence(sentid) for sentid in sorted(sentids)]
-        tuids = None
-        if with_tuids:
-            tuids = [self._sentid_to_tuid.get(sentid) for sentid in sorted(sentids)]
-        return sents, tuids
+        sentids = list(set([self.sentid_by_tokid(tokid) for tokid in tokids]))
+        for sentid in sorted(sentids):
+            sent = self.get_sentence(sentid)
+            output = (sentid, sent)
+            if with_tuids:
+                tuid = self._sentid_to_tuid.get(sentid)
+                output += (tuid, )
+            yield output
 
     def get_sentences_by_tuids(self, tuids):
         sentids = sorted(list(set([sentid for tuid in tuids for sentid in self._tuid_to_sentids[tuid]])))
