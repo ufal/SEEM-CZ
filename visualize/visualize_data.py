@@ -36,7 +36,7 @@ def load_rows(input_path):
         return list(reader)
 
 
-def render_chart(rows, column, title, y, top=None):
+def render_chart(rows, column, title, y, positions, top=None):
     grouped = {}
     for row in rows:
         group = (row.get(column) or "").strip()
@@ -62,7 +62,7 @@ def render_chart(rows, column, title, y, top=None):
         parts.append(f'<text x="20" y="{row_y + 16}" class="label">{escape(label)}</text>')
         parts.append(f'<text x="365" y="{row_y + 16}" class="count">n={total}</text>')
         offset = 0
-        for position, color in zip(position_values, COLORS):
+        for position, color in zip(positions, COLORS):
             count = counts.get(position, 0)
             if not count:
                 continue
@@ -78,15 +78,14 @@ def render_chart(rows, column, title, y, top=None):
 
 
 def create_visualization(rows, output_path):
-    global position_values
-    position_values = sorted(
+    positions = sorted(
         {
             (row.get(POSITION_COLUMN) or "").strip()
             for row in rows
             if (row.get(POSITION_COLUMN) or "").strip()
         }
     )
-    if len(position_values) > len(COLORS):
+    if len(positions) > len(COLORS):
         raise ValueError(f"Expected at most {len(COLORS)} distinct sentence positions")
 
     width = 1100
@@ -104,7 +103,7 @@ def create_visualization(rows, output_path):
     ]
 
     legend_x = 20
-    for position, color in zip(position_values, COLORS):
+    for position, color in zip(positions, COLORS):
         parts.extend(
             (
                 f'<rect x="{legend_x}" y="67" width="13" height="13" fill="{color}"/>',
@@ -115,7 +114,12 @@ def create_visualization(rows, output_path):
 
     for column, title in CHARTS:
         chart_height, chart_parts = render_chart(
-            rows, column, title, y, top=10 if column == "Konkrétní komunikační funkce" else None
+            rows,
+            column,
+            title,
+            y,
+            positions,
+            top=10 if column == "Konkrétní komunikační funkce" else None,
         )
         parts.extend(chart_parts)
         y += chart_height + 16
