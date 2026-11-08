@@ -5,7 +5,7 @@ The export uses tab-separated fields despite its .csv extension.
 
 Usage:
     python visualize/visualize_data.py
-    python visualize/visualize_data.py --input path/to/export.csv --output positions.svg
+    python visualize/visualize_data.py --input path/to/export.csv --output positions.pdf
 """
 
 import argparse
@@ -13,6 +13,9 @@ import csv
 from collections import Counter
 from html import escape
 from pathlib import Path
+import shutil
+import subprocess
+import tempfile
 
 
 POSITION_COLUMN = "Místo ve větě"
@@ -77,7 +80,7 @@ def render_chart(rows, column, title, y, positions, top=None):
     return chart_height, parts
 
 
-def create_visualization(rows, output_path):
+def create_visualization(rows):
     positions = sorted(
         {
             (row.get(POSITION_COLUMN) or "").strip()
@@ -126,8 +129,54 @@ def create_visualization(rows, output_path):
 
     parts[0] = f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{y}" role="img">'
     parts.append("</svg>")
+    return "\n".join(parts), width, y
+
+
+def save_pdf(svg, width, height, output_path):
+    browser = next(
+        (
+            executable
+            for name in ("chromium", "chromium-browser", "google-chrome", "google-chrome-stable")
+            if (executable := shutil.which(name))
+        ),
+        None,
+    )
+    if browser is None:
+        raise ValueError("PDF output requires Chromium or Google Chrome to be installed")
+
+    html = (
+        f"<!doctype html><html><head><style>"
+        f"@page{{size:{width / 96:.4f}in {height / 96:.4f}in;margin:0}}"
+        f"html,body{{margin:0;padding:0;width:{width}px;height:{height}px}}"
+        f"svg{{display:block;width:{width}px;height:{height}px}}"
+        f"</style></head><body>{svg}</body></html>"
+    )
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text("\n".join(parts), encoding="utf-8")
+    with tempfile.TemporaryDirectory() as temporary_directory:
+        html_path = Path(temporary_directory) / "visualization.html"
+        html_path.write_text(html, encoding="utf-8")
+        try:
+            subprocess.run(
+                [
+                    browser,
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--disable-dev-shm-usage",
+                    "--no-pdf-header-footer",
+                    f"--print-to-pdf={output_path.resolve()}",
+                    html_path.resolve().as_uri(),
+                ],
+                check=True,
+                capture_output=True,
+                text=True,
+                timeout=60,
+            )
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as error:
+            detail = error.stderr if isinstance(error, subprocess.CalledProcessError) else "timed out"
+            raise ValueError(f"Could not generate PDF with Chromium: {detail}") from error
+    if not output_path.is_file() or output_path.read_bytes()[:5] != b"%PDF-":
+        raise ValueError(f"Chromium did not produce a valid PDF at {output_path}")
 
 
 def main():
@@ -142,14 +191,21 @@ def main():
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path(__file__).resolve().parent / "output/sentence_position_distributions.svg",
-        help="SVG output file (default: visualize/output/sentence_position_distributions.svg)",
+        default=Path(__file__).resolve().parent / "output/sentence_position_distributions.pdf",
+        help="PDF output file; use an .svg extension to save SVG instead",
     )
     args = parser.parse_args()
+    if args.output.suffix.lower() not in (".pdf", ".svg"):
+        parser.error("--output must have a .pdf or .svg extension")
 
     try:
         rows = load_rows(args.input)
-        create_visualization(rows, args.output)
+        svg, width, height = create_visualization(rows)
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        if args.output.suffix.lower() == ".svg":
+            args.output.write_text(svg, encoding="utf-8")
+        else:
+            save_pdf(svg, width, height, args.output)
     except (OSError, ValueError) as error:
         parser.error(str(error))
     print(f"Visualization saved to {args.output}")
