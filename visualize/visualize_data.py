@@ -15,33 +15,39 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 
-
 POSITION_COLUMN = "Místo ve větě"
 AC_POSITION_COLUMN = "Pozice v AČ"
 SCOPE_COLUMN = "Dosah"
-COMPARISON_USES = {"jistotní", "evidenciální", "dotvrzovací"}
-CHARTS = (
-    ("Užití", "Sentence position by use"),
-    ("Typ komunikační funkce", "Sentence position by communication function"),
-    ("Konkrétní komunikační funkce", "Sentence position by specific communication function"),
-    (AC_POSITION_COLUMN, "Sentence position by information-structure position"),
-    ("Výraz", "Sentence position by expression"),
-)
+
+def filter_scope_sent(row):
+    return (row.get(SCOPE_COLUMN) or "").strip() == "věta"
+
+
+CHARTS = [
+    ("Užití",                           None,                                                   None,               None),
+    ("Typ komunikační funkce",          None,                                                   None,               None),
+    ("Konkrétní komunikační funkce",    None,                                                   None,               10  ),
+    (AC_POSITION_COLUMN,                None,                                                   None,               None),
+    (AC_POSITION_COLUMN,                f"{AC_POSITION_COLUMN} ({SCOPE_COLUMN} = \"věta\")",    filter_scope_sent,  None),
+    ("Výraz",                           None,                                                   None,               None),
+]
 
 
 def load_rows(input_path):
     with input_path.open(encoding="utf-8-sig", newline="") as csv_file:
         reader = csv.DictReader(csv_file, delimiter="\t")
-        required_columns = (POSITION_COLUMN, SCOPE_COLUMN, *(column for column, _ in CHARTS))
+        required_columns = (POSITION_COLUMN, SCOPE_COLUMN, *(column for column, _, _, _ in CHARTS))
         missing_columns = [column for column in required_columns if column not in (reader.fieldnames or [])]
         if missing_columns:
             raise ValueError(f"CSV is missing required columns: {', '.join(missing_columns)}")
         return list(reader)
 
 
-def group_counts(rows, column, top=None):
+def group_counts(rows, column, filter_f=None, top=None):
     grouped = {}
     for row in rows:
+        if filter_f is not None and not filter_f(row):
+            continue
         group = (row.get(column) or "").strip()
         position = (row.get(POSITION_COLUMN) or "").strip()
         if group and position:
@@ -53,8 +59,7 @@ def group_counts(rows, column, top=None):
     return entries
 
 
-def plot_chart(axis, rows, column, title, positions, colors, top=None):
-    entries = group_counts(rows, column, top=top)
+def plot_chart(axis, entries, title, positions, colors):
     if not entries:
         axis.set_title(title, loc="left")
         axis.text(0.5, 0.5, "No annotated values", ha="center", va="center", transform=axis.transAxes)
@@ -92,70 +97,6 @@ def plot_chart(axis, rows, column, title, positions, colors, top=None):
         axis.spines[spine].set_visible(False)
 
 
-def select_position_comparison_rows(rows, constrained=False):
-    return [
-        row
-        for row in rows
-        if (
-            not constrained
-            or (
-                (row.get(SCOPE_COLUMN) or "").strip() == "věta"
-                and (row.get("Užití") or "").strip() in COMPARISON_USES
-            )
-        )
-        and (row.get(POSITION_COLUMN) or "").strip()
-        and (row.get(AC_POSITION_COLUMN) or "").strip()
-    ]
-
-
-def plot_position_comparison(axis, rows, title, positions, colors, constrained=False):
-    counts = {}
-    for row in select_position_comparison_rows(rows, constrained=constrained):
-        ac_position = (row.get(AC_POSITION_COLUMN) or "").strip()
-        sentence_position = (row.get(POSITION_COLUMN) or "").strip()
-        counts.setdefault(ac_position, Counter())[sentence_position] += 1
-
-    ac_positions = sorted(counts)
-    if not ac_positions:
-        axis.set_title(title, loc="left")
-        axis.text(0.5, 0.5, "No matching annotated values", ha="center", va="center", transform=axis.transAxes)
-        axis.set_axis_off()
-        return
-
-    totals = [sum(counts[position].values()) for position in ac_positions]
-    left = [0.0] * len(ac_positions)
-    for sentence_position, color in zip(positions, colors):
-        percentages = [
-            100 * counts[position].get(sentence_position, 0) / total
-            for position, total in zip(ac_positions, totals)
-        ]
-        axis.barh(
-            range(len(ac_positions)),
-            percentages,
-            left=left,
-            color=color,
-            label=sentence_position,
-            height=0.78,
-        )
-        left = [offset + value for offset, value in zip(left, percentages)]
-
-    axis.set_yticks(
-        range(len(ac_positions)),
-        [f"{position}  (n={total})" for position, total in zip(ac_positions, totals)],
-    )
-    axis.invert_yaxis()
-    axis.set_xlim(0, 100)
-    axis.set_xticks((0, 25, 50, 75, 100), labels=("0%", "25%", "50%", "75%", "100%"))
-    axis.set_xlabel("Distribution of Místo ve větě")
-    axis.set_title(title, loc="left", fontsize=11, fontweight="bold", pad=6)
-    axis.grid(axis="x", color="#d9d9d9", linewidth=0.6)
-    axis.set_axisbelow(True)
-    axis.tick_params(axis="y", labelsize=8, length=0, pad=5)
-    axis.tick_params(axis="x", labelsize=8)
-    for spine in ("top", "right", "left"):
-        axis.spines[spine].set_visible(False)
-
-
 def create_visualization(rows):
     positions = sorted(
         {
@@ -168,59 +109,31 @@ def create_visualization(rows):
         group_counts(
             rows,
             column,
-            top=10 if column == "Konkrétní komunikační funkce" else None,
+            filter_f,
+            top,
         )
-        for column, _ in CHARTS
-    ]
-    comparison_heights = [
-        max(
-            len(
-                {
-                    row[AC_POSITION_COLUMN].strip()
-                    for row in select_position_comparison_rows(rows, constrained=constrained)
-                }
-            ),
-            1,
-        )
-        for constrained in (False, True)
+        for column, _, filter_f, top in CHARTS
     ]
     height_ratios = [
-        *comparison_heights,
         *(max(len(entries), 1) for entries in chart_entries),
     ]
     figure_height = max(6, 2.2 + sum(ratio * 0.27 + 0.8 for ratio in height_ratios))
     figure, axes = plt.subplots(
-        len(CHARTS) + 2,
+        len(CHARTS),
         1,
         figsize=(11, figure_height),
         gridspec_kw={"height_ratios": height_ratios},
         squeeze=False,
     )
     colors = [plt.get_cmap("tab10")(index) for index in range(len(positions))]
-    plot_position_comparison(
-        axes[0, 0],
-        rows,
-        "Position by position (all annotated rows)",
-        positions,
-        colors,
-    )
-    plot_position_comparison(
-        axes[1, 0],
-        rows,
-        'Position by position for Dosah = "věta" and Užití in {jistotní, evidenciální, dotvrzovací}',
-        positions,
-        colors,
-        constrained=True,
-    )
-    for axis, (column, title) in zip(axes[2:, 0], CHARTS):
+    for axis, entry, (colname, title, _, _) in zip(axes[:, 0], chart_entries, CHARTS):
+        title = colname if title is None else title
         plot_chart(
             axis,
-            rows,
-            column,
+            entry,
             title,
             positions,
             colors,
-            top=10 if column == "Konkrétní komunikační funkce" else None,
         )
 
     figure.suptitle("Sentence position distributions", fontsize=16, fontweight="bold", y=0.995)
