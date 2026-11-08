@@ -59,12 +59,14 @@ def group_counts(rows, column, filter_params=None, top=None):
     return entries
 
 
-def plot_chart(axis, entries, title, positions, colors):
+def plot_chart(axis, entries, title, positions, colors, overall_counts):
     if not entries:
         axis.set_title(title, loc="left")
         axis.text(0.5, 0.5, "No annotated values", ha="center", va="center", transform=axis.transAxes)
         axis.set_axis_off()
         return
+
+    entries = [("All y values", overall_counts), *entries]
 
     labels = [label for label, _ in entries]
     totals = [sum(counts.values()) for _, counts in entries]
@@ -110,17 +112,17 @@ def create_visualization(rows):
             if (row.get(POSITION_COLUMN) or "").strip()
         }
     )
-    chart_entries = [
-        group_counts(
-            rows,
-            column,
-            filter_params,
-            top,
-        )
-        for column, filter_params, top in CHARTS
-    ]
+    chart_entries = []
+    chart_totals = []
+    for column, filter_params, top in CHARTS:
+        all_entries = group_counts(rows, column, filter_params)
+        chart_entries.append(all_entries[:top] if top is not None else all_entries)
+        total_counts = Counter()
+        for _, counts in all_entries:
+            total_counts.update(counts)
+        chart_totals.append(total_counts)
     height_ratios = [
-        *(max(len(entries), 1) for entries in chart_entries),
+        *(max(len(entries) + 1, 1) for entries in chart_entries),
     ]
     figure_height = max(6, 2.2 + sum(ratio * 0.27 + 0.8 for ratio in height_ratios))
     figure, axes = plt.subplots(
@@ -131,7 +133,9 @@ def create_visualization(rows):
         squeeze=False,
     )
     colors = [plt.get_cmap("tab10")(index) for index in range(len(positions))]
-    for axis, entry, (colname, filter_params, top) in zip(axes[:, 0], chart_entries, CHARTS):
+    for axis, entry, total, (colname, filter_params, top) in zip(
+        axes[:, 0], chart_entries, chart_totals, CHARTS
+    ):
         
         title = colname
         cond_strs = [
@@ -148,6 +152,7 @@ def create_visualization(rows):
             title,
             positions,
             colors,
+            total,
         )
 
     figure.suptitle("Sentence position distributions", fontsize=16, fontweight="bold", y=0.995)
