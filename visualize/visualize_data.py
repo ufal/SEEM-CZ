@@ -136,7 +136,7 @@ def leave_one_out_distances(entries, mode="point", n_resamples=1000):
             n_resamples=n_resamples,
             confidence_level=0.95,
             method="percentile",
-            rng=rng,
+            random_state=rng,
         )
         distances[label] = (result.confidence_interval.low, result.confidence_interval.high)
     return overall_counts, distances
