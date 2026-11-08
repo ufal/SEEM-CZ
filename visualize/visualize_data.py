@@ -16,6 +16,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.spatial.distance import jensenshannon
+from scipy.stats import bootstrap
 
 POSITION_COLUMN = "Místo ve větě"
 AC_POSITION_COLUMN = "Pozice v AČ"
@@ -87,10 +88,6 @@ def leave_one_out_distances(entries, mode="point", n_resamples=1000):
     distances = {}
     rng = None
     if mode == "ci":
-        try:
-            from scipy.stats import bootstrap
-        except ImportError as error:
-            raise ValueError("Jensen-Shannon confidence intervals require SciPy") from error
         rng = np.random.default_rng(0)
 
     for label, counts in entries:
