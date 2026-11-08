@@ -11,11 +11,11 @@ Usage:
 import argparse
 import csv
 from collections import Counter
-from math import log2, sqrt
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.spatial.distance import jensenshannon
 
 POSITION_COLUMN = "Místo ve větě"
 AC_POSITION_COLUMN = "Pozice v AČ"
@@ -72,16 +72,11 @@ def jensen_shannon_distance(first, second):
         return None
 
     categories = first.keys() | second.keys()
-    divergence = 0.0
-    for category in categories:
-        p = first.get(category, 0) / first_total
-        q = second.get(category, 0) / second_total
-        midpoint = (p + q) / 2
-        if p:
-            divergence += 0.5 * p * log2(p / midpoint)
-        if q:
-            divergence += 0.5 * q * log2(q / midpoint)
-    return sqrt(divergence)
+    return jensenshannon(
+        [first.get(category, 0) for category in categories],
+        [second.get(category, 0) for category in categories],
+        base=2,
+    )
 
 
 def leave_one_out_distances(entries, mode="point", n_resamples=1000):
