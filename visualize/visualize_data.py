@@ -11,6 +11,7 @@ Usage:
 import argparse
 import csv
 from collections import Counter
+from math import log2, sqrt
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -63,7 +64,38 @@ def group_counts(rows, column, filter_params=None, top=None):
     return entries
 
 
-def plot_chart(axis, entries, title, positions, colors, overall_counts):
+def jensen_shannon_distance(first, second):
+    first_total = sum(first.values())
+    second_total = sum(second.values())
+    if not first_total or not second_total:
+        return None
+
+    categories = first.keys() | second.keys()
+    divergence = 0.0
+    for category in categories:
+        p = first.get(category, 0) / first_total
+        q = second.get(category, 0) / second_total
+        midpoint = (p + q) / 2
+        if p:
+            divergence += 0.5 * p * log2(p / midpoint)
+        if q:
+            divergence += 0.5 * q * log2(q / midpoint)
+    return sqrt(divergence)
+
+
+def leave_one_out_distances(entries):
+    overall_counts = Counter()
+    for _, counts in entries:
+        overall_counts.update(counts)
+
+    distances = {}
+    for label, counts in entries:
+        comparison_counts = overall_counts - counts
+        distances[label] = jensen_shannon_distance(counts, comparison_counts)
+    return overall_counts, distances
+
+
+def plot_chart(axis, entries, title, positions, colors, overall_counts, distances):
     if not entries:
         axis.set_title(title, loc="left")
         axis.text(0.5, 0.5, "No annotated values", ha="center", va="center", transform=axis.transAxes)
@@ -74,6 +106,13 @@ def plot_chart(axis, entries, title, positions, colors, overall_counts):
 
     labels = [label for label, _ in entries]
     totals = [sum(counts.values()) for _, counts in entries]
+    tick_labels = []
+    for label, total in zip(labels, totals):
+        distance = distances.get(label)
+        distance_label = "n/a" if distance is None else f"{distance:.3f}"
+        if label == "All y values":
+            distance_label = "n/a"
+        tick_labels.append(f"{label}  (n={total}, JS={distance_label})")
     left = [0.0] * len(entries)
     for position, color in zip(positions, colors):
         percentages = [
@@ -98,7 +137,7 @@ def plot_chart(axis, entries, title, positions, colors, overall_counts):
         )
         left = [offset + value for offset, value in zip(left, percentages)]
 
-    axis.set_yticks(range(len(entries)), [f"{label}  (n={total})" for label, total in zip(labels, totals)])
+    axis.set_yticks(range(len(entries)), tick_labels)
     axis.invert_yaxis()
     axis.set_xlim(0, 100)
     axis.set_title(title, loc="left", fontsize=11, fontweight="bold", pad=6)
@@ -118,13 +157,13 @@ def create_visualization(rows):
     )
     chart_entries = []
     chart_totals = []
+    chart_distances = []
     for column, filter_params, top in CHARTS:
         all_entries = group_counts(rows, column, filter_params)
+        total_counts, distances = leave_one_out_distances(all_entries)
         chart_entries.append(all_entries[:top] if top is not None else all_entries)
-        total_counts = Counter()
-        for _, counts in all_entries:
-            total_counts.update(counts)
         chart_totals.append(total_counts)
+        chart_distances.append(distances)
     height_ratios = [
         *(max(len(entries) + 1, 1) for entries in chart_entries),
     ]
@@ -137,8 +176,8 @@ def create_visualization(rows):
         squeeze=False,
     )
     colors = [plt.get_cmap("tab10")(index) for index in range(len(positions))]
-    for axis, entry, total, (colname, filter_params, top) in zip(
-        axes[:, 0], chart_entries, chart_totals, CHARTS
+    for axis, entry, total, distances, (colname, filter_params, top) in zip(
+        axes[:, 0], chart_entries, chart_totals, chart_distances, CHARTS
     ):
         
         title = colname
@@ -157,6 +196,7 @@ def create_visualization(rows):
             positions,
             colors,
             total,
+            distances,
         )
 
     figure.suptitle("Sentence position distributions", fontsize=16, fontweight="bold", y=0.995)
@@ -174,7 +214,8 @@ def create_visualization(rows):
     figure.text(
         0.5,
         0.005,
-        "Percent within each group; rows without a sentence-position annotation are excluded.",
+        "Percent within each group; JS is base-2 leave-one-out Jensen–Shannon distance; "
+        "rows without a sentence-position annotation are excluded.",
         ha="center",
         fontsize=8,
     )
