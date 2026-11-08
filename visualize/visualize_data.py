@@ -92,20 +92,23 @@ def plot_chart(axis, rows, column, title, positions, colors, top=None):
         axis.spines[spine].set_visible(False)
 
 
-def select_position_comparison_rows(rows):
+def select_position_comparison_rows(rows, uses_only=False):
     return [
         row
         for row in rows
         if (row.get(SCOPE_COLUMN) or "").strip() == "věta"
-        and (row.get("Užití") or "").strip() in COMPARISON_USES
+        and (
+            not uses_only
+            or (row.get("Užití") or "").strip() in COMPARISON_USES
+        )
         and (row.get(POSITION_COLUMN) or "").strip()
         and (row.get(AC_POSITION_COLUMN) or "").strip()
     ]
 
 
-def plot_position_comparison(axis, rows):
+def plot_position_comparison(axis, rows, title, uses_only=False):
     counts = {}
-    for row in select_position_comparison_rows(rows):
+    for row in select_position_comparison_rows(rows, uses_only=uses_only):
         sentence_position = (row.get(POSITION_COLUMN) or "").strip()
         ac_position = (row.get(AC_POSITION_COLUMN) or "").strip()
         counts.setdefault(sentence_position, Counter())[ac_position] += 1
@@ -113,45 +116,52 @@ def plot_position_comparison(axis, rows):
     sentence_positions = sorted(counts)
     ac_positions = sorted({position for values in counts.values() for position in values})
     if not sentence_positions or not ac_positions:
-        axis.set_title("Sentence position vs. AČ position", loc="left")
+        axis.set_title(title, loc="left")
         axis.text(0.5, 0.5, "No matching annotated values", ha="center", va="center", transform=axis.transAxes)
         axis.set_axis_off()
-        return 1
+        return
 
-    percentages = []
-    for sentence_position in sentence_positions:
-        total = sum(counts[sentence_position].values())
-        percentages.append([100 * counts[sentence_position].get(position, 0) / total for position in ac_positions])
+    colors = [plt.get_cmap("tab10")(index) for index in range(len(ac_positions))]
+    totals = [sum(counts[position].values()) for position in sentence_positions]
+    left = [0.0] * len(sentence_positions)
+    for ac_position, color in zip(ac_positions, colors):
+        percentages = [
+            100 * counts[position].get(ac_position, 0) / total
+            for position, total in zip(sentence_positions, totals)
+        ]
+        axis.barh(
+            range(len(sentence_positions)),
+            percentages,
+            left=left,
+            color=color,
+            label=ac_position,
+            height=0.78,
+        )
+        left = [offset + value for offset, value in zip(left, percentages)]
 
-    image = axis.imshow(percentages, cmap="Blues", vmin=0, vmax=100, aspect="auto")
-    for row_index, sentence_position in enumerate(sentence_positions):
-        for column_index, position in enumerate(ac_positions):
-            count = counts[sentence_position].get(position, 0)
-            percentage = percentages[row_index][column_index]
-            color = "white" if percentage >= 50 else "#253247"
-            axis.text(
-                column_index,
-                row_index,
-                f"{percentage:.1f}%\n(n={count})",
-                ha="center",
-                va="center",
-                color=color,
-                fontsize=8,
-            )
-
-    axis.set_xticks(range(len(ac_positions)), ac_positions)
-    axis.set_yticks(range(len(sentence_positions)), sentence_positions)
-    axis.set_xlabel("Pozice v AČ")
-    axis.set_ylabel("Místo ve větě")
-    axis.set_title(
-        'Sentence position vs. AČ position (Dosah = "věta"; Užití = jistotní, evidenciální, dotvrzovací)',
-        loc="left",
-        fontsize=11,
-        fontweight="bold",
-        pad=6,
+    axis.set_yticks(
+        range(len(sentence_positions)),
+        [f"{position}  (n={total})" for position, total in zip(sentence_positions, totals)],
     )
-    axis.figure.colorbar(image, ax=axis, label="Within-row percentage")
-    return max(4, len(sentence_positions) + 1)
+    axis.invert_yaxis()
+    axis.set_xlim(0, 100)
+    axis.set_xticks((0, 25, 50, 75, 100), labels=("0%", "25%", "50%", "75%", "100%"))
+    axis.set_xlabel("Distribution of Pozice v AČ")
+    axis.set_title(title, loc="left", fontsize=11, fontweight="bold", pad=6)
+    axis.grid(axis="x", color="#d9d9d9", linewidth=0.6)
+    axis.set_axisbelow(True)
+    axis.tick_params(axis="y", labelsize=8, length=0, pad=5)
+    axis.tick_params(axis="x", labelsize=8)
+    axis.legend(
+        title="Pozice v AČ",
+        loc="upper left",
+        bbox_to_anchor=(1.01, 1),
+        fontsize=8,
+        title_fontsize=8,
+        frameon=False,
+    )
+    for spine in ("top", "right", "left"):
+        axis.spines[spine].set_visible(False)
 
 
 def create_visualization(rows):
@@ -170,23 +180,43 @@ def create_visualization(rows):
         )
         for column, _ in CHARTS
     ]
-    comparison_rows = select_position_comparison_rows(rows)
-    comparison_height = max(
-        4,
-        len({row[POSITION_COLUMN].strip() for row in comparison_rows}) + 1,
-    )
-    height_ratios = [comparison_height, *(max(len(entries), 1) for entries in chart_entries)]
+    comparison_heights = [
+        max(
+            len(
+                {
+                    row[POSITION_COLUMN].strip()
+                    for row in select_position_comparison_rows(rows, uses_only=uses_only)
+                }
+            ),
+            1,
+        )
+        for uses_only in (False, True)
+    ]
+    height_ratios = [
+        *comparison_heights,
+        *(max(len(entries), 1) for entries in chart_entries),
+    ]
     figure_height = max(6, 2.2 + sum(ratio * 0.27 + 0.8 for ratio in height_ratios))
     figure, axes = plt.subplots(
-        len(CHARTS) + 1,
+        len(CHARTS) + 2,
         1,
         figsize=(11, figure_height),
         gridspec_kw={"height_ratios": height_ratios},
         squeeze=False,
     )
     colors = [plt.get_cmap("tab10")(index) for index in range(len(positions))]
-    plot_position_comparison(axes[0, 0], rows)
-    for axis, (column, title) in zip(axes[1:, 0], CHARTS):
+    plot_position_comparison(
+        axes[0, 0],
+        rows,
+        'Position by position for Dosah = "věta"',
+    )
+    plot_position_comparison(
+        axes[1, 0],
+        rows,
+        'Position by position for Dosah = "věta" and Užití in {jistotní, evidenciální, dotvrzovací}',
+        uses_only=True,
+    )
+    for axis, (column, title) in zip(axes[2:, 0], CHARTS):
         plot_chart(
             axis,
             rows,
@@ -199,7 +229,7 @@ def create_visualization(rows):
 
     figure.suptitle("Sentence position distributions", fontsize=16, fontweight="bold", y=0.995)
     if positions:
-        handles, labels = axes[0, 0].get_legend_handles_labels()
+        handles, labels = axes[2, 0].get_legend_handles_labels()
         figure.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, 0.985), ncol=len(positions), frameon=False)
     figure.text(
         0.5,
