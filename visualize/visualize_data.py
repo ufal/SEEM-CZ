@@ -120,8 +120,8 @@ def leave_one_out_distances(entries, mode="point", n_resamples=1000):
 
         def distance_statistic(group, comparison):
             return jensen_shannon_distance(
-                Counter(np.bincount(group, minlength=len(categories))),
-                Counter(np.bincount(comparison, minlength=len(categories))),
+                dict(zip(categories, np.bincount(group, minlength=len(categories)))),
+                dict(zip(categories, np.bincount(comparison, minlength=len(categories)))),
             )
 
         result = bootstrap(
