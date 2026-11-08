@@ -15,6 +15,7 @@ from math import log2, sqrt
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+import numpy as np
 
 POSITION_COLUMN = "Místo ve větě"
 AC_POSITION_COLUMN = "Pozice v AČ"
@@ -83,19 +84,65 @@ def jensen_shannon_distance(first, second):
     return sqrt(divergence)
 
 
-def leave_one_out_distances(entries):
+def leave_one_out_distances(entries, mode="point", n_resamples=1000):
     overall_counts = Counter()
     for _, counts in entries:
         overall_counts.update(counts)
 
     distances = {}
+    rng = None
+    if mode == "ci":
+        try:
+            from scipy.stats import bootstrap
+        except ImportError as error:
+            raise ValueError("Jensen-Shannon confidence intervals require SciPy") from error
+        rng = np.random.default_rng(0)
+
     for label, counts in entries:
         comparison_counts = overall_counts - counts
-        distances[label] = jensen_shannon_distance(counts, comparison_counts)
+        if mode == "none":
+            continue
+        if mode == "point":
+            distances[label] = jensen_shannon_distance(counts, comparison_counts)
+            continue
+        if mode != "ci":
+            raise ValueError(f"Unknown Jensen-Shannon mode: {mode}")
+
+        categories = sorted(counts.keys() | comparison_counts.keys())
+        if sum(counts.values()) < 2 or sum(comparison_counts.values()) < 2:
+            distances[label] = None
+            continue
+        category_ids = {category: index for index, category in enumerate(categories)}
+        group_sample = np.concatenate(
+            [np.full(count, category_ids[category]) for category, count in counts.items()]
+        )
+        comparison_sample = np.concatenate(
+            [
+                np.full(count, category_ids[category])
+                for category, count in comparison_counts.items()
+            ]
+        )
+
+        def distance_statistic(group, comparison):
+            return jensen_shannon_distance(
+                Counter(np.bincount(group, minlength=len(categories))),
+                Counter(np.bincount(comparison, minlength=len(categories))),
+            )
+
+        result = bootstrap(
+            (group_sample, comparison_sample),
+            distance_statistic,
+            vectorized=False,
+            n_resamples=n_resamples,
+            confidence_level=0.95,
+            method="percentile",
+            rng=rng,
+        )
+        distances[label] = (result.confidence_interval.low, result.confidence_interval.high)
     return overall_counts, distances
 
 
-def plot_chart(axis, entries, title, positions, colors, overall_counts, distances):
+def plot_chart(axis, entries, title, positions, colors, overall_counts, distances, js_mode):
     if not entries:
         axis.set_title(title, loc="left")
         axis.text(0.5, 0.5, "No annotated values", ha="center", va="center", transform=axis.transAxes)
@@ -109,10 +156,17 @@ def plot_chart(axis, entries, title, positions, colors, overall_counts, distance
     tick_labels = []
     for label, total in zip(labels, totals):
         distance = distances.get(label)
-        distance_label = "n/a" if distance is None else f"{distance:.3f}"
-        if label == "All y values":
-            distance_label = "n/a"
-        tick_labels.append(f"{label}  (n={total}, JS={distance_label})")
+        annotation = f"n={total}"
+        if js_mode == "point":
+            distance_label = "n/a" if distance is None else f"{distance:.3f}"
+            annotation += f", JS={distance_label}"
+        elif js_mode == "ci":
+            if distance is None:
+                distance_label = "n/a"
+            else:
+                distance_label = f"[{distance[0]:.3f}, {distance[1]:.3f}]"
+            annotation += f", JS 95% CI={distance_label}"
+        tick_labels.append(f"{label}  ({annotation})")
     left = [0.0] * len(entries)
     for position, color in zip(positions, colors):
         percentages = [
@@ -147,7 +201,7 @@ def plot_chart(axis, entries, title, positions, colors, overall_counts, distance
         axis.spines[spine].set_visible(False)
 
 
-def create_visualization(rows):
+def create_visualization(rows, js_mode="point", n_resamples=1000):
     positions = sorted(
         {
             (row.get(POSITION_COLUMN) or "").strip()
@@ -160,7 +214,11 @@ def create_visualization(rows):
     chart_distances = []
     for column, filter_params, top in CHARTS:
         all_entries = group_counts(rows, column, filter_params)
-        total_counts, distances = leave_one_out_distances(all_entries)
+        total_counts, distances = leave_one_out_distances(
+            all_entries,
+            mode=js_mode,
+            n_resamples=n_resamples,
+        )
         chart_entries.append(all_entries[:top] if top is not None else all_entries)
         chart_totals.append(total_counts)
         chart_distances.append(distances)
@@ -197,6 +255,7 @@ def create_visualization(rows):
             colors,
             total,
             distances,
+            js_mode,
         )
 
     figure.suptitle("Sentence position distributions", fontsize=16, fontweight="bold", y=0.995)
@@ -211,14 +270,15 @@ def create_visualization(rows):
             ncol=len(positions),
             frameon=False,
         )
-    figure.text(
-        0.5,
-        0.005,
-        "Percent within each group; JS is base-2 leave-one-out Jensen–Shannon distance; "
-        "rows without a sentence-position annotation are excluded.",
-        ha="center",
-        fontsize=8,
-    )
+    footer = "Percent within each group; rows without a sentence-position annotation are excluded."
+    if js_mode == "point":
+        footer += " JS is the base-2 leave-one-out Jensen–Shannon distance."
+    elif js_mode == "ci":
+        footer += (
+            " JS CI is the percentile-bootstrap 95% confidence interval for leave-one-out distance "
+            "(n/a if either sample has fewer than 2 observations)."
+        )
+    figure.text(0.5, 0.005, footer, ha="center", fontsize=8)
     figure.tight_layout(rect=(0.02, 0.02, 0.99, 0.96 if positions else 0.97), h_pad=1.6)
     return figure
 
@@ -238,18 +298,32 @@ def main():
         default=Path(__file__).resolve().parent / "output/sentence_position_distributions.pdf",
         help="PDF output file; use an .svg extension to save SVG instead",
     )
+    parser.add_argument(
+        "--js",
+        choices=("none", "point", "ci"),
+        default="point",
+        help="Jensen-Shannon annotation: none, point estimate, or bootstrap confidence interval (default: point)",
+    )
+    parser.add_argument(
+        "--bootstrap-resamples",
+        type=int,
+        default=1000,
+        help="Number of SciPy bootstrap resamples when --js=ci (default: 1000)",
+    )
     args = parser.parse_args()
     if args.output.suffix.lower() not in (".pdf", ".svg"):
         parser.error("--output must have a .pdf or .svg extension")
+    if args.bootstrap_resamples < 1:
+        parser.error("--bootstrap-resamples must be a positive integer")
 
     try:
         rows = load_rows(args.input)
-        figure = create_visualization(rows)
+        figure = create_visualization(rows, js_mode=args.js, n_resamples=args.bootstrap_resamples)
         args.output.parent.mkdir(parents=True, exist_ok=True)
         with plt.rc_context({"svg.fonttype": "none"}):
             figure.savefig(args.output, bbox_inches="tight")
         plt.close(figure)
-    except (OSError, ValueError) as error:
+    except (OSError, ValueError, ImportError) as error:
         parser.error(str(error))
     print(f"Visualization saved to {args.output}")
 
