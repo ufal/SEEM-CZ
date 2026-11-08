@@ -18,35 +18,35 @@ import matplotlib.pyplot as plt
 POSITION_COLUMN = "Místo ve větě"
 AC_POSITION_COLUMN = "Pozice v AČ"
 SCOPE_COLUMN = "Dosah"
-
-def filter_scope_sent(row):
-    return (row.get(SCOPE_COLUMN) or "").strip() == "věta"
-
+EXPR_COLUMN = "Výraz"
 
 CHARTS = [
-    ("Užití",                           None,                                                   None,               None),
-    ("Typ komunikační funkce",          None,                                                   None,               None),
-    ("Konkrétní komunikační funkce",    None,                                                   None,               10  ),
-    (AC_POSITION_COLUMN,                None,                                                   None,               None),
-    (AC_POSITION_COLUMN,                f"{AC_POSITION_COLUMN} ({SCOPE_COLUMN} = \"věta\")",    filter_scope_sent,  None),
-    ("Výraz",                           None,                                                   None,               None),
+    ("Užití",                           None,                           None),
+    ("Typ komunikační funkce",          None,                           None),
+    ("Konkrétní komunikační funkce",    None,                           10  ),
+    ("Konkrétní komunikační funkce",    (EXPR_COLUMN, "mozna"),         None),
+    ("Konkrétní komunikační funkce",    (EXPR_COLUMN, "urcite"),        None),
+    ("Konkrétní komunikační funkce",    (EXPR_COLUMN, "samozrejme"),    None),
+    (AC_POSITION_COLUMN,                None,                           None),
+    (AC_POSITION_COLUMN,                (SCOPE_COLUMN, "věta"),         None),
+    ("Výraz",                           None,                           None),
 ]
 
 
 def load_rows(input_path):
     with input_path.open(encoding="utf-8-sig", newline="") as csv_file:
         reader = csv.DictReader(csv_file, delimiter="\t")
-        required_columns = (POSITION_COLUMN, SCOPE_COLUMN, *(column for column, _, _, _ in CHARTS))
+        required_columns = (POSITION_COLUMN, SCOPE_COLUMN, *(column for column, _, _ in CHARTS))
         missing_columns = [column for column in required_columns if column not in (reader.fieldnames or [])]
         if missing_columns:
             raise ValueError(f"CSV is missing required columns: {', '.join(missing_columns)}")
         return list(reader)
 
 
-def group_counts(rows, column, filter_f=None, top=None):
+def group_counts(rows, column, filter_params=None, top=None):
     grouped = {}
     for row in rows:
-        if filter_f is not None and not filter_f(row):
+        if filter_params is not None and (row.get(filter_params[0]) or "").strip() != filter_params[1]:
             continue
         group = (row.get(column) or "").strip()
         position = (row.get(POSITION_COLUMN) or "").strip()
@@ -114,10 +114,10 @@ def create_visualization(rows):
         group_counts(
             rows,
             column,
-            filter_f,
+            filter_params,
             top,
         )
-        for column, _, filter_f, top in CHARTS
+        for column, filter_params, top in CHARTS
     ]
     height_ratios = [
         *(max(len(entries), 1) for entries in chart_entries),
@@ -131,8 +131,17 @@ def create_visualization(rows):
         squeeze=False,
     )
     colors = [plt.get_cmap("tab10")(index) for index in range(len(positions))]
-    for axis, entry, (colname, title, _, _) in zip(axes[:, 0], chart_entries, CHARTS):
-        title = colname if title is None else title
+    for axis, entry, (colname, filter_params, top) in zip(axes[:, 0], chart_entries, CHARTS):
+        
+        title = colname
+        cond_strs = [
+            f"{filter_params[0]} = {filter_params[1]}" if filter_params else None,
+            f"top {top} values" if top is not None else None,
+        ]
+        cond_strs = [cond for cond in cond_strs if cond]
+        if cond_strs:
+            title += " (" + ", ".join(cond_strs) + ")"
+
         plot_chart(
             axis,
             entry,
