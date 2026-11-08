@@ -74,7 +74,7 @@ def plot_chart(axis, entries, title, positions, colors):
             100 * counts.get(position, 0) / total
             for (_, counts), total in zip(entries, totals)
         ]
-        axis.barh(
+        bars = axis.barh(
             range(len(entries)),
             percentages,
             left=left,
@@ -82,12 +82,20 @@ def plot_chart(axis, entries, title, positions, colors):
             label=position,
             height=0.78,
         )
+        axis.bar_label(
+            bars,
+            labels=[f"{percentage:.1f}%" if percentage else "" for percentage in percentages],
+            label_type="center",
+            fontsize=7,
+            color="white",
+            padding=0,
+        )
         left = [offset + value for offset, value in zip(left, percentages)]
 
     axis.set_yticks(range(len(entries)), [f"{label}  (n={total})" for label, total in zip(labels, totals)])
     axis.invert_yaxis()
     axis.set_xlim(0, 100)
-    axis.set_xticks((0, 25, 50, 75, 100), labels=("0%", "25%", "50%", "75%", "100%"))
+    axis.set_xticks([])
     axis.set_title(title, loc="left", fontsize=11, fontweight="bold", pad=6)
     axis.grid(axis="x", color="#d9d9d9", linewidth=0.6)
     axis.set_axisbelow(True)
