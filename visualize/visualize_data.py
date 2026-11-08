@@ -32,6 +32,10 @@ CHARTS = [
     ("Výraz",                           None,                           None),
 ]
 
+AC_POSITION_CHARTS = [
+    ("Výraz",                           None,                           None),
+]
+
 
 def load_rows(input_path):
     with input_path.open(encoding="utf-8-sig", newline="") as csv_file:
