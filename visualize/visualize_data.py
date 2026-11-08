@@ -95,13 +95,10 @@ def plot_chart(axis, entries, title, positions, colors):
     axis.set_yticks(range(len(entries)), [f"{label}  (n={total})" for label, total in zip(labels, totals)])
     axis.invert_yaxis()
     axis.set_xlim(0, 100)
-    axis.set_xticks([])
     axis.set_title(title, loc="left", fontsize=11, fontweight="bold", pad=6)
-    axis.grid(axis="x", color="#d9d9d9", linewidth=0.6)
-    axis.set_axisbelow(True)
+    axis.xaxis.set_visible(False)
     axis.tick_params(axis="y", labelsize=8, length=0, pad=5)
-    axis.tick_params(axis="x", labelsize=8)
-    for spine in ("top", "right", "left"):
+    for spine in ("top", "right", "left", "bottom"):
         axis.spines[spine].set_visible(False)
 
 
