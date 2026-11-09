@@ -15,6 +15,7 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.patches import Patch
 from scipy.spatial.distance import jensenshannon
 from scipy.stats import bootstrap
 
@@ -23,7 +24,7 @@ AC_POSITION_COLUMN = "Pozice v AČ"
 SCOPE_COLUMN = "Dosah"
 EXPR_COLUMN = "Výraz"
 
-CHARTS = [
+POSITION_CHARTS = [
     ("Užití",                           None,                           None),
     ("Typ komunikační funkce",          None,                           None),
     ("Konkrétní komunikační funkce",    None,                           10  ),
@@ -43,20 +44,25 @@ AC_POSITION_CHARTS = [
 def load_rows(input_path):
     with input_path.open(encoding="utf-8-sig", newline="") as csv_file:
         reader = csv.DictReader(csv_file, delimiter="\t")
-        required_columns = (POSITION_COLUMN, SCOPE_COLUMN, *(column for column, _, _ in CHARTS))
+        required_columns = (
+            POSITION_COLUMN,
+            AC_POSITION_COLUMN,
+            SCOPE_COLUMN,
+            *(column for column, _, _ in (*POSITION_CHARTS, *AC_POSITION_CHARTS)),
+        )
         missing_columns = [column for column in required_columns if column not in (reader.fieldnames or [])]
         if missing_columns:
             raise ValueError(f"CSV is missing required columns: {', '.join(missing_columns)}")
         return list(reader)
 
 
-def group_counts(rows, column, filter_params=None, top=None):
+def group_counts(rows, column, filter_params=None, top=None, value_column=POSITION_COLUMN):
     grouped = {}
     for row in rows:
         if filter_params is not None and (row.get(filter_params[0]) or "").strip() != filter_params[1]:
             continue
         group = (row.get(column) or "").strip()
-        position = (row.get(POSITION_COLUMN) or "").strip()
+        position = (row.get(value_column) or "").strip()
         if group and position:
             grouped.setdefault(group, Counter())[position] += 1
 
@@ -194,75 +200,114 @@ def plot_chart(axis, entries, title, positions, colors, overall_counts, distance
 
 
 def create_visualization(rows, js_mode="point", n_resamples=1000):
-    positions = sorted(
-        {
-            (row.get(POSITION_COLUMN) or "").strip()
-            for row in rows
-            if (row.get(POSITION_COLUMN) or "").strip()
-        }
+    chart_blocks = (
+        (POSITION_CHARTS, POSITION_COLUMN, "Sentence position distributions"),
+        (AC_POSITION_CHARTS, AC_POSITION_COLUMN, "AČ position distributions"),
     )
     chart_entries = []
     chart_totals = []
     chart_distances = []
-    for column, filter_params, top in CHARTS:
-        all_entries = group_counts(rows, column, filter_params)
-        total_counts, distances = leave_one_out_distances(
-            all_entries,
-            mode=js_mode,
-            n_resamples=n_resamples,
+    block_positions = []
+    for charts, value_column, _ in chart_blocks:
+        positions = sorted(
+            {
+                (row.get(value_column) or "").strip()
+                for row in rows
+                if (row.get(value_column) or "").strip()
+            }
         )
-        chart_entries.append(all_entries[:top] if top is not None else all_entries)
-        chart_totals.append(total_counts)
-        chart_distances.append(distances)
+        block_positions.append(positions)
+        for column, filter_params, top in charts:
+            all_entries = group_counts(rows, column, filter_params, value_column=value_column)
+            total_counts, distances = leave_one_out_distances(
+                all_entries,
+                mode=js_mode,
+                n_resamples=n_resamples,
+            )
+            chart_entries.append(all_entries[:top] if top is not None else all_entries)
+            chart_totals.append(total_counts)
+            chart_distances.append(distances)
     height_ratios = [
         *(max(len(entries) + 1, 1) for entries in chart_entries),
     ]
     figure_height = max(6, 2.2 + sum(ratio * 0.27 + 0.8 for ratio in height_ratios))
-    figure, axes = plt.subplots(
-        len(CHARTS),
+    figure = plt.figure(figsize=(11, figure_height), constrained_layout=True)
+    block_height_ratios = []
+    height_index = 0
+    for charts, _, _ in chart_blocks:
+        block_height_ratios.append(sum(height_ratios[height_index:height_index + len(charts)]) + 2.5)
+        height_index += len(charts)
+    block_grids = figure.add_gridspec(
+        len(chart_blocks),
         1,
-        figsize=(11, figure_height),
-        gridspec_kw={"height_ratios": height_ratios},
-        squeeze=False,
+        height_ratios=block_height_ratios,
     )
-    colors = [plt.get_cmap("tab10")(index) for index in range(len(positions))]
-    for axis, entry, total, distances, (colname, filter_params, top) in zip(
-        axes[:, 0], chart_entries, chart_totals, chart_distances, CHARTS
-    ):
-        
-        title = colname
-        cond_strs = [
-            f"{filter_params[0]} = {filter_params[1]}" if filter_params else None,
-            f"top {top} values" if top is not None else None,
-        ]
-        cond_strs = [cond for cond in cond_strs if cond]
-        if cond_strs:
-            title += " (" + ", ".join(cond_strs) + ")"
-
-        plot_chart(
-            axis,
-            entry,
-            title,
-            positions,
-            colors,
-            total,
-            distances,
-            js_mode,
+    color_blocks = [
+        [plt.get_cmap("tab10")(index) for index in range(len(positions))]
+        for positions in block_positions
+    ]
+    chart_index = 0
+    for block_index, (charts, value_column, block_title) in enumerate(chart_blocks):
+        block_grid = block_grids[block_index].subgridspec(
+            len(charts) + 2,
+            1,
+            height_ratios=[1, 1.5, *height_ratios[chart_index:chart_index + len(charts)]],
         )
-
-    figure.suptitle("Sentence position distributions", fontsize=16, fontweight="bold", y=0.995)
-    if positions:
-        handles, labels = axes[2, 0].get_legend_handles_labels()
-        figure.legend(
-            handles,
-            labels,
-            title=POSITION_COLUMN,
-            loc="upper center",
-            bbox_to_anchor=(0.5, 0.985),
-            ncol=len(positions),
-            frameon=False,
+        title_axis = figure.add_subplot(block_grid[0])
+        title_axis.text(
+            0,
+            0.5,
+            block_title,
+            fontsize=13,
+            fontweight="bold",
+            ha="left",
+            va="center",
         )
-    footer = "Percent within each group; rows without a sentence-position annotation are excluded."
+        title_axis.set_axis_off()
+        legend_axis = figure.add_subplot(block_grid[1])
+        positions = block_positions[block_index]
+        if positions:
+            legend_axis.legend(
+                [
+                    Patch(facecolor=color, label=position)
+                    for position, color in zip(positions, color_blocks[block_index])
+                ],
+                positions,
+                title=value_column,
+                loc="center left",
+                ncol=len(positions),
+                frameon=False,
+                borderaxespad=0,
+            )
+        legend_axis.set_axis_off()
+
+        for offset, (column, filter_params, top) in enumerate(charts):
+            entry = chart_entries[chart_index]
+            total = chart_totals[chart_index]
+            distances = chart_distances[chart_index]
+            axis = figure.add_subplot(block_grid[offset + 2])
+            title = column
+            cond_strs = [
+                f"{filter_params[0]} = {filter_params[1]}" if filter_params else None,
+                f"top {top} values" if top is not None else None,
+            ]
+            cond_strs = [cond for cond in cond_strs if cond]
+            if cond_strs:
+                title += " (" + ", ".join(cond_strs) + ")"
+
+            plot_chart(
+                axis,
+                entry,
+                title,
+                positions,
+                color_blocks[block_index],
+                total,
+                distances,
+                js_mode,
+            )
+            chart_index += 1
+
+    footer = "Percent within each group; rows without the relevant position annotation are excluded."
     if js_mode == "point":
         footer += " JS is the base-2 leave-one-out Jensen–Shannon distance."
     elif js_mode == "ci":
@@ -271,7 +316,6 @@ def create_visualization(rows, js_mode="point", n_resamples=1000):
             "(n/a if either sample has fewer than 2 observations)."
         )
     figure.text(0.5, 0.005, footer, ha="center", fontsize=8)
-    figure.tight_layout(rect=(0.02, 0.02, 0.99, 0.96 if positions else 0.97), h_pad=1.6)
     return figure
 
 
