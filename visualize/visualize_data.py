@@ -231,7 +231,7 @@ def create_visualization(rows, js_mode="point", n_resamples=1000):
         *(max(len(entries) + 1, 1) for entries in chart_entries),
     ]
     figure_height = max(6, 2.2 + sum(ratio * 0.27 + 0.8 for ratio in height_ratios))
-    figure = plt.figure(figsize=(11, figure_height))
+    figure = plt.figure(figsize=(11, figure_height), constrained_layout=True)
     block_height_ratios = []
     height_index = 0
     for charts, _, _ in chart_blocks:
@@ -307,7 +307,6 @@ def create_visualization(rows, js_mode="point", n_resamples=1000):
             )
             chart_index += 1
 
-    figure.suptitle("Sentence and AČ position distributions", fontsize=16, fontweight="bold", y=0.995)
     footer = "Percent within each group; rows without the relevant position annotation are excluded."
     if js_mode == "point":
         footer += " JS is the base-2 leave-one-out Jensen–Shannon distance."
@@ -317,7 +316,6 @@ def create_visualization(rows, js_mode="point", n_resamples=1000):
             "(n/a if either sample has fewer than 2 observations)."
         )
     figure.text(0.5, 0.005, footer, ha="center", fontsize=8)
-    figure.tight_layout(rect=(0.02, 0.02, 0.99, 0.96), h_pad=1.2)
     return figure
 
 
