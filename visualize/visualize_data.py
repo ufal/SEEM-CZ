@@ -15,6 +15,7 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.patches import Patch
 from scipy.spatial.distance import jensenshannon
 from scipy.stats import bootstrap
 
@@ -200,15 +201,14 @@ def plot_chart(axis, entries, title, positions, colors, overall_counts, distance
 
 def create_visualization(rows, js_mode="point", n_resamples=1000):
     chart_blocks = (
-        (POSITION_CHARTS, POSITION_COLUMN, ""),
-        (AC_POSITION_CHARTS, AC_POSITION_COLUMN, f"{AC_POSITION_COLUMN} by "),
+        (POSITION_CHARTS, POSITION_COLUMN, "Sentence position distributions"),
+        (AC_POSITION_CHARTS, AC_POSITION_COLUMN, "AČ position distributions"),
     )
     chart_entries = []
     chart_totals = []
     chart_distances = []
-    chart_specs = []
     block_positions = []
-    for block_index, (charts, value_column, title_prefix) in enumerate(chart_blocks):
+    for charts, value_column, _ in chart_blocks:
         positions = sorted(
             {
                 (row.get(value_column) or "").strip()
@@ -227,71 +227,87 @@ def create_visualization(rows, js_mode="point", n_resamples=1000):
             chart_entries.append(all_entries[:top] if top is not None else all_entries)
             chart_totals.append(total_counts)
             chart_distances.append(distances)
-            chart_specs.append((column, filter_params, top, title_prefix, block_index))
     height_ratios = [
         *(max(len(entries) + 1, 1) for entries in chart_entries),
     ]
     figure_height = max(6, 2.2 + sum(ratio * 0.27 + 0.8 for ratio in height_ratios))
-    figure, axes = plt.subplots(
-        len(chart_specs),
+    figure = plt.figure(figsize=(11, figure_height))
+    block_height_ratios = []
+    height_index = 0
+    for charts, _, _ in chart_blocks:
+        block_height_ratios.append(sum(height_ratios[height_index:height_index + len(charts)]) + 2.5)
+        height_index += len(charts)
+    block_grids = figure.add_gridspec(
+        len(chart_blocks),
         1,
-        figsize=(11, figure_height),
-        gridspec_kw={"height_ratios": height_ratios},
-        squeeze=False,
+        height_ratios=block_height_ratios,
     )
     color_blocks = [
         [plt.get_cmap("tab10")(index) for index in range(len(positions))]
         for positions in block_positions
     ]
-    for (
-        axis,
-        entry,
-        total,
-        distances,
-        (colname, filter_params, top, title_prefix, block_index),
-    ) in zip(axes[:, 0], chart_entries, chart_totals, chart_distances, chart_specs):
-        title = title_prefix + colname
-        cond_strs = [
-            f"{filter_params[0]} = {filter_params[1]}" if filter_params else None,
-            f"top {top} values" if top is not None else None,
-        ]
-        cond_strs = [cond for cond in cond_strs if cond]
-        if cond_strs:
-            title += " (" + ", ".join(cond_strs) + ")"
-
-        plot_chart(
-            axis,
-            entry,
-            title,
-            block_positions[block_index],
-            color_blocks[block_index],
-            total,
-            distances,
-            js_mode,
+    chart_index = 0
+    for block_index, (charts, value_column, block_title) in enumerate(chart_blocks):
+        block_grid = block_grids[block_index].subgridspec(
+            len(charts) + 2,
+            1,
+            height_ratios=[1, 1.5, *height_ratios[chart_index:chart_index + len(charts)]],
         )
+        title_axis = figure.add_subplot(block_grid[0])
+        title_axis.text(
+            0,
+            0.5,
+            block_title,
+            fontsize=13,
+            fontweight="bold",
+            ha="left",
+            va="center",
+        )
+        title_axis.set_axis_off()
+        legend_axis = figure.add_subplot(block_grid[1])
+        positions = block_positions[block_index]
+        if positions:
+            legend_axis.legend(
+                [
+                    Patch(facecolor=color, label=position)
+                    for position, color in zip(positions, color_blocks[block_index])
+                ],
+                positions,
+                title=value_column,
+                loc="center left",
+                ncol=len(positions),
+                frameon=False,
+                borderaxespad=0,
+            )
+        legend_axis.set_axis_off()
+
+        for offset, (column, filter_params, top) in enumerate(charts):
+            entry = chart_entries[chart_index]
+            total = chart_totals[chart_index]
+            distances = chart_distances[chart_index]
+            axis = figure.add_subplot(block_grid[offset + 2])
+            title = column
+            cond_strs = [
+                f"{filter_params[0]} = {filter_params[1]}" if filter_params else None,
+                f"top {top} values" if top is not None else None,
+            ]
+            cond_strs = [cond for cond in cond_strs if cond]
+            if cond_strs:
+                title += " (" + ", ".join(cond_strs) + ")"
+
+            plot_chart(
+                axis,
+                entry,
+                title,
+                positions,
+                color_blocks[block_index],
+                total,
+                distances,
+                js_mode,
+            )
+            chart_index += 1
 
     figure.suptitle("Sentence and AČ position distributions", fontsize=16, fontweight="bold", y=0.995)
-    legend_y = 0.98
-    for block_index, charts in enumerate(chart_blocks):
-        first_axis_index = sum(len(block[0]) for block in chart_blocks[:block_index])
-        handles, labels = [], []
-        for axis_index in range(first_axis_index, first_axis_index + len(charts[0])):
-            handles, labels = axes[axis_index, 0].get_legend_handles_labels()
-            if handles:
-                break
-        positions = block_positions[block_index]
-        if not positions or not handles:
-            continue
-        figure.legend(
-            handles,
-            labels,
-            title=charts[1],
-            loc="upper center",
-            bbox_to_anchor=(0.5, legend_y),
-            ncol=len(positions),
-            frameon=False,
-        )
-        legend_y -= 0.035
     footer = "Percent within each group; rows without the relevant position annotation are excluded."
     if js_mode == "point":
         footer += " JS is the base-2 leave-one-out Jensen–Shannon distance."
@@ -301,7 +317,7 @@ def create_visualization(rows, js_mode="point", n_resamples=1000):
             "(n/a if either sample has fewer than 2 observations)."
         )
     figure.text(0.5, 0.005, footer, ha="center", fontsize=8)
-    figure.tight_layout(rect=(0.02, 0.02, 0.99, legend_y - 0.015), h_pad=1.6)
+    figure.tight_layout(rect=(0.02, 0.02, 0.99, 0.96), h_pad=1.2)
     return figure
 
 
